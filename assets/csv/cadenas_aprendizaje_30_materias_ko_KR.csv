@@ -1,0 +1,901 @@
+﻿Category,Subject,Icon,Episode No,Level,Episode Title,Description,Base XP,Badge
+과학,🔭 천문학과 우주,🔭,1,탐험가,El Sistema Solar,"Planetas, lunas, órbitas básicas",100,
+과학,🔭 천문학과 우주,🔭,2,탐험가,Estrellas y Constelaciones,"Tipos de estrellas, ciclo estelar",100,
+과학,🔭 천문학과 우주,🔭,3,탐험가,La Luna y las Mareas,"Fases lunares, influencia terrestre",100,🥉 브론즈 배지
+과학,🔭 천문학과 우주,🔭,4,견습생,Galaxias y Nebulosas,"Vía Láctea, tipos de galaxias",200,
+과학,🔭 천문학과 우주,🔭,5,견습생,Exploración Espacial,Historia de la carrera espacial,200,
+과학,🔭 천문학과 우주,🔭,6,견습생,Agujeros Negros,"Formación, horizonte de eventos",200,🥈 실버 배지
+과학,🔭 천문학과 우주,🔭,7,전문가,Cosmología del Big Bang,"Origen del universo, radiación cósmica",350,
+과학,🔭 천문학과 우주,🔭,8,전문가,Exoplanetas y Vida,"Zona habitable, búsqueda de vida",350,🥇 골드 배지
+과학,🔭 천문학과 우주,🔭,9,전문가,Materia y Energía Oscura,Composición oculta del universo,500,
+과학,🔭 천문학과 우주,🔭,10,전문가,El Futuro del Cosmos,"Destino del universo, teorías finales",500,💎 다이아몬드 배지
+역사,🏛️ 고대사,🏛️,1,탐험가,Mesopotamia: Cuna de la Civilización,"Sumerios, escritura cuneiforme",100,
+역사,🏛️ 고대사,🏛️,2,탐험가,Egipto: El Nilo y los Faraones,"Pirámides, momificación, jeroglíficos",100,
+역사,🏛️ 고대사,🏛️,3,탐험가,Grecia: Democracia y Filosofía,"Atenas, Esparta, pensadores",100,🥉 브론즈 배지
+역사,🏛️ 고대사,🏛️,4,견습생,Roma: República e Imperio,"Legiones, ingeniería, derecho romano",200,
+역사,🏛️ 고대사,🏛️,5,견습생,China: Dinastías Imperiales,"Gran Muralla, Ruta de la Seda",200,
+역사,🏛️ 고대사,🏛️,6,견습생,India: Civilización del Indo,"Harappa, vedas, castas",200,🥈 실버 배지
+역사,🏛️ 고대사,🏛️,7,전문가,Persia y los Grandes Imperios,"Ciro, Darío, guerras médicas",350,
+역사,🏛️ 고대사,🏛️,8,전문가,Civilizaciones Precolombinas,"Maya, Azteca, Inca",350,🥇 골드 배지
+역사,🏛️ 고대사,🏛️,9,전문가,Caída de los Imperios,Patrones de colapso civilizatorio,500,
+역사,🏛️ 고대사,🏛️,10,전문가,Legado Antiguo en el Mundo Moderno,Influencias actuales del mundo antiguo,500,💎 다이아몬드 배지
+과학,🧠 신경과학,🧠,1,탐험가,El Cerebro: Mapa Básico,"Lóbulos, hemisferios, funciones",100,
+과학,🧠 신경과학,🧠,2,탐험가,Neuronas y Sinapsis,Comunicación neuronal básica,100,
+과학,🧠 신경과학,🧠,3,탐험가,Los Sentidos,Cómo el cerebro procesa el mundo,100,🥉 브론즈 배지
+과학,🧠 신경과학,🧠,4,견습생,Memoria y Aprendizaje,"Tipos de memoria, neuroplasticidad",200,
+과학,🧠 신경과학,🧠,5,견습생,Emociones y el Cerebro,"Sistema límbico, amígdala",200,
+과학,🧠 신경과학,🧠,6,견습생,El Sueño y los Sueños,"Ciclos REM, función reparadora",200,🥈 실버 배지
+과학,🧠 신경과학,🧠,7,전문가,Neuroquímica,"Dopamina, serotonina, endorfinas",350,
+과학,🧠 신경과학,🧠,8,전문가,Trastornos Neurológicos,"Alzheimer, Parkinson, epilepsia",350,🥇 골드 배지
+과학,🧠 신경과학,🧠,9,전문가,Conciencia y Libre Albedrío,El misterio de la conciencia,500,
+과학,🧠 신경과학,🧠,10,전문가,Neurotecnología del Futuro,"Interfaces cerebro-máquina, IA neural",500,💎 다이아몬드 배지
+기술,🤖 Inteligencia Artificial,🤖,1,탐험가,¿Qué es la IA?,"Conceptos básicos, historia",100,
+기술,🤖 Inteligencia Artificial,🤖,2,탐험가,Machine Learning 101,Aprendizaje supervisado y no supervisado,100,
+기술,🤖 Inteligencia Artificial,🤖,3,탐험가,Redes Neuronales,Cómo aprende una máquina,100,🥉 브론즈 배지
+기술,🤖 Inteligencia Artificial,🤖,4,견습생,Procesamiento del Lenguaje,"NLP, chatbots, traducción",200,
+기술,🤖 Inteligencia Artificial,🤖,5,견습생,Visión por Computador,Reconocimiento de imágenes,200,
+기술,🤖 Inteligencia Artificial,🤖,6,견습생,IA Generativa,"GPT, DALL-E, creación de contenido",200,🥈 실버 배지
+기술,🤖 Inteligencia Artificial,🤖,7,전문가,IA en la Industria,"Aplicaciones reales, transformación",350,
+기술,🤖 Inteligencia Artificial,🤖,8,전문가,Ética de la IA,"Sesgos, privacidad, regulación",350,🥇 골드 배지
+기술,🤖 Inteligencia Artificial,🤖,9,전문가,IA General (AGI),Camino hacia la superinteligencia,500,
+기술,🤖 Inteligencia Artificial,🤖,10,전문가,El Futuro IA-Humano,"Coexistencia, singularidad tecnológica",500,💎 다이아몬드 배지
+사회,💰 Economía y Finanzas,💰,1,탐험가,Oferta y Demanda,Principios básicos del mercado,100,
+사회,💰 Economía y Finanzas,💰,2,탐험가,El Dinero y la Banca,"Historia del dinero, sistema bancario",100,
+사회,💰 Economía y Finanzas,💰,3,탐험가,Inflación y Precios,Por qué sube el coste de la vida,100,🥉 브론즈 배지
+사회,💰 Economía y Finanzas,💰,4,견습생,Mercados Bursátiles,"Bolsa, acciones, índices",200,
+사회,💰 Economía y Finanzas,💰,5,견습생,Comercio Internacional,"Globalización, aranceles, tratados",200,
+사회,💰 Economía y Finanzas,💰,6,견습생,Criptomonedas y Blockchain,"Bitcoin, tecnología descentralizada",200,🥈 실버 배지
+사회,💰 Economía y Finanzas,💰,7,전문가,Crisis Económicas,"Grandes recesiones, patrones",350,
+사회,💰 Economía y Finanzas,💰,8,전문가,Política Monetaria,"Bancos centrales, tipos de interés",350,🥇 골드 배지
+사회,💰 Economía y Finanzas,💰,9,전문가,Economía Conductual,Psicología de las decisiones financieras,500,
+사회,💰 Economía y Finanzas,💰,10,전문가,El Futuro de la Economía,"Post-capitalismo, economía circular",500,💎 다이아몬드 배지
+자연,🐋 Biología Marina,🐋,1,탐험가,Los Océanos del Mundo,"Geografía oceánica, corrientes",100,
+자연,🐋 Biología Marina,🐋,2,탐험가,Arrecifes de Coral,"Ecosistemas submarinos, biodiversidad",100,
+자연,🐋 Biología Marina,🐋,3,탐험가,Grandes Mamíferos Marinos,"Ballenas, delfines, comunicación",100,🥉 브론즈 배지
+자연,🐋 Biología Marina,🐋,4,견습생,El Abismo: Vida en las Profundidades,"Criaturas abisales, bioluminiscencia",200,
+자연,🐋 Biología Marina,🐋,5,견습생,Tiburones: Depredadores del Mar,"Especies, mitos y realidades",200,
+자연,🐋 Biología Marina,🐋,6,견습생,Migraciones Oceánicas,"Rutas, instintos, supervivencia",200,🥈 실버 배지
+자연,🐋 Biología Marina,🐋,7,전문가,Contaminación Marina,"Plásticos, acidificación, soluciones",350,
+자연,🐋 Biología Marina,🐋,8,전문가,Oceanografía y Clima,El océano como regulador climático,350,🥇 골드 배지
+자연,🐋 Biología Marina,🐋,9,전문가,Biología Molecular Marina,Genética de organismos marinos,500,
+자연,🐋 Biología Marina,🐋,10,전문가,El Océano del Futuro,"Conservación, explotación sostenible",500,💎 다이아몬드 배지
+사회,🧩 Psicología Humana,🧩,1,탐험가,Introducción a la Psicología,"Corrientes, Freud, conductismo",100,
+사회,🧩 Psicología Humana,🧩,2,탐험가,Personalidad y Temperamento,"Big Five, tipos psicológicos",100,
+사회,🧩 Psicología Humana,🧩,3,탐험가,Percepción y Atención,"Ilusiones, sesgos perceptivos",100,🥉 브론즈 배지
+사회,🧩 Psicología Humana,🧩,4,견습생,Psicología Social,"Conformidad, obediencia, grupos",200,
+사회,🧩 Psicología Humana,🧩,5,견습생,Motivación y Hábitos,"Ciclos de hábitos, motivación intrínseca",200,
+사회,🧩 Psicología Humana,🧩,6,견습생,Toma de Decisiones,"Heurísticas, sesgos cognitivos",200,🥈 실버 배지
+사회,🧩 Psicología Humana,🧩,7,전문가,Psicología del Desarrollo,"Infancia a vejez, etapas clave",350,
+사회,🧩 Psicología Humana,🧩,8,전문가,Trastornos Mentales,"Ansiedad, depresión, esquizofrenia",350,🥇 골드 배지
+사회,🧩 Psicología Humana,🧩,9,전문가,Psicología Positiva,"Flow, resiliencia, bienestar",500,
+사회,🧩 Psicología Humana,🧩,10,전문가,Manipulación y Persuasión,"Técnicas, propaganda, defensa crítica",500,💎 다이아몬드 배지
+과학,⚛️ Física Fundamental,⚛️,1,탐험가,Las Leyes de Newton,"Movimiento, fuerza, gravedad",100,
+과학,⚛️ Física Fundamental,⚛️,2,탐험가,Energía y Termodinámica,"Conservación, calor, entropía",100,
+과학,⚛️ Física Fundamental,⚛️,3,탐험가,Ondas y Sonido,"Vibraciones, frecuencia, música",100,🥉 브론즈 배지
+과학,⚛️ Física Fundamental,⚛️,4,견습생,Electricidad y Magnetismo,"Campos, corriente, Maxwell",200,
+과학,⚛️ Física Fundamental,⚛️,5,견습생,Relatividad de Einstein,"Espacio-tiempo, E=mc²",200,
+과학,⚛️ Física Fundamental,⚛️,6,견습생,Física Nuclear,"Átomos, radiactividad, fisión",200,🥈 실버 배지
+과학,⚛️ Física Fundamental,⚛️,7,전문가,Mecánica Cuántica,"Dualidad onda-partícula, incertidumbre",350,
+과학,⚛️ Física Fundamental,⚛️,8,전문가,Partículas Subatómicas,"Quarks, bosón de Higgs, modelo estándar",350,🥇 골드 배지
+과학,⚛️ Física Fundamental,⚛️,9,전문가,Teoría de Cuerdas,"Dimensiones extra, unificación",500,
+과학,⚛️ Física Fundamental,⚛️,10,전문가,Los Misterios Sin Resolver,"Gravedad cuántica, multiverso",500,💎 다이아몬드 배지
+인문학,💭 Filosofía,💭,1,탐험가,Sócrates y el Arte de Preguntar,"Método socrático, mayéutica",100,
+인문학,💭 Filosofía,💭,2,탐험가,Platón y las Ideas,"Mundo ideal, alegoría de la caverna",100,
+인문학,💭 Filosofía,💭,3,탐험가,Aristóteles: Lógica y Ética,"Silogismo, virtud, eudaimonía",100,🥉 브론즈 배지
+인문학,💭 Filosofía,💭,4,견습생,Filosofía Medieval,"San Agustín, Santo Tomás, fe y razón",200,
+인문학,💭 Filosofía,💭,5,견습생,Racionalismo vs Empirismo,"Descartes, Hume, conocimiento",200,
+인문학,💭 Filosofía,💭,6,견습생,Kant y la Ilustración,"Imperativo categórico, crítica",200,🥈 실버 배지
+인문학,💭 Filosofía,💭,7,전문가,Existencialismo,"Nietzsche, Sartre, libertad radical",350,
+인문학,💭 Filosofía,💭,8,전문가,Filosofía Oriental,"Confucio, Buda, Lao-Tse",350,🥇 골드 배지
+인문학,💭 Filosofía,💭,9,전문가,Filosofía del Lenguaje y la Mente,"Wittgenstein, conciencia, IA",500,
+인문학,💭 Filosofía,💭,10,전문가,Ética Contemporánea,"Bioética, justicia global, transhumanismo",500,💎 다이아몬드 배지
+과학,🧬 Evolución y Genética,🧬,1,탐험가,Darwin y la Selección Natural,"Teoría de la evolución, Galápagos",100,
+과학,🧬 Evolución y Genética,🧬,2,탐험가,ADN: El Código de la Vida,"Estructura, genes, cromosomas",100,
+과학,🧬 Evolución y Genética,🧬,3,탐험가,Herencia y Mendel,"Leyes de la herencia, rasgos",100,🥉 브론즈 배지
+과학,🧬 Evolución y Genética,🧬,4,견습생,Evolución Humana,Australopithecus a Homo sapiens,200,
+과학,🧬 Evolución y Genética,🧬,5,견습생,Mutaciones y Adaptación,Motor del cambio evolutivo,200,
+과학,🧬 Evolución y Genética,🧬,6,견습생,Extinción y Especiación,"Extinciones masivas, nueva vida",200,🥈 실버 배지
+과학,🧬 Evolución y Genética,🧬,7,전문가,Genómica y Proteómica,"Proyecto Genoma, secuenciación",350,
+과학,🧬 Evolución y Genética,🧬,8,전문가,Epigenética,Genes que se encienden y apagan,350,🥇 골드 배지
+과학,🧬 Evolución y Genética,🧬,9,전문가,CRISPR y Edición Genética,"Terapia génica, bebés diseñados",500,
+과학,🧬 Evolución y Genética,🧬,10,전문가,Biología Sintética,"Crear vida artificial, futuro genético",500,💎 다이아몬드 배지
+사회,🌍 Geopolítica Mundial,🌍,1,탐험가,¿Qué es la Geopolítica?,"Conceptos, poder, territorios",100,
+사회,🌍 Geopolítica Mundial,🌍,2,탐험가,Las Grandes Potencias,"EE.UU., China, Rusia, UE",100,
+사회,🌍 Geopolítica Mundial,🌍,3,탐험가,Conflictos Territoriales,"Fronteras disputadas, recursos",100,🥉 브론즈 배지
+사회,🌍 Geopolítica Mundial,🌍,4,견습생,La Guerra Fría,"Bipolaridad, proxy wars, caída del muro",200,
+사회,🌍 Geopolítica Mundial,🌍,5,견습생,Oriente Medio,"Petróleo, religión, conflictos",200,
+사회,🌍 Geopolítica Mundial,🌍,6,견습생,El Ascenso de China,"Ruta de la Seda, influencia global",200,🥈 실버 배지
+사회,🌍 Geopolítica Mundial,🌍,7,전문가,Organizaciones Internacionales,"ONU, OTAN, G20, poder blando",350,
+사회,🌍 Geopolítica Mundial,🌍,8,전문가,Ciberguerra y Espionaje,"Guerra híbrida, desinformación",350,🥇 골드 배지
+사회,🌍 Geopolítica Mundial,🌍,9,전문가,Recursos y Guerras del Futuro,"Agua, litio, tierras raras",500,
+사회,🌍 Geopolítica Mundial,🌍,10,전문가,Nuevo Orden Mundial,"Multipolaridad, escenarios 2050",500,💎 다이아몬드 배지
+인문학,🎨 Arte y Grandes Maestros,🎨,1,탐험가,Arte Prehistórico y Antiguo,"Altamira, Egipto, Grecia",100,
+인문학,🎨 Arte y Grandes Maestros,🎨,2,탐험가,El Renacimiento,"Da Vinci, Miguel Ángel, Botticelli",100,
+인문학,🎨 Arte y Grandes Maestros,🎨,3,탐험가,Barroco y Clasicismo,"Caravaggio, Velázquez, Rembrandt",100,🥉 브론즈 배지
+인문학,🎨 Arte y Grandes Maestros,🎨,4,견습생,Impresionismo,"Monet, Renoir, luz y color",200,
+인문학,🎨 Arte y Grandes Maestros,🎨,5,견습생,Vanguardias del Siglo XX,"Picasso, Dalí, Kandinsky",200,
+인문학,🎨 Arte y Grandes Maestros,🎨,6,견습생,Arte Contemporáneo,"Pop Art, minimalismo, Banksy",200,🥈 실버 배지
+인문학,🎨 Arte y Grandes Maestros,🎨,7,전문가,Fotografía como Arte,"Historia, maestros, revolución digital",350,
+인문학,🎨 Arte y Grandes Maestros,🎨,8,전문가,Grandes Museos del Mundo,"Louvre, MoMA, Prado, Hermitage",350,🥇 골드 배지
+인문학,🎨 Arte y Grandes Maestros,🎨,9,전문가,El Mercado del Arte,"Subastas, falsificaciones, inversión",500,
+인문학,🎨 Arte y Grandes Maestros,🎨,10,전문가,Arte y Tecnología: IA Creativa,"Arte generativo, NFTs, debate",500,💎 다이아몬드 배지
+자연,🌡️ Cambio Climático,🌡️,1,탐험가,El Efecto Invernadero,"CO₂, gases, calentamiento",100,
+자연,🌡️ Cambio Climático,🌡️,2,탐험가,Historia del Clima en la Tierra,"Eras glaciales, ciclos naturales",100,
+자연,🌡️ Cambio Climático,🌡️,3,탐험가,Impacto Humano,"Industria, transporte, deforestación",100,🥉 브론즈 배지
+자연,🌡️ Cambio Climático,🌡️,4,견습생,Deshielo y Nivel del Mar,"Polos, glaciares, ciudades en riesgo",200,
+자연,🌡️ Cambio Climático,🌡️,5,견습생,Fenómenos Extremos,"Huracanes, sequías, olas de calor",200,
+자연,🌡️ Cambio Climático,🌡️,6,견습생,Biodiversidad Amenazada,"Sexta extinción, ecosistemas en peligro",200,🥈 실버 배지
+자연,🌡️ Cambio Climático,🌡️,7,전문가,Energías Renovables,"Solar, eólica, hidrógeno verde",350,
+자연,🌡️ Cambio Climático,🌡️,8,전문가,Acuerdos y Política Climática,"París, COP, compromisos nacionales",350,🥇 골드 배지
+자연,🌡️ Cambio Climático,🌡️,9,전문가,Geoingeniería,"Soluciones radicales, riesgos",500,
+자연,🌡️ Cambio Climático,🌡️,10,전문가,Escenarios 2050-2100,"Modelos climáticos, futuros posibles",500,💎 다이아몬드 배지
+역사,🧭 Exploración y Aventura,🧭,1,탐험가,Los Grandes Navegantes,"Colón, Magallanes, Vasco de Gama",100,
+역사,🧭 Exploración y Aventura,🧭,2,탐험가,Conquista de los Polos,"Amundsen, Scott, Shackleton",100,
+역사,🧭 Exploración y Aventura,🧭,3,탐험가,Exploradores del Mundo Antiguo,"Marco Polo, Ibn Battuta, Zheng He",100,🥉 브론즈 배지
+역사,🧭 Exploración y Aventura,🧭,4,견습생,La Carrera Espacial,"Gagarin, Apollo 11, MIR",200,
+역사,🧭 Exploración y Aventura,🧭,5,견습생,Expediciones Submarinas,"Cousteau, Mariana, océanos profundos",200,
+역사,🧭 Exploración y Aventura,🧭,6,견습생,Exploración de Selvas y Desiertos,"Amazonia, Sahara, expediciones perdidas",200,🥈 실버 배지
+역사,🧭 Exploración y Aventura,🧭,7,전문가,Montañismo Extremo,"Everest, K2, historia alpina",350,
+역사,🧭 Exploración y Aventura,🧭,8,전문가,Arqueología Aventurera,"Tutankamón, Machu Picchu, Pompeya",350,🥇 골드 배지
+역사,🧭 Exploración y Aventura,🧭,9,전문가,Exploración Robótica,"Marte, drones submarinos, cuevas",500,
+역사,🧭 Exploración y Aventura,🧭,10,전문가,Próximas Fronteras,"Colonización espacial, océano profundo",500,💎 다이아몬드 배지
+건강,🥗 Nutrición y Alimentación,🥗,1,탐험가,Macronutrientes,"Proteínas, carbohidratos, grasas",100,
+건강,🥗 Nutrición y Alimentación,🥗,2,탐험가,Vitaminas y Minerales,Micronutrientes esenciales,100,
+건강,🥗 Nutrición y Alimentación,🥗,3,탐험가,Digestión y Metabolismo,Cómo tu cuerpo procesa los alimentos,100,🥉 브론즈 배지
+건강,🥗 Nutrición y Alimentación,🥗,4,견습생,Dietas del Mundo,"Mediterránea, asiática, nórdica",200,
+건강,🥗 Nutrición y Alimentación,🥗,5,견습생,Mitos Nutricionales,Desmentir creencias falsas,200,
+건강,🥗 Nutrición y Alimentación,🥗,6,견습생,Microbioma Intestinal,"Bacterias buenas, segundo cerebro",200,🥈 실버 배지
+건강,🥗 Nutrición y Alimentación,🥗,7,전문가,Nutrición Deportiva,"Rendimiento, suplementos, recuperación",350,
+건강,🥗 Nutrición y Alimentación,🥗,8,전문가,Alimentos del Futuro,"Insectos, carne de laboratorio, algas",350,🥇 골드 배지
+건강,🥗 Nutrición y Alimentación,🥗,9,전문가,Nutrigenómica,ADN y alimentación personalizada,500,
+건강,🥗 Nutrición y Alimentación,🥗,10,전문가,Hambre Global y Sostenibilidad,"Seguridad alimentaria, soluciones",500,💎 다이아몬드 배지
+인문학,🎵 Música: Historia y Teoría,🎵,1,탐험가,Los Orígenes de la Música,"Instrumentos prehistóricos, primeras melodías",100,
+인문학,🎵 Música: Historia y Teoría,🎵,2,탐험가,Música Clásica: Los Grandes,"Bach, Mozart, Beethoven",100,
+인문학,🎵 Música: Historia y Teoría,🎵,3,탐험가,"Ritmo, Melodía y Armonía",Fundamentos de la teoría musical,100,🥉 브론즈 배지
+인문학,🎵 Música: Historia y Teoría,🎵,4,견습생,Jazz y Blues,"Nueva Orleans, improvisación, soul",200,
+인문학,🎵 Música: Historia y Teoría,🎵,5,견습생,Rock and Roll,"Elvis, Beatles, revolución cultural",200,
+인문학,🎵 Música: Historia y Teoría,🎵,6,견습생,Música Electrónica,"Sintetizadores, DJs, géneros",200,🥈 실버 배지
+인문학,🎵 Música: Historia y Teoría,🎵,7,전문가,Música del Mundo,"Flamenco, raga, samba, gamelan",350,
+인문학,🎵 Música: Historia y Teoría,🎵,8,전문가,La Industria Musical,"Discográficas, streaming, negocio",350,🥇 골드 배지
+인문학,🎵 Música: Historia y Teoría,🎵,9,전문가,Neurociencia de la Música,Por qué la música nos emociona,500,
+인문학,🎵 Música: Historia y Teoría,🎵,10,전문가,IA y Composición Musical,"Algoritmos creativos, futuro sonoro",500,💎 다이아몬드 배지
+자연,🌋 Volcanes y Terremotos,🌋,1,탐험가,La Tierra por Dentro,"Capas, núcleo, manto, corteza",100,
+자연,🌋 Volcanes y Terremotos,🌋,2,탐험가,Tectónica de Placas,"Placas en movimiento, pangea",100,
+자연,🌋 Volcanes y Terremotos,🌋,3,탐험가,Volcanes: Tipos y Erupciones,"Escudo, estrato, fisurales",100,🥉 브론즈 배지
+자연,🌋 Volcanes y Terremotos,🌋,4,견습생,Grandes Erupciones de la Historia,"Pompeya, Krakatoa, Pinatubo",200,
+자연,🌋 Volcanes y Terremotos,🌋,5,견습생,Terremotos y Tsunamis,"Escalas, ondas sísmicas, prevención",200,
+자연,🌋 Volcanes y Terremotos,🌋,6,견습생,El Cinturón de Fuego,"Pacífico, zonas sísmicas activas",200,🥈 실버 배지
+자연,🌋 Volcanes y Terremotos,🌋,7,전문가,Geotermia y Recursos,"Energía volcánica, minerales",350,
+자연,🌋 Volcanes y Terremotos,🌋,8,전문가,Supervolcanes,"Yellowstone, Toba, amenazas globales",350,🥇 골드 배지
+자연,🌋 Volcanes y Terremotos,🌋,9,전문가,Predicción Sísmica,"Tecnología, IA, sistemas de alerta",500,
+자연,🌋 Volcanes y Terremotos,🌋,10,전문가,Geología Planetaria,"Volcanes en Marte, Ío, Venus",500,💎 다이아몬드 배지
+기술,🔐 Criptografía y Ciberseguridad,🔐,1,탐험가,Historia de los Códigos Secretos,"César, Enigma, espionaje",100,
+기술,🔐 Criptografía y Ciberseguridad,🔐,2,탐험가,Criptografía Moderna,"RSA, AES, claves públicas",100,
+기술,🔐 Criptografía y Ciberseguridad,🔐,3,탐험가,Internet y Seguridad Básica,"HTTPS, contraseñas, phishing",100,🥉 브론즈 배지
+기술,🔐 Criptografía y Ciberseguridad,🔐,4,견습생,Hackers: Mitos y Realidad,"White/black hat, ciberataques famosos",200,
+기술,🔐 Criptografía y Ciberseguridad,🔐,5,견습생,Malware y Ransomware,"Virus, troyanos, protección",200,
+기술,🔐 Criptografía y Ciberseguridad,🔐,6,견습생,Ingeniería Social,"Manipulación, pretexting, defensa",200,🥈 실버 배지
+기술,🔐 Criptografía y Ciberseguridad,🔐,7,전문가,Blockchain y Seguridad,"Descentralización, contratos inteligentes",350,
+기술,🔐 Criptografía y Ciberseguridad,🔐,8,전문가,Ciberguerra Estatal,"Stuxnet, espionaje digital, naciones",350,🥇 골드 배지
+기술,🔐 Criptografía y Ciberseguridad,🔐,9,전문가,Criptografía Cuántica,Computación cuántica vs cifrado actual,500,
+기술,🔐 Criptografía y Ciberseguridad,🔐,10,전문가,Privacidad Digital Total,"Anonimato, Tor, futuro de la privacidad",500,💎 다이아몬드 배지
+건강,🏥 Medicina y Cuerpo Humano,🏥,1,탐험가,Anatomía Básica,"Sistemas del cuerpo, órganos vitales",100,
+건강,🏥 Medicina y Cuerpo Humano,🏥,2,탐험가,El Sistema Inmunológico,"Defensas, anticuerpos, vacunas",100,
+건강,🏥 Medicina y Cuerpo Humano,🏥,3,탐험가,Historia de la Medicina,"Hipócrates, penicilina, cirugía",100,🥉 브론즈 배지
+건강,🏥 Medicina y Cuerpo Humano,🏥,4,견습생,Pandemias de la Historia,"Peste negra, gripe española, COVID",200,
+건강,🏥 Medicina y Cuerpo Humano,🏥,5,견습생,Cáncer: Batalla Interna,"Tipos, causas, tratamientos",200,
+건강,🏥 Medicina y Cuerpo Humano,🏥,6,견습생,Farmacología Básica,Cómo funcionan los medicamentos,200,🥈 실버 배지
+건강,🏥 Medicina y Cuerpo Humano,🏥,7,전문가,Cirugía Robótica,"Da Vinci, precisión, futuro quirúrgico",350,
+건강,🏥 Medicina y Cuerpo Humano,🏥,8,전문가,Terapias Génicas,Editar ADN para curar enfermedades,350,🥇 골드 배지
+건강,🏥 Medicina y Cuerpo Humano,🏥,9,전문가,Neurociencia Médica,"Implantes cerebrales, neuroestimulación",500,
+건강,🏥 Medicina y Cuerpo Humano,🏥,10,전문가,Longevidad y Anti-aging,"Telómeros, senoterapia, vivir más",500,💎 다이아몬드 배지
+인문학,⚡ Mitología Universal,⚡,1,탐험가,Mitología Griega,"Zeus, Odisea, héroes y monstruos",100,
+인문학,⚡ Mitología Universal,⚡,2,탐험가,Mitología Nórdica,"Odín, Thor, Ragnarök",100,
+인문학,⚡ Mitología Universal,⚡,3,탐험가,Mitología Egipcia,"Ra, Osiris, el más allá",100,🥉 브론즈 배지
+인문학,⚡ Mitología Universal,⚡,4,견습생,Mitología Romana,"Adaptación griega, fundación de Roma",200,
+인문학,⚡ Mitología Universal,⚡,5,견습생,Mitología Mesopotámica,"Gilgamesh, diluvio, creación",200,
+인문학,⚡ Mitología Universal,⚡,6,견습생,Mitología Celta y Artúrica,"Druidas, Avalon, Excalibur",200,🥈 실버 배지
+인문학,⚡ Mitología Universal,⚡,7,전문가,Mitología Asiática,"Hinduismo, budismo, dragones chinos",350,
+인문학,⚡ Mitología Universal,⚡,8,전문가,Mitología Mesoamericana,"Quetzalcóatl, Popol Vuh, cosmos maya",350,🥇 골드 배지
+인문학,⚡ Mitología Universal,⚡,9,전문가,Arquetipos y Jung,"Inconsciente colectivo, el héroe",500,
+인문학,⚡ Mitología Universal,⚡,10,전문가,Mitos Modernos,"Superhéroes, Star Wars, nuevas mitologías",500,💎 다이아몬드 배지
+기술,🦾 Robótica e Ingeniería,🦾,1,탐험가,Historia de los Autómatas,"Da Vinci, relojería, primeros robots",100,
+기술,🦾 Robótica e Ingeniería,🦾,2,탐험가,Mecánica Básica de Robots,"Sensores, actuadores, control",100,
+기술,🦾 Robótica e Ingeniería,🦾,3,탐험가,Robots en la Industria,"Manufactura, logística, automatización",100,🥉 브론즈 배지
+기술,🦾 Robótica e Ingeniería,🦾,4,견습생,Drones y Vehículos Autónomos,"Coches sin conductor, delivery",200,
+기술,🦾 Robótica e Ingeniería,🦾,5,견습생,Robots Humanoides,"Boston Dynamics, Atlas, Sophia",200,
+기술,🦾 Robótica e Ingeniería,🦾,6,견습생,Biomimética,Robots inspirados en la naturaleza,200,🥈 실버 배지
+기술,🦾 Robótica e Ingeniería,🦾,7,전문가,Prótesis y Exoesqueletos,"Bionics, manos robóticas, movilidad",350,
+기술,🦾 Robótica e Ingeniería,🦾,8,전문가,Robótica Espacial,"Rovers, ISS, reparaciones en órbita",350,🥇 골드 배지
+기술,🦾 Robótica e Ingeniería,🦾,9,전문가,Nanorobots,"Medicina microscópica, ensamblaje molecular",500,
+기술,🦾 Robótica e Ingeniería,🦾,10,전문가,Robots Conscientes,"IA embodied, derechos de robots, ética",500,💎 다이아몬드 배지
+역사,⚔️ Guerras Mundiales,⚔️,1,탐험가,Causas de la Gran Guerra,"Alianzas, imperialismo, Sarajevo",100,
+역사,⚔️ Guerras Mundiales,⚔️,2,탐험가,Trincheras: WWI,"Guerra de desgaste, gas, Somme",100,
+역사,⚔️ Guerras Mundiales,⚔️,3,탐험가,El Tratado de Versalles,"Consecuencias, humillación, semillas",100,🥉 브론즈 배지
+역사,⚔️ Guerras Mundiales,⚔️,4,견습생,Ascenso del Nazismo,"Hitler, propaganda, Tercer Reich",200,
+역사,⚔️ Guerras Mundiales,⚔️,5,견습생,Batallas Decisivas WWII,"Stalingrado, Midway, Normandía",200,
+역사,⚔️ Guerras Mundiales,⚔️,6,견습생,El Holocausto,"Genocidio, campos, memoria",200,🥈 실버 배지
+역사,⚔️ Guerras Mundiales,⚔️,7,전문가,El Frente del Pacífico,"Pearl Harbor, Iwo Jima, Hiroshima",350,
+역사,⚔️ Guerras Mundiales,⚔️,8,전문가,Espionaje y Criptografía,"Enigma, Turing, agentes dobles",350,🥇 골드 배지
+역사,⚔️ Guerras Mundiales,⚔️,9,전문가,Nüremberg y Justicia,"Juicios, derecho internacional",500,
+역사,⚔️ Guerras Mundiales,⚔️,10,전문가,Lecciones para el Siglo XXI,"Paralelos, prevención, memoria",500,💎 다이아몬드 배지
+인문학,🏗️ Arquitectura Mundial,🏗️,1,탐험가,Pirámides y Templos,"Egipto, Grecia, Angkor Wat",100,
+인문학,🏗️ Arquitectura Mundial,🏗️,2,탐험가,Roma y sus Monumentos,"Coliseo, acueductos, Panteón",100,
+인문학,🏗️ Arquitectura Mundial,🏗️,3,탐험가,Catedrales Góticas,"Notre-Dame, vitrales, arbotantes",100,🥉 브론즈 배지
+인문학,🏗️ Arquitectura Mundial,🏗️,4,견습생,Renacimiento y Barroco,"Brunelleschi, Bernini, Versalles",200,
+인문학,🏗️ Arquitectura Mundial,🏗️,5,견습생,Rascacielos y Acero,"Chicago, Empire State, ingeniería",200,
+인문학,🏗️ Arquitectura Mundial,🏗️,6,견습생,Bauhaus y Modernismo,"Le Corbusier, Mies van der Rohe",200,🥈 실버 배지
+인문학,🏗️ Arquitectura Mundial,🏗️,7,전문가,Arquitectura Sostenible,"Edificios verdes, pasivos, biomimética",350,
+인문학,🏗️ Arquitectura Mundial,🏗️,8,전문가,Megaestructuras,"Burj Khalifa, presas, puentes",350,🥇 골드 배지
+인문학,🏗️ Arquitectura Mundial,🏗️,9,전문가,Ciudades del Futuro,"NEOM, ciudades flotantes, smart cities",500,
+인문학,🏗️ Arquitectura Mundial,🏗️,10,전문가,Arquitectura Extraterrestre,"Hábitats en Marte, impresión 3D lunar",500,💎 다이아몬드 배지
+자연,🤿 Océano y Exploración Submarina,🤿,1,탐험가,Cartografía del Fondo Marino,"Dorsales, fosas, relieve submarino",100,
+자연,🤿 Océano y Exploración Submarina,🤿,2,탐험가,Naufragios Legendarios,"Titanic, galeones, tesoros",100,
+자연,🤿 Océano y Exploración Submarina,🤿,3,탐험가,Submarinos: Historia,"Nautilus, U-boats, nucleares",100,🥉 브론즈 배지
+자연,🤿 Océano y Exploración Submarina,🤿,4,견습생,Fuentes Hidrotermales,"Vida sin sol, quimiosíntesis",200,
+자연,🤿 Océano y Exploración Submarina,🤿,5,견습생,Ciudades Hundidas,"Dwarka, Port Royal, misterios",200,
+자연,🤿 Océano y Exploración Submarina,🤿,6,견습생,Tecnología de Buceo,"Saturación, ROVs, AUVs",200,🥈 실버 배지
+자연,🤿 Océano y Exploración Submarina,🤿,7,전문가,Minería Submarina,"Recursos, nódulos, controversia",350,
+자연,🤿 Océano y Exploración Submarina,🤿,8,전문가,Acústica Submarina,"Sonar, comunicación cetácea",350,🥇 골드 배지
+자연,🤿 Océano y Exploración Submarina,🤿,9,전문가,Bases Submarinas,"Hábitats sumergidos, Aquarius",500,
+자연,🤿 Océano y Exploración Submarina,🤿,10,전문가,Colonización Oceánica,Ciudades submarinas del futuro,500,💎 다이아몬드 배지
+기술,💻 Civilización Digital,💻,1,탐험가,De ARPANET a Internet,"Nacimiento de la red, WWW",100,
+기술,💻 Civilización Digital,💻,2,탐험가,Redes Sociales,"Facebook, Twitter, impacto social",100,
+기술,💻 Civilización Digital,💻,3,탐험가,Smartphones y Apps,"iPhone, ecosistema móvil",100,🥉 브론즈 배지
+기술,💻 Civilización Digital,💻,4,견습생,Big Data,"Datos masivos, análisis, valor",200,
+기술,💻 Civilización Digital,💻,5,견습생,Cloud Computing,"La nube, servicios, infraestructura",200,
+기술,💻 Civilización Digital,💻,6,견습생,Realidad Virtual y Aumentada,"Metaverso, aplicaciones, inmersión",200,🥈 실버 배지
+기술,💻 Civilización Digital,💻,7,전문가,Internet de las Cosas,"Dispositivos conectados, smart homes",350,
+기술,💻 Civilización Digital,💻,8,전문가,Computación Cuántica,"Qubits, supremacía, aplicaciones",350,🥇 골드 배지
+기술,💻 Civilización Digital,💻,9,전문가,Singularidad Tecnológica,"Exponencialidad, transhumanismo",500,
+기술,💻 Civilización Digital,💻,10,전문가,Ética Digital,"Privacidad, algoritmos, democracia",500,💎 다이아몬드 배지
+과학,🦕 Dinosaurios y Paleontología,🦕,1,탐험가,Los Primeros Fósiles,"Qué son, cómo se forman",100,
+과학,🦕 Dinosaurios y Paleontología,🦕,2,탐험가,Era Mesozoica,"Triásico, Jurásico, Cretácico",100,
+과학,🦕 Dinosaurios y Paleontología,🦕,3,탐험가,Los Grandes Dinosaurios,"T-Rex, Diplodocus, Triceratops",100,🥉 브론즈 배지
+과학,🦕 Dinosaurios y Paleontología,🦕,4,견습생,Depredadores vs Herbívoros,"Estrategias, armas naturales",200,
+과학,🦕 Dinosaurios y Paleontología,🦕,5,견습생,Pterosaurios y Reptiles Marinos,Cielo y mar prehistóricos,200,
+과학,🦕 Dinosaurios y Paleontología,🦕,6,견습생,La Gran Extinción,"Asteroide Chicxulub, invierno nuclear",200,🥈 실버 배지
+과학,🦕 Dinosaurios y Paleontología,🦕,7,전문가,Plumas y Evolución Aviar,"Dinosaurios con plumas, aves modernas",350,
+과학,🦕 Dinosaurios y Paleontología,🦕,8,전문가,Paleontología de Campo,"Excavaciones, técnicas, descubrimientos",350,🥇 골드 배지
+과학,🦕 Dinosaurios y Paleontología,🦕,9,전문가,ADN Antiguo,¿Clonar un dinosaurio? Límites reales,500,
+과학,🦕 Dinosaurios y Paleontología,🦕,10,전문가,Mundos Perdidos,"Otros planetas, vida prehistórica remota",500,💎 다이아몬드 배지
+사회,👑 Liderazgo y Estrategia,👑,1,탐험가,¿Qué Hace a un Líder?,"Cualidades, tipos de liderazgo",100,
+사회,👑 Liderazgo y Estrategia,👑,2,탐험가,Líderes de la Historia,"Alejandro, Napoleón, Mandela",100,
+사회,👑 Liderazgo y Estrategia,👑,3,탐험가,El Arte de la Guerra,"Sun Tzu, estrategia milenaria",100,🥉 브론즈 배지
+사회,👑 Liderazgo y Estrategia,👑,4,견습생,Liderazgo Empresarial,"Steve Jobs, Elon Musk, Bezos",200,
+사회,👑 Liderazgo y Estrategia,👑,5,견습생,Negociación y Persuasión,"Harvard method, influencia",200,
+사회,👑 Liderazgo y Estrategia,👑,6,견습생,Gestión de Crisis,"Decisiones bajo presión, casos reales",200,🥈 실버 배지
+사회,👑 Liderazgo y Estrategia,👑,7,전문가,Inteligencia Emocional,"Empatía, autocontrol, Goleman",350,
+사회,👑 Liderazgo y Estrategia,👑,8,전문가,Cultura Organizacional,"Valores, innovación, equipos",350,🥇 골드 배지
+사회,👑 Liderazgo y Estrategia,👑,9,전문가,Liderazgo en la Era IA,"Adaptación, humano+máquina",500,
+사회,👑 Liderazgo y Estrategia,👑,10,전문가,Tu Estrategia Personal,Diseñar tu propio camino de liderazgo,500,💎 다이아몬드 배지
+인문학,🏺 Antropología Cultural,🏺,1,탐험가,¿Qué es la Cultura?,"Definiciones, diversidad humana",100,
+인문학,🏺 Antropología Cultural,🏺,2,탐험가,Tribus y Civilizaciones,De nómadas a imperios,100,
+인문학,🏺 Antropología Cultural,🏺,3,탐험가,Rituales y Tradiciones,"Ceremonias, ritos de paso",100,🥉 브론즈 배지
+인문학,🏺 Antropología Cultural,🏺,4,견습생,Lenguas del Mundo,"Familias lingüísticas, extinción",200,
+인문학,🏺 Antropología Cultural,🏺,5,견습생,Religiones Comparadas,"Cristianismo, Islam, Budismo, Hinduismo",200,
+인문학,🏺 Antropología Cultural,🏺,6,견습생,Gastronomía y Cultura,"Cocina como identidad, tabúes",200,🥈 실버 배지
+인문학,🏺 Antropología Cultural,🏺,7,전문가,Globalización Cultural,"Homogeneización, resistencia, fusión",350,
+인문학,🏺 Antropología Cultural,🏺,8,전문가,Pueblos Indígenas,"Conocimiento ancestral, derechos",350,🥇 골드 배지
+인문학,🏺 Antropología Cultural,🏺,9,전문가,Antropología Digital,"Culturas online, identidad virtual",500,
+인문학,🏺 Antropología Cultural,🏺,10,전문가,El Futuro de la Humanidad,"Convergencia cultural, diversidad",500,💎 다이아몬드 배지
+기술,⚡ Energía y Sostenibilidad,⚡,1,탐험가,Fuentes de Energía,"Fósiles, renovables, nuclear",100,
+기술,⚡ Energía y Sostenibilidad,⚡,2,탐험가,Electricidad: Cómo Funciona,"Generación, distribución, red eléctrica",100,
+기술,⚡ Energía y Sostenibilidad,⚡,3,탐험가,El Petróleo y su Historia,"Oro negro, OPEP, geopolítica",100,🥉 브론즈 배지
+기술,⚡ Energía y Sostenibilidad,⚡,4,견습생,Energía Solar,"Paneles, fotovoltaica, proyectos",200,
+기술,⚡ Energía y Sostenibilidad,⚡,5,견습생,Energía Eólica e Hídrica,"Turbinas, presas, mareas",200,
+기술,⚡ Energía y Sostenibilidad,⚡,6,견습생,Energía Nuclear Moderna,"Fisión, fusión, ITER",200,🥈 실버 배지
+기술,⚡ Energía y Sostenibilidad,⚡,7,전문가,Baterías y Almacenamiento,"Litio, hidrógeno, supercondensadores",350,
+기술,⚡ Energía y Sostenibilidad,⚡,8,전문가,Transición Energética,"Abandono del carbón, políticas",350,🥇 골드 배지
+기술,⚡ Energía y Sostenibilidad,⚡,9,전문가,Fusión Nuclear,El santo grial energético,500,
+기술,⚡ Energía y Sostenibilidad,⚡,10,전문가,Civilización Tipo I,"Escala Kardashov, futuro energético",500,💎 다이아몬드 배지
+자연,🔮 Misterios y Fenómenos,🔮,1,탐험가,Triángulo de las Bermudas,"Desapariciones, explicaciones",100,
+자연,🔮 Misterios y Fenómenos,🔮,2,탐험가,Enigmas Arqueológicos,"Stonehenge, Nazca, Moáis",100,
+자연,🔮 Misterios y Fenómenos,🔮,3,탐험가,Criaturas Misteriosas,"Nessie, Bigfoot, criptozoología",100,🥉 브론즈 배지
+자연,🔮 Misterios y Fenómenos,🔮,4,견습생,Fenómenos Atmosféricos,"Rayos en bola, auroras, sprites",200,
+자연,🔮 Misterios y Fenómenos,🔮,5,견습생,Civilizaciones Perdidas,"Atlántida, Lemuria, evidencias",200,
+자연,🔮 Misterios y Fenómenos,🔮,6,견습생,Fenómenos Paranormales,"Estudio científico, explicaciones",200,🥈 실버 배지
+자연,🔮 Misterios y Fenómenos,🔮,7,전문가,Misterios del Espacio,"Señal WOW, Oumuamua, FRBs",350,
+자연,🔮 Misterios y Fenómenos,🔮,8,전문가,Código Voynich y Cifrados,Manuscritos sin descifrar,350,🥇 골드 배지
+자연,🔮 Misterios y Fenómenos,🔮,9,전문가,Paradoja de Fermi,¿Dónde están todos? Soluciones,500,
+자연,🔮 Misterios y Fenómenos,🔮,10,전문가,Ciencia vs Misterio,"Pensamiento crítico, método científico",500,💎 다이아몬드 배지
+건강,🧬 Microbiología y Virus,🧬,1,탐험가,El Mundo Invisible,"Microbios, bacterias, virus y hongos; qué son y dónde viven",100,
+건강,🧬 Microbiología y Virus,🧬,2,탐험가,El Microscopio y los Descubrimientos,De Leeuwenhoek a la microbiología moderna,100,
+건강,🧬 Microbiología y Virus,🧬,3,탐험가,Bacterias: Aliadas y Enemigas,"Flora intestinal, infecciones, antibióticos",100,🥉 브론즈 배지
+건강,🧬 Microbiología y Virus,🧬,4,견습생,Virus: Cómo Infectan,"Estructura viral, ciclo lítico y lisogénico",200,
+건강,🧬 Microbiología y Virus,🧬,5,견습생,El Sistema Inmune contra Microbios,"Barreras, células de defensa, anticuerpos",200,
+건강,🧬 Microbiología y Virus,🧬,6,견습생,Vacunas: Historia y Funcionamiento,De la viruela al ARN mensajero,200,🥈 실버 배지
+건강,🧬 Microbiología y Virus,🧬,7,전문가,Resistencia a Antibióticos,"Superbugs, uso abusivo, crisis sanitaria",350,
+건강,🧬 Microbiología y Virus,🧬,8,전문가,Pandemias Microbianas,"Peste, gripe española, COVID-19, patrones",350,🥇 골드 배지
+건강,🧬 Microbiología y Virus,🧬,9,전문가,Biotecnología Microbiana,"Uso de microbios en industria, medicina y medioambiente",500,
+건강,🧬 Microbiología y Virus,🧬,10,전문가,Futuro de la Lucha contra Infecciones,"Nuevos antibióticos, fagoterapia, edición genética de virus",500,💎 다이아몬드 배지
+과학,🪐 Astrobiología y Búsqueda de Vida,🪐,1,탐험가,¿Qué es la Astrobiología?,"Definición, interdisciplinariedad, grandes preguntas",100,
+과학,🪐 Astrobiología y Búsqueda de Vida,🪐,2,탐험가,Ingredientes de la Vida,"Agua líquida, química del carbono, energía",100,
+과학,🪐 Astrobiología y Búsqueda de Vida,🪐,3,탐험가,Vida Extremófila en la Tierra,Organismos en condiciones extremas como modelo,100,🥉 브론즈 배지
+과학,🪐 Astrobiología y Búsqueda de Vida,🪐,4,견습생,Marte: El Vecino Sospechoso,"Historia del agua, misiones, signos de vida pasada",200,
+과학,🪐 Astrobiología y Búsqueda de Vida,🪐,5,견습생,Lunas Habitables,"Europa, Encélado, Titán y sus océanos",200,
+과학,🪐 Astrobiología y Búsqueda de Vida,🪐,6,견습생,Exoplanetas: Mundos Lejanos,Métodos de detección y zona habitable,200,🥈 실버 배지
+과학,🪐 Astrobiología y Búsqueda de Vida,🪐,7,전문가,Biofirmas y Tecnofirmas,Señales químicas y tecnológicas de vida avanzada,350,
+과학,🪐 Astrobiología y Búsqueda de Vida,🪐,8,전문가,Programas de Búsqueda (SETI y otros),"Radiotelescopios, mensajes, proyectos globales",350,🥇 골드 배지
+과학,🪐 Astrobiología y Búsqueda de Vida,🪐,9,전문가,Paradoja de Fermi y Soluciones,"¿Dónde están todos?, filtros grandes",500,
+과학,🪐 Astrobiología y Búsqueda de Vida,🪐,10,전문가,El Futuro de la Vida en el Cosmos,"Terraformación, panspermia, humanidad multiplanetaria",500,💎 다이아몬드 배지
+과학,☀️ Clima Espacial y Tormentas Solares,☀️,1,탐험가,El Sol: Nuestra Estrella,"Estructura solar, manchas, actividad",100,
+과학,☀️ Clima Espacial y Tormentas Solares,☀️,2,탐험가,Viento Solar,"Partículas cargadas, campo magnético",100,
+과학,☀️ Clima Espacial y Tormentas Solares,☀️,3,탐험가,Auroras Boreales y Australes,"Cómo se forman, dónde se ven",100,🥉 브론즈 배지
+과학,☀️ Clima Espacial y Tormentas Solares,☀️,4,견습생,Tormentas Solares Históricas,Evento Carrington y otros casos,200,
+과학,☀️ Clima Espacial y Tormentas Solares,☀️,5,견습생,Campo Magnético Terrestre,"Escudo natural, cinturones de Van Allen",200,
+과학,☀️ Clima Espacial y Tormentas Solares,☀️,6,견습생,Clima Espacial y Satélites,Efectos sobre GPS y comunicaciones,200,🥈 실버 배지
+과학,☀️ Clima Espacial y Tormentas Solares,☀️,7,전문가,Redes Eléctricas y Riesgo Global,Impacto en infraestructura,350,
+과학,☀️ Clima Espacial y Tormentas Solares,☀️,8,전문가,Monitorización y Predicción,"Sondas, observatorios solares, modelos",350,🥇 골드 배지
+과학,☀️ Clima Espacial y Tormentas Solares,☀️,9,전문가,Escenarios de Evento Extremo,Impacto económico y social,500,
+과학,☀️ Clima Espacial y Tormentas Solares,☀️,10,전문가,Preparándonos para el Próximo Carrington,Mitigación y resiliencia,500,💎 다이아몬드 배지
+건강,🦾 Biohacking y Cuerpo Mejorado,🦾,1,탐험가,¿Qué es el Biohacking?,"Definiciones, tipos (DIYbio, cuantificado, nutracéuticos)",100,
+건강,🦾 Biohacking y Cuerpo Mejorado,🦾,2,탐험가,Autoexperimentos Históricos,Científicos que se probaron a sí mismos,100,
+건강,🦾 Biohacking y Cuerpo Mejorado,🦾,3,탐험가,Cuantificar el Cuerpo,"Wearables, tracking de sueño y actividad",100,🥉 브론즈 배지
+건강,🦾 Biohacking y Cuerpo Mejorado,🦾,4,견습생,Suplementos y Nutrición Avanzada,"Nootrópicos, dietas, controversias",200,
+건강,🦾 Biohacking y Cuerpo Mejorado,🦾,5,견습생,"Hábitos, Ritmos Circadianos y Rendimiento","Luces, horarios, cronobiología",200,
+건강,🦾 Biohacking y Cuerpo Mejorado,🦾,6,견습생,"Gimnasios, Fuerza y Longevidad",Entrenamiento como hackeo biológico,200,🥈 실버 배지
+건강,🦾 Biohacking y Cuerpo Mejorado,🦾,7,전문가,Implantes y Dispositivos en el Cuerpo,"Chips, marcapasos, sensores",350,
+건강,🦾 Biohacking y Cuerpo Mejorado,🦾,8,전문가,Edición Genética Personal,"CRISPR, posibilidades y límites",350,🥇 골드 배지
+건강,🦾 Biohacking y Cuerpo Mejorado,🦾,9,전문가,Ética y Legalidad del Biohacking,"Normativas, riesgos, desigualdad",500,
+건강,🦾 Biohacking y Cuerpo Mejorado,🦾,10,전문가,El Futuro del Humano Mejorado,"Transhumanismo, integración IA-cuerpo",500,💎 다이아몬드 배지
+건강,😷 Epidemiología y Enfermedades Infecciosas,😷,1,탐험가,Cómo se Propagan las Enfermedades,"Contagio, vectores, cadenas de transmisión",100,
+건강,😷 Epidemiología y Enfermedades Infecciosas,😷,2,탐험가,"Brotes, Epidemias y Pandemias",Diferencias y ejemplos,100,
+건강,😷 Epidemiología y Enfermedades Infecciosas,😷,3,탐험가,Casos y Datos: Lo que Significan,"Incidencia, prevalencia, R0",100,🥉 브론즈 배지
+건강,😷 Epidemiología y Enfermedades Infecciosas,😷,4,견습생,Grandes Epidemias Históricas,"Peste negra, cólera, gripe española",200,
+건강,😷 Epidemiología y Enfermedades Infecciosas,😷,5,견습생,"VIH, Tuberculosis y Otros Retos",Enfermedades crónicas infecciosas,200,
+건강,😷 Epidemiología y Enfermedades Infecciosas,😷,6,견습생,COVID-19: Anatomía de una Pandemia,"Secuenciación, vacunas, confinamientos",200,🥈 실버 배지
+건강,😷 Epidemiología y Enfermedades Infecciosas,😷,7,전문가,Modelos Epidemiológicos,"Curvas, medidas no farmacológicas",350,
+건강,😷 Epidemiología y Enfermedades Infecciosas,😷,8,전문가,Vacunación Masiva y Rebaño,"Inmunidad de grupo, campañas",350,🥇 골드 배지
+건강,😷 Epidemiología y Enfermedades Infecciosas,😷,9,전문가,Enfermedades Emergentes y Zoonosis,"Cambio climático, nuevos patógenos",500,
+건강,😷 Epidemiología y Enfermedades Infecciosas,😷,10,전문가,Preparación Global ante la Próxima Pandemia,"Vigilancia, cooperación internacional",500,💎 다이아몬드 배지
+기술,💾 Historia de la Computación,💾,1,탐험가,De Ábacos a Máquinas de Cálculo,Herramientas de cálculo antiguas,100,
+기술,💾 Historia de la Computación,💾,2,탐험가,Visionarios Pioneros,"Babbage, Ada Lovelace, Turing",100,
+기술,💾 Historia de la Computación,💾,3,탐험가,Ordenadores de Tubos y Tarjetas,"ENIAC, mainframes",100,🥉 브론즈 배지
+기술,💾 Historia de la Computación,💾,4,견습생,La Revolución del Microprocesador,"Intel, PCs, Apple",200,
+기술,💾 Historia de la Computación,💾,5,견습생,Internet y la Web,"ARPANET, HTTP, navegadores",200,
+기술,💾 Historia de la Computación,💾,6,견습생,"Portátiles, Smartphones y la Era Móvil","iPhone, Android",200,🥈 실버 배지
+기술,💾 Historia de la Computación,💾,7,전문가,Software Libre y Open Source,"Linux, proyectos colaborativos",350,
+기술,💾 Historia de la Computación,💾,8,전문가,"Nubes, Contenedores y DevOps",Cómo se despliega hoy el software,350,🥇 골드 배지
+기술,💾 Historia de la Computación,💾,9,전문가,Computación Cuántica y Más Allá,"Qubits, algoritmos",500,
+기술,💾 Historia de la Computación,💾,10,전문가,Futuro de la Computación,"Neuromórfica, IA integrada",500,💎 다이아몬드 배지
+기술,🎮 Videojuegos e Industria del Gaming,🎮,1,탐험가,Los Primeros Videojuegos,"Pong, arcades, Atari",100,
+기술,🎮 Videojuegos e Industria del Gaming,🎮,2,탐험가,Consolas y Guerra de Generaciones,"Nintendo, Sega, Sony, Microsoft",100,
+기술,🎮 Videojuegos e Industria del Gaming,🎮,3,탐험가,PC Gaming y Online,"DOOM, MMOs, primeros esports",100,🥉 브론즈 배지
+기술,🎮 Videojuegos e Industria del Gaming,🎮,4,견습생,Diseño de Juegos,"Mecánicas, loops, narrativa",200,
+기술,🎮 Videojuegos e Industria del Gaming,🎮,5,견습생,Esports y Competición Profesional,"Ligas, premios, entrenamientos",200,
+기술,🎮 Videojuegos e Industria del Gaming,🎮,6,견습생,Psicología del Juego y Gamificación,"Motivación, recompensas",200,🥈 실버 배지
+기술,🎮 Videojuegos e Industria del Gaming,🎮,7,전문가,Industria y Modelos de Negocio,"AAA, indie, free-to-play",350,
+기술,🎮 Videojuegos e Industria del Gaming,🎮,8,전문가,Controversias del Gaming,"Adicción, violencia, loot boxes",350,🥇 골드 배지
+기술,🎮 Videojuegos e Industria del Gaming,🎮,9,전문가,Juegos como Arte y Educación,"Juegos serios, experiencias inmersivas",500,
+기술,🎮 Videojuegos e Industria del Gaming,🎮,10,전문가,Futuro del Gaming,"VR/AR, cloud gaming",500,💎 다이아몬드 배지
+기술,₿ Criptoeconomía y DeFi,₿,1,탐험가,Origen de Bitcoin,"Satoshi, problema del doble gasto",100,
+기술,₿ Criptoeconomía y DeFi,₿,2,탐험가,¿Qué es Blockchain?,"Bloques, cadenas, consenso",100,
+기술,₿ Criptoeconomía y DeFi,₿,3,탐험가,Criptomonedas Principales,"BTC, ETH y otras",100,🥉 브론즈 배지
+기술,₿ Criptoeconomía y DeFi,₿,4,견습생,Smart Contracts,Programas que mueven dinero,200,
+기술,₿ Criptoeconomía y DeFi,₿,5,견습생,Exchanges y Wallets,Cómo se compra y guarda cripto,200,
+기술,₿ Criptoeconomía y DeFi,₿,6,견습생,Finanzas Descentralizadas (DeFi),"Préstamos, DEX, yield farming",200,🥈 실버 배지
+기술,₿ Criptoeconomía y DeFi,₿,7,전문가,"Estafas, Riesgos y Burbujas","Rug pulls, hacks, volatilidad",350,
+기술,₿ Criptoeconomía y DeFi,₿,8,전문가,Regulación y Narrativas,"Gobiernos, adopción",350,🥇 골드 배지
+기술,₿ Criptoeconomía y DeFi,₿,9,전문가,Cripto más allá del Dinero,"DAOs, identidad, NFTs útiles",500,
+기술,₿ Criptoeconomía y DeFi,₿,10,전문가,Escenarios Futuros de la Criptoeconomía,Infraestructura o nicho,500,💎 다이아몬드 배지
+기술,📊 Ciencia de Datos y Big Data,📊,1,탐험가,Dato: El Nuevo Petróleo,Qué es un dato y por qué vale,100,
+기술,📊 Ciencia de Datos y Big Data,📊,2,탐험가,Cómo se Recogen Datos,"Sensores, formularios, tracking",100,
+기술,📊 Ciencia de Datos y Big Data,📊,3,탐험가,Bases de Datos y Almacenes,"SQL, NoSQL, data lakes",100,🥉 브론즈 배지
+기술,📊 Ciencia de Datos y Big Data,📊,4,견습생,Analítica Descriptiva,"Dashboards, KPIs",200,
+기술,📊 Ciencia de Datos y Big Data,📊,5,견습생,Analítica Predictiva,Modelos y pronósticos,200,
+기술,📊 Ciencia de Datos y Big Data,📊,6,견습생,Analítica Prescriptiva,Recomendaciones automatizadas,200,🥈 실버 배지
+기술,📊 Ciencia de Datos y Big Data,📊,7,전문가,Big Data en la Vida Real,"Retail, salud, transporte",350,
+기술,📊 Ciencia de Datos y Big Data,📊,8,전문가,"Privacidad, Sesgos y Ética",Dilemas y casos,350,🥇 골드 배지
+기술,📊 Ciencia de Datos y Big Data,📊,9,전문가,Arquitecturas Modernas de Datos,"Batch, streaming, lakehouse",500,
+기술,📊 Ciencia de Datos y Big Data,📊,10,전문가,Hacia un Mundo Hiperpersonalizado,Riesgos y regulación,500,💎 다이아몬드 배지
+기술,📡 Tecnologías de Comunicación,📡,1,탐험가,Telégrafo y Teléfono,Primer salto de la voz a distancia,100,
+기술,📡 Tecnologías de Comunicación,📡,2,탐험가,Radio y Televisión,Llegada de los mass media,100,
+기술,📡 Tecnologías de Comunicación,📡,3,탐험가,Satélites y Comunicaciones Globales,"Órbitas, enlaces",100,🥉 브론즈 배지
+기술,📡 Tecnologías de Comunicación,📡,4,견습생,Internet y Protocolos Básicos,"TCP/IP, routers",200,
+기술,📡 Tecnologías de Comunicación,📡,5,견습생,Wi-Fi y Redes Domésticas,Cómo se conectan tus dispositivos,200,
+기술,📡 Tecnologías de Comunicación,📡,6,견습생,Redes Móviles: 1G a 4G,De voz analógica a datos,200,🥈 실버 배지
+기술,📡 Tecnologías de Comunicación,📡,7,전문가,5G y Futuras Generaciones,"Latencia baja, IoT",350,
+기술,📡 Tecnologías de Comunicación,📡,8,전문가,Seguridad y Vigilancia en Redes,"Interceptación, cifrado",350,🥇 골드 배지
+기술,📡 Tecnologías de Comunicación,📡,9,전문가,Infraestructura Crítica y Resiliencia,Qué pasa si cae la red,500,
+기술,📡 Tecnologías de Comunicación,📡,10,전문가,Comunicación del Futuro,"Redes cuánticas, espacio profundo",500,💎 다이아몬드 배지
+인문학,🎬 Historia del Cine y el Documental,🎬,1,탐험가,Nacimiento del Cine,"Lumière, Méliès y las primeras proyecciones",100,
+인문학,🎬 Historia del Cine y el Documental,🎬,2,탐험가,Hollywood Clásico,"Estudios, sistema de estrellas, cine mudo a sonoro",100,
+인문학,🎬 Historia del Cine y el Documental,🎬,3,탐험가,Nueva Ola y Cine de Autor,"Truffaut, Godard y otros movimientos",100,🥉 브론즈 배지
+인문학,🎬 Historia del Cine y el Documental,🎬,4,견습생,Origen del Documental,"Nanook, propaganda, cine etnográfico",200,
+인문학,🎬 Historia del Cine y el Documental,🎬,5,견습생,Estilos de Documental,"Observacional, participativo, ensayo",200,
+인문학,🎬 Historia del Cine y el Documental,🎬,6,견습생,Documental de Naturaleza y Ciencia,"BBC, National Geographic, formatos",200,🥈 실버 배지
+인문학,🎬 Historia del Cine y el Documental,🎬,7,전문가,Documental de Denuncia Social,Casos que cambiaron leyes y conciencias,350,
+인문학,🎬 Historia del Cine y el Documental,🎬,8,전문가,Docuseries y Plataformas,"Streaming, true crime, formatos seriales",350,🥇 골드 배지
+인문학,🎬 Historia del Cine y el Documental,🎬,9,전문가,Lenguaje y Ética del Documental,"Manipulación, puesta en escena, límites",500,
+인문학,🎬 Historia del Cine y el Documental,🎬,10,전문가,El Futuro del Documental con IA,"Producción automatizada, personalización",500,💎 다이아몬드 배지
+인문학,📚 Literatura Universal,📚,1,탐험가,"Mitos, Epopeyas y Textos Fundacionales","Gilgamesh, Ilíada, textos sagrados",100,
+인문학,📚 Literatura Universal,📚,2,탐험가,Teatro Clásico y Tragedia,"Sófocles, Shakespeare",100,
+인문학,📚 Literatura Universal,📚,3,탐험가,Novela Moderna,Del siglo XIX al realismo,100,🥉 브론즈 배지
+인문학,📚 Literatura Universal,📚,4,견습생,Realismo y Naturalismo,"Tolstói, Zola, Galdós",200,
+인문학,📚 Literatura Universal,📚,5,견습생,Vanguardias y Modernismo,"Joyce, Kafka, Proust",200,
+인문학,📚 Literatura Universal,📚,6,견습생,Literaturas no Occidentales,"Autores clave de Asia, África, Latinoamérica",200,🥈 실버 배지
+인문학,📚 Literatura Universal,📚,7,전문가,Boom Latinoamericano,"García Márquez, Cortázar, Vargas Llosa",350,
+인문학,📚 Literatura Universal,📚,8,전문가,Literatura Contemporánea,"Posmodernidad, autoficción, nuevos formatos",350,🥇 골드 배지
+인문학,📚 Literatura Universal,📚,9,전문가,Adaptaciones al Cine y la TV,Cómo cambian las historias,500,
+인문학,📚 Literatura Universal,📚,10,전문가,IA y Escritura del Futuro,"Modelos generativos, coautoría",500,💎 다이아몬드 배지
+인문학,🎭 Historia del Teatro y Artes Escénicas,🎭,1,탐험가,Teatro Griego y Romano,"Tragedia, comedia, anfiteatros",100,
+인문학,🎭 Historia del Teatro y Artes Escénicas,🎭,2,탐험가,Teatro Medieval y Renacentista,"Autos, Shakespeare",100,
+인문학,🎭 Historia del Teatro y Artes Escénicas,🎭,3,탐험가,Ópera y Ballet,"Nacimiento de la ópera, grandes compositores",100,🥉 브론즈 배지
+인문학,🎭 Historia del Teatro y Artes Escénicas,🎭,4,견습생,Teatro del Siglo XIX,"Realismo, melodrama",200,
+인문학,🎭 Historia del Teatro y Artes Escénicas,🎭,5,견습생,Vanguardias del Siglo XX,"Brecht, Artaud, teatro del absurdo",200,
+인문학,🎭 Historia del Teatro y Artes Escénicas,🎭,6,견습생,Teatro Musical y Broadway,"Musical moderno, grandes éxitos",200,🥈 실버 배지
+인문학,🎭 Historia del Teatro y Artes Escénicas,🎭,7,전문가,Teatro Político y Social,Obras que cuestionan el poder,350,
+인문학,🎭 Historia del Teatro y Artes Escénicas,🎭,8,전문가,Performance y Artes Vivas,"Happening, body art",350,🥇 골드 배지
+인문학,🎭 Historia del Teatro y Artes Escénicas,🎭,9,전문가,Nuevos Medios Escénicos,"Proyecciones, VR, experiencias inmersivas",500,
+인문학,🎭 Historia del Teatro y Artes Escénicas,🎭,10,전문가,El Futuro del Teatro,"Hibridación digital, participación del público",500,💎 다이아몬드 배지
+인문학,📷 Historia de la Fotografía y Fotoperiodismo,📷,1,탐험가,Primeras Fotografías,"Daguerrotipos, Niepce, Daguerre",100,
+인문학,📷 Historia de la Fotografía y Fotoperiodismo,📷,2,탐험가,Retrato y Estudio,La fotografía como lujo,100,
+인문학,📷 Historia de la Fotografía y Fotoperiodismo,📷,3,탐험가,Fotografía Documental Temprana,"Vida urbana, colonias, guerra de Crimea",100,🥉 브론즈 배지
+인문학,📷 Historia de la Fotografía y Fotoperiodismo,📷,4,견습생,Grandes Guerras en Imágenes,"WWI, WWII, impacto en la opinión pública",200,
+인문학,📷 Historia de la Fotografía y Fotoperiodismo,📷,5,견습생,Agencias y Revistas Icónicas,"Magnum, LIFE",200,
+인문학,📷 Historia de la Fotografía y Fotoperiodismo,📷,6,견습생,Fotografía de Calle y Autoral,"Cartier-Bresson, Vivian Maier",200,🥈 실버 배지
+인문학,📷 Historia de la Fotografía y Fotoperiodismo,📷,7,전문가,Fotoperiodismo en la Era Digital,"24/7 news, redes sociales",350,
+인문학,📷 Historia de la Fotografía y Fotoperiodismo,📷,8,전문가,Manipulación y Fake Images,"Edición, deepfakes, ética",350,🥇 골드 배지
+인문학,📷 Historia de la Fotografía y Fotoperiodismo,📷,9,전문가,Fotografía como Arte Contemporáneo,"Museos, mercado, instalaciones",500,
+인문학,📷 Historia de la Fotografía y Fotoperiodismo,📷,10,전문가,"IA, Algoritmos y Visión por Computador","Clasificación, generación de imágenes",500,💎 다이아몬드 배지
+인문학,🗣️ Lenguas del Mundo y Escrituras,🗣️,1,탐험가,Qué es un Idioma,"Fonética, gramática, significado",100,
+인문학,🗣️ Lenguas del Mundo y Escrituras,🗣️,2,탐험가,Familias Lingüísticas,"Indoeuropea, sino-tibetana, afroasiática",100,
+인문학,🗣️ Lenguas del Mundo y Escrituras,🗣️,3,탐험가,Orígenes de la Escritura,"Cuneiforme, jeroglíficos",100,🥉 브론즈 배지
+인문학,🗣️ Lenguas del Mundo y Escrituras,🗣️,4,견습생,Alfabetos y Sistemas de Escritura,"Latino, cirílico, árabe, chino",200,
+인문학,🗣️ Lenguas del Mundo y Escrituras,🗣️,5,견습생,Lenguas en Peligro,"Extinción lingüística, revitalización",200,
+인문학,🗣️ Lenguas del Mundo y Escrituras,🗣️,6,견습생,Lenguas Francas y de Poder,"Inglés, español, mandarín",200,🥈 실버 배지
+인문학,🗣️ Lenguas del Mundo y Escrituras,🗣️,7,전문가,Política e Identidad Lingüística,"Nacionalismos, minorías",350,
+인문학,🗣️ Lenguas del Mundo y Escrituras,🗣️,8,전문가,Traducción y Pérdida,"Matices, intraducibles",350,🥇 골드 배지
+인문학,🗣️ Lenguas del Mundo y Escrituras,🗣️,9,전문가,IA y Traducción Automática,"Modelos neuronales, límites",500,
+인문학,🗣️ Lenguas del Mundo y Escrituras,🗣️,10,전문가,El Futuro del Multilingüismo,"Convergencia, diversidad",500,💎 다이아몬드 배지
+인문학,🍳 Historia de la Alimentación y Gastronomía,🍳,1,탐험가,Cazadores-Recolectores y Agricultura,Del forrajeo a los cultivos,100,
+인문학,🍳 Historia de la Alimentación y Gastronomía,🍳,2,탐험가,Granos y Civilizaciones,"Trigo, arroz, maíz",100,
+인문학,🍳 Historia de la Alimentación y Gastronomía,🍳,3,탐험가,Especias y Rutas Comerciales,"Curry, pimienta, oro aromático",100,🥉 브론즈 배지
+인문학,🍳 Historia de la Alimentación y Gastronomía,🍳,4,견습생,Colonialismo y Cocina,"Intercambio colombino, mestizaje culinario",200,
+인문학,🍳 Historia de la Alimentación y Gastronomía,🍳,5,견습생,Revolución Industrial y Comida Procesada,"Conservas, azúcar, fast food",200,
+인문학,🍳 Historia de la Alimentación y Gastronomía,🍳,6,견습생,Cocinas del Mundo,"Mediterránea, asiática, latinoamericana",200,🥈 실버 배지
+인문학,🍳 Historia de la Alimentación y Gastronomía,🍳,7,전문가,Alta Cocina y Chefs Estrella,"Guías, restaurantes icónicos",350,
+인문학,🍳 Historia de la Alimentación y Gastronomía,🍳,8,전문가,Comida y Clase Social,"Acceso, status, marketing",350,🥇 골드 배지
+인문학,🍳 Historia de la Alimentación y Gastronomía,🍳,9,전문가,Gastronomía Molecular y Ciencia,Física y química en la cocina,500,
+인문학,🍳 Historia de la Alimentación y Gastronomía,🍳,10,전문가,Futuro de la Alimentación,"Carne cultivada, insectos, sostenibilidad",500,💎 다이아몬드 배지
+사회,🏭 Historia del Capitalismo y del Trabajo,🏭,1,탐험가,Economías Agrarias y Trueque,Antes del capitalismo,100,
+사회,🏭 Historia del Capitalismo y del Trabajo,🏭,2,탐험가,Revolución Comercial y Mercantilismo,"Imperios, colonias",100,
+사회,🏭 Historia del Capitalismo y del Trabajo,🏭,3,탐험가,Revolución Industrial,"Máquinas, fábricas, proletariado",100,🥉 브론즈 배지
+사회,🏭 Historia del Capitalismo y del Trabajo,🏭,4,견습생,Capitalismo del Siglo XIX,"Ferrocarriles, monopolios",200,
+사회,🏭 Historia del Capitalismo y del Trabajo,🏭,5,견습생,Estado del Bienestar y Fordismo,"Producción en masa, derechos laborales",200,
+사회,🏭 Historia del Capitalismo y del Trabajo,🏭,6,견습생,Neoliberalismo y Globalización,"Deslocalización, finanzas",200,🥈 실버 배지
+사회,🏭 Historia del Capitalismo y del Trabajo,🏭,7,전문가,Automatización y Trabajo Precario,"Gig economy, plataformas",350,
+사회,🏭 Historia del Capitalismo y del Trabajo,🏭,8,전문가,Críticas y Alternativas,"Marxismo, economía solidaria",350,🥇 골드 배지
+사회,🏭 Historia del Capitalismo y del Trabajo,🏭,9,전문가,Capitalismo Digital y de Vigilancia,Datos como mercancía,500,
+사회,🏭 Historia del Capitalismo y del Trabajo,🏭,10,전문가,El Futuro del Trabajo,"Renta básica, robots",500,💎 다이아몬드 배지
+사회,📱 Sociología de las Redes Sociales,📱,1,탐험가,De Foros a Redes Sociales,"Blogs, MySpace, Facebook",100,
+사회,📱 Sociología de las Redes Sociales,📱,2,탐험가,Plataformas Clave,"Twitter/X, Instagram, TikTok",100,
+사회,📱 Sociología de las Redes Sociales,📱,3,탐험가,"Likes, Seguidores y Ego",Psicología básica del feedback,100,🥉 브론즈 배지
+사회,📱 Sociología de las Redes Sociales,📱,4,견습생,Algoritmos y Burbujas de Filtro,Qué ves y qué no ves,200,
+사회,📱 Sociología de las Redes Sociales,📱,5,견습생,Influencers y Economía de Creadores,Modelos de ingresos,200,
+사회,📱 Sociología de las Redes Sociales,📱,6,견습생,Ciberacoso y Toxicidad,Efectos en la salud mental,200,🥈 실버 배지
+사회,📱 Sociología de las Redes Sociales,📱,7,전문가,Redes y Política,"Campañas, desinformación",350,
+사회,📱 Sociología de las Redes Sociales,📱,8,전문가,Activismo Digital,"Hashtags, movimientos sociales",350,🥇 골드 배지
+사회,📱 Sociología de las Redes Sociales,📱,9,전문가,"Datos, Vigilancia y Privacidad",Seguimiento masivo,500,
+사회,📱 Sociología de las Redes Sociales,📱,10,전문가,El Futuro de la Vida Conectada,"Metaversos, identidades múltiples",500,💎 다이아몬드 배지
+사회,🗳️ Sistemas Políticos del Mundo,🗳️,1,탐험가,Qué es un Estado,"Territorio, población, soberanía",100,
+사회,🗳️ Sistemas Políticos del Mundo,🗳️,2,탐험가,Democracias y Dictaduras,Clasificaciones básicas,100,
+사회,🗳️ Sistemas Políticos del Mundo,🗳️,3,탐험가,Separación de Poderes,"Ejecutivo, legislativo, judicial",100,🥉 브론즈 배지
+사회,🗳️ Sistemas Políticos del Mundo,🗳️,4,견습생,Modelos Parlamentarios y Presidenciales,"Reino Unido, EE.UU.",200,
+사회,🗳️ Sistemas Políticos del Mundo,🗳️,5,견습생,Regímenes Autoritarios,"Control, propaganda",200,
+사회,🗳️ Sistemas Políticos del Mundo,🗳️,6,견습생,Organismos Supranacionales,"UE, ONU, OEA",200,🥈 실버 배지
+사회,🗳️ Sistemas Políticos del Mundo,🗳️,7,전문가,Transiciones Democráticas,Ejemplos históricos,350,
+사회,🗳️ Sistemas Políticos del Mundo,🗳️,8,전문가,Populismo y Polarización,Tendencias recientes,350,🥇 골드 배지
+사회,🗳️ Sistemas Políticos del Mundo,🗳️,9,전문가,Tecnología y Gobernanza,"Voto electrónico, e-gobierno",500,
+사회,🗳️ Sistemas Políticos del Mundo,🗳️,10,전문가,Democracia del Futuro,"Participación digital, IA y política",500,💎 다이아몬드 배지
+사회,♀️ Historia del Feminismo y Movimientos Sociales,♀️,1,탐험가,Primeras Luchas por Derechos,"Sufragistas, abolición",100,
+사회,♀️ Historia del Feminismo y Movimientos Sociales,♀️,2,탐험가,Olas del Feminismo,"Primera, segunda, tercera",100,
+사회,♀️ Historia del Feminismo y Movimientos Sociales,♀️,3,탐험가,Movimientos Obreros,"Sindicatos, 1 de mayo",100,🥉 브론즈 배지
+사회,♀️ Historia del Feminismo y Movimientos Sociales,♀️,4,견습생,Luchas por Derechos Civiles,"EE.UU., Sudáfrica",200,
+사회,♀️ Historia del Feminismo y Movimientos Sociales,♀️,5,견습생,Movimiento LGTBI+,Hitos y conquistas,200,
+사회,♀️ Historia del Feminismo y Movimientos Sociales,♀️,6,견습생,Ecologismo y Pacifismo,Movimiento verde,200,🥈 실버 배지
+사회,♀️ Historia del Feminismo y Movimientos Sociales,♀️,7,전문가,Intersectionalidad y Nuevas Agendas,Cruce de opresiones,350,
+사회,♀️ Historia del Feminismo y Movimientos Sociales,♀️,8,전문가,Redes Sociales y Movilización,"#MeToo, Primavera Árabe",350,🥇 골드 배지
+사회,♀️ Historia del Feminismo y Movimientos Sociales,♀️,9,전문가,Reacción y Backlash,Resistencias y contramovimientos,500,
+사회,♀️ Historia del Feminismo y Movimientos Sociales,♀️,10,전문가,Movimientos Sociales del Futuro,Nuevas causas emergentes,500,💎 다이아몬드 배지
+사회,⌛ Economía de la Atención,⌛,1,탐험가,Qué es la Atención,"Recurso limitado, foco",100,
+사회,⌛ Economía de la Atención,⌛,2,탐험가,Publicidad Tradicional,"TV, radio, prensa",100,
+사회,⌛ Economía de la Atención,⌛,3,탐험가,Publicidad Digital,"Banners, search ads",100,🥉 브론즈 배지
+사회,⌛ Economía de la Atención,⌛,4,견습생,Plataformas y Tiempo de Pantalla,Modelos de negocio,200,
+사회,⌛ Economía de la Atención,⌛,5,견습생,Scroll Infinito y Notificaciones,Diseño adictivo,200,
+사회,⌛ Economía de la Atención,⌛,6,견습생,Creadores y Contenido Viral,Métricas y tendencias,200,🥈 실버 배지
+사회,⌛ Economía de la Atención,⌛,7,전문가,Coste Cognitivo y Salud Mental,Burnout informativo,350,
+사회,⌛ Economía de la Atención,⌛,8,전문가,Regulación y Privacidad,Leyes de datos,350,🥇 골드 배지
+사회,⌛ Economía de la Atención,⌛,9,전문가,Resistencia: Minimalismo Digital,Estrategias para recuperar el foco,500,
+사회,⌛ Economía de la Atención,⌛,10,전문가,Futuro de la Atención,"Interfaces nuevas, IA curadora",500,💎 다이아몬드 배지
+자연,🏞️ Grandes Ríos y Civilizaciones,🏞️,1,탐험가,"Nilo, Tigris y Éufrates",Cunas de civilización,100,
+자연,🏞️ Grandes Ríos y Civilizaciones,🏞️,2,탐험가,Indo y Ganges,India antigua y moderna,100,
+자연,🏞️ Grandes Ríos y Civilizaciones,🏞️,3,탐험가,Yangtsé y Amarillo,China y sus ríos,100,🥉 브론즈 배지
+자연,🏞️ Grandes Ríos y Civilizaciones,🏞️,4,견습생,Ríos de Europa,"Danubio, Rin, comercio",200,
+자연,🏞️ Grandes Ríos y Civilizaciones,🏞️,5,견습생,Ríos de América,"Amazonas, Mississippi",200,
+자연,🏞️ Grandes Ríos y Civilizaciones,🏞️,6,견습생,Ríos de África y su Impacto,"Niger, Congo",200,🥈 실버 배지
+자연,🏞️ Grandes Ríos y Civilizaciones,🏞️,7,전문가,Represas y Gestión del Agua,"Asuán, Tres Gargantas",350,
+자연,🏞️ Grandes Ríos y Civilizaciones,🏞️,8,전문가,Contaminación y Sequías,Crisis hídricas,350,🥇 골드 배지
+자연,🏞️ Grandes Ríos y Civilizaciones,🏞️,9,전문가,Guerras del Agua,Conflictos actuales y potenciales,500,
+자연,🏞️ Grandes Ríos y Civilizaciones,🏞️,10,전문가,Futuro de los Grandes Ríos,Adaptación climática,500,💎 다이아몬드 배지
+자연,🏜️ Desiertos del Mundo y Supervivencia,🏜️,1,탐험가,Qué es un Desierto,"Tipos, clima",100,
+자연,🏜️ Desiertos del Mundo y Supervivencia,🏜️,2,탐험가,Sahara y Desiertos Africanos,Historia y pueblos,100,
+자연,🏜️ Desiertos del Mundo y Supervivencia,🏜️,3,탐험가,Desiertos de Asia,"Gobi, Arabia",100,🥉 브론즈 배지
+자연,🏜️ Desiertos del Mundo y Supervivencia,🏜️,4,견습생,Desiertos de América,"Atacama, Sonora",200,
+자연,🏜️ Desiertos del Mundo y Supervivencia,🏜️,5,견습생,Flora y Fauna Adaptada,Estrategias de vida,200,
+자연,🏜️ Desiertos del Mundo y Supervivencia,🏜️,6,견습생,Supervivencia Humana,"Técnicas, expediciones",200,🥈 실버 배지
+자연,🏜️ Desiertos del Mundo y Supervivencia,🏜️,7,전문가,Desertificación,Causas humanas y naturales,350,
+자연,🏜️ Desiertos del Mundo y Supervivencia,🏜️,8,전문가,Energía Solar en Desiertos,Mega proyectos,350,🥇 골드 배지
+자연,🏜️ Desiertos del Mundo y Supervivencia,🏜️,9,전문가,Ciudades y Proyectos en Desiertos,"Dubai, NEOM",500,
+자연,🏜️ Desiertos del Mundo y Supervivencia,🏜️,10,전문가,Vida en Otros Mundos Desérticos,Marte como desierto extremo,500,💎 다이아몬드 배지
+자연,🌲 Bosques y Selvas,🌲,1,탐험가,Tipos de Bosques,"Tropicales, templados, boreales",100,
+자연,🌲 Bosques y Selvas,🌲,2,탐험가,Amazonia y Grandes Selvas,Biodiversidad y pueblos,100,
+자연,🌲 Bosques y Selvas,🌲,3,탐험가,Bosques del Norte,"Taiga, tundra",100,🥉 브론즈 배지
+자연,🌲 Bosques y Selvas,🌲,4,견습생,Bosques y Clima,Sumideros de carbono,200,
+자연,🌲 Bosques y Selvas,🌲,5,견습생,Deforestación,Causas y consecuencias,200,
+자연,🌲 Bosques y Selvas,🌲,6,견습생,Conservación y Parques,Modelos de protección,200,🥈 실버 배지
+자연,🌲 Bosques y Selvas,🌲,7,전문가,Economía del Bosque,"Madera, turismo, servicios ecosistémicos",350,
+자연,🌲 Bosques y Selvas,🌲,8,전문가,Incendios Forestales,Cambio climático y gestión,350,🥇 골드 배지
+자연,🌲 Bosques y Selvas,🌲,9,전문가,Restauración Ecológica,Reforestación inteligente,500,
+자연,🌲 Bosques y Selvas,🌲,10,전문가,Bosques del Futuro,"Rewilding, reservas integrales",500,💎 다이아몬드 배지
+자연,🦤 Fauna Extinta Reciente y Conservación,🦤,1,탐험가,Especies Extintas Recientes,"Dodo, tilacino",100,
+자연,🦤 Fauna Extinta Reciente y Conservación,🦤,2,탐험가,Causas de Extinción,"Caza, hábitat, invasoras",100,
+자연,🦤 Fauna Extinta Reciente y Conservación,🦤,3,탐험가,Historias Emblemáticas,"Búfalo americano, ballena azul",100,🥉 브론즈 배지
+자연,🦤 Fauna Extinta Reciente y Conservación,🦤,4,견습생,Listas Rojas y Estado de Conservación,UICN,200,
+자연,🦤 Fauna Extinta Reciente y Conservación,🦤,5,견습생,Zoológicos y Reservas,Rol en conservación,200,
+자연,🦤 Fauna Extinta Reciente y Conservación,🦤,6,견습생,Éxitos en Recuperación,"Lince ibérico, cóndor",200,🥈 실버 배지
+자연,🦤 Fauna Extinta Reciente y Conservación,🦤,7,전문가,Conservación Genética,Bancos de genes,350,
+자연,🦤 Fauna Extinta Reciente y Conservación,🦤,8,전문가,Rewilding y Reintroducciones,Casos prácticos,350,🥇 골드 배지
+자연,🦤 Fauna Extinta Reciente y Conservación,🦤,9,전문가,De-Extinción,Mamuts y debate ético,500,
+자연,🦤 Fauna Extinta Reciente y Conservación,🦤,10,전문가,Convivencia Humano-Fauna,Nuevos pactos y límites,500,💎 다이아몬드 배지
+자연,🧊 Glaciares y Regiones Polares,🧊,1,탐험가,Qué es un Glaciar,"Formación, tipos",100,
+자연,🧊 Glaciares y Regiones Polares,🧊,2,탐험가,Ártico y Antártida,Diferencias básicas,100,
+자연,🧊 Glaciares y Regiones Polares,🧊,3,탐험가,Fauna Polar,"Osos, pingüinos, focas",100,🥉 브론즈 배지
+자연,🧊 Glaciares y Regiones Polares,🧊,4,견습생,Hielo y Clima Global,"Albedo, regulador térmico",200,
+자연,🧊 Glaciares y Regiones Polares,🧊,5,견습생,Exploradores Polares,"Amundsen, Scott",200,
+자연,🧊 Glaciares y Regiones Polares,🧊,6,견습생,Bases Científicas,Investigación en los polos,200,🥈 실버 배지
+자연,🧊 Glaciares y Regiones Polares,🧊,7,전문가,Retroceso de Glaciares,Impactos locales,350,
+자연,🧊 Glaciares y Regiones Polares,🧊,8,전문가,Rutas Marítimas y Recursos,Paso del Noroeste,350,🥇 골드 배지
+자연,🧊 Glaciares y Regiones Polares,🧊,9,전문가,Conflictos Geopolíticos en el Hielo,Reclamos territoriales,500,
+자연,🧊 Glaciares y Regiones Polares,🧊,10,전문가,Futuro de las Regiones Polares,Escenarios climáticos,500,💎 다이아몬드 배지
+기술,💡 Innovación y Emprendimiento,💡,1,탐험가,Qué es Innovar,"Ideas, problemas y soluciones",100,
+기술,💡 Innovación y Emprendimiento,💡,2,탐험가,Casos Históricos de Emprendedores,"Edison, Ford",100,
+기술,💡 Innovación y Emprendimiento,💡,3,탐험가,Startups y Silicon Valley,Nacimiento del ecosistema,100,🥉 브론즈 배지
+기술,💡 Innovación y Emprendimiento,💡,4,견습생,Modelos de Negocio,"Suscripción, marketplace, freemium",200,
+기술,💡 Innovación y Emprendimiento,💡,5,견습생,Financiación y Capital Riesgo,"VC, ángeles, bootstrapping",200,
+기술,💡 Innovación y Emprendimiento,💡,6,견습생,Validación y Producto Mínimo Viable,Iterar con usuarios,200,🥈 실버 배지
+기술,💡 Innovación y Emprendimiento,💡,7,전문가,Escalar una Startup,"Equipo, procesos, cultura",350,
+기술,💡 Innovación y Emprendimiento,💡,8,전문가,Fracaso y Aprendizaje,"Casos sonados, lecciones",350,🥇 골드 배지
+기술,💡 Innovación y Emprendimiento,💡,9,전문가,Emprendimiento de Impacto,"Triple balance, sostenibilidad",500,
+기술,💡 Innovación y Emprendimiento,💡,10,전문가,Innovar con IA,Nuevos modelos habilitados por IA,500,💎 다이아몬드 배지
+사회,💵 Psicología del Dinero,💵,1,탐험가,Dinero y Emociones,"Miedo, avaricia",100,
+사회,💵 Psicología del Dinero,💵,2,탐험가,Sesgos en Decisiones Financieras,"Anclas, aversión a la pérdida",100,
+사회,💵 Psicología del Dinero,💵,3,탐험가,Hábitos de Consumo,Impulso vs planificación,100,🥉 브론즈 배지
+사회,💵 Psicología del Dinero,💵,4,견습생,Publicidad y Compra,Técnicas de persuasión,200,
+사회,💵 Psicología del Dinero,💵,5,견습생,Endeudamiento y Crédito,Psicología del préstamo,200,
+사회,💵 Psicología del Dinero,💵,6,견습생,Ahorro e Inversión,Mentalidad de largo plazo,200,🥈 실버 배지
+사회,💵 Psicología del Dinero,💵,7,전문가,Dinero y Estatus,"Señales, comparación social",350,
+사회,💵 Psicología del Dinero,💵,8,전문가,Cultura y Relación con el Dinero,Diferencias regionales,350,🥇 골드 배지
+사회,💵 Psicología del Dinero,💵,9,전문가,Dinero y Felicidad,Qué dice la investigación,500,
+사회,💵 Psicología del Dinero,💵,10,전문가,Reescribir tu Narrativa Financiera,Cambiar creencias y hábitos,500,💎 다이아몬드 배지
+건강,📈 Hábitos y Productividad,📈,1,탐험가,Qué es un Hábito,Bucle señal-rutina-recompensa,100,
+건강,📈 Hábitos y Productividad,📈,2,탐험가,Motivación y Voluntad,Mitologías y realidades,100,
+건강,📈 Hábitos y Productividad,📈,3,탐험가,Procrastinación,Por qué la mente pospone,100,🥉 브론즈 배지
+건강,📈 Hábitos y Productividad,📈,4,견습생,Sistemas de Organización,"Listas, calendarios, GTD",200,
+건강,📈 Hábitos y Productividad,📈,5,견습생,Gestión del Tiempo,"Bloques, timeboxing",200,
+건강,📈 Hábitos y Productividad,📈,6,견습생,"Energía, Sueño y Productividad",Ritmos biológicos,200,🥈 실버 배지
+건강,📈 Hábitos y Productividad,📈,7,전문가,Diseñar Hábitos Duraderos,"Ambiente, identidad",350,
+건강,📈 Hábitos y Productividad,📈,8,전문가,Productividad en la Era Digital,"Distracciones, multitarea",350,🥇 골드 배지
+건강,📈 Hábitos y Productividad,📈,9,전문가,Flujo (Flow) y Alto Rendimiento,Condiciones para entrar en flow,500,
+건강,📈 Hábitos y Productividad,📈,10,전문가,Sistemas de Productividad Personalizados,Crearte tu propio sistema,500,💎 다이아몬드 배지
+사회,🏙️ Historia de las Ciudades y Urbanismo,🏙️,1,탐험가,Primeras Ciudades,"Mesopotamia, valle del Indo",100,
+사회,🏙️ Historia de las Ciudades y Urbanismo,🏙️,2,탐험가,Ciudades Antiguas,"Roma, Atenas, Teotihuacán",100,
+사회,🏙️ Historia de las Ciudades y Urbanismo,🏙️,3,탐험가,Ciudades Medievales,"Murallas, gremios",100,🥉 브론즈 배지
+사회,🏙️ Historia de las Ciudades y Urbanismo,🏙️,4,견습생,Revolución Industrial y Ciudad,"Fábricas, barrios obreros",200,
+사회,🏙️ Historia de las Ciudades y Urbanismo,🏙️,5,견습생,Urbanismo Moderno,"Haussmann, zonificación",200,
+사회,🏙️ Historia de las Ciudades y Urbanismo,🏙️,6,견습생,Megaciudades y Suburbios,Crecimiento acelerado,200,🥈 실버 배지
+사회,🏙️ Historia de las Ciudades y Urbanismo,🏙️,7,전문가,Problemas Urbanos,"Tráfico, vivienda, contaminación",350,
+사회,🏙️ Historia de las Ciudades y Urbanismo,🏙️,8,전문가,Ciudades Sostenibles,"Transporte público, verde",350,🥇 골드 배지
+사회,🏙️ Historia de las Ciudades y Urbanismo,🏙️,9,전문가,Smart Cities,"Datos, sensores, gobernanza",500,
+사회,🏙️ Historia de las Ciudades y Urbanismo,🏙️,10,전문가,Ciudades del Futuro,"Verticales, flotantes, resilientes",500,💎 다이아몬드 배지
+기술,🕹️ Videojuegos y Sociedad,🕹️,1,탐험가,Historia Básica del Juego Digital,Hitos principales,100,
+기술,🕹️ Videojuegos y Sociedad,🕹️,2,탐험가,Culturas de Jugadores,"Casual, hardcore",100,
+기술,🕹️ Videojuegos y Sociedad,🕹️,3,탐험가,Comunidades Online,"Clanes, guilds",100,🥉 브론즈 배지
+기술,🕹️ Videojuegos y Sociedad,🕹️,4,견습생,Esports y Espectadores,Audiencias masivas,200,
+기술,🕹️ Videojuegos y Sociedad,🕹️,5,견습생,Representación y Diversidad,"Género, raza",200,
+기술,🕹️ Videojuegos y Sociedad,🕹️,6,견습생,Juegos y Educación,Serious games,200,🥈 실버 배지
+기술,🕹️ Videojuegos y Sociedad,🕹️,7,전문가,Adicción y Regulación,"Clasificaciones, límites",350,
+기술,🕹️ Videojuegos y Sociedad,🕹️,8,전문가,Economías Virtuales,"Objetos, skins, mercados",350,🥇 골드 배지
+기술,🕹️ Videojuegos y Sociedad,🕹️,9,전문가,Juegos como Arte Político,Crítica y reflexión,500,
+기술,🕹️ Videojuegos y Sociedad,🕹️,10,전문가,Fronteras Difusas Realidad-Juego,Metaversos,500,💎 다이아몬드 배지
+인문학,🚀 Ciencia Ficción y Futuro,🚀,1,탐험가,Orígenes de la Ciencia Ficción,"Verne, Wells",100,
+인문학,🚀 Ciencia Ficción y Futuro,🚀,2,탐험가,Edad Dorada,"Asimov, Clarke",100,
+인문학,🚀 Ciencia Ficción y Futuro,🚀,3,탐험가,Cine de Ciencia Ficción,"2001, Star Wars",100,🥉 브론즈 배지
+인문학,🚀 Ciencia Ficción y Futuro,🚀,4,견습생,Distopías y Crítica Social,"1984, Blade Runner",200,
+인문학,🚀 Ciencia Ficción y Futuro,🚀,5,견습생,Utopías y Posibles Mundos,"Star Trek, solarpunk",200,
+인문학,🚀 Ciencia Ficción y Futuro,🚀,6,견습생,Space Opera y Aventuras Cósmicas,Grandes sagas,200,🥈 실버 배지
+인문학,🚀 Ciencia Ficción y Futuro,🚀,7,전문가,Ciberpunk y Realidades Virtuales,"Neuromante, Matrix",350,
+인문학,🚀 Ciencia Ficción y Futuro,🚀,8,전문가,Biopunk y Genética,Manipulación de cuerpos,350,🥇 골드 배지
+인문학,🚀 Ciencia Ficción y Futuro,🚀,9,전문가,SF y Predicciones Cumplidas,Tecnologías anticipadas,500,
+인문학,🚀 Ciencia Ficción y Futuro,🚀,10,전문가,Ficción como Laboratorio del Futuro,Inspirar ciencia real,500,💎 다이아몬드 배지
+인문학,👗 Historia de la Moda,👗,1,탐험가,Vestimenta en la Antigüedad,"Togas, túnicas",100,
+인문학,👗 Historia de la Moda,👗,2,탐험가,Ropas Medievales y Renacentistas,"Cortes, símbolos",100,
+인문학,👗 Historia de la Moda,👗,3,탐험가,Moda del Siglo XIX,"Crinolinas, trajes",100,🥉 브론즈 배지
+인문학,👗 Historia de la Moda,👗,4,견습생,Alta Costura y Diseñadores,"Chanel, Dior",200,
+인문학,👗 Historia de la Moda,👗,5,견습생,Moda Juvenil y Subculturas,"Punk, hip-hop",200,
+인문학,👗 Historia de la Moda,👗,6,견습생,Fast Fashion,Producción masiva,200,🥈 실버 배지
+인문학,👗 Historia de la Moda,👗,7,전문가,Impacto Ambiental de la Moda,"Contaminación, residuos",350,
+인문학,👗 Historia de la Moda,👗,8,전문가,Moda Ética y Sostenible,"Algodón orgánico, reciclaje",350,🥇 골드 배지
+인문학,👗 Historia de la Moda,👗,9,전문가,Tecnología Textil,Ropa inteligente,500,
+인문학,👗 Historia de la Moda,👗,10,전문가,Futuro de la Moda,"Digital, virtual, IA",500,💎 다이아몬드 배지
+기술,📐 Arquitectura de la Información y UX,📐,1,탐험가,Qué es UX,Experiencia de usuario,100,
+기술,📐 Arquitectura de la Información y UX,📐,2,탐험가,Interfaces a lo Largo del Tiempo,"CLI, GUI, móvil",100,
+기술,📐 Arquitectura de la Información y UX,📐,3,탐험가,Arquitectura de la Información,"Jerarquías, menús",100,🥉 브론즈 배지
+기술,📐 Arquitectura de la Información y UX,📐,4,견습생,Principios de Usabilidad,"Norman, heurísticas",200,
+기술,📐 Arquitectura de la Información y UX,📐,5,견습생,Investigación con Usuarios,"Entrevistas, tests",200,
+기술,📐 Arquitectura de la Información y UX,📐,6,견습생,Diseño Centrado en la Persona,"Personas, journeys",200,🥈 실버 배지
+기술,📐 Arquitectura de la Información y UX,📐,7,전문가,Patrones Oscuros,Diseño manipulador,350,
+기술,📐 Arquitectura de la Información y UX,📐,8,전문가,Accesibilidad Digital,"WCAG, inclusión",350,🥇 골드 배지
+기술,📐 Arquitectura de la Información y UX,📐,9,전문가,UX y Ética,Responsabilidad del diseño,500,
+기술,📐 Arquitectura de la Información y UX,📐,10,전문가,UX con IA,"Interfaces conversacionales, copilots",500,💎 다이아몬드 배지
+건강,🎓 Neuroeducación y Aprendizaje,🎓,1,탐험가,Cerebro y Aprendizaje,"Plasticidad, memoria",100,
+건강,🎓 Neuroeducación y Aprendizaje,🎓,2,탐험가,Atención y Motivación,Sistemas de recompensa,100,
+건강,🎓 Neuroeducación y Aprendizaje,🎓,3,탐험가,Emoción y Recuerdo,Cómo se fijan los recuerdos,100,🥉 브론즈 배지
+건강,🎓 Neuroeducación y Aprendizaje,🎓,4,견습생,Errores y Curva de Olvido,Por qué olvidamos,200,
+건강,🎓 Neuroeducación y Aprendizaje,🎓,5,견습생,Práctica Espaciada y Revisión Activa,Técnicas efectivas,200,
+건강,🎓 Neuroeducación y Aprendizaje,🎓,6,견습생,Aprendizaje Multisensorial,"Ver, oír, hacer",200,🥈 실버 배지
+건강,🎓 Neuroeducación y Aprendizaje,🎓,7,전문가,Mitos sobre el Cerebro,"10%, hemisferios, etc.",350,
+건강,🎓 Neuroeducación y Aprendizaje,🎓,8,전문가,Tecnología y Aprendizaje,"Apps, plataformas",350,🥇 골드 배지
+건강,🎓 Neuroeducación y Aprendizaje,🎓,9,전문가,Personalización con IA,Rutas adaptativas,500,
+건강,🎓 Neuroeducación y Aprendizaje,🎓,10,전문가,Diseñar tu Propio Sistema de Aprendizaje,Aplicar todo lo aprendido,500,💎 다이아몬드 배지
+인문학,🕯️ Historia de las Religiones,🕯️,1,탐험가,Creencias Prehistóricas,"Cultos, enterramientos",100,
+인문학,🕯️ Historia de las Religiones,🕯️,2,탐험가,Religiones Antiguas,"Egipto, Grecia",100,
+인문학,🕯️ Historia de las Religiones,🕯️,3,탐험가,Grandes Religiones Monoteístas,"Judaísmo, cristianismo, islam",100,🥉 브론즈 배지
+인문학,🕯️ Historia de las Religiones,🕯️,4,견습생,Religiones Dhármicas,"Hinduismo, budismo",200,
+인문학,🕯️ Historia de las Religiones,🕯️,5,견습생,Religiones de Asia Oriental,"Confucianismo, taoísmo",200,
+인문학,🕯️ Historia de las Religiones,🕯️,6,견습생,Religiones Indígenas,"África, América",200,🥈 실버 배지
+인문학,🕯️ Historia de las Religiones,🕯️,7,전문가,Reformas y Cismas,"Protestantismo, reformas internas",350,
+인문학,🕯️ Historia de las Religiones,🕯️,8,전문가,Religión y Política,"Teocracias, laicismo",350,🥇 골드 배지
+인문학,🕯️ Historia de las Religiones,🕯️,9,전문가,Secularización y Nuevos Movimientos,Espiritualidades modernas,500,
+인문학,🕯️ Historia de las Religiones,🕯️,10,전문가,Religión en el Futuro,"¿Menos, más, distinta?",500,💎 다이아몬드 배지
+사회,🕵️ Crimen Organizado y Mafias,🕵️,1,탐험가,Qué es el Crimen Organizado,Definición y tipos,100,
+사회,🕵️ Crimen Organizado y Mafias,🕵️,2,탐험가,Mafia Siciliana y Cosa Nostra,Orígenes y códigos,100,
+사회,🕵️ Crimen Organizado y Mafias,🕵️,3,탐험가,"Yakuza, Triadas y Otras Mafias",Asia y más,100,🥉 브론즈 배지
+사회,🕵️ Crimen Organizado y Mafias,🕵️,4,견습생,Carteles de la Droga,Latinoamérica,200,
+사회,🕵️ Crimen Organizado y Mafias,🕵️,5,견습생,Lavado de Dinero,Métodos y ejemplos,200,
+사회,🕵️ Crimen Organizado y Mafias,🕵️,6,견습생,Crimen Organizado en Política,Corrupción,200,🥈 실버 배지
+사회,🕵️ Crimen Organizado y Mafias,🕵️,7,전문가,Crimen Cibernético Organizado,"Hackers, ransomware",350,
+사회,🕵️ Crimen Organizado y Mafias,🕵️,8,전문가,Lucha Internacional contra el Crimen,"Interpol, tratados",350,🥇 골드 배지
+사회,🕵️ Crimen Organizado y Mafias,🕵️,9,전문가,Narrativas y Mitificación del Crimen,"Cine, series",500,
+사회,🕵️ Crimen Organizado y Mafias,🕵️,10,전문가,Escenarios Futuros del Crimen Global,Nuevas formas emergentes,500,💎 다이아몬드 배지
+과학,👩‍🚀 Exploración Espacial Humana,👩‍🚀,1,탐험가,Carrera Espacial,EE.UU. vs URSS,100,
+과학,👩‍🚀 Exploración Espacial Humana,👩‍🚀,2,탐험가,Llegada a la Luna,Apollo,100,
+과학,👩‍🚀 Exploración Espacial Humana,👩‍🚀,3,탐험가,Estaciones Espaciales,"Mir, ISS",100,🥉 브론즈 배지
+과학,👩‍🚀 Exploración Espacial Humana,👩‍🚀,4,견습생,Transbordadores y Nuevas Naves,"Shuttle, cápsulas",200,
+과학,👩‍🚀 Exploración Espacial Humana,👩‍🚀,5,견습생,Empresas Privadas,"SpaceX, Blue Origin",200,
+과학,👩‍🚀 Exploración Espacial Humana,👩‍🚀,6,견습생,Robots Exploradores,"Rovers, sondas",200,🥈 실버 배지
+과학,👩‍🚀 Exploración Espacial Humana,👩‍🚀,7,전문가,Vida en Microgravedad,Cuerpo humano en órbita,350,
+과학,👩‍🚀 Exploración Espacial Humana,👩‍🚀,8,전문가,Planes para Marte,Misiones tripuladas,350,🥇 골드 배지
+과학,👩‍🚀 Exploración Espacial Humana,👩‍🚀,9,전문가,Colonias y Hábitats Espaciales,Diseños y retos,500,
+과학,👩‍🚀 Exploración Espacial Humana,👩‍🚀,10,전문가,Humanidad Multiplanetaria,Implicaciones a muy largo plazo,500,💎 다이아몬드 배지
+기술,🤖 Historia de la Robótica,🤖,1,탐험가,Autómatas Antiguos,Dispositivos mecánicos precientíficos,100,
+기술,🤖 Historia de la Robótica,🤖,2,탐험가,Robots en la Ficción,"Metropolis, Asimov",100,
+기술,🤖 Historia de la Robótica,🤖,3,탐험가,Primeros Robots Industriales,Unimate y las fábricas,100,🥉 브론즈 배지
+기술,🤖 Historia de la Robótica,🤖,4,견습생,Robots en el Hogar,"Aspiradoras, asistentes",200,
+기술,🤖 Historia de la Robótica,🤖,5,견습생,Robots Colaborativos,Cobots junto a humanos,200,
+기술,🤖 Historia de la Robótica,🤖,6,견습생,Competencias de Robótica,"FIRST, competiciones estudiantiles",200,🥈 실버 배지
+기술,🤖 Historia de la Robótica,🤖,7,전문가,Robots Militares,"Drones, sistemas no tripulados",350,
+기술,🤖 Historia de la Robótica,🤖,8,전문가,Robots en Medicina,"Cirugía, rehabilitación",350,🥇 골드 배지
+기술,🤖 Historia de la Robótica,🤖,9,전문가,Robots Autónomos Inteligentes,"Percepción, decisión",500,
+기술,🤖 Historia de la Robótica,🤖,10,전문가,Futuro de la Robótica,"Sociedad, empleo, ética",500,💎 다이아몬드 배지
+기술,🚆 Historia del Transporte,🚆,1,탐험가,Rueda y Tracción Animal,"Carros, caballos",100,
+기술,🚆 Historia del Transporte,🚆,2,탐험가,Barcos y Grandes Rutas,Navegación a vela,100,
+기술,🚆 Historia del Transporte,🚆,3,탐험가,Ferrocarril,Revolución de los trenes,100,🥉 브론즈 배지
+기술,🚆 Historia del Transporte,🚆,4,견습생,Automóvil y Carreteras,"Ford, autopistas",200,
+기술,🚆 Historia del Transporte,🚆,5,견습생,Aviación,"Wright, vuelos comerciales",200,
+기술,🚆 Historia del Transporte,🚆,6,견습생,Transporte Urbano,"Metro, tranvía, buses",200,🥈 실버 배지
+기술,🚆 Historia del Transporte,🚆,7,전문가,Logística Global,"Contenedores, puertos",350,
+기술,🚆 Historia del Transporte,🚆,8,전문가,Sostenibilidad en el Transporte,"Eléctricos, tren rápido",350,🥇 골드 배지
+기술,🚆 Historia del Transporte,🚆,9,전문가,Vehículos Autónomos,Coches sin conductor,500,
+기술,🚆 Historia del Transporte,🚆,10,전문가,Transporte del Futuro,"Hyperloop, taxis aéreos",500,💎 다이아몬드 배지
+기술,⚡ Historia de la Energía,⚡,1,탐험가,Fuego y Musculatura,Primeras fuentes,100,
+기술,⚡ Historia de la Energía,⚡,2,탐험가,Agua y Viento,"Molinos, norias",100,
+기술,⚡ Historia de la Energía,⚡,3,탐험가,Carbón y Vapor,Máquina de vapor,100,🥉 브론즈 배지
+기술,⚡ Historia de la Energía,⚡,4,견습생,Petróleo y Gas,Motores de combustión,200,
+기술,⚡ Historia de la Energía,⚡,5,견습생,Electricidad,"Generadores, redes",200,
+기술,⚡ Historia de la Energía,⚡,6,견습생,Energía Nuclear,"Fisión, centrales",200,🥈 실버 배지
+기술,⚡ Historia de la Energía,⚡,7,전문가,Renovables Modernas,"Solar, eólica",350,
+기술,⚡ Historia de la Energía,⚡,8,전문가,Eficiencia Energética,"Edificios, industria",350,🥇 골드 배지
+기술,⚡ Historia de la Energía,⚡,9,전문가,Fusión Experimental,"Tokamaks, stellarators",500,
+기술,⚡ Historia de la Energía,⚡,10,전문가,Civilización Energética Global,Escala Kardashev,500,💎 다이아몬드 배지
+인문학,🎸 Historia de la Música Popular,🎸,1,탐험가,Blues y Jazz,Raíces afroamericanas,100,
+인문학,🎸 Historia de la Música Popular,🎸,2,탐험가,Rock and Roll,Años 50 y 60,100,
+인문학,🎸 Historia de la Música Popular,🎸,3,탐험가,Pop Global,"Beatles, fenómenos",100,🥉 브론즈 배지
+인문학,🎸 Historia de la Música Popular,🎸,4,견습생,"Disco, Funk y Soul",Nuevos ritmos,200,
+인문학,🎸 Historia de la Música Popular,🎸,5,견습생,Hip-Hop y Rap,Cultura urbana,200,
+인문학,🎸 Historia de la Música Popular,🎸,6,견습생,Música Electrónica,"Raves, DJs",200,🥈 실버 배지
+인문학,🎸 Historia de la Música Popular,🎸,7,전문가,Globalización Musical,"K-pop, reguetón",350,
+인문학,🎸 Historia de la Música Popular,🎸,8,전문가,Industria del Streaming,"Spotify, plataformas",350,🥇 골드 배지
+인문학,🎸 Historia de la Música Popular,🎸,9,전문가,Derechos de Autor y Música,"Copyright, conflictos",500,
+인문학,🎸 Historia de la Música Popular,🎸,10,전문가,Música y Algoritmos,"Recomendación, creación IA",500,💎 다이아몬드 배지
+건강,🎨 Psicología de la Creatividad,🎨,1,탐험가,Qué es la Creatividad,Definiciones y mitos,100,
+건강,🎨 Psicología de la Creatividad,🎨,2,탐험가,Cerebro Creativo,Redes neuronales implicadas,100,
+건강,🎨 Psicología de la Creatividad,🎨,3,탐험가,Bloqueo Creativo,Causas habituales,100,🥉 브론즈 배지
+건강,🎨 Psicología de la Creatividad,🎨,4,견습생,Procesos Creativos,"Incubación, insight",200,
+건강,🎨 Psicología de la Creatividad,🎨,5,견습생,Creatividad en Ciencia y Arte,Casos históricos,200,
+건강,🎨 Psicología de la Creatividad,🎨,6,견습생,Ambiente y Creatividad,Entornos que ayudan,200,🥈 실버 배지
+건강,🎨 Psicología de la Creatividad,🎨,7,전문가,Equipos Creativos,Colaboración y conflicto,350,
+건강,🎨 Psicología de la Creatividad,🎨,8,전문가,Creatividad en Empresas,Innovación y cultura,350,🥇 골드 배지
+건강,🎨 Psicología de la Creatividad,🎨,9,전문가,Medir Creatividad,"Tests, límites",500,
+건강,🎨 Psicología de la Creatividad,🎨,10,전문가,IA y Co-creación,Humanos + máquinas,500,💎 다이아몬드 배지
+사회,📢 Historia de la Publicidad,📢,1,탐험가,Anuncios en la Antigüedad,"Carteles, pregoneros",100,
+사회,📢 Historia de la Publicidad,📢,2,탐험가,Publicidad en Prensa,Siglo XIX,100,
+사회,📢 Historia de la Publicidad,📢,3,탐험가,Radio y TV,Spots icónicos,100,🥉 브론즈 배지
+사회,📢 Historia de la Publicidad,📢,4,견습생,Branding y Marcas,Identidad visual,200,
+사회,📢 Historia de la Publicidad,📢,5,견습생,Publicidad Digital,"Banners, SEM",200,
+사회,📢 Historia de la Publicidad,📢,6,견습생,Redes Sociales e Influencers,Nuevos formatos,200,🥈 실버 배지
+사회,📢 Historia de la Publicidad,📢,7,전문가,Psicología del Consumo,Persuasión y emoción,350,
+사회,📢 Historia de la Publicidad,📢,8,전문가,Ética en la Publicidad,"Manipulación, regulación",350,🥇 골드 배지
+사회,📢 Historia de la Publicidad,📢,9,전문가,Publicidad Personalizada,Microsegmentación,500,
+사회,📢 Historia de la Publicidad,📢,10,전문가,Futuro de la Publicidad,"IA creativa, realidad aumentada",500,💎 다이아몬드 배지
+건강,🧠 Historia de la Medicina Mental,🧠,1,탐험가,Concepciones Antiguas,"Espíritus, humores",100,
+건강,🧠 Historia de la Medicina Mental,🧠,2,탐험가,Manicomios y Encierros,Siglos XVIII-XIX,100,
+건강,🧠 Historia de la Medicina Mental,🧠,3,탐험가,Nacimiento de la Psiquiatría,"Pinel, primeras clasificaciones",100,🥉 브론즈 배지
+건강,🧠 Historia de la Medicina Mental,🧠,4,견습생,Psicoanálisis y Freud,"Inconsciente, terapia",200,
+건강,🧠 Historia de la Medicina Mental,🧠,5,견습생,Psicofármacos,Revolución farmacológica,200,
+건강,🧠 Historia de la Medicina Mental,🧠,6,견습생,Terapias Cognitivo-Conductuales,Nuevos enfoques,200,🥈 실버 배지
+건강,🧠 Historia de la Medicina Mental,🧠,7,전문가,Salud Mental Comunitaria,Desinstitucionalización,350,
+건강,🧠 Historia de la Medicina Mental,🧠,8,전문가,Salud Mental en la Cultura,"Estigma, representaciones",350,🥇 골드 배지
+건강,🧠 Historia de la Medicina Mental,🧠,9,전문가,Digitalización de la Terapia,"Apps, telepsicología",500,
+건강,🧠 Historia de la Medicina Mental,🧠,10,전문가,Futuro de la Salud Mental,"Prevención, IA, personalización",500,💎 다이아몬드 배지
+사회,🏆 Historia del Deporte,🏆,1,탐험가,Juegos Antiguos,"Olímpicos, rituales",100,
+사회,🏆 Historia del Deporte,🏆,2,탐험가,Deporte Moderno,Reglas y federaciones,100,
+사회,🏆 Historia del Deporte,🏆,3,탐험가,Fútbol y Deportes de Masas,"Clubes, ligas",100,🥉 브론즈 배지
+사회,🏆 Historia del Deporte,🏆,4,견습생,Juegos Olímpicos Modernos,Renacimiento y evolución,200,
+사회,🏆 Historia del Deporte,🏆,5,견습생,Profesionalización y Negocio,"Contratos, derechos TV",200,
+사회,🏆 Historia del Deporte,🏆,6,견습생,Deporte Femenino,Luchas por visibilidad,200,🥈 실버 배지
+사회,🏆 Historia del Deporte,🏆,7,전문가,Deporte y Política,"Boicots, propaganda",350,
+사회,🏆 Historia del Deporte,🏆,8,전문가,Dopaje y Ética,Casos célebres,350,🥇 골드 배지
+사회,🏆 Historia del Deporte,🏆,9,전문가,Ciencia del Rendimiento,"Nutrición, datos",500,
+사회,🏆 Historia del Deporte,🏆,10,전문가,Deporte del Futuro,"E-sports, nuevos formatos",500,💎 다이아몬드 배지
+과학,⏳ Historia del Tiempo y Calendarios,⏳,1,탐험가,Medir el Tiempo,"Sol, luna, ciclos",100,
+과학,⏳ Historia del Tiempo y Calendarios,⏳,2,탐험가,Calendarios Antiguos,"Egipcio, maya",100,
+과학,⏳ Historia del Tiempo y Calendarios,⏳,3,탐험가,Calendario Romano y Gregoriano,Reformas,100,🥉 브론즈 배지
+과학,⏳ Historia del Tiempo y Calendarios,⏳,4,견습생,Relojes Mecánicos,"Campanarios, relojes de bolsillo",200,
+과학,⏳ Historia del Tiempo y Calendarios,⏳,5,견습생,Husos Horarios,Coordinación global,200,
+과학,⏳ Historia del Tiempo y Calendarios,⏳,6,견습생,Tiempo Atómico,Precisión extrema,200,🥈 실버 배지
+과학,⏳ Historia del Tiempo y Calendarios,⏳,7,전문가,Percepción Humana del Tiempo,Psicología,350,
+과학,⏳ Historia del Tiempo y Calendarios,⏳,8,전문가,Tiempo en la Física,Relatividad,350,🥇 골드 배지
+과학,⏳ Historia del Tiempo y Calendarios,⏳,9,전문가,Tiempo en la Cultura,"Ritmos, rituales",500,
+과학,⏳ Historia del Tiempo y Calendarios,⏳,10,전문가,Futuro del Tiempo Humano,"Vida acelerada, IA",500,💎 다이아몬드 배지
+사회,🚢 Historia del Comercio y la Globalización,🚢,1,탐험가,Trueque y Mercados Locales,Intercambios básicos,100,
+사회,🚢 Historia del Comercio y la Globalización,🚢,2,탐험가,Rutas de la Seda y Marítimas,Intercambio global temprano,100,
+사회,🚢 Historia del Comercio y la Globalización,🚢,3,탐험가,Compañías Coloniales,Compañía de Indias,100,🥉 브론즈 배지
+사회,🚢 Historia del Comercio y la Globalización,🚢,4,견습생,Revolución Industrial y Comercio,Manufacturas y exportación,200,
+사회,🚢 Historia del Comercio y la Globalización,🚢,5,견습생,Era del Contenedor,Logística moderna,200,
+사회,🚢 Historia del Comercio y la Globalización,🚢,6,견습생,Organismos Internacionales,"OMC, tratados de libre comercio",200,🥈 실버 배지
+사회,🚢 Historia del Comercio y la Globalización,🚢,7,전문가,Cadenas Globales de Valor,Producción distribuida,350,
+사회,🚢 Historia del Comercio y la Globalización,🚢,8,전문가,Desigualdad y Globalización,Ganadores y perdedores,350,🥇 골드 배지
+사회,🚢 Historia del Comercio y la Globalización,🚢,9,전문가,Crisis y Guerras Comerciales,"Aranceles, sanciones",500,
+사회,🚢 Historia del Comercio y la Globalización,🚢,10,전문가,Globalización 2.0,"Digital, servicios, desglobalización",500,💎 다이아몬드 배지
+사회,💰 Historia del Dinero,💰,1,탐험가,Trueque y Objetos de Valor,"Sal, conchas",100,
+사회,💰 Historia del Dinero,💰,2,탐험가,Monedas y Metales,"Oro, plata",100,
+사회,💰 Historia del Dinero,💰,3,탐험가,Billetes y Bancos,"Pagarés, bancos centrales",100,🥉 브론즈 배지
+사회,💰 Historia del Dinero,💰,4,견습생,Patrón Oro y su Fin,Bretton Woods,200,
+사회,💰 Historia del Dinero,💰,5,견습생,Tarjetas y Dinero Electrónico,"Crédito, débito",200,
+사회,💰 Historia del Dinero,💰,6,견습생,Mercados Financieros Modernos,"Bolsas, derivados",200,🥈 실버 배지
+사회,💰 Historia del Dinero,💰,7,전문가,Crisis Monetarias,"Hiperinflaciones, devaluaciones",350,
+사회,💰 Historia del Dinero,💰,8,전문가,Criptomonedas,"Bitcoin, alternativas",350,🥇 골드 배지
+사회,💰 Historia del Dinero,💰,9,전문가,Dinero y Poder,Moneda como herramienta política,500,
+사회,💰 Historia del Dinero,💰,10,전문가,Futuro del Dinero,"CBDC, dinero programable",500,💎 다이아몬드 배지
+인문학,🎲 Historia de los Juegos de Mesa,🎲,1,탐험가,Juegos Antiguos,"Senet, Go",100,
+인문학,🎲 Historia de los Juegos de Mesa,🎲,2,탐험가,Ajedrez y Estrategia,Historia y cultura,100,
+인문학,🎲 Historia de los Juegos de Mesa,🎲,3,탐험가,Juegos Clásicos Modernos,"Monopoly, Scrabble",100,🥉 브론즈 배지
+인문학,🎲 Historia de los Juegos de Mesa,🎲,4,견습생,Eurogames y Revolución Moderna,"Catan, Carcassonne",200,
+인문학,🎲 Historia de los Juegos de Mesa,🎲,5,견습생,Juegos Cooperativos,"Pandemic, nuevos enfoques",200,
+인문학,🎲 Historia de los Juegos de Mesa,🎲,6,견습생,Juegos de Rol de Mesa,Dungeons & Dragons,200,🥈 실버 배지
+인문학,🎲 Historia de los Juegos de Mesa,🎲,7,전문가,Diseño de Juegos de Mesa,"Mecánicas, balance",350,
+인문학,🎲 Historia de los Juegos de Mesa,🎲,8,전문가,Comunidades y Ferias,"Essen, eventos",350,🥇 골드 배지
+인문학,🎲 Historia de los Juegos de Mesa,🎲,9,전문가,Juegos como Herramienta Educativa,Serious boardgames,500,
+인문학,🎲 Historia de los Juegos de Mesa,🎲,10,전문가,Futuro Híbrido,"Mesa + apps, IA",500,💎 다이아몬드 배지
+자연,🌊 Historia de la Exploración Oceánica,🌊,1,탐험가,Primeras Navegaciones,"Costas, islas",100,
+자연,🌊 Historia de la Exploración Oceánica,🌊,2,탐험가,Grandes Descubrimientos,"Colón, Magallanes",100,
+자연,🌊 Historia de la Exploración Oceánica,🌊,3,탐험가,Cartografía Marina,Mapas y peligros,100,🥉 브론즈 배지
+자연,🌊 Historia de la Exploración Oceánica,🌊,4,견습생,Exploración de Profundidades,"Batiscafos, Jacques Cousteau",200,
+자연,🌊 Historia de la Exploración Oceánica,🌊,5,견습생,Submarinos Militares,Guerras mundiales,200,
+자연,🌊 Historia de la Exploración Oceánica,🌊,6,견습생,Exploración Científica Moderna,"ROVs, Argo",200,🥈 실버 배지
+자연,🌊 Historia de la Exploración Oceánica,🌊,7,전문가,Recursos del Fondo Marino,"Minerales, ecosistemas",350,
+자연,🌊 Historia de la Exploración Oceánica,🌊,8,전문가,Pecios y Tesoro,Naufragios famosos,350,🥇 골드 배지
+자연,🌊 Historia de la Exploración Oceánica,🌊,9,전문가,Conservación de Océanos,Amenazas y soluciones,500,
+자연,🌊 Historia de la Exploración Oceánica,🌊,10,전문가,Colonización del Océano,Ciudades submarinas,500,💎 다이아몬드 배지
+과학,🗺️ Historia de la Cartografía,🗺️,1,탐험가,Primeros Mapas,"Cuevas, tablillas",100,
+과학,🗺️ Historia de la Cartografía,🗺️,2,탐험가,Mapas Antiguos,"Ptolomeo, mapas del mundo",100,
+과학,🗺️ Historia de la Cartografía,🗺️,3,탐험가,Edad de los Descubrimientos,Mapas náuticos,100,🥉 브론즈 배지
+과학,🗺️ Historia de la Cartografía,🗺️,4,견습생,Proyecciones y Distorsiones,"Mercator, alternativas",200,
+과학,🗺️ Historia de la Cartografía,🗺️,5,견습생,Mapas Temáticos,"Clima, población",200,
+과학,🗺️ Historia de la Cartografía,🗺️,6,견습생,Fotografía Aérea y Satélites,Nueva era de mapas,200,🥈 실버 배지
+과학,🗺️ Historia de la Cartografía,🗺️,7,전문가,Sistemas de Información Geográfica,GIS,350,
+과학,🗺️ Historia de la Cartografía,🗺️,8,전문가,Mapas en la Vida Cotidiana,"GPS, apps",350,🥇 골드 배지
+과학,🗺️ Historia de la Cartografía,🗺️,9,전문가,Mapas y Poder,"Propaganda, reclamaciones",500,
+과학,🗺️ Historia de la Cartografía,🗺️,10,전문가,Cartografía del Futuro,"Realidad aumentada, 3D",500,💎 다이아몬드 배지
+사회,🏠 Historia del Trabajo Doméstico,🏠,1,탐험가,Economía Doméstica Tradicional,Trabajo invisible,100,
+사회,🏠 Historia del Trabajo Doméstico,🏠,2,탐험가,Industrialización y Hogar,Cambios de rol,100,
+사회,🏠 Historia del Trabajo Doméstico,🏠,3,탐험가,Electrodomésticos,Revolución silenciosa,100,🥉 브론즈 배지
+사회,🏠 Historia del Trabajo Doméstico,🏠,4,견습생,División Sexual del Trabajo,Normas culturales,200,
+사회,🏠 Historia del Trabajo Doméstico,🏠,5,견습생,Trabajo de Cuidados,"Niños, mayores",200,
+사회,🏠 Historia del Trabajo Doméstico,🏠,6,견습생,Trabajadoras del Hogar,Derechos y luchas,200,🥈 실버 배지
+사회,🏠 Historia del Trabajo Doméstico,🏠,7,전문가,Externalización del Trabajo Doméstico,"Servicios, limpieza",350,
+사회,🏠 Historia del Trabajo Doméstico,🏠,8,전문가,Tecnología y Hogar Inteligente,Domótica,350,🥇 골드 배지
+사회,🏠 Historia del Trabajo Doméstico,🏠,9,전문가,Valor Económico del Trabajo No Remunerado,Cálculos y debates,500,
+사회,🏠 Historia del Trabajo Doméstico,🏠,10,전문가,Futuro del Hogar Automatizado,Robots domésticos,500,💎 다이아몬드 배지
+사회,✈️ Historia del Turismo,✈️,1,탐험가,Peregrinajes y Viajes Antiguos,Motivaciones tempranas,100,
+사회,✈️ Historia del Turismo,✈️,2,탐험가,Grand Tour y Viaje Aristocrático,Siglos XVII-XVIII,100,
+사회,✈️ Historia del Turismo,✈️,3,탐험가,Nacimiento del Turismo de Masas,"Trenes, vacaciones pagadas",100,🥉 브론즈 배지
+사회,✈️ Historia del Turismo,✈️,4,견습생,Turismo de Sol y Playa,Desarrollo costero,200,
+사회,✈️ Historia del Turismo,✈️,5,견습생,Turismo Cultural y Urbano,Ciudades icónicas,200,
+사회,✈️ Historia del Turismo,✈️,6,견습생,Turismo de Naturaleza y Aventura,Ecoturismo,200,🥈 실버 배지
+사회,✈️ Historia del Turismo,✈️,7,전문가,Impacto del Turismo,"Economía, gentrificación",350,
+사회,✈️ Historia del Turismo,✈️,8,전문가,Turismo Sostenible,Buenas prácticas,350,🥇 골드 배지
+사회,✈️ Historia del Turismo,✈️,9,전문가,Turismo en Crisis,"Guerras, pandemias",500,
+사회,✈️ Historia del Turismo,✈️,10,전문가,Turismo del Futuro,"Virtual, espacial",500,💎 다이아몬드 배지
+사회,📻 Historia de los Medios de Comunicación,📻,1,탐험가,Oralidad y Manuscritos,Tradición oral,100,
+사회,📻 Historia de los Medios de Comunicación,📻,2,탐험가,Imprenta y Libros,Revolución de Gutenberg,100,
+사회,📻 Historia de los Medios de Comunicación,📻,3,탐험가,Prensa y Opinión Pública,Periódicos,100,🥉 브론즈 배지
+사회,📻 Historia de los Medios de Comunicación,📻,4,견습생,Radio,Voces a distancia,200,
+사회,📻 Historia de los Medios de Comunicación,📻,5,견습생,Televisión,Imagen en casa,200,
+사회,📻 Historia de los Medios de Comunicación,📻,6,견습생,Internet y Redes,Medios digitales,200,🥈 실버 배지
+사회,📻 Historia de los Medios de Comunicación,📻,7,전문가,Concentración Mediática,Grandes grupos,350,
+사회,📻 Historia de los Medios de Comunicación,📻,8,전문가,Fake News y Desinformación,Retos actuales,350,🥇 골드 배지
+사회,📻 Historia de los Medios de Comunicación,📻,9,전문가,Periodismo de Datos,Nuevas formas de contar,500,
+사회,📻 Historia de los Medios de Comunicación,📻,10,전문가,Medios del Futuro,"Realidad mixta, IA",500,💎 다이아몬드 배지
+과학,🌍 Historia del Clima de la Tierra,🌍,1,탐험가,Eras Geológicas,Resumen de grandes periodos,100,
+과학,🌍 Historia del Clima de la Tierra,🌍,2,탐험가,Glaciaciones,Edades de hielo,100,
+과학,🌍 Historia del Clima de la Tierra,🌍,3,탐험가,Períodos Cálidos,Tiempos sin hielo,100,🥉 브론즈 배지
+과학,🌍 Historia del Clima de la Tierra,🌍,4,견습생,Cómo Sabemos del Clima Pasado,"Testigos de hielo, sedimentos",200,
+과학,🌍 Historia del Clima de la Tierra,🌍,5,견습생,Clima y Grandes Extinciones,Relaciones,200,
+과학,🌍 Historia del Clima de la Tierra,🌍,6,견습생,Clima y Civilizaciones,Colapsos y prosperidad,200,🥈 실버 배지
+과학,🌍 Historia del Clima de la Tierra,🌍,7,전문가,Era Industrial y Cambio Climático,"CO2, forzamientos",350,
+과학,🌍 Historia del Clima de la Tierra,🌍,8,전문가,Modelos Climáticos,Simulaciones y escenarios,350,🥇 골드 배지
+과학,🌍 Historia del Clima de la Tierra,🌍,9,전문가,Puntos de No Retorno,Riesgos sistémicos,500,
+과학,🌍 Historia del Clima de la Tierra,🌍,10,전문가,Futuros Climáticos,Trayectorias posibles,500,💎 다이아몬드 배지
+기술,💻 Historia de la Informática Personal,💻,1,탐험가,Primeros PCs,"Altair, Apple I",100,
+기술,💻 Historia de la Informática Personal,💻,2,탐험가,Revolución del PC de Escritorio,"IBM PC, compatibles",100,
+기술,💻 Historia de la Informática Personal,💻,3,탐험가,Interfaces Gráficas,"Macintosh, Windows",100,🥉 브론즈 배지
+기술,💻 Historia de la Informática Personal,💻,4,견습생,Portátiles y Movilidad,Laptops,200,
+기술,💻 Historia de la Informática Personal,💻,5,견습생,Internet en Casa,"Módems, banda ancha",200,
+기술,💻 Historia de la Informática Personal,💻,6,견습생,Smartphones,"iPhone, Android",200,🥈 실버 배지
+기술,💻 Historia de la Informática Personal,💻,7,전문가,Tablets y Dispositivos Híbridos,Nuevas formas,350,
+기술,💻 Historia de la Informática Personal,💻,8,전문가,Ecosistemas y Jardines Cerrados,App stores,350,🥇 골드 배지
+기술,💻 Historia de la Informática Personal,💻,9,전문가,Informática Ubicua,IoT,500,
+기술,💻 Historia de la Informática Personal,💻,10,전문가,Humanos Aumentados,Wearables avanzados,500,💎 다이아몬드 배지
+사회,🍎 Historia de la Educación,🍎,1,탐험가,Educación en Sociedades Antiguas,Aprendizaje maestro-discípulo,100,
+사회,🍎 Historia de la Educación,🍎,2,탐험가,Universidades Medievales,"Bolonia, París",100,
+사회,🍎 Historia de la Educación,🍎,3,탐험가,Escuela Pública,Sistemas nacionales,100,🥉 브론즈 배지
+사회,🍎 Historia de la Educación,🍎,4,견습생,Metodologías Clásicas,"Memorización, examen",200,
+사회,🍎 Historia de la Educación,🍎,5,견습생,Pedagogías Activas,"Montessori, Freinet",200,
+사회,🍎 Historia de la Educación,🍎,6,견습생,Educación Masiva y Online,MOOCs,200,🥈 실버 배지
+사회,🍎 Historia de la Educación,🍎,7,전문가,Brecha Educativa Global,Acceso desigual,350,
+사회,🍎 Historia de la Educación,🍎,8,전문가,Evaluación y Métricas,"Notas, estandarización",350,🥇 골드 배지
+사회,🍎 Historia de la Educación,🍎,9,전문가,Aprendizaje Personalizado,Datos y adaptación,500,
+사회,🍎 Historia de la Educación,🍎,10,전문가,Educación del Futuro,"Lifelong learning, IA",500,💎 다이아몬드 배지
+인문학,⛪ Historia de la Arquitectura Sagrada,⛪,1,탐험가,Templos Antiguos,"Egipto, Grecia",100,
+인문학,⛪ Historia de la Arquitectura Sagrada,⛪,2,탐험가,Basílicas y Catedrales,Cristianismo,100,
+인문학,⛪ Historia de la Arquitectura Sagrada,⛪,3,탐험가,Mezquitas y Arquitectura Islámica,Elementos clave,100,🥉 브론즈 배지
+인문학,⛪ Historia de la Arquitectura Sagrada,⛪,4,견습생,Pagodas y Templos Asiáticos,"Budismo, taoísmo",200,
+인문학,⛪ Historia de la Arquitectura Sagrada,⛪,5,견습생,Arquitectura Sagrada en América,Pirámides mesoamericanas,200,
+인문학,⛪ Historia de la Arquitectura Sagrada,⛪,6,견습생,Símbolos y Orientaciones,Geometría sagrada,200,🥈 실버 배지
+인문학,⛪ Historia de la Arquitectura Sagrada,⛪,7,전문가,Transformaciones y Reutilizaciones,Edificios cambiando de culto,350,
+인문학,⛪ Historia de la Arquitectura Sagrada,⛪,8,전문가,Arquitectura Sagrada Contemporánea,Innovaciones,350,🥇 골드 배지
+인문학,⛪ Historia de la Arquitectura Sagrada,⛪,9,전문가,Turismo y Comercialización,Espacios sacros como atracciones,500,
+인문학,⛪ Historia de la Arquitectura Sagrada,⛪,10,전문가,Espiritualidad y Espacios del Futuro,Nuevos templos,500,💎 다이아몬드 배지
+과학,🧪 Historia de la Biotecnología,🧪,1,탐험가,Fermentación y Usos Antiguos,"Pan, vino",100,
+과학,🧪 Historia de la Biotecnología,🧪,2,탐험가,Descubrimiento de Microorganismos,Microscopios,100,
+과학,🧪 Historia de la Biotecnología,🧪,3,탐험가,Genética Clásica,Mendel,100,🥉 브론즈 배지
+과학,🧪 Historia de la Biotecnología,🧪,4,견습생,ADN y Doble Hélice,Watson y Crick,200,
+과학,🧪 Historia de la Biotecnología,🧪,5,견습생,Ingeniería Genética,ADN recombinante,200,
+과학,🧪 Historia de la Biotecnología,🧪,6,견습생,Biotecnología Industrial,"Farmacia, alimentos",200,🥈 실버 배지
+과학,🧪 Historia de la Biotecnología,🧪,7,전문가,"Biotecnología Roja, Verde y Blanca","Salud, agricultura, industria",350,
+과학,🧪 Historia de la Biotecnología,🧪,8,전문가,Bioética,Dilemas,350,🥇 골드 배지
+과학,🧪 Historia de la Biotecnología,🧪,9,전문가,CRISPR y Edición Precisa,Revolución reciente,500,
+과학,🧪 Historia de la Biotecnología,🧪,10,전문가,Biología Sintética,Diseñar vida,500,💎 다이아몬드 배지

@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "678418025083",
+    "project_id": "sapere-f7150",
+    "storage_bucket": "sapere-f7150.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678418025083:android:74a3f685cb7639e10b30de",
+        "android_client_info": {
+          "package_name": "com.victor.sapere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678418025083-48jkjmlacinfcsqnnm4kf06ne3hbca65.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.victor.sapere",
+            "certificate_hash": "4298b463e2e74a8d9b5bb5ce58310a1ad4e316ff"
+          }
+        },
+        {
+          "client_id": "678418025083-93khk5k5kb1v7pq5d3bk57al473ibd9p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.victor.sapere",
+            "certificate_hash": "5d17b0cfd4ed2df54632e300caa5dda68dee32f6"
+          }
+        },
+        {
+          "client_id": "678418025083-5faatp19oe85chfgn8g5rjt59dusbcjq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk8mJOwSpsZWvIJmCAxO1AsUqBFzPy27k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678418025083-5faatp19oe85chfgn8g5rjt59dusbcjq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678418025083-026tvl75qusiacctal624642eauo1o0n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.victor.sapereadmin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678418025083:android:149f7b1779a3a4880b30de",
+        "android_client_info": {
+          "package_name": "com.victor.sapereadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678418025083-5faatp19oe85chfgn8g5rjt59dusbcjq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk8mJOwSpsZWvIJmCAxO1AsUqBFzPy27k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678418025083-5faatp19oe85chfgn8g5rjt59dusbcjq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678418025083-026tvl75qusiacctal624642eauo1o0n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.victor.sapereadmin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

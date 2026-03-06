@@ -1,0 +1,901 @@
+﻿Category,Subject,Icon,Episode No,Level,Episode Title,Description,Base XP,Badge
+Наука,🔭 Астрономия и космос,🔭,1,Исследователь,El Sistema Solar,"Planetas, lunas, órbitas básicas",100,
+Наука,🔭 Астрономия и космос,🔭,2,Исследователь,Estrellas y Constelaciones,"Tipos de estrellas, ciclo estelar",100,
+Наука,🔭 Астрономия и космос,🔭,3,Исследователь,La Luna y las Mareas,"Fases lunares, influencia terrestre",100,🥉 Бронзовый значок
+Наука,🔭 Астрономия и космос,🔭,4,Ученик,Galaxias y Nebulosas,"Vía Láctea, tipos de galaxias",200,
+Наука,🔭 Астрономия и космос,🔭,5,Ученик,Exploración Espacial,Historia de la carrera espacial,200,
+Наука,🔭 Астрономия и космос,🔭,6,Ученик,Agujeros Negros,"Formación, horizonte de eventos",200,🥈 Серебряный значок
+Наука,🔭 Астрономия и космос,🔭,7,Ценитель,Cosmología del Big Bang,"Origen del universo, radiación cósmica",350,
+Наука,🔭 Астрономия и космос,🔭,8,Ценитель,Exoplanetas y Vida,"Zona habitable, búsqueda de vida",350,🥇 Золотой значок
+Наука,🔭 Астрономия и космос,🔭,9,Эксперт,Materia y Energía Oscura,Composición oculta del universo,500,
+Наука,🔭 Астрономия и космос,🔭,10,Эксперт,El Futuro del Cosmos,"Destino del universo, teorías finales",500,💎 Бриллиантовый значок
+История,🏛️ Древняя история,🏛️,1,Исследователь,Mesopotamia: Cuna de la Civilización,"Sumerios, escritura cuneiforme",100,
+История,🏛️ Древняя история,🏛️,2,Исследователь,Egipto: El Nilo y los Faraones,"Pirámides, momificación, jeroglíficos",100,
+История,🏛️ Древняя история,🏛️,3,Исследователь,Grecia: Democracia y Filosofía,"Atenas, Esparta, pensadores",100,🥉 Бронзовый значок
+История,🏛️ Древняя история,🏛️,4,Ученик,Roma: República e Imperio,"Legiones, ingeniería, derecho romano",200,
+История,🏛️ Древняя история,🏛️,5,Ученик,China: Dinastías Imperiales,"Gran Muralla, Ruta de la Seda",200,
+История,🏛️ Древняя история,🏛️,6,Ученик,India: Civilización del Indo,"Harappa, vedas, castas",200,🥈 Серебряный значок
+История,🏛️ Древняя история,🏛️,7,Ценитель,Persia y los Grandes Imperios,"Ciro, Darío, guerras médicas",350,
+История,🏛️ Древняя история,🏛️,8,Ценитель,Civilizaciones Precolombinas,"Maya, Azteca, Inca",350,🥇 Золотой значок
+История,🏛️ Древняя история,🏛️,9,Эксперт,Caída de los Imperios,Patrones de colapso civilizatorio,500,
+История,🏛️ Древняя история,🏛️,10,Эксперт,Legado Antiguo en el Mundo Moderno,Influencias actuales del mundo antiguo,500,💎 Бриллиантовый значок
+Наука,🧠 Нейронаука,🧠,1,Исследователь,El Cerebro: Mapa Básico,"Lóbulos, hemisferios, funciones",100,
+Наука,🧠 Нейронаука,🧠,2,Исследователь,Neuronas y Sinapsis,Comunicación neuronal básica,100,
+Наука,🧠 Нейронаука,🧠,3,Исследователь,Los Sentidos,Cómo el cerebro procesa el mundo,100,🥉 Бронзовый значок
+Наука,🧠 Нейронаука,🧠,4,Ученик,Memoria y Aprendizaje,"Tipos de memoria, neuroplasticidad",200,
+Наука,🧠 Нейронаука,🧠,5,Ученик,Emociones y el Cerebro,"Sistema límbico, amígdala",200,
+Наука,🧠 Нейронаука,🧠,6,Ученик,El Sueño y los Sueños,"Ciclos REM, función reparadora",200,🥈 Серебряный значок
+Наука,🧠 Нейронаука,🧠,7,Ценитель,Neuroquímica,"Dopamina, serotonina, endorfinas",350,
+Наука,🧠 Нейронаука,🧠,8,Ценитель,Trastornos Neurológicos,"Alzheimer, Parkinson, epilepsia",350,🥇 Золотой значок
+Наука,🧠 Нейронаука,🧠,9,Эксперт,Conciencia y Libre Albedrío,El misterio de la conciencia,500,
+Наука,🧠 Нейронаука,🧠,10,Эксперт,Neurotecnología del Futuro,"Interfaces cerebro-máquina, IA neural",500,💎 Бриллиантовый значок
+Технологии,🤖 Inteligencia Artificial,🤖,1,Исследователь,¿Qué es la IA?,"Conceptos básicos, historia",100,
+Технологии,🤖 Inteligencia Artificial,🤖,2,Исследователь,Machine Learning 101,Aprendizaje supervisado y no supervisado,100,
+Технологии,🤖 Inteligencia Artificial,🤖,3,Исследователь,Redes Neuronales,Cómo aprende una máquina,100,🥉 Бронзовый значок
+Технологии,🤖 Inteligencia Artificial,🤖,4,Ученик,Procesamiento del Lenguaje,"NLP, chatbots, traducción",200,
+Технологии,🤖 Inteligencia Artificial,🤖,5,Ученик,Visión por Computador,Reconocimiento de imágenes,200,
+Технологии,🤖 Inteligencia Artificial,🤖,6,Ученик,IA Generativa,"GPT, DALL-E, creación de contenido",200,🥈 Серебряный значок
+Технологии,🤖 Inteligencia Artificial,🤖,7,Ценитель,IA en la Industria,"Aplicaciones reales, transformación",350,
+Технологии,🤖 Inteligencia Artificial,🤖,8,Ценитель,Ética de la IA,"Sesgos, privacidad, regulación",350,🥇 Золотой значок
+Технологии,🤖 Inteligencia Artificial,🤖,9,Эксперт,IA General (AGI),Camino hacia la superinteligencia,500,
+Технологии,🤖 Inteligencia Artificial,🤖,10,Эксперт,El Futuro IA-Humano,"Coexistencia, singularidad tecnológica",500,💎 Бриллиантовый значок
+Общество,💰 Economía y Finanzas,💰,1,Исследователь,Oferta y Demanda,Principios básicos del mercado,100,
+Общество,💰 Economía y Finanzas,💰,2,Исследователь,El Dinero y la Banca,"Historia del dinero, sistema bancario",100,
+Общество,💰 Economía y Finanzas,💰,3,Исследователь,Inflación y Precios,Por qué sube el coste de la vida,100,🥉 Бронзовый значок
+Общество,💰 Economía y Finanzas,💰,4,Ученик,Mercados Bursátiles,"Bolsa, acciones, índices",200,
+Общество,💰 Economía y Finanzas,💰,5,Ученик,Comercio Internacional,"Globalización, aranceles, tratados",200,
+Общество,💰 Economía y Finanzas,💰,6,Ученик,Criptomonedas y Blockchain,"Bitcoin, tecnología descentralizada",200,🥈 Серебряный значок
+Общество,💰 Economía y Finanzas,💰,7,Ценитель,Crisis Económicas,"Grandes recesiones, patrones",350,
+Общество,💰 Economía y Finanzas,💰,8,Ценитель,Política Monetaria,"Bancos centrales, tipos de interés",350,🥇 Золотой значок
+Общество,💰 Economía y Finanzas,💰,9,Эксперт,Economía Conductual,Psicología de las decisiones financieras,500,
+Общество,💰 Economía y Finanzas,💰,10,Эксперт,El Futuro de la Economía,"Post-capitalismo, economía circular",500,💎 Бриллиантовый значок
+Природа,🐋 Biología Marina,🐋,1,Исследователь,Los Océanos del Mundo,"Geografía oceánica, corrientes",100,
+Природа,🐋 Biología Marina,🐋,2,Исследователь,Arrecifes de Coral,"Ecosistemas submarinos, biodiversidad",100,
+Природа,🐋 Biología Marina,🐋,3,Исследователь,Grandes Mamíferos Marinos,"Ballenas, delfines, comunicación",100,🥉 Бронзовый значок
+Природа,🐋 Biología Marina,🐋,4,Ученик,El Abismo: Vida en las Profundidades,"Criaturas abisales, bioluminiscencia",200,
+Природа,🐋 Biología Marina,🐋,5,Ученик,Tiburones: Depredadores del Mar,"Especies, mitos y realidades",200,
+Природа,🐋 Biología Marina,🐋,6,Ученик,Migraciones Oceánicas,"Rutas, instintos, supervivencia",200,🥈 Серебряный значок
+Природа,🐋 Biología Marina,🐋,7,Ценитель,Contaminación Marina,"Plásticos, acidificación, soluciones",350,
+Природа,🐋 Biología Marina,🐋,8,Ценитель,Oceanografía y Clima,El océano como regulador climático,350,🥇 Золотой значок
+Природа,🐋 Biología Marina,🐋,9,Эксперт,Biología Molecular Marina,Genética de organismos marinos,500,
+Природа,🐋 Biología Marina,🐋,10,Эксперт,El Océano del Futuro,"Conservación, explotación sostenible",500,💎 Бриллиантовый значок
+Общество,🧩 Psicología Humana,🧩,1,Исследователь,Introducción a la Psicología,"Corrientes, Freud, conductismo",100,
+Общество,🧩 Psicología Humana,🧩,2,Исследователь,Personalidad y Temperamento,"Big Five, tipos psicológicos",100,
+Общество,🧩 Psicología Humana,🧩,3,Исследователь,Percepción y Atención,"Ilusiones, sesgos perceptivos",100,🥉 Бронзовый значок
+Общество,🧩 Psicología Humana,🧩,4,Ученик,Psicología Social,"Conformidad, obediencia, grupos",200,
+Общество,🧩 Psicología Humana,🧩,5,Ученик,Motivación y Hábitos,"Ciclos de hábitos, motivación intrínseca",200,
+Общество,🧩 Psicología Humana,🧩,6,Ученик,Toma de Decisiones,"Heurísticas, sesgos cognitivos",200,🥈 Серебряный значок
+Общество,🧩 Psicología Humana,🧩,7,Ценитель,Psicología del Desarrollo,"Infancia a vejez, etapas clave",350,
+Общество,🧩 Psicología Humana,🧩,8,Ценитель,Trastornos Mentales,"Ansiedad, depresión, esquizofrenia",350,🥇 Золотой значок
+Общество,🧩 Psicología Humana,🧩,9,Эксперт,Psicología Positiva,"Flow, resiliencia, bienestar",500,
+Общество,🧩 Psicología Humana,🧩,10,Эксперт,Manipulación y Persuasión,"Técnicas, propaganda, defensa crítica",500,💎 Бриллиантовый значок
+Наука,⚛️ Física Fundamental,⚛️,1,Исследователь,Las Leyes de Newton,"Movimiento, fuerza, gravedad",100,
+Наука,⚛️ Física Fundamental,⚛️,2,Исследователь,Energía y Termodinámica,"Conservación, calor, entropía",100,
+Наука,⚛️ Física Fundamental,⚛️,3,Исследователь,Ondas y Sonido,"Vibraciones, frecuencia, música",100,🥉 Бронзовый значок
+Наука,⚛️ Física Fundamental,⚛️,4,Ученик,Electricidad y Magnetismo,"Campos, corriente, Maxwell",200,
+Наука,⚛️ Física Fundamental,⚛️,5,Ученик,Relatividad de Einstein,"Espacio-tiempo, E=mc²",200,
+Наука,⚛️ Física Fundamental,⚛️,6,Ученик,Física Nuclear,"Átomos, radiactividad, fisión",200,🥈 Серебряный значок
+Наука,⚛️ Física Fundamental,⚛️,7,Ценитель,Mecánica Cuántica,"Dualidad onda-partícula, incertidumbre",350,
+Наука,⚛️ Física Fundamental,⚛️,8,Ценитель,Partículas Subatómicas,"Quarks, bosón de Higgs, modelo estándar",350,🥇 Золотой значок
+Наука,⚛️ Física Fundamental,⚛️,9,Эксперт,Teoría de Cuerdas,"Dimensiones extra, unificación",500,
+Наука,⚛️ Física Fundamental,⚛️,10,Эксперт,Los Misterios Sin Resolver,"Gravedad cuántica, multiverso",500,💎 Бриллиантовый значок
+Гуманитарные науки,💭 Filosofía,💭,1,Исследователь,Sócrates y el Arte de Preguntar,"Método socrático, mayéutica",100,
+Гуманитарные науки,💭 Filosofía,💭,2,Исследователь,Platón y las Ideas,"Mundo ideal, alegoría de la caverna",100,
+Гуманитарные науки,💭 Filosofía,💭,3,Исследователь,Aristóteles: Lógica y Ética,"Silogismo, virtud, eudaimonía",100,🥉 Бронзовый значок
+Гуманитарные науки,💭 Filosofía,💭,4,Ученик,Filosofía Medieval,"San Agustín, Santo Tomás, fe y razón",200,
+Гуманитарные науки,💭 Filosofía,💭,5,Ученик,Racionalismo vs Empirismo,"Descartes, Hume, conocimiento",200,
+Гуманитарные науки,💭 Filosofía,💭,6,Ученик,Kant y la Ilustración,"Imperativo categórico, crítica",200,🥈 Серебряный значок
+Гуманитарные науки,💭 Filosofía,💭,7,Ценитель,Existencialismo,"Nietzsche, Sartre, libertad radical",350,
+Гуманитарные науки,💭 Filosofía,💭,8,Ценитель,Filosofía Oriental,"Confucio, Buda, Lao-Tse",350,🥇 Золотой значок
+Гуманитарные науки,💭 Filosofía,💭,9,Эксперт,Filosofía del Lenguaje y la Mente,"Wittgenstein, conciencia, IA",500,
+Гуманитарные науки,💭 Filosofía,💭,10,Эксперт,Ética Contemporánea,"Bioética, justicia global, transhumanismo",500,💎 Бриллиантовый значок
+Наука,🧬 Evolución y Genética,🧬,1,Исследователь,Darwin y la Selección Natural,"Teoría de la evolución, Galápagos",100,
+Наука,🧬 Evolución y Genética,🧬,2,Исследователь,ADN: El Código de la Vida,"Estructura, genes, cromosomas",100,
+Наука,🧬 Evolución y Genética,🧬,3,Исследователь,Herencia y Mendel,"Leyes de la herencia, rasgos",100,🥉 Бронзовый значок
+Наука,🧬 Evolución y Genética,🧬,4,Ученик,Evolución Humana,Australopithecus a Homo sapiens,200,
+Наука,🧬 Evolución y Genética,🧬,5,Ученик,Mutaciones y Adaptación,Motor del cambio evolutivo,200,
+Наука,🧬 Evolución y Genética,🧬,6,Ученик,Extinción y Especiación,"Extinciones masivas, nueva vida",200,🥈 Серебряный значок
+Наука,🧬 Evolución y Genética,🧬,7,Ценитель,Genómica y Proteómica,"Proyecto Genoma, secuenciación",350,
+Наука,🧬 Evolución y Genética,🧬,8,Ценитель,Epigenética,Genes que se encienden y apagan,350,🥇 Золотой значок
+Наука,🧬 Evolución y Genética,🧬,9,Эксперт,CRISPR y Edición Genética,"Terapia génica, bebés diseñados",500,
+Наука,🧬 Evolución y Genética,🧬,10,Эксперт,Biología Sintética,"Crear vida artificial, futuro genético",500,💎 Бриллиантовый значок
+Общество,🌍 Geopolítica Mundial,🌍,1,Исследователь,¿Qué es la Geopolítica?,"Conceptos, poder, territorios",100,
+Общество,🌍 Geopolítica Mundial,🌍,2,Исследователь,Las Grandes Potencias,"EE.UU., China, Rusia, UE",100,
+Общество,🌍 Geopolítica Mundial,🌍,3,Исследователь,Conflictos Territoriales,"Fronteras disputadas, recursos",100,🥉 Бронзовый значок
+Общество,🌍 Geopolítica Mundial,🌍,4,Ученик,La Guerra Fría,"Bipolaridad, proxy wars, caída del muro",200,
+Общество,🌍 Geopolítica Mundial,🌍,5,Ученик,Oriente Medio,"Petróleo, religión, conflictos",200,
+Общество,🌍 Geopolítica Mundial,🌍,6,Ученик,El Ascenso de China,"Ruta de la Seda, influencia global",200,🥈 Серебряный значок
+Общество,🌍 Geopolítica Mundial,🌍,7,Ценитель,Organizaciones Internacionales,"ONU, OTAN, G20, poder blando",350,
+Общество,🌍 Geopolítica Mundial,🌍,8,Ценитель,Ciberguerra y Espionaje,"Guerra híbrida, desinformación",350,🥇 Золотой значок
+Общество,🌍 Geopolítica Mundial,🌍,9,Эксперт,Recursos y Guerras del Futuro,"Agua, litio, tierras raras",500,
+Общество,🌍 Geopolítica Mundial,🌍,10,Эксперт,Nuevo Orden Mundial,"Multipolaridad, escenarios 2050",500,💎 Бриллиантовый значок
+Гуманитарные науки,🎨 Arte y Grandes Maestros,🎨,1,Исследователь,Arte Prehistórico y Antiguo,"Altamira, Egipto, Grecia",100,
+Гуманитарные науки,🎨 Arte y Grandes Maestros,🎨,2,Исследователь,El Renacimiento,"Da Vinci, Miguel Ángel, Botticelli",100,
+Гуманитарные науки,🎨 Arte y Grandes Maestros,🎨,3,Исследователь,Barroco y Clasicismo,"Caravaggio, Velázquez, Rembrandt",100,🥉 Бронзовый значок
+Гуманитарные науки,🎨 Arte y Grandes Maestros,🎨,4,Ученик,Impresionismo,"Monet, Renoir, luz y color",200,
+Гуманитарные науки,🎨 Arte y Grandes Maestros,🎨,5,Ученик,Vanguardias del Siglo XX,"Picasso, Dalí, Kandinsky",200,
+Гуманитарные науки,🎨 Arte y Grandes Maestros,🎨,6,Ученик,Arte Contemporáneo,"Pop Art, minimalismo, Banksy",200,🥈 Серебряный значок
+Гуманитарные науки,🎨 Arte y Grandes Maestros,🎨,7,Ценитель,Fotografía como Arte,"Historia, maestros, revolución digital",350,
+Гуманитарные науки,🎨 Arte y Grandes Maestros,🎨,8,Ценитель,Grandes Museos del Mundo,"Louvre, MoMA, Prado, Hermitage",350,🥇 Золотой значок
+Гуманитарные науки,🎨 Arte y Grandes Maestros,🎨,9,Эксперт,El Mercado del Arte,"Subastas, falsificaciones, inversión",500,
+Гуманитарные науки,🎨 Arte y Grandes Maestros,🎨,10,Эксперт,Arte y Tecnología: IA Creativa,"Arte generativo, NFTs, debate",500,💎 Бриллиантовый значок
+Природа,🌡️ Cambio Climático,🌡️,1,Исследователь,El Efecto Invernadero,"CO₂, gases, calentamiento",100,
+Природа,🌡️ Cambio Climático,🌡️,2,Исследователь,Historia del Clima en la Tierra,"Eras glaciales, ciclos naturales",100,
+Природа,🌡️ Cambio Climático,🌡️,3,Исследователь,Impacto Humano,"Industria, transporte, deforestación",100,🥉 Бронзовый значок
+Природа,🌡️ Cambio Climático,🌡️,4,Ученик,Deshielo y Nivel del Mar,"Polos, glaciares, ciudades en riesgo",200,
+Природа,🌡️ Cambio Climático,🌡️,5,Ученик,Fenómenos Extremos,"Huracanes, sequías, olas de calor",200,
+Природа,🌡️ Cambio Climático,🌡️,6,Ученик,Biodiversidad Amenazada,"Sexta extinción, ecosistemas en peligro",200,🥈 Серебряный значок
+Природа,🌡️ Cambio Climático,🌡️,7,Ценитель,Energías Renovables,"Solar, eólica, hidrógeno verde",350,
+Природа,🌡️ Cambio Climático,🌡️,8,Ценитель,Acuerdos y Política Climática,"París, COP, compromisos nacionales",350,🥇 Золотой значок
+Природа,🌡️ Cambio Climático,🌡️,9,Эксперт,Geoingeniería,"Soluciones radicales, riesgos",500,
+Природа,🌡️ Cambio Climático,🌡️,10,Эксперт,Escenarios 2050-2100,"Modelos climáticos, futuros posibles",500,💎 Бриллиантовый значок
+История,🧭 Exploración y Aventura,🧭,1,Исследователь,Los Grandes Navegantes,"Colón, Magallanes, Vasco de Gama",100,
+История,🧭 Exploración y Aventura,🧭,2,Исследователь,Conquista de los Polos,"Amundsen, Scott, Shackleton",100,
+История,🧭 Exploración y Aventura,🧭,3,Исследователь,Exploradores del Mundo Antiguo,"Marco Polo, Ibn Battuta, Zheng He",100,🥉 Бронзовый значок
+История,🧭 Exploración y Aventura,🧭,4,Ученик,La Carrera Espacial,"Gagarin, Apollo 11, MIR",200,
+История,🧭 Exploración y Aventura,🧭,5,Ученик,Expediciones Submarinas,"Cousteau, Mariana, océanos profundos",200,
+История,🧭 Exploración y Aventura,🧭,6,Ученик,Exploración de Selvas y Desiertos,"Amazonia, Sahara, expediciones perdidas",200,🥈 Серебряный значок
+История,🧭 Exploración y Aventura,🧭,7,Ценитель,Montañismo Extremo,"Everest, K2, historia alpina",350,
+История,🧭 Exploración y Aventura,🧭,8,Ценитель,Arqueología Aventurera,"Tutankamón, Machu Picchu, Pompeya",350,🥇 Золотой значок
+История,🧭 Exploración y Aventura,🧭,9,Эксперт,Exploración Robótica,"Marte, drones submarinos, cuevas",500,
+История,🧭 Exploración y Aventura,🧭,10,Эксперт,Próximas Fronteras,"Colonización espacial, océano profundo",500,💎 Бриллиантовый значок
+Здоровье,🥗 Nutrición y Alimentación,🥗,1,Исследователь,Macronutrientes,"Proteínas, carbohidratos, grasas",100,
+Здоровье,🥗 Nutrición y Alimentación,🥗,2,Исследователь,Vitaminas y Minerales,Micronutrientes esenciales,100,
+Здоровье,🥗 Nutrición y Alimentación,🥗,3,Исследователь,Digestión y Metabolismo,Cómo tu cuerpo procesa los alimentos,100,🥉 Бронзовый значок
+Здоровье,🥗 Nutrición y Alimentación,🥗,4,Ученик,Dietas del Mundo,"Mediterránea, asiática, nórdica",200,
+Здоровье,🥗 Nutrición y Alimentación,🥗,5,Ученик,Mitos Nutricionales,Desmentir creencias falsas,200,
+Здоровье,🥗 Nutrición y Alimentación,🥗,6,Ученик,Microbioma Intestinal,"Bacterias buenas, segundo cerebro",200,🥈 Серебряный значок
+Здоровье,🥗 Nutrición y Alimentación,🥗,7,Ценитель,Nutrición Deportiva,"Rendimiento, suplementos, recuperación",350,
+Здоровье,🥗 Nutrición y Alimentación,🥗,8,Ценитель,Alimentos del Futuro,"Insectos, carne de laboratorio, algas",350,🥇 Золотой значок
+Здоровье,🥗 Nutrición y Alimentación,🥗,9,Эксперт,Nutrigenómica,ADN y alimentación personalizada,500,
+Здоровье,🥗 Nutrición y Alimentación,🥗,10,Эксперт,Hambre Global y Sostenibilidad,"Seguridad alimentaria, soluciones",500,💎 Бриллиантовый значок
+Гуманитарные науки,🎵 Música: Historia y Teoría,🎵,1,Исследователь,Los Orígenes de la Música,"Instrumentos prehistóricos, primeras melodías",100,
+Гуманитарные науки,🎵 Música: Historia y Teoría,🎵,2,Исследователь,Música Clásica: Los Grandes,"Bach, Mozart, Beethoven",100,
+Гуманитарные науки,🎵 Música: Historia y Teoría,🎵,3,Исследователь,"Ritmo, Melodía y Armonía",Fundamentos de la teoría musical,100,🥉 Бронзовый значок
+Гуманитарные науки,🎵 Música: Historia y Teoría,🎵,4,Ученик,Jazz y Blues,"Nueva Orleans, improvisación, soul",200,
+Гуманитарные науки,🎵 Música: Historia y Teoría,🎵,5,Ученик,Rock and Roll,"Elvis, Beatles, revolución cultural",200,
+Гуманитарные науки,🎵 Música: Historia y Teoría,🎵,6,Ученик,Música Electrónica,"Sintetizadores, DJs, géneros",200,🥈 Серебряный значок
+Гуманитарные науки,🎵 Música: Historia y Teoría,🎵,7,Ценитель,Música del Mundo,"Flamenco, raga, samba, gamelan",350,
+Гуманитарные науки,🎵 Música: Historia y Teoría,🎵,8,Ценитель,La Industria Musical,"Discográficas, streaming, negocio",350,🥇 Золотой значок
+Гуманитарные науки,🎵 Música: Historia y Teoría,🎵,9,Эксперт,Neurociencia de la Música,Por qué la música nos emociona,500,
+Гуманитарные науки,🎵 Música: Historia y Teoría,🎵,10,Эксперт,IA y Composición Musical,"Algoritmos creativos, futuro sonoro",500,💎 Бриллиантовый значок
+Природа,🌋 Volcanes y Terremotos,🌋,1,Исследователь,La Tierra por Dentro,"Capas, núcleo, manto, corteza",100,
+Природа,🌋 Volcanes y Terremotos,🌋,2,Исследователь,Tectónica de Placas,"Placas en movimiento, pangea",100,
+Природа,🌋 Volcanes y Terremotos,🌋,3,Исследователь,Volcanes: Tipos y Erupciones,"Escudo, estrato, fisurales",100,🥉 Бронзовый значок
+Природа,🌋 Volcanes y Terremotos,🌋,4,Ученик,Grandes Erupciones de la Historia,"Pompeya, Krakatoa, Pinatubo",200,
+Природа,🌋 Volcanes y Terremotos,🌋,5,Ученик,Terremotos y Tsunamis,"Escalas, ondas sísmicas, prevención",200,
+Природа,🌋 Volcanes y Terremotos,🌋,6,Ученик,El Cinturón de Fuego,"Pacífico, zonas sísmicas activas",200,🥈 Серебряный значок
+Природа,🌋 Volcanes y Terremotos,🌋,7,Ценитель,Geotermia y Recursos,"Energía volcánica, minerales",350,
+Природа,🌋 Volcanes y Terremotos,🌋,8,Ценитель,Supervolcanes,"Yellowstone, Toba, amenazas globales",350,🥇 Золотой значок
+Природа,🌋 Volcanes y Terremotos,🌋,9,Эксперт,Predicción Sísmica,"Tecnología, IA, sistemas de alerta",500,
+Природа,🌋 Volcanes y Terremotos,🌋,10,Эксперт,Geología Planetaria,"Volcanes en Marte, Ío, Venus",500,💎 Бриллиантовый значок
+Технологии,🔐 Criptografía y Ciberseguridad,🔐,1,Исследователь,Historia de los Códigos Secretos,"César, Enigma, espionaje",100,
+Технологии,🔐 Criptografía y Ciberseguridad,🔐,2,Исследователь,Criptografía Moderna,"RSA, AES, claves públicas",100,
+Технологии,🔐 Criptografía y Ciberseguridad,🔐,3,Исследователь,Internet y Seguridad Básica,"HTTPS, contraseñas, phishing",100,🥉 Бронзовый значок
+Технологии,🔐 Criptografía y Ciberseguridad,🔐,4,Ученик,Hackers: Mitos y Realidad,"White/black hat, ciberataques famosos",200,
+Технологии,🔐 Criptografía y Ciberseguridad,🔐,5,Ученик,Malware y Ransomware,"Virus, troyanos, protección",200,
+Технологии,🔐 Criptografía y Ciberseguridad,🔐,6,Ученик,Ingeniería Social,"Manipulación, pretexting, defensa",200,🥈 Серебряный значок
+Технологии,🔐 Criptografía y Ciberseguridad,🔐,7,Ценитель,Blockchain y Seguridad,"Descentralización, contratos inteligentes",350,
+Технологии,🔐 Criptografía y Ciberseguridad,🔐,8,Ценитель,Ciberguerra Estatal,"Stuxnet, espionaje digital, naciones",350,🥇 Золотой значок
+Технологии,🔐 Criptografía y Ciberseguridad,🔐,9,Эксперт,Criptografía Cuántica,Computación cuántica vs cifrado actual,500,
+Технологии,🔐 Criptografía y Ciberseguridad,🔐,10,Эксперт,Privacidad Digital Total,"Anonimato, Tor, futuro de la privacidad",500,💎 Бриллиантовый значок
+Здоровье,🏥 Medicina y Cuerpo Humano,🏥,1,Исследователь,Anatomía Básica,"Sistemas del cuerpo, órganos vitales",100,
+Здоровье,🏥 Medicina y Cuerpo Humano,🏥,2,Исследователь,El Sistema Inmunológico,"Defensas, anticuerpos, vacunas",100,
+Здоровье,🏥 Medicina y Cuerpo Humano,🏥,3,Исследователь,Historia de la Medicina,"Hipócrates, penicilina, cirugía",100,🥉 Бронзовый значок
+Здоровье,🏥 Medicina y Cuerpo Humano,🏥,4,Ученик,Pandemias de la Historia,"Peste negra, gripe española, COVID",200,
+Здоровье,🏥 Medicina y Cuerpo Humano,🏥,5,Ученик,Cáncer: Batalla Interna,"Tipos, causas, tratamientos",200,
+Здоровье,🏥 Medicina y Cuerpo Humano,🏥,6,Ученик,Farmacología Básica,Cómo funcionan los medicamentos,200,🥈 Серебряный значок
+Здоровье,🏥 Medicina y Cuerpo Humano,🏥,7,Ценитель,Cirugía Robótica,"Da Vinci, precisión, futuro quirúrgico",350,
+Здоровье,🏥 Medicina y Cuerpo Humano,🏥,8,Ценитель,Terapias Génicas,Editar ADN para curar enfermedades,350,🥇 Золотой значок
+Здоровье,🏥 Medicina y Cuerpo Humano,🏥,9,Эксперт,Neurociencia Médica,"Implantes cerebrales, neuroestimulación",500,
+Здоровье,🏥 Medicina y Cuerpo Humano,🏥,10,Эксперт,Longevidad y Anti-aging,"Telómeros, senoterapia, vivir más",500,💎 Бриллиантовый значок
+Гуманитарные науки,⚡ Mitología Universal,⚡,1,Исследователь,Mitología Griega,"Zeus, Odisea, héroes y monstruos",100,
+Гуманитарные науки,⚡ Mitología Universal,⚡,2,Исследователь,Mitología Nórdica,"Odín, Thor, Ragnarök",100,
+Гуманитарные науки,⚡ Mitología Universal,⚡,3,Исследователь,Mitología Egipcia,"Ra, Osiris, el más allá",100,🥉 Бронзовый значок
+Гуманитарные науки,⚡ Mitología Universal,⚡,4,Ученик,Mitología Romana,"Adaptación griega, fundación de Roma",200,
+Гуманитарные науки,⚡ Mitología Universal,⚡,5,Ученик,Mitología Mesopotámica,"Gilgamesh, diluvio, creación",200,
+Гуманитарные науки,⚡ Mitología Universal,⚡,6,Ученик,Mitología Celta y Artúrica,"Druidas, Avalon, Excalibur",200,🥈 Серебряный значок
+Гуманитарные науки,⚡ Mitología Universal,⚡,7,Ценитель,Mitología Asiática,"Hinduismo, budismo, dragones chinos",350,
+Гуманитарные науки,⚡ Mitología Universal,⚡,8,Ценитель,Mitología Mesoamericana,"Quetzalcóatl, Popol Vuh, cosmos maya",350,🥇 Золотой значок
+Гуманитарные науки,⚡ Mitología Universal,⚡,9,Эксперт,Arquetipos y Jung,"Inconsciente colectivo, el héroe",500,
+Гуманитарные науки,⚡ Mitología Universal,⚡,10,Эксперт,Mitos Modernos,"Superhéroes, Star Wars, nuevas mitologías",500,💎 Бриллиантовый значок
+Технологии,🦾 Robótica e Ingeniería,🦾,1,Исследователь,Historia de los Autómatas,"Da Vinci, relojería, primeros robots",100,
+Технологии,🦾 Robótica e Ingeniería,🦾,2,Исследователь,Mecánica Básica de Robots,"Sensores, actuadores, control",100,
+Технологии,🦾 Robótica e Ingeniería,🦾,3,Исследователь,Robots en la Industria,"Manufactura, logística, automatización",100,🥉 Бронзовый значок
+Технологии,🦾 Robótica e Ingeniería,🦾,4,Ученик,Drones y Vehículos Autónomos,"Coches sin conductor, delivery",200,
+Технологии,🦾 Robótica e Ingeniería,🦾,5,Ученик,Robots Humanoides,"Boston Dynamics, Atlas, Sophia",200,
+Технологии,🦾 Robótica e Ingeniería,🦾,6,Ученик,Biomimética,Robots inspirados en la naturaleza,200,🥈 Серебряный значок
+Технологии,🦾 Robótica e Ingeniería,🦾,7,Ценитель,Prótesis y Exoesqueletos,"Bionics, manos robóticas, movilidad",350,
+Технологии,🦾 Robótica e Ingeniería,🦾,8,Ценитель,Robótica Espacial,"Rovers, ISS, reparaciones en órbita",350,🥇 Золотой значок
+Технологии,🦾 Robótica e Ingeniería,🦾,9,Эксперт,Nanorobots,"Medicina microscópica, ensamblaje molecular",500,
+Технологии,🦾 Robótica e Ingeniería,🦾,10,Эксперт,Robots Conscientes,"IA embodied, derechos de robots, ética",500,💎 Бриллиантовый значок
+История,⚔️ Guerras Mundiales,⚔️,1,Исследователь,Causas de la Gran Guerra,"Alianzas, imperialismo, Sarajevo",100,
+История,⚔️ Guerras Mundiales,⚔️,2,Исследователь,Trincheras: WWI,"Guerra de desgaste, gas, Somme",100,
+История,⚔️ Guerras Mundiales,⚔️,3,Исследователь,El Tratado de Versalles,"Consecuencias, humillación, semillas",100,🥉 Бронзовый значок
+История,⚔️ Guerras Mundiales,⚔️,4,Ученик,Ascenso del Nazismo,"Hitler, propaganda, Tercer Reich",200,
+История,⚔️ Guerras Mundiales,⚔️,5,Ученик,Batallas Decisivas WWII,"Stalingrado, Midway, Normandía",200,
+История,⚔️ Guerras Mundiales,⚔️,6,Ученик,El Holocausto,"Genocidio, campos, memoria",200,🥈 Серебряный значок
+История,⚔️ Guerras Mundiales,⚔️,7,Ценитель,El Frente del Pacífico,"Pearl Harbor, Iwo Jima, Hiroshima",350,
+История,⚔️ Guerras Mundiales,⚔️,8,Ценитель,Espionaje y Criptografía,"Enigma, Turing, agentes dobles",350,🥇 Золотой значок
+История,⚔️ Guerras Mundiales,⚔️,9,Эксперт,Nüremberg y Justicia,"Juicios, derecho internacional",500,
+История,⚔️ Guerras Mundiales,⚔️,10,Эксперт,Lecciones para el Siglo XXI,"Paralelos, prevención, memoria",500,💎 Бриллиантовый значок
+Гуманитарные науки,🏗️ Arquitectura Mundial,🏗️,1,Исследователь,Pirámides y Templos,"Egipto, Grecia, Angkor Wat",100,
+Гуманитарные науки,🏗️ Arquitectura Mundial,🏗️,2,Исследователь,Roma y sus Monumentos,"Coliseo, acueductos, Panteón",100,
+Гуманитарные науки,🏗️ Arquitectura Mundial,🏗️,3,Исследователь,Catedrales Góticas,"Notre-Dame, vitrales, arbotantes",100,🥉 Бронзовый значок
+Гуманитарные науки,🏗️ Arquitectura Mundial,🏗️,4,Ученик,Renacimiento y Barroco,"Brunelleschi, Bernini, Versalles",200,
+Гуманитарные науки,🏗️ Arquitectura Mundial,🏗️,5,Ученик,Rascacielos y Acero,"Chicago, Empire State, ingeniería",200,
+Гуманитарные науки,🏗️ Arquitectura Mundial,🏗️,6,Ученик,Bauhaus y Modernismo,"Le Corbusier, Mies van der Rohe",200,🥈 Серебряный значок
+Гуманитарные науки,🏗️ Arquitectura Mundial,🏗️,7,Ценитель,Arquitectura Sostenible,"Edificios verdes, pasivos, biomimética",350,
+Гуманитарные науки,🏗️ Arquitectura Mundial,🏗️,8,Ценитель,Megaestructuras,"Burj Khalifa, presas, puentes",350,🥇 Золотой значок
+Гуманитарные науки,🏗️ Arquitectura Mundial,🏗️,9,Эксперт,Ciudades del Futuro,"NEOM, ciudades flotantes, smart cities",500,
+Гуманитарные науки,🏗️ Arquitectura Mundial,🏗️,10,Эксперт,Arquitectura Extraterrestre,"Hábitats en Marte, impresión 3D lunar",500,💎 Бриллиантовый значок
+Природа,🤿 Océano y Exploración Submarina,🤿,1,Исследователь,Cartografía del Fondo Marino,"Dorsales, fosas, relieve submarino",100,
+Природа,🤿 Océano y Exploración Submarina,🤿,2,Исследователь,Naufragios Legendarios,"Titanic, galeones, tesoros",100,
+Природа,🤿 Océano y Exploración Submarina,🤿,3,Исследователь,Submarinos: Historia,"Nautilus, U-boats, nucleares",100,🥉 Бронзовый значок
+Природа,🤿 Océano y Exploración Submarina,🤿,4,Ученик,Fuentes Hidrotermales,"Vida sin sol, quimiosíntesis",200,
+Природа,🤿 Océano y Exploración Submarina,🤿,5,Ученик,Ciudades Hundidas,"Dwarka, Port Royal, misterios",200,
+Природа,🤿 Océano y Exploración Submarina,🤿,6,Ученик,Tecnología de Buceo,"Saturación, ROVs, AUVs",200,🥈 Серебряный значок
+Природа,🤿 Océano y Exploración Submarina,🤿,7,Ценитель,Minería Submarina,"Recursos, nódulos, controversia",350,
+Природа,🤿 Océano y Exploración Submarina,🤿,8,Ценитель,Acústica Submarina,"Sonar, comunicación cetácea",350,🥇 Золотой значок
+Природа,🤿 Océano y Exploración Submarina,🤿,9,Эксперт,Bases Submarinas,"Hábitats sumergidos, Aquarius",500,
+Природа,🤿 Océano y Exploración Submarina,🤿,10,Эксперт,Colonización Oceánica,Ciudades submarinas del futuro,500,💎 Бриллиантовый значок
+Технологии,💻 Civilización Digital,💻,1,Исследователь,De ARPANET a Internet,"Nacimiento de la red, WWW",100,
+Технологии,💻 Civilización Digital,💻,2,Исследователь,Redes Sociales,"Facebook, Twitter, impacto social",100,
+Технологии,💻 Civilización Digital,💻,3,Исследователь,Smartphones y Apps,"iPhone, ecosistema móvil",100,🥉 Бронзовый значок
+Технологии,💻 Civilización Digital,💻,4,Ученик,Big Data,"Datos masivos, análisis, valor",200,
+Технологии,💻 Civilización Digital,💻,5,Ученик,Cloud Computing,"La nube, servicios, infraestructura",200,
+Технологии,💻 Civilización Digital,💻,6,Ученик,Realidad Virtual y Aumentada,"Metaverso, aplicaciones, inmersión",200,🥈 Серебряный значок
+Технологии,💻 Civilización Digital,💻,7,Ценитель,Internet de las Cosas,"Dispositivos conectados, smart homes",350,
+Технологии,💻 Civilización Digital,💻,8,Ценитель,Computación Cuántica,"Qubits, supremacía, aplicaciones",350,🥇 Золотой значок
+Технологии,💻 Civilización Digital,💻,9,Эксперт,Singularidad Tecnológica,"Exponencialidad, transhumanismo",500,
+Технологии,💻 Civilización Digital,💻,10,Эксперт,Ética Digital,"Privacidad, algoritmos, democracia",500,💎 Бриллиантовый значок
+Наука,🦕 Dinosaurios y Paleontología,🦕,1,Исследователь,Los Primeros Fósiles,"Qué son, cómo se forman",100,
+Наука,🦕 Dinosaurios y Paleontología,🦕,2,Исследователь,Era Mesozoica,"Triásico, Jurásico, Cretácico",100,
+Наука,🦕 Dinosaurios y Paleontología,🦕,3,Исследователь,Los Grandes Dinosaurios,"T-Rex, Diplodocus, Triceratops",100,🥉 Бронзовый значок
+Наука,🦕 Dinosaurios y Paleontología,🦕,4,Ученик,Depredadores vs Herbívoros,"Estrategias, armas naturales",200,
+Наука,🦕 Dinosaurios y Paleontología,🦕,5,Ученик,Pterosaurios y Reptiles Marinos,Cielo y mar prehistóricos,200,
+Наука,🦕 Dinosaurios y Paleontología,🦕,6,Ученик,La Gran Extinción,"Asteroide Chicxulub, invierno nuclear",200,🥈 Серебряный значок
+Наука,🦕 Dinosaurios y Paleontología,🦕,7,Ценитель,Plumas y Evolución Aviar,"Dinosaurios con plumas, aves modernas",350,
+Наука,🦕 Dinosaurios y Paleontología,🦕,8,Ценитель,Paleontología de Campo,"Excavaciones, técnicas, descubrimientos",350,🥇 Золотой значок
+Наука,🦕 Dinosaurios y Paleontología,🦕,9,Эксперт,ADN Antiguo,¿Clonar un dinosaurio? Límites reales,500,
+Наука,🦕 Dinosaurios y Paleontología,🦕,10,Эксперт,Mundos Perdidos,"Otros planetas, vida prehistórica remota",500,💎 Бриллиантовый значок
+Общество,👑 Liderazgo y Estrategia,👑,1,Исследователь,¿Qué Hace a un Líder?,"Cualidades, tipos de liderazgo",100,
+Общество,👑 Liderazgo y Estrategia,👑,2,Исследователь,Líderes de la Historia,"Alejandro, Napoleón, Mandela",100,
+Общество,👑 Liderazgo y Estrategia,👑,3,Исследователь,El Arte de la Guerra,"Sun Tzu, estrategia milenaria",100,🥉 Бронзовый значок
+Общество,👑 Liderazgo y Estrategia,👑,4,Ученик,Liderazgo Empresarial,"Steve Jobs, Elon Musk, Bezos",200,
+Общество,👑 Liderazgo y Estrategia,👑,5,Ученик,Negociación y Persuasión,"Harvard method, influencia",200,
+Общество,👑 Liderazgo y Estrategia,👑,6,Ученик,Gestión de Crisis,"Decisiones bajo presión, casos reales",200,🥈 Серебряный значок
+Общество,👑 Liderazgo y Estrategia,👑,7,Ценитель,Inteligencia Emocional,"Empatía, autocontrol, Goleman",350,
+Общество,👑 Liderazgo y Estrategia,👑,8,Ценитель,Cultura Organizacional,"Valores, innovación, equipos",350,🥇 Золотой значок
+Общество,👑 Liderazgo y Estrategia,👑,9,Эксперт,Liderazgo en la Era IA,"Adaptación, humano+máquina",500,
+Общество,👑 Liderazgo y Estrategia,👑,10,Эксперт,Tu Estrategia Personal,Diseñar tu propio camino de liderazgo,500,💎 Бриллиантовый значок
+Гуманитарные науки,🏺 Antropología Cultural,🏺,1,Исследователь,¿Qué es la Cultura?,"Definiciones, diversidad humana",100,
+Гуманитарные науки,🏺 Antropología Cultural,🏺,2,Исследователь,Tribus y Civilizaciones,De nómadas a imperios,100,
+Гуманитарные науки,🏺 Antropología Cultural,🏺,3,Исследователь,Rituales y Tradiciones,"Ceremonias, ritos de paso",100,🥉 Бронзовый значок
+Гуманитарные науки,🏺 Antropología Cultural,🏺,4,Ученик,Lenguas del Mundo,"Familias lingüísticas, extinción",200,
+Гуманитарные науки,🏺 Antropología Cultural,🏺,5,Ученик,Religiones Comparadas,"Cristianismo, Islam, Budismo, Hinduismo",200,
+Гуманитарные науки,🏺 Antropología Cultural,🏺,6,Ученик,Gastronomía y Cultura,"Cocina como identidad, tabúes",200,🥈 Серебряный значок
+Гуманитарные науки,🏺 Antropología Cultural,🏺,7,Ценитель,Globalización Cultural,"Homogeneización, resistencia, fusión",350,
+Гуманитарные науки,🏺 Antropología Cultural,🏺,8,Ценитель,Pueblos Indígenas,"Conocimiento ancestral, derechos",350,🥇 Золотой значок
+Гуманитарные науки,🏺 Antropología Cultural,🏺,9,Эксперт,Antropología Digital,"Culturas online, identidad virtual",500,
+Гуманитарные науки,🏺 Antropología Cultural,🏺,10,Эксперт,El Futuro de la Humanidad,"Convergencia cultural, diversidad",500,💎 Бриллиантовый значок
+Технологии,⚡ Energía y Sostenibilidad,⚡,1,Исследователь,Fuentes de Energía,"Fósiles, renovables, nuclear",100,
+Технологии,⚡ Energía y Sostenibilidad,⚡,2,Исследователь,Electricidad: Cómo Funciona,"Generación, distribución, red eléctrica",100,
+Технологии,⚡ Energía y Sostenibilidad,⚡,3,Исследователь,El Petróleo y su Historia,"Oro negro, OPEP, geopolítica",100,🥉 Бронзовый значок
+Технологии,⚡ Energía y Sostenibilidad,⚡,4,Ученик,Energía Solar,"Paneles, fotovoltaica, proyectos",200,
+Технологии,⚡ Energía y Sostenibilidad,⚡,5,Ученик,Energía Eólica e Hídrica,"Turbinas, presas, mareas",200,
+Технологии,⚡ Energía y Sostenibilidad,⚡,6,Ученик,Energía Nuclear Moderna,"Fisión, fusión, ITER",200,🥈 Серебряный значок
+Технологии,⚡ Energía y Sostenibilidad,⚡,7,Ценитель,Baterías y Almacenamiento,"Litio, hidrógeno, supercondensadores",350,
+Технологии,⚡ Energía y Sostenibilidad,⚡,8,Ценитель,Transición Energética,"Abandono del carbón, políticas",350,🥇 Золотой значок
+Технологии,⚡ Energía y Sostenibilidad,⚡,9,Эксперт,Fusión Nuclear,El santo grial energético,500,
+Технологии,⚡ Energía y Sostenibilidad,⚡,10,Эксперт,Civilización Tipo I,"Escala Kardashov, futuro energético",500,💎 Бриллиантовый значок
+Природа,🔮 Misterios y Fenómenos,🔮,1,Исследователь,Triángulo de las Bermudas,"Desapariciones, explicaciones",100,
+Природа,🔮 Misterios y Fenómenos,🔮,2,Исследователь,Enigmas Arqueológicos,"Stonehenge, Nazca, Moáis",100,
+Природа,🔮 Misterios y Fenómenos,🔮,3,Исследователь,Criaturas Misteriosas,"Nessie, Bigfoot, criptozoología",100,🥉 Бронзовый значок
+Природа,🔮 Misterios y Fenómenos,🔮,4,Ученик,Fenómenos Atmosféricos,"Rayos en bola, auroras, sprites",200,
+Природа,🔮 Misterios y Fenómenos,🔮,5,Ученик,Civilizaciones Perdidas,"Atlántida, Lemuria, evidencias",200,
+Природа,🔮 Misterios y Fenómenos,🔮,6,Ученик,Fenómenos Paranormales,"Estudio científico, explicaciones",200,🥈 Серебряный значок
+Природа,🔮 Misterios y Fenómenos,🔮,7,Ценитель,Misterios del Espacio,"Señal WOW, Oumuamua, FRBs",350,
+Природа,🔮 Misterios y Fenómenos,🔮,8,Ценитель,Código Voynich y Cifrados,Manuscritos sin descifrar,350,🥇 Золотой значок
+Природа,🔮 Misterios y Fenómenos,🔮,9,Эксперт,Paradoja de Fermi,¿Dónde están todos? Soluciones,500,
+Природа,🔮 Misterios y Fenómenos,🔮,10,Эксперт,Ciencia vs Misterio,"Pensamiento crítico, método científico",500,💎 Бриллиантовый значок
+Здоровье,🧬 Microbiología y Virus,🧬,1,Исследователь,El Mundo Invisible,"Microbios, bacterias, virus y hongos; qué son y dónde viven",100,
+Здоровье,🧬 Microbiología y Virus,🧬,2,Исследователь,El Microscopio y los Descubrimientos,De Leeuwenhoek a la microbiología moderna,100,
+Здоровье,🧬 Microbiología y Virus,🧬,3,Исследователь,Bacterias: Aliadas y Enemigas,"Flora intestinal, infecciones, antibióticos",100,🥉 Бронзовый значок
+Здоровье,🧬 Microbiología y Virus,🧬,4,Ученик,Virus: Cómo Infectan,"Estructura viral, ciclo lítico y lisogénico",200,
+Здоровье,🧬 Microbiología y Virus,🧬,5,Ученик,El Sistema Inmune contra Microbios,"Barreras, células de defensa, anticuerpos",200,
+Здоровье,🧬 Microbiología y Virus,🧬,6,Ученик,Vacunas: Historia y Funcionamiento,De la viruela al ARN mensajero,200,🥈 Серебряный значок
+Здоровье,🧬 Microbiología y Virus,🧬,7,Ценитель,Resistencia a Antibióticos,"Superbugs, uso abusivo, crisis sanitaria",350,
+Здоровье,🧬 Microbiología y Virus,🧬,8,Ценитель,Pandemias Microbianas,"Peste, gripe española, COVID-19, patrones",350,🥇 Золотой значок
+Здоровье,🧬 Microbiología y Virus,🧬,9,Эксперт,Biotecnología Microbiana,"Uso de microbios en industria, medicina y medioambiente",500,
+Здоровье,🧬 Microbiología y Virus,🧬,10,Эксперт,Futuro de la Lucha contra Infecciones,"Nuevos antibióticos, fagoterapia, edición genética de virus",500,💎 Бриллиантовый значок
+Наука,🪐 Astrobiología y Búsqueda de Vida,🪐,1,Исследователь,¿Qué es la Astrobiología?,"Definición, interdisciplinariedad, grandes preguntas",100,
+Наука,🪐 Astrobiología y Búsqueda de Vida,🪐,2,Исследователь,Ingredientes de la Vida,"Agua líquida, química del carbono, energía",100,
+Наука,🪐 Astrobiología y Búsqueda de Vida,🪐,3,Исследователь,Vida Extremófila en la Tierra,Organismos en condiciones extremas como modelo,100,🥉 Бронзовый значок
+Наука,🪐 Astrobiología y Búsqueda de Vida,🪐,4,Ученик,Marte: El Vecino Sospechoso,"Historia del agua, misiones, signos de vida pasada",200,
+Наука,🪐 Astrobiología y Búsqueda de Vida,🪐,5,Ученик,Lunas Habitables,"Europa, Encélado, Titán y sus océanos",200,
+Наука,🪐 Astrobiología y Búsqueda de Vida,🪐,6,Ученик,Exoplanetas: Mundos Lejanos,Métodos de detección y zona habitable,200,🥈 Серебряный значок
+Наука,🪐 Astrobiología y Búsqueda de Vida,🪐,7,Ценитель,Biofirmas y Tecnofirmas,Señales químicas y tecnológicas de vida avanzada,350,
+Наука,🪐 Astrobiología y Búsqueda de Vida,🪐,8,Ценитель,Programas de Búsqueda (SETI y otros),"Radiotelescopios, mensajes, proyectos globales",350,🥇 Золотой значок
+Наука,🪐 Astrobiología y Búsqueda de Vida,🪐,9,Эксперт,Paradoja de Fermi y Soluciones,"¿Dónde están todos?, filtros grandes",500,
+Наука,🪐 Astrobiología y Búsqueda de Vida,🪐,10,Эксперт,El Futuro de la Vida en el Cosmos,"Terraformación, panspermia, humanidad multiplanetaria",500,💎 Бриллиантовый значок
+Наука,☀️ Clima Espacial y Tormentas Solares,☀️,1,Исследователь,El Sol: Nuestra Estrella,"Estructura solar, manchas, actividad",100,
+Наука,☀️ Clima Espacial y Tormentas Solares,☀️,2,Исследователь,Viento Solar,"Partículas cargadas, campo magnético",100,
+Наука,☀️ Clima Espacial y Tormentas Solares,☀️,3,Исследователь,Auroras Boreales y Australes,"Cómo se forman, dónde se ven",100,🥉 Бронзовый значок
+Наука,☀️ Clima Espacial y Tormentas Solares,☀️,4,Ученик,Tormentas Solares Históricas,Evento Carrington y otros casos,200,
+Наука,☀️ Clima Espacial y Tormentas Solares,☀️,5,Ученик,Campo Magnético Terrestre,"Escudo natural, cinturones de Van Allen",200,
+Наука,☀️ Clima Espacial y Tormentas Solares,☀️,6,Ученик,Clima Espacial y Satélites,Efectos sobre GPS y comunicaciones,200,🥈 Серебряный значок
+Наука,☀️ Clima Espacial y Tormentas Solares,☀️,7,Ценитель,Redes Eléctricas y Riesgo Global,Impacto en infraestructura,350,
+Наука,☀️ Clima Espacial y Tormentas Solares,☀️,8,Ценитель,Monitorización y Predicción,"Sondas, observatorios solares, modelos",350,🥇 Золотой значок
+Наука,☀️ Clima Espacial y Tormentas Solares,☀️,9,Эксперт,Escenarios de Evento Extremo,Impacto económico y social,500,
+Наука,☀️ Clima Espacial y Tormentas Solares,☀️,10,Эксперт,Preparándonos para el Próximo Carrington,Mitigación y resiliencia,500,💎 Бриллиантовый значок
+Здоровье,🦾 Biohacking y Cuerpo Mejorado,🦾,1,Исследователь,¿Qué es el Biohacking?,"Definiciones, tipos (DIYbio, cuantificado, nutracéuticos)",100,
+Здоровье,🦾 Biohacking y Cuerpo Mejorado,🦾,2,Исследователь,Autoexperimentos Históricos,Científicos que se probaron a sí mismos,100,
+Здоровье,🦾 Biohacking y Cuerpo Mejorado,🦾,3,Исследователь,Cuantificar el Cuerpo,"Wearables, tracking de sueño y actividad",100,🥉 Бронзовый значок
+Здоровье,🦾 Biohacking y Cuerpo Mejorado,🦾,4,Ученик,Suplementos y Nutrición Avanzada,"Nootrópicos, dietas, controversias",200,
+Здоровье,🦾 Biohacking y Cuerpo Mejorado,🦾,5,Ученик,"Hábitos, Ritmos Circadianos y Rendimiento","Luces, horarios, cronobiología",200,
+Здоровье,🦾 Biohacking y Cuerpo Mejorado,🦾,6,Ученик,"Gimnasios, Fuerza y Longevidad",Entrenamiento como hackeo biológico,200,🥈 Серебряный значок
+Здоровье,🦾 Biohacking y Cuerpo Mejorado,🦾,7,Ценитель,Implantes y Dispositivos en el Cuerpo,"Chips, marcapasos, sensores",350,
+Здоровье,🦾 Biohacking y Cuerpo Mejorado,🦾,8,Ценитель,Edición Genética Personal,"CRISPR, posibilidades y límites",350,🥇 Золотой значок
+Здоровье,🦾 Biohacking y Cuerpo Mejorado,🦾,9,Эксперт,Ética y Legalidad del Biohacking,"Normativas, riesgos, desigualdad",500,
+Здоровье,🦾 Biohacking y Cuerpo Mejorado,🦾,10,Эксперт,El Futuro del Humano Mejorado,"Transhumanismo, integración IA-cuerpo",500,💎 Бриллиантовый значок
+Здоровье,😷 Epidemiología y Enfermedades Infecciosas,😷,1,Исследователь,Cómo se Propagan las Enfermedades,"Contagio, vectores, cadenas de transmisión",100,
+Здоровье,😷 Epidemiología y Enfermedades Infecciosas,😷,2,Исследователь,"Brotes, Epidemias y Pandemias",Diferencias y ejemplos,100,
+Здоровье,😷 Epidemiología y Enfermedades Infecciosas,😷,3,Исследователь,Casos y Datos: Lo que Significan,"Incidencia, prevalencia, R0",100,🥉 Бронзовый значок
+Здоровье,😷 Epidemiología y Enfermedades Infecciosas,😷,4,Ученик,Grandes Epidemias Históricas,"Peste negra, cólera, gripe española",200,
+Здоровье,😷 Epidemiología y Enfermedades Infecciosas,😷,5,Ученик,"VIH, Tuberculosis y Otros Retos",Enfermedades crónicas infecciosas,200,
+Здоровье,😷 Epidemiología y Enfermedades Infecciosas,😷,6,Ученик,COVID-19: Anatomía de una Pandemia,"Secuenciación, vacunas, confinamientos",200,🥈 Серебряный значок
+Здоровье,😷 Epidemiología y Enfermedades Infecciosas,😷,7,Ценитель,Modelos Epidemiológicos,"Curvas, medidas no farmacológicas",350,
+Здоровье,😷 Epidemiología y Enfermedades Infecciosas,😷,8,Ценитель,Vacunación Masiva y Rebaño,"Inmunidad de grupo, campañas",350,🥇 Золотой значок
+Здоровье,😷 Epidemiología y Enfermedades Infecciosas,😷,9,Эксперт,Enfermedades Emergentes y Zoonosis,"Cambio climático, nuevos patógenos",500,
+Здоровье,😷 Epidemiología y Enfermedades Infecciosas,😷,10,Эксперт,Preparación Global ante la Próxima Pandemia,"Vigilancia, cooperación internacional",500,💎 Бриллиантовый значок
+Технологии,💾 Historia de la Computación,💾,1,Исследователь,De Ábacos a Máquinas de Cálculo,Herramientas de cálculo antiguas,100,
+Технологии,💾 Historia de la Computación,💾,2,Исследователь,Visionarios Pioneros,"Babbage, Ada Lovelace, Turing",100,
+Технологии,💾 Historia de la Computación,💾,3,Исследователь,Ordenadores de Tubos y Tarjetas,"ENIAC, mainframes",100,🥉 Бронзовый значок
+Технологии,💾 Historia de la Computación,💾,4,Ученик,La Revolución del Microprocesador,"Intel, PCs, Apple",200,
+Технологии,💾 Historia de la Computación,💾,5,Ученик,Internet y la Web,"ARPANET, HTTP, navegadores",200,
+Технологии,💾 Historia de la Computación,💾,6,Ученик,"Portátiles, Smartphones y la Era Móvil","iPhone, Android",200,🥈 Серебряный значок
+Технологии,💾 Historia de la Computación,💾,7,Ценитель,Software Libre y Open Source,"Linux, proyectos colaborativos",350,
+Технологии,💾 Historia de la Computación,💾,8,Ценитель,"Nubes, Contenedores y DevOps",Cómo se despliega hoy el software,350,🥇 Золотой значок
+Технологии,💾 Historia de la Computación,💾,9,Эксперт,Computación Cuántica y Más Allá,"Qubits, algoritmos",500,
+Технологии,💾 Historia de la Computación,💾,10,Эксперт,Futuro de la Computación,"Neuromórfica, IA integrada",500,💎 Бриллиантовый значок
+Технологии,🎮 Videojuegos e Industria del Gaming,🎮,1,Исследователь,Los Primeros Videojuegos,"Pong, arcades, Atari",100,
+Технологии,🎮 Videojuegos e Industria del Gaming,🎮,2,Исследователь,Consolas y Guerra de Generaciones,"Nintendo, Sega, Sony, Microsoft",100,
+Технологии,🎮 Videojuegos e Industria del Gaming,🎮,3,Исследователь,PC Gaming y Online,"DOOM, MMOs, primeros esports",100,🥉 Бронзовый значок
+Технологии,🎮 Videojuegos e Industria del Gaming,🎮,4,Ученик,Diseño de Juegos,"Mecánicas, loops, narrativa",200,
+Технологии,🎮 Videojuegos e Industria del Gaming,🎮,5,Ученик,Esports y Competición Profesional,"Ligas, premios, entrenamientos",200,
+Технологии,🎮 Videojuegos e Industria del Gaming,🎮,6,Ученик,Psicología del Juego y Gamificación,"Motivación, recompensas",200,🥈 Серебряный значок
+Технологии,🎮 Videojuegos e Industria del Gaming,🎮,7,Ценитель,Industria y Modelos de Negocio,"AAA, indie, free-to-play",350,
+Технологии,🎮 Videojuegos e Industria del Gaming,🎮,8,Ценитель,Controversias del Gaming,"Adicción, violencia, loot boxes",350,🥇 Золотой значок
+Технологии,🎮 Videojuegos e Industria del Gaming,🎮,9,Эксперт,Juegos como Arte y Educación,"Juegos serios, experiencias inmersivas",500,
+Технологии,🎮 Videojuegos e Industria del Gaming,🎮,10,Эксперт,Futuro del Gaming,"VR/AR, cloud gaming",500,💎 Бриллиантовый значок
+Технологии,₿ Criptoeconomía y DeFi,₿,1,Исследователь,Origen de Bitcoin,"Satoshi, problema del doble gasto",100,
+Технологии,₿ Criptoeconomía y DeFi,₿,2,Исследователь,¿Qué es Blockchain?,"Bloques, cadenas, consenso",100,
+Технологии,₿ Criptoeconomía y DeFi,₿,3,Исследователь,Criptomonedas Principales,"BTC, ETH y otras",100,🥉 Бронзовый значок
+Технологии,₿ Criptoeconomía y DeFi,₿,4,Ученик,Smart Contracts,Programas que mueven dinero,200,
+Технологии,₿ Criptoeconomía y DeFi,₿,5,Ученик,Exchanges y Wallets,Cómo se compra y guarda cripto,200,
+Технологии,₿ Criptoeconomía y DeFi,₿,6,Ученик,Finanzas Descentralizadas (DeFi),"Préstamos, DEX, yield farming",200,🥈 Серебряный значок
+Технологии,₿ Criptoeconomía y DeFi,₿,7,Ценитель,"Estafas, Riesgos y Burbujas","Rug pulls, hacks, volatilidad",350,
+Технологии,₿ Criptoeconomía y DeFi,₿,8,Ценитель,Regulación y Narrativas,"Gobiernos, adopción",350,🥇 Золотой значок
+Технологии,₿ Criptoeconomía y DeFi,₿,9,Эксперт,Cripto más allá del Dinero,"DAOs, identidad, NFTs útiles",500,
+Технологии,₿ Criptoeconomía y DeFi,₿,10,Эксперт,Escenarios Futuros de la Criptoeconomía,Infraestructura o nicho,500,💎 Бриллиантовый значок
+Технологии,📊 Ciencia de Datos y Big Data,📊,1,Исследователь,Dato: El Nuevo Petróleo,Qué es un dato y por qué vale,100,
+Технологии,📊 Ciencia de Datos y Big Data,📊,2,Исследователь,Cómo se Recogen Datos,"Sensores, formularios, tracking",100,
+Технологии,📊 Ciencia de Datos y Big Data,📊,3,Исследователь,Bases de Datos y Almacenes,"SQL, NoSQL, data lakes",100,🥉 Бронзовый значок
+Технологии,📊 Ciencia de Datos y Big Data,📊,4,Ученик,Analítica Descriptiva,"Dashboards, KPIs",200,
+Технологии,📊 Ciencia de Datos y Big Data,📊,5,Ученик,Analítica Predictiva,Modelos y pronósticos,200,
+Технологии,📊 Ciencia de Datos y Big Data,📊,6,Ученик,Analítica Prescriptiva,Recomendaciones automatizadas,200,🥈 Серебряный значок
+Технологии,📊 Ciencia de Datos y Big Data,📊,7,Ценитель,Big Data en la Vida Real,"Retail, salud, transporte",350,
+Технологии,📊 Ciencia de Datos y Big Data,📊,8,Ценитель,"Privacidad, Sesgos y Ética",Dilemas y casos,350,🥇 Золотой значок
+Технологии,📊 Ciencia de Datos y Big Data,📊,9,Эксперт,Arquitecturas Modernas de Datos,"Batch, streaming, lakehouse",500,
+Технологии,📊 Ciencia de Datos y Big Data,📊,10,Эксперт,Hacia un Mundo Hiperpersonalizado,Riesgos y regulación,500,💎 Бриллиантовый значок
+Технологии,📡 Tecnologías de Comunicación,📡,1,Исследователь,Telégrafo y Teléfono,Primer salto de la voz a distancia,100,
+Технологии,📡 Tecnologías de Comunicación,📡,2,Исследователь,Radio y Televisión,Llegada de los mass media,100,
+Технологии,📡 Tecnologías de Comunicación,📡,3,Исследователь,Satélites y Comunicaciones Globales,"Órbitas, enlaces",100,🥉 Бронзовый значок
+Технологии,📡 Tecnologías de Comunicación,📡,4,Ученик,Internet y Protocolos Básicos,"TCP/IP, routers",200,
+Технологии,📡 Tecnologías de Comunicación,📡,5,Ученик,Wi-Fi y Redes Domésticas,Cómo se conectan tus dispositivos,200,
+Технологии,📡 Tecnologías de Comunicación,📡,6,Ученик,Redes Móviles: 1G a 4G,De voz analógica a datos,200,🥈 Серебряный значок
+Технологии,📡 Tecnologías de Comunicación,📡,7,Ценитель,5G y Futuras Generaciones,"Latencia baja, IoT",350,
+Технологии,📡 Tecnologías de Comunicación,📡,8,Ценитель,Seguridad y Vigilancia en Redes,"Interceptación, cifrado",350,🥇 Золотой значок
+Технологии,📡 Tecnologías de Comunicación,📡,9,Эксперт,Infraestructura Crítica y Resiliencia,Qué pasa si cae la red,500,
+Технологии,📡 Tecnologías de Comunicación,📡,10,Эксперт,Comunicación del Futuro,"Redes cuánticas, espacio profundo",500,💎 Бриллиантовый значок
+Гуманитарные науки,🎬 Historia del Cine y el Documental,🎬,1,Исследователь,Nacimiento del Cine,"Lumière, Méliès y las primeras proyecciones",100,
+Гуманитарные науки,🎬 Historia del Cine y el Documental,🎬,2,Исследователь,Hollywood Clásico,"Estudios, sistema de estrellas, cine mudo a sonoro",100,
+Гуманитарные науки,🎬 Historia del Cine y el Documental,🎬,3,Исследователь,Nueva Ola y Cine de Autor,"Truffaut, Godard y otros movimientos",100,🥉 Бронзовый значок
+Гуманитарные науки,🎬 Historia del Cine y el Documental,🎬,4,Ученик,Origen del Documental,"Nanook, propaganda, cine etnográfico",200,
+Гуманитарные науки,🎬 Historia del Cine y el Documental,🎬,5,Ученик,Estilos de Documental,"Observacional, participativo, ensayo",200,
+Гуманитарные науки,🎬 Historia del Cine y el Documental,🎬,6,Ученик,Documental de Naturaleza y Ciencia,"BBC, National Geographic, formatos",200,🥈 Серебряный значок
+Гуманитарные науки,🎬 Historia del Cine y el Documental,🎬,7,Ценитель,Documental de Denuncia Social,Casos que cambiaron leyes y conciencias,350,
+Гуманитарные науки,🎬 Historia del Cine y el Documental,🎬,8,Ценитель,Docuseries y Plataformas,"Streaming, true crime, formatos seriales",350,🥇 Золотой значок
+Гуманитарные науки,🎬 Historia del Cine y el Documental,🎬,9,Эксперт,Lenguaje y Ética del Documental,"Manipulación, puesta en escena, límites",500,
+Гуманитарные науки,🎬 Historia del Cine y el Documental,🎬,10,Эксперт,El Futuro del Documental con IA,"Producción automatizada, personalización",500,💎 Бриллиантовый значок
+Гуманитарные науки,📚 Literatura Universal,📚,1,Исследователь,"Mitos, Epopeyas y Textos Fundacionales","Gilgamesh, Ilíada, textos sagrados",100,
+Гуманитарные науки,📚 Literatura Universal,📚,2,Исследователь,Teatro Clásico y Tragedia,"Sófocles, Shakespeare",100,
+Гуманитарные науки,📚 Literatura Universal,📚,3,Исследователь,Novela Moderna,Del siglo XIX al realismo,100,🥉 Бронзовый значок
+Гуманитарные науки,📚 Literatura Universal,📚,4,Ученик,Realismo y Naturalismo,"Tolstói, Zola, Galdós",200,
+Гуманитарные науки,📚 Literatura Universal,📚,5,Ученик,Vanguardias y Modernismo,"Joyce, Kafka, Proust",200,
+Гуманитарные науки,📚 Literatura Universal,📚,6,Ученик,Literaturas no Occidentales,"Autores clave de Asia, África, Latinoamérica",200,🥈 Серебряный значок
+Гуманитарные науки,📚 Literatura Universal,📚,7,Ценитель,Boom Latinoamericano,"García Márquez, Cortázar, Vargas Llosa",350,
+Гуманитарные науки,📚 Literatura Universal,📚,8,Ценитель,Literatura Contemporánea,"Posmodernidad, autoficción, nuevos formatos",350,🥇 Золотой значок
+Гуманитарные науки,📚 Literatura Universal,📚,9,Эксперт,Adaptaciones al Cine y la TV,Cómo cambian las historias,500,
+Гуманитарные науки,📚 Literatura Universal,📚,10,Эксперт,IA y Escritura del Futuro,"Modelos generativos, coautoría",500,💎 Бриллиантовый значок
+Гуманитарные науки,🎭 Historia del Teatro y Artes Escénicas,🎭,1,Исследователь,Teatro Griego y Romano,"Tragedia, comedia, anfiteatros",100,
+Гуманитарные науки,🎭 Historia del Teatro y Artes Escénicas,🎭,2,Исследователь,Teatro Medieval y Renacentista,"Autos, Shakespeare",100,
+Гуманитарные науки,🎭 Historia del Teatro y Artes Escénicas,🎭,3,Исследователь,Ópera y Ballet,"Nacimiento de la ópera, grandes compositores",100,🥉 Бронзовый значок
+Гуманитарные науки,🎭 Historia del Teatro y Artes Escénicas,🎭,4,Ученик,Teatro del Siglo XIX,"Realismo, melodrama",200,
+Гуманитарные науки,🎭 Historia del Teatro y Artes Escénicas,🎭,5,Ученик,Vanguardias del Siglo XX,"Brecht, Artaud, teatro del absurdo",200,
+Гуманитарные науки,🎭 Historia del Teatro y Artes Escénicas,🎭,6,Ученик,Teatro Musical y Broadway,"Musical moderno, grandes éxitos",200,🥈 Серебряный значок
+Гуманитарные науки,🎭 Historia del Teatro y Artes Escénicas,🎭,7,Ценитель,Teatro Político y Social,Obras que cuestionan el poder,350,
+Гуманитарные науки,🎭 Historia del Teatro y Artes Escénicas,🎭,8,Ценитель,Performance y Artes Vivas,"Happening, body art",350,🥇 Золотой значок
+Гуманитарные науки,🎭 Historia del Teatro y Artes Escénicas,🎭,9,Эксперт,Nuevos Medios Escénicos,"Proyecciones, VR, experiencias inmersivas",500,
+Гуманитарные науки,🎭 Historia del Teatro y Artes Escénicas,🎭,10,Эксперт,El Futuro del Teatro,"Hibridación digital, participación del público",500,💎 Бриллиантовый значок
+Гуманитарные науки,📷 Historia de la Fotografía y Fotoperiodismo,📷,1,Исследователь,Primeras Fotografías,"Daguerrotipos, Niepce, Daguerre",100,
+Гуманитарные науки,📷 Historia de la Fotografía y Fotoperiodismo,📷,2,Исследователь,Retrato y Estudio,La fotografía como lujo,100,
+Гуманитарные науки,📷 Historia de la Fotografía y Fotoperiodismo,📷,3,Исследователь,Fotografía Documental Temprana,"Vida urbana, colonias, guerra de Crimea",100,🥉 Бронзовый значок
+Гуманитарные науки,📷 Historia de la Fotografía y Fotoperiodismo,📷,4,Ученик,Grandes Guerras en Imágenes,"WWI, WWII, impacto en la opinión pública",200,
+Гуманитарные науки,📷 Historia de la Fotografía y Fotoperiodismo,📷,5,Ученик,Agencias y Revistas Icónicas,"Magnum, LIFE",200,
+Гуманитарные науки,📷 Historia de la Fotografía y Fotoperiodismo,📷,6,Ученик,Fotografía de Calle y Autoral,"Cartier-Bresson, Vivian Maier",200,🥈 Серебряный значок
+Гуманитарные науки,📷 Historia de la Fotografía y Fotoperiodismo,📷,7,Ценитель,Fotoperiodismo en la Era Digital,"24/7 news, redes sociales",350,
+Гуманитарные науки,📷 Historia de la Fotografía y Fotoperiodismo,📷,8,Ценитель,Manipulación y Fake Images,"Edición, deepfakes, ética",350,🥇 Золотой значок
+Гуманитарные науки,📷 Historia de la Fotografía y Fotoperiodismo,📷,9,Эксперт,Fotografía como Arte Contemporáneo,"Museos, mercado, instalaciones",500,
+Гуманитарные науки,📷 Historia de la Fotografía y Fotoperiodismo,📷,10,Эксперт,"IA, Algoritmos y Visión por Computador","Clasificación, generación de imágenes",500,💎 Бриллиантовый значок
+Гуманитарные науки,🗣️ Lenguas del Mundo y Escrituras,🗣️,1,Исследователь,Qué es un Idioma,"Fonética, gramática, significado",100,
+Гуманитарные науки,🗣️ Lenguas del Mundo y Escrituras,🗣️,2,Исследователь,Familias Lingüísticas,"Indoeuropea, sino-tibetana, afroasiática",100,
+Гуманитарные науки,🗣️ Lenguas del Mundo y Escrituras,🗣️,3,Исследователь,Orígenes de la Escritura,"Cuneiforme, jeroglíficos",100,🥉 Бронзовый значок
+Гуманитарные науки,🗣️ Lenguas del Mundo y Escrituras,🗣️,4,Ученик,Alfabetos y Sistemas de Escritura,"Latino, cirílico, árabe, chino",200,
+Гуманитарные науки,🗣️ Lenguas del Mundo y Escrituras,🗣️,5,Ученик,Lenguas en Peligro,"Extinción lingüística, revitalización",200,
+Гуманитарные науки,🗣️ Lenguas del Mundo y Escrituras,🗣️,6,Ученик,Lenguas Francas y de Poder,"Inglés, español, mandarín",200,🥈 Серебряный значок
+Гуманитарные науки,🗣️ Lenguas del Mundo y Escrituras,🗣️,7,Ценитель,Política e Identidad Lingüística,"Nacionalismos, minorías",350,
+Гуманитарные науки,🗣️ Lenguas del Mundo y Escrituras,🗣️,8,Ценитель,Traducción y Pérdida,"Matices, intraducibles",350,🥇 Золотой значок
+Гуманитарные науки,🗣️ Lenguas del Mundo y Escrituras,🗣️,9,Эксперт,IA y Traducción Automática,"Modelos neuronales, límites",500,
+Гуманитарные науки,🗣️ Lenguas del Mundo y Escrituras,🗣️,10,Эксперт,El Futuro del Multilingüismo,"Convergencia, diversidad",500,💎 Бриллиантовый значок
+Гуманитарные науки,🍳 Historia de la Alimentación y Gastronomía,🍳,1,Исследователь,Cazadores-Recolectores y Agricultura,Del forrajeo a los cultivos,100,
+Гуманитарные науки,🍳 Historia de la Alimentación y Gastronomía,🍳,2,Исследователь,Granos y Civilizaciones,"Trigo, arroz, maíz",100,
+Гуманитарные науки,🍳 Historia de la Alimentación y Gastronomía,🍳,3,Исследователь,Especias y Rutas Comerciales,"Curry, pimienta, oro aromático",100,🥉 Бронзовый значок
+Гуманитарные науки,🍳 Historia de la Alimentación y Gastronomía,🍳,4,Ученик,Colonialismo y Cocina,"Intercambio colombino, mestizaje culinario",200,
+Гуманитарные науки,🍳 Historia de la Alimentación y Gastronomía,🍳,5,Ученик,Revolución Industrial y Comida Procesada,"Conservas, azúcar, fast food",200,
+Гуманитарные науки,🍳 Historia de la Alimentación y Gastronomía,🍳,6,Ученик,Cocinas del Mundo,"Mediterránea, asiática, latinoamericana",200,🥈 Серебряный значок
+Гуманитарные науки,🍳 Historia de la Alimentación y Gastronomía,🍳,7,Ценитель,Alta Cocina y Chefs Estrella,"Guías, restaurantes icónicos",350,
+Гуманитарные науки,🍳 Historia de la Alimentación y Gastronomía,🍳,8,Ценитель,Comida y Clase Social,"Acceso, status, marketing",350,🥇 Золотой значок
+Гуманитарные науки,🍳 Historia de la Alimentación y Gastronomía,🍳,9,Эксперт,Gastronomía Molecular y Ciencia,Física y química en la cocina,500,
+Гуманитарные науки,🍳 Historia de la Alimentación y Gastronomía,🍳,10,Эксперт,Futuro de la Alimentación,"Carne cultivada, insectos, sostenibilidad",500,💎 Бриллиантовый значок
+Общество,🏭 Historia del Capitalismo y del Trabajo,🏭,1,Исследователь,Economías Agrarias y Trueque,Antes del capitalismo,100,
+Общество,🏭 Historia del Capitalismo y del Trabajo,🏭,2,Исследователь,Revolución Comercial y Mercantilismo,"Imperios, colonias",100,
+Общество,🏭 Historia del Capitalismo y del Trabajo,🏭,3,Исследователь,Revolución Industrial,"Máquinas, fábricas, proletariado",100,🥉 Бронзовый значок
+Общество,🏭 Historia del Capitalismo y del Trabajo,🏭,4,Ученик,Capitalismo del Siglo XIX,"Ferrocarriles, monopolios",200,
+Общество,🏭 Historia del Capitalismo y del Trabajo,🏭,5,Ученик,Estado del Bienestar y Fordismo,"Producción en masa, derechos laborales",200,
+Общество,🏭 Historia del Capitalismo y del Trabajo,🏭,6,Ученик,Neoliberalismo y Globalización,"Deslocalización, finanzas",200,🥈 Серебряный значок
+Общество,🏭 Historia del Capitalismo y del Trabajo,🏭,7,Ценитель,Automatización y Trabajo Precario,"Gig economy, plataformas",350,
+Общество,🏭 Historia del Capitalismo y del Trabajo,🏭,8,Ценитель,Críticas y Alternativas,"Marxismo, economía solidaria",350,🥇 Золотой значок
+Общество,🏭 Historia del Capitalismo y del Trabajo,🏭,9,Эксперт,Capitalismo Digital y de Vigilancia,Datos como mercancía,500,
+Общество,🏭 Historia del Capitalismo y del Trabajo,🏭,10,Эксперт,El Futuro del Trabajo,"Renta básica, robots",500,💎 Бриллиантовый значок
+Общество,📱 Sociología de las Redes Sociales,📱,1,Исследователь,De Foros a Redes Sociales,"Blogs, MySpace, Facebook",100,
+Общество,📱 Sociología de las Redes Sociales,📱,2,Исследователь,Plataformas Clave,"Twitter/X, Instagram, TikTok",100,
+Общество,📱 Sociología de las Redes Sociales,📱,3,Исследователь,"Likes, Seguidores y Ego",Psicología básica del feedback,100,🥉 Бронзовый значок
+Общество,📱 Sociología de las Redes Sociales,📱,4,Ученик,Algoritmos y Burbujas de Filtro,Qué ves y qué no ves,200,
+Общество,📱 Sociología de las Redes Sociales,📱,5,Ученик,Influencers y Economía de Creadores,Modelos de ingresos,200,
+Общество,📱 Sociología de las Redes Sociales,📱,6,Ученик,Ciberacoso y Toxicidad,Efectos en la salud mental,200,🥈 Серебряный значок
+Общество,📱 Sociología de las Redes Sociales,📱,7,Ценитель,Redes y Política,"Campañas, desinformación",350,
+Общество,📱 Sociología de las Redes Sociales,📱,8,Ценитель,Activismo Digital,"Hashtags, movimientos sociales",350,🥇 Золотой значок
+Общество,📱 Sociología de las Redes Sociales,📱,9,Эксперт,"Datos, Vigilancia y Privacidad",Seguimiento masivo,500,
+Общество,📱 Sociología de las Redes Sociales,📱,10,Эксперт,El Futuro de la Vida Conectada,"Metaversos, identidades múltiples",500,💎 Бриллиантовый значок
+Общество,🗳️ Sistemas Políticos del Mundo,🗳️,1,Исследователь,Qué es un Estado,"Territorio, población, soberanía",100,
+Общество,🗳️ Sistemas Políticos del Mundo,🗳️,2,Исследователь,Democracias y Dictaduras,Clasificaciones básicas,100,
+Общество,🗳️ Sistemas Políticos del Mundo,🗳️,3,Исследователь,Separación de Poderes,"Ejecutivo, legislativo, judicial",100,🥉 Бронзовый значок
+Общество,🗳️ Sistemas Políticos del Mundo,🗳️,4,Ученик,Modelos Parlamentarios y Presidenciales,"Reino Unido, EE.UU.",200,
+Общество,🗳️ Sistemas Políticos del Mundo,🗳️,5,Ученик,Regímenes Autoritarios,"Control, propaganda",200,
+Общество,🗳️ Sistemas Políticos del Mundo,🗳️,6,Ученик,Organismos Supranacionales,"UE, ONU, OEA",200,🥈 Серебряный значок
+Общество,🗳️ Sistemas Políticos del Mundo,🗳️,7,Ценитель,Transiciones Democráticas,Ejemplos históricos,350,
+Общество,🗳️ Sistemas Políticos del Mundo,🗳️,8,Ценитель,Populismo y Polarización,Tendencias recientes,350,🥇 Золотой значок
+Общество,🗳️ Sistemas Políticos del Mundo,🗳️,9,Эксперт,Tecnología y Gobernanza,"Voto electrónico, e-gobierno",500,
+Общество,🗳️ Sistemas Políticos del Mundo,🗳️,10,Эксперт,Democracia del Futuro,"Participación digital, IA y política",500,💎 Бриллиантовый значок
+Общество,♀️ Historia del Feminismo y Movimientos Sociales,♀️,1,Исследователь,Primeras Luchas por Derechos,"Sufragistas, abolición",100,
+Общество,♀️ Historia del Feminismo y Movimientos Sociales,♀️,2,Исследователь,Olas del Feminismo,"Primera, segunda, tercera",100,
+Общество,♀️ Historia del Feminismo y Movimientos Sociales,♀️,3,Исследователь,Movimientos Obreros,"Sindicatos, 1 de mayo",100,🥉 Бронзовый значок
+Общество,♀️ Historia del Feminismo y Movimientos Sociales,♀️,4,Ученик,Luchas por Derechos Civiles,"EE.UU., Sudáfrica",200,
+Общество,♀️ Historia del Feminismo y Movimientos Sociales,♀️,5,Ученик,Movimiento LGTBI+,Hitos y conquistas,200,
+Общество,♀️ Historia del Feminismo y Movimientos Sociales,♀️,6,Ученик,Ecologismo y Pacifismo,Movimiento verde,200,🥈 Серебряный значок
+Общество,♀️ Historia del Feminismo y Movimientos Sociales,♀️,7,Ценитель,Intersectionalidad y Nuevas Agendas,Cruce de opresiones,350,
+Общество,♀️ Historia del Feminismo y Movimientos Sociales,♀️,8,Ценитель,Redes Sociales y Movilización,"#MeToo, Primavera Árabe",350,🥇 Золотой значок
+Общество,♀️ Historia del Feminismo y Movimientos Sociales,♀️,9,Эксперт,Reacción y Backlash,Resistencias y contramovimientos,500,
+Общество,♀️ Historia del Feminismo y Movimientos Sociales,♀️,10,Эксперт,Movimientos Sociales del Futuro,Nuevas causas emergentes,500,💎 Бриллиантовый значок
+Общество,⌛ Economía de la Atención,⌛,1,Исследователь,Qué es la Atención,"Recurso limitado, foco",100,
+Общество,⌛ Economía de la Atención,⌛,2,Исследователь,Publicidad Tradicional,"TV, radio, prensa",100,
+Общество,⌛ Economía de la Atención,⌛,3,Исследователь,Publicidad Digital,"Banners, search ads",100,🥉 Бронзовый значок
+Общество,⌛ Economía de la Atención,⌛,4,Ученик,Plataformas y Tiempo de Pantalla,Modelos de negocio,200,
+Общество,⌛ Economía de la Atención,⌛,5,Ученик,Scroll Infinito y Notificaciones,Diseño adictivo,200,
+Общество,⌛ Economía de la Atención,⌛,6,Ученик,Creadores y Contenido Viral,Métricas y tendencias,200,🥈 Серебряный значок
+Общество,⌛ Economía de la Atención,⌛,7,Ценитель,Coste Cognitivo y Salud Mental,Burnout informativo,350,
+Общество,⌛ Economía de la Atención,⌛,8,Ценитель,Regulación y Privacidad,Leyes de datos,350,🥇 Золотой значок
+Общество,⌛ Economía de la Atención,⌛,9,Эксперт,Resistencia: Minimalismo Digital,Estrategias para recuperar el foco,500,
+Общество,⌛ Economía de la Atención,⌛,10,Эксперт,Futuro de la Atención,"Interfaces nuevas, IA curadora",500,💎 Бриллиантовый значок
+Природа,🏞️ Grandes Ríos y Civilizaciones,🏞️,1,Исследователь,"Nilo, Tigris y Éufrates",Cunas de civilización,100,
+Природа,🏞️ Grandes Ríos y Civilizaciones,🏞️,2,Исследователь,Indo y Ganges,India antigua y moderna,100,
+Природа,🏞️ Grandes Ríos y Civilizaciones,🏞️,3,Исследователь,Yangtsé y Amarillo,China y sus ríos,100,🥉 Бронзовый значок
+Природа,🏞️ Grandes Ríos y Civilizaciones,🏞️,4,Ученик,Ríos de Europa,"Danubio, Rin, comercio",200,
+Природа,🏞️ Grandes Ríos y Civilizaciones,🏞️,5,Ученик,Ríos de América,"Amazonas, Mississippi",200,
+Природа,🏞️ Grandes Ríos y Civilizaciones,🏞️,6,Ученик,Ríos de África y su Impacto,"Niger, Congo",200,🥈 Серебряный значок
+Природа,🏞️ Grandes Ríos y Civilizaciones,🏞️,7,Ценитель,Represas y Gestión del Agua,"Asuán, Tres Gargantas",350,
+Природа,🏞️ Grandes Ríos y Civilizaciones,🏞️,8,Ценитель,Contaminación y Sequías,Crisis hídricas,350,🥇 Золотой значок
+Природа,🏞️ Grandes Ríos y Civilizaciones,🏞️,9,Эксперт,Guerras del Agua,Conflictos actuales y potenciales,500,
+Природа,🏞️ Grandes Ríos y Civilizaciones,🏞️,10,Эксперт,Futuro de los Grandes Ríos,Adaptación climática,500,💎 Бриллиантовый значок
+Природа,🏜️ Desiertos del Mundo y Supervivencia,🏜️,1,Исследователь,Qué es un Desierto,"Tipos, clima",100,
+Природа,🏜️ Desiertos del Mundo y Supervivencia,🏜️,2,Исследователь,Sahara y Desiertos Africanos,Historia y pueblos,100,
+Природа,🏜️ Desiertos del Mundo y Supervivencia,🏜️,3,Исследователь,Desiertos de Asia,"Gobi, Arabia",100,🥉 Бронзовый значок
+Природа,🏜️ Desiertos del Mundo y Supervivencia,🏜️,4,Ученик,Desiertos de América,"Atacama, Sonora",200,
+Природа,🏜️ Desiertos del Mundo y Supervivencia,🏜️,5,Ученик,Flora y Fauna Adaptada,Estrategias de vida,200,
+Природа,🏜️ Desiertos del Mundo y Supervivencia,🏜️,6,Ученик,Supervivencia Humana,"Técnicas, expediciones",200,🥈 Серебряный значок
+Природа,🏜️ Desiertos del Mundo y Supervivencia,🏜️,7,Ценитель,Desertificación,Causas humanas y naturales,350,
+Природа,🏜️ Desiertos del Mundo y Supervivencia,🏜️,8,Ценитель,Energía Solar en Desiertos,Mega proyectos,350,🥇 Золотой значок
+Природа,🏜️ Desiertos del Mundo y Supervivencia,🏜️,9,Эксперт,Ciudades y Proyectos en Desiertos,"Dubai, NEOM",500,
+Природа,🏜️ Desiertos del Mundo y Supervivencia,🏜️,10,Эксперт,Vida en Otros Mundos Desérticos,Marte como desierto extremo,500,💎 Бриллиантовый значок
+Природа,🌲 Bosques y Selvas,🌲,1,Исследователь,Tipos de Bosques,"Tropicales, templados, boreales",100,
+Природа,🌲 Bosques y Selvas,🌲,2,Исследователь,Amazonia y Grandes Selvas,Biodiversidad y pueblos,100,
+Природа,🌲 Bosques y Selvas,🌲,3,Исследователь,Bosques del Norte,"Taiga, tundra",100,🥉 Бронзовый значок
+Природа,🌲 Bosques y Selvas,🌲,4,Ученик,Bosques y Clima,Sumideros de carbono,200,
+Природа,🌲 Bosques y Selvas,🌲,5,Ученик,Deforestación,Causas y consecuencias,200,
+Природа,🌲 Bosques y Selvas,🌲,6,Ученик,Conservación y Parques,Modelos de protección,200,🥈 Серебряный значок
+Природа,🌲 Bosques y Selvas,🌲,7,Ценитель,Economía del Bosque,"Madera, turismo, servicios ecosistémicos",350,
+Природа,🌲 Bosques y Selvas,🌲,8,Ценитель,Incendios Forestales,Cambio climático y gestión,350,🥇 Золотой значок
+Природа,🌲 Bosques y Selvas,🌲,9,Эксперт,Restauración Ecológica,Reforestación inteligente,500,
+Природа,🌲 Bosques y Selvas,🌲,10,Эксперт,Bosques del Futuro,"Rewilding, reservas integrales",500,💎 Бриллиантовый значок
+Природа,🦤 Fauna Extinta Reciente y Conservación,🦤,1,Исследователь,Especies Extintas Recientes,"Dodo, tilacino",100,
+Природа,🦤 Fauna Extinta Reciente y Conservación,🦤,2,Исследователь,Causas de Extinción,"Caza, hábitat, invasoras",100,
+Природа,🦤 Fauna Extinta Reciente y Conservación,🦤,3,Исследователь,Historias Emblemáticas,"Búfalo americano, ballena azul",100,🥉 Бронзовый значок
+Природа,🦤 Fauna Extinta Reciente y Conservación,🦤,4,Ученик,Listas Rojas y Estado de Conservación,UICN,200,
+Природа,🦤 Fauna Extinta Reciente y Conservación,🦤,5,Ученик,Zoológicos y Reservas,Rol en conservación,200,
+Природа,🦤 Fauna Extinta Reciente y Conservación,🦤,6,Ученик,Éxitos en Recuperación,"Lince ibérico, cóndor",200,🥈 Серебряный значок
+Природа,🦤 Fauna Extinta Reciente y Conservación,🦤,7,Ценитель,Conservación Genética,Bancos de genes,350,
+Природа,🦤 Fauna Extinta Reciente y Conservación,🦤,8,Ценитель,Rewilding y Reintroducciones,Casos prácticos,350,🥇 Золотой значок
+Природа,🦤 Fauna Extinta Reciente y Conservación,🦤,9,Эксперт,De-Extinción,Mamuts y debate ético,500,
+Природа,🦤 Fauna Extinta Reciente y Conservación,🦤,10,Эксперт,Convivencia Humano-Fauna,Nuevos pactos y límites,500,💎 Бриллиантовый значок
+Природа,🧊 Glaciares y Regiones Polares,🧊,1,Исследователь,Qué es un Glaciar,"Formación, tipos",100,
+Природа,🧊 Glaciares y Regiones Polares,🧊,2,Исследователь,Ártico y Antártida,Diferencias básicas,100,
+Природа,🧊 Glaciares y Regiones Polares,🧊,3,Исследователь,Fauna Polar,"Osos, pingüinos, focas",100,🥉 Бронзовый значок
+Природа,🧊 Glaciares y Regiones Polares,🧊,4,Ученик,Hielo y Clima Global,"Albedo, regulador térmico",200,
+Природа,🧊 Glaciares y Regiones Polares,🧊,5,Ученик,Exploradores Polares,"Amundsen, Scott",200,
+Природа,🧊 Glaciares y Regiones Polares,🧊,6,Ученик,Bases Científicas,Investigación en los polos,200,🥈 Серебряный значок
+Природа,🧊 Glaciares y Regiones Polares,🧊,7,Ценитель,Retroceso de Glaciares,Impactos locales,350,
+Природа,🧊 Glaciares y Regiones Polares,🧊,8,Ценитель,Rutas Marítimas y Recursos,Paso del Noroeste,350,🥇 Золотой значок
+Природа,🧊 Glaciares y Regiones Polares,🧊,9,Эксперт,Conflictos Geopolíticos en el Hielo,Reclamos territoriales,500,
+Природа,🧊 Glaciares y Regiones Polares,🧊,10,Эксперт,Futuro de las Regiones Polares,Escenarios climáticos,500,💎 Бриллиантовый значок
+Технологии,💡 Innovación y Emprendimiento,💡,1,Исследователь,Qué es Innovar,"Ideas, problemas y soluciones",100,
+Технологии,💡 Innovación y Emprendimiento,💡,2,Исследователь,Casos Históricos de Emprendedores,"Edison, Ford",100,
+Технологии,💡 Innovación y Emprendimiento,💡,3,Исследователь,Startups y Silicon Valley,Nacimiento del ecosistema,100,🥉 Бронзовый значок
+Технологии,💡 Innovación y Emprendimiento,💡,4,Ученик,Modelos de Negocio,"Suscripción, marketplace, freemium",200,
+Технологии,💡 Innovación y Emprendimiento,💡,5,Ученик,Financiación y Capital Riesgo,"VC, ángeles, bootstrapping",200,
+Технологии,💡 Innovación y Emprendimiento,💡,6,Ученик,Validación y Producto Mínimo Viable,Iterar con usuarios,200,🥈 Серебряный значок
+Технологии,💡 Innovación y Emprendimiento,💡,7,Ценитель,Escalar una Startup,"Equipo, procesos, cultura",350,
+Технологии,💡 Innovación y Emprendimiento,💡,8,Ценитель,Fracaso y Aprendizaje,"Casos sonados, lecciones",350,🥇 Золотой значок
+Технологии,💡 Innovación y Emprendimiento,💡,9,Эксперт,Emprendimiento de Impacto,"Triple balance, sostenibilidad",500,
+Технологии,💡 Innovación y Emprendimiento,💡,10,Эксперт,Innovar con IA,Nuevos modelos habilitados por IA,500,💎 Бриллиантовый значок
+Общество,💵 Psicología del Dinero,💵,1,Исследователь,Dinero y Emociones,"Miedo, avaricia",100,
+Общество,💵 Psicología del Dinero,💵,2,Исследователь,Sesgos en Decisiones Financieras,"Anclas, aversión a la pérdida",100,
+Общество,💵 Psicología del Dinero,💵,3,Исследователь,Hábitos de Consumo,Impulso vs planificación,100,🥉 Бронзовый значок
+Общество,💵 Psicología del Dinero,💵,4,Ученик,Publicidad y Compra,Técnicas de persuasión,200,
+Общество,💵 Psicología del Dinero,💵,5,Ученик,Endeudamiento y Crédito,Psicología del préstamo,200,
+Общество,💵 Psicología del Dinero,💵,6,Ученик,Ahorro e Inversión,Mentalidad de largo plazo,200,🥈 Серебряный значок
+Общество,💵 Psicología del Dinero,💵,7,Ценитель,Dinero y Estatus,"Señales, comparación social",350,
+Общество,💵 Psicología del Dinero,💵,8,Ценитель,Cultura y Relación con el Dinero,Diferencias regionales,350,🥇 Золотой значок
+Общество,💵 Psicología del Dinero,💵,9,Эксперт,Dinero y Felicidad,Qué dice la investigación,500,
+Общество,💵 Psicología del Dinero,💵,10,Эксперт,Reescribir tu Narrativa Financiera,Cambiar creencias y hábitos,500,💎 Бриллиантовый значок
+Здоровье,📈 Hábitos y Productividad,📈,1,Исследователь,Qué es un Hábito,Bucle señal-rutina-recompensa,100,
+Здоровье,📈 Hábitos y Productividad,📈,2,Исследователь,Motivación y Voluntad,Mitologías y realidades,100,
+Здоровье,📈 Hábitos y Productividad,📈,3,Исследователь,Procrastinación,Por qué la mente pospone,100,🥉 Бронзовый значок
+Здоровье,📈 Hábitos y Productividad,📈,4,Ученик,Sistemas de Organización,"Listas, calendarios, GTD",200,
+Здоровье,📈 Hábitos y Productividad,📈,5,Ученик,Gestión del Tiempo,"Bloques, timeboxing",200,
+Здоровье,📈 Hábitos y Productividad,📈,6,Ученик,"Energía, Sueño y Productividad",Ritmos biológicos,200,🥈 Серебряный значок
+Здоровье,📈 Hábitos y Productividad,📈,7,Ценитель,Diseñar Hábitos Duraderos,"Ambiente, identidad",350,
+Здоровье,📈 Hábitos y Productividad,📈,8,Ценитель,Productividad en la Era Digital,"Distracciones, multitarea",350,🥇 Золотой значок
+Здоровье,📈 Hábitos y Productividad,📈,9,Эксперт,Flujo (Flow) y Alto Rendimiento,Condiciones para entrar en flow,500,
+Здоровье,📈 Hábitos y Productividad,📈,10,Эксперт,Sistemas de Productividad Personalizados,Crearte tu propio sistema,500,💎 Бриллиантовый значок
+Общество,🏙️ Historia de las Ciudades y Urbanismo,🏙️,1,Исследователь,Primeras Ciudades,"Mesopotamia, valle del Indo",100,
+Общество,🏙️ Historia de las Ciudades y Urbanismo,🏙️,2,Исследователь,Ciudades Antiguas,"Roma, Atenas, Teotihuacán",100,
+Общество,🏙️ Historia de las Ciudades y Urbanismo,🏙️,3,Исследователь,Ciudades Medievales,"Murallas, gremios",100,🥉 Бронзовый значок
+Общество,🏙️ Historia de las Ciudades y Urbanismo,🏙️,4,Ученик,Revolución Industrial y Ciudad,"Fábricas, barrios obreros",200,
+Общество,🏙️ Historia de las Ciudades y Urbanismo,🏙️,5,Ученик,Urbanismo Moderno,"Haussmann, zonificación",200,
+Общество,🏙️ Historia de las Ciudades y Urbanismo,🏙️,6,Ученик,Megaciudades y Suburbios,Crecimiento acelerado,200,🥈 Серебряный значок
+Общество,🏙️ Historia de las Ciudades y Urbanismo,🏙️,7,Ценитель,Problemas Urbanos,"Tráfico, vivienda, contaminación",350,
+Общество,🏙️ Historia de las Ciudades y Urbanismo,🏙️,8,Ценитель,Ciudades Sostenibles,"Transporte público, verde",350,🥇 Золотой значок
+Общество,🏙️ Historia de las Ciudades y Urbanismo,🏙️,9,Эксперт,Smart Cities,"Datos, sensores, gobernanza",500,
+Общество,🏙️ Historia de las Ciudades y Urbanismo,🏙️,10,Эксперт,Ciudades del Futuro,"Verticales, flotantes, resilientes",500,💎 Бриллиантовый значок
+Технологии,🕹️ Videojuegos y Sociedad,🕹️,1,Исследователь,Historia Básica del Juego Digital,Hitos principales,100,
+Технологии,🕹️ Videojuegos y Sociedad,🕹️,2,Исследователь,Culturas de Jugadores,"Casual, hardcore",100,
+Технологии,🕹️ Videojuegos y Sociedad,🕹️,3,Исследователь,Comunidades Online,"Clanes, guilds",100,🥉 Бронзовый значок
+Технологии,🕹️ Videojuegos y Sociedad,🕹️,4,Ученик,Esports y Espectadores,Audiencias masivas,200,
+Технологии,🕹️ Videojuegos y Sociedad,🕹️,5,Ученик,Representación y Diversidad,"Género, raza",200,
+Технологии,🕹️ Videojuegos y Sociedad,🕹️,6,Ученик,Juegos y Educación,Serious games,200,🥈 Серебряный значок
+Технологии,🕹️ Videojuegos y Sociedad,🕹️,7,Ценитель,Adicción y Regulación,"Clasificaciones, límites",350,
+Технологии,🕹️ Videojuegos y Sociedad,🕹️,8,Ценитель,Economías Virtuales,"Objetos, skins, mercados",350,🥇 Золотой значок
+Технологии,🕹️ Videojuegos y Sociedad,🕹️,9,Эксперт,Juegos como Arte Político,Crítica y reflexión,500,
+Технологии,🕹️ Videojuegos y Sociedad,🕹️,10,Эксперт,Fronteras Difusas Realidad-Juego,Metaversos,500,💎 Бриллиантовый значок
+Гуманитарные науки,🚀 Ciencia Ficción y Futuro,🚀,1,Исследователь,Orígenes de la Ciencia Ficción,"Verne, Wells",100,
+Гуманитарные науки,🚀 Ciencia Ficción y Futuro,🚀,2,Исследователь,Edad Dorada,"Asimov, Clarke",100,
+Гуманитарные науки,🚀 Ciencia Ficción y Futuro,🚀,3,Исследователь,Cine de Ciencia Ficción,"2001, Star Wars",100,🥉 Бронзовый значок
+Гуманитарные науки,🚀 Ciencia Ficción y Futuro,🚀,4,Ученик,Distopías y Crítica Social,"1984, Blade Runner",200,
+Гуманитарные науки,🚀 Ciencia Ficción y Futuro,🚀,5,Ученик,Utopías y Posibles Mundos,"Star Trek, solarpunk",200,
+Гуманитарные науки,🚀 Ciencia Ficción y Futuro,🚀,6,Ученик,Space Opera y Aventuras Cósmicas,Grandes sagas,200,🥈 Серебряный значок
+Гуманитарные науки,🚀 Ciencia Ficción y Futuro,🚀,7,Ценитель,Ciberpunk y Realidades Virtuales,"Neuromante, Matrix",350,
+Гуманитарные науки,🚀 Ciencia Ficción y Futuro,🚀,8,Ценитель,Biopunk y Genética,Manipulación de cuerpos,350,🥇 Золотой значок
+Гуманитарные науки,🚀 Ciencia Ficción y Futuro,🚀,9,Эксперт,SF y Predicciones Cumplidas,Tecnologías anticipadas,500,
+Гуманитарные науки,🚀 Ciencia Ficción y Futuro,🚀,10,Эксперт,Ficción como Laboratorio del Futuro,Inspirar ciencia real,500,💎 Бриллиантовый значок
+Гуманитарные науки,👗 Historia de la Moda,👗,1,Исследователь,Vestimenta en la Antigüedad,"Togas, túnicas",100,
+Гуманитарные науки,👗 Historia de la Moda,👗,2,Исследователь,Ropas Medievales y Renacentistas,"Cortes, símbolos",100,
+Гуманитарные науки,👗 Historia de la Moda,👗,3,Исследователь,Moda del Siglo XIX,"Crinolinas, trajes",100,🥉 Бронзовый значок
+Гуманитарные науки,👗 Historia de la Moda,👗,4,Ученик,Alta Costura y Diseñadores,"Chanel, Dior",200,
+Гуманитарные науки,👗 Historia de la Moda,👗,5,Ученик,Moda Juvenil y Subculturas,"Punk, hip-hop",200,
+Гуманитарные науки,👗 Historia de la Moda,👗,6,Ученик,Fast Fashion,Producción masiva,200,🥈 Серебряный значок
+Гуманитарные науки,👗 Historia de la Moda,👗,7,Ценитель,Impacto Ambiental de la Moda,"Contaminación, residuos",350,
+Гуманитарные науки,👗 Historia de la Moda,👗,8,Ценитель,Moda Ética y Sostenible,"Algodón orgánico, reciclaje",350,🥇 Золотой значок
+Гуманитарные науки,👗 Historia de la Moda,👗,9,Эксперт,Tecnología Textil,Ropa inteligente,500,
+Гуманитарные науки,👗 Historia de la Moda,👗,10,Эксперт,Futuro de la Moda,"Digital, virtual, IA",500,💎 Бриллиантовый значок
+Технологии,📐 Arquitectura de la Información y UX,📐,1,Исследователь,Qué es UX,Experiencia de usuario,100,
+Технологии,📐 Arquitectura de la Información y UX,📐,2,Исследователь,Interfaces a lo Largo del Tiempo,"CLI, GUI, móvil",100,
+Технологии,📐 Arquitectura de la Información y UX,📐,3,Исследователь,Arquitectura de la Información,"Jerarquías, menús",100,🥉 Бронзовый значок
+Технологии,📐 Arquitectura de la Información y UX,📐,4,Ученик,Principios de Usabilidad,"Norman, heurísticas",200,
+Технологии,📐 Arquitectura de la Información y UX,📐,5,Ученик,Investigación con Usuarios,"Entrevistas, tests",200,
+Технологии,📐 Arquitectura de la Información y UX,📐,6,Ученик,Diseño Centrado en la Persona,"Personas, journeys",200,🥈 Серебряный значок
+Технологии,📐 Arquitectura de la Información y UX,📐,7,Ценитель,Patrones Oscuros,Diseño manipulador,350,
+Технологии,📐 Arquitectura de la Información y UX,📐,8,Ценитель,Accesibilidad Digital,"WCAG, inclusión",350,🥇 Золотой значок
+Технологии,📐 Arquitectura de la Información y UX,📐,9,Эксперт,UX y Ética,Responsabilidad del diseño,500,
+Технологии,📐 Arquitectura de la Información y UX,📐,10,Эксперт,UX con IA,"Interfaces conversacionales, copilots",500,💎 Бриллиантовый значок
+Здоровье,🎓 Neuroeducación y Aprendizaje,🎓,1,Исследователь,Cerebro y Aprendizaje,"Plasticidad, memoria",100,
+Здоровье,🎓 Neuroeducación y Aprendizaje,🎓,2,Исследователь,Atención y Motivación,Sistemas de recompensa,100,
+Здоровье,🎓 Neuroeducación y Aprendizaje,🎓,3,Исследователь,Emoción y Recuerdo,Cómo se fijan los recuerdos,100,🥉 Бронзовый значок
+Здоровье,🎓 Neuroeducación y Aprendizaje,🎓,4,Ученик,Errores y Curva de Olvido,Por qué olvidamos,200,
+Здоровье,🎓 Neuroeducación y Aprendizaje,🎓,5,Ученик,Práctica Espaciada y Revisión Activa,Técnicas efectivas,200,
+Здоровье,🎓 Neuroeducación y Aprendizaje,🎓,6,Ученик,Aprendizaje Multisensorial,"Ver, oír, hacer",200,🥈 Серебряный значок
+Здоровье,🎓 Neuroeducación y Aprendizaje,🎓,7,Ценитель,Mitos sobre el Cerebro,"10%, hemisferios, etc.",350,
+Здоровье,🎓 Neuroeducación y Aprendizaje,🎓,8,Ценитель,Tecnología y Aprendizaje,"Apps, plataformas",350,🥇 Золотой значок
+Здоровье,🎓 Neuroeducación y Aprendizaje,🎓,9,Эксперт,Personalización con IA,Rutas adaptativas,500,
+Здоровье,🎓 Neuroeducación y Aprendizaje,🎓,10,Эксперт,Diseñar tu Propio Sistema de Aprendizaje,Aplicar todo lo aprendido,500,💎 Бриллиантовый значок
+Гуманитарные науки,🕯️ Historia de las Religiones,🕯️,1,Исследователь,Creencias Prehistóricas,"Cultos, enterramientos",100,
+Гуманитарные науки,🕯️ Historia de las Religiones,🕯️,2,Исследователь,Religiones Antiguas,"Egipto, Grecia",100,
+Гуманитарные науки,🕯️ Historia de las Religiones,🕯️,3,Исследователь,Grandes Religiones Monoteístas,"Judaísmo, cristianismo, islam",100,🥉 Бронзовый значок
+Гуманитарные науки,🕯️ Historia de las Religiones,🕯️,4,Ученик,Religiones Dhármicas,"Hinduismo, budismo",200,
+Гуманитарные науки,🕯️ Historia de las Religiones,🕯️,5,Ученик,Religiones de Asia Oriental,"Confucianismo, taoísmo",200,
+Гуманитарные науки,🕯️ Historia de las Religiones,🕯️,6,Ученик,Religiones Indígenas,"África, América",200,🥈 Серебряный значок
+Гуманитарные науки,🕯️ Historia de las Religiones,🕯️,7,Ценитель,Reformas y Cismas,"Protestantismo, reformas internas",350,
+Гуманитарные науки,🕯️ Historia de las Religiones,🕯️,8,Ценитель,Religión y Política,"Teocracias, laicismo",350,🥇 Золотой значок
+Гуманитарные науки,🕯️ Historia de las Religiones,🕯️,9,Эксперт,Secularización y Nuevos Movimientos,Espiritualidades modernas,500,
+Гуманитарные науки,🕯️ Historia de las Religiones,🕯️,10,Эксперт,Religión en el Futuro,"¿Menos, más, distinta?",500,💎 Бриллиантовый значок
+Общество,🕵️ Crimen Organizado y Mafias,🕵️,1,Исследователь,Qué es el Crimen Organizado,Definición y tipos,100,
+Общество,🕵️ Crimen Organizado y Mafias,🕵️,2,Исследователь,Mafia Siciliana y Cosa Nostra,Orígenes y códigos,100,
+Общество,🕵️ Crimen Organizado y Mafias,🕵️,3,Исследователь,"Yakuza, Triadas y Otras Mafias",Asia y más,100,🥉 Бронзовый значок
+Общество,🕵️ Crimen Organizado y Mafias,🕵️,4,Ученик,Carteles de la Droga,Latinoamérica,200,
+Общество,🕵️ Crimen Organizado y Mafias,🕵️,5,Ученик,Lavado de Dinero,Métodos y ejemplos,200,
+Общество,🕵️ Crimen Organizado y Mafias,🕵️,6,Ученик,Crimen Organizado en Política,Corrupción,200,🥈 Серебряный значок
+Общество,🕵️ Crimen Organizado y Mafias,🕵️,7,Ценитель,Crimen Cibernético Organizado,"Hackers, ransomware",350,
+Общество,🕵️ Crimen Organizado y Mafias,🕵️,8,Ценитель,Lucha Internacional contra el Crimen,"Interpol, tratados",350,🥇 Золотой значок
+Общество,🕵️ Crimen Organizado y Mafias,🕵️,9,Эксперт,Narrativas y Mitificación del Crimen,"Cine, series",500,
+Общество,🕵️ Crimen Organizado y Mafias,🕵️,10,Эксперт,Escenarios Futuros del Crimen Global,Nuevas formas emergentes,500,💎 Бриллиантовый значок
+Наука,👩‍🚀 Exploración Espacial Humana,👩‍🚀,1,Исследователь,Carrera Espacial,EE.UU. vs URSS,100,
+Наука,👩‍🚀 Exploración Espacial Humana,👩‍🚀,2,Исследователь,Llegada a la Luna,Apollo,100,
+Наука,👩‍🚀 Exploración Espacial Humana,👩‍🚀,3,Исследователь,Estaciones Espaciales,"Mir, ISS",100,🥉 Бронзовый значок
+Наука,👩‍🚀 Exploración Espacial Humana,👩‍🚀,4,Ученик,Transbordadores y Nuevas Naves,"Shuttle, cápsulas",200,
+Наука,👩‍🚀 Exploración Espacial Humana,👩‍🚀,5,Ученик,Empresas Privadas,"SpaceX, Blue Origin",200,
+Наука,👩‍🚀 Exploración Espacial Humana,👩‍🚀,6,Ученик,Robots Exploradores,"Rovers, sondas",200,🥈 Серебряный значок
+Наука,👩‍🚀 Exploración Espacial Humana,👩‍🚀,7,Ценитель,Vida en Microgravedad,Cuerpo humano en órbita,350,
+Наука,👩‍🚀 Exploración Espacial Humana,👩‍🚀,8,Ценитель,Planes para Marte,Misiones tripuladas,350,🥇 Золотой значок
+Наука,👩‍🚀 Exploración Espacial Humana,👩‍🚀,9,Эксперт,Colonias y Hábitats Espaciales,Diseños y retos,500,
+Наука,👩‍🚀 Exploración Espacial Humana,👩‍🚀,10,Эксперт,Humanidad Multiplanetaria,Implicaciones a muy largo plazo,500,💎 Бриллиантовый значок
+Технологии,🤖 Historia de la Robótica,🤖,1,Исследователь,Autómatas Antiguos,Dispositivos mecánicos precientíficos,100,
+Технологии,🤖 Historia de la Robótica,🤖,2,Исследователь,Robots en la Ficción,"Metropolis, Asimov",100,
+Технологии,🤖 Historia de la Robótica,🤖,3,Исследователь,Primeros Robots Industriales,Unimate y las fábricas,100,🥉 Бронзовый значок
+Технологии,🤖 Historia de la Robótica,🤖,4,Ученик,Robots en el Hogar,"Aspiradoras, asistentes",200,
+Технологии,🤖 Historia de la Robótica,🤖,5,Ученик,Robots Colaborativos,Cobots junto a humanos,200,
+Технологии,🤖 Historia de la Robótica,🤖,6,Ученик,Competencias de Robótica,"FIRST, competiciones estudiantiles",200,🥈 Серебряный значок
+Технологии,🤖 Historia de la Robótica,🤖,7,Ценитель,Robots Militares,"Drones, sistemas no tripulados",350,
+Технологии,🤖 Historia de la Robótica,🤖,8,Ценитель,Robots en Medicina,"Cirugía, rehabilitación",350,🥇 Золотой значок
+Технологии,🤖 Historia de la Robótica,🤖,9,Эксперт,Robots Autónomos Inteligentes,"Percepción, decisión",500,
+Технологии,🤖 Historia de la Robótica,🤖,10,Эксперт,Futuro de la Robótica,"Sociedad, empleo, ética",500,💎 Бриллиантовый значок
+Технологии,🚆 Historia del Transporte,🚆,1,Исследователь,Rueda y Tracción Animal,"Carros, caballos",100,
+Технологии,🚆 Historia del Transporte,🚆,2,Исследователь,Barcos y Grandes Rutas,Navegación a vela,100,
+Технологии,🚆 Historia del Transporte,🚆,3,Исследователь,Ferrocarril,Revolución de los trenes,100,🥉 Бронзовый значок
+Технологии,🚆 Historia del Transporte,🚆,4,Ученик,Automóvil y Carreteras,"Ford, autopistas",200,
+Технологии,🚆 Historia del Transporte,🚆,5,Ученик,Aviación,"Wright, vuelos comerciales",200,
+Технологии,🚆 Historia del Transporte,🚆,6,Ученик,Transporte Urbano,"Metro, tranvía, buses",200,🥈 Серебряный значок
+Технологии,🚆 Historia del Transporte,🚆,7,Ценитель,Logística Global,"Contenedores, puertos",350,
+Технологии,🚆 Historia del Transporte,🚆,8,Ценитель,Sostenibilidad en el Transporte,"Eléctricos, tren rápido",350,🥇 Золотой значок
+Технологии,🚆 Historia del Transporte,🚆,9,Эксперт,Vehículos Autónomos,Coches sin conductor,500,
+Технологии,🚆 Historia del Transporte,🚆,10,Эксперт,Transporte del Futuro,"Hyperloop, taxis aéreos",500,💎 Бриллиантовый значок
+Технологии,⚡ Historia de la Energía,⚡,1,Исследователь,Fuego y Musculatura,Primeras fuentes,100,
+Технологии,⚡ Historia de la Energía,⚡,2,Исследователь,Agua y Viento,"Molinos, norias",100,
+Технологии,⚡ Historia de la Energía,⚡,3,Исследователь,Carbón y Vapor,Máquina de vapor,100,🥉 Бронзовый значок
+Технологии,⚡ Historia de la Energía,⚡,4,Ученик,Petróleo y Gas,Motores de combustión,200,
+Технологии,⚡ Historia de la Energía,⚡,5,Ученик,Electricidad,"Generadores, redes",200,
+Технологии,⚡ Historia de la Energía,⚡,6,Ученик,Energía Nuclear,"Fisión, centrales",200,🥈 Серебряный значок
+Технологии,⚡ Historia de la Energía,⚡,7,Ценитель,Renovables Modernas,"Solar, eólica",350,
+Технологии,⚡ Historia de la Energía,⚡,8,Ценитель,Eficiencia Energética,"Edificios, industria",350,🥇 Золотой значок
+Технологии,⚡ Historia de la Energía,⚡,9,Эксперт,Fusión Experimental,"Tokamaks, stellarators",500,
+Технологии,⚡ Historia de la Energía,⚡,10,Эксперт,Civilización Energética Global,Escala Kardashev,500,💎 Бриллиантовый значок
+Гуманитарные науки,🎸 Historia de la Música Popular,🎸,1,Исследователь,Blues y Jazz,Raíces afroamericanas,100,
+Гуманитарные науки,🎸 Historia de la Música Popular,🎸,2,Исследователь,Rock and Roll,Años 50 y 60,100,
+Гуманитарные науки,🎸 Historia de la Música Popular,🎸,3,Исследователь,Pop Global,"Beatles, fenómenos",100,🥉 Бронзовый значок
+Гуманитарные науки,🎸 Historia de la Música Popular,🎸,4,Ученик,"Disco, Funk y Soul",Nuevos ritmos,200,
+Гуманитарные науки,🎸 Historia de la Música Popular,🎸,5,Ученик,Hip-Hop y Rap,Cultura urbana,200,
+Гуманитарные науки,🎸 Historia de la Música Popular,🎸,6,Ученик,Música Electrónica,"Raves, DJs",200,🥈 Серебряный значок
+Гуманитарные науки,🎸 Historia de la Música Popular,🎸,7,Ценитель,Globalización Musical,"K-pop, reguetón",350,
+Гуманитарные науки,🎸 Historia de la Música Popular,🎸,8,Ценитель,Industria del Streaming,"Spotify, plataformas",350,🥇 Золотой значок
+Гуманитарные науки,🎸 Historia de la Música Popular,🎸,9,Эксперт,Derechos de Autor y Música,"Copyright, conflictos",500,
+Гуманитарные науки,🎸 Historia de la Música Popular,🎸,10,Эксперт,Música y Algoritmos,"Recomendación, creación IA",500,💎 Бриллиантовый значок
+Здоровье,🎨 Psicología de la Creatividad,🎨,1,Исследователь,Qué es la Creatividad,Definiciones y mitos,100,
+Здоровье,🎨 Psicología de la Creatividad,🎨,2,Исследователь,Cerebro Creativo,Redes neuronales implicadas,100,
+Здоровье,🎨 Psicología de la Creatividad,🎨,3,Исследователь,Bloqueo Creativo,Causas habituales,100,🥉 Бронзовый значок
+Здоровье,🎨 Psicología de la Creatividad,🎨,4,Ученик,Procesos Creativos,"Incubación, insight",200,
+Здоровье,🎨 Psicología de la Creatividad,🎨,5,Ученик,Creatividad en Ciencia y Arte,Casos históricos,200,
+Здоровье,🎨 Psicología de la Creatividad,🎨,6,Ученик,Ambiente y Creatividad,Entornos que ayudan,200,🥈 Серебряный значок
+Здоровье,🎨 Psicología de la Creatividad,🎨,7,Ценитель,Equipos Creativos,Colaboración y conflicto,350,
+Здоровье,🎨 Psicología de la Creatividad,🎨,8,Ценитель,Creatividad en Empresas,Innovación y cultura,350,🥇 Золотой значок
+Здоровье,🎨 Psicología de la Creatividad,🎨,9,Эксперт,Medir Creatividad,"Tests, límites",500,
+Здоровье,🎨 Psicología de la Creatividad,🎨,10,Эксперт,IA y Co-creación,Humanos + máquinas,500,💎 Бриллиантовый значок
+Общество,📢 Historia de la Publicidad,📢,1,Исследователь,Anuncios en la Antigüedad,"Carteles, pregoneros",100,
+Общество,📢 Historia de la Publicidad,📢,2,Исследователь,Publicidad en Prensa,Siglo XIX,100,
+Общество,📢 Historia de la Publicidad,📢,3,Исследователь,Radio y TV,Spots icónicos,100,🥉 Бронзовый значок
+Общество,📢 Historia de la Publicidad,📢,4,Ученик,Branding y Marcas,Identidad visual,200,
+Общество,📢 Historia de la Publicidad,📢,5,Ученик,Publicidad Digital,"Banners, SEM",200,
+Общество,📢 Historia de la Publicidad,📢,6,Ученик,Redes Sociales e Influencers,Nuevos formatos,200,🥈 Серебряный значок
+Общество,📢 Historia de la Publicidad,📢,7,Ценитель,Psicología del Consumo,Persuasión y emoción,350,
+Общество,📢 Historia de la Publicidad,📢,8,Ценитель,Ética en la Publicidad,"Manipulación, regulación",350,🥇 Золотой значок
+Общество,📢 Historia de la Publicidad,📢,9,Эксперт,Publicidad Personalizada,Microsegmentación,500,
+Общество,📢 Historia de la Publicidad,📢,10,Эксперт,Futuro de la Publicidad,"IA creativa, realidad aumentada",500,💎 Бриллиантовый значок
+Здоровье,🧠 Historia de la Medicina Mental,🧠,1,Исследователь,Concepciones Antiguas,"Espíritus, humores",100,
+Здоровье,🧠 Historia de la Medicina Mental,🧠,2,Исследователь,Manicomios y Encierros,Siglos XVIII-XIX,100,
+Здоровье,🧠 Historia de la Medicina Mental,🧠,3,Исследователь,Nacimiento de la Psiquiatría,"Pinel, primeras clasificaciones",100,🥉 Бронзовый значок
+Здоровье,🧠 Historia de la Medicina Mental,🧠,4,Ученик,Psicoanálisis y Freud,"Inconsciente, terapia",200,
+Здоровье,🧠 Historia de la Medicina Mental,🧠,5,Ученик,Psicofármacos,Revolución farmacológica,200,
+Здоровье,🧠 Historia de la Medicina Mental,🧠,6,Ученик,Terapias Cognitivo-Conductuales,Nuevos enfoques,200,🥈 Серебряный значок
+Здоровье,🧠 Historia de la Medicina Mental,🧠,7,Ценитель,Salud Mental Comunitaria,Desinstitucionalización,350,
+Здоровье,🧠 Historia de la Medicina Mental,🧠,8,Ценитель,Salud Mental en la Cultura,"Estigma, representaciones",350,🥇 Золотой значок
+Здоровье,🧠 Historia de la Medicina Mental,🧠,9,Эксперт,Digitalización de la Terapia,"Apps, telepsicología",500,
+Здоровье,🧠 Historia de la Medicina Mental,🧠,10,Эксперт,Futuro de la Salud Mental,"Prevención, IA, personalización",500,💎 Бриллиантовый значок
+Общество,🏆 Historia del Deporte,🏆,1,Исследователь,Juegos Antiguos,"Olímpicos, rituales",100,
+Общество,🏆 Historia del Deporte,🏆,2,Исследователь,Deporte Moderno,Reglas y federaciones,100,
+Общество,🏆 Historia del Deporte,🏆,3,Исследователь,Fútbol y Deportes de Masas,"Clubes, ligas",100,🥉 Бронзовый значок
+Общество,🏆 Historia del Deporte,🏆,4,Ученик,Juegos Olímpicos Modernos,Renacimiento y evolución,200,
+Общество,🏆 Historia del Deporte,🏆,5,Ученик,Profesionalización y Negocio,"Contratos, derechos TV",200,
+Общество,🏆 Historia del Deporte,🏆,6,Ученик,Deporte Femenino,Luchas por visibilidad,200,🥈 Серебряный значок
+Общество,🏆 Historia del Deporte,🏆,7,Ценитель,Deporte y Política,"Boicots, propaganda",350,
+Общество,🏆 Historia del Deporte,🏆,8,Ценитель,Dopaje y Ética,Casos célebres,350,🥇 Золотой значок
+Общество,🏆 Historia del Deporte,🏆,9,Эксперт,Ciencia del Rendimiento,"Nutrición, datos",500,
+Общество,🏆 Historia del Deporte,🏆,10,Эксперт,Deporte del Futuro,"E-sports, nuevos formatos",500,💎 Бриллиантовый значок
+Наука,⏳ Historia del Tiempo y Calendarios,⏳,1,Исследователь,Medir el Tiempo,"Sol, luna, ciclos",100,
+Наука,⏳ Historia del Tiempo y Calendarios,⏳,2,Исследователь,Calendarios Antiguos,"Egipcio, maya",100,
+Наука,⏳ Historia del Tiempo y Calendarios,⏳,3,Исследователь,Calendario Romano y Gregoriano,Reformas,100,🥉 Бронзовый значок
+Наука,⏳ Historia del Tiempo y Calendarios,⏳,4,Ученик,Relojes Mecánicos,"Campanarios, relojes de bolsillo",200,
+Наука,⏳ Historia del Tiempo y Calendarios,⏳,5,Ученик,Husos Horarios,Coordinación global,200,
+Наука,⏳ Historia del Tiempo y Calendarios,⏳,6,Ученик,Tiempo Atómico,Precisión extrema,200,🥈 Серебряный значок
+Наука,⏳ Historia del Tiempo y Calendarios,⏳,7,Ценитель,Percepción Humana del Tiempo,Psicología,350,
+Наука,⏳ Historia del Tiempo y Calendarios,⏳,8,Ценитель,Tiempo en la Física,Relatividad,350,🥇 Золотой значок
+Наука,⏳ Historia del Tiempo y Calendarios,⏳,9,Эксперт,Tiempo en la Cultura,"Ritmos, rituales",500,
+Наука,⏳ Historia del Tiempo y Calendarios,⏳,10,Эксперт,Futuro del Tiempo Humano,"Vida acelerada, IA",500,💎 Бриллиантовый значок
+Общество,🚢 Historia del Comercio y la Globalización,🚢,1,Исследователь,Trueque y Mercados Locales,Intercambios básicos,100,
+Общество,🚢 Historia del Comercio y la Globalización,🚢,2,Исследователь,Rutas de la Seda y Marítimas,Intercambio global temprano,100,
+Общество,🚢 Historia del Comercio y la Globalización,🚢,3,Исследователь,Compañías Coloniales,Compañía de Indias,100,🥉 Бронзовый значок
+Общество,🚢 Historia del Comercio y la Globalización,🚢,4,Ученик,Revolución Industrial y Comercio,Manufacturas y exportación,200,
+Общество,🚢 Historia del Comercio y la Globalización,🚢,5,Ученик,Era del Contenedor,Logística moderna,200,
+Общество,🚢 Historia del Comercio y la Globalización,🚢,6,Ученик,Organismos Internacionales,"OMC, tratados de libre comercio",200,🥈 Серебряный значок
+Общество,🚢 Historia del Comercio y la Globalización,🚢,7,Ценитель,Cadenas Globales de Valor,Producción distribuida,350,
+Общество,🚢 Historia del Comercio y la Globalización,🚢,8,Ценитель,Desigualdad y Globalización,Ganadores y perdedores,350,🥇 Золотой значок
+Общество,🚢 Historia del Comercio y la Globalización,🚢,9,Эксперт,Crisis y Guerras Comerciales,"Aranceles, sanciones",500,
+Общество,🚢 Historia del Comercio y la Globalización,🚢,10,Эксперт,Globalización 2.0,"Digital, servicios, desglobalización",500,💎 Бриллиантовый значок
+Общество,💰 Historia del Dinero,💰,1,Исследователь,Trueque y Objetos de Valor,"Sal, conchas",100,
+Общество,💰 Historia del Dinero,💰,2,Исследователь,Monedas y Metales,"Oro, plata",100,
+Общество,💰 Historia del Dinero,💰,3,Исследователь,Billetes y Bancos,"Pagarés, bancos centrales",100,🥉 Бронзовый значок
+Общество,💰 Historia del Dinero,💰,4,Ученик,Patrón Oro y su Fin,Bretton Woods,200,
+Общество,💰 Historia del Dinero,💰,5,Ученик,Tarjetas y Dinero Electrónico,"Crédito, débito",200,
+Общество,💰 Historia del Dinero,💰,6,Ученик,Mercados Financieros Modernos,"Bolsas, derivados",200,🥈 Серебряный значок
+Общество,💰 Historia del Dinero,💰,7,Ценитель,Crisis Monetarias,"Hiperinflaciones, devaluaciones",350,
+Общество,💰 Historia del Dinero,💰,8,Ценитель,Criptomonedas,"Bitcoin, alternativas",350,🥇 Золотой значок
+Общество,💰 Historia del Dinero,💰,9,Эксперт,Dinero y Poder,Moneda como herramienta política,500,
+Общество,💰 Historia del Dinero,💰,10,Эксперт,Futuro del Dinero,"CBDC, dinero programable",500,💎 Бриллиантовый значок
+Гуманитарные науки,🎲 Historia de los Juegos de Mesa,🎲,1,Исследователь,Juegos Antiguos,"Senet, Go",100,
+Гуманитарные науки,🎲 Historia de los Juegos de Mesa,🎲,2,Исследователь,Ajedrez y Estrategia,Historia y cultura,100,
+Гуманитарные науки,🎲 Historia de los Juegos de Mesa,🎲,3,Исследователь,Juegos Clásicos Modernos,"Monopoly, Scrabble",100,🥉 Бронзовый значок
+Гуманитарные науки,🎲 Historia de los Juegos de Mesa,🎲,4,Ученик,Eurogames y Revolución Moderna,"Catan, Carcassonne",200,
+Гуманитарные науки,🎲 Historia de los Juegos de Mesa,🎲,5,Ученик,Juegos Cooperativos,"Pandemic, nuevos enfoques",200,
+Гуманитарные науки,🎲 Historia de los Juegos de Mesa,🎲,6,Ученик,Juegos de Rol de Mesa,Dungeons & Dragons,200,🥈 Серебряный значок
+Гуманитарные науки,🎲 Historia de los Juegos de Mesa,🎲,7,Ценитель,Diseño de Juegos de Mesa,"Mecánicas, balance",350,
+Гуманитарные науки,🎲 Historia de los Juegos de Mesa,🎲,8,Ценитель,Comunidades y Ferias,"Essen, eventos",350,🥇 Золотой значок
+Гуманитарные науки,🎲 Historia de los Juegos de Mesa,🎲,9,Эксперт,Juegos como Herramienta Educativa,Serious boardgames,500,
+Гуманитарные науки,🎲 Historia de los Juegos de Mesa,🎲,10,Эксперт,Futuro Híbrido,"Mesa + apps, IA",500,💎 Бриллиантовый значок
+Природа,🌊 Historia de la Exploración Oceánica,🌊,1,Исследователь,Primeras Navegaciones,"Costas, islas",100,
+Природа,🌊 Historia de la Exploración Oceánica,🌊,2,Исследователь,Grandes Descubrimientos,"Colón, Magallanes",100,
+Природа,🌊 Historia de la Exploración Oceánica,🌊,3,Исследователь,Cartografía Marina,Mapas y peligros,100,🥉 Бронзовый значок
+Природа,🌊 Historia de la Exploración Oceánica,🌊,4,Ученик,Exploración de Profundidades,"Batiscafos, Jacques Cousteau",200,
+Природа,🌊 Historia de la Exploración Oceánica,🌊,5,Ученик,Submarinos Militares,Guerras mundiales,200,
+Природа,🌊 Historia de la Exploración Oceánica,🌊,6,Ученик,Exploración Científica Moderna,"ROVs, Argo",200,🥈 Серебряный значок
+Природа,🌊 Historia de la Exploración Oceánica,🌊,7,Ценитель,Recursos del Fondo Marino,"Minerales, ecosistemas",350,
+Природа,🌊 Historia de la Exploración Oceánica,🌊,8,Ценитель,Pecios y Tesoro,Naufragios famosos,350,🥇 Золотой значок
+Природа,🌊 Historia de la Exploración Oceánica,🌊,9,Эксперт,Conservación de Océanos,Amenazas y soluciones,500,
+Природа,🌊 Historia de la Exploración Oceánica,🌊,10,Эксперт,Colonización del Océano,Ciudades submarinas,500,💎 Бриллиантовый значок
+Наука,🗺️ Historia de la Cartografía,🗺️,1,Исследователь,Primeros Mapas,"Cuevas, tablillas",100,
+Наука,🗺️ Historia de la Cartografía,🗺️,2,Исследователь,Mapas Antiguos,"Ptolomeo, mapas del mundo",100,
+Наука,🗺️ Historia de la Cartografía,🗺️,3,Исследователь,Edad de los Descubrimientos,Mapas náuticos,100,🥉 Бронзовый значок
+Наука,🗺️ Historia de la Cartografía,🗺️,4,Ученик,Proyecciones y Distorsiones,"Mercator, alternativas",200,
+Наука,🗺️ Historia de la Cartografía,🗺️,5,Ученик,Mapas Temáticos,"Clima, población",200,
+Наука,🗺️ Historia de la Cartografía,🗺️,6,Ученик,Fotografía Aérea y Satélites,Nueva era de mapas,200,🥈 Серебряный значок
+Наука,🗺️ Historia de la Cartografía,🗺️,7,Ценитель,Sistemas de Información Geográfica,GIS,350,
+Наука,🗺️ Historia de la Cartografía,🗺️,8,Ценитель,Mapas en la Vida Cotidiana,"GPS, apps",350,🥇 Золотой значок
+Наука,🗺️ Historia de la Cartografía,🗺️,9,Эксперт,Mapas y Poder,"Propaganda, reclamaciones",500,
+Наука,🗺️ Historia de la Cartografía,🗺️,10,Эксперт,Cartografía del Futuro,"Realidad aumentada, 3D",500,💎 Бриллиантовый значок
+Общество,🏠 Historia del Trabajo Doméstico,🏠,1,Исследователь,Economía Doméstica Tradicional,Trabajo invisible,100,
+Общество,🏠 Historia del Trabajo Doméstico,🏠,2,Исследователь,Industrialización y Hogar,Cambios de rol,100,
+Общество,🏠 Historia del Trabajo Doméstico,🏠,3,Исследователь,Electrodomésticos,Revolución silenciosa,100,🥉 Бронзовый значок
+Общество,🏠 Historia del Trabajo Doméstico,🏠,4,Ученик,División Sexual del Trabajo,Normas culturales,200,
+Общество,🏠 Historia del Trabajo Doméstico,🏠,5,Ученик,Trabajo de Cuidados,"Niños, mayores",200,
+Общество,🏠 Historia del Trabajo Doméstico,🏠,6,Ученик,Trabajadoras del Hogar,Derechos y luchas,200,🥈 Серебряный значок
+Общество,🏠 Historia del Trabajo Doméstico,🏠,7,Ценитель,Externalización del Trabajo Doméstico,"Servicios, limpieza",350,
+Общество,🏠 Historia del Trabajo Doméstico,🏠,8,Ценитель,Tecnología y Hogar Inteligente,Domótica,350,🥇 Золотой значок
+Общество,🏠 Historia del Trabajo Doméstico,🏠,9,Эксперт,Valor Económico del Trabajo No Remunerado,Cálculos y debates,500,
+Общество,🏠 Historia del Trabajo Doméstico,🏠,10,Эксперт,Futuro del Hogar Automatizado,Robots domésticos,500,💎 Бриллиантовый значок
+Общество,✈️ Historia del Turismo,✈️,1,Исследователь,Peregrinajes y Viajes Antiguos,Motivaciones tempranas,100,
+Общество,✈️ Historia del Turismo,✈️,2,Исследователь,Grand Tour y Viaje Aristocrático,Siglos XVII-XVIII,100,
+Общество,✈️ Historia del Turismo,✈️,3,Исследователь,Nacimiento del Turismo de Masas,"Trenes, vacaciones pagadas",100,🥉 Бронзовый значок
+Общество,✈️ Historia del Turismo,✈️,4,Ученик,Turismo de Sol y Playa,Desarrollo costero,200,
+Общество,✈️ Historia del Turismo,✈️,5,Ученик,Turismo Cultural y Urbano,Ciudades icónicas,200,
+Общество,✈️ Historia del Turismo,✈️,6,Ученик,Turismo de Naturaleza y Aventura,Ecoturismo,200,🥈 Серебряный значок
+Общество,✈️ Historia del Turismo,✈️,7,Ценитель,Impacto del Turismo,"Economía, gentrificación",350,
+Общество,✈️ Historia del Turismo,✈️,8,Ценитель,Turismo Sostenible,Buenas prácticas,350,🥇 Золотой значок
+Общество,✈️ Historia del Turismo,✈️,9,Эксперт,Turismo en Crisis,"Guerras, pandemias",500,
+Общество,✈️ Historia del Turismo,✈️,10,Эксперт,Turismo del Futuro,"Virtual, espacial",500,💎 Бриллиантовый значок
+Общество,📻 Historia de los Medios de Comunicación,📻,1,Исследователь,Oralidad y Manuscritos,Tradición oral,100,
+Общество,📻 Historia de los Medios de Comunicación,📻,2,Исследователь,Imprenta y Libros,Revolución de Gutenberg,100,
+Общество,📻 Historia de los Medios de Comunicación,📻,3,Исследователь,Prensa y Opinión Pública,Periódicos,100,🥉 Бронзовый значок
+Общество,📻 Historia de los Medios de Comunicación,📻,4,Ученик,Radio,Voces a distancia,200,
+Общество,📻 Historia de los Medios de Comunicación,📻,5,Ученик,Televisión,Imagen en casa,200,
+Общество,📻 Historia de los Medios de Comunicación,📻,6,Ученик,Internet y Redes,Medios digitales,200,🥈 Серебряный значок
+Общество,📻 Historia de los Medios de Comunicación,📻,7,Ценитель,Concentración Mediática,Grandes grupos,350,
+Общество,📻 Historia de los Medios de Comunicación,📻,8,Ценитель,Fake News y Desinformación,Retos actuales,350,🥇 Золотой значок
+Общество,📻 Historia de los Medios de Comunicación,📻,9,Эксперт,Periodismo de Datos,Nuevas formas de contar,500,
+Общество,📻 Historia de los Medios de Comunicación,📻,10,Эксперт,Medios del Futuro,"Realidad mixta, IA",500,💎 Бриллиантовый значок
+Наука,🌍 Historia del Clima de la Tierra,🌍,1,Исследователь,Eras Geológicas,Resumen de grandes periodos,100,
+Наука,🌍 Historia del Clima de la Tierra,🌍,2,Исследователь,Glaciaciones,Edades de hielo,100,
+Наука,🌍 Historia del Clima de la Tierra,🌍,3,Исследователь,Períodos Cálidos,Tiempos sin hielo,100,🥉 Бронзовый значок
+Наука,🌍 Historia del Clima de la Tierra,🌍,4,Ученик,Cómo Sabemos del Clima Pasado,"Testigos de hielo, sedimentos",200,
+Наука,🌍 Historia del Clima de la Tierra,🌍,5,Ученик,Clima y Grandes Extinciones,Relaciones,200,
+Наука,🌍 Historia del Clima de la Tierra,🌍,6,Ученик,Clima y Civilizaciones,Colapsos y prosperidad,200,🥈 Серебряный значок
+Наука,🌍 Historia del Clima de la Tierra,🌍,7,Ценитель,Era Industrial y Cambio Climático,"CO2, forzamientos",350,
+Наука,🌍 Historia del Clima de la Tierra,🌍,8,Ценитель,Modelos Climáticos,Simulaciones y escenarios,350,🥇 Золотой значок
+Наука,🌍 Historia del Clima de la Tierra,🌍,9,Эксперт,Puntos de No Retorno,Riesgos sistémicos,500,
+Наука,🌍 Historia del Clima de la Tierra,🌍,10,Эксперт,Futuros Climáticos,Trayectorias posibles,500,💎 Бриллиантовый значок
+Технологии,💻 Historia de la Informática Personal,💻,1,Исследователь,Primeros PCs,"Altair, Apple I",100,
+Технологии,💻 Historia de la Informática Personal,💻,2,Исследователь,Revolución del PC de Escritorio,"IBM PC, compatibles",100,
+Технологии,💻 Historia de la Informática Personal,💻,3,Исследователь,Interfaces Gráficas,"Macintosh, Windows",100,🥉 Бронзовый значок
+Технологии,💻 Historia de la Informática Personal,💻,4,Ученик,Portátiles y Movilidad,Laptops,200,
+Технологии,💻 Historia de la Informática Personal,💻,5,Ученик,Internet en Casa,"Módems, banda ancha",200,
+Технологии,💻 Historia de la Informática Personal,💻,6,Ученик,Smartphones,"iPhone, Android",200,🥈 Серебряный значок
+Технологии,💻 Historia de la Informática Personal,💻,7,Ценитель,Tablets y Dispositivos Híbridos,Nuevas formas,350,
+Технологии,💻 Historia de la Informática Personal,💻,8,Ценитель,Ecosistemas y Jardines Cerrados,App stores,350,🥇 Золотой значок
+Технологии,💻 Historia de la Informática Personal,💻,9,Эксперт,Informática Ubicua,IoT,500,
+Технологии,💻 Historia de la Informática Personal,💻,10,Эксперт,Humanos Aumentados,Wearables avanzados,500,💎 Бриллиантовый значок
+Общество,🍎 Historia de la Educación,🍎,1,Исследователь,Educación en Sociedades Antiguas,Aprendizaje maestro-discípulo,100,
+Общество,🍎 Historia de la Educación,🍎,2,Исследователь,Universidades Medievales,"Bolonia, París",100,
+Общество,🍎 Historia de la Educación,🍎,3,Исследователь,Escuela Pública,Sistemas nacionales,100,🥉 Бронзовый значок
+Общество,🍎 Historia de la Educación,🍎,4,Ученик,Metodologías Clásicas,"Memorización, examen",200,
+Общество,🍎 Historia de la Educación,🍎,5,Ученик,Pedagogías Activas,"Montessori, Freinet",200,
+Общество,🍎 Historia de la Educación,🍎,6,Ученик,Educación Masiva y Online,MOOCs,200,🥈 Серебряный значок
+Общество,🍎 Historia de la Educación,🍎,7,Ценитель,Brecha Educativa Global,Acceso desigual,350,
+Общество,🍎 Historia de la Educación,🍎,8,Ценитель,Evaluación y Métricas,"Notas, estandarización",350,🥇 Золотой значок
+Общество,🍎 Historia de la Educación,🍎,9,Эксперт,Aprendizaje Personalizado,Datos y adaptación,500,
+Общество,🍎 Historia de la Educación,🍎,10,Эксперт,Educación del Futuro,"Lifelong learning, IA",500,💎 Бриллиантовый значок
+Гуманитарные науки,⛪ Historia de la Arquitectura Sagrada,⛪,1,Исследователь,Templos Antiguos,"Egipto, Grecia",100,
+Гуманитарные науки,⛪ Historia de la Arquitectura Sagrada,⛪,2,Исследователь,Basílicas y Catedrales,Cristianismo,100,
+Гуманитарные науки,⛪ Historia de la Arquitectura Sagrada,⛪,3,Исследователь,Mezquitas y Arquitectura Islámica,Elementos clave,100,🥉 Бронзовый значок
+Гуманитарные науки,⛪ Historia de la Arquitectura Sagrada,⛪,4,Ученик,Pagodas y Templos Asiáticos,"Budismo, taoísmo",200,
+Гуманитарные науки,⛪ Historia de la Arquitectura Sagrada,⛪,5,Ученик,Arquitectura Sagrada en América,Pirámides mesoamericanas,200,
+Гуманитарные науки,⛪ Historia de la Arquitectura Sagrada,⛪,6,Ученик,Símbolos y Orientaciones,Geometría sagrada,200,🥈 Серебряный значок
+Гуманитарные науки,⛪ Historia de la Arquitectura Sagrada,⛪,7,Ценитель,Transformaciones y Reutilizaciones,Edificios cambiando de culto,350,
+Гуманитарные науки,⛪ Historia de la Arquitectura Sagrada,⛪,8,Ценитель,Arquitectura Sagrada Contemporánea,Innovaciones,350,🥇 Золотой значок
+Гуманитарные науки,⛪ Historia de la Arquitectura Sagrada,⛪,9,Эксперт,Turismo y Comercialización,Espacios sacros como atracciones,500,
+Гуманитарные науки,⛪ Historia de la Arquitectura Sagrada,⛪,10,Эксперт,Espiritualidad y Espacios del Futuro,Nuevos templos,500,💎 Бриллиантовый значок
+Наука,🧪 Historia de la Biotecnología,🧪,1,Исследователь,Fermentación y Usos Antiguos,"Pan, vino",100,
+Наука,🧪 Historia de la Biotecnología,🧪,2,Исследователь,Descubrimiento de Microorganismos,Microscopios,100,
+Наука,🧪 Historia de la Biotecnología,🧪,3,Исследователь,Genética Clásica,Mendel,100,🥉 Бронзовый значок
+Наука,🧪 Historia de la Biotecnología,🧪,4,Ученик,ADN y Doble Hélice,Watson y Crick,200,
+Наука,🧪 Historia de la Biotecnología,🧪,5,Ученик,Ingeniería Genética,ADN recombinante,200,
+Наука,🧪 Historia de la Biotecnología,🧪,6,Ученик,Biotecnología Industrial,"Farmacia, alimentos",200,🥈 Серебряный значок
+Наука,🧪 Historia de la Biotecnología,🧪,7,Ценитель,"Biotecnología Roja, Verde y Blanca","Salud, agricultura, industria",350,
+Наука,🧪 Historia de la Biotecnología,🧪,8,Ценитель,Bioética,Dilemas,350,🥇 Золотой значок
+Наука,🧪 Historia de la Biotecnología,🧪,9,Эксперт,CRISPR y Edición Precisa,Revolución reciente,500,
+Наука,🧪 Historia de la Biotecnología,🧪,10,Эксперт,Biología Sintética,Diseñar vida,500,💎 Бриллиантовый значок

@@ -1,0 +1,901 @@
+﻿Category,Subject,Icon,Episode No,Level,Episode Title,Description,Base XP,Badge
+Scienza,🔭 Astronomia e Spazio,🔭,1,Esploratore,El Sistema Solar,"Planetas, lunas, órbitas básicas",100,
+Scienza,🔭 Astronomia e Spazio,🔭,2,Esploratore,Estrellas y Constelaciones,"Tipos de estrellas, ciclo estelar",100,
+Scienza,🔭 Astronomia e Spazio,🔭,3,Esploratore,La Luna y las Mareas,"Fases lunares, influencia terrestre",100,🥉 Distintivo di Bronzo
+Scienza,🔭 Astronomia e Spazio,🔭,4,Apprendista,Galaxias y Nebulosas,"Vía Láctea, tipos de galaxias",200,
+Scienza,🔭 Astronomia e Spazio,🔭,5,Apprendista,Exploración Espacial,Historia de la carrera espacial,200,
+Scienza,🔭 Astronomia e Spazio,🔭,6,Apprendista,Agujeros Negros,"Formación, horizonte de eventos",200,🥈 Distintivo d'Argento
+Scienza,🔭 Astronomia e Spazio,🔭,7,Intenditore,Cosmología del Big Bang,"Origen del universo, radiación cósmica",350,
+Scienza,🔭 Astronomia e Spazio,🔭,8,Intenditore,Exoplanetas y Vida,"Zona habitable, búsqueda de vida",350,🥇 Distintivo d'Oro
+Scienza,🔭 Astronomia e Spazio,🔭,9,Esperto,Materia y Energía Oscura,Composición oculta del universo,500,
+Scienza,🔭 Astronomia e Spazio,🔭,10,Esperto,El Futuro del Cosmos,"Destino del universo, teorías finales",500,💎 Distintivo di Diamante
+Storia,🏛️ Storia Antica,🏛️,1,Esploratore,Mesopotamia: Cuna de la Civilización,"Sumerios, escritura cuneiforme",100,
+Storia,🏛️ Storia Antica,🏛️,2,Esploratore,Egipto: El Nilo y los Faraones,"Pirámides, momificación, jeroglíficos",100,
+Storia,🏛️ Storia Antica,🏛️,3,Esploratore,Grecia: Democracia y Filosofía,"Atenas, Esparta, pensadores",100,🥉 Distintivo di Bronzo
+Storia,🏛️ Storia Antica,🏛️,4,Apprendista,Roma: República e Imperio,"Legiones, ingeniería, derecho romano",200,
+Storia,🏛️ Storia Antica,🏛️,5,Apprendista,China: Dinastías Imperiales,"Gran Muralla, Ruta de la Seda",200,
+Storia,🏛️ Storia Antica,🏛️,6,Apprendista,India: Civilización del Indo,"Harappa, vedas, castas",200,🥈 Distintivo d'Argento
+Storia,🏛️ Storia Antica,🏛️,7,Intenditore,Persia y los Grandes Imperios,"Ciro, Darío, guerras médicas",350,
+Storia,🏛️ Storia Antica,🏛️,8,Intenditore,Civilizaciones Precolombinas,"Maya, Azteca, Inca",350,🥇 Distintivo d'Oro
+Storia,🏛️ Storia Antica,🏛️,9,Esperto,Caída de los Imperios,Patrones de colapso civilizatorio,500,
+Storia,🏛️ Storia Antica,🏛️,10,Esperto,Legado Antiguo en el Mundo Moderno,Influencias actuales del mundo antiguo,500,💎 Distintivo di Diamante
+Scienza,🧠 Neuroscienze,🧠,1,Esploratore,El Cerebro: Mapa Básico,"Lóbulos, hemisferios, funciones",100,
+Scienza,🧠 Neuroscienze,🧠,2,Esploratore,Neuronas y Sinapsis,Comunicación neuronal básica,100,
+Scienza,🧠 Neuroscienze,🧠,3,Esploratore,Los Sentidos,Cómo el cerebro procesa el mundo,100,🥉 Distintivo di Bronzo
+Scienza,🧠 Neuroscienze,🧠,4,Apprendista,Memoria y Aprendizaje,"Tipos de memoria, neuroplasticidad",200,
+Scienza,🧠 Neuroscienze,🧠,5,Apprendista,Emociones y el Cerebro,"Sistema límbico, amígdala",200,
+Scienza,🧠 Neuroscienze,🧠,6,Apprendista,El Sueño y los Sueños,"Ciclos REM, función reparadora",200,🥈 Distintivo d'Argento
+Scienza,🧠 Neuroscienze,🧠,7,Intenditore,Neuroquímica,"Dopamina, serotonina, endorfinas",350,
+Scienza,🧠 Neuroscienze,🧠,8,Intenditore,Trastornos Neurológicos,"Alzheimer, Parkinson, epilepsia",350,🥇 Distintivo d'Oro
+Scienza,🧠 Neuroscienze,🧠,9,Esperto,Conciencia y Libre Albedrío,El misterio de la conciencia,500,
+Scienza,🧠 Neuroscienze,🧠,10,Esperto,Neurotecnología del Futuro,"Interfaces cerebro-máquina, IA neural",500,💎 Distintivo di Diamante
+Tecnologia,🤖 Inteligencia Artificial,🤖,1,Esploratore,¿Qué es la IA?,"Conceptos básicos, historia",100,
+Tecnologia,🤖 Inteligencia Artificial,🤖,2,Esploratore,Machine Learning 101,Aprendizaje supervisado y no supervisado,100,
+Tecnologia,🤖 Inteligencia Artificial,🤖,3,Esploratore,Redes Neuronales,Cómo aprende una máquina,100,🥉 Distintivo di Bronzo
+Tecnologia,🤖 Inteligencia Artificial,🤖,4,Apprendista,Procesamiento del Lenguaje,"NLP, chatbots, traducción",200,
+Tecnologia,🤖 Inteligencia Artificial,🤖,5,Apprendista,Visión por Computador,Reconocimiento de imágenes,200,
+Tecnologia,🤖 Inteligencia Artificial,🤖,6,Apprendista,IA Generativa,"GPT, DALL-E, creación de contenido",200,🥈 Distintivo d'Argento
+Tecnologia,🤖 Inteligencia Artificial,🤖,7,Intenditore,IA en la Industria,"Aplicaciones reales, transformación",350,
+Tecnologia,🤖 Inteligencia Artificial,🤖,8,Intenditore,Ética de la IA,"Sesgos, privacidad, regulación",350,🥇 Distintivo d'Oro
+Tecnologia,🤖 Inteligencia Artificial,🤖,9,Esperto,IA General (AGI),Camino hacia la superinteligencia,500,
+Tecnologia,🤖 Inteligencia Artificial,🤖,10,Esperto,El Futuro IA-Humano,"Coexistencia, singularidad tecnológica",500,💎 Distintivo di Diamante
+Società,💰 Economía y Finanzas,💰,1,Esploratore,Oferta y Demanda,Principios básicos del mercado,100,
+Società,💰 Economía y Finanzas,💰,2,Esploratore,El Dinero y la Banca,"Historia del dinero, sistema bancario",100,
+Società,💰 Economía y Finanzas,💰,3,Esploratore,Inflación y Precios,Por qué sube el coste de la vida,100,🥉 Distintivo di Bronzo
+Società,💰 Economía y Finanzas,💰,4,Apprendista,Mercados Bursátiles,"Bolsa, acciones, índices",200,
+Società,💰 Economía y Finanzas,💰,5,Apprendista,Comercio Internacional,"Globalización, aranceles, tratados",200,
+Società,💰 Economía y Finanzas,💰,6,Apprendista,Criptomonedas y Blockchain,"Bitcoin, tecnología descentralizada",200,🥈 Distintivo d'Argento
+Società,💰 Economía y Finanzas,💰,7,Intenditore,Crisis Económicas,"Grandes recesiones, patrones",350,
+Società,💰 Economía y Finanzas,💰,8,Intenditore,Política Monetaria,"Bancos centrales, tipos de interés",350,🥇 Distintivo d'Oro
+Società,💰 Economía y Finanzas,💰,9,Esperto,Economía Conductual,Psicología de las decisiones financieras,500,
+Società,💰 Economía y Finanzas,💰,10,Esperto,El Futuro de la Economía,"Post-capitalismo, economía circular",500,💎 Distintivo di Diamante
+Natura,🐋 Biología Marina,🐋,1,Esploratore,Los Océanos del Mundo,"Geografía oceánica, corrientes",100,
+Natura,🐋 Biología Marina,🐋,2,Esploratore,Arrecifes de Coral,"Ecosistemas submarinos, biodiversidad",100,
+Natura,🐋 Biología Marina,🐋,3,Esploratore,Grandes Mamíferos Marinos,"Ballenas, delfines, comunicación",100,🥉 Distintivo di Bronzo
+Natura,🐋 Biología Marina,🐋,4,Apprendista,El Abismo: Vida en las Profundidades,"Criaturas abisales, bioluminiscencia",200,
+Natura,🐋 Biología Marina,🐋,5,Apprendista,Tiburones: Depredadores del Mar,"Especies, mitos y realidades",200,
+Natura,🐋 Biología Marina,🐋,6,Apprendista,Migraciones Oceánicas,"Rutas, instintos, supervivencia",200,🥈 Distintivo d'Argento
+Natura,🐋 Biología Marina,🐋,7,Intenditore,Contaminación Marina,"Plásticos, acidificación, soluciones",350,
+Natura,🐋 Biología Marina,🐋,8,Intenditore,Oceanografía y Clima,El océano como regulador climático,350,🥇 Distintivo d'Oro
+Natura,🐋 Biología Marina,🐋,9,Esperto,Biología Molecular Marina,Genética de organismos marinos,500,
+Natura,🐋 Biología Marina,🐋,10,Esperto,El Océano del Futuro,"Conservación, explotación sostenible",500,💎 Distintivo di Diamante
+Società,🧩 Psicología Humana,🧩,1,Esploratore,Introducción a la Psicología,"Corrientes, Freud, conductismo",100,
+Società,🧩 Psicología Humana,🧩,2,Esploratore,Personalidad y Temperamento,"Big Five, tipos psicológicos",100,
+Società,🧩 Psicología Humana,🧩,3,Esploratore,Percepción y Atención,"Ilusiones, sesgos perceptivos",100,🥉 Distintivo di Bronzo
+Società,🧩 Psicología Humana,🧩,4,Apprendista,Psicología Social,"Conformidad, obediencia, grupos",200,
+Società,🧩 Psicología Humana,🧩,5,Apprendista,Motivación y Hábitos,"Ciclos de hábitos, motivación intrínseca",200,
+Società,🧩 Psicología Humana,🧩,6,Apprendista,Toma de Decisiones,"Heurísticas, sesgos cognitivos",200,🥈 Distintivo d'Argento
+Società,🧩 Psicología Humana,🧩,7,Intenditore,Psicología del Desarrollo,"Infancia a vejez, etapas clave",350,
+Società,🧩 Psicología Humana,🧩,8,Intenditore,Trastornos Mentales,"Ansiedad, depresión, esquizofrenia",350,🥇 Distintivo d'Oro
+Società,🧩 Psicología Humana,🧩,9,Esperto,Psicología Positiva,"Flow, resiliencia, bienestar",500,
+Società,🧩 Psicología Humana,🧩,10,Esperto,Manipulación y Persuasión,"Técnicas, propaganda, defensa crítica",500,💎 Distintivo di Diamante
+Scienza,⚛️ Física Fundamental,⚛️,1,Esploratore,Las Leyes de Newton,"Movimiento, fuerza, gravedad",100,
+Scienza,⚛️ Física Fundamental,⚛️,2,Esploratore,Energía y Termodinámica,"Conservación, calor, entropía",100,
+Scienza,⚛️ Física Fundamental,⚛️,3,Esploratore,Ondas y Sonido,"Vibraciones, frecuencia, música",100,🥉 Distintivo di Bronzo
+Scienza,⚛️ Física Fundamental,⚛️,4,Apprendista,Electricidad y Magnetismo,"Campos, corriente, Maxwell",200,
+Scienza,⚛️ Física Fundamental,⚛️,5,Apprendista,Relatividad de Einstein,"Espacio-tiempo, E=mc²",200,
+Scienza,⚛️ Física Fundamental,⚛️,6,Apprendista,Física Nuclear,"Átomos, radiactividad, fisión",200,🥈 Distintivo d'Argento
+Scienza,⚛️ Física Fundamental,⚛️,7,Intenditore,Mecánica Cuántica,"Dualidad onda-partícula, incertidumbre",350,
+Scienza,⚛️ Física Fundamental,⚛️,8,Intenditore,Partículas Subatómicas,"Quarks, bosón de Higgs, modelo estándar",350,🥇 Distintivo d'Oro
+Scienza,⚛️ Física Fundamental,⚛️,9,Esperto,Teoría de Cuerdas,"Dimensiones extra, unificación",500,
+Scienza,⚛️ Física Fundamental,⚛️,10,Esperto,Los Misterios Sin Resolver,"Gravedad cuántica, multiverso",500,💎 Distintivo di Diamante
+Umanistiche,💭 Filosofía,💭,1,Esploratore,Sócrates y el Arte de Preguntar,"Método socrático, mayéutica",100,
+Umanistiche,💭 Filosofía,💭,2,Esploratore,Platón y las Ideas,"Mundo ideal, alegoría de la caverna",100,
+Umanistiche,💭 Filosofía,💭,3,Esploratore,Aristóteles: Lógica y Ética,"Silogismo, virtud, eudaimonía",100,🥉 Distintivo di Bronzo
+Umanistiche,💭 Filosofía,💭,4,Apprendista,Filosofía Medieval,"San Agustín, Santo Tomás, fe y razón",200,
+Umanistiche,💭 Filosofía,💭,5,Apprendista,Racionalismo vs Empirismo,"Descartes, Hume, conocimiento",200,
+Umanistiche,💭 Filosofía,💭,6,Apprendista,Kant y la Ilustración,"Imperativo categórico, crítica",200,🥈 Distintivo d'Argento
+Umanistiche,💭 Filosofía,💭,7,Intenditore,Existencialismo,"Nietzsche, Sartre, libertad radical",350,
+Umanistiche,💭 Filosofía,💭,8,Intenditore,Filosofía Oriental,"Confucio, Buda, Lao-Tse",350,🥇 Distintivo d'Oro
+Umanistiche,💭 Filosofía,💭,9,Esperto,Filosofía del Lenguaje y la Mente,"Wittgenstein, conciencia, IA",500,
+Umanistiche,💭 Filosofía,💭,10,Esperto,Ética Contemporánea,"Bioética, justicia global, transhumanismo",500,💎 Distintivo di Diamante
+Scienza,🧬 Evolución y Genética,🧬,1,Esploratore,Darwin y la Selección Natural,"Teoría de la evolución, Galápagos",100,
+Scienza,🧬 Evolución y Genética,🧬,2,Esploratore,ADN: El Código de la Vida,"Estructura, genes, cromosomas",100,
+Scienza,🧬 Evolución y Genética,🧬,3,Esploratore,Herencia y Mendel,"Leyes de la herencia, rasgos",100,🥉 Distintivo di Bronzo
+Scienza,🧬 Evolución y Genética,🧬,4,Apprendista,Evolución Humana,Australopithecus a Homo sapiens,200,
+Scienza,🧬 Evolución y Genética,🧬,5,Apprendista,Mutaciones y Adaptación,Motor del cambio evolutivo,200,
+Scienza,🧬 Evolución y Genética,🧬,6,Apprendista,Extinción y Especiación,"Extinciones masivas, nueva vida",200,🥈 Distintivo d'Argento
+Scienza,🧬 Evolución y Genética,🧬,7,Intenditore,Genómica y Proteómica,"Proyecto Genoma, secuenciación",350,
+Scienza,🧬 Evolución y Genética,🧬,8,Intenditore,Epigenética,Genes que se encienden y apagan,350,🥇 Distintivo d'Oro
+Scienza,🧬 Evolución y Genética,🧬,9,Esperto,CRISPR y Edición Genética,"Terapia génica, bebés diseñados",500,
+Scienza,🧬 Evolución y Genética,🧬,10,Esperto,Biología Sintética,"Crear vida artificial, futuro genético",500,💎 Distintivo di Diamante
+Società,🌍 Geopolítica Mundial,🌍,1,Esploratore,¿Qué es la Geopolítica?,"Conceptos, poder, territorios",100,
+Società,🌍 Geopolítica Mundial,🌍,2,Esploratore,Las Grandes Potencias,"EE.UU., China, Rusia, UE",100,
+Società,🌍 Geopolítica Mundial,🌍,3,Esploratore,Conflictos Territoriales,"Fronteras disputadas, recursos",100,🥉 Distintivo di Bronzo
+Società,🌍 Geopolítica Mundial,🌍,4,Apprendista,La Guerra Fría,"Bipolaridad, proxy wars, caída del muro",200,
+Società,🌍 Geopolítica Mundial,🌍,5,Apprendista,Oriente Medio,"Petróleo, religión, conflictos",200,
+Società,🌍 Geopolítica Mundial,🌍,6,Apprendista,El Ascenso de China,"Ruta de la Seda, influencia global",200,🥈 Distintivo d'Argento
+Società,🌍 Geopolítica Mundial,🌍,7,Intenditore,Organizaciones Internacionales,"ONU, OTAN, G20, poder blando",350,
+Società,🌍 Geopolítica Mundial,🌍,8,Intenditore,Ciberguerra y Espionaje,"Guerra híbrida, desinformación",350,🥇 Distintivo d'Oro
+Società,🌍 Geopolítica Mundial,🌍,9,Esperto,Recursos y Guerras del Futuro,"Agua, litio, tierras raras",500,
+Società,🌍 Geopolítica Mundial,🌍,10,Esperto,Nuevo Orden Mundial,"Multipolaridad, escenarios 2050",500,💎 Distintivo di Diamante
+Umanistiche,🎨 Arte y Grandes Maestros,🎨,1,Esploratore,Arte Prehistórico y Antiguo,"Altamira, Egipto, Grecia",100,
+Umanistiche,🎨 Arte y Grandes Maestros,🎨,2,Esploratore,El Renacimiento,"Da Vinci, Miguel Ángel, Botticelli",100,
+Umanistiche,🎨 Arte y Grandes Maestros,🎨,3,Esploratore,Barroco y Clasicismo,"Caravaggio, Velázquez, Rembrandt",100,🥉 Distintivo di Bronzo
+Umanistiche,🎨 Arte y Grandes Maestros,🎨,4,Apprendista,Impresionismo,"Monet, Renoir, luz y color",200,
+Umanistiche,🎨 Arte y Grandes Maestros,🎨,5,Apprendista,Vanguardias del Siglo XX,"Picasso, Dalí, Kandinsky",200,
+Umanistiche,🎨 Arte y Grandes Maestros,🎨,6,Apprendista,Arte Contemporáneo,"Pop Art, minimalismo, Banksy",200,🥈 Distintivo d'Argento
+Umanistiche,🎨 Arte y Grandes Maestros,🎨,7,Intenditore,Fotografía como Arte,"Historia, maestros, revolución digital",350,
+Umanistiche,🎨 Arte y Grandes Maestros,🎨,8,Intenditore,Grandes Museos del Mundo,"Louvre, MoMA, Prado, Hermitage",350,🥇 Distintivo d'Oro
+Umanistiche,🎨 Arte y Grandes Maestros,🎨,9,Esperto,El Mercado del Arte,"Subastas, falsificaciones, inversión",500,
+Umanistiche,🎨 Arte y Grandes Maestros,🎨,10,Esperto,Arte y Tecnología: IA Creativa,"Arte generativo, NFTs, debate",500,💎 Distintivo di Diamante
+Natura,🌡️ Cambio Climático,🌡️,1,Esploratore,El Efecto Invernadero,"CO₂, gases, calentamiento",100,
+Natura,🌡️ Cambio Climático,🌡️,2,Esploratore,Historia del Clima en la Tierra,"Eras glaciales, ciclos naturales",100,
+Natura,🌡️ Cambio Climático,🌡️,3,Esploratore,Impacto Humano,"Industria, transporte, deforestación",100,🥉 Distintivo di Bronzo
+Natura,🌡️ Cambio Climático,🌡️,4,Apprendista,Deshielo y Nivel del Mar,"Polos, glaciares, ciudades en riesgo",200,
+Natura,🌡️ Cambio Climático,🌡️,5,Apprendista,Fenómenos Extremos,"Huracanes, sequías, olas de calor",200,
+Natura,🌡️ Cambio Climático,🌡️,6,Apprendista,Biodiversidad Amenazada,"Sexta extinción, ecosistemas en peligro",200,🥈 Distintivo d'Argento
+Natura,🌡️ Cambio Climático,🌡️,7,Intenditore,Energías Renovables,"Solar, eólica, hidrógeno verde",350,
+Natura,🌡️ Cambio Climático,🌡️,8,Intenditore,Acuerdos y Política Climática,"París, COP, compromisos nacionales",350,🥇 Distintivo d'Oro
+Natura,🌡️ Cambio Climático,🌡️,9,Esperto,Geoingeniería,"Soluciones radicales, riesgos",500,
+Natura,🌡️ Cambio Climático,🌡️,10,Esperto,Escenarios 2050-2100,"Modelos climáticos, futuros posibles",500,💎 Distintivo di Diamante
+Storia,🧭 Exploración y Aventura,🧭,1,Esploratore,Los Grandes Navegantes,"Colón, Magallanes, Vasco de Gama",100,
+Storia,🧭 Exploración y Aventura,🧭,2,Esploratore,Conquista de los Polos,"Amundsen, Scott, Shackleton",100,
+Storia,🧭 Exploración y Aventura,🧭,3,Esploratore,Exploradores del Mundo Antiguo,"Marco Polo, Ibn Battuta, Zheng He",100,🥉 Distintivo di Bronzo
+Storia,🧭 Exploración y Aventura,🧭,4,Apprendista,La Carrera Espacial,"Gagarin, Apollo 11, MIR",200,
+Storia,🧭 Exploración y Aventura,🧭,5,Apprendista,Expediciones Submarinas,"Cousteau, Mariana, océanos profundos",200,
+Storia,🧭 Exploración y Aventura,🧭,6,Apprendista,Exploración de Selvas y Desiertos,"Amazonia, Sahara, expediciones perdidas",200,🥈 Distintivo d'Argento
+Storia,🧭 Exploración y Aventura,🧭,7,Intenditore,Montañismo Extremo,"Everest, K2, historia alpina",350,
+Storia,🧭 Exploración y Aventura,🧭,8,Intenditore,Arqueología Aventurera,"Tutankamón, Machu Picchu, Pompeya",350,🥇 Distintivo d'Oro
+Storia,🧭 Exploración y Aventura,🧭,9,Esperto,Exploración Robótica,"Marte, drones submarinos, cuevas",500,
+Storia,🧭 Exploración y Aventura,🧭,10,Esperto,Próximas Fronteras,"Colonización espacial, océano profundo",500,💎 Distintivo di Diamante
+Salute,🥗 Nutrición y Alimentación,🥗,1,Esploratore,Macronutrientes,"Proteínas, carbohidratos, grasas",100,
+Salute,🥗 Nutrición y Alimentación,🥗,2,Esploratore,Vitaminas y Minerales,Micronutrientes esenciales,100,
+Salute,🥗 Nutrición y Alimentación,🥗,3,Esploratore,Digestión y Metabolismo,Cómo tu cuerpo procesa los alimentos,100,🥉 Distintivo di Bronzo
+Salute,🥗 Nutrición y Alimentación,🥗,4,Apprendista,Dietas del Mundo,"Mediterránea, asiática, nórdica",200,
+Salute,🥗 Nutrición y Alimentación,🥗,5,Apprendista,Mitos Nutricionales,Desmentir creencias falsas,200,
+Salute,🥗 Nutrición y Alimentación,🥗,6,Apprendista,Microbioma Intestinal,"Bacterias buenas, segundo cerebro",200,🥈 Distintivo d'Argento
+Salute,🥗 Nutrición y Alimentación,🥗,7,Intenditore,Nutrición Deportiva,"Rendimiento, suplementos, recuperación",350,
+Salute,🥗 Nutrición y Alimentación,🥗,8,Intenditore,Alimentos del Futuro,"Insectos, carne de laboratorio, algas",350,🥇 Distintivo d'Oro
+Salute,🥗 Nutrición y Alimentación,🥗,9,Esperto,Nutrigenómica,ADN y alimentación personalizada,500,
+Salute,🥗 Nutrición y Alimentación,🥗,10,Esperto,Hambre Global y Sostenibilidad,"Seguridad alimentaria, soluciones",500,💎 Distintivo di Diamante
+Umanistiche,🎵 Música: Historia y Teoría,🎵,1,Esploratore,Los Orígenes de la Música,"Instrumentos prehistóricos, primeras melodías",100,
+Umanistiche,🎵 Música: Historia y Teoría,🎵,2,Esploratore,Música Clásica: Los Grandes,"Bach, Mozart, Beethoven",100,
+Umanistiche,🎵 Música: Historia y Teoría,🎵,3,Esploratore,"Ritmo, Melodía y Armonía",Fundamentos de la teoría musical,100,🥉 Distintivo di Bronzo
+Umanistiche,🎵 Música: Historia y Teoría,🎵,4,Apprendista,Jazz y Blues,"Nueva Orleans, improvisación, soul",200,
+Umanistiche,🎵 Música: Historia y Teoría,🎵,5,Apprendista,Rock and Roll,"Elvis, Beatles, revolución cultural",200,
+Umanistiche,🎵 Música: Historia y Teoría,🎵,6,Apprendista,Música Electrónica,"Sintetizadores, DJs, géneros",200,🥈 Distintivo d'Argento
+Umanistiche,🎵 Música: Historia y Teoría,🎵,7,Intenditore,Música del Mundo,"Flamenco, raga, samba, gamelan",350,
+Umanistiche,🎵 Música: Historia y Teoría,🎵,8,Intenditore,La Industria Musical,"Discográficas, streaming, negocio",350,🥇 Distintivo d'Oro
+Umanistiche,🎵 Música: Historia y Teoría,🎵,9,Esperto,Neurociencia de la Música,Por qué la música nos emociona,500,
+Umanistiche,🎵 Música: Historia y Teoría,🎵,10,Esperto,IA y Composición Musical,"Algoritmos creativos, futuro sonoro",500,💎 Distintivo di Diamante
+Natura,🌋 Volcanes y Terremotos,🌋,1,Esploratore,La Tierra por Dentro,"Capas, núcleo, manto, corteza",100,
+Natura,🌋 Volcanes y Terremotos,🌋,2,Esploratore,Tectónica de Placas,"Placas en movimiento, pangea",100,
+Natura,🌋 Volcanes y Terremotos,🌋,3,Esploratore,Volcanes: Tipos y Erupciones,"Escudo, estrato, fisurales",100,🥉 Distintivo di Bronzo
+Natura,🌋 Volcanes y Terremotos,🌋,4,Apprendista,Grandes Erupciones de la Historia,"Pompeya, Krakatoa, Pinatubo",200,
+Natura,🌋 Volcanes y Terremotos,🌋,5,Apprendista,Terremotos y Tsunamis,"Escalas, ondas sísmicas, prevención",200,
+Natura,🌋 Volcanes y Terremotos,🌋,6,Apprendista,El Cinturón de Fuego,"Pacífico, zonas sísmicas activas",200,🥈 Distintivo d'Argento
+Natura,🌋 Volcanes y Terremotos,🌋,7,Intenditore,Geotermia y Recursos,"Energía volcánica, minerales",350,
+Natura,🌋 Volcanes y Terremotos,🌋,8,Intenditore,Supervolcanes,"Yellowstone, Toba, amenazas globales",350,🥇 Distintivo d'Oro
+Natura,🌋 Volcanes y Terremotos,🌋,9,Esperto,Predicción Sísmica,"Tecnología, IA, sistemas de alerta",500,
+Natura,🌋 Volcanes y Terremotos,🌋,10,Esperto,Geología Planetaria,"Volcanes en Marte, Ío, Venus",500,💎 Distintivo di Diamante
+Tecnologia,🔐 Criptografía y Ciberseguridad,🔐,1,Esploratore,Historia de los Códigos Secretos,"César, Enigma, espionaje",100,
+Tecnologia,🔐 Criptografía y Ciberseguridad,🔐,2,Esploratore,Criptografía Moderna,"RSA, AES, claves públicas",100,
+Tecnologia,🔐 Criptografía y Ciberseguridad,🔐,3,Esploratore,Internet y Seguridad Básica,"HTTPS, contraseñas, phishing",100,🥉 Distintivo di Bronzo
+Tecnologia,🔐 Criptografía y Ciberseguridad,🔐,4,Apprendista,Hackers: Mitos y Realidad,"White/black hat, ciberataques famosos",200,
+Tecnologia,🔐 Criptografía y Ciberseguridad,🔐,5,Apprendista,Malware y Ransomware,"Virus, troyanos, protección",200,
+Tecnologia,🔐 Criptografía y Ciberseguridad,🔐,6,Apprendista,Ingeniería Social,"Manipulación, pretexting, defensa",200,🥈 Distintivo d'Argento
+Tecnologia,🔐 Criptografía y Ciberseguridad,🔐,7,Intenditore,Blockchain y Seguridad,"Descentralización, contratos inteligentes",350,
+Tecnologia,🔐 Criptografía y Ciberseguridad,🔐,8,Intenditore,Ciberguerra Estatal,"Stuxnet, espionaje digital, naciones",350,🥇 Distintivo d'Oro
+Tecnologia,🔐 Criptografía y Ciberseguridad,🔐,9,Esperto,Criptografía Cuántica,Computación cuántica vs cifrado actual,500,
+Tecnologia,🔐 Criptografía y Ciberseguridad,🔐,10,Esperto,Privacidad Digital Total,"Anonimato, Tor, futuro de la privacidad",500,💎 Distintivo di Diamante
+Salute,🏥 Medicina y Cuerpo Humano,🏥,1,Esploratore,Anatomía Básica,"Sistemas del cuerpo, órganos vitales",100,
+Salute,🏥 Medicina y Cuerpo Humano,🏥,2,Esploratore,El Sistema Inmunológico,"Defensas, anticuerpos, vacunas",100,
+Salute,🏥 Medicina y Cuerpo Humano,🏥,3,Esploratore,Historia de la Medicina,"Hipócrates, penicilina, cirugía",100,🥉 Distintivo di Bronzo
+Salute,🏥 Medicina y Cuerpo Humano,🏥,4,Apprendista,Pandemias de la Historia,"Peste negra, gripe española, COVID",200,
+Salute,🏥 Medicina y Cuerpo Humano,🏥,5,Apprendista,Cáncer: Batalla Interna,"Tipos, causas, tratamientos",200,
+Salute,🏥 Medicina y Cuerpo Humano,🏥,6,Apprendista,Farmacología Básica,Cómo funcionan los medicamentos,200,🥈 Distintivo d'Argento
+Salute,🏥 Medicina y Cuerpo Humano,🏥,7,Intenditore,Cirugía Robótica,"Da Vinci, precisión, futuro quirúrgico",350,
+Salute,🏥 Medicina y Cuerpo Humano,🏥,8,Intenditore,Terapias Génicas,Editar ADN para curar enfermedades,350,🥇 Distintivo d'Oro
+Salute,🏥 Medicina y Cuerpo Humano,🏥,9,Esperto,Neurociencia Médica,"Implantes cerebrales, neuroestimulación",500,
+Salute,🏥 Medicina y Cuerpo Humano,🏥,10,Esperto,Longevidad y Anti-aging,"Telómeros, senoterapia, vivir más",500,💎 Distintivo di Diamante
+Umanistiche,⚡ Mitología Universal,⚡,1,Esploratore,Mitología Griega,"Zeus, Odisea, héroes y monstruos",100,
+Umanistiche,⚡ Mitología Universal,⚡,2,Esploratore,Mitología Nórdica,"Odín, Thor, Ragnarök",100,
+Umanistiche,⚡ Mitología Universal,⚡,3,Esploratore,Mitología Egipcia,"Ra, Osiris, el más allá",100,🥉 Distintivo di Bronzo
+Umanistiche,⚡ Mitología Universal,⚡,4,Apprendista,Mitología Romana,"Adaptación griega, fundación de Roma",200,
+Umanistiche,⚡ Mitología Universal,⚡,5,Apprendista,Mitología Mesopotámica,"Gilgamesh, diluvio, creación",200,
+Umanistiche,⚡ Mitología Universal,⚡,6,Apprendista,Mitología Celta y Artúrica,"Druidas, Avalon, Excalibur",200,🥈 Distintivo d'Argento
+Umanistiche,⚡ Mitología Universal,⚡,7,Intenditore,Mitología Asiática,"Hinduismo, budismo, dragones chinos",350,
+Umanistiche,⚡ Mitología Universal,⚡,8,Intenditore,Mitología Mesoamericana,"Quetzalcóatl, Popol Vuh, cosmos maya",350,🥇 Distintivo d'Oro
+Umanistiche,⚡ Mitología Universal,⚡,9,Esperto,Arquetipos y Jung,"Inconsciente colectivo, el héroe",500,
+Umanistiche,⚡ Mitología Universal,⚡,10,Esperto,Mitos Modernos,"Superhéroes, Star Wars, nuevas mitologías",500,💎 Distintivo di Diamante
+Tecnologia,🦾 Robótica e Ingeniería,🦾,1,Esploratore,Historia de los Autómatas,"Da Vinci, relojería, primeros robots",100,
+Tecnologia,🦾 Robótica e Ingeniería,🦾,2,Esploratore,Mecánica Básica de Robots,"Sensores, actuadores, control",100,
+Tecnologia,🦾 Robótica e Ingeniería,🦾,3,Esploratore,Robots en la Industria,"Manufactura, logística, automatización",100,🥉 Distintivo di Bronzo
+Tecnologia,🦾 Robótica e Ingeniería,🦾,4,Apprendista,Drones y Vehículos Autónomos,"Coches sin conductor, delivery",200,
+Tecnologia,🦾 Robótica e Ingeniería,🦾,5,Apprendista,Robots Humanoides,"Boston Dynamics, Atlas, Sophia",200,
+Tecnologia,🦾 Robótica e Ingeniería,🦾,6,Apprendista,Biomimética,Robots inspirados en la naturaleza,200,🥈 Distintivo d'Argento
+Tecnologia,🦾 Robótica e Ingeniería,🦾,7,Intenditore,Prótesis y Exoesqueletos,"Bionics, manos robóticas, movilidad",350,
+Tecnologia,🦾 Robótica e Ingeniería,🦾,8,Intenditore,Robótica Espacial,"Rovers, ISS, reparaciones en órbita",350,🥇 Distintivo d'Oro
+Tecnologia,🦾 Robótica e Ingeniería,🦾,9,Esperto,Nanorobots,"Medicina microscópica, ensamblaje molecular",500,
+Tecnologia,🦾 Robótica e Ingeniería,🦾,10,Esperto,Robots Conscientes,"IA embodied, derechos de robots, ética",500,💎 Distintivo di Diamante
+Storia,⚔️ Guerras Mundiales,⚔️,1,Esploratore,Causas de la Gran Guerra,"Alianzas, imperialismo, Sarajevo",100,
+Storia,⚔️ Guerras Mundiales,⚔️,2,Esploratore,Trincheras: WWI,"Guerra de desgaste, gas, Somme",100,
+Storia,⚔️ Guerras Mundiales,⚔️,3,Esploratore,El Tratado de Versalles,"Consecuencias, humillación, semillas",100,🥉 Distintivo di Bronzo
+Storia,⚔️ Guerras Mundiales,⚔️,4,Apprendista,Ascenso del Nazismo,"Hitler, propaganda, Tercer Reich",200,
+Storia,⚔️ Guerras Mundiales,⚔️,5,Apprendista,Batallas Decisivas WWII,"Stalingrado, Midway, Normandía",200,
+Storia,⚔️ Guerras Mundiales,⚔️,6,Apprendista,El Holocausto,"Genocidio, campos, memoria",200,🥈 Distintivo d'Argento
+Storia,⚔️ Guerras Mundiales,⚔️,7,Intenditore,El Frente del Pacífico,"Pearl Harbor, Iwo Jima, Hiroshima",350,
+Storia,⚔️ Guerras Mundiales,⚔️,8,Intenditore,Espionaje y Criptografía,"Enigma, Turing, agentes dobles",350,🥇 Distintivo d'Oro
+Storia,⚔️ Guerras Mundiales,⚔️,9,Esperto,Nüremberg y Justicia,"Juicios, derecho internacional",500,
+Storia,⚔️ Guerras Mundiales,⚔️,10,Esperto,Lecciones para el Siglo XXI,"Paralelos, prevención, memoria",500,💎 Distintivo di Diamante
+Umanistiche,🏗️ Arquitectura Mundial,🏗️,1,Esploratore,Pirámides y Templos,"Egipto, Grecia, Angkor Wat",100,
+Umanistiche,🏗️ Arquitectura Mundial,🏗️,2,Esploratore,Roma y sus Monumentos,"Coliseo, acueductos, Panteón",100,
+Umanistiche,🏗️ Arquitectura Mundial,🏗️,3,Esploratore,Catedrales Góticas,"Notre-Dame, vitrales, arbotantes",100,🥉 Distintivo di Bronzo
+Umanistiche,🏗️ Arquitectura Mundial,🏗️,4,Apprendista,Renacimiento y Barroco,"Brunelleschi, Bernini, Versalles",200,
+Umanistiche,🏗️ Arquitectura Mundial,🏗️,5,Apprendista,Rascacielos y Acero,"Chicago, Empire State, ingeniería",200,
+Umanistiche,🏗️ Arquitectura Mundial,🏗️,6,Apprendista,Bauhaus y Modernismo,"Le Corbusier, Mies van der Rohe",200,🥈 Distintivo d'Argento
+Umanistiche,🏗️ Arquitectura Mundial,🏗️,7,Intenditore,Arquitectura Sostenible,"Edificios verdes, pasivos, biomimética",350,
+Umanistiche,🏗️ Arquitectura Mundial,🏗️,8,Intenditore,Megaestructuras,"Burj Khalifa, presas, puentes",350,🥇 Distintivo d'Oro
+Umanistiche,🏗️ Arquitectura Mundial,🏗️,9,Esperto,Ciudades del Futuro,"NEOM, ciudades flotantes, smart cities",500,
+Umanistiche,🏗️ Arquitectura Mundial,🏗️,10,Esperto,Arquitectura Extraterrestre,"Hábitats en Marte, impresión 3D lunar",500,💎 Distintivo di Diamante
+Natura,🤿 Océano y Exploración Submarina,🤿,1,Esploratore,Cartografía del Fondo Marino,"Dorsales, fosas, relieve submarino",100,
+Natura,🤿 Océano y Exploración Submarina,🤿,2,Esploratore,Naufragios Legendarios,"Titanic, galeones, tesoros",100,
+Natura,🤿 Océano y Exploración Submarina,🤿,3,Esploratore,Submarinos: Historia,"Nautilus, U-boats, nucleares",100,🥉 Distintivo di Bronzo
+Natura,🤿 Océano y Exploración Submarina,🤿,4,Apprendista,Fuentes Hidrotermales,"Vida sin sol, quimiosíntesis",200,
+Natura,🤿 Océano y Exploración Submarina,🤿,5,Apprendista,Ciudades Hundidas,"Dwarka, Port Royal, misterios",200,
+Natura,🤿 Océano y Exploración Submarina,🤿,6,Apprendista,Tecnología de Buceo,"Saturación, ROVs, AUVs",200,🥈 Distintivo d'Argento
+Natura,🤿 Océano y Exploración Submarina,🤿,7,Intenditore,Minería Submarina,"Recursos, nódulos, controversia",350,
+Natura,🤿 Océano y Exploración Submarina,🤿,8,Intenditore,Acústica Submarina,"Sonar, comunicación cetácea",350,🥇 Distintivo d'Oro
+Natura,🤿 Océano y Exploración Submarina,🤿,9,Esperto,Bases Submarinas,"Hábitats sumergidos, Aquarius",500,
+Natura,🤿 Océano y Exploración Submarina,🤿,10,Esperto,Colonización Oceánica,Ciudades submarinas del futuro,500,💎 Distintivo di Diamante
+Tecnologia,💻 Civilización Digital,💻,1,Esploratore,De ARPANET a Internet,"Nacimiento de la red, WWW",100,
+Tecnologia,💻 Civilización Digital,💻,2,Esploratore,Redes Sociales,"Facebook, Twitter, impacto social",100,
+Tecnologia,💻 Civilización Digital,💻,3,Esploratore,Smartphones y Apps,"iPhone, ecosistema móvil",100,🥉 Distintivo di Bronzo
+Tecnologia,💻 Civilización Digital,💻,4,Apprendista,Big Data,"Datos masivos, análisis, valor",200,
+Tecnologia,💻 Civilización Digital,💻,5,Apprendista,Cloud Computing,"La nube, servicios, infraestructura",200,
+Tecnologia,💻 Civilización Digital,💻,6,Apprendista,Realidad Virtual y Aumentada,"Metaverso, aplicaciones, inmersión",200,🥈 Distintivo d'Argento
+Tecnologia,💻 Civilización Digital,💻,7,Intenditore,Internet de las Cosas,"Dispositivos conectados, smart homes",350,
+Tecnologia,💻 Civilización Digital,💻,8,Intenditore,Computación Cuántica,"Qubits, supremacía, aplicaciones",350,🥇 Distintivo d'Oro
+Tecnologia,💻 Civilización Digital,💻,9,Esperto,Singularidad Tecnológica,"Exponencialidad, transhumanismo",500,
+Tecnologia,💻 Civilización Digital,💻,10,Esperto,Ética Digital,"Privacidad, algoritmos, democracia",500,💎 Distintivo di Diamante
+Scienza,🦕 Dinosaurios y Paleontología,🦕,1,Esploratore,Los Primeros Fósiles,"Qué son, cómo se forman",100,
+Scienza,🦕 Dinosaurios y Paleontología,🦕,2,Esploratore,Era Mesozoica,"Triásico, Jurásico, Cretácico",100,
+Scienza,🦕 Dinosaurios y Paleontología,🦕,3,Esploratore,Los Grandes Dinosaurios,"T-Rex, Diplodocus, Triceratops",100,🥉 Distintivo di Bronzo
+Scienza,🦕 Dinosaurios y Paleontología,🦕,4,Apprendista,Depredadores vs Herbívoros,"Estrategias, armas naturales",200,
+Scienza,🦕 Dinosaurios y Paleontología,🦕,5,Apprendista,Pterosaurios y Reptiles Marinos,Cielo y mar prehistóricos,200,
+Scienza,🦕 Dinosaurios y Paleontología,🦕,6,Apprendista,La Gran Extinción,"Asteroide Chicxulub, invierno nuclear",200,🥈 Distintivo d'Argento
+Scienza,🦕 Dinosaurios y Paleontología,🦕,7,Intenditore,Plumas y Evolución Aviar,"Dinosaurios con plumas, aves modernas",350,
+Scienza,🦕 Dinosaurios y Paleontología,🦕,8,Intenditore,Paleontología de Campo,"Excavaciones, técnicas, descubrimientos",350,🥇 Distintivo d'Oro
+Scienza,🦕 Dinosaurios y Paleontología,🦕,9,Esperto,ADN Antiguo,¿Clonar un dinosaurio? Límites reales,500,
+Scienza,🦕 Dinosaurios y Paleontología,🦕,10,Esperto,Mundos Perdidos,"Otros planetas, vida prehistórica remota",500,💎 Distintivo di Diamante
+Società,👑 Liderazgo y Estrategia,👑,1,Esploratore,¿Qué Hace a un Líder?,"Cualidades, tipos de liderazgo",100,
+Società,👑 Liderazgo y Estrategia,👑,2,Esploratore,Líderes de la Historia,"Alejandro, Napoleón, Mandela",100,
+Società,👑 Liderazgo y Estrategia,👑,3,Esploratore,El Arte de la Guerra,"Sun Tzu, estrategia milenaria",100,🥉 Distintivo di Bronzo
+Società,👑 Liderazgo y Estrategia,👑,4,Apprendista,Liderazgo Empresarial,"Steve Jobs, Elon Musk, Bezos",200,
+Società,👑 Liderazgo y Estrategia,👑,5,Apprendista,Negociación y Persuasión,"Harvard method, influencia",200,
+Società,👑 Liderazgo y Estrategia,👑,6,Apprendista,Gestión de Crisis,"Decisiones bajo presión, casos reales",200,🥈 Distintivo d'Argento
+Società,👑 Liderazgo y Estrategia,👑,7,Intenditore,Inteligencia Emocional,"Empatía, autocontrol, Goleman",350,
+Società,👑 Liderazgo y Estrategia,👑,8,Intenditore,Cultura Organizacional,"Valores, innovación, equipos",350,🥇 Distintivo d'Oro
+Società,👑 Liderazgo y Estrategia,👑,9,Esperto,Liderazgo en la Era IA,"Adaptación, humano+máquina",500,
+Società,👑 Liderazgo y Estrategia,👑,10,Esperto,Tu Estrategia Personal,Diseñar tu propio camino de liderazgo,500,💎 Distintivo di Diamante
+Umanistiche,🏺 Antropología Cultural,🏺,1,Esploratore,¿Qué es la Cultura?,"Definiciones, diversidad humana",100,
+Umanistiche,🏺 Antropología Cultural,🏺,2,Esploratore,Tribus y Civilizaciones,De nómadas a imperios,100,
+Umanistiche,🏺 Antropología Cultural,🏺,3,Esploratore,Rituales y Tradiciones,"Ceremonias, ritos de paso",100,🥉 Distintivo di Bronzo
+Umanistiche,🏺 Antropología Cultural,🏺,4,Apprendista,Lenguas del Mundo,"Familias lingüísticas, extinción",200,
+Umanistiche,🏺 Antropología Cultural,🏺,5,Apprendista,Religiones Comparadas,"Cristianismo, Islam, Budismo, Hinduismo",200,
+Umanistiche,🏺 Antropología Cultural,🏺,6,Apprendista,Gastronomía y Cultura,"Cocina como identidad, tabúes",200,🥈 Distintivo d'Argento
+Umanistiche,🏺 Antropología Cultural,🏺,7,Intenditore,Globalización Cultural,"Homogeneización, resistencia, fusión",350,
+Umanistiche,🏺 Antropología Cultural,🏺,8,Intenditore,Pueblos Indígenas,"Conocimiento ancestral, derechos",350,🥇 Distintivo d'Oro
+Umanistiche,🏺 Antropología Cultural,🏺,9,Esperto,Antropología Digital,"Culturas online, identidad virtual",500,
+Umanistiche,🏺 Antropología Cultural,🏺,10,Esperto,El Futuro de la Humanidad,"Convergencia cultural, diversidad",500,💎 Distintivo di Diamante
+Tecnologia,⚡ Energía y Sostenibilidad,⚡,1,Esploratore,Fuentes de Energía,"Fósiles, renovables, nuclear",100,
+Tecnologia,⚡ Energía y Sostenibilidad,⚡,2,Esploratore,Electricidad: Cómo Funciona,"Generación, distribución, red eléctrica",100,
+Tecnologia,⚡ Energía y Sostenibilidad,⚡,3,Esploratore,El Petróleo y su Historia,"Oro negro, OPEP, geopolítica",100,🥉 Distintivo di Bronzo
+Tecnologia,⚡ Energía y Sostenibilidad,⚡,4,Apprendista,Energía Solar,"Paneles, fotovoltaica, proyectos",200,
+Tecnologia,⚡ Energía y Sostenibilidad,⚡,5,Apprendista,Energía Eólica e Hídrica,"Turbinas, presas, mareas",200,
+Tecnologia,⚡ Energía y Sostenibilidad,⚡,6,Apprendista,Energía Nuclear Moderna,"Fisión, fusión, ITER",200,🥈 Distintivo d'Argento
+Tecnologia,⚡ Energía y Sostenibilidad,⚡,7,Intenditore,Baterías y Almacenamiento,"Litio, hidrógeno, supercondensadores",350,
+Tecnologia,⚡ Energía y Sostenibilidad,⚡,8,Intenditore,Transición Energética,"Abandono del carbón, políticas",350,🥇 Distintivo d'Oro
+Tecnologia,⚡ Energía y Sostenibilidad,⚡,9,Esperto,Fusión Nuclear,El santo grial energético,500,
+Tecnologia,⚡ Energía y Sostenibilidad,⚡,10,Esperto,Civilización Tipo I,"Escala Kardashov, futuro energético",500,💎 Distintivo di Diamante
+Natura,🔮 Misterios y Fenómenos,🔮,1,Esploratore,Triángulo de las Bermudas,"Desapariciones, explicaciones",100,
+Natura,🔮 Misterios y Fenómenos,🔮,2,Esploratore,Enigmas Arqueológicos,"Stonehenge, Nazca, Moáis",100,
+Natura,🔮 Misterios y Fenómenos,🔮,3,Esploratore,Criaturas Misteriosas,"Nessie, Bigfoot, criptozoología",100,🥉 Distintivo di Bronzo
+Natura,🔮 Misterios y Fenómenos,🔮,4,Apprendista,Fenómenos Atmosféricos,"Rayos en bola, auroras, sprites",200,
+Natura,🔮 Misterios y Fenómenos,🔮,5,Apprendista,Civilizaciones Perdidas,"Atlántida, Lemuria, evidencias",200,
+Natura,🔮 Misterios y Fenómenos,🔮,6,Apprendista,Fenómenos Paranormales,"Estudio científico, explicaciones",200,🥈 Distintivo d'Argento
+Natura,🔮 Misterios y Fenómenos,🔮,7,Intenditore,Misterios del Espacio,"Señal WOW, Oumuamua, FRBs",350,
+Natura,🔮 Misterios y Fenómenos,🔮,8,Intenditore,Código Voynich y Cifrados,Manuscritos sin descifrar,350,🥇 Distintivo d'Oro
+Natura,🔮 Misterios y Fenómenos,🔮,9,Esperto,Paradoja de Fermi,¿Dónde están todos? Soluciones,500,
+Natura,🔮 Misterios y Fenómenos,🔮,10,Esperto,Ciencia vs Misterio,"Pensamiento crítico, método científico",500,💎 Distintivo di Diamante
+Salute,🧬 Microbiología y Virus,🧬,1,Esploratore,El Mundo Invisible,"Microbios, bacterias, virus y hongos; qué son y dónde viven",100,
+Salute,🧬 Microbiología y Virus,🧬,2,Esploratore,El Microscopio y los Descubrimientos,De Leeuwenhoek a la microbiología moderna,100,
+Salute,🧬 Microbiología y Virus,🧬,3,Esploratore,Bacterias: Aliadas y Enemigas,"Flora intestinal, infecciones, antibióticos",100,🥉 Distintivo di Bronzo
+Salute,🧬 Microbiología y Virus,🧬,4,Apprendista,Virus: Cómo Infectan,"Estructura viral, ciclo lítico y lisogénico",200,
+Salute,🧬 Microbiología y Virus,🧬,5,Apprendista,El Sistema Inmune contra Microbios,"Barreras, células de defensa, anticuerpos",200,
+Salute,🧬 Microbiología y Virus,🧬,6,Apprendista,Vacunas: Historia y Funcionamiento,De la viruela al ARN mensajero,200,🥈 Distintivo d'Argento
+Salute,🧬 Microbiología y Virus,🧬,7,Intenditore,Resistencia a Antibióticos,"Superbugs, uso abusivo, crisis sanitaria",350,
+Salute,🧬 Microbiología y Virus,🧬,8,Intenditore,Pandemias Microbianas,"Peste, gripe española, COVID-19, patrones",350,🥇 Distintivo d'Oro
+Salute,🧬 Microbiología y Virus,🧬,9,Esperto,Biotecnología Microbiana,"Uso de microbios en industria, medicina y medioambiente",500,
+Salute,🧬 Microbiología y Virus,🧬,10,Esperto,Futuro de la Lucha contra Infecciones,"Nuevos antibióticos, fagoterapia, edición genética de virus",500,💎 Distintivo di Diamante
+Scienza,🪐 Astrobiología y Búsqueda de Vida,🪐,1,Esploratore,¿Qué es la Astrobiología?,"Definición, interdisciplinariedad, grandes preguntas",100,
+Scienza,🪐 Astrobiología y Búsqueda de Vida,🪐,2,Esploratore,Ingredientes de la Vida,"Agua líquida, química del carbono, energía",100,
+Scienza,🪐 Astrobiología y Búsqueda de Vida,🪐,3,Esploratore,Vida Extremófila en la Tierra,Organismos en condiciones extremas como modelo,100,🥉 Distintivo di Bronzo
+Scienza,🪐 Astrobiología y Búsqueda de Vida,🪐,4,Apprendista,Marte: El Vecino Sospechoso,"Historia del agua, misiones, signos de vida pasada",200,
+Scienza,🪐 Astrobiología y Búsqueda de Vida,🪐,5,Apprendista,Lunas Habitables,"Europa, Encélado, Titán y sus océanos",200,
+Scienza,🪐 Astrobiología y Búsqueda de Vida,🪐,6,Apprendista,Exoplanetas: Mundos Lejanos,Métodos de detección y zona habitable,200,🥈 Distintivo d'Argento
+Scienza,🪐 Astrobiología y Búsqueda de Vida,🪐,7,Intenditore,Biofirmas y Tecnofirmas,Señales químicas y tecnológicas de vida avanzada,350,
+Scienza,🪐 Astrobiología y Búsqueda de Vida,🪐,8,Intenditore,Programas de Búsqueda (SETI y otros),"Radiotelescopios, mensajes, proyectos globales",350,🥇 Distintivo d'Oro
+Scienza,🪐 Astrobiología y Búsqueda de Vida,🪐,9,Esperto,Paradoja de Fermi y Soluciones,"¿Dónde están todos?, filtros grandes",500,
+Scienza,🪐 Astrobiología y Búsqueda de Vida,🪐,10,Esperto,El Futuro de la Vida en el Cosmos,"Terraformación, panspermia, humanidad multiplanetaria",500,💎 Distintivo di Diamante
+Scienza,☀️ Clima Espacial y Tormentas Solares,☀️,1,Esploratore,El Sol: Nuestra Estrella,"Estructura solar, manchas, actividad",100,
+Scienza,☀️ Clima Espacial y Tormentas Solares,☀️,2,Esploratore,Viento Solar,"Partículas cargadas, campo magnético",100,
+Scienza,☀️ Clima Espacial y Tormentas Solares,☀️,3,Esploratore,Auroras Boreales y Australes,"Cómo se forman, dónde se ven",100,🥉 Distintivo di Bronzo
+Scienza,☀️ Clima Espacial y Tormentas Solares,☀️,4,Apprendista,Tormentas Solares Históricas,Evento Carrington y otros casos,200,
+Scienza,☀️ Clima Espacial y Tormentas Solares,☀️,5,Apprendista,Campo Magnético Terrestre,"Escudo natural, cinturones de Van Allen",200,
+Scienza,☀️ Clima Espacial y Tormentas Solares,☀️,6,Apprendista,Clima Espacial y Satélites,Efectos sobre GPS y comunicaciones,200,🥈 Distintivo d'Argento
+Scienza,☀️ Clima Espacial y Tormentas Solares,☀️,7,Intenditore,Redes Eléctricas y Riesgo Global,Impacto en infraestructura,350,
+Scienza,☀️ Clima Espacial y Tormentas Solares,☀️,8,Intenditore,Monitorización y Predicción,"Sondas, observatorios solares, modelos",350,🥇 Distintivo d'Oro
+Scienza,☀️ Clima Espacial y Tormentas Solares,☀️,9,Esperto,Escenarios de Evento Extremo,Impacto económico y social,500,
+Scienza,☀️ Clima Espacial y Tormentas Solares,☀️,10,Esperto,Preparándonos para el Próximo Carrington,Mitigación y resiliencia,500,💎 Distintivo di Diamante
+Salute,🦾 Biohacking y Cuerpo Mejorado,🦾,1,Esploratore,¿Qué es el Biohacking?,"Definiciones, tipos (DIYbio, cuantificado, nutracéuticos)",100,
+Salute,🦾 Biohacking y Cuerpo Mejorado,🦾,2,Esploratore,Autoexperimentos Históricos,Científicos que se probaron a sí mismos,100,
+Salute,🦾 Biohacking y Cuerpo Mejorado,🦾,3,Esploratore,Cuantificar el Cuerpo,"Wearables, tracking de sueño y actividad",100,🥉 Distintivo di Bronzo
+Salute,🦾 Biohacking y Cuerpo Mejorado,🦾,4,Apprendista,Suplementos y Nutrición Avanzada,"Nootrópicos, dietas, controversias",200,
+Salute,🦾 Biohacking y Cuerpo Mejorado,🦾,5,Apprendista,"Hábitos, Ritmos Circadianos y Rendimiento","Luces, horarios, cronobiología",200,
+Salute,🦾 Biohacking y Cuerpo Mejorado,🦾,6,Apprendista,"Gimnasios, Fuerza y Longevidad",Entrenamiento como hackeo biológico,200,🥈 Distintivo d'Argento
+Salute,🦾 Biohacking y Cuerpo Mejorado,🦾,7,Intenditore,Implantes y Dispositivos en el Cuerpo,"Chips, marcapasos, sensores",350,
+Salute,🦾 Biohacking y Cuerpo Mejorado,🦾,8,Intenditore,Edición Genética Personal,"CRISPR, posibilidades y límites",350,🥇 Distintivo d'Oro
+Salute,🦾 Biohacking y Cuerpo Mejorado,🦾,9,Esperto,Ética y Legalidad del Biohacking,"Normativas, riesgos, desigualdad",500,
+Salute,🦾 Biohacking y Cuerpo Mejorado,🦾,10,Esperto,El Futuro del Humano Mejorado,"Transhumanismo, integración IA-cuerpo",500,💎 Distintivo di Diamante
+Salute,😷 Epidemiología y Enfermedades Infecciosas,😷,1,Esploratore,Cómo se Propagan las Enfermedades,"Contagio, vectores, cadenas de transmisión",100,
+Salute,😷 Epidemiología y Enfermedades Infecciosas,😷,2,Esploratore,"Brotes, Epidemias y Pandemias",Diferencias y ejemplos,100,
+Salute,😷 Epidemiología y Enfermedades Infecciosas,😷,3,Esploratore,Casos y Datos: Lo que Significan,"Incidencia, prevalencia, R0",100,🥉 Distintivo di Bronzo
+Salute,😷 Epidemiología y Enfermedades Infecciosas,😷,4,Apprendista,Grandes Epidemias Históricas,"Peste negra, cólera, gripe española",200,
+Salute,😷 Epidemiología y Enfermedades Infecciosas,😷,5,Apprendista,"VIH, Tuberculosis y Otros Retos",Enfermedades crónicas infecciosas,200,
+Salute,😷 Epidemiología y Enfermedades Infecciosas,😷,6,Apprendista,COVID-19: Anatomía de una Pandemia,"Secuenciación, vacunas, confinamientos",200,🥈 Distintivo d'Argento
+Salute,😷 Epidemiología y Enfermedades Infecciosas,😷,7,Intenditore,Modelos Epidemiológicos,"Curvas, medidas no farmacológicas",350,
+Salute,😷 Epidemiología y Enfermedades Infecciosas,😷,8,Intenditore,Vacunación Masiva y Rebaño,"Inmunidad de grupo, campañas",350,🥇 Distintivo d'Oro
+Salute,😷 Epidemiología y Enfermedades Infecciosas,😷,9,Esperto,Enfermedades Emergentes y Zoonosis,"Cambio climático, nuevos patógenos",500,
+Salute,😷 Epidemiología y Enfermedades Infecciosas,😷,10,Esperto,Preparación Global ante la Próxima Pandemia,"Vigilancia, cooperación internacional",500,💎 Distintivo di Diamante
+Tecnologia,💾 Historia de la Computación,💾,1,Esploratore,De Ábacos a Máquinas de Cálculo,Herramientas de cálculo antiguas,100,
+Tecnologia,💾 Historia de la Computación,💾,2,Esploratore,Visionarios Pioneros,"Babbage, Ada Lovelace, Turing",100,
+Tecnologia,💾 Historia de la Computación,💾,3,Esploratore,Ordenadores de Tubos y Tarjetas,"ENIAC, mainframes",100,🥉 Distintivo di Bronzo
+Tecnologia,💾 Historia de la Computación,💾,4,Apprendista,La Revolución del Microprocesador,"Intel, PCs, Apple",200,
+Tecnologia,💾 Historia de la Computación,💾,5,Apprendista,Internet y la Web,"ARPANET, HTTP, navegadores",200,
+Tecnologia,💾 Historia de la Computación,💾,6,Apprendista,"Portátiles, Smartphones y la Era Móvil","iPhone, Android",200,🥈 Distintivo d'Argento
+Tecnologia,💾 Historia de la Computación,💾,7,Intenditore,Software Libre y Open Source,"Linux, proyectos colaborativos",350,
+Tecnologia,💾 Historia de la Computación,💾,8,Intenditore,"Nubes, Contenedores y DevOps",Cómo se despliega hoy el software,350,🥇 Distintivo d'Oro
+Tecnologia,💾 Historia de la Computación,💾,9,Esperto,Computación Cuántica y Más Allá,"Qubits, algoritmos",500,
+Tecnologia,💾 Historia de la Computación,💾,10,Esperto,Futuro de la Computación,"Neuromórfica, IA integrada",500,💎 Distintivo di Diamante
+Tecnologia,🎮 Videojuegos e Industria del Gaming,🎮,1,Esploratore,Los Primeros Videojuegos,"Pong, arcades, Atari",100,
+Tecnologia,🎮 Videojuegos e Industria del Gaming,🎮,2,Esploratore,Consolas y Guerra de Generaciones,"Nintendo, Sega, Sony, Microsoft",100,
+Tecnologia,🎮 Videojuegos e Industria del Gaming,🎮,3,Esploratore,PC Gaming y Online,"DOOM, MMOs, primeros esports",100,🥉 Distintivo di Bronzo
+Tecnologia,🎮 Videojuegos e Industria del Gaming,🎮,4,Apprendista,Diseño de Juegos,"Mecánicas, loops, narrativa",200,
+Tecnologia,🎮 Videojuegos e Industria del Gaming,🎮,5,Apprendista,Esports y Competición Profesional,"Ligas, premios, entrenamientos",200,
+Tecnologia,🎮 Videojuegos e Industria del Gaming,🎮,6,Apprendista,Psicología del Juego y Gamificación,"Motivación, recompensas",200,🥈 Distintivo d'Argento
+Tecnologia,🎮 Videojuegos e Industria del Gaming,🎮,7,Intenditore,Industria y Modelos de Negocio,"AAA, indie, free-to-play",350,
+Tecnologia,🎮 Videojuegos e Industria del Gaming,🎮,8,Intenditore,Controversias del Gaming,"Adicción, violencia, loot boxes",350,🥇 Distintivo d'Oro
+Tecnologia,🎮 Videojuegos e Industria del Gaming,🎮,9,Esperto,Juegos como Arte y Educación,"Juegos serios, experiencias inmersivas",500,
+Tecnologia,🎮 Videojuegos e Industria del Gaming,🎮,10,Esperto,Futuro del Gaming,"VR/AR, cloud gaming",500,💎 Distintivo di Diamante
+Tecnologia,₿ Criptoeconomía y DeFi,₿,1,Esploratore,Origen de Bitcoin,"Satoshi, problema del doble gasto",100,
+Tecnologia,₿ Criptoeconomía y DeFi,₿,2,Esploratore,¿Qué es Blockchain?,"Bloques, cadenas, consenso",100,
+Tecnologia,₿ Criptoeconomía y DeFi,₿,3,Esploratore,Criptomonedas Principales,"BTC, ETH y otras",100,🥉 Distintivo di Bronzo
+Tecnologia,₿ Criptoeconomía y DeFi,₿,4,Apprendista,Smart Contracts,Programas que mueven dinero,200,
+Tecnologia,₿ Criptoeconomía y DeFi,₿,5,Apprendista,Exchanges y Wallets,Cómo se compra y guarda cripto,200,
+Tecnologia,₿ Criptoeconomía y DeFi,₿,6,Apprendista,Finanzas Descentralizadas (DeFi),"Préstamos, DEX, yield farming",200,🥈 Distintivo d'Argento
+Tecnologia,₿ Criptoeconomía y DeFi,₿,7,Intenditore,"Estafas, Riesgos y Burbujas","Rug pulls, hacks, volatilidad",350,
+Tecnologia,₿ Criptoeconomía y DeFi,₿,8,Intenditore,Regulación y Narrativas,"Gobiernos, adopción",350,🥇 Distintivo d'Oro
+Tecnologia,₿ Criptoeconomía y DeFi,₿,9,Esperto,Cripto más allá del Dinero,"DAOs, identidad, NFTs útiles",500,
+Tecnologia,₿ Criptoeconomía y DeFi,₿,10,Esperto,Escenarios Futuros de la Criptoeconomía,Infraestructura o nicho,500,💎 Distintivo di Diamante
+Tecnologia,📊 Ciencia de Datos y Big Data,📊,1,Esploratore,Dato: El Nuevo Petróleo,Qué es un dato y por qué vale,100,
+Tecnologia,📊 Ciencia de Datos y Big Data,📊,2,Esploratore,Cómo se Recogen Datos,"Sensores, formularios, tracking",100,
+Tecnologia,📊 Ciencia de Datos y Big Data,📊,3,Esploratore,Bases de Datos y Almacenes,"SQL, NoSQL, data lakes",100,🥉 Distintivo di Bronzo
+Tecnologia,📊 Ciencia de Datos y Big Data,📊,4,Apprendista,Analítica Descriptiva,"Dashboards, KPIs",200,
+Tecnologia,📊 Ciencia de Datos y Big Data,📊,5,Apprendista,Analítica Predictiva,Modelos y pronósticos,200,
+Tecnologia,📊 Ciencia de Datos y Big Data,📊,6,Apprendista,Analítica Prescriptiva,Recomendaciones automatizadas,200,🥈 Distintivo d'Argento
+Tecnologia,📊 Ciencia de Datos y Big Data,📊,7,Intenditore,Big Data en la Vida Real,"Retail, salud, transporte",350,
+Tecnologia,📊 Ciencia de Datos y Big Data,📊,8,Intenditore,"Privacidad, Sesgos y Ética",Dilemas y casos,350,🥇 Distintivo d'Oro
+Tecnologia,📊 Ciencia de Datos y Big Data,📊,9,Esperto,Arquitecturas Modernas de Datos,"Batch, streaming, lakehouse",500,
+Tecnologia,📊 Ciencia de Datos y Big Data,📊,10,Esperto,Hacia un Mundo Hiperpersonalizado,Riesgos y regulación,500,💎 Distintivo di Diamante
+Tecnologia,📡 Tecnologías de Comunicación,📡,1,Esploratore,Telégrafo y Teléfono,Primer salto de la voz a distancia,100,
+Tecnologia,📡 Tecnologías de Comunicación,📡,2,Esploratore,Radio y Televisión,Llegada de los mass media,100,
+Tecnologia,📡 Tecnologías de Comunicación,📡,3,Esploratore,Satélites y Comunicaciones Globales,"Órbitas, enlaces",100,🥉 Distintivo di Bronzo
+Tecnologia,📡 Tecnologías de Comunicación,📡,4,Apprendista,Internet y Protocolos Básicos,"TCP/IP, routers",200,
+Tecnologia,📡 Tecnologías de Comunicación,📡,5,Apprendista,Wi-Fi y Redes Domésticas,Cómo se conectan tus dispositivos,200,
+Tecnologia,📡 Tecnologías de Comunicación,📡,6,Apprendista,Redes Móviles: 1G a 4G,De voz analógica a datos,200,🥈 Distintivo d'Argento
+Tecnologia,📡 Tecnologías de Comunicación,📡,7,Intenditore,5G y Futuras Generaciones,"Latencia baja, IoT",350,
+Tecnologia,📡 Tecnologías de Comunicación,📡,8,Intenditore,Seguridad y Vigilancia en Redes,"Interceptación, cifrado",350,🥇 Distintivo d'Oro
+Tecnologia,📡 Tecnologías de Comunicación,📡,9,Esperto,Infraestructura Crítica y Resiliencia,Qué pasa si cae la red,500,
+Tecnologia,📡 Tecnologías de Comunicación,📡,10,Esperto,Comunicación del Futuro,"Redes cuánticas, espacio profundo",500,💎 Distintivo di Diamante
+Umanistiche,🎬 Historia del Cine y el Documental,🎬,1,Esploratore,Nacimiento del Cine,"Lumière, Méliès y las primeras proyecciones",100,
+Umanistiche,🎬 Historia del Cine y el Documental,🎬,2,Esploratore,Hollywood Clásico,"Estudios, sistema de estrellas, cine mudo a sonoro",100,
+Umanistiche,🎬 Historia del Cine y el Documental,🎬,3,Esploratore,Nueva Ola y Cine de Autor,"Truffaut, Godard y otros movimientos",100,🥉 Distintivo di Bronzo
+Umanistiche,🎬 Historia del Cine y el Documental,🎬,4,Apprendista,Origen del Documental,"Nanook, propaganda, cine etnográfico",200,
+Umanistiche,🎬 Historia del Cine y el Documental,🎬,5,Apprendista,Estilos de Documental,"Observacional, participativo, ensayo",200,
+Umanistiche,🎬 Historia del Cine y el Documental,🎬,6,Apprendista,Documental de Naturaleza y Ciencia,"BBC, National Geographic, formatos",200,🥈 Distintivo d'Argento
+Umanistiche,🎬 Historia del Cine y el Documental,🎬,7,Intenditore,Documental de Denuncia Social,Casos que cambiaron leyes y conciencias,350,
+Umanistiche,🎬 Historia del Cine y el Documental,🎬,8,Intenditore,Docuseries y Plataformas,"Streaming, true crime, formatos seriales",350,🥇 Distintivo d'Oro
+Umanistiche,🎬 Historia del Cine y el Documental,🎬,9,Esperto,Lenguaje y Ética del Documental,"Manipulación, puesta en escena, límites",500,
+Umanistiche,🎬 Historia del Cine y el Documental,🎬,10,Esperto,El Futuro del Documental con IA,"Producción automatizada, personalización",500,💎 Distintivo di Diamante
+Umanistiche,📚 Literatura Universal,📚,1,Esploratore,"Mitos, Epopeyas y Textos Fundacionales","Gilgamesh, Ilíada, textos sagrados",100,
+Umanistiche,📚 Literatura Universal,📚,2,Esploratore,Teatro Clásico y Tragedia,"Sófocles, Shakespeare",100,
+Umanistiche,📚 Literatura Universal,📚,3,Esploratore,Novela Moderna,Del siglo XIX al realismo,100,🥉 Distintivo di Bronzo
+Umanistiche,📚 Literatura Universal,📚,4,Apprendista,Realismo y Naturalismo,"Tolstói, Zola, Galdós",200,
+Umanistiche,📚 Literatura Universal,📚,5,Apprendista,Vanguardias y Modernismo,"Joyce, Kafka, Proust",200,
+Umanistiche,📚 Literatura Universal,📚,6,Apprendista,Literaturas no Occidentales,"Autores clave de Asia, África, Latinoamérica",200,🥈 Distintivo d'Argento
+Umanistiche,📚 Literatura Universal,📚,7,Intenditore,Boom Latinoamericano,"García Márquez, Cortázar, Vargas Llosa",350,
+Umanistiche,📚 Literatura Universal,📚,8,Intenditore,Literatura Contemporánea,"Posmodernidad, autoficción, nuevos formatos",350,🥇 Distintivo d'Oro
+Umanistiche,📚 Literatura Universal,📚,9,Esperto,Adaptaciones al Cine y la TV,Cómo cambian las historias,500,
+Umanistiche,📚 Literatura Universal,📚,10,Esperto,IA y Escritura del Futuro,"Modelos generativos, coautoría",500,💎 Distintivo di Diamante
+Umanistiche,🎭 Historia del Teatro y Artes Escénicas,🎭,1,Esploratore,Teatro Griego y Romano,"Tragedia, comedia, anfiteatros",100,
+Umanistiche,🎭 Historia del Teatro y Artes Escénicas,🎭,2,Esploratore,Teatro Medieval y Renacentista,"Autos, Shakespeare",100,
+Umanistiche,🎭 Historia del Teatro y Artes Escénicas,🎭,3,Esploratore,Ópera y Ballet,"Nacimiento de la ópera, grandes compositores",100,🥉 Distintivo di Bronzo
+Umanistiche,🎭 Historia del Teatro y Artes Escénicas,🎭,4,Apprendista,Teatro del Siglo XIX,"Realismo, melodrama",200,
+Umanistiche,🎭 Historia del Teatro y Artes Escénicas,🎭,5,Apprendista,Vanguardias del Siglo XX,"Brecht, Artaud, teatro del absurdo",200,
+Umanistiche,🎭 Historia del Teatro y Artes Escénicas,🎭,6,Apprendista,Teatro Musical y Broadway,"Musical moderno, grandes éxitos",200,🥈 Distintivo d'Argento
+Umanistiche,🎭 Historia del Teatro y Artes Escénicas,🎭,7,Intenditore,Teatro Político y Social,Obras que cuestionan el poder,350,
+Umanistiche,🎭 Historia del Teatro y Artes Escénicas,🎭,8,Intenditore,Performance y Artes Vivas,"Happening, body art",350,🥇 Distintivo d'Oro
+Umanistiche,🎭 Historia del Teatro y Artes Escénicas,🎭,9,Esperto,Nuevos Medios Escénicos,"Proyecciones, VR, experiencias inmersivas",500,
+Umanistiche,🎭 Historia del Teatro y Artes Escénicas,🎭,10,Esperto,El Futuro del Teatro,"Hibridación digital, participación del público",500,💎 Distintivo di Diamante
+Umanistiche,📷 Historia de la Fotografía y Fotoperiodismo,📷,1,Esploratore,Primeras Fotografías,"Daguerrotipos, Niepce, Daguerre",100,
+Umanistiche,📷 Historia de la Fotografía y Fotoperiodismo,📷,2,Esploratore,Retrato y Estudio,La fotografía como lujo,100,
+Umanistiche,📷 Historia de la Fotografía y Fotoperiodismo,📷,3,Esploratore,Fotografía Documental Temprana,"Vida urbana, colonias, guerra de Crimea",100,🥉 Distintivo di Bronzo
+Umanistiche,📷 Historia de la Fotografía y Fotoperiodismo,📷,4,Apprendista,Grandes Guerras en Imágenes,"WWI, WWII, impacto en la opinión pública",200,
+Umanistiche,📷 Historia de la Fotografía y Fotoperiodismo,📷,5,Apprendista,Agencias y Revistas Icónicas,"Magnum, LIFE",200,
+Umanistiche,📷 Historia de la Fotografía y Fotoperiodismo,📷,6,Apprendista,Fotografía de Calle y Autoral,"Cartier-Bresson, Vivian Maier",200,🥈 Distintivo d'Argento
+Umanistiche,📷 Historia de la Fotografía y Fotoperiodismo,📷,7,Intenditore,Fotoperiodismo en la Era Digital,"24/7 news, redes sociales",350,
+Umanistiche,📷 Historia de la Fotografía y Fotoperiodismo,📷,8,Intenditore,Manipulación y Fake Images,"Edición, deepfakes, ética",350,🥇 Distintivo d'Oro
+Umanistiche,📷 Historia de la Fotografía y Fotoperiodismo,📷,9,Esperto,Fotografía como Arte Contemporáneo,"Museos, mercado, instalaciones",500,
+Umanistiche,📷 Historia de la Fotografía y Fotoperiodismo,📷,10,Esperto,"IA, Algoritmos y Visión por Computador","Clasificación, generación de imágenes",500,💎 Distintivo di Diamante
+Umanistiche,🗣️ Lenguas del Mundo y Escrituras,🗣️,1,Esploratore,Qué es un Idioma,"Fonética, gramática, significado",100,
+Umanistiche,🗣️ Lenguas del Mundo y Escrituras,🗣️,2,Esploratore,Familias Lingüísticas,"Indoeuropea, sino-tibetana, afroasiática",100,
+Umanistiche,🗣️ Lenguas del Mundo y Escrituras,🗣️,3,Esploratore,Orígenes de la Escritura,"Cuneiforme, jeroglíficos",100,🥉 Distintivo di Bronzo
+Umanistiche,🗣️ Lenguas del Mundo y Escrituras,🗣️,4,Apprendista,Alfabetos y Sistemas de Escritura,"Latino, cirílico, árabe, chino",200,
+Umanistiche,🗣️ Lenguas del Mundo y Escrituras,🗣️,5,Apprendista,Lenguas en Peligro,"Extinción lingüística, revitalización",200,
+Umanistiche,🗣️ Lenguas del Mundo y Escrituras,🗣️,6,Apprendista,Lenguas Francas y de Poder,"Inglés, español, mandarín",200,🥈 Distintivo d'Argento
+Umanistiche,🗣️ Lenguas del Mundo y Escrituras,🗣️,7,Intenditore,Política e Identidad Lingüística,"Nacionalismos, minorías",350,
+Umanistiche,🗣️ Lenguas del Mundo y Escrituras,🗣️,8,Intenditore,Traducción y Pérdida,"Matices, intraducibles",350,🥇 Distintivo d'Oro
+Umanistiche,🗣️ Lenguas del Mundo y Escrituras,🗣️,9,Esperto,IA y Traducción Automática,"Modelos neuronales, límites",500,
+Umanistiche,🗣️ Lenguas del Mundo y Escrituras,🗣️,10,Esperto,El Futuro del Multilingüismo,"Convergencia, diversidad",500,💎 Distintivo di Diamante
+Umanistiche,🍳 Historia de la Alimentación y Gastronomía,🍳,1,Esploratore,Cazadores-Recolectores y Agricultura,Del forrajeo a los cultivos,100,
+Umanistiche,🍳 Historia de la Alimentación y Gastronomía,🍳,2,Esploratore,Granos y Civilizaciones,"Trigo, arroz, maíz",100,
+Umanistiche,🍳 Historia de la Alimentación y Gastronomía,🍳,3,Esploratore,Especias y Rutas Comerciales,"Curry, pimienta, oro aromático",100,🥉 Distintivo di Bronzo
+Umanistiche,🍳 Historia de la Alimentación y Gastronomía,🍳,4,Apprendista,Colonialismo y Cocina,"Intercambio colombino, mestizaje culinario",200,
+Umanistiche,🍳 Historia de la Alimentación y Gastronomía,🍳,5,Apprendista,Revolución Industrial y Comida Procesada,"Conservas, azúcar, fast food",200,
+Umanistiche,🍳 Historia de la Alimentación y Gastronomía,🍳,6,Apprendista,Cocinas del Mundo,"Mediterránea, asiática, latinoamericana",200,🥈 Distintivo d'Argento
+Umanistiche,🍳 Historia de la Alimentación y Gastronomía,🍳,7,Intenditore,Alta Cocina y Chefs Estrella,"Guías, restaurantes icónicos",350,
+Umanistiche,🍳 Historia de la Alimentación y Gastronomía,🍳,8,Intenditore,Comida y Clase Social,"Acceso, status, marketing",350,🥇 Distintivo d'Oro
+Umanistiche,🍳 Historia de la Alimentación y Gastronomía,🍳,9,Esperto,Gastronomía Molecular y Ciencia,Física y química en la cocina,500,
+Umanistiche,🍳 Historia de la Alimentación y Gastronomía,🍳,10,Esperto,Futuro de la Alimentación,"Carne cultivada, insectos, sostenibilidad",500,💎 Distintivo di Diamante
+Società,🏭 Historia del Capitalismo y del Trabajo,🏭,1,Esploratore,Economías Agrarias y Trueque,Antes del capitalismo,100,
+Società,🏭 Historia del Capitalismo y del Trabajo,🏭,2,Esploratore,Revolución Comercial y Mercantilismo,"Imperios, colonias",100,
+Società,🏭 Historia del Capitalismo y del Trabajo,🏭,3,Esploratore,Revolución Industrial,"Máquinas, fábricas, proletariado",100,🥉 Distintivo di Bronzo
+Società,🏭 Historia del Capitalismo y del Trabajo,🏭,4,Apprendista,Capitalismo del Siglo XIX,"Ferrocarriles, monopolios",200,
+Società,🏭 Historia del Capitalismo y del Trabajo,🏭,5,Apprendista,Estado del Bienestar y Fordismo,"Producción en masa, derechos laborales",200,
+Società,🏭 Historia del Capitalismo y del Trabajo,🏭,6,Apprendista,Neoliberalismo y Globalización,"Deslocalización, finanzas",200,🥈 Distintivo d'Argento
+Società,🏭 Historia del Capitalismo y del Trabajo,🏭,7,Intenditore,Automatización y Trabajo Precario,"Gig economy, plataformas",350,
+Società,🏭 Historia del Capitalismo y del Trabajo,🏭,8,Intenditore,Críticas y Alternativas,"Marxismo, economía solidaria",350,🥇 Distintivo d'Oro
+Società,🏭 Historia del Capitalismo y del Trabajo,🏭,9,Esperto,Capitalismo Digital y de Vigilancia,Datos como mercancía,500,
+Società,🏭 Historia del Capitalismo y del Trabajo,🏭,10,Esperto,El Futuro del Trabajo,"Renta básica, robots",500,💎 Distintivo di Diamante
+Società,📱 Sociología de las Redes Sociales,📱,1,Esploratore,De Foros a Redes Sociales,"Blogs, MySpace, Facebook",100,
+Società,📱 Sociología de las Redes Sociales,📱,2,Esploratore,Plataformas Clave,"Twitter/X, Instagram, TikTok",100,
+Società,📱 Sociología de las Redes Sociales,📱,3,Esploratore,"Likes, Seguidores y Ego",Psicología básica del feedback,100,🥉 Distintivo di Bronzo
+Società,📱 Sociología de las Redes Sociales,📱,4,Apprendista,Algoritmos y Burbujas de Filtro,Qué ves y qué no ves,200,
+Società,📱 Sociología de las Redes Sociales,📱,5,Apprendista,Influencers y Economía de Creadores,Modelos de ingresos,200,
+Società,📱 Sociología de las Redes Sociales,📱,6,Apprendista,Ciberacoso y Toxicidad,Efectos en la salud mental,200,🥈 Distintivo d'Argento
+Società,📱 Sociología de las Redes Sociales,📱,7,Intenditore,Redes y Política,"Campañas, desinformación",350,
+Società,📱 Sociología de las Redes Sociales,📱,8,Intenditore,Activismo Digital,"Hashtags, movimientos sociales",350,🥇 Distintivo d'Oro
+Società,📱 Sociología de las Redes Sociales,📱,9,Esperto,"Datos, Vigilancia y Privacidad",Seguimiento masivo,500,
+Società,📱 Sociología de las Redes Sociales,📱,10,Esperto,El Futuro de la Vida Conectada,"Metaversos, identidades múltiples",500,💎 Distintivo di Diamante
+Società,🗳️ Sistemas Políticos del Mundo,🗳️,1,Esploratore,Qué es un Estado,"Territorio, población, soberanía",100,
+Società,🗳️ Sistemas Políticos del Mundo,🗳️,2,Esploratore,Democracias y Dictaduras,Clasificaciones básicas,100,
+Società,🗳️ Sistemas Políticos del Mundo,🗳️,3,Esploratore,Separación de Poderes,"Ejecutivo, legislativo, judicial",100,🥉 Distintivo di Bronzo
+Società,🗳️ Sistemas Políticos del Mundo,🗳️,4,Apprendista,Modelos Parlamentarios y Presidenciales,"Reino Unido, EE.UU.",200,
+Società,🗳️ Sistemas Políticos del Mundo,🗳️,5,Apprendista,Regímenes Autoritarios,"Control, propaganda",200,
+Società,🗳️ Sistemas Políticos del Mundo,🗳️,6,Apprendista,Organismos Supranacionales,"UE, ONU, OEA",200,🥈 Distintivo d'Argento
+Società,🗳️ Sistemas Políticos del Mundo,🗳️,7,Intenditore,Transiciones Democráticas,Ejemplos históricos,350,
+Società,🗳️ Sistemas Políticos del Mundo,🗳️,8,Intenditore,Populismo y Polarización,Tendencias recientes,350,🥇 Distintivo d'Oro
+Società,🗳️ Sistemas Políticos del Mundo,🗳️,9,Esperto,Tecnología y Gobernanza,"Voto electrónico, e-gobierno",500,
+Società,🗳️ Sistemas Políticos del Mundo,🗳️,10,Esperto,Democracia del Futuro,"Participación digital, IA y política",500,💎 Distintivo di Diamante
+Società,♀️ Historia del Feminismo y Movimientos Sociales,♀️,1,Esploratore,Primeras Luchas por Derechos,"Sufragistas, abolición",100,
+Società,♀️ Historia del Feminismo y Movimientos Sociales,♀️,2,Esploratore,Olas del Feminismo,"Primera, segunda, tercera",100,
+Società,♀️ Historia del Feminismo y Movimientos Sociales,♀️,3,Esploratore,Movimientos Obreros,"Sindicatos, 1 de mayo",100,🥉 Distintivo di Bronzo
+Società,♀️ Historia del Feminismo y Movimientos Sociales,♀️,4,Apprendista,Luchas por Derechos Civiles,"EE.UU., Sudáfrica",200,
+Società,♀️ Historia del Feminismo y Movimientos Sociales,♀️,5,Apprendista,Movimiento LGTBI+,Hitos y conquistas,200,
+Società,♀️ Historia del Feminismo y Movimientos Sociales,♀️,6,Apprendista,Ecologismo y Pacifismo,Movimiento verde,200,🥈 Distintivo d'Argento
+Società,♀️ Historia del Feminismo y Movimientos Sociales,♀️,7,Intenditore,Intersectionalidad y Nuevas Agendas,Cruce de opresiones,350,
+Società,♀️ Historia del Feminismo y Movimientos Sociales,♀️,8,Intenditore,Redes Sociales y Movilización,"#MeToo, Primavera Árabe",350,🥇 Distintivo d'Oro
+Società,♀️ Historia del Feminismo y Movimientos Sociales,♀️,9,Esperto,Reacción y Backlash,Resistencias y contramovimientos,500,
+Società,♀️ Historia del Feminismo y Movimientos Sociales,♀️,10,Esperto,Movimientos Sociales del Futuro,Nuevas causas emergentes,500,💎 Distintivo di Diamante
+Società,⌛ Economía de la Atención,⌛,1,Esploratore,Qué es la Atención,"Recurso limitado, foco",100,
+Società,⌛ Economía de la Atención,⌛,2,Esploratore,Publicidad Tradicional,"TV, radio, prensa",100,
+Società,⌛ Economía de la Atención,⌛,3,Esploratore,Publicidad Digital,"Banners, search ads",100,🥉 Distintivo di Bronzo
+Società,⌛ Economía de la Atención,⌛,4,Apprendista,Plataformas y Tiempo de Pantalla,Modelos de negocio,200,
+Società,⌛ Economía de la Atención,⌛,5,Apprendista,Scroll Infinito y Notificaciones,Diseño adictivo,200,
+Società,⌛ Economía de la Atención,⌛,6,Apprendista,Creadores y Contenido Viral,Métricas y tendencias,200,🥈 Distintivo d'Argento
+Società,⌛ Economía de la Atención,⌛,7,Intenditore,Coste Cognitivo y Salud Mental,Burnout informativo,350,
+Società,⌛ Economía de la Atención,⌛,8,Intenditore,Regulación y Privacidad,Leyes de datos,350,🥇 Distintivo d'Oro
+Società,⌛ Economía de la Atención,⌛,9,Esperto,Resistencia: Minimalismo Digital,Estrategias para recuperar el foco,500,
+Società,⌛ Economía de la Atención,⌛,10,Esperto,Futuro de la Atención,"Interfaces nuevas, IA curadora",500,💎 Distintivo di Diamante
+Natura,🏞️ Grandes Ríos y Civilizaciones,🏞️,1,Esploratore,"Nilo, Tigris y Éufrates",Cunas de civilización,100,
+Natura,🏞️ Grandes Ríos y Civilizaciones,🏞️,2,Esploratore,Indo y Ganges,India antigua y moderna,100,
+Natura,🏞️ Grandes Ríos y Civilizaciones,🏞️,3,Esploratore,Yangtsé y Amarillo,China y sus ríos,100,🥉 Distintivo di Bronzo
+Natura,🏞️ Grandes Ríos y Civilizaciones,🏞️,4,Apprendista,Ríos de Europa,"Danubio, Rin, comercio",200,
+Natura,🏞️ Grandes Ríos y Civilizaciones,🏞️,5,Apprendista,Ríos de América,"Amazonas, Mississippi",200,
+Natura,🏞️ Grandes Ríos y Civilizaciones,🏞️,6,Apprendista,Ríos de África y su Impacto,"Niger, Congo",200,🥈 Distintivo d'Argento
+Natura,🏞️ Grandes Ríos y Civilizaciones,🏞️,7,Intenditore,Represas y Gestión del Agua,"Asuán, Tres Gargantas",350,
+Natura,🏞️ Grandes Ríos y Civilizaciones,🏞️,8,Intenditore,Contaminación y Sequías,Crisis hídricas,350,🥇 Distintivo d'Oro
+Natura,🏞️ Grandes Ríos y Civilizaciones,🏞️,9,Esperto,Guerras del Agua,Conflictos actuales y potenciales,500,
+Natura,🏞️ Grandes Ríos y Civilizaciones,🏞️,10,Esperto,Futuro de los Grandes Ríos,Adaptación climática,500,💎 Distintivo di Diamante
+Natura,🏜️ Desiertos del Mundo y Supervivencia,🏜️,1,Esploratore,Qué es un Desierto,"Tipos, clima",100,
+Natura,🏜️ Desiertos del Mundo y Supervivencia,🏜️,2,Esploratore,Sahara y Desiertos Africanos,Historia y pueblos,100,
+Natura,🏜️ Desiertos del Mundo y Supervivencia,🏜️,3,Esploratore,Desiertos de Asia,"Gobi, Arabia",100,🥉 Distintivo di Bronzo
+Natura,🏜️ Desiertos del Mundo y Supervivencia,🏜️,4,Apprendista,Desiertos de América,"Atacama, Sonora",200,
+Natura,🏜️ Desiertos del Mundo y Supervivencia,🏜️,5,Apprendista,Flora y Fauna Adaptada,Estrategias de vida,200,
+Natura,🏜️ Desiertos del Mundo y Supervivencia,🏜️,6,Apprendista,Supervivencia Humana,"Técnicas, expediciones",200,🥈 Distintivo d'Argento
+Natura,🏜️ Desiertos del Mundo y Supervivencia,🏜️,7,Intenditore,Desertificación,Causas humanas y naturales,350,
+Natura,🏜️ Desiertos del Mundo y Supervivencia,🏜️,8,Intenditore,Energía Solar en Desiertos,Mega proyectos,350,🥇 Distintivo d'Oro
+Natura,🏜️ Desiertos del Mundo y Supervivencia,🏜️,9,Esperto,Ciudades y Proyectos en Desiertos,"Dubai, NEOM",500,
+Natura,🏜️ Desiertos del Mundo y Supervivencia,🏜️,10,Esperto,Vida en Otros Mundos Desérticos,Marte como desierto extremo,500,💎 Distintivo di Diamante
+Natura,🌲 Bosques y Selvas,🌲,1,Esploratore,Tipos de Bosques,"Tropicales, templados, boreales",100,
+Natura,🌲 Bosques y Selvas,🌲,2,Esploratore,Amazonia y Grandes Selvas,Biodiversidad y pueblos,100,
+Natura,🌲 Bosques y Selvas,🌲,3,Esploratore,Bosques del Norte,"Taiga, tundra",100,🥉 Distintivo di Bronzo
+Natura,🌲 Bosques y Selvas,🌲,4,Apprendista,Bosques y Clima,Sumideros de carbono,200,
+Natura,🌲 Bosques y Selvas,🌲,5,Apprendista,Deforestación,Causas y consecuencias,200,
+Natura,🌲 Bosques y Selvas,🌲,6,Apprendista,Conservación y Parques,Modelos de protección,200,🥈 Distintivo d'Argento
+Natura,🌲 Bosques y Selvas,🌲,7,Intenditore,Economía del Bosque,"Madera, turismo, servicios ecosistémicos",350,
+Natura,🌲 Bosques y Selvas,🌲,8,Intenditore,Incendios Forestales,Cambio climático y gestión,350,🥇 Distintivo d'Oro
+Natura,🌲 Bosques y Selvas,🌲,9,Esperto,Restauración Ecológica,Reforestación inteligente,500,
+Natura,🌲 Bosques y Selvas,🌲,10,Esperto,Bosques del Futuro,"Rewilding, reservas integrales",500,💎 Distintivo di Diamante
+Natura,🦤 Fauna Extinta Reciente y Conservación,🦤,1,Esploratore,Especies Extintas Recientes,"Dodo, tilacino",100,
+Natura,🦤 Fauna Extinta Reciente y Conservación,🦤,2,Esploratore,Causas de Extinción,"Caza, hábitat, invasoras",100,
+Natura,🦤 Fauna Extinta Reciente y Conservación,🦤,3,Esploratore,Historias Emblemáticas,"Búfalo americano, ballena azul",100,🥉 Distintivo di Bronzo
+Natura,🦤 Fauna Extinta Reciente y Conservación,🦤,4,Apprendista,Listas Rojas y Estado de Conservación,UICN,200,
+Natura,🦤 Fauna Extinta Reciente y Conservación,🦤,5,Apprendista,Zoológicos y Reservas,Rol en conservación,200,
+Natura,🦤 Fauna Extinta Reciente y Conservación,🦤,6,Apprendista,Éxitos en Recuperación,"Lince ibérico, cóndor",200,🥈 Distintivo d'Argento
+Natura,🦤 Fauna Extinta Reciente y Conservación,🦤,7,Intenditore,Conservación Genética,Bancos de genes,350,
+Natura,🦤 Fauna Extinta Reciente y Conservación,🦤,8,Intenditore,Rewilding y Reintroducciones,Casos prácticos,350,🥇 Distintivo d'Oro
+Natura,🦤 Fauna Extinta Reciente y Conservación,🦤,9,Esperto,De-Extinción,Mamuts y debate ético,500,
+Natura,🦤 Fauna Extinta Reciente y Conservación,🦤,10,Esperto,Convivencia Humano-Fauna,Nuevos pactos y límites,500,💎 Distintivo di Diamante
+Natura,🧊 Glaciares y Regiones Polares,🧊,1,Esploratore,Qué es un Glaciar,"Formación, tipos",100,
+Natura,🧊 Glaciares y Regiones Polares,🧊,2,Esploratore,Ártico y Antártida,Diferencias básicas,100,
+Natura,🧊 Glaciares y Regiones Polares,🧊,3,Esploratore,Fauna Polar,"Osos, pingüinos, focas",100,🥉 Distintivo di Bronzo
+Natura,🧊 Glaciares y Regiones Polares,🧊,4,Apprendista,Hielo y Clima Global,"Albedo, regulador térmico",200,
+Natura,🧊 Glaciares y Regiones Polares,🧊,5,Apprendista,Exploradores Polares,"Amundsen, Scott",200,
+Natura,🧊 Glaciares y Regiones Polares,🧊,6,Apprendista,Bases Científicas,Investigación en los polos,200,🥈 Distintivo d'Argento
+Natura,🧊 Glaciares y Regiones Polares,🧊,7,Intenditore,Retroceso de Glaciares,Impactos locales,350,
+Natura,🧊 Glaciares y Regiones Polares,🧊,8,Intenditore,Rutas Marítimas y Recursos,Paso del Noroeste,350,🥇 Distintivo d'Oro
+Natura,🧊 Glaciares y Regiones Polares,🧊,9,Esperto,Conflictos Geopolíticos en el Hielo,Reclamos territoriales,500,
+Natura,🧊 Glaciares y Regiones Polares,🧊,10,Esperto,Futuro de las Regiones Polares,Escenarios climáticos,500,💎 Distintivo di Diamante
+Tecnologia,💡 Innovación y Emprendimiento,💡,1,Esploratore,Qué es Innovar,"Ideas, problemas y soluciones",100,
+Tecnologia,💡 Innovación y Emprendimiento,💡,2,Esploratore,Casos Históricos de Emprendedores,"Edison, Ford",100,
+Tecnologia,💡 Innovación y Emprendimiento,💡,3,Esploratore,Startups y Silicon Valley,Nacimiento del ecosistema,100,🥉 Distintivo di Bronzo
+Tecnologia,💡 Innovación y Emprendimiento,💡,4,Apprendista,Modelos de Negocio,"Suscripción, marketplace, freemium",200,
+Tecnologia,💡 Innovación y Emprendimiento,💡,5,Apprendista,Financiación y Capital Riesgo,"VC, ángeles, bootstrapping",200,
+Tecnologia,💡 Innovación y Emprendimiento,💡,6,Apprendista,Validación y Producto Mínimo Viable,Iterar con usuarios,200,🥈 Distintivo d'Argento
+Tecnologia,💡 Innovación y Emprendimiento,💡,7,Intenditore,Escalar una Startup,"Equipo, procesos, cultura",350,
+Tecnologia,💡 Innovación y Emprendimiento,💡,8,Intenditore,Fracaso y Aprendizaje,"Casos sonados, lecciones",350,🥇 Distintivo d'Oro
+Tecnologia,💡 Innovación y Emprendimiento,💡,9,Esperto,Emprendimiento de Impacto,"Triple balance, sostenibilidad",500,
+Tecnologia,💡 Innovación y Emprendimiento,💡,10,Esperto,Innovar con IA,Nuevos modelos habilitados por IA,500,💎 Distintivo di Diamante
+Società,💵 Psicología del Dinero,💵,1,Esploratore,Dinero y Emociones,"Miedo, avaricia",100,
+Società,💵 Psicología del Dinero,💵,2,Esploratore,Sesgos en Decisiones Financieras,"Anclas, aversión a la pérdida",100,
+Società,💵 Psicología del Dinero,💵,3,Esploratore,Hábitos de Consumo,Impulso vs planificación,100,🥉 Distintivo di Bronzo
+Società,💵 Psicología del Dinero,💵,4,Apprendista,Publicidad y Compra,Técnicas de persuasión,200,
+Società,💵 Psicología del Dinero,💵,5,Apprendista,Endeudamiento y Crédito,Psicología del préstamo,200,
+Società,💵 Psicología del Dinero,💵,6,Apprendista,Ahorro e Inversión,Mentalidad de largo plazo,200,🥈 Distintivo d'Argento
+Società,💵 Psicología del Dinero,💵,7,Intenditore,Dinero y Estatus,"Señales, comparación social",350,
+Società,💵 Psicología del Dinero,💵,8,Intenditore,Cultura y Relación con el Dinero,Diferencias regionales,350,🥇 Distintivo d'Oro
+Società,💵 Psicología del Dinero,💵,9,Esperto,Dinero y Felicidad,Qué dice la investigación,500,
+Società,💵 Psicología del Dinero,💵,10,Esperto,Reescribir tu Narrativa Financiera,Cambiar creencias y hábitos,500,💎 Distintivo di Diamante
+Salute,📈 Hábitos y Productividad,📈,1,Esploratore,Qué es un Hábito,Bucle señal-rutina-recompensa,100,
+Salute,📈 Hábitos y Productividad,📈,2,Esploratore,Motivación y Voluntad,Mitologías y realidades,100,
+Salute,📈 Hábitos y Productividad,📈,3,Esploratore,Procrastinación,Por qué la mente pospone,100,🥉 Distintivo di Bronzo
+Salute,📈 Hábitos y Productividad,📈,4,Apprendista,Sistemas de Organización,"Listas, calendarios, GTD",200,
+Salute,📈 Hábitos y Productividad,📈,5,Apprendista,Gestión del Tiempo,"Bloques, timeboxing",200,
+Salute,📈 Hábitos y Productividad,📈,6,Apprendista,"Energía, Sueño y Productividad",Ritmos biológicos,200,🥈 Distintivo d'Argento
+Salute,📈 Hábitos y Productividad,📈,7,Intenditore,Diseñar Hábitos Duraderos,"Ambiente, identidad",350,
+Salute,📈 Hábitos y Productividad,📈,8,Intenditore,Productividad en la Era Digital,"Distracciones, multitarea",350,🥇 Distintivo d'Oro
+Salute,📈 Hábitos y Productividad,📈,9,Esperto,Flujo (Flow) y Alto Rendimiento,Condiciones para entrar en flow,500,
+Salute,📈 Hábitos y Productividad,📈,10,Esperto,Sistemas de Productividad Personalizados,Crearte tu propio sistema,500,💎 Distintivo di Diamante
+Società,🏙️ Historia de las Ciudades y Urbanismo,🏙️,1,Esploratore,Primeras Ciudades,"Mesopotamia, valle del Indo",100,
+Società,🏙️ Historia de las Ciudades y Urbanismo,🏙️,2,Esploratore,Ciudades Antiguas,"Roma, Atenas, Teotihuacán",100,
+Società,🏙️ Historia de las Ciudades y Urbanismo,🏙️,3,Esploratore,Ciudades Medievales,"Murallas, gremios",100,🥉 Distintivo di Bronzo
+Società,🏙️ Historia de las Ciudades y Urbanismo,🏙️,4,Apprendista,Revolución Industrial y Ciudad,"Fábricas, barrios obreros",200,
+Società,🏙️ Historia de las Ciudades y Urbanismo,🏙️,5,Apprendista,Urbanismo Moderno,"Haussmann, zonificación",200,
+Società,🏙️ Historia de las Ciudades y Urbanismo,🏙️,6,Apprendista,Megaciudades y Suburbios,Crecimiento acelerado,200,🥈 Distintivo d'Argento
+Società,🏙️ Historia de las Ciudades y Urbanismo,🏙️,7,Intenditore,Problemas Urbanos,"Tráfico, vivienda, contaminación",350,
+Società,🏙️ Historia de las Ciudades y Urbanismo,🏙️,8,Intenditore,Ciudades Sostenibles,"Transporte público, verde",350,🥇 Distintivo d'Oro
+Società,🏙️ Historia de las Ciudades y Urbanismo,🏙️,9,Esperto,Smart Cities,"Datos, sensores, gobernanza",500,
+Società,🏙️ Historia de las Ciudades y Urbanismo,🏙️,10,Esperto,Ciudades del Futuro,"Verticales, flotantes, resilientes",500,💎 Distintivo di Diamante
+Tecnologia,🕹️ Videojuegos y Sociedad,🕹️,1,Esploratore,Historia Básica del Juego Digital,Hitos principales,100,
+Tecnologia,🕹️ Videojuegos y Sociedad,🕹️,2,Esploratore,Culturas de Jugadores,"Casual, hardcore",100,
+Tecnologia,🕹️ Videojuegos y Sociedad,🕹️,3,Esploratore,Comunidades Online,"Clanes, guilds",100,🥉 Distintivo di Bronzo
+Tecnologia,🕹️ Videojuegos y Sociedad,🕹️,4,Apprendista,Esports y Espectadores,Audiencias masivas,200,
+Tecnologia,🕹️ Videojuegos y Sociedad,🕹️,5,Apprendista,Representación y Diversidad,"Género, raza",200,
+Tecnologia,🕹️ Videojuegos y Sociedad,🕹️,6,Apprendista,Juegos y Educación,Serious games,200,🥈 Distintivo d'Argento
+Tecnologia,🕹️ Videojuegos y Sociedad,🕹️,7,Intenditore,Adicción y Regulación,"Clasificaciones, límites",350,
+Tecnologia,🕹️ Videojuegos y Sociedad,🕹️,8,Intenditore,Economías Virtuales,"Objetos, skins, mercados",350,🥇 Distintivo d'Oro
+Tecnologia,🕹️ Videojuegos y Sociedad,🕹️,9,Esperto,Juegos como Arte Político,Crítica y reflexión,500,
+Tecnologia,🕹️ Videojuegos y Sociedad,🕹️,10,Esperto,Fronteras Difusas Realidad-Juego,Metaversos,500,💎 Distintivo di Diamante
+Umanistiche,🚀 Ciencia Ficción y Futuro,🚀,1,Esploratore,Orígenes de la Ciencia Ficción,"Verne, Wells",100,
+Umanistiche,🚀 Ciencia Ficción y Futuro,🚀,2,Esploratore,Edad Dorada,"Asimov, Clarke",100,
+Umanistiche,🚀 Ciencia Ficción y Futuro,🚀,3,Esploratore,Cine de Ciencia Ficción,"2001, Star Wars",100,🥉 Distintivo di Bronzo
+Umanistiche,🚀 Ciencia Ficción y Futuro,🚀,4,Apprendista,Distopías y Crítica Social,"1984, Blade Runner",200,
+Umanistiche,🚀 Ciencia Ficción y Futuro,🚀,5,Apprendista,Utopías y Posibles Mundos,"Star Trek, solarpunk",200,
+Umanistiche,🚀 Ciencia Ficción y Futuro,🚀,6,Apprendista,Space Opera y Aventuras Cósmicas,Grandes sagas,200,🥈 Distintivo d'Argento
+Umanistiche,🚀 Ciencia Ficción y Futuro,🚀,7,Intenditore,Ciberpunk y Realidades Virtuales,"Neuromante, Matrix",350,
+Umanistiche,🚀 Ciencia Ficción y Futuro,🚀,8,Intenditore,Biopunk y Genética,Manipulación de cuerpos,350,🥇 Distintivo d'Oro
+Umanistiche,🚀 Ciencia Ficción y Futuro,🚀,9,Esperto,SF y Predicciones Cumplidas,Tecnologías anticipadas,500,
+Umanistiche,🚀 Ciencia Ficción y Futuro,🚀,10,Esperto,Ficción como Laboratorio del Futuro,Inspirar ciencia real,500,💎 Distintivo di Diamante
+Umanistiche,👗 Historia de la Moda,👗,1,Esploratore,Vestimenta en la Antigüedad,"Togas, túnicas",100,
+Umanistiche,👗 Historia de la Moda,👗,2,Esploratore,Ropas Medievales y Renacentistas,"Cortes, símbolos",100,
+Umanistiche,👗 Historia de la Moda,👗,3,Esploratore,Moda del Siglo XIX,"Crinolinas, trajes",100,🥉 Distintivo di Bronzo
+Umanistiche,👗 Historia de la Moda,👗,4,Apprendista,Alta Costura y Diseñadores,"Chanel, Dior",200,
+Umanistiche,👗 Historia de la Moda,👗,5,Apprendista,Moda Juvenil y Subculturas,"Punk, hip-hop",200,
+Umanistiche,👗 Historia de la Moda,👗,6,Apprendista,Fast Fashion,Producción masiva,200,🥈 Distintivo d'Argento
+Umanistiche,👗 Historia de la Moda,👗,7,Intenditore,Impacto Ambiental de la Moda,"Contaminación, residuos",350,
+Umanistiche,👗 Historia de la Moda,👗,8,Intenditore,Moda Ética y Sostenible,"Algodón orgánico, reciclaje",350,🥇 Distintivo d'Oro
+Umanistiche,👗 Historia de la Moda,👗,9,Esperto,Tecnología Textil,Ropa inteligente,500,
+Umanistiche,👗 Historia de la Moda,👗,10,Esperto,Futuro de la Moda,"Digital, virtual, IA",500,💎 Distintivo di Diamante
+Tecnologia,📐 Arquitectura de la Información y UX,📐,1,Esploratore,Qué es UX,Experiencia de usuario,100,
+Tecnologia,📐 Arquitectura de la Información y UX,📐,2,Esploratore,Interfaces a lo Largo del Tiempo,"CLI, GUI, móvil",100,
+Tecnologia,📐 Arquitectura de la Información y UX,📐,3,Esploratore,Arquitectura de la Información,"Jerarquías, menús",100,🥉 Distintivo di Bronzo
+Tecnologia,📐 Arquitectura de la Información y UX,📐,4,Apprendista,Principios de Usabilidad,"Norman, heurísticas",200,
+Tecnologia,📐 Arquitectura de la Información y UX,📐,5,Apprendista,Investigación con Usuarios,"Entrevistas, tests",200,
+Tecnologia,📐 Arquitectura de la Información y UX,📐,6,Apprendista,Diseño Centrado en la Persona,"Personas, journeys",200,🥈 Distintivo d'Argento
+Tecnologia,📐 Arquitectura de la Información y UX,📐,7,Intenditore,Patrones Oscuros,Diseño manipulador,350,
+Tecnologia,📐 Arquitectura de la Información y UX,📐,8,Intenditore,Accesibilidad Digital,"WCAG, inclusión",350,🥇 Distintivo d'Oro
+Tecnologia,📐 Arquitectura de la Información y UX,📐,9,Esperto,UX y Ética,Responsabilidad del diseño,500,
+Tecnologia,📐 Arquitectura de la Información y UX,📐,10,Esperto,UX con IA,"Interfaces conversacionales, copilots",500,💎 Distintivo di Diamante
+Salute,🎓 Neuroeducación y Aprendizaje,🎓,1,Esploratore,Cerebro y Aprendizaje,"Plasticidad, memoria",100,
+Salute,🎓 Neuroeducación y Aprendizaje,🎓,2,Esploratore,Atención y Motivación,Sistemas de recompensa,100,
+Salute,🎓 Neuroeducación y Aprendizaje,🎓,3,Esploratore,Emoción y Recuerdo,Cómo se fijan los recuerdos,100,🥉 Distintivo di Bronzo
+Salute,🎓 Neuroeducación y Aprendizaje,🎓,4,Apprendista,Errores y Curva de Olvido,Por qué olvidamos,200,
+Salute,🎓 Neuroeducación y Aprendizaje,🎓,5,Apprendista,Práctica Espaciada y Revisión Activa,Técnicas efectivas,200,
+Salute,🎓 Neuroeducación y Aprendizaje,🎓,6,Apprendista,Aprendizaje Multisensorial,"Ver, oír, hacer",200,🥈 Distintivo d'Argento
+Salute,🎓 Neuroeducación y Aprendizaje,🎓,7,Intenditore,Mitos sobre el Cerebro,"10%, hemisferios, etc.",350,
+Salute,🎓 Neuroeducación y Aprendizaje,🎓,8,Intenditore,Tecnología y Aprendizaje,"Apps, plataformas",350,🥇 Distintivo d'Oro
+Salute,🎓 Neuroeducación y Aprendizaje,🎓,9,Esperto,Personalización con IA,Rutas adaptativas,500,
+Salute,🎓 Neuroeducación y Aprendizaje,🎓,10,Esperto,Diseñar tu Propio Sistema de Aprendizaje,Aplicar todo lo aprendido,500,💎 Distintivo di Diamante
+Umanistiche,🕯️ Historia de las Religiones,🕯️,1,Esploratore,Creencias Prehistóricas,"Cultos, enterramientos",100,
+Umanistiche,🕯️ Historia de las Religiones,🕯️,2,Esploratore,Religiones Antiguas,"Egipto, Grecia",100,
+Umanistiche,🕯️ Historia de las Religiones,🕯️,3,Esploratore,Grandes Religiones Monoteístas,"Judaísmo, cristianismo, islam",100,🥉 Distintivo di Bronzo
+Umanistiche,🕯️ Historia de las Religiones,🕯️,4,Apprendista,Religiones Dhármicas,"Hinduismo, budismo",200,
+Umanistiche,🕯️ Historia de las Religiones,🕯️,5,Apprendista,Religiones de Asia Oriental,"Confucianismo, taoísmo",200,
+Umanistiche,🕯️ Historia de las Religiones,🕯️,6,Apprendista,Religiones Indígenas,"África, América",200,🥈 Distintivo d'Argento
+Umanistiche,🕯️ Historia de las Religiones,🕯️,7,Intenditore,Reformas y Cismas,"Protestantismo, reformas internas",350,
+Umanistiche,🕯️ Historia de las Religiones,🕯️,8,Intenditore,Religión y Política,"Teocracias, laicismo",350,🥇 Distintivo d'Oro
+Umanistiche,🕯️ Historia de las Religiones,🕯️,9,Esperto,Secularización y Nuevos Movimientos,Espiritualidades modernas,500,
+Umanistiche,🕯️ Historia de las Religiones,🕯️,10,Esperto,Religión en el Futuro,"¿Menos, más, distinta?",500,💎 Distintivo di Diamante
+Società,🕵️ Crimen Organizado y Mafias,🕵️,1,Esploratore,Qué es el Crimen Organizado,Definición y tipos,100,
+Società,🕵️ Crimen Organizado y Mafias,🕵️,2,Esploratore,Mafia Siciliana y Cosa Nostra,Orígenes y códigos,100,
+Società,🕵️ Crimen Organizado y Mafias,🕵️,3,Esploratore,"Yakuza, Triadas y Otras Mafias",Asia y más,100,🥉 Distintivo di Bronzo
+Società,🕵️ Crimen Organizado y Mafias,🕵️,4,Apprendista,Carteles de la Droga,Latinoamérica,200,
+Società,🕵️ Crimen Organizado y Mafias,🕵️,5,Apprendista,Lavado de Dinero,Métodos y ejemplos,200,
+Società,🕵️ Crimen Organizado y Mafias,🕵️,6,Apprendista,Crimen Organizado en Política,Corrupción,200,🥈 Distintivo d'Argento
+Società,🕵️ Crimen Organizado y Mafias,🕵️,7,Intenditore,Crimen Cibernético Organizado,"Hackers, ransomware",350,
+Società,🕵️ Crimen Organizado y Mafias,🕵️,8,Intenditore,Lucha Internacional contra el Crimen,"Interpol, tratados",350,🥇 Distintivo d'Oro
+Società,🕵️ Crimen Organizado y Mafias,🕵️,9,Esperto,Narrativas y Mitificación del Crimen,"Cine, series",500,
+Società,🕵️ Crimen Organizado y Mafias,🕵️,10,Esperto,Escenarios Futuros del Crimen Global,Nuevas formas emergentes,500,💎 Distintivo di Diamante
+Scienza,👩‍🚀 Exploración Espacial Humana,👩‍🚀,1,Esploratore,Carrera Espacial,EE.UU. vs URSS,100,
+Scienza,👩‍🚀 Exploración Espacial Humana,👩‍🚀,2,Esploratore,Llegada a la Luna,Apollo,100,
+Scienza,👩‍🚀 Exploración Espacial Humana,👩‍🚀,3,Esploratore,Estaciones Espaciales,"Mir, ISS",100,🥉 Distintivo di Bronzo
+Scienza,👩‍🚀 Exploración Espacial Humana,👩‍🚀,4,Apprendista,Transbordadores y Nuevas Naves,"Shuttle, cápsulas",200,
+Scienza,👩‍🚀 Exploración Espacial Humana,👩‍🚀,5,Apprendista,Empresas Privadas,"SpaceX, Blue Origin",200,
+Scienza,👩‍🚀 Exploración Espacial Humana,👩‍🚀,6,Apprendista,Robots Exploradores,"Rovers, sondas",200,🥈 Distintivo d'Argento
+Scienza,👩‍🚀 Exploración Espacial Humana,👩‍🚀,7,Intenditore,Vida en Microgravedad,Cuerpo humano en órbita,350,
+Scienza,👩‍🚀 Exploración Espacial Humana,👩‍🚀,8,Intenditore,Planes para Marte,Misiones tripuladas,350,🥇 Distintivo d'Oro
+Scienza,👩‍🚀 Exploración Espacial Humana,👩‍🚀,9,Esperto,Colonias y Hábitats Espaciales,Diseños y retos,500,
+Scienza,👩‍🚀 Exploración Espacial Humana,👩‍🚀,10,Esperto,Humanidad Multiplanetaria,Implicaciones a muy largo plazo,500,💎 Distintivo di Diamante
+Tecnologia,🤖 Historia de la Robótica,🤖,1,Esploratore,Autómatas Antiguos,Dispositivos mecánicos precientíficos,100,
+Tecnologia,🤖 Historia de la Robótica,🤖,2,Esploratore,Robots en la Ficción,"Metropolis, Asimov",100,
+Tecnologia,🤖 Historia de la Robótica,🤖,3,Esploratore,Primeros Robots Industriales,Unimate y las fábricas,100,🥉 Distintivo di Bronzo
+Tecnologia,🤖 Historia de la Robótica,🤖,4,Apprendista,Robots en el Hogar,"Aspiradoras, asistentes",200,
+Tecnologia,🤖 Historia de la Robótica,🤖,5,Apprendista,Robots Colaborativos,Cobots junto a humanos,200,
+Tecnologia,🤖 Historia de la Robótica,🤖,6,Apprendista,Competencias de Robótica,"FIRST, competiciones estudiantiles",200,🥈 Distintivo d'Argento
+Tecnologia,🤖 Historia de la Robótica,🤖,7,Intenditore,Robots Militares,"Drones, sistemas no tripulados",350,
+Tecnologia,🤖 Historia de la Robótica,🤖,8,Intenditore,Robots en Medicina,"Cirugía, rehabilitación",350,🥇 Distintivo d'Oro
+Tecnologia,🤖 Historia de la Robótica,🤖,9,Esperto,Robots Autónomos Inteligentes,"Percepción, decisión",500,
+Tecnologia,🤖 Historia de la Robótica,🤖,10,Esperto,Futuro de la Robótica,"Sociedad, empleo, ética",500,💎 Distintivo di Diamante
+Tecnologia,🚆 Historia del Transporte,🚆,1,Esploratore,Rueda y Tracción Animal,"Carros, caballos",100,
+Tecnologia,🚆 Historia del Transporte,🚆,2,Esploratore,Barcos y Grandes Rutas,Navegación a vela,100,
+Tecnologia,🚆 Historia del Transporte,🚆,3,Esploratore,Ferrocarril,Revolución de los trenes,100,🥉 Distintivo di Bronzo
+Tecnologia,🚆 Historia del Transporte,🚆,4,Apprendista,Automóvil y Carreteras,"Ford, autopistas",200,
+Tecnologia,🚆 Historia del Transporte,🚆,5,Apprendista,Aviación,"Wright, vuelos comerciales",200,
+Tecnologia,🚆 Historia del Transporte,🚆,6,Apprendista,Transporte Urbano,"Metro, tranvía, buses",200,🥈 Distintivo d'Argento
+Tecnologia,🚆 Historia del Transporte,🚆,7,Intenditore,Logística Global,"Contenedores, puertos",350,
+Tecnologia,🚆 Historia del Transporte,🚆,8,Intenditore,Sostenibilidad en el Transporte,"Eléctricos, tren rápido",350,🥇 Distintivo d'Oro
+Tecnologia,🚆 Historia del Transporte,🚆,9,Esperto,Vehículos Autónomos,Coches sin conductor,500,
+Tecnologia,🚆 Historia del Transporte,🚆,10,Esperto,Transporte del Futuro,"Hyperloop, taxis aéreos",500,💎 Distintivo di Diamante
+Tecnologia,⚡ Historia de la Energía,⚡,1,Esploratore,Fuego y Musculatura,Primeras fuentes,100,
+Tecnologia,⚡ Historia de la Energía,⚡,2,Esploratore,Agua y Viento,"Molinos, norias",100,
+Tecnologia,⚡ Historia de la Energía,⚡,3,Esploratore,Carbón y Vapor,Máquina de vapor,100,🥉 Distintivo di Bronzo
+Tecnologia,⚡ Historia de la Energía,⚡,4,Apprendista,Petróleo y Gas,Motores de combustión,200,
+Tecnologia,⚡ Historia de la Energía,⚡,5,Apprendista,Electricidad,"Generadores, redes",200,
+Tecnologia,⚡ Historia de la Energía,⚡,6,Apprendista,Energía Nuclear,"Fisión, centrales",200,🥈 Distintivo d'Argento
+Tecnologia,⚡ Historia de la Energía,⚡,7,Intenditore,Renovables Modernas,"Solar, eólica",350,
+Tecnologia,⚡ Historia de la Energía,⚡,8,Intenditore,Eficiencia Energética,"Edificios, industria",350,🥇 Distintivo d'Oro
+Tecnologia,⚡ Historia de la Energía,⚡,9,Esperto,Fusión Experimental,"Tokamaks, stellarators",500,
+Tecnologia,⚡ Historia de la Energía,⚡,10,Esperto,Civilización Energética Global,Escala Kardashev,500,💎 Distintivo di Diamante
+Umanistiche,🎸 Historia de la Música Popular,🎸,1,Esploratore,Blues y Jazz,Raíces afroamericanas,100,
+Umanistiche,🎸 Historia de la Música Popular,🎸,2,Esploratore,Rock and Roll,Años 50 y 60,100,
+Umanistiche,🎸 Historia de la Música Popular,🎸,3,Esploratore,Pop Global,"Beatles, fenómenos",100,🥉 Distintivo di Bronzo
+Umanistiche,🎸 Historia de la Música Popular,🎸,4,Apprendista,"Disco, Funk y Soul",Nuevos ritmos,200,
+Umanistiche,🎸 Historia de la Música Popular,🎸,5,Apprendista,Hip-Hop y Rap,Cultura urbana,200,
+Umanistiche,🎸 Historia de la Música Popular,🎸,6,Apprendista,Música Electrónica,"Raves, DJs",200,🥈 Distintivo d'Argento
+Umanistiche,🎸 Historia de la Música Popular,🎸,7,Intenditore,Globalización Musical,"K-pop, reguetón",350,
+Umanistiche,🎸 Historia de la Música Popular,🎸,8,Intenditore,Industria del Streaming,"Spotify, plataformas",350,🥇 Distintivo d'Oro
+Umanistiche,🎸 Historia de la Música Popular,🎸,9,Esperto,Derechos de Autor y Música,"Copyright, conflictos",500,
+Umanistiche,🎸 Historia de la Música Popular,🎸,10,Esperto,Música y Algoritmos,"Recomendación, creación IA",500,💎 Distintivo di Diamante
+Salute,🎨 Psicología de la Creatividad,🎨,1,Esploratore,Qué es la Creatividad,Definiciones y mitos,100,
+Salute,🎨 Psicología de la Creatividad,🎨,2,Esploratore,Cerebro Creativo,Redes neuronales implicadas,100,
+Salute,🎨 Psicología de la Creatividad,🎨,3,Esploratore,Bloqueo Creativo,Causas habituales,100,🥉 Distintivo di Bronzo
+Salute,🎨 Psicología de la Creatividad,🎨,4,Apprendista,Procesos Creativos,"Incubación, insight",200,
+Salute,🎨 Psicología de la Creatividad,🎨,5,Apprendista,Creatividad en Ciencia y Arte,Casos históricos,200,
+Salute,🎨 Psicología de la Creatividad,🎨,6,Apprendista,Ambiente y Creatividad,Entornos que ayudan,200,🥈 Distintivo d'Argento
+Salute,🎨 Psicología de la Creatividad,🎨,7,Intenditore,Equipos Creativos,Colaboración y conflicto,350,
+Salute,🎨 Psicología de la Creatividad,🎨,8,Intenditore,Creatividad en Empresas,Innovación y cultura,350,🥇 Distintivo d'Oro
+Salute,🎨 Psicología de la Creatividad,🎨,9,Esperto,Medir Creatividad,"Tests, límites",500,
+Salute,🎨 Psicología de la Creatividad,🎨,10,Esperto,IA y Co-creación,Humanos + máquinas,500,💎 Distintivo di Diamante
+Società,📢 Historia de la Publicidad,📢,1,Esploratore,Anuncios en la Antigüedad,"Carteles, pregoneros",100,
+Società,📢 Historia de la Publicidad,📢,2,Esploratore,Publicidad en Prensa,Siglo XIX,100,
+Società,📢 Historia de la Publicidad,📢,3,Esploratore,Radio y TV,Spots icónicos,100,🥉 Distintivo di Bronzo
+Società,📢 Historia de la Publicidad,📢,4,Apprendista,Branding y Marcas,Identidad visual,200,
+Società,📢 Historia de la Publicidad,📢,5,Apprendista,Publicidad Digital,"Banners, SEM",200,
+Società,📢 Historia de la Publicidad,📢,6,Apprendista,Redes Sociales e Influencers,Nuevos formatos,200,🥈 Distintivo d'Argento
+Società,📢 Historia de la Publicidad,📢,7,Intenditore,Psicología del Consumo,Persuasión y emoción,350,
+Società,📢 Historia de la Publicidad,📢,8,Intenditore,Ética en la Publicidad,"Manipulación, regulación",350,🥇 Distintivo d'Oro
+Società,📢 Historia de la Publicidad,📢,9,Esperto,Publicidad Personalizada,Microsegmentación,500,
+Società,📢 Historia de la Publicidad,📢,10,Esperto,Futuro de la Publicidad,"IA creativa, realidad aumentada",500,💎 Distintivo di Diamante
+Salute,🧠 Historia de la Medicina Mental,🧠,1,Esploratore,Concepciones Antiguas,"Espíritus, humores",100,
+Salute,🧠 Historia de la Medicina Mental,🧠,2,Esploratore,Manicomios y Encierros,Siglos XVIII-XIX,100,
+Salute,🧠 Historia de la Medicina Mental,🧠,3,Esploratore,Nacimiento de la Psiquiatría,"Pinel, primeras clasificaciones",100,🥉 Distintivo di Bronzo
+Salute,🧠 Historia de la Medicina Mental,🧠,4,Apprendista,Psicoanálisis y Freud,"Inconsciente, terapia",200,
+Salute,🧠 Historia de la Medicina Mental,🧠,5,Apprendista,Psicofármacos,Revolución farmacológica,200,
+Salute,🧠 Historia de la Medicina Mental,🧠,6,Apprendista,Terapias Cognitivo-Conductuales,Nuevos enfoques,200,🥈 Distintivo d'Argento
+Salute,🧠 Historia de la Medicina Mental,🧠,7,Intenditore,Salud Mental Comunitaria,Desinstitucionalización,350,
+Salute,🧠 Historia de la Medicina Mental,🧠,8,Intenditore,Salud Mental en la Cultura,"Estigma, representaciones",350,🥇 Distintivo d'Oro
+Salute,🧠 Historia de la Medicina Mental,🧠,9,Esperto,Digitalización de la Terapia,"Apps, telepsicología",500,
+Salute,🧠 Historia de la Medicina Mental,🧠,10,Esperto,Futuro de la Salud Mental,"Prevención, IA, personalización",500,💎 Distintivo di Diamante
+Società,🏆 Historia del Deporte,🏆,1,Esploratore,Juegos Antiguos,"Olímpicos, rituales",100,
+Società,🏆 Historia del Deporte,🏆,2,Esploratore,Deporte Moderno,Reglas y federaciones,100,
+Società,🏆 Historia del Deporte,🏆,3,Esploratore,Fútbol y Deportes de Masas,"Clubes, ligas",100,🥉 Distintivo di Bronzo
+Società,🏆 Historia del Deporte,🏆,4,Apprendista,Juegos Olímpicos Modernos,Renacimiento y evolución,200,
+Società,🏆 Historia del Deporte,🏆,5,Apprendista,Profesionalización y Negocio,"Contratos, derechos TV",200,
+Società,🏆 Historia del Deporte,🏆,6,Apprendista,Deporte Femenino,Luchas por visibilidad,200,🥈 Distintivo d'Argento
+Società,🏆 Historia del Deporte,🏆,7,Intenditore,Deporte y Política,"Boicots, propaganda",350,
+Società,🏆 Historia del Deporte,🏆,8,Intenditore,Dopaje y Ética,Casos célebres,350,🥇 Distintivo d'Oro
+Società,🏆 Historia del Deporte,🏆,9,Esperto,Ciencia del Rendimiento,"Nutrición, datos",500,
+Società,🏆 Historia del Deporte,🏆,10,Esperto,Deporte del Futuro,"E-sports, nuevos formatos",500,💎 Distintivo di Diamante
+Scienza,⏳ Historia del Tiempo y Calendarios,⏳,1,Esploratore,Medir el Tiempo,"Sol, luna, ciclos",100,
+Scienza,⏳ Historia del Tiempo y Calendarios,⏳,2,Esploratore,Calendarios Antiguos,"Egipcio, maya",100,
+Scienza,⏳ Historia del Tiempo y Calendarios,⏳,3,Esploratore,Calendario Romano y Gregoriano,Reformas,100,🥉 Distintivo di Bronzo
+Scienza,⏳ Historia del Tiempo y Calendarios,⏳,4,Apprendista,Relojes Mecánicos,"Campanarios, relojes de bolsillo",200,
+Scienza,⏳ Historia del Tiempo y Calendarios,⏳,5,Apprendista,Husos Horarios,Coordinación global,200,
+Scienza,⏳ Historia del Tiempo y Calendarios,⏳,6,Apprendista,Tiempo Atómico,Precisión extrema,200,🥈 Distintivo d'Argento
+Scienza,⏳ Historia del Tiempo y Calendarios,⏳,7,Intenditore,Percepción Humana del Tiempo,Psicología,350,
+Scienza,⏳ Historia del Tiempo y Calendarios,⏳,8,Intenditore,Tiempo en la Física,Relatividad,350,🥇 Distintivo d'Oro
+Scienza,⏳ Historia del Tiempo y Calendarios,⏳,9,Esperto,Tiempo en la Cultura,"Ritmos, rituales",500,
+Scienza,⏳ Historia del Tiempo y Calendarios,⏳,10,Esperto,Futuro del Tiempo Humano,"Vida acelerada, IA",500,💎 Distintivo di Diamante
+Società,🚢 Historia del Comercio y la Globalización,🚢,1,Esploratore,Trueque y Mercados Locales,Intercambios básicos,100,
+Società,🚢 Historia del Comercio y la Globalización,🚢,2,Esploratore,Rutas de la Seda y Marítimas,Intercambio global temprano,100,
+Società,🚢 Historia del Comercio y la Globalización,🚢,3,Esploratore,Compañías Coloniales,Compañía de Indias,100,🥉 Distintivo di Bronzo
+Società,🚢 Historia del Comercio y la Globalización,🚢,4,Apprendista,Revolución Industrial y Comercio,Manufacturas y exportación,200,
+Società,🚢 Historia del Comercio y la Globalización,🚢,5,Apprendista,Era del Contenedor,Logística moderna,200,
+Società,🚢 Historia del Comercio y la Globalización,🚢,6,Apprendista,Organismos Internacionales,"OMC, tratados de libre comercio",200,🥈 Distintivo d'Argento
+Società,🚢 Historia del Comercio y la Globalización,🚢,7,Intenditore,Cadenas Globales de Valor,Producción distribuida,350,
+Società,🚢 Historia del Comercio y la Globalización,🚢,8,Intenditore,Desigualdad y Globalización,Ganadores y perdedores,350,🥇 Distintivo d'Oro
+Società,🚢 Historia del Comercio y la Globalización,🚢,9,Esperto,Crisis y Guerras Comerciales,"Aranceles, sanciones",500,
+Società,🚢 Historia del Comercio y la Globalización,🚢,10,Esperto,Globalización 2.0,"Digital, servicios, desglobalización",500,💎 Distintivo di Diamante
+Società,💰 Historia del Dinero,💰,1,Esploratore,Trueque y Objetos de Valor,"Sal, conchas",100,
+Società,💰 Historia del Dinero,💰,2,Esploratore,Monedas y Metales,"Oro, plata",100,
+Società,💰 Historia del Dinero,💰,3,Esploratore,Billetes y Bancos,"Pagarés, bancos centrales",100,🥉 Distintivo di Bronzo
+Società,💰 Historia del Dinero,💰,4,Apprendista,Patrón Oro y su Fin,Bretton Woods,200,
+Società,💰 Historia del Dinero,💰,5,Apprendista,Tarjetas y Dinero Electrónico,"Crédito, débito",200,
+Società,💰 Historia del Dinero,💰,6,Apprendista,Mercados Financieros Modernos,"Bolsas, derivados",200,🥈 Distintivo d'Argento
+Società,💰 Historia del Dinero,💰,7,Intenditore,Crisis Monetarias,"Hiperinflaciones, devaluaciones",350,
+Società,💰 Historia del Dinero,💰,8,Intenditore,Criptomonedas,"Bitcoin, alternativas",350,🥇 Distintivo d'Oro
+Società,💰 Historia del Dinero,💰,9,Esperto,Dinero y Poder,Moneda como herramienta política,500,
+Società,💰 Historia del Dinero,💰,10,Esperto,Futuro del Dinero,"CBDC, dinero programable",500,💎 Distintivo di Diamante
+Umanistiche,🎲 Historia de los Juegos de Mesa,🎲,1,Esploratore,Juegos Antiguos,"Senet, Go",100,
+Umanistiche,🎲 Historia de los Juegos de Mesa,🎲,2,Esploratore,Ajedrez y Estrategia,Historia y cultura,100,
+Umanistiche,🎲 Historia de los Juegos de Mesa,🎲,3,Esploratore,Juegos Clásicos Modernos,"Monopoly, Scrabble",100,🥉 Distintivo di Bronzo
+Umanistiche,🎲 Historia de los Juegos de Mesa,🎲,4,Apprendista,Eurogames y Revolución Moderna,"Catan, Carcassonne",200,
+Umanistiche,🎲 Historia de los Juegos de Mesa,🎲,5,Apprendista,Juegos Cooperativos,"Pandemic, nuevos enfoques",200,
+Umanistiche,🎲 Historia de los Juegos de Mesa,🎲,6,Apprendista,Juegos de Rol de Mesa,Dungeons & Dragons,200,🥈 Distintivo d'Argento
+Umanistiche,🎲 Historia de los Juegos de Mesa,🎲,7,Intenditore,Diseño de Juegos de Mesa,"Mecánicas, balance",350,
+Umanistiche,🎲 Historia de los Juegos de Mesa,🎲,8,Intenditore,Comunidades y Ferias,"Essen, eventos",350,🥇 Distintivo d'Oro
+Umanistiche,🎲 Historia de los Juegos de Mesa,🎲,9,Esperto,Juegos como Herramienta Educativa,Serious boardgames,500,
+Umanistiche,🎲 Historia de los Juegos de Mesa,🎲,10,Esperto,Futuro Híbrido,"Mesa + apps, IA",500,💎 Distintivo di Diamante
+Natura,🌊 Historia de la Exploración Oceánica,🌊,1,Esploratore,Primeras Navegaciones,"Costas, islas",100,
+Natura,🌊 Historia de la Exploración Oceánica,🌊,2,Esploratore,Grandes Descubrimientos,"Colón, Magallanes",100,
+Natura,🌊 Historia de la Exploración Oceánica,🌊,3,Esploratore,Cartografía Marina,Mapas y peligros,100,🥉 Distintivo di Bronzo
+Natura,🌊 Historia de la Exploración Oceánica,🌊,4,Apprendista,Exploración de Profundidades,"Batiscafos, Jacques Cousteau",200,
+Natura,🌊 Historia de la Exploración Oceánica,🌊,5,Apprendista,Submarinos Militares,Guerras mundiales,200,
+Natura,🌊 Historia de la Exploración Oceánica,🌊,6,Apprendista,Exploración Científica Moderna,"ROVs, Argo",200,🥈 Distintivo d'Argento
+Natura,🌊 Historia de la Exploración Oceánica,🌊,7,Intenditore,Recursos del Fondo Marino,"Minerales, ecosistemas",350,
+Natura,🌊 Historia de la Exploración Oceánica,🌊,8,Intenditore,Pecios y Tesoro,Naufragios famosos,350,🥇 Distintivo d'Oro
+Natura,🌊 Historia de la Exploración Oceánica,🌊,9,Esperto,Conservación de Océanos,Amenazas y soluciones,500,
+Natura,🌊 Historia de la Exploración Oceánica,🌊,10,Esperto,Colonización del Océano,Ciudades submarinas,500,💎 Distintivo di Diamante
+Scienza,🗺️ Historia de la Cartografía,🗺️,1,Esploratore,Primeros Mapas,"Cuevas, tablillas",100,
+Scienza,🗺️ Historia de la Cartografía,🗺️,2,Esploratore,Mapas Antiguos,"Ptolomeo, mapas del mundo",100,
+Scienza,🗺️ Historia de la Cartografía,🗺️,3,Esploratore,Edad de los Descubrimientos,Mapas náuticos,100,🥉 Distintivo di Bronzo
+Scienza,🗺️ Historia de la Cartografía,🗺️,4,Apprendista,Proyecciones y Distorsiones,"Mercator, alternativas",200,
+Scienza,🗺️ Historia de la Cartografía,🗺️,5,Apprendista,Mapas Temáticos,"Clima, población",200,
+Scienza,🗺️ Historia de la Cartografía,🗺️,6,Apprendista,Fotografía Aérea y Satélites,Nueva era de mapas,200,🥈 Distintivo d'Argento
+Scienza,🗺️ Historia de la Cartografía,🗺️,7,Intenditore,Sistemas de Información Geográfica,GIS,350,
+Scienza,🗺️ Historia de la Cartografía,🗺️,8,Intenditore,Mapas en la Vida Cotidiana,"GPS, apps",350,🥇 Distintivo d'Oro
+Scienza,🗺️ Historia de la Cartografía,🗺️,9,Esperto,Mapas y Poder,"Propaganda, reclamaciones",500,
+Scienza,🗺️ Historia de la Cartografía,🗺️,10,Esperto,Cartografía del Futuro,"Realidad aumentada, 3D",500,💎 Distintivo di Diamante
+Società,🏠 Historia del Trabajo Doméstico,🏠,1,Esploratore,Economía Doméstica Tradicional,Trabajo invisible,100,
+Società,🏠 Historia del Trabajo Doméstico,🏠,2,Esploratore,Industrialización y Hogar,Cambios de rol,100,
+Società,🏠 Historia del Trabajo Doméstico,🏠,3,Esploratore,Electrodomésticos,Revolución silenciosa,100,🥉 Distintivo di Bronzo
+Società,🏠 Historia del Trabajo Doméstico,🏠,4,Apprendista,División Sexual del Trabajo,Normas culturales,200,
+Società,🏠 Historia del Trabajo Doméstico,🏠,5,Apprendista,Trabajo de Cuidados,"Niños, mayores",200,
+Società,🏠 Historia del Trabajo Doméstico,🏠,6,Apprendista,Trabajadoras del Hogar,Derechos y luchas,200,🥈 Distintivo d'Argento
+Società,🏠 Historia del Trabajo Doméstico,🏠,7,Intenditore,Externalización del Trabajo Doméstico,"Servicios, limpieza",350,
+Società,🏠 Historia del Trabajo Doméstico,🏠,8,Intenditore,Tecnología y Hogar Inteligente,Domótica,350,🥇 Distintivo d'Oro
+Società,🏠 Historia del Trabajo Doméstico,🏠,9,Esperto,Valor Económico del Trabajo No Remunerado,Cálculos y debates,500,
+Società,🏠 Historia del Trabajo Doméstico,🏠,10,Esperto,Futuro del Hogar Automatizado,Robots domésticos,500,💎 Distintivo di Diamante
+Società,✈️ Historia del Turismo,✈️,1,Esploratore,Peregrinajes y Viajes Antiguos,Motivaciones tempranas,100,
+Società,✈️ Historia del Turismo,✈️,2,Esploratore,Grand Tour y Viaje Aristocrático,Siglos XVII-XVIII,100,
+Società,✈️ Historia del Turismo,✈️,3,Esploratore,Nacimiento del Turismo de Masas,"Trenes, vacaciones pagadas",100,🥉 Distintivo di Bronzo
+Società,✈️ Historia del Turismo,✈️,4,Apprendista,Turismo de Sol y Playa,Desarrollo costero,200,
+Società,✈️ Historia del Turismo,✈️,5,Apprendista,Turismo Cultural y Urbano,Ciudades icónicas,200,
+Società,✈️ Historia del Turismo,✈️,6,Apprendista,Turismo de Naturaleza y Aventura,Ecoturismo,200,🥈 Distintivo d'Argento
+Società,✈️ Historia del Turismo,✈️,7,Intenditore,Impacto del Turismo,"Economía, gentrificación",350,
+Società,✈️ Historia del Turismo,✈️,8,Intenditore,Turismo Sostenible,Buenas prácticas,350,🥇 Distintivo d'Oro
+Società,✈️ Historia del Turismo,✈️,9,Esperto,Turismo en Crisis,"Guerras, pandemias",500,
+Società,✈️ Historia del Turismo,✈️,10,Esperto,Turismo del Futuro,"Virtual, espacial",500,💎 Distintivo di Diamante
+Società,📻 Historia de los Medios de Comunicación,📻,1,Esploratore,Oralidad y Manuscritos,Tradición oral,100,
+Società,📻 Historia de los Medios de Comunicación,📻,2,Esploratore,Imprenta y Libros,Revolución de Gutenberg,100,
+Società,📻 Historia de los Medios de Comunicación,📻,3,Esploratore,Prensa y Opinión Pública,Periódicos,100,🥉 Distintivo di Bronzo
+Società,📻 Historia de los Medios de Comunicación,📻,4,Apprendista,Radio,Voces a distancia,200,
+Società,📻 Historia de los Medios de Comunicación,📻,5,Apprendista,Televisión,Imagen en casa,200,
+Società,📻 Historia de los Medios de Comunicación,📻,6,Apprendista,Internet y Redes,Medios digitales,200,🥈 Distintivo d'Argento
+Società,📻 Historia de los Medios de Comunicación,📻,7,Intenditore,Concentración Mediática,Grandes grupos,350,
+Società,📻 Historia de los Medios de Comunicación,📻,8,Intenditore,Fake News y Desinformación,Retos actuales,350,🥇 Distintivo d'Oro
+Società,📻 Historia de los Medios de Comunicación,📻,9,Esperto,Periodismo de Datos,Nuevas formas de contar,500,
+Società,📻 Historia de los Medios de Comunicación,📻,10,Esperto,Medios del Futuro,"Realidad mixta, IA",500,💎 Distintivo di Diamante
+Scienza,🌍 Historia del Clima de la Tierra,🌍,1,Esploratore,Eras Geológicas,Resumen de grandes periodos,100,
+Scienza,🌍 Historia del Clima de la Tierra,🌍,2,Esploratore,Glaciaciones,Edades de hielo,100,
+Scienza,🌍 Historia del Clima de la Tierra,🌍,3,Esploratore,Períodos Cálidos,Tiempos sin hielo,100,🥉 Distintivo di Bronzo
+Scienza,🌍 Historia del Clima de la Tierra,🌍,4,Apprendista,Cómo Sabemos del Clima Pasado,"Testigos de hielo, sedimentos",200,
+Scienza,🌍 Historia del Clima de la Tierra,🌍,5,Apprendista,Clima y Grandes Extinciones,Relaciones,200,
+Scienza,🌍 Historia del Clima de la Tierra,🌍,6,Apprendista,Clima y Civilizaciones,Colapsos y prosperidad,200,🥈 Distintivo d'Argento
+Scienza,🌍 Historia del Clima de la Tierra,🌍,7,Intenditore,Era Industrial y Cambio Climático,"CO2, forzamientos",350,
+Scienza,🌍 Historia del Clima de la Tierra,🌍,8,Intenditore,Modelos Climáticos,Simulaciones y escenarios,350,🥇 Distintivo d'Oro
+Scienza,🌍 Historia del Clima de la Tierra,🌍,9,Esperto,Puntos de No Retorno,Riesgos sistémicos,500,
+Scienza,🌍 Historia del Clima de la Tierra,🌍,10,Esperto,Futuros Climáticos,Trayectorias posibles,500,💎 Distintivo di Diamante
+Tecnologia,💻 Historia de la Informática Personal,💻,1,Esploratore,Primeros PCs,"Altair, Apple I",100,
+Tecnologia,💻 Historia de la Informática Personal,💻,2,Esploratore,Revolución del PC de Escritorio,"IBM PC, compatibles",100,
+Tecnologia,💻 Historia de la Informática Personal,💻,3,Esploratore,Interfaces Gráficas,"Macintosh, Windows",100,🥉 Distintivo di Bronzo
+Tecnologia,💻 Historia de la Informática Personal,💻,4,Apprendista,Portátiles y Movilidad,Laptops,200,
+Tecnologia,💻 Historia de la Informática Personal,💻,5,Apprendista,Internet en Casa,"Módems, banda ancha",200,
+Tecnologia,💻 Historia de la Informática Personal,💻,6,Apprendista,Smartphones,"iPhone, Android",200,🥈 Distintivo d'Argento
+Tecnologia,💻 Historia de la Informática Personal,💻,7,Intenditore,Tablets y Dispositivos Híbridos,Nuevas formas,350,
+Tecnologia,💻 Historia de la Informática Personal,💻,8,Intenditore,Ecosistemas y Jardines Cerrados,App stores,350,🥇 Distintivo d'Oro
+Tecnologia,💻 Historia de la Informática Personal,💻,9,Esperto,Informática Ubicua,IoT,500,
+Tecnologia,💻 Historia de la Informática Personal,💻,10,Esperto,Humanos Aumentados,Wearables avanzados,500,💎 Distintivo di Diamante
+Società,🍎 Historia de la Educación,🍎,1,Esploratore,Educación en Sociedades Antiguas,Aprendizaje maestro-discípulo,100,
+Società,🍎 Historia de la Educación,🍎,2,Esploratore,Universidades Medievales,"Bolonia, París",100,
+Società,🍎 Historia de la Educación,🍎,3,Esploratore,Escuela Pública,Sistemas nacionales,100,🥉 Distintivo di Bronzo
+Società,🍎 Historia de la Educación,🍎,4,Apprendista,Metodologías Clásicas,"Memorización, examen",200,
+Società,🍎 Historia de la Educación,🍎,5,Apprendista,Pedagogías Activas,"Montessori, Freinet",200,
+Società,🍎 Historia de la Educación,🍎,6,Apprendista,Educación Masiva y Online,MOOCs,200,🥈 Distintivo d'Argento
+Società,🍎 Historia de la Educación,🍎,7,Intenditore,Brecha Educativa Global,Acceso desigual,350,
+Società,🍎 Historia de la Educación,🍎,8,Intenditore,Evaluación y Métricas,"Notas, estandarización",350,🥇 Distintivo d'Oro
+Società,🍎 Historia de la Educación,🍎,9,Esperto,Aprendizaje Personalizado,Datos y adaptación,500,
+Società,🍎 Historia de la Educación,🍎,10,Esperto,Educación del Futuro,"Lifelong learning, IA",500,💎 Distintivo di Diamante
+Umanistiche,⛪ Historia de la Arquitectura Sagrada,⛪,1,Esploratore,Templos Antiguos,"Egipto, Grecia",100,
+Umanistiche,⛪ Historia de la Arquitectura Sagrada,⛪,2,Esploratore,Basílicas y Catedrales,Cristianismo,100,
+Umanistiche,⛪ Historia de la Arquitectura Sagrada,⛪,3,Esploratore,Mezquitas y Arquitectura Islámica,Elementos clave,100,🥉 Distintivo di Bronzo
+Umanistiche,⛪ Historia de la Arquitectura Sagrada,⛪,4,Apprendista,Pagodas y Templos Asiáticos,"Budismo, taoísmo",200,
+Umanistiche,⛪ Historia de la Arquitectura Sagrada,⛪,5,Apprendista,Arquitectura Sagrada en América,Pirámides mesoamericanas,200,
+Umanistiche,⛪ Historia de la Arquitectura Sagrada,⛪,6,Apprendista,Símbolos y Orientaciones,Geometría sagrada,200,🥈 Distintivo d'Argento
+Umanistiche,⛪ Historia de la Arquitectura Sagrada,⛪,7,Intenditore,Transformaciones y Reutilizaciones,Edificios cambiando de culto,350,
+Umanistiche,⛪ Historia de la Arquitectura Sagrada,⛪,8,Intenditore,Arquitectura Sagrada Contemporánea,Innovaciones,350,🥇 Distintivo d'Oro
+Umanistiche,⛪ Historia de la Arquitectura Sagrada,⛪,9,Esperto,Turismo y Comercialización,Espacios sacros como atracciones,500,
+Umanistiche,⛪ Historia de la Arquitectura Sagrada,⛪,10,Esperto,Espiritualidad y Espacios del Futuro,Nuevos templos,500,💎 Distintivo di Diamante
+Scienza,🧪 Historia de la Biotecnología,🧪,1,Esploratore,Fermentación y Usos Antiguos,"Pan, vino",100,
+Scienza,🧪 Historia de la Biotecnología,🧪,2,Esploratore,Descubrimiento de Microorganismos,Microscopios,100,
+Scienza,🧪 Historia de la Biotecnología,🧪,3,Esploratore,Genética Clásica,Mendel,100,🥉 Distintivo di Bronzo
+Scienza,🧪 Historia de la Biotecnología,🧪,4,Apprendista,ADN y Doble Hélice,Watson y Crick,200,
+Scienza,🧪 Historia de la Biotecnología,🧪,5,Apprendista,Ingeniería Genética,ADN recombinante,200,
+Scienza,🧪 Historia de la Biotecnología,🧪,6,Apprendista,Biotecnología Industrial,"Farmacia, alimentos",200,🥈 Distintivo d'Argento
+Scienza,🧪 Historia de la Biotecnología,🧪,7,Intenditore,"Biotecnología Roja, Verde y Blanca","Salud, agricultura, industria",350,
+Scienza,🧪 Historia de la Biotecnología,🧪,8,Intenditore,Bioética,Dilemas,350,🥇 Distintivo d'Oro
+Scienza,🧪 Historia de la Biotecnología,🧪,9,Esperto,CRISPR y Edición Precisa,Revolución reciente,500,
+Scienza,🧪 Historia de la Biotecnología,🧪,10,Esperto,Biología Sintética,Diseñar vida,500,💎 Distintivo di Diamante

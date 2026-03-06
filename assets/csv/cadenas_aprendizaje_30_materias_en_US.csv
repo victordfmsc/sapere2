@@ -1,0 +1,901 @@
+﻿Category,Subject,Icon,Episode No,Level,Episode Title,Description,Base XP,Badge
+Science,🔭 Astronomy and Space,🔭,1,Explorer,El Solar System,"Planetas, lunas, órbitas básicas",100,
+Science,🔭 Astronomy and Space,🔭,2,Explorer,Estrellas y Constelaciones,"Tipos de estrellas, ciclo estelar",100,
+Science,🔭 Astronomy and Space,🔭,3,Explorer,La Luna y las Mareas,"Fases lunares, influencia terrestre",100,🥉 Bronze Badge
+Science,🔭 Astronomy and Space,🔭,4,Apprentice,Galaxias y Nebulosas,"Vía Láctea, tipos de galaxias",200,
+Science,🔭 Astronomy and Space,🔭,5,Apprentice,Exploración Espacial,History of la carrera espacial,200,
+Science,🔭 Astronomy and Space,🔭,6,Apprentice,Agujeros Negros,"Formación, horizonte de eventos",200,🥈 Silver Badge
+Science,🔭 Astronomy and Space,🔭,7,Connoisseur,Cosmología del Big Bang,"Origen del universo, radiación cósmica",350,
+Science,🔭 Astronomy and Space,🔭,8,Connoisseur,Exoplanetas y Vida,"Zona habitable, búsqueda de vida",350,🥇 Gold Badge
+Science,🔭 Astronomy and Space,🔭,9,Expert,Materia y Energía Oscura,Composición oculta del universo,500,
+Science,🔭 Astronomy and Space,🔭,10,Expert,El Future del Cosmos,"Destino del universo, teorías finales",500,💎 Diamond Badge
+History,🏛️ Ancient History,🏛️,1,Explorer,Mesopotamia: Cuna de la Civilización,"Sumerios, escritura cuneiforme",100,
+History,🏛️ Ancient History,🏛️,2,Explorer,Egipto: El Nilo y los Faraones,"Pirámides, momificación, jeroglíficos",100,
+History,🏛️ Ancient History,🏛️,3,Explorer,Grecia: Democracia y Filosofía,"Atenas, Esparta, pensadores",100,🥉 Bronze Badge
+History,🏛️ Ancient History,🏛️,4,Apprentice,Roma: República e Imperio,"Legiones, ingeniería, derecho romano",200,
+History,🏛️ Ancient History,🏛️,5,Apprentice,China: Dinastías Imperiales,"Gran Muralla, Ruta de la Seda",200,
+History,🏛️ Ancient History,🏛️,6,Apprentice,India: Civilización del Indo,"Harappa, vedas, castas",200,🥈 Silver Badge
+History,🏛️ Ancient History,🏛️,7,Connoisseur,Persia y los Grandes Imperios,"Ciro, Darío, guerras médicas",350,
+History,🏛️ Ancient History,🏛️,8,Connoisseur,Civilizaciones Precolombinas,"Maya, Azteca, Inca",350,🥇 Gold Badge
+History,🏛️ Ancient History,🏛️,9,Expert,Caída de los Imperios,Patrones de colapso civilizatorio,500,
+History,🏛️ Ancient History,🏛️,10,Expert,Legado Antiguo en el Mundo Moderno,Influencias actuales del mundo antiguo,500,💎 Diamond Badge
+Science,🧠 Neuroscience,🧠,1,Explorer,El Cerebro: Mapa Básico,"Lóbulos, hemisferios, funciones",100,
+Science,🧠 Neuroscience,🧠,2,Explorer,Neuronas y Sinapsis,Comunicación neuronal básica,100,
+Science,🧠 Neuroscience,🧠,3,Explorer,Los Sentidos,Cómo el cerebro procesa el mundo,100,🥉 Bronze Badge
+Science,🧠 Neuroscience,🧠,4,Apprentice,Memoria y Aprendizaje,"Tipos de memoria, neuroplasticidad",200,
+Science,🧠 Neuroscience,🧠,5,Apprentice,Emociones y el Cerebro,"Sistema límbico, amígdala",200,
+Science,🧠 Neuroscience,🧠,6,Apprentice,El Sueño y los Sueños,"Ciclos REM, función reparadora",200,🥈 Silver Badge
+Science,🧠 Neuroscience,🧠,7,Connoisseur,Neuroquímica,"Dopamina, serotonina, endorfinas",350,
+Science,🧠 Neuroscience,🧠,8,Connoisseur,Trastornos Neurológicos,"Alzheimer, Parkinson, epilepsia",350,🥇 Gold Badge
+Science,🧠 Neuroscience,🧠,9,Expert,Conciencia y Libre Albedrío,El misterio de la conciencia,500,
+Science,🧠 Neuroscience,🧠,10,Expert,Neurotecnología del Future,"Interfaces cerebro-máquina, IA neural",500,💎 Diamond Badge
+Technology,🤖 Inteligencia Artificial,🤖,1,Explorer,¿Qué es la IA?,"Conceptos básicos, historia",100,
+Technology,🤖 Inteligencia Artificial,🤖,2,Explorer,Machine Learning 101,Aprendizaje supervisado y no supervisado,100,
+Technology,🤖 Inteligencia Artificial,🤖,3,Explorer,Redes Neuronales,Cómo aprende una máquina,100,🥉 Bronze Badge
+Technology,🤖 Inteligencia Artificial,🤖,4,Apprentice,Procesamiento del Lenguaje,"NLP, chatbots, traducción",200,
+Technology,🤖 Inteligencia Artificial,🤖,5,Apprentice,Visión por Computador,Reconocimiento de imágenes,200,
+Technology,🤖 Inteligencia Artificial,🤖,6,Apprentice,IA Generativa,"GPT, DALL-E, creación de contenido",200,🥈 Silver Badge
+Technology,🤖 Inteligencia Artificial,🤖,7,Connoisseur,IA en la Industria,"Aplicaciones reales, transformación",350,
+Technology,🤖 Inteligencia Artificial,🤖,8,Connoisseur,Ética de la IA,"Sesgos, privacidad, regulación",350,🥇 Gold Badge
+Technology,🤖 Inteligencia Artificial,🤖,9,Expert,IA General (AGI),Camino hacia la superinteligencia,500,
+Technology,🤖 Inteligencia Artificial,🤖,10,Expert,El Future IA-Humano,"Coexistencia, singularidad tecnológica",500,💎 Diamond Badge
+Society,💰 Economía y Finanzas,💰,1,Explorer,Oferta y Demanda,Principios básicos del mercado,100,
+Society,💰 Economía y Finanzas,💰,2,Explorer,El Dinero y la Banca,"History ofl dinero, sistema bancario",100,
+Society,💰 Economía y Finanzas,💰,3,Explorer,Inflación y Precios,Por qué sube el coste de la vida,100,🥉 Bronze Badge
+Society,💰 Economía y Finanzas,💰,4,Apprentice,Mercados Bursátiles,"Bolsa, acciones, índices",200,
+Society,💰 Economía y Finanzas,💰,5,Apprentice,Comercio Internacional,"Globalización, aranceles, tratados",200,
+Society,💰 Economía y Finanzas,💰,6,Apprentice,Criptomonedas y Blockchain,"Bitcoin, tecnología descentralizada",200,🥈 Silver Badge
+Society,💰 Economía y Finanzas,💰,7,Connoisseur,Crisis Económicas,"Grandes recesiones, patrones",350,
+Society,💰 Economía y Finanzas,💰,8,Connoisseur,Política Monetaria,"Bancos centrales, tipos de interés",350,🥇 Gold Badge
+Society,💰 Economía y Finanzas,💰,9,Expert,Economía Conductual,Psicología de las decisiones financieras,500,
+Society,💰 Economía y Finanzas,💰,10,Expert,El Future de la Economía,"Post-capitalismo, economía circular",500,💎 Diamond Badge
+Nature,🐋 Biología Marina,🐋,1,Explorer,Los Océanos del Mundo,"Geografía oceánica, corrientes",100,
+Nature,🐋 Biología Marina,🐋,2,Explorer,Arrecifes de Coral,"Ecosistemas submarinos, biodiversidad",100,
+Nature,🐋 Biología Marina,🐋,3,Explorer,Grandes Mamíferos Marinos,"Ballenas, delfines, comunicación",100,🥉 Bronze Badge
+Nature,🐋 Biología Marina,🐋,4,Apprentice,El Abismo: Vida en las Profundidades,"Criaturas abisales, bioluminiscencia",200,
+Nature,🐋 Biología Marina,🐋,5,Apprentice,Tiburones: Depredadores del Mar,"Especies, mitos y realidades",200,
+Nature,🐋 Biología Marina,🐋,6,Apprentice,Migraciones Oceánicas,"Rutas, instintos, supervivencia",200,🥈 Silver Badge
+Nature,🐋 Biología Marina,🐋,7,Connoisseur,Contaminación Marina,"Plásticos, acidificación, soluciones",350,
+Nature,🐋 Biología Marina,🐋,8,Connoisseur,Oceanografía y Clima,El océano como regulador climático,350,🥇 Gold Badge
+Nature,🐋 Biología Marina,🐋,9,Expert,Biología Molecular Marina,Genética de organismos marinos,500,
+Nature,🐋 Biología Marina,🐋,10,Expert,El Océano del Future,"Conservación, explotación sostenible",500,💎 Diamond Badge
+Society,🧩 Psicología Humana,🧩,1,Explorer,Introducción a la Psicología,"Corrientes, Freud, conductismo",100,
+Society,🧩 Psicología Humana,🧩,2,Explorer,Personalidad y Temperamento,"Big Five, tipos psicológicos",100,
+Society,🧩 Psicología Humana,🧩,3,Explorer,Percepción y Atención,"Ilusiones, sesgos perceptivos",100,🥉 Bronze Badge
+Society,🧩 Psicología Humana,🧩,4,Apprentice,Psicología Social,"Conformidad, obediencia, grupos",200,
+Society,🧩 Psicología Humana,🧩,5,Apprentice,Motivación y Hábitos,"Ciclos de hábitos, motivación intrínseca",200,
+Society,🧩 Psicología Humana,🧩,6,Apprentice,Toma de Decisiones,"Heurísticas, sesgos cognitivos",200,🥈 Silver Badge
+Society,🧩 Psicología Humana,🧩,7,Connoisseur,Psicología del Desarrollo,"Infancia a vejez, etapas clave",350,
+Society,🧩 Psicología Humana,🧩,8,Connoisseur,Trastornos Mentales,"Ansiedad, depresión, esquizofrenia",350,🥇 Gold Badge
+Society,🧩 Psicología Humana,🧩,9,Expert,Psicología Positiva,"Flow, resiliencia, bienestar",500,
+Society,🧩 Psicología Humana,🧩,10,Expert,Manipulación y Persuasión,"Técnicas, propaganda, defensa crítica",500,💎 Diamond Badge
+Science,⚛️ Física Fundamental,⚛️,1,Explorer,Las Leyes de Newton,"Movimiento, fuerza, gravedad",100,
+Science,⚛️ Física Fundamental,⚛️,2,Explorer,Energía y Termodinámica,"Conservación, calor, entropía",100,
+Science,⚛️ Física Fundamental,⚛️,3,Explorer,Ondas y Sonido,"Vibraciones, frecuencia, música",100,🥉 Bronze Badge
+Science,⚛️ Física Fundamental,⚛️,4,Apprentice,Electricidad y Magnetismo,"Campos, corriente, Maxwell",200,
+Science,⚛️ Física Fundamental,⚛️,5,Apprentice,Relatividad de Einstein,"Espacio-tiempo, E=mc²",200,
+Science,⚛️ Física Fundamental,⚛️,6,Apprentice,Física Nuclear,"Átomos, radiactividad, fisión",200,🥈 Silver Badge
+Science,⚛️ Física Fundamental,⚛️,7,Connoisseur,Mecánica Cuántica,"Dualidad onda-partícula, incertidumbre",350,
+Science,⚛️ Física Fundamental,⚛️,8,Connoisseur,Partículas Subatómicas,"Quarks, bosón de Higgs, modelo estándar",350,🥇 Gold Badge
+Science,⚛️ Física Fundamental,⚛️,9,Expert,Teoría de Cuerdas,"Dimensiones extra, unificación",500,
+Science,⚛️ Física Fundamental,⚛️,10,Expert,Los Misterios Sin Resolver,"Gravedad cuántica, multiverso",500,💎 Diamond Badge
+Humanities,💭 Filosofía,💭,1,Explorer,Sócrates y el Arte de Preguntar,"Método socrático, mayéutica",100,
+Humanities,💭 Filosofía,💭,2,Explorer,Platón y las Ideas,"Mundo ideal, alegoría de la caverna",100,
+Humanities,💭 Filosofía,💭,3,Explorer,Aristóteles: Lógica y Ética,"Silogismo, virtud, eudaimonía",100,🥉 Bronze Badge
+Humanities,💭 Filosofía,💭,4,Apprentice,Filosofía Medieval,"San Agustín, Santo Tomás, fe y razón",200,
+Humanities,💭 Filosofía,💭,5,Apprentice,Racionalismo vs Empirismo,"Descartes, Hume, conocimiento",200,
+Humanities,💭 Filosofía,💭,6,Apprentice,Kant y la Ilustración,"Imperativo categórico, crítica",200,🥈 Silver Badge
+Humanities,💭 Filosofía,💭,7,Connoisseur,Existencialismo,"Nietzsche, Sartre, libertad radical",350,
+Humanities,💭 Filosofía,💭,8,Connoisseur,Filosofía Oriental,"Confucio, Buda, Lao-Tse",350,🥇 Gold Badge
+Humanities,💭 Filosofía,💭,9,Expert,Filosofía del Lenguaje y la Mente,"Wittgenstein, conciencia, IA",500,
+Humanities,💭 Filosofía,💭,10,Expert,Ética Contemporánea,"Bioética, justicia global, transhumanismo",500,💎 Diamond Badge
+Science,🧬 Evolución y Genética,🧬,1,Explorer,Darwin y la Selección Natural,"Teoría de la evolución, Galápagos",100,
+Science,🧬 Evolución y Genética,🧬,2,Explorer,ADN: El Código de la Vida,"Estructura, genes, cromosomas",100,
+Science,🧬 Evolución y Genética,🧬,3,Explorer,Herencia y Mendel,"Leyes de la herencia, rasgos",100,🥉 Bronze Badge
+Science,🧬 Evolución y Genética,🧬,4,Apprentice,Evolución Humana,Australopithecus a Homo sapiens,200,
+Science,🧬 Evolución y Genética,🧬,5,Apprentice,Mutaciones y Adaptación,Motor del cambio evolutivo,200,
+Science,🧬 Evolución y Genética,🧬,6,Apprentice,Extinción y Especiación,"Extinciones masivas, nueva vida",200,🥈 Silver Badge
+Science,🧬 Evolución y Genética,🧬,7,Connoisseur,Genómica y Proteómica,"Proyecto Genoma, secuenciación",350,
+Science,🧬 Evolución y Genética,🧬,8,Connoisseur,Epigenética,Genes que se encienden y apagan,350,🥇 Gold Badge
+Science,🧬 Evolución y Genética,🧬,9,Expert,CRISPR y Edición Genética,"Terapia génica, bebés diseñados",500,
+Science,🧬 Evolución y Genética,🧬,10,Expert,Biología Sintética,"Crear vida artificial, futuro genético",500,💎 Diamond Badge
+Society,🌍 Geopolítica Mundial,🌍,1,Explorer,¿Qué es la Geopolítica?,"Conceptos, poder, territorios",100,
+Society,🌍 Geopolítica Mundial,🌍,2,Explorer,Las Grandes Potencias,"EE.UU., China, Rusia, UE",100,
+Society,🌍 Geopolítica Mundial,🌍,3,Explorer,Conflictos Territoriales,"Fronteras disputadas, recursos",100,🥉 Bronze Badge
+Society,🌍 Geopolítica Mundial,🌍,4,Apprentice,La Guerra Fría,"Bipolaridad, proxy wars, caída del muro",200,
+Society,🌍 Geopolítica Mundial,🌍,5,Apprentice,Oriente Medio,"Petróleo, religión, conflictos",200,
+Society,🌍 Geopolítica Mundial,🌍,6,Apprentice,El Ascenso de China,"Ruta de la Seda, influencia global",200,🥈 Silver Badge
+Society,🌍 Geopolítica Mundial,🌍,7,Connoisseur,Organizaciones Internacionales,"ONU, OTAN, G20, poder blando",350,
+Society,🌍 Geopolítica Mundial,🌍,8,Connoisseur,Ciberguerra y Espionaje,"Guerra híbrida, desinformación",350,🥇 Gold Badge
+Society,🌍 Geopolítica Mundial,🌍,9,Expert,Recursos y Guerras del Future,"Agua, litio, tierras raras",500,
+Society,🌍 Geopolítica Mundial,🌍,10,Expert,Nuevo Orden Mundial,"Multipolaridad, escenarios 2050",500,💎 Diamond Badge
+Humanities,🎨 Arte y Grandes Maestros,🎨,1,Explorer,Arte Prehistórico y Antiguo,"Altamira, Egipto, Grecia",100,
+Humanities,🎨 Arte y Grandes Maestros,🎨,2,Explorer,El Renacimiento,"Da Vinci, Miguel Ángel, Botticelli",100,
+Humanities,🎨 Arte y Grandes Maestros,🎨,3,Explorer,Barroco y Clasicismo,"Caravaggio, Velázquez, Rembrandt",100,🥉 Bronze Badge
+Humanities,🎨 Arte y Grandes Maestros,🎨,4,Apprentice,Impresionismo,"Monet, Renoir, luz y color",200,
+Humanities,🎨 Arte y Grandes Maestros,🎨,5,Apprentice,Vanguardias del Siglo XX,"Picasso, Dalí, Kandinsky",200,
+Humanities,🎨 Arte y Grandes Maestros,🎨,6,Apprentice,Arte Contemporáneo,"Pop Art, minimalismo, Banksy",200,🥈 Silver Badge
+Humanities,🎨 Arte y Grandes Maestros,🎨,7,Connoisseur,Fotografía como Arte,"Historia, maestros, revolución digital",350,
+Humanities,🎨 Arte y Grandes Maestros,🎨,8,Connoisseur,Grandes Museos del Mundo,"Louvre, MoMA, Prado, Hermitage",350,🥇 Gold Badge
+Humanities,🎨 Arte y Grandes Maestros,🎨,9,Expert,El Mercado del Arte,"Subastas, falsificaciones, inversión",500,
+Humanities,🎨 Arte y Grandes Maestros,🎨,10,Expert,Arte y Tecnología: IA Creativa,"Arte generativo, NFTs, debate",500,💎 Diamond Badge
+Nature,🌡️ Cambio Climático,🌡️,1,Explorer,El Efecto Invernadero,"CO₂, gases, calentamiento",100,
+Nature,🌡️ Cambio Climático,🌡️,2,Explorer,History ofl Clima en la Tierra,"Eras glaciales, ciclos naturales",100,
+Nature,🌡️ Cambio Climático,🌡️,3,Explorer,Impacto Humano,"Industria, transporte, deforestación",100,🥉 Bronze Badge
+Nature,🌡️ Cambio Climático,🌡️,4,Apprentice,Deshielo y Nivel del Mar,"Polos, glaciares, ciudades en riesgo",200,
+Nature,🌡️ Cambio Climático,🌡️,5,Apprentice,Fenómenos Extremos,"Huracanes, sequías, olas de calor",200,
+Nature,🌡️ Cambio Climático,🌡️,6,Apprentice,Biodiversidad Amenazada,"Sexta extinción, ecosistemas en peligro",200,🥈 Silver Badge
+Nature,🌡️ Cambio Climático,🌡️,7,Connoisseur,Energías Renovables,"Solar, eólica, hidrógeno verde",350,
+Nature,🌡️ Cambio Climático,🌡️,8,Connoisseur,Acuerdos y Política Climática,"París, COP, compromisos nacionales",350,🥇 Gold Badge
+Nature,🌡️ Cambio Climático,🌡️,9,Expert,Geoingeniería,"Soluciones radicales, riesgos",500,
+Nature,🌡️ Cambio Climático,🌡️,10,Expert,Escenarios 2050-2100,"Modelos climáticos, futuros posibles",500,💎 Diamond Badge
+History,🧭 Exploración y Aventura,🧭,1,Explorer,Los Grandes Navegantes,"Colón, Magallanes, Vasco de Gama",100,
+History,🧭 Exploración y Aventura,🧭,2,Explorer,Conquista de los Polos,"Amundsen, Scott, Shackleton",100,
+History,🧭 Exploración y Aventura,🧭,3,Explorer,Exploradores del Mundo Antiguo,"Marco Polo, Ibn Battuta, Zheng He",100,🥉 Bronze Badge
+History,🧭 Exploración y Aventura,🧭,4,Apprentice,La Carrera Espacial,"Gagarin, Apollo 11, MIR",200,
+History,🧭 Exploración y Aventura,🧭,5,Apprentice,Expediciones Submarinas,"Cousteau, Mariana, océanos profundos",200,
+History,🧭 Exploración y Aventura,🧭,6,Apprentice,Exploración de Selvas y Desiertos,"Amazonia, Sahara, expediciones perdidas",200,🥈 Silver Badge
+History,🧭 Exploración y Aventura,🧭,7,Connoisseur,Montañismo Extremo,"Everest, K2, historia alpina",350,
+History,🧭 Exploración y Aventura,🧭,8,Connoisseur,Arqueología Aventurera,"Tutankamón, Machu Picchu, Pompeya",350,🥇 Gold Badge
+History,🧭 Exploración y Aventura,🧭,9,Expert,Exploración Robótica,"Marte, drones submarinos, cuevas",500,
+History,🧭 Exploración y Aventura,🧭,10,Expert,Próximas Fronteras,"Colonización espacial, océano profundo",500,💎 Diamond Badge
+Health,🥗 Nutrición y Alimentación,🥗,1,Explorer,Macronutrientes,"Proteínas, carbohidratos, grasas",100,
+Health,🥗 Nutrición y Alimentación,🥗,2,Explorer,Vitaminas y Minerales,Micronutrientes esenciales,100,
+Health,🥗 Nutrición y Alimentación,🥗,3,Explorer,Digestión y Metabolismo,Cómo tu cuerpo procesa los alimentos,100,🥉 Bronze Badge
+Health,🥗 Nutrición y Alimentación,🥗,4,Apprentice,Dietas del Mundo,"Mediterránea, asiática, nórdica",200,
+Health,🥗 Nutrición y Alimentación,🥗,5,Apprentice,Mitos Nutricionales,Desmentir creencias falsas,200,
+Health,🥗 Nutrición y Alimentación,🥗,6,Apprentice,Microbioma Intestinal,"Bacterias buenas, segundo cerebro",200,🥈 Silver Badge
+Health,🥗 Nutrición y Alimentación,🥗,7,Connoisseur,Nutrición Deportiva,"Rendimiento, suplementos, recuperación",350,
+Health,🥗 Nutrición y Alimentación,🥗,8,Connoisseur,Alimentos del Future,"Insectos, carne de laboratorio, algas",350,🥇 Gold Badge
+Health,🥗 Nutrición y Alimentación,🥗,9,Expert,Nutrigenómica,ADN y alimentación personalizada,500,
+Health,🥗 Nutrición y Alimentación,🥗,10,Expert,Hambre Global y Sostenibilidad,"Seguridad alimentaria, soluciones",500,💎 Diamond Badge
+Humanities,🎵 Música: Historia y Teoría,🎵,1,Explorer,Los Orígenes de la Música,"Instrumentos prehistóricos, primeras melodías",100,
+Humanities,🎵 Música: Historia y Teoría,🎵,2,Explorer,Música Clásica: Los Grandes,"Bach, Mozart, Beethoven",100,
+Humanities,🎵 Música: Historia y Teoría,🎵,3,Explorer,"Ritmo, Melodía y Armonía",Fundamentos de la teoría musical,100,🥉 Bronze Badge
+Humanities,🎵 Música: Historia y Teoría,🎵,4,Apprentice,Jazz y Blues,"Nueva Orleans, improvisación, soul",200,
+Humanities,🎵 Música: Historia y Teoría,🎵,5,Apprentice,Rock and Roll,"Elvis, Beatles, revolución cultural",200,
+Humanities,🎵 Música: Historia y Teoría,🎵,6,Apprentice,Música Electrónica,"Sintetizadores, DJs, géneros",200,🥈 Silver Badge
+Humanities,🎵 Música: Historia y Teoría,🎵,7,Connoisseur,Música del Mundo,"Flamenco, raga, samba, gamelan",350,
+Humanities,🎵 Música: Historia y Teoría,🎵,8,Connoisseur,La Industria Musical,"Discográficas, streaming, negocio",350,🥇 Gold Badge
+Humanities,🎵 Música: Historia y Teoría,🎵,9,Expert,Neurociencia de la Música,Por qué la música nos emociona,500,
+Humanities,🎵 Música: Historia y Teoría,🎵,10,Expert,IA y Composición Musical,"Algoritmos creativos, futuro sonoro",500,💎 Diamond Badge
+Nature,🌋 Volcanes y Terremotos,🌋,1,Explorer,La Tierra por Dentro,"Capas, núcleo, manto, corteza",100,
+Nature,🌋 Volcanes y Terremotos,🌋,2,Explorer,Tectónica de Placas,"Placas en movimiento, pangea",100,
+Nature,🌋 Volcanes y Terremotos,🌋,3,Explorer,Volcanes: Tipos y Erupciones,"Escudo, estrato, fisurales",100,🥉 Bronze Badge
+Nature,🌋 Volcanes y Terremotos,🌋,4,Apprentice,Grandes Erupciones de la Historia,"Pompeya, Krakatoa, Pinatubo",200,
+Nature,🌋 Volcanes y Terremotos,🌋,5,Apprentice,Terremotos y Tsunamis,"Escalas, ondas sísmicas, prevención",200,
+Nature,🌋 Volcanes y Terremotos,🌋,6,Apprentice,El Cinturón de Fuego,"Pacífico, zonas sísmicas activas",200,🥈 Silver Badge
+Nature,🌋 Volcanes y Terremotos,🌋,7,Connoisseur,Geotermia y Recursos,"Energía volcánica, minerales",350,
+Nature,🌋 Volcanes y Terremotos,🌋,8,Connoisseur,Supervolcanes,"Yellowstone, Toba, amenazas globales",350,🥇 Gold Badge
+Nature,🌋 Volcanes y Terremotos,🌋,9,Expert,Predicción Sísmica,"Tecnología, IA, sistemas de alerta",500,
+Nature,🌋 Volcanes y Terremotos,🌋,10,Expert,Geología Planetaria,"Volcanes en Marte, Ío, Venus",500,💎 Diamond Badge
+Technology,🔐 Criptografía y Ciberseguridad,🔐,1,Explorer,History of los Códigos Secretos,"César, Enigma, espionaje",100,
+Technology,🔐 Criptografía y Ciberseguridad,🔐,2,Explorer,Criptografía Moderna,"RSA, AES, claves públicas",100,
+Technology,🔐 Criptografía y Ciberseguridad,🔐,3,Explorer,Internet y Seguridad Básica,"HTTPS, contraseñas, phishing",100,🥉 Bronze Badge
+Technology,🔐 Criptografía y Ciberseguridad,🔐,4,Apprentice,Hackers: Mitos y Realidad,"White/black hat, ciberataques famosos",200,
+Technology,🔐 Criptografía y Ciberseguridad,🔐,5,Apprentice,Malware y Ransomware,"Virus, troyanos, protección",200,
+Technology,🔐 Criptografía y Ciberseguridad,🔐,6,Apprentice,Ingeniería Social,"Manipulación, pretexting, defensa",200,🥈 Silver Badge
+Technology,🔐 Criptografía y Ciberseguridad,🔐,7,Connoisseur,Blockchain y Seguridad,"Descentralización, contratos inteligentes",350,
+Technology,🔐 Criptografía y Ciberseguridad,🔐,8,Connoisseur,Ciberguerra Estatal,"Stuxnet, espionaje digital, naciones",350,🥇 Gold Badge
+Technology,🔐 Criptografía y Ciberseguridad,🔐,9,Expert,Criptografía Cuántica,Computación cuántica vs cifrado actual,500,
+Technology,🔐 Criptografía y Ciberseguridad,🔐,10,Expert,Privacidad Digital Total,"Anonimato, Tor, futuro de la privacidad",500,💎 Diamond Badge
+Health,🏥 Medicina y Cuerpo Humano,🏥,1,Explorer,Anatomía Básica,"Sistemas del cuerpo, órganos vitales",100,
+Health,🏥 Medicina y Cuerpo Humano,🏥,2,Explorer,El Sistema Inmunológico,"Defensas, anticuerpos, vacunas",100,
+Health,🏥 Medicina y Cuerpo Humano,🏥,3,Explorer,History of la Medicina,"Hipócrates, penicilina, cirugía",100,🥉 Bronze Badge
+Health,🏥 Medicina y Cuerpo Humano,🏥,4,Apprentice,Pandemias de la Historia,"Peste negra, gripe española, COVID",200,
+Health,🏥 Medicina y Cuerpo Humano,🏥,5,Apprentice,Cáncer: Batalla Interna,"Tipos, causas, tratamientos",200,
+Health,🏥 Medicina y Cuerpo Humano,🏥,6,Apprentice,Farmacología Básica,Cómo funcionan los medicamentos,200,🥈 Silver Badge
+Health,🏥 Medicina y Cuerpo Humano,🏥,7,Connoisseur,Cirugía Robótica,"Da Vinci, precisión, futuro quirúrgico",350,
+Health,🏥 Medicina y Cuerpo Humano,🏥,8,Connoisseur,Terapias Génicas,Editar ADN para curar enfermedades,350,🥇 Gold Badge
+Health,🏥 Medicina y Cuerpo Humano,🏥,9,Expert,Neurociencia Médica,"Implantes cerebrales, neuroestimulación",500,
+Health,🏥 Medicina y Cuerpo Humano,🏥,10,Expert,Longevidad y Anti-aging,"Telómeros, senoterapia, vivir más",500,💎 Diamond Badge
+Humanities,⚡ Mitología Universal,⚡,1,Explorer,Mitología Griega,"Zeus, Odisea, héroes y monstruos",100,
+Humanities,⚡ Mitología Universal,⚡,2,Explorer,Mitología Nórdica,"Odín, Thor, Ragnarök",100,
+Humanities,⚡ Mitología Universal,⚡,3,Explorer,Mitología Egipcia,"Ra, Osiris, el más allá",100,🥉 Bronze Badge
+Humanities,⚡ Mitología Universal,⚡,4,Apprentice,Mitología Romana,"Adaptación griega, fundación de Roma",200,
+Humanities,⚡ Mitología Universal,⚡,5,Apprentice,Mitología Mesopotámica,"Gilgamesh, diluvio, creación",200,
+Humanities,⚡ Mitología Universal,⚡,6,Apprentice,Mitología Celta y Artúrica,"Druidas, Avalon, Excalibur",200,🥈 Silver Badge
+Humanities,⚡ Mitología Universal,⚡,7,Connoisseur,Mitología Asiática,"Hinduismo, budismo, dragones chinos",350,
+Humanities,⚡ Mitología Universal,⚡,8,Connoisseur,Mitología Mesoamericana,"Quetzalcóatl, Popol Vuh, cosmos maya",350,🥇 Gold Badge
+Humanities,⚡ Mitología Universal,⚡,9,Expert,Arquetipos y Jung,"Inconsciente colectivo, el héroe",500,
+Humanities,⚡ Mitología Universal,⚡,10,Expert,Mitos Modernos,"Superhéroes, Star Wars, nuevas mitologías",500,💎 Diamond Badge
+Technology,🦾 Robótica e Ingeniería,🦾,1,Explorer,History of los Autómatas,"Da Vinci, relojería, primeros robots",100,
+Technology,🦾 Robótica e Ingeniería,🦾,2,Explorer,Mecánica Básica de Robots,"Sensores, actuadores, control",100,
+Technology,🦾 Robótica e Ingeniería,🦾,3,Explorer,Robots en la Industria,"Manufactura, logística, automatización",100,🥉 Bronze Badge
+Technology,🦾 Robótica e Ingeniería,🦾,4,Apprentice,Drones y Vehículos Autónomos,"Coches sin conductor, delivery",200,
+Technology,🦾 Robótica e Ingeniería,🦾,5,Apprentice,Robots Humanoides,"Boston Dynamics, Atlas, Sophia",200,
+Technology,🦾 Robótica e Ingeniería,🦾,6,Apprentice,Biomimética,Robots inspirados en la naturaleza,200,🥈 Silver Badge
+Technology,🦾 Robótica e Ingeniería,🦾,7,Connoisseur,Prótesis y Exoesqueletos,"Bionics, manos robóticas, movilidad",350,
+Technology,🦾 Robótica e Ingeniería,🦾,8,Connoisseur,Robótica Espacial,"Rovers, ISS, reparaciones en órbita",350,🥇 Gold Badge
+Technology,🦾 Robótica e Ingeniería,🦾,9,Expert,Nanorobots,"Medicina microscópica, ensamblaje molecular",500,
+Technology,🦾 Robótica e Ingeniería,🦾,10,Expert,Robots Conscientes,"IA embodied, derechos de robots, ética",500,💎 Diamond Badge
+History,⚔️ Guerras Mundiales,⚔️,1,Explorer,Causas de la Gran Guerra,"Alianzas, imperialismo, Sarajevo",100,
+History,⚔️ Guerras Mundiales,⚔️,2,Explorer,Trincheras: WWI,"Guerra de desgaste, gas, Somme",100,
+History,⚔️ Guerras Mundiales,⚔️,3,Explorer,El Tratado de Versalles,"Consecuencias, humillación, semillas",100,🥉 Bronze Badge
+History,⚔️ Guerras Mundiales,⚔️,4,Apprentice,Ascenso del Nazismo,"Hitler, propaganda, Tercer Reich",200,
+History,⚔️ Guerras Mundiales,⚔️,5,Apprentice,Batallas Decisivas WWII,"Stalingrado, Midway, Normandía",200,
+History,⚔️ Guerras Mundiales,⚔️,6,Apprentice,El Holocausto,"Genocidio, campos, memoria",200,🥈 Silver Badge
+History,⚔️ Guerras Mundiales,⚔️,7,Connoisseur,El Frente del Pacífico,"Pearl Harbor, Iwo Jima, Hiroshima",350,
+History,⚔️ Guerras Mundiales,⚔️,8,Connoisseur,Espionaje y Criptografía,"Enigma, Turing, agentes dobles",350,🥇 Gold Badge
+History,⚔️ Guerras Mundiales,⚔️,9,Expert,Nüremberg y Justicia,"Juicios, derecho internacional",500,
+History,⚔️ Guerras Mundiales,⚔️,10,Expert,Lecciones para el Siglo XXI,"Paralelos, prevención, memoria",500,💎 Diamond Badge
+Humanities,🏗️ Arquitectura Mundial,🏗️,1,Explorer,Pirámides y Templos,"Egipto, Grecia, Angkor Wat",100,
+Humanities,🏗️ Arquitectura Mundial,🏗️,2,Explorer,Roma y sus Monumentos,"Coliseo, acueductos, Panteón",100,
+Humanities,🏗️ Arquitectura Mundial,🏗️,3,Explorer,Catedrales Góticas,"Notre-Dame, vitrales, arbotantes",100,🥉 Bronze Badge
+Humanities,🏗️ Arquitectura Mundial,🏗️,4,Apprentice,Renacimiento y Barroco,"Brunelleschi, Bernini, Versalles",200,
+Humanities,🏗️ Arquitectura Mundial,🏗️,5,Apprentice,Rascacielos y Acero,"Chicago, Empire State, ingeniería",200,
+Humanities,🏗️ Arquitectura Mundial,🏗️,6,Apprentice,Bauhaus y Modernismo,"Le Corbusier, Mies van der Rohe",200,🥈 Silver Badge
+Humanities,🏗️ Arquitectura Mundial,🏗️,7,Connoisseur,Arquitectura Sostenible,"Edificios verdes, pasivos, biomimética",350,
+Humanities,🏗️ Arquitectura Mundial,🏗️,8,Connoisseur,Megaestructuras,"Burj Khalifa, presas, puentes",350,🥇 Gold Badge
+Humanities,🏗️ Arquitectura Mundial,🏗️,9,Expert,Ciudades del Future,"NEOM, ciudades flotantes, smart cities",500,
+Humanities,🏗️ Arquitectura Mundial,🏗️,10,Expert,Arquitectura Extraterrestre,"Hábitats en Marte, impresión 3D lunar",500,💎 Diamond Badge
+Nature,🤿 Océano y Exploración Submarina,🤿,1,Explorer,Cartografía del Fondo Marino,"Dorsales, fosas, relieve submarino",100,
+Nature,🤿 Océano y Exploración Submarina,🤿,2,Explorer,Naufragios Legendarios,"Titanic, galeones, tesoros",100,
+Nature,🤿 Océano y Exploración Submarina,🤿,3,Explorer,Submarinos: Historia,"Nautilus, U-boats, nucleares",100,🥉 Bronze Badge
+Nature,🤿 Océano y Exploración Submarina,🤿,4,Apprentice,Fuentes Hidrotermales,"Vida sin sol, quimiosíntesis",200,
+Nature,🤿 Océano y Exploración Submarina,🤿,5,Apprentice,Ciudades Hundidas,"Dwarka, Port Royal, misterios",200,
+Nature,🤿 Océano y Exploración Submarina,🤿,6,Apprentice,Tecnología de Buceo,"Saturación, ROVs, AUVs",200,🥈 Silver Badge
+Nature,🤿 Océano y Exploración Submarina,🤿,7,Connoisseur,Minería Submarina,"Recursos, nódulos, controversia",350,
+Nature,🤿 Océano y Exploración Submarina,🤿,8,Connoisseur,Acústica Submarina,"Sonar, comunicación cetácea",350,🥇 Gold Badge
+Nature,🤿 Océano y Exploración Submarina,🤿,9,Expert,Bases Submarinas,"Hábitats sumergidos, Aquarius",500,
+Nature,🤿 Océano y Exploración Submarina,🤿,10,Expert,Colonización Oceánica,Ciudades submarinas del futuro,500,💎 Diamond Badge
+Technology,💻 Civilización Digital,💻,1,Explorer,De ARPANET a Internet,"Nacimiento de la red, WWW",100,
+Technology,💻 Civilización Digital,💻,2,Explorer,Redes Sociales,"Facebook, Twitter, impacto social",100,
+Technology,💻 Civilización Digital,💻,3,Explorer,Smartphones y Apps,"iPhone, ecosistema móvil",100,🥉 Bronze Badge
+Technology,💻 Civilización Digital,💻,4,Apprentice,Big Data,"Datos masivos, análisis, valor",200,
+Technology,💻 Civilización Digital,💻,5,Apprentice,Cloud Computing,"La nube, servicios, infraestructura",200,
+Technology,💻 Civilización Digital,💻,6,Apprentice,Realidad Virtual y Aumentada,"Metaverso, aplicaciones, inmersión",200,🥈 Silver Badge
+Technology,💻 Civilización Digital,💻,7,Connoisseur,Internet de las Cosas,"Dispositivos conectados, smart homes",350,
+Technology,💻 Civilización Digital,💻,8,Connoisseur,Computación Cuántica,"Qubits, supremacía, aplicaciones",350,🥇 Gold Badge
+Technology,💻 Civilización Digital,💻,9,Expert,Singularidad Tecnológica,"Exponencialidad, transhumanismo",500,
+Technology,💻 Civilización Digital,💻,10,Expert,Ética Digital,"Privacidad, algoritmos, democracia",500,💎 Diamond Badge
+Science,🦕 Dinosaurios y Paleontología,🦕,1,Explorer,Los Primeros Fósiles,"Qué son, cómo se forman",100,
+Science,🦕 Dinosaurios y Paleontología,🦕,2,Explorer,Era Mesozoica,"Triásico, Jurásico, Cretácico",100,
+Science,🦕 Dinosaurios y Paleontología,🦕,3,Explorer,Los Grandes Dinosaurios,"T-Rex, Diplodocus, Triceratops",100,🥉 Bronze Badge
+Science,🦕 Dinosaurios y Paleontología,🦕,4,Apprentice,Depredadores vs Herbívoros,"Estrategias, armas naturales",200,
+Science,🦕 Dinosaurios y Paleontología,🦕,5,Apprentice,Pterosaurios y Reptiles Marinos,Cielo y mar prehistóricos,200,
+Science,🦕 Dinosaurios y Paleontología,🦕,6,Apprentice,La Gran Extinción,"Asteroide Chicxulub, invierno nuclear",200,🥈 Silver Badge
+Science,🦕 Dinosaurios y Paleontología,🦕,7,Connoisseur,Plumas y Evolución Aviar,"Dinosaurios con plumas, aves modernas",350,
+Science,🦕 Dinosaurios y Paleontología,🦕,8,Connoisseur,Paleontología de Campo,"Excavaciones, técnicas, descubrimientos",350,🥇 Gold Badge
+Science,🦕 Dinosaurios y Paleontología,🦕,9,Expert,ADN Antiguo,¿Clonar un dinosaurio? Límites reales,500,
+Science,🦕 Dinosaurios y Paleontología,🦕,10,Expert,Mundos Perdidos,"Otros planetas, vida prehistórica remota",500,💎 Diamond Badge
+Society,👑 Liderazgo y Estrategia,👑,1,Explorer,¿Qué Hace a un Líder?,"Cualidades, tipos de liderazgo",100,
+Society,👑 Liderazgo y Estrategia,👑,2,Explorer,Líderes de la Historia,"Alejandro, Napoleón, Mandela",100,
+Society,👑 Liderazgo y Estrategia,👑,3,Explorer,El Arte de la Guerra,"Sun Tzu, estrategia milenaria",100,🥉 Bronze Badge
+Society,👑 Liderazgo y Estrategia,👑,4,Apprentice,Liderazgo Empresarial,"Steve Jobs, Elon Musk, Bezos",200,
+Society,👑 Liderazgo y Estrategia,👑,5,Apprentice,Negociación y Persuasión,"Harvard method, influencia",200,
+Society,👑 Liderazgo y Estrategia,👑,6,Apprentice,Gestión de Crisis,"Decisiones bajo presión, casos reales",200,🥈 Silver Badge
+Society,👑 Liderazgo y Estrategia,👑,7,Connoisseur,Inteligencia Emocional,"Empatía, autocontrol, Goleman",350,
+Society,👑 Liderazgo y Estrategia,👑,8,Connoisseur,Cultura Organizacional,"Valores, innovación, equipos",350,🥇 Gold Badge
+Society,👑 Liderazgo y Estrategia,👑,9,Expert,Liderazgo en la Era IA,"Adaptación, humano+máquina",500,
+Society,👑 Liderazgo y Estrategia,👑,10,Expert,Tu Estrategia Personal,Diseñar tu propio camino de liderazgo,500,💎 Diamond Badge
+Humanities,🏺 Antropología Cultural,🏺,1,Explorer,¿Qué es la Cultura?,"Definiciones, diversidad humana",100,
+Humanities,🏺 Antropología Cultural,🏺,2,Explorer,Tribus y Civilizaciones,De nómadas a imperios,100,
+Humanities,🏺 Antropología Cultural,🏺,3,Explorer,Rituales y Tradiciones,"Ceremonias, ritos de paso",100,🥉 Bronze Badge
+Humanities,🏺 Antropología Cultural,🏺,4,Apprentice,Lenguas del Mundo,"Familias lingüísticas, extinción",200,
+Humanities,🏺 Antropología Cultural,🏺,5,Apprentice,Religiones Comparadas,"Cristianismo, Islam, Budismo, Hinduismo",200,
+Humanities,🏺 Antropología Cultural,🏺,6,Apprentice,Gastronomía y Cultura,"Cocina como identidad, tabúes",200,🥈 Silver Badge
+Humanities,🏺 Antropología Cultural,🏺,7,Connoisseur,Globalización Cultural,"Homogeneización, resistencia, fusión",350,
+Humanities,🏺 Antropología Cultural,🏺,8,Connoisseur,Pueblos Indígenas,"Conocimiento ancestral, derechos",350,🥇 Gold Badge
+Humanities,🏺 Antropología Cultural,🏺,9,Expert,Antropología Digital,"Culturas online, identidad virtual",500,
+Humanities,🏺 Antropología Cultural,🏺,10,Expert,El Future de la Humanidad,"Convergencia cultural, diversidad",500,💎 Diamond Badge
+Technology,⚡ Energía y Sostenibilidad,⚡,1,Explorer,Fuentes de Energía,"Fósiles, renovables, nuclear",100,
+Technology,⚡ Energía y Sostenibilidad,⚡,2,Explorer,Electricidad: Cómo Funciona,"Generación, distribución, red eléctrica",100,
+Technology,⚡ Energía y Sostenibilidad,⚡,3,Explorer,El Petróleo y su Historia,"Oro negro, OPEP, geopolítica",100,🥉 Bronze Badge
+Technology,⚡ Energía y Sostenibilidad,⚡,4,Apprentice,Energía Solar,"Paneles, fotovoltaica, proyectos",200,
+Technology,⚡ Energía y Sostenibilidad,⚡,5,Apprentice,Energía Eólica e Hídrica,"Turbinas, presas, mareas",200,
+Technology,⚡ Energía y Sostenibilidad,⚡,6,Apprentice,Energía Nuclear Moderna,"Fisión, fusión, ITER",200,🥈 Silver Badge
+Technology,⚡ Energía y Sostenibilidad,⚡,7,Connoisseur,Baterías y Almacenamiento,"Litio, hidrógeno, supercondensadores",350,
+Technology,⚡ Energía y Sostenibilidad,⚡,8,Connoisseur,Transición Energética,"Abandono del carbón, políticas",350,🥇 Gold Badge
+Technology,⚡ Energía y Sostenibilidad,⚡,9,Expert,Fusión Nuclear,El santo grial energético,500,
+Technology,⚡ Energía y Sostenibilidad,⚡,10,Expert,Civilización Tipo I,"Escala Kardashov, futuro energético",500,💎 Diamond Badge
+Nature,🔮 Misterios y Fenómenos,🔮,1,Explorer,Triángulo de las Bermudas,"Desapariciones, explicaciones",100,
+Nature,🔮 Misterios y Fenómenos,🔮,2,Explorer,Enigmas Arqueológicos,"Stonehenge, Nazca, Moáis",100,
+Nature,🔮 Misterios y Fenómenos,🔮,3,Explorer,Criaturas Misteriosas,"Nessie, Bigfoot, criptozoología",100,🥉 Bronze Badge
+Nature,🔮 Misterios y Fenómenos,🔮,4,Apprentice,Fenómenos Atmosféricos,"Rayos en bola, auroras, sprites",200,
+Nature,🔮 Misterios y Fenómenos,🔮,5,Apprentice,Civilizaciones Perdidas,"Atlántida, Lemuria, evidencias",200,
+Nature,🔮 Misterios y Fenómenos,🔮,6,Apprentice,Fenómenos Paranormales,"Estudio científico, explicaciones",200,🥈 Silver Badge
+Nature,🔮 Misterios y Fenómenos,🔮,7,Connoisseur,Misterios del Espacio,"Señal WOW, Oumuamua, FRBs",350,
+Nature,🔮 Misterios y Fenómenos,🔮,8,Connoisseur,Código Voynich y Cifrados,Manuscritos sin descifrar,350,🥇 Gold Badge
+Nature,🔮 Misterios y Fenómenos,🔮,9,Expert,Paradoja de Fermi,¿Dónde están todos? Soluciones,500,
+Nature,🔮 Misterios y Fenómenos,🔮,10,Expert,Ciencia vs Misterio,"Pensamiento crítico, método científico",500,💎 Diamond Badge
+Health,🧬 Microbiología y Virus,🧬,1,Explorer,El Mundo Invisible,"Microbios, bacterias, virus y hongos; qué son y dónde viven",100,
+Health,🧬 Microbiología y Virus,🧬,2,Explorer,El Microscopio y los Descubrimientos,De Leeuwenhoek a la microbiología moderna,100,
+Health,🧬 Microbiología y Virus,🧬,3,Explorer,Bacterias: Aliadas y Enemigas,"Flora intestinal, infecciones, antibióticos",100,🥉 Bronze Badge
+Health,🧬 Microbiología y Virus,🧬,4,Apprentice,Virus: Cómo Infectan,"Estructura viral, ciclo lítico y lisogénico",200,
+Health,🧬 Microbiología y Virus,🧬,5,Apprentice,El Sistema Inmune contra Microbios,"Barreras, células de defensa, anticuerpos",200,
+Health,🧬 Microbiología y Virus,🧬,6,Apprentice,Vacunas: Historia y Funcionamiento,De la viruela al ARN mensajero,200,🥈 Silver Badge
+Health,🧬 Microbiología y Virus,🧬,7,Connoisseur,Resistencia a Antibióticos,"Superbugs, uso abusivo, crisis sanitaria",350,
+Health,🧬 Microbiología y Virus,🧬,8,Connoisseur,Pandemias Microbianas,"Peste, gripe española, COVID-19, patrones",350,🥇 Gold Badge
+Health,🧬 Microbiología y Virus,🧬,9,Expert,Biotecnología Microbiana,"Uso de microbios en industria, medicina y medioambiente",500,
+Health,🧬 Microbiología y Virus,🧬,10,Expert,Future de la Lucha contra Infecciones,"Nuevos antibióticos, fagoterapia, edición genética de virus",500,💎 Diamond Badge
+Science,🪐 Astrobiología y Búsqueda de Vida,🪐,1,Explorer,¿Qué es la Astrobiología?,"Definición, interdisciplinariedad, grandes preguntas",100,
+Science,🪐 Astrobiología y Búsqueda de Vida,🪐,2,Explorer,Ingredientes de la Vida,"Agua líquida, química del carbono, energía",100,
+Science,🪐 Astrobiología y Búsqueda de Vida,🪐,3,Explorer,Vida Extremófila en la Tierra,Organismos en condiciones extremas como modelo,100,🥉 Bronze Badge
+Science,🪐 Astrobiología y Búsqueda de Vida,🪐,4,Apprentice,Marte: El Vecino Sospechoso,"History ofl agua, misiones, signos de vida pasada",200,
+Science,🪐 Astrobiología y Búsqueda de Vida,🪐,5,Apprentice,Lunas Habitables,"Europa, Encélado, Titán y sus océanos",200,
+Science,🪐 Astrobiología y Búsqueda de Vida,🪐,6,Apprentice,Exoplanetas: Mundos Lejanos,Métodos de detección y zona habitable,200,🥈 Silver Badge
+Science,🪐 Astrobiología y Búsqueda de Vida,🪐,7,Connoisseur,Biofirmas y Tecnofirmas,Señales químicas y tecnológicas de vida avanzada,350,
+Science,🪐 Astrobiología y Búsqueda de Vida,🪐,8,Connoisseur,Programas de Búsqueda (SETI y otros),"Radiotelescopios, mensajes, proyectos globales",350,🥇 Gold Badge
+Science,🪐 Astrobiología y Búsqueda de Vida,🪐,9,Expert,Paradoja de Fermi y Soluciones,"¿Dónde están todos?, filtros grandes",500,
+Science,🪐 Astrobiología y Búsqueda de Vida,🪐,10,Expert,El Future de la Vida en el Cosmos,"Terraformación, panspermia, humanidad multiplanetaria",500,💎 Diamond Badge
+Science,☀️ Clima Espacial y Tormentas Solares,☀️,1,Explorer,El Sol: Nuestra Estrella,"Estructura solar, manchas, actividad",100,
+Science,☀️ Clima Espacial y Tormentas Solares,☀️,2,Explorer,Viento Solar,"Partículas cargadas, campo magnético",100,
+Science,☀️ Clima Espacial y Tormentas Solares,☀️,3,Explorer,Auroras Boreales y Australes,"Cómo se forman, dónde se ven",100,🥉 Bronze Badge
+Science,☀️ Clima Espacial y Tormentas Solares,☀️,4,Apprentice,Tormentas Solares Históricas,Evento Carrington y otros casos,200,
+Science,☀️ Clima Espacial y Tormentas Solares,☀️,5,Apprentice,Campo Magnético Terrestre,"Escudo natural, cinturones de Van Allen",200,
+Science,☀️ Clima Espacial y Tormentas Solares,☀️,6,Apprentice,Clima Espacial y Satélites,Efectos sobre GPS y comunicaciones,200,🥈 Silver Badge
+Science,☀️ Clima Espacial y Tormentas Solares,☀️,7,Connoisseur,Redes Eléctricas y Riesgo Global,Impacto en infraestructura,350,
+Science,☀️ Clima Espacial y Tormentas Solares,☀️,8,Connoisseur,Monitorización y Predicción,"Sondas, observatorios solares, modelos",350,🥇 Gold Badge
+Science,☀️ Clima Espacial y Tormentas Solares,☀️,9,Expert,Escenarios de Evento Extremo,Impacto económico y social,500,
+Science,☀️ Clima Espacial y Tormentas Solares,☀️,10,Expert,Preparándonos para el Próximo Carrington,Mitigación y resiliencia,500,💎 Diamond Badge
+Health,🦾 Biohacking y Cuerpo Mejorado,🦾,1,Explorer,¿Qué es el Biohacking?,"Definiciones, tipos (DIYbio, cuantificado, nutracéuticos)",100,
+Health,🦾 Biohacking y Cuerpo Mejorado,🦾,2,Explorer,Autoexperimentos Históricos,Científicos que se probaron a sí mismos,100,
+Health,🦾 Biohacking y Cuerpo Mejorado,🦾,3,Explorer,Cuantificar el Cuerpo,"Wearables, tracking de sueño y actividad",100,🥉 Bronze Badge
+Health,🦾 Biohacking y Cuerpo Mejorado,🦾,4,Apprentice,Suplementos y Nutrición Avanzada,"Nootrópicos, dietas, controversias",200,
+Health,🦾 Biohacking y Cuerpo Mejorado,🦾,5,Apprentice,"Hábitos, Ritmos Circadianos y Rendimiento","Luces, horarios, cronobiología",200,
+Health,🦾 Biohacking y Cuerpo Mejorado,🦾,6,Apprentice,"Gimnasios, Fuerza y Longevidad",Entrenamiento como hackeo biológico,200,🥈 Silver Badge
+Health,🦾 Biohacking y Cuerpo Mejorado,🦾,7,Connoisseur,Implantes y Dispositivos en el Cuerpo,"Chips, marcapasos, sensores",350,
+Health,🦾 Biohacking y Cuerpo Mejorado,🦾,8,Connoisseur,Edición Genética Personal,"CRISPR, posibilidades y límites",350,🥇 Gold Badge
+Health,🦾 Biohacking y Cuerpo Mejorado,🦾,9,Expert,Ética y Legalidad del Biohacking,"Normativas, riesgos, desigualdad",500,
+Health,🦾 Biohacking y Cuerpo Mejorado,🦾,10,Expert,El Future del Humano Mejorado,"Transhumanismo, integración IA-cuerpo",500,💎 Diamond Badge
+Health,😷 Epidemiología y Enfermedades Infecciosas,😷,1,Explorer,Cómo se Propagan las Enfermedades,"Contagio, vectores, cadenas de transmisión",100,
+Health,😷 Epidemiología y Enfermedades Infecciosas,😷,2,Explorer,"Brotes, Epidemias y Pandemias",Diferencias y ejemplos,100,
+Health,😷 Epidemiología y Enfermedades Infecciosas,😷,3,Explorer,Casos y Datos: Lo que Significan,"Incidencia, prevalencia, R0",100,🥉 Bronze Badge
+Health,😷 Epidemiología y Enfermedades Infecciosas,😷,4,Apprentice,Grandes Epidemias Históricas,"Peste negra, cólera, gripe española",200,
+Health,😷 Epidemiología y Enfermedades Infecciosas,😷,5,Apprentice,"VIH, Tuberculosis y Otros Retos",Enfermedades crónicas infecciosas,200,
+Health,😷 Epidemiología y Enfermedades Infecciosas,😷,6,Apprentice,COVID-19: Anatomía de una Pandemia,"Secuenciación, vacunas, confinamientos",200,🥈 Silver Badge
+Health,😷 Epidemiología y Enfermedades Infecciosas,😷,7,Connoisseur,Modelos Epidemiológicos,"Curvas, medidas no farmacológicas",350,
+Health,😷 Epidemiología y Enfermedades Infecciosas,😷,8,Connoisseur,Vacunación Masiva y Rebaño,"Inmunidad de grupo, campañas",350,🥇 Gold Badge
+Health,😷 Epidemiología y Enfermedades Infecciosas,😷,9,Expert,Enfermedades Emergentes y Zoonosis,"Cambio climático, nuevos patógenos",500,
+Health,😷 Epidemiología y Enfermedades Infecciosas,😷,10,Expert,Preparación Global ante la Próxima Pandemia,"Vigilancia, cooperación internacional",500,💎 Diamond Badge
+Technology,💾 Historia de la Computación,💾,1,Explorer,De Ábacos a Máquinas de Cálculo,Herramientas de cálculo antiguas,100,
+Technology,💾 Historia de la Computación,💾,2,Explorer,Visionarios Pioneros,"Babbage, Ada Lovelace, Turing",100,
+Technology,💾 Historia de la Computación,💾,3,Explorer,Ordenadores de Tubos y Tarjetas,"ENIAC, mainframes",100,🥉 Bronze Badge
+Technology,💾 Historia de la Computación,💾,4,Apprentice,La Revolución del Microprocesador,"Intel, PCs, Apple",200,
+Technology,💾 Historia de la Computación,💾,5,Apprentice,Internet y la Web,"ARPANET, HTTP, navegadores",200,
+Technology,💾 Historia de la Computación,💾,6,Apprentice,"Portátiles, Smartphones y la Era Móvil","iPhone, Android",200,🥈 Silver Badge
+Technology,💾 Historia de la Computación,💾,7,Connoisseur,Software Libre y Open Source,"Linux, proyectos colaborativos",350,
+Technology,💾 Historia de la Computación,💾,8,Connoisseur,"Nubes, Contenedores y DevOps",Cómo se despliega hoy el software,350,🥇 Gold Badge
+Technology,💾 Historia de la Computación,💾,9,Expert,Computación Cuántica y Más Allá,"Qubits, algoritmos",500,
+Technology,💾 Historia de la Computación,💾,10,Expert,Future de la Computación,"Neuromórfica, IA integrada",500,💎 Diamond Badge
+Technology,🎮 Videojuegos e Industria del Gaming,🎮,1,Explorer,Los Primeros Videojuegos,"Pong, arcades, Atari",100,
+Technology,🎮 Videojuegos e Industria del Gaming,🎮,2,Explorer,Consolas y Guerra de Generaciones,"Nintendo, Sega, Sony, Microsoft",100,
+Technology,🎮 Videojuegos e Industria del Gaming,🎮,3,Explorer,PC Gaming y Online,"DOOM, MMOs, primeros esports",100,🥉 Bronze Badge
+Technology,🎮 Videojuegos e Industria del Gaming,🎮,4,Apprentice,Diseño de Juegos,"Mecánicas, loops, narrativa",200,
+Technology,🎮 Videojuegos e Industria del Gaming,🎮,5,Apprentice,Esports y Competición Profesional,"Ligas, premios, entrenamientos",200,
+Technology,🎮 Videojuegos e Industria del Gaming,🎮,6,Apprentice,Psicología del Juego y Gamificación,"Motivación, recompensas",200,🥈 Silver Badge
+Technology,🎮 Videojuegos e Industria del Gaming,🎮,7,Connoisseur,Industria y Modelos de Negocio,"AAA, indie, free-to-play",350,
+Technology,🎮 Videojuegos e Industria del Gaming,🎮,8,Connoisseur,Controversias del Gaming,"Adicción, violencia, loot boxes",350,🥇 Gold Badge
+Technology,🎮 Videojuegos e Industria del Gaming,🎮,9,Expert,Juegos como Arte y Educación,"Juegos serios, experiencias inmersivas",500,
+Technology,🎮 Videojuegos e Industria del Gaming,🎮,10,Expert,Future del Gaming,"VR/AR, cloud gaming",500,💎 Diamond Badge
+Technology,₿ Criptoeconomía y DeFi,₿,1,Explorer,Origen de Bitcoin,"Satoshi, problema del doble gasto",100,
+Technology,₿ Criptoeconomía y DeFi,₿,2,Explorer,¿Qué es Blockchain?,"Bloques, cadenas, consenso",100,
+Technology,₿ Criptoeconomía y DeFi,₿,3,Explorer,Criptomonedas Principales,"BTC, ETH y otras",100,🥉 Bronze Badge
+Technology,₿ Criptoeconomía y DeFi,₿,4,Apprentice,Smart Contracts,Programas que mueven dinero,200,
+Technology,₿ Criptoeconomía y DeFi,₿,5,Apprentice,Exchanges y Wallets,Cómo se compra y guarda cripto,200,
+Technology,₿ Criptoeconomía y DeFi,₿,6,Apprentice,Finanzas Descentralizadas (DeFi),"Préstamos, DEX, yield farming",200,🥈 Silver Badge
+Technology,₿ Criptoeconomía y DeFi,₿,7,Connoisseur,"Estafas, Riesgos y Burbujas","Rug pulls, hacks, volatilidad",350,
+Technology,₿ Criptoeconomía y DeFi,₿,8,Connoisseur,Regulación y Narrativas,"Gobiernos, adopción",350,🥇 Gold Badge
+Technology,₿ Criptoeconomía y DeFi,₿,9,Expert,Cripto más allá del Dinero,"DAOs, identidad, NFTs útiles",500,
+Technology,₿ Criptoeconomía y DeFi,₿,10,Expert,Escenarios Futures de la Criptoeconomía,Infraestructura o nicho,500,💎 Diamond Badge
+Technology,📊 Ciencia de Datos y Big Data,📊,1,Explorer,Dato: El Nuevo Petróleo,Qué es un dato y por qué vale,100,
+Technology,📊 Ciencia de Datos y Big Data,📊,2,Explorer,Cómo se Recogen Datos,"Sensores, formularios, tracking",100,
+Technology,📊 Ciencia de Datos y Big Data,📊,3,Explorer,Bases de Datos y Almacenes,"SQL, NoSQL, data lakes",100,🥉 Bronze Badge
+Technology,📊 Ciencia de Datos y Big Data,📊,4,Apprentice,Analítica Descriptiva,"Dashboards, KPIs",200,
+Technology,📊 Ciencia de Datos y Big Data,📊,5,Apprentice,Analítica Predictiva,Modelos y pronósticos,200,
+Technology,📊 Ciencia de Datos y Big Data,📊,6,Apprentice,Analítica Prescriptiva,Recomendaciones automatizadas,200,🥈 Silver Badge
+Technology,📊 Ciencia de Datos y Big Data,📊,7,Connoisseur,Big Data en la Vida Real,"Retail, salud, transporte",350,
+Technology,📊 Ciencia de Datos y Big Data,📊,8,Connoisseur,"Privacidad, Sesgos y Ética",Dilemas y casos,350,🥇 Gold Badge
+Technology,📊 Ciencia de Datos y Big Data,📊,9,Expert,Arquitecturas Modernas de Datos,"Batch, streaming, lakehouse",500,
+Technology,📊 Ciencia de Datos y Big Data,📊,10,Expert,Hacia un Mundo Hiperpersonalizado,Riesgos y regulación,500,💎 Diamond Badge
+Technology,📡 Tecnologías de Comunicación,📡,1,Explorer,Telégrafo y Teléfono,Primer salto de la voz a distancia,100,
+Technology,📡 Tecnologías de Comunicación,📡,2,Explorer,Radio y Televisión,Llegada de los mass media,100,
+Technology,📡 Tecnologías de Comunicación,📡,3,Explorer,Satélites y Comunicaciones Globales,"Órbitas, enlaces",100,🥉 Bronze Badge
+Technology,📡 Tecnologías de Comunicación,📡,4,Apprentice,Internet y Protocolos Básicos,"TCP/IP, routers",200,
+Technology,📡 Tecnologías de Comunicación,📡,5,Apprentice,Wi-Fi y Redes Domésticas,Cómo se conectan tus dispositivos,200,
+Technology,📡 Tecnologías de Comunicación,📡,6,Apprentice,Redes Móviles: 1G a 4G,De voz analógica a datos,200,🥈 Silver Badge
+Technology,📡 Tecnologías de Comunicación,📡,7,Connoisseur,5G y Futuras Generaciones,"Latencia baja, IoT",350,
+Technology,📡 Tecnologías de Comunicación,📡,8,Connoisseur,Seguridad y Vigilancia en Redes,"Interceptación, cifrado",350,🥇 Gold Badge
+Technology,📡 Tecnologías de Comunicación,📡,9,Expert,Infraestructura Crítica y Resiliencia,Qué pasa si cae la red,500,
+Technology,📡 Tecnologías de Comunicación,📡,10,Expert,Comunicación del Future,"Redes cuánticas, espacio profundo",500,💎 Diamond Badge
+Humanities,🎬 Historia del Cine y el Documental,🎬,1,Explorer,Nacimiento del Cine,"Lumière, Méliès y las primeras proyecciones",100,
+Humanities,🎬 Historia del Cine y el Documental,🎬,2,Explorer,Hollywood Clásico,"Estudios, sistema de estrellas, cine mudo a sonoro",100,
+Humanities,🎬 Historia del Cine y el Documental,🎬,3,Explorer,Nueva Ola y Cine de Autor,"Truffaut, Godard y otros movimientos",100,🥉 Bronze Badge
+Humanities,🎬 Historia del Cine y el Documental,🎬,4,Apprentice,Origen del Documental,"Nanook, propaganda, cine etnográfico",200,
+Humanities,🎬 Historia del Cine y el Documental,🎬,5,Apprentice,Estilos de Documental,"Observacional, participativo, ensayo",200,
+Humanities,🎬 Historia del Cine y el Documental,🎬,6,Apprentice,Documental de Naturaleza y Ciencia,"BBC, National Geographic, formatos",200,🥈 Silver Badge
+Humanities,🎬 Historia del Cine y el Documental,🎬,7,Connoisseur,Documental de Denuncia Social,Casos que cambiaron leyes y conciencias,350,
+Humanities,🎬 Historia del Cine y el Documental,🎬,8,Connoisseur,Docuseries y Plataformas,"Streaming, true crime, formatos seriales",350,🥇 Gold Badge
+Humanities,🎬 Historia del Cine y el Documental,🎬,9,Expert,Lenguaje y Ética del Documental,"Manipulación, puesta en escena, límites",500,
+Humanities,🎬 Historia del Cine y el Documental,🎬,10,Expert,El Future del Documental con IA,"Producción automatizada, personalización",500,💎 Diamond Badge
+Humanities,📚 Literatura Universal,📚,1,Explorer,"Mitos, Epopeyas y Textos Fundacionales","Gilgamesh, Ilíada, textos sagrados",100,
+Humanities,📚 Literatura Universal,📚,2,Explorer,Teatro Clásico y Tragedia,"Sófocles, Shakespeare",100,
+Humanities,📚 Literatura Universal,📚,3,Explorer,Novela Moderna,Del siglo XIX al realismo,100,🥉 Bronze Badge
+Humanities,📚 Literatura Universal,📚,4,Apprentice,Realismo y Naturalismo,"Tolstói, Zola, Galdós",200,
+Humanities,📚 Literatura Universal,📚,5,Apprentice,Vanguardias y Modernismo,"Joyce, Kafka, Proust",200,
+Humanities,📚 Literatura Universal,📚,6,Apprentice,Literaturas no Occidentales,"Autores clave de Asia, África, Latinoamérica",200,🥈 Silver Badge
+Humanities,📚 Literatura Universal,📚,7,Connoisseur,Boom Latinoamericano,"García Márquez, Cortázar, Vargas Llosa",350,
+Humanities,📚 Literatura Universal,📚,8,Connoisseur,Literatura Contemporánea,"Posmodernidad, autoficción, nuevos formatos",350,🥇 Gold Badge
+Humanities,📚 Literatura Universal,📚,9,Expert,Adaptaciones al Cine y la TV,Cómo cambian las historias,500,
+Humanities,📚 Literatura Universal,📚,10,Expert,IA y Escritura del Future,"Modelos generativos, coautoría",500,💎 Diamond Badge
+Humanities,🎭 Historia del Teatro y Artes Escénicas,🎭,1,Explorer,Teatro Griego y Romano,"Tragedia, comedia, anfiteatros",100,
+Humanities,🎭 Historia del Teatro y Artes Escénicas,🎭,2,Explorer,Teatro Medieval y Renacentista,"Autos, Shakespeare",100,
+Humanities,🎭 Historia del Teatro y Artes Escénicas,🎭,3,Explorer,Ópera y Ballet,"Nacimiento de la ópera, grandes compositores",100,🥉 Bronze Badge
+Humanities,🎭 Historia del Teatro y Artes Escénicas,🎭,4,Apprentice,Teatro del Siglo XIX,"Realismo, melodrama",200,
+Humanities,🎭 Historia del Teatro y Artes Escénicas,🎭,5,Apprentice,Vanguardias del Siglo XX,"Brecht, Artaud, teatro del absurdo",200,
+Humanities,🎭 Historia del Teatro y Artes Escénicas,🎭,6,Apprentice,Teatro Musical y Broadway,"Musical moderno, grandes éxitos",200,🥈 Silver Badge
+Humanities,🎭 Historia del Teatro y Artes Escénicas,🎭,7,Connoisseur,Teatro Político y Social,Obras que cuestionan el poder,350,
+Humanities,🎭 Historia del Teatro y Artes Escénicas,🎭,8,Connoisseur,Performance y Artes Vivas,"Happening, body art",350,🥇 Gold Badge
+Humanities,🎭 Historia del Teatro y Artes Escénicas,🎭,9,Expert,Nuevos Medios Escénicos,"Proyecciones, VR, experiencias inmersivas",500,
+Humanities,🎭 Historia del Teatro y Artes Escénicas,🎭,10,Expert,El Future del Teatro,"Hibridación digital, participación del público",500,💎 Diamond Badge
+Humanities,📷 Historia de la Fotografía y Fotoperiodismo,📷,1,Explorer,Primeras Fotografías,"Daguerrotipos, Niepce, Daguerre",100,
+Humanities,📷 Historia de la Fotografía y Fotoperiodismo,📷,2,Explorer,Retrato y Estudio,La fotografía como lujo,100,
+Humanities,📷 Historia de la Fotografía y Fotoperiodismo,📷,3,Explorer,Fotografía Documental Temprana,"Vida urbana, colonias, guerra de Crimea",100,🥉 Bronze Badge
+Humanities,📷 Historia de la Fotografía y Fotoperiodismo,📷,4,Apprentice,Grandes Guerras en Imágenes,"WWI, WWII, impacto en la opinión pública",200,
+Humanities,📷 Historia de la Fotografía y Fotoperiodismo,📷,5,Apprentice,Agencias y Revistas Icónicas,"Magnum, LIFE",200,
+Humanities,📷 Historia de la Fotografía y Fotoperiodismo,📷,6,Apprentice,Fotografía de Calle y Autoral,"Cartier-Bresson, Vivian Maier",200,🥈 Silver Badge
+Humanities,📷 Historia de la Fotografía y Fotoperiodismo,📷,7,Connoisseur,Fotoperiodismo en la Era Digital,"24/7 news, redes sociales",350,
+Humanities,📷 Historia de la Fotografía y Fotoperiodismo,📷,8,Connoisseur,Manipulación y Fake Images,"Edición, deepfakes, ética",350,🥇 Gold Badge
+Humanities,📷 Historia de la Fotografía y Fotoperiodismo,📷,9,Expert,Fotografía como Arte Contemporáneo,"Museos, mercado, instalaciones",500,
+Humanities,📷 Historia de la Fotografía y Fotoperiodismo,📷,10,Expert,"IA, Algoritmos y Visión por Computador","Clasificación, generación de imágenes",500,💎 Diamond Badge
+Humanities,🗣️ Lenguas del Mundo y Escrituras,🗣️,1,Explorer,Qué es un Idioma,"Fonética, gramática, significado",100,
+Humanities,🗣️ Lenguas del Mundo y Escrituras,🗣️,2,Explorer,Familias Lingüísticas,"Indoeuropea, sino-tibetana, afroasiática",100,
+Humanities,🗣️ Lenguas del Mundo y Escrituras,🗣️,3,Explorer,Orígenes de la Escritura,"Cuneiforme, jeroglíficos",100,🥉 Bronze Badge
+Humanities,🗣️ Lenguas del Mundo y Escrituras,🗣️,4,Apprentice,Alfabetos y Sistemas de Escritura,"Latino, cirílico, árabe, chino",200,
+Humanities,🗣️ Lenguas del Mundo y Escrituras,🗣️,5,Apprentice,Lenguas en Peligro,"Extinción lingüística, revitalización",200,
+Humanities,🗣️ Lenguas del Mundo y Escrituras,🗣️,6,Apprentice,Lenguas Francas y de Poder,"Inglés, español, mandarín",200,🥈 Silver Badge
+Humanities,🗣️ Lenguas del Mundo y Escrituras,🗣️,7,Connoisseur,Política e Identidad Lingüística,"Nacionalismos, minorías",350,
+Humanities,🗣️ Lenguas del Mundo y Escrituras,🗣️,8,Connoisseur,Traducción y Pérdida,"Matices, intraducibles",350,🥇 Gold Badge
+Humanities,🗣️ Lenguas del Mundo y Escrituras,🗣️,9,Expert,IA y Traducción Automática,"Modelos neuronales, límites",500,
+Humanities,🗣️ Lenguas del Mundo y Escrituras,🗣️,10,Expert,El Future del Multilingüismo,"Convergencia, diversidad",500,💎 Diamond Badge
+Humanities,🍳 Historia de la Alimentación y Gastronomía,🍳,1,Explorer,Cazadores-Recolectores y Agricultura,Del forrajeo a los cultivos,100,
+Humanities,🍳 Historia de la Alimentación y Gastronomía,🍳,2,Explorer,Granos y Civilizaciones,"Trigo, arroz, maíz",100,
+Humanities,🍳 Historia de la Alimentación y Gastronomía,🍳,3,Explorer,Especias y Rutas Comerciales,"Curry, pimienta, oro aromático",100,🥉 Bronze Badge
+Humanities,🍳 Historia de la Alimentación y Gastronomía,🍳,4,Apprentice,Colonialismo y Cocina,"Intercambio colombino, mestizaje culinario",200,
+Humanities,🍳 Historia de la Alimentación y Gastronomía,🍳,5,Apprentice,Revolución Industrial y Comida Procesada,"Conservas, azúcar, fast food",200,
+Humanities,🍳 Historia de la Alimentación y Gastronomía,🍳,6,Apprentice,Cocinas del Mundo,"Mediterránea, asiática, latinoamericana",200,🥈 Silver Badge
+Humanities,🍳 Historia de la Alimentación y Gastronomía,🍳,7,Connoisseur,Alta Cocina y Chefs Estrella,"Guías, restaurantes icónicos",350,
+Humanities,🍳 Historia de la Alimentación y Gastronomía,🍳,8,Connoisseur,Comida y Clase Social,"Acceso, status, marketing",350,🥇 Gold Badge
+Humanities,🍳 Historia de la Alimentación y Gastronomía,🍳,9,Expert,Gastronomía Molecular y Ciencia,Física y química en la cocina,500,
+Humanities,🍳 Historia de la Alimentación y Gastronomía,🍳,10,Expert,Future de la Alimentación,"Carne cultivada, insectos, sostenibilidad",500,💎 Diamond Badge
+Society,🏭 Historia del Capitalismo y del Trabajo,🏭,1,Explorer,Economías Agrarias y Trueque,Antes del capitalismo,100,
+Society,🏭 Historia del Capitalismo y del Trabajo,🏭,2,Explorer,Revolución Comercial y Mercantilismo,"Imperios, colonias",100,
+Society,🏭 Historia del Capitalismo y del Trabajo,🏭,3,Explorer,Revolución Industrial,"Máquinas, fábricas, proletariado",100,🥉 Bronze Badge
+Society,🏭 Historia del Capitalismo y del Trabajo,🏭,4,Apprentice,Capitalismo del Siglo XIX,"Ferrocarriles, monopolios",200,
+Society,🏭 Historia del Capitalismo y del Trabajo,🏭,5,Apprentice,Estado del Bienestar y Fordismo,"Producción en masa, derechos laborales",200,
+Society,🏭 Historia del Capitalismo y del Trabajo,🏭,6,Apprentice,Neoliberalismo y Globalización,"Deslocalización, finanzas",200,🥈 Silver Badge
+Society,🏭 Historia del Capitalismo y del Trabajo,🏭,7,Connoisseur,Automatización y Trabajo Precario,"Gig economy, plataformas",350,
+Society,🏭 Historia del Capitalismo y del Trabajo,🏭,8,Connoisseur,Críticas y Alternativas,"Marxismo, economía solidaria",350,🥇 Gold Badge
+Society,🏭 Historia del Capitalismo y del Trabajo,🏭,9,Expert,Capitalismo Digital y de Vigilancia,Datos como mercancía,500,
+Society,🏭 Historia del Capitalismo y del Trabajo,🏭,10,Expert,El Future del Trabajo,"Renta básica, robots",500,💎 Diamond Badge
+Society,📱 Sociología de las Redes Sociales,📱,1,Explorer,De Foros a Redes Sociales,"Blogs, MySpace, Facebook",100,
+Society,📱 Sociología de las Redes Sociales,📱,2,Explorer,Plataformas Clave,"Twitter/X, Instagram, TikTok",100,
+Society,📱 Sociología de las Redes Sociales,📱,3,Explorer,"Likes, Seguidores y Ego",Psicología básica del feedback,100,🥉 Bronze Badge
+Society,📱 Sociología de las Redes Sociales,📱,4,Apprentice,Algoritmos y Burbujas de Filtro,Qué ves y qué no ves,200,
+Society,📱 Sociología de las Redes Sociales,📱,5,Apprentice,Influencers y Economía de Creadores,Modelos de ingresos,200,
+Society,📱 Sociología de las Redes Sociales,📱,6,Apprentice,Ciberacoso y Toxicidad,Efectos en la salud mental,200,🥈 Silver Badge
+Society,📱 Sociología de las Redes Sociales,📱,7,Connoisseur,Redes y Política,"Campañas, desinformación",350,
+Society,📱 Sociología de las Redes Sociales,📱,8,Connoisseur,Activismo Digital,"Hashtags, movimientos sociales",350,🥇 Gold Badge
+Society,📱 Sociología de las Redes Sociales,📱,9,Expert,"Datos, Vigilancia y Privacidad",Seguimiento masivo,500,
+Society,📱 Sociología de las Redes Sociales,📱,10,Expert,El Future de la Vida Conectada,"Metaversos, identidades múltiples",500,💎 Diamond Badge
+Society,🗳️ Sistemas Políticos del Mundo,🗳️,1,Explorer,Qué es un Estado,"Territorio, población, soberanía",100,
+Society,🗳️ Sistemas Políticos del Mundo,🗳️,2,Explorer,Democracias y Dictaduras,Clasificaciones básicas,100,
+Society,🗳️ Sistemas Políticos del Mundo,🗳️,3,Explorer,Separación de Poderes,"Ejecutivo, legislativo, judicial",100,🥉 Bronze Badge
+Society,🗳️ Sistemas Políticos del Mundo,🗳️,4,Apprentice,Modelos Parlamentarios y Presidenciales,"Reino Unido, EE.UU.",200,
+Society,🗳️ Sistemas Políticos del Mundo,🗳️,5,Apprentice,Regímenes Autoritarios,"Control, propaganda",200,
+Society,🗳️ Sistemas Políticos del Mundo,🗳️,6,Apprentice,Organismos Supranacionales,"UE, ONU, OEA",200,🥈 Silver Badge
+Society,🗳️ Sistemas Políticos del Mundo,🗳️,7,Connoisseur,Transiciones Democráticas,Ejemplos históricos,350,
+Society,🗳️ Sistemas Políticos del Mundo,🗳️,8,Connoisseur,Populismo y Polarización,Tendencias recientes,350,🥇 Gold Badge
+Society,🗳️ Sistemas Políticos del Mundo,🗳️,9,Expert,Tecnología y Gobernanza,"Voto electrónico, e-gobierno",500,
+Society,🗳️ Sistemas Políticos del Mundo,🗳️,10,Expert,Democracia del Future,"Participación digital, IA y política",500,💎 Diamond Badge
+Society,♀️ Historia del Feminismo y Movimientos Sociales,♀️,1,Explorer,Primeras Luchas por Derechos,"Sufragistas, abolición",100,
+Society,♀️ Historia del Feminismo y Movimientos Sociales,♀️,2,Explorer,Olas del Feminismo,"Primera, segunda, tercera",100,
+Society,♀️ Historia del Feminismo y Movimientos Sociales,♀️,3,Explorer,Movimientos Obreros,"Sindicatos, 1 de mayo",100,🥉 Bronze Badge
+Society,♀️ Historia del Feminismo y Movimientos Sociales,♀️,4,Apprentice,Luchas por Derechos Civiles,"EE.UU., Sudáfrica",200,
+Society,♀️ Historia del Feminismo y Movimientos Sociales,♀️,5,Apprentice,Movimiento LGTBI+,Hitos y conquistas,200,
+Society,♀️ Historia del Feminismo y Movimientos Sociales,♀️,6,Apprentice,Ecologismo y Pacifismo,Movimiento verde,200,🥈 Silver Badge
+Society,♀️ Historia del Feminismo y Movimientos Sociales,♀️,7,Connoisseur,Intersectionalidad y Nuevas Agendas,Cruce de opresiones,350,
+Society,♀️ Historia del Feminismo y Movimientos Sociales,♀️,8,Connoisseur,Redes Sociales y Movilización,"#MeToo, Primavera Árabe",350,🥇 Gold Badge
+Society,♀️ Historia del Feminismo y Movimientos Sociales,♀️,9,Expert,Reacción y Backlash,Resistencias y contramovimientos,500,
+Society,♀️ Historia del Feminismo y Movimientos Sociales,♀️,10,Expert,Movimientos Sociales del Future,Nuevas causas emergentes,500,💎 Diamond Badge
+Society,⌛ Economía de la Atención,⌛,1,Explorer,Qué es la Atención,"Recurso limitado, foco",100,
+Society,⌛ Economía de la Atención,⌛,2,Explorer,Publicidad Tradicional,"TV, radio, prensa",100,
+Society,⌛ Economía de la Atención,⌛,3,Explorer,Publicidad Digital,"Banners, search ads",100,🥉 Bronze Badge
+Society,⌛ Economía de la Atención,⌛,4,Apprentice,Plataformas y Tiempo de Pantalla,Modelos de negocio,200,
+Society,⌛ Economía de la Atención,⌛,5,Apprentice,Scroll Infinito y Notificaciones,Diseño adictivo,200,
+Society,⌛ Economía de la Atención,⌛,6,Apprentice,Creadores y Contenido Viral,Métricas y tendencias,200,🥈 Silver Badge
+Society,⌛ Economía de la Atención,⌛,7,Connoisseur,Coste Cognitivo y Salud Mental,Burnout informativo,350,
+Society,⌛ Economía de la Atención,⌛,8,Connoisseur,Regulación y Privacidad,Leyes de datos,350,🥇 Gold Badge
+Society,⌛ Economía de la Atención,⌛,9,Expert,Resistencia: Minimalismo Digital,Estrategias para recuperar el foco,500,
+Society,⌛ Economía de la Atención,⌛,10,Expert,Future de la Atención,"Interfaces nuevas, IA curadora",500,💎 Diamond Badge
+Nature,🏞️ Grandes Ríos y Civilizaciones,🏞️,1,Explorer,"Nilo, Tigris y Éufrates",Cunas de civilización,100,
+Nature,🏞️ Grandes Ríos y Civilizaciones,🏞️,2,Explorer,Indo y Ganges,India antigua y moderna,100,
+Nature,🏞️ Grandes Ríos y Civilizaciones,🏞️,3,Explorer,Yangtsé y Amarillo,China y sus ríos,100,🥉 Bronze Badge
+Nature,🏞️ Grandes Ríos y Civilizaciones,🏞️,4,Apprentice,Ríos de Europa,"Danubio, Rin, comercio",200,
+Nature,🏞️ Grandes Ríos y Civilizaciones,🏞️,5,Apprentice,Ríos de América,"Amazonas, Mississippi",200,
+Nature,🏞️ Grandes Ríos y Civilizaciones,🏞️,6,Apprentice,Ríos de África y su Impacto,"Niger, Congo",200,🥈 Silver Badge
+Nature,🏞️ Grandes Ríos y Civilizaciones,🏞️,7,Connoisseur,Represas y Gestión del Agua,"Asuán, Tres Gargantas",350,
+Nature,🏞️ Grandes Ríos y Civilizaciones,🏞️,8,Connoisseur,Contaminación y Sequías,Crisis hídricas,350,🥇 Gold Badge
+Nature,🏞️ Grandes Ríos y Civilizaciones,🏞️,9,Expert,Guerras del Agua,Conflictos actuales y potenciales,500,
+Nature,🏞️ Grandes Ríos y Civilizaciones,🏞️,10,Expert,Future de los Grandes Ríos,Adaptación climática,500,💎 Diamond Badge
+Nature,🏜️ Desiertos del Mundo y Supervivencia,🏜️,1,Explorer,Qué es un Desierto,"Tipos, clima",100,
+Nature,🏜️ Desiertos del Mundo y Supervivencia,🏜️,2,Explorer,Sahara y Desiertos Africanos,Historia y pueblos,100,
+Nature,🏜️ Desiertos del Mundo y Supervivencia,🏜️,3,Explorer,Desiertos de Asia,"Gobi, Arabia",100,🥉 Bronze Badge
+Nature,🏜️ Desiertos del Mundo y Supervivencia,🏜️,4,Apprentice,Desiertos de América,"Atacama, Sonora",200,
+Nature,🏜️ Desiertos del Mundo y Supervivencia,🏜️,5,Apprentice,Flora y Fauna Adaptada,Estrategias de vida,200,
+Nature,🏜️ Desiertos del Mundo y Supervivencia,🏜️,6,Apprentice,Supervivencia Humana,"Técnicas, expediciones",200,🥈 Silver Badge
+Nature,🏜️ Desiertos del Mundo y Supervivencia,🏜️,7,Connoisseur,Desertificación,Causas humanas y naturales,350,
+Nature,🏜️ Desiertos del Mundo y Supervivencia,🏜️,8,Connoisseur,Energía Solar en Desiertos,Mega proyectos,350,🥇 Gold Badge
+Nature,🏜️ Desiertos del Mundo y Supervivencia,🏜️,9,Expert,Ciudades y Proyectos en Desiertos,"Dubai, NEOM",500,
+Nature,🏜️ Desiertos del Mundo y Supervivencia,🏜️,10,Expert,Vida en Otros Mundos Desérticos,Marte como desierto extremo,500,💎 Diamond Badge
+Nature,🌲 Bosques y Selvas,🌲,1,Explorer,Tipos de Bosques,"Tropicales, templados, boreales",100,
+Nature,🌲 Bosques y Selvas,🌲,2,Explorer,Amazonia y Grandes Selvas,Biodiversidad y pueblos,100,
+Nature,🌲 Bosques y Selvas,🌲,3,Explorer,Bosques del Norte,"Taiga, tundra",100,🥉 Bronze Badge
+Nature,🌲 Bosques y Selvas,🌲,4,Apprentice,Bosques y Clima,Sumideros de carbono,200,
+Nature,🌲 Bosques y Selvas,🌲,5,Apprentice,Deforestación,Causas y consecuencias,200,
+Nature,🌲 Bosques y Selvas,🌲,6,Apprentice,Conservación y Parques,Modelos de protección,200,🥈 Silver Badge
+Nature,🌲 Bosques y Selvas,🌲,7,Connoisseur,Economía del Bosque,"Madera, turismo, servicios ecosistémicos",350,
+Nature,🌲 Bosques y Selvas,🌲,8,Connoisseur,Incendios Forestales,Cambio climático y gestión,350,🥇 Gold Badge
+Nature,🌲 Bosques y Selvas,🌲,9,Expert,Restauración Ecológica,Reforestación inteligente,500,
+Nature,🌲 Bosques y Selvas,🌲,10,Expert,Bosques del Future,"Rewilding, reservas integrales",500,💎 Diamond Badge
+Nature,🦤 Fauna Extinta Reciente y Conservación,🦤,1,Explorer,Especies Extintas Recientes,"Dodo, tilacino",100,
+Nature,🦤 Fauna Extinta Reciente y Conservación,🦤,2,Explorer,Causas de Extinción,"Caza, hábitat, invasoras",100,
+Nature,🦤 Fauna Extinta Reciente y Conservación,🦤,3,Explorer,Historias Emblemáticas,"Búfalo americano, ballena azul",100,🥉 Bronze Badge
+Nature,🦤 Fauna Extinta Reciente y Conservación,🦤,4,Apprentice,Listas Rojas y Estado de Conservación,UICN,200,
+Nature,🦤 Fauna Extinta Reciente y Conservación,🦤,5,Apprentice,Zoológicos y Reservas,Rol en conservación,200,
+Nature,🦤 Fauna Extinta Reciente y Conservación,🦤,6,Apprentice,Éxitos en Recuperación,"Lince ibérico, cóndor",200,🥈 Silver Badge
+Nature,🦤 Fauna Extinta Reciente y Conservación,🦤,7,Connoisseur,Conservación Genética,Bancos de genes,350,
+Nature,🦤 Fauna Extinta Reciente y Conservación,🦤,8,Connoisseur,Rewilding y Reintroducciones,Casos prácticos,350,🥇 Gold Badge
+Nature,🦤 Fauna Extinta Reciente y Conservación,🦤,9,Expert,De-Extinción,Mamuts y debate ético,500,
+Nature,🦤 Fauna Extinta Reciente y Conservación,🦤,10,Expert,Convivencia Humano-Fauna,Nuevos pactos y límites,500,💎 Diamond Badge
+Nature,🧊 Glaciares y Regiones Polares,🧊,1,Explorer,Qué es un Glaciar,"Formación, tipos",100,
+Nature,🧊 Glaciares y Regiones Polares,🧊,2,Explorer,Ártico y Antártida,Diferencias básicas,100,
+Nature,🧊 Glaciares y Regiones Polares,🧊,3,Explorer,Fauna Polar,"Osos, pingüinos, focas",100,🥉 Bronze Badge
+Nature,🧊 Glaciares y Regiones Polares,🧊,4,Apprentice,Hielo y Clima Global,"Albedo, regulador térmico",200,
+Nature,🧊 Glaciares y Regiones Polares,🧊,5,Apprentice,Exploradores Polares,"Amundsen, Scott",200,
+Nature,🧊 Glaciares y Regiones Polares,🧊,6,Apprentice,Bases Científicas,Investigación en los polos,200,🥈 Silver Badge
+Nature,🧊 Glaciares y Regiones Polares,🧊,7,Connoisseur,Retroceso de Glaciares,Impactos locales,350,
+Nature,🧊 Glaciares y Regiones Polares,🧊,8,Connoisseur,Rutas Marítimas y Recursos,Paso del Noroeste,350,🥇 Gold Badge
+Nature,🧊 Glaciares y Regiones Polares,🧊,9,Expert,Conflictos Geopolíticos en el Hielo,Reclamos territoriales,500,
+Nature,🧊 Glaciares y Regiones Polares,🧊,10,Expert,Future de las Regiones Polares,Escenarios climáticos,500,💎 Diamond Badge
+Technology,💡 Innovación y Emprendimiento,💡,1,Explorer,Qué es Innovar,"Ideas, problemas y soluciones",100,
+Technology,💡 Innovación y Emprendimiento,💡,2,Explorer,Casos Históricos de Emprendedores,"Edison, Ford",100,
+Technology,💡 Innovación y Emprendimiento,💡,3,Explorer,Startups y Silicon Valley,Nacimiento del ecosistema,100,🥉 Bronze Badge
+Technology,💡 Innovación y Emprendimiento,💡,4,Apprentice,Modelos de Negocio,"Suscripción, marketplace, freemium",200,
+Technology,💡 Innovación y Emprendimiento,💡,5,Apprentice,Financiación y Capital Riesgo,"VC, ángeles, bootstrapping",200,
+Technology,💡 Innovación y Emprendimiento,💡,6,Apprentice,Validación y Producto Mínimo Viable,Iterar con usuarios,200,🥈 Silver Badge
+Technology,💡 Innovación y Emprendimiento,💡,7,Connoisseur,Escalar una Startup,"Equipo, procesos, cultura",350,
+Technology,💡 Innovación y Emprendimiento,💡,8,Connoisseur,Fracaso y Aprendizaje,"Casos sonados, lecciones",350,🥇 Gold Badge
+Technology,💡 Innovación y Emprendimiento,💡,9,Expert,Emprendimiento de Impacto,"Triple balance, sostenibilidad",500,
+Technology,💡 Innovación y Emprendimiento,💡,10,Expert,Innovar con IA,Nuevos modelos habilitados por IA,500,💎 Diamond Badge
+Society,💵 Psicología del Dinero,💵,1,Explorer,Dinero y Emociones,"Miedo, avaricia",100,
+Society,💵 Psicología del Dinero,💵,2,Explorer,Sesgos en Decisiones Financieras,"Anclas, aversión a la pérdida",100,
+Society,💵 Psicología del Dinero,💵,3,Explorer,Hábitos de Consumo,Impulso vs planificación,100,🥉 Bronze Badge
+Society,💵 Psicología del Dinero,💵,4,Apprentice,Publicidad y Compra,Técnicas de persuasión,200,
+Society,💵 Psicología del Dinero,💵,5,Apprentice,Endeudamiento y Crédito,Psicología del préstamo,200,
+Society,💵 Psicología del Dinero,💵,6,Apprentice,Ahorro e Inversión,Mentalidad de largo plazo,200,🥈 Silver Badge
+Society,💵 Psicología del Dinero,💵,7,Connoisseur,Dinero y Estatus,"Señales, comparación social",350,
+Society,💵 Psicología del Dinero,💵,8,Connoisseur,Cultura y Relación con el Dinero,Diferencias regionales,350,🥇 Gold Badge
+Society,💵 Psicología del Dinero,💵,9,Expert,Dinero y Felicidad,Qué dice la investigación,500,
+Society,💵 Psicología del Dinero,💵,10,Expert,Reescribir tu Narrativa Financiera,Cambiar creencias y hábitos,500,💎 Diamond Badge
+Health,📈 Hábitos y Productividad,📈,1,Explorer,Qué es un Hábito,Bucle señal-rutina-recompensa,100,
+Health,📈 Hábitos y Productividad,📈,2,Explorer,Motivación y Voluntad,Mitologías y realidades,100,
+Health,📈 Hábitos y Productividad,📈,3,Explorer,Procrastinación,Por qué la mente pospone,100,🥉 Bronze Badge
+Health,📈 Hábitos y Productividad,📈,4,Apprentice,Sistemas de Organización,"Listas, calendarios, GTD",200,
+Health,📈 Hábitos y Productividad,📈,5,Apprentice,Gestión del Tiempo,"Bloques, timeboxing",200,
+Health,📈 Hábitos y Productividad,📈,6,Apprentice,"Energía, Sueño y Productividad",Ritmos biológicos,200,🥈 Silver Badge
+Health,📈 Hábitos y Productividad,📈,7,Connoisseur,Diseñar Hábitos Duraderos,"Ambiente, identidad",350,
+Health,📈 Hábitos y Productividad,📈,8,Connoisseur,Productividad en la Era Digital,"Distracciones, multitarea",350,🥇 Gold Badge
+Health,📈 Hábitos y Productividad,📈,9,Expert,Flujo (Flow) y Alto Rendimiento,Condiciones para entrar en flow,500,
+Health,📈 Hábitos y Productividad,📈,10,Expert,Sistemas de Productividad Personalizados,Crearte tu propio sistema,500,💎 Diamond Badge
+Society,🏙️ Historia de las Ciudades y Urbanismo,🏙️,1,Explorer,Primeras Ciudades,"Mesopotamia, valle del Indo",100,
+Society,🏙️ Historia de las Ciudades y Urbanismo,🏙️,2,Explorer,Ciudades Antiguas,"Roma, Atenas, Teotihuacán",100,
+Society,🏙️ Historia de las Ciudades y Urbanismo,🏙️,3,Explorer,Ciudades Medievales,"Murallas, gremios",100,🥉 Bronze Badge
+Society,🏙️ Historia de las Ciudades y Urbanismo,🏙️,4,Apprentice,Revolución Industrial y Ciudad,"Fábricas, barrios obreros",200,
+Society,🏙️ Historia de las Ciudades y Urbanismo,🏙️,5,Apprentice,Urbanismo Moderno,"Haussmann, zonificación",200,
+Society,🏙️ Historia de las Ciudades y Urbanismo,🏙️,6,Apprentice,Megaciudades y Suburbios,Crecimiento acelerado,200,🥈 Silver Badge
+Society,🏙️ Historia de las Ciudades y Urbanismo,🏙️,7,Connoisseur,Problemas Urbanos,"Tráfico, vivienda, contaminación",350,
+Society,🏙️ Historia de las Ciudades y Urbanismo,🏙️,8,Connoisseur,Ciudades Sostenibles,"Transporte público, verde",350,🥇 Gold Badge
+Society,🏙️ Historia de las Ciudades y Urbanismo,🏙️,9,Expert,Smart Cities,"Datos, sensores, gobernanza",500,
+Society,🏙️ Historia de las Ciudades y Urbanismo,🏙️,10,Expert,Ciudades del Future,"Verticales, flotantes, resilientes",500,💎 Diamond Badge
+Technology,🕹️ Videojuegos y Sociedad,🕹️,1,Explorer,Historia Básica del Juego Digital,Hitos principales,100,
+Technology,🕹️ Videojuegos y Sociedad,🕹️,2,Explorer,Culturas de Jugadores,"Casual, hardcore",100,
+Technology,🕹️ Videojuegos y Sociedad,🕹️,3,Explorer,Comunidades Online,"Clanes, guilds",100,🥉 Bronze Badge
+Technology,🕹️ Videojuegos y Sociedad,🕹️,4,Apprentice,Esports y Espectadores,Audiencias masivas,200,
+Technology,🕹️ Videojuegos y Sociedad,🕹️,5,Apprentice,Representación y Diversidad,"Género, raza",200,
+Technology,🕹️ Videojuegos y Sociedad,🕹️,6,Apprentice,Juegos y Educación,Serious games,200,🥈 Silver Badge
+Technology,🕹️ Videojuegos y Sociedad,🕹️,7,Connoisseur,Adicción y Regulación,"Clasificaciones, límites",350,
+Technology,🕹️ Videojuegos y Sociedad,🕹️,8,Connoisseur,Economías Virtuales,"Objetos, skins, mercados",350,🥇 Gold Badge
+Technology,🕹️ Videojuegos y Sociedad,🕹️,9,Expert,Juegos como Arte Político,Crítica y reflexión,500,
+Technology,🕹️ Videojuegos y Sociedad,🕹️,10,Expert,Fronteras Difusas Realidad-Juego,Metaversos,500,💎 Diamond Badge
+Humanities,🚀 Ciencia Ficción y Futuro,🚀,1,Explorer,Orígenes de la Ciencia Ficción,"Verne, Wells",100,
+Humanities,🚀 Ciencia Ficción y Futuro,🚀,2,Explorer,Edad Dorada,"Asimov, Clarke",100,
+Humanities,🚀 Ciencia Ficción y Futuro,🚀,3,Explorer,Cine de Ciencia Ficción,"2001, Star Wars",100,🥉 Bronze Badge
+Humanities,🚀 Ciencia Ficción y Futuro,🚀,4,Apprentice,Distopías y Crítica Social,"1984, Blade Runner",200,
+Humanities,🚀 Ciencia Ficción y Futuro,🚀,5,Apprentice,Utopías y Posibles Mundos,"Star Trek, solarpunk",200,
+Humanities,🚀 Ciencia Ficción y Futuro,🚀,6,Apprentice,Space Opera y Aventuras Cósmicas,Grandes sagas,200,🥈 Silver Badge
+Humanities,🚀 Ciencia Ficción y Futuro,🚀,7,Connoisseur,Ciberpunk y Realidades Virtuales,"Neuromante, Matrix",350,
+Humanities,🚀 Ciencia Ficción y Futuro,🚀,8,Connoisseur,Biopunk y Genética,Manipulación de cuerpos,350,🥇 Gold Badge
+Humanities,🚀 Ciencia Ficción y Futuro,🚀,9,Expert,SF y Predicciones Cumplidas,Tecnologías anticipadas,500,
+Humanities,🚀 Ciencia Ficción y Futuro,🚀,10,Expert,Ficción como Laboratorio del Future,Inspirar ciencia real,500,💎 Diamond Badge
+Humanities,👗 Historia de la Moda,👗,1,Explorer,Vestimenta en la Antigüedad,"Togas, túnicas",100,
+Humanities,👗 Historia de la Moda,👗,2,Explorer,Ropas Medievales y Renacentistas,"Cortes, símbolos",100,
+Humanities,👗 Historia de la Moda,👗,3,Explorer,Moda del Siglo XIX,"Crinolinas, trajes",100,🥉 Bronze Badge
+Humanities,👗 Historia de la Moda,👗,4,Apprentice,Alta Costura y Diseñadores,"Chanel, Dior",200,
+Humanities,👗 Historia de la Moda,👗,5,Apprentice,Moda Juvenil y Subculturas,"Punk, hip-hop",200,
+Humanities,👗 Historia de la Moda,👗,6,Apprentice,Fast Fashion,Producción masiva,200,🥈 Silver Badge
+Humanities,👗 Historia de la Moda,👗,7,Connoisseur,Impacto Ambiental de la Moda,"Contaminación, residuos",350,
+Humanities,👗 Historia de la Moda,👗,8,Connoisseur,Moda Ética y Sostenible,"Algodón orgánico, reciclaje",350,🥇 Gold Badge
+Humanities,👗 Historia de la Moda,👗,9,Expert,Tecnología Textil,Ropa inteligente,500,
+Humanities,👗 Historia de la Moda,👗,10,Expert,Future de la Moda,"Digital, virtual, IA",500,💎 Diamond Badge
+Technology,📐 Arquitectura de la Información y UX,📐,1,Explorer,Qué es UX,Experiencia de usuario,100,
+Technology,📐 Arquitectura de la Información y UX,📐,2,Explorer,Interfaces a lo Largo del Tiempo,"CLI, GUI, móvil",100,
+Technology,📐 Arquitectura de la Información y UX,📐,3,Explorer,Arquitectura de la Información,"Jerarquías, menús",100,🥉 Bronze Badge
+Technology,📐 Arquitectura de la Información y UX,📐,4,Apprentice,Principios de Usabilidad,"Norman, heurísticas",200,
+Technology,📐 Arquitectura de la Información y UX,📐,5,Apprentice,Investigación con Usuarios,"Entrevistas, tests",200,
+Technology,📐 Arquitectura de la Información y UX,📐,6,Apprentice,Diseño Centrado en la Persona,"Personas, journeys",200,🥈 Silver Badge
+Technology,📐 Arquitectura de la Información y UX,📐,7,Connoisseur,Patrones Oscuros,Diseño manipulador,350,
+Technology,📐 Arquitectura de la Información y UX,📐,8,Connoisseur,Accesibilidad Digital,"WCAG, inclusión",350,🥇 Gold Badge
+Technology,📐 Arquitectura de la Información y UX,📐,9,Expert,UX y Ética,Responsabilidad del diseño,500,
+Technology,📐 Arquitectura de la Información y UX,📐,10,Expert,UX con IA,"Interfaces conversacionales, copilots",500,💎 Diamond Badge
+Health,🎓 Neuroeducación y Aprendizaje,🎓,1,Explorer,Cerebro y Aprendizaje,"Plasticidad, memoria",100,
+Health,🎓 Neuroeducación y Aprendizaje,🎓,2,Explorer,Atención y Motivación,Sistemas de recompensa,100,
+Health,🎓 Neuroeducación y Aprendizaje,🎓,3,Explorer,Emoción y Recuerdo,Cómo se fijan los recuerdos,100,🥉 Bronze Badge
+Health,🎓 Neuroeducación y Aprendizaje,🎓,4,Apprentice,Errores y Curva de Olvido,Por qué olvidamos,200,
+Health,🎓 Neuroeducación y Aprendizaje,🎓,5,Apprentice,Práctica Espaciada y Revisión Activa,Técnicas efectivas,200,
+Health,🎓 Neuroeducación y Aprendizaje,🎓,6,Apprentice,Aprendizaje Multisensorial,"Ver, oír, hacer",200,🥈 Silver Badge
+Health,🎓 Neuroeducación y Aprendizaje,🎓,7,Connoisseur,Mitos sobre el Cerebro,"10%, hemisferios, etc.",350,
+Health,🎓 Neuroeducación y Aprendizaje,🎓,8,Connoisseur,Tecnología y Aprendizaje,"Apps, plataformas",350,🥇 Gold Badge
+Health,🎓 Neuroeducación y Aprendizaje,🎓,9,Expert,Personalización con IA,Rutas adaptativas,500,
+Health,🎓 Neuroeducación y Aprendizaje,🎓,10,Expert,Diseñar tu Propio Sistema de Aprendizaje,Aplicar todo lo aprendido,500,💎 Diamond Badge
+Humanities,🕯️ Historia de las Religiones,🕯️,1,Explorer,Creencias Prehistóricas,"Cultos, enterramientos",100,
+Humanities,🕯️ Historia de las Religiones,🕯️,2,Explorer,Religiones Antiguas,"Egipto, Grecia",100,
+Humanities,🕯️ Historia de las Religiones,🕯️,3,Explorer,Grandes Religiones Monoteístas,"Judaísmo, cristianismo, islam",100,🥉 Bronze Badge
+Humanities,🕯️ Historia de las Religiones,🕯️,4,Apprentice,Religiones Dhármicas,"Hinduismo, budismo",200,
+Humanities,🕯️ Historia de las Religiones,🕯️,5,Apprentice,Religiones de Asia Oriental,"Confucianismo, taoísmo",200,
+Humanities,🕯️ Historia de las Religiones,🕯️,6,Apprentice,Religiones Indígenas,"África, América",200,🥈 Silver Badge
+Humanities,🕯️ Historia de las Religiones,🕯️,7,Connoisseur,Reformas y Cismas,"Protestantismo, reformas internas",350,
+Humanities,🕯️ Historia de las Religiones,🕯️,8,Connoisseur,Religión y Política,"Teocracias, laicismo",350,🥇 Gold Badge
+Humanities,🕯️ Historia de las Religiones,🕯️,9,Expert,Secularización y Nuevos Movimientos,Espiritualidades modernas,500,
+Humanities,🕯️ Historia de las Religiones,🕯️,10,Expert,Religión en el Future,"¿Menos, más, distinta?",500,💎 Diamond Badge
+Society,🕵️ Crimen Organizado y Mafias,🕵️,1,Explorer,Qué es el Crimen Organizado,Definición y tipos,100,
+Society,🕵️ Crimen Organizado y Mafias,🕵️,2,Explorer,Mafia Siciliana y Cosa Nostra,Orígenes y códigos,100,
+Society,🕵️ Crimen Organizado y Mafias,🕵️,3,Explorer,"Yakuza, Triadas y Otras Mafias",Asia y más,100,🥉 Bronze Badge
+Society,🕵️ Crimen Organizado y Mafias,🕵️,4,Apprentice,Carteles de la Droga,Latinoamérica,200,
+Society,🕵️ Crimen Organizado y Mafias,🕵️,5,Apprentice,Lavado de Dinero,Métodos y ejemplos,200,
+Society,🕵️ Crimen Organizado y Mafias,🕵️,6,Apprentice,Crimen Organizado en Política,Corrupción,200,🥈 Silver Badge
+Society,🕵️ Crimen Organizado y Mafias,🕵️,7,Connoisseur,Crimen Cibernético Organizado,"Hackers, ransomware",350,
+Society,🕵️ Crimen Organizado y Mafias,🕵️,8,Connoisseur,Lucha Internacional contra el Crimen,"Interpol, tratados",350,🥇 Gold Badge
+Society,🕵️ Crimen Organizado y Mafias,🕵️,9,Expert,Narrativas y Mitificación del Crimen,"Cine, series",500,
+Society,🕵️ Crimen Organizado y Mafias,🕵️,10,Expert,Escenarios Futures del Crimen Global,Nuevas formas emergentes,500,💎 Diamond Badge
+Science,👩‍🚀 Exploración Espacial Humana,👩‍🚀,1,Explorer,Carrera Espacial,EE.UU. vs URSS,100,
+Science,👩‍🚀 Exploración Espacial Humana,👩‍🚀,2,Explorer,Llegada a la Luna,Apollo,100,
+Science,👩‍🚀 Exploración Espacial Humana,👩‍🚀,3,Explorer,Estaciones Espaciales,"Mir, ISS",100,🥉 Bronze Badge
+Science,👩‍🚀 Exploración Espacial Humana,👩‍🚀,4,Apprentice,Transbordadores y Nuevas Naves,"Shuttle, cápsulas",200,
+Science,👩‍🚀 Exploración Espacial Humana,👩‍🚀,5,Apprentice,Empresas Privadas,"SpaceX, Blue Origin",200,
+Science,👩‍🚀 Exploración Espacial Humana,👩‍🚀,6,Apprentice,Robots Exploradores,"Rovers, sondas",200,🥈 Silver Badge
+Science,👩‍🚀 Exploración Espacial Humana,👩‍🚀,7,Connoisseur,Vida en Microgravedad,Cuerpo humano en órbita,350,
+Science,👩‍🚀 Exploración Espacial Humana,👩‍🚀,8,Connoisseur,Planes para Marte,Misiones tripuladas,350,🥇 Gold Badge
+Science,👩‍🚀 Exploración Espacial Humana,👩‍🚀,9,Expert,Colonias y Hábitats Espaciales,Diseños y retos,500,
+Science,👩‍🚀 Exploración Espacial Humana,👩‍🚀,10,Expert,Humanidad Multiplanetaria,Implicaciones a muy largo plazo,500,💎 Diamond Badge
+Technology,🤖 Historia de la Robótica,🤖,1,Explorer,Autómatas Antiguos,Dispositivos mecánicos precientíficos,100,
+Technology,🤖 Historia de la Robótica,🤖,2,Explorer,Robots en la Ficción,"Metropolis, Asimov",100,
+Technology,🤖 Historia de la Robótica,🤖,3,Explorer,Primeros Robots Industriales,Unimate y las fábricas,100,🥉 Bronze Badge
+Technology,🤖 Historia de la Robótica,🤖,4,Apprentice,Robots en el Hogar,"Aspiradoras, asistentes",200,
+Technology,🤖 Historia de la Robótica,🤖,5,Apprentice,Robots Colaborativos,Cobots junto a humanos,200,
+Technology,🤖 Historia de la Robótica,🤖,6,Apprentice,Competencias de Robótica,"FIRST, competiciones estudiantiles",200,🥈 Silver Badge
+Technology,🤖 Historia de la Robótica,🤖,7,Connoisseur,Robots Militares,"Drones, sistemas no tripulados",350,
+Technology,🤖 Historia de la Robótica,🤖,8,Connoisseur,Robots en Medicina,"Cirugía, rehabilitación",350,🥇 Gold Badge
+Technology,🤖 Historia de la Robótica,🤖,9,Expert,Robots Autónomos Inteligentes,"Percepción, decisión",500,
+Technology,🤖 Historia de la Robótica,🤖,10,Expert,Future de la Robótica,"Sociedad, empleo, ética",500,💎 Diamond Badge
+Technology,🚆 Historia del Transporte,🚆,1,Explorer,Rueda y Tracción Animal,"Carros, caballos",100,
+Technology,🚆 Historia del Transporte,🚆,2,Explorer,Barcos y Grandes Rutas,Navegación a vela,100,
+Technology,🚆 Historia del Transporte,🚆,3,Explorer,Ferrocarril,Revolución de los trenes,100,🥉 Bronze Badge
+Technology,🚆 Historia del Transporte,🚆,4,Apprentice,Automóvil y Carreteras,"Ford, autopistas",200,
+Technology,🚆 Historia del Transporte,🚆,5,Apprentice,Aviación,"Wright, vuelos comerciales",200,
+Technology,🚆 Historia del Transporte,🚆,6,Apprentice,Transporte Urbano,"Metro, tranvía, buses",200,🥈 Silver Badge
+Technology,🚆 Historia del Transporte,🚆,7,Connoisseur,Logística Global,"Contenedores, puertos",350,
+Technology,🚆 Historia del Transporte,🚆,8,Connoisseur,Sostenibilidad en el Transporte,"Eléctricos, tren rápido",350,🥇 Gold Badge
+Technology,🚆 Historia del Transporte,🚆,9,Expert,Vehículos Autónomos,Coches sin conductor,500,
+Technology,🚆 Historia del Transporte,🚆,10,Expert,Transporte del Future,"Hyperloop, taxis aéreos",500,💎 Diamond Badge
+Technology,⚡ Historia de la Energía,⚡,1,Explorer,Fuego y Musculatura,Primeras fuentes,100,
+Technology,⚡ Historia de la Energía,⚡,2,Explorer,Agua y Viento,"Molinos, norias",100,
+Technology,⚡ Historia de la Energía,⚡,3,Explorer,Carbón y Vapor,Máquina de vapor,100,🥉 Bronze Badge
+Technology,⚡ Historia de la Energía,⚡,4,Apprentice,Petróleo y Gas,Motores de combustión,200,
+Technology,⚡ Historia de la Energía,⚡,5,Apprentice,Electricidad,"Generadores, redes",200,
+Technology,⚡ Historia de la Energía,⚡,6,Apprentice,Energía Nuclear,"Fisión, centrales",200,🥈 Silver Badge
+Technology,⚡ Historia de la Energía,⚡,7,Connoisseur,Renovables Modernas,"Solar, eólica",350,
+Technology,⚡ Historia de la Energía,⚡,8,Connoisseur,Eficiencia Energética,"Edificios, industria",350,🥇 Gold Badge
+Technology,⚡ Historia de la Energía,⚡,9,Expert,Fusión Experimental,"Tokamaks, stellarators",500,
+Technology,⚡ Historia de la Energía,⚡,10,Expert,Civilización Energética Global,Escala Kardashev,500,💎 Diamond Badge
+Humanities,🎸 Historia de la Música Popular,🎸,1,Explorer,Blues y Jazz,Raíces afroamericanas,100,
+Humanities,🎸 Historia de la Música Popular,🎸,2,Explorer,Rock and Roll,Años 50 y 60,100,
+Humanities,🎸 Historia de la Música Popular,🎸,3,Explorer,Pop Global,"Beatles, fenómenos",100,🥉 Bronze Badge
+Humanities,🎸 Historia de la Música Popular,🎸,4,Apprentice,"Disco, Funk y Soul",Nuevos ritmos,200,
+Humanities,🎸 Historia de la Música Popular,🎸,5,Apprentice,Hip-Hop y Rap,Cultura urbana,200,
+Humanities,🎸 Historia de la Música Popular,🎸,6,Apprentice,Música Electrónica,"Raves, DJs",200,🥈 Silver Badge
+Humanities,🎸 Historia de la Música Popular,🎸,7,Connoisseur,Globalización Musical,"K-pop, reguetón",350,
+Humanities,🎸 Historia de la Música Popular,🎸,8,Connoisseur,Industria del Streaming,"Spotify, plataformas",350,🥇 Gold Badge
+Humanities,🎸 Historia de la Música Popular,🎸,9,Expert,Derechos de Autor y Música,"Copyright, conflictos",500,
+Humanities,🎸 Historia de la Música Popular,🎸,10,Expert,Música y Algoritmos,"Recomendación, creación IA",500,💎 Diamond Badge
+Health,🎨 Psicología de la Creatividad,🎨,1,Explorer,Qué es la Creatividad,Definiciones y mitos,100,
+Health,🎨 Psicología de la Creatividad,🎨,2,Explorer,Cerebro Creativo,Redes neuronales implicadas,100,
+Health,🎨 Psicología de la Creatividad,🎨,3,Explorer,Bloqueo Creativo,Causas habituales,100,🥉 Bronze Badge
+Health,🎨 Psicología de la Creatividad,🎨,4,Apprentice,Procesos Creativos,"Incubación, insight",200,
+Health,🎨 Psicología de la Creatividad,🎨,5,Apprentice,Creatividad en Ciencia y Arte,Casos históricos,200,
+Health,🎨 Psicología de la Creatividad,🎨,6,Apprentice,Ambiente y Creatividad,Entornos que ayudan,200,🥈 Silver Badge
+Health,🎨 Psicología de la Creatividad,🎨,7,Connoisseur,Equipos Creativos,Colaboración y conflicto,350,
+Health,🎨 Psicología de la Creatividad,🎨,8,Connoisseur,Creatividad en Empresas,Innovación y cultura,350,🥇 Gold Badge
+Health,🎨 Psicología de la Creatividad,🎨,9,Expert,Medir Creatividad,"Tests, límites",500,
+Health,🎨 Psicología de la Creatividad,🎨,10,Expert,IA y Co-creación,Humanos + máquinas,500,💎 Diamond Badge
+Society,📢 Historia de la Publicidad,📢,1,Explorer,Anuncios en la Antigüedad,"Carteles, pregoneros",100,
+Society,📢 Historia de la Publicidad,📢,2,Explorer,Publicidad en Prensa,Siglo XIX,100,
+Society,📢 Historia de la Publicidad,📢,3,Explorer,Radio y TV,Spots icónicos,100,🥉 Bronze Badge
+Society,📢 Historia de la Publicidad,📢,4,Apprentice,Branding y Marcas,Identidad visual,200,
+Society,📢 Historia de la Publicidad,📢,5,Apprentice,Publicidad Digital,"Banners, SEM",200,
+Society,📢 Historia de la Publicidad,📢,6,Apprentice,Redes Sociales e Influencers,Nuevos formatos,200,🥈 Silver Badge
+Society,📢 Historia de la Publicidad,📢,7,Connoisseur,Psicología del Consumo,Persuasión y emoción,350,
+Society,📢 Historia de la Publicidad,📢,8,Connoisseur,Ética en la Publicidad,"Manipulación, regulación",350,🥇 Gold Badge
+Society,📢 Historia de la Publicidad,📢,9,Expert,Publicidad Personalizada,Microsegmentación,500,
+Society,📢 Historia de la Publicidad,📢,10,Expert,Future de la Publicidad,"IA creativa, realidad aumentada",500,💎 Diamond Badge
+Health,🧠 Historia de la Medicina Mental,🧠,1,Explorer,Concepciones Antiguas,"Espíritus, humores",100,
+Health,🧠 Historia de la Medicina Mental,🧠,2,Explorer,Manicomios y Encierros,Siglos XVIII-XIX,100,
+Health,🧠 Historia de la Medicina Mental,🧠,3,Explorer,Nacimiento de la Psiquiatría,"Pinel, primeras clasificaciones",100,🥉 Bronze Badge
+Health,🧠 Historia de la Medicina Mental,🧠,4,Apprentice,Psicoanálisis y Freud,"Inconsciente, terapia",200,
+Health,🧠 Historia de la Medicina Mental,🧠,5,Apprentice,Psicofármacos,Revolución farmacológica,200,
+Health,🧠 Historia de la Medicina Mental,🧠,6,Apprentice,Terapias Cognitivo-Conductuales,Nuevos enfoques,200,🥈 Silver Badge
+Health,🧠 Historia de la Medicina Mental,🧠,7,Connoisseur,Salud Mental Comunitaria,Desinstitucionalización,350,
+Health,🧠 Historia de la Medicina Mental,🧠,8,Connoisseur,Salud Mental en la Cultura,"Estigma, representaciones",350,🥇 Gold Badge
+Health,🧠 Historia de la Medicina Mental,🧠,9,Expert,Digitalización de la Terapia,"Apps, telepsicología",500,
+Health,🧠 Historia de la Medicina Mental,🧠,10,Expert,Future de la Salud Mental,"Prevención, IA, personalización",500,💎 Diamond Badge
+Society,🏆 Historia del Deporte,🏆,1,Explorer,Juegos Antiguos,"Olímpicos, rituales",100,
+Society,🏆 Historia del Deporte,🏆,2,Explorer,Deporte Moderno,Reglas y federaciones,100,
+Society,🏆 Historia del Deporte,🏆,3,Explorer,Fútbol y Deportes de Masas,"Clubes, ligas",100,🥉 Bronze Badge
+Society,🏆 Historia del Deporte,🏆,4,Apprentice,Juegos Olímpicos Modernos,Renacimiento y evolución,200,
+Society,🏆 Historia del Deporte,🏆,5,Apprentice,Profesionalización y Negocio,"Contratos, derechos TV",200,
+Society,🏆 Historia del Deporte,🏆,6,Apprentice,Deporte Femenino,Luchas por visibilidad,200,🥈 Silver Badge
+Society,🏆 Historia del Deporte,🏆,7,Connoisseur,Deporte y Política,"Boicots, propaganda",350,
+Society,🏆 Historia del Deporte,🏆,8,Connoisseur,Dopaje y Ética,Casos célebres,350,🥇 Gold Badge
+Society,🏆 Historia del Deporte,🏆,9,Expert,Ciencia del Rendimiento,"Nutrición, datos",500,
+Society,🏆 Historia del Deporte,🏆,10,Expert,Deporte del Future,"E-sports, nuevos formatos",500,💎 Diamond Badge
+Science,⏳ Historia del Tiempo y Calendarios,⏳,1,Explorer,Medir el Tiempo,"Sol, luna, ciclos",100,
+Science,⏳ Historia del Tiempo y Calendarios,⏳,2,Explorer,Calendarios Antiguos,"Egipcio, maya",100,
+Science,⏳ Historia del Tiempo y Calendarios,⏳,3,Explorer,Calendario Romano y Gregoriano,Reformas,100,🥉 Bronze Badge
+Science,⏳ Historia del Tiempo y Calendarios,⏳,4,Apprentice,Relojes Mecánicos,"Campanarios, relojes de bolsillo",200,
+Science,⏳ Historia del Tiempo y Calendarios,⏳,5,Apprentice,Husos Horarios,Coordinación global,200,
+Science,⏳ Historia del Tiempo y Calendarios,⏳,6,Apprentice,Tiempo Atómico,Precisión extrema,200,🥈 Silver Badge
+Science,⏳ Historia del Tiempo y Calendarios,⏳,7,Connoisseur,Percepción Humana del Tiempo,Psicología,350,
+Science,⏳ Historia del Tiempo y Calendarios,⏳,8,Connoisseur,Tiempo en la Física,Relatividad,350,🥇 Gold Badge
+Science,⏳ Historia del Tiempo y Calendarios,⏳,9,Expert,Tiempo en la Cultura,"Ritmos, rituales",500,
+Science,⏳ Historia del Tiempo y Calendarios,⏳,10,Expert,Future del Tiempo Humano,"Vida acelerada, IA",500,💎 Diamond Badge
+Society,🚢 Historia del Comercio y la Globalización,🚢,1,Explorer,Trueque y Mercados Locales,Intercambios básicos,100,
+Society,🚢 Historia del Comercio y la Globalización,🚢,2,Explorer,Rutas de la Seda y Marítimas,Intercambio global temprano,100,
+Society,🚢 Historia del Comercio y la Globalización,🚢,3,Explorer,Compañías Coloniales,Compañía de Indias,100,🥉 Bronze Badge
+Society,🚢 Historia del Comercio y la Globalización,🚢,4,Apprentice,Revolución Industrial y Comercio,Manufacturas y exportación,200,
+Society,🚢 Historia del Comercio y la Globalización,🚢,5,Apprentice,Era del Contenedor,Logística moderna,200,
+Society,🚢 Historia del Comercio y la Globalización,🚢,6,Apprentice,Organismos Internacionales,"OMC, tratados de libre comercio",200,🥈 Silver Badge
+Society,🚢 Historia del Comercio y la Globalización,🚢,7,Connoisseur,Cadenas Globales de Valor,Producción distribuida,350,
+Society,🚢 Historia del Comercio y la Globalización,🚢,8,Connoisseur,Desigualdad y Globalización,Ganadores y perdedores,350,🥇 Gold Badge
+Society,🚢 Historia del Comercio y la Globalización,🚢,9,Expert,Crisis y Guerras Comerciales,"Aranceles, sanciones",500,
+Society,🚢 Historia del Comercio y la Globalización,🚢,10,Expert,Globalización 2.0,"Digital, servicios, desglobalización",500,💎 Diamond Badge
+Society,💰 Historia del Dinero,💰,1,Explorer,Trueque y Objetos de Valor,"Sal, conchas",100,
+Society,💰 Historia del Dinero,💰,2,Explorer,Monedas y Metales,"Oro, plata",100,
+Society,💰 Historia del Dinero,💰,3,Explorer,Billetes y Bancos,"Pagarés, bancos centrales",100,🥉 Bronze Badge
+Society,💰 Historia del Dinero,💰,4,Apprentice,Patrón Oro y su Fin,Bretton Woods,200,
+Society,💰 Historia del Dinero,💰,5,Apprentice,Tarjetas y Dinero Electrónico,"Crédito, débito",200,
+Society,💰 Historia del Dinero,💰,6,Apprentice,Mercados Financieros Modernos,"Bolsas, derivados",200,🥈 Silver Badge
+Society,💰 Historia del Dinero,💰,7,Connoisseur,Crisis Monetarias,"Hiperinflaciones, devaluaciones",350,
+Society,💰 Historia del Dinero,💰,8,Connoisseur,Criptomonedas,"Bitcoin, alternativas",350,🥇 Gold Badge
+Society,💰 Historia del Dinero,💰,9,Expert,Dinero y Poder,Moneda como herramienta política,500,
+Society,💰 Historia del Dinero,💰,10,Expert,Future del Dinero,"CBDC, dinero programable",500,💎 Diamond Badge
+Humanities,🎲 Historia de los Juegos de Mesa,🎲,1,Explorer,Juegos Antiguos,"Senet, Go",100,
+Humanities,🎲 Historia de los Juegos de Mesa,🎲,2,Explorer,Ajedrez y Estrategia,Historia y cultura,100,
+Humanities,🎲 Historia de los Juegos de Mesa,🎲,3,Explorer,Juegos Clásicos Modernos,"Monopoly, Scrabble",100,🥉 Bronze Badge
+Humanities,🎲 Historia de los Juegos de Mesa,🎲,4,Apprentice,Eurogames y Revolución Moderna,"Catan, Carcassonne",200,
+Humanities,🎲 Historia de los Juegos de Mesa,🎲,5,Apprentice,Juegos Cooperativos,"Pandemic, nuevos enfoques",200,
+Humanities,🎲 Historia de los Juegos de Mesa,🎲,6,Apprentice,Juegos de Rol de Mesa,Dungeons & Dragons,200,🥈 Silver Badge
+Humanities,🎲 Historia de los Juegos de Mesa,🎲,7,Connoisseur,Diseño de Juegos de Mesa,"Mecánicas, balance",350,
+Humanities,🎲 Historia de los Juegos de Mesa,🎲,8,Connoisseur,Comunidades y Ferias,"Essen, eventos",350,🥇 Gold Badge
+Humanities,🎲 Historia de los Juegos de Mesa,🎲,9,Expert,Juegos como Herramienta Educativa,Serious boardgames,500,
+Humanities,🎲 Historia de los Juegos de Mesa,🎲,10,Expert,Future Híbrido,"Mesa + apps, IA",500,💎 Diamond Badge
+Nature,🌊 Historia de la Exploración Oceánica,🌊,1,Explorer,Primeras Navegaciones,"Costas, islas",100,
+Nature,🌊 Historia de la Exploración Oceánica,🌊,2,Explorer,Grandes Descubrimientos,"Colón, Magallanes",100,
+Nature,🌊 Historia de la Exploración Oceánica,🌊,3,Explorer,Cartografía Marina,Mapas y peligros,100,🥉 Bronze Badge
+Nature,🌊 Historia de la Exploración Oceánica,🌊,4,Apprentice,Exploración de Profundidades,"Batiscafos, Jacques Cousteau",200,
+Nature,🌊 Historia de la Exploración Oceánica,🌊,5,Apprentice,Submarinos Militares,Guerras mundiales,200,
+Nature,🌊 Historia de la Exploración Oceánica,🌊,6,Apprentice,Exploración Científica Moderna,"ROVs, Argo",200,🥈 Silver Badge
+Nature,🌊 Historia de la Exploración Oceánica,🌊,7,Connoisseur,Recursos del Fondo Marino,"Minerales, ecosistemas",350,
+Nature,🌊 Historia de la Exploración Oceánica,🌊,8,Connoisseur,Pecios y Tesoro,Naufragios famosos,350,🥇 Gold Badge
+Nature,🌊 Historia de la Exploración Oceánica,🌊,9,Expert,Conservación de Océanos,Amenazas y soluciones,500,
+Nature,🌊 Historia de la Exploración Oceánica,🌊,10,Expert,Colonización del Océano,Ciudades submarinas,500,💎 Diamond Badge
+Science,🗺️ Historia de la Cartografía,🗺️,1,Explorer,Primeros Mapas,"Cuevas, tablillas",100,
+Science,🗺️ Historia de la Cartografía,🗺️,2,Explorer,Mapas Antiguos,"Ptolomeo, mapas del mundo",100,
+Science,🗺️ Historia de la Cartografía,🗺️,3,Explorer,Edad de los Descubrimientos,Mapas náuticos,100,🥉 Bronze Badge
+Science,🗺️ Historia de la Cartografía,🗺️,4,Apprentice,Proyecciones y Distorsiones,"Mercator, alternativas",200,
+Science,🗺️ Historia de la Cartografía,🗺️,5,Apprentice,Mapas Temáticos,"Clima, población",200,
+Science,🗺️ Historia de la Cartografía,🗺️,6,Apprentice,Fotografía Aérea y Satélites,Nueva era de mapas,200,🥈 Silver Badge
+Science,🗺️ Historia de la Cartografía,🗺️,7,Connoisseur,Sistemas de Información Geográfica,GIS,350,
+Science,🗺️ Historia de la Cartografía,🗺️,8,Connoisseur,Mapas en la Vida Cotidiana,"GPS, apps",350,🥇 Gold Badge
+Science,🗺️ Historia de la Cartografía,🗺️,9,Expert,Mapas y Poder,"Propaganda, reclamaciones",500,
+Science,🗺️ Historia de la Cartografía,🗺️,10,Expert,Cartografía del Future,"Realidad aumentada, 3D",500,💎 Diamond Badge
+Society,🏠 Historia del Trabajo Doméstico,🏠,1,Explorer,Economía Doméstica Tradicional,Trabajo invisible,100,
+Society,🏠 Historia del Trabajo Doméstico,🏠,2,Explorer,Industrialización y Hogar,Cambios de rol,100,
+Society,🏠 Historia del Trabajo Doméstico,🏠,3,Explorer,Electrodomésticos,Revolución silenciosa,100,🥉 Bronze Badge
+Society,🏠 Historia del Trabajo Doméstico,🏠,4,Apprentice,División Sexual del Trabajo,Normas culturales,200,
+Society,🏠 Historia del Trabajo Doméstico,🏠,5,Apprentice,Trabajo de Cuidados,"Niños, mayores",200,
+Society,🏠 Historia del Trabajo Doméstico,🏠,6,Apprentice,Trabajadoras del Hogar,Derechos y luchas,200,🥈 Silver Badge
+Society,🏠 Historia del Trabajo Doméstico,🏠,7,Connoisseur,Externalización del Trabajo Doméstico,"Servicios, limpieza",350,
+Society,🏠 Historia del Trabajo Doméstico,🏠,8,Connoisseur,Tecnología y Hogar Inteligente,Domótica,350,🥇 Gold Badge
+Society,🏠 Historia del Trabajo Doméstico,🏠,9,Expert,Valor Económico del Trabajo No Remunerado,Cálculos y debates,500,
+Society,🏠 Historia del Trabajo Doméstico,🏠,10,Expert,Future del Hogar Automatizado,Robots domésticos,500,💎 Diamond Badge
+Society,✈️ Historia del Turismo,✈️,1,Explorer,Peregrinajes y Viajes Antiguos,Motivaciones tempranas,100,
+Society,✈️ Historia del Turismo,✈️,2,Explorer,Grand Tour y Viaje Aristocrático,Siglos XVII-XVIII,100,
+Society,✈️ Historia del Turismo,✈️,3,Explorer,Nacimiento del Turismo de Masas,"Trenes, vacaciones pagadas",100,🥉 Bronze Badge
+Society,✈️ Historia del Turismo,✈️,4,Apprentice,Turismo de Sol y Playa,Desarrollo costero,200,
+Society,✈️ Historia del Turismo,✈️,5,Apprentice,Turismo Cultural y Urbano,Ciudades icónicas,200,
+Society,✈️ Historia del Turismo,✈️,6,Apprentice,Turismo de Naturaleza y Aventura,Ecoturismo,200,🥈 Silver Badge
+Society,✈️ Historia del Turismo,✈️,7,Connoisseur,Impacto del Turismo,"Economía, gentrificación",350,
+Society,✈️ Historia del Turismo,✈️,8,Connoisseur,Turismo Sostenible,Buenas prácticas,350,🥇 Gold Badge
+Society,✈️ Historia del Turismo,✈️,9,Expert,Turismo en Crisis,"Guerras, pandemias",500,
+Society,✈️ Historia del Turismo,✈️,10,Expert,Turismo del Future,"Virtual, espacial",500,💎 Diamond Badge
+Society,📻 Historia de los Medios de Comunicación,📻,1,Explorer,Oralidad y Manuscritos,Tradición oral,100,
+Society,📻 Historia de los Medios de Comunicación,📻,2,Explorer,Imprenta y Libros,Revolución de Gutenberg,100,
+Society,📻 Historia de los Medios de Comunicación,📻,3,Explorer,Prensa y Opinión Pública,Periódicos,100,🥉 Bronze Badge
+Society,📻 Historia de los Medios de Comunicación,📻,4,Apprentice,Radio,Voces a distancia,200,
+Society,📻 Historia de los Medios de Comunicación,📻,5,Apprentice,Televisión,Imagen en casa,200,
+Society,📻 Historia de los Medios de Comunicación,📻,6,Apprentice,Internet y Redes,Medios digitales,200,🥈 Silver Badge
+Society,📻 Historia de los Medios de Comunicación,📻,7,Connoisseur,Concentración Mediática,Grandes grupos,350,
+Society,📻 Historia de los Medios de Comunicación,📻,8,Connoisseur,Fake News y Desinformación,Retos actuales,350,🥇 Gold Badge
+Society,📻 Historia de los Medios de Comunicación,📻,9,Expert,Periodismo de Datos,Nuevas formas de contar,500,
+Society,📻 Historia de los Medios de Comunicación,📻,10,Expert,Medios del Future,"Realidad mixta, IA",500,💎 Diamond Badge
+Science,🌍 Historia del Clima de la Tierra,🌍,1,Explorer,Eras Geológicas,Resumen de grandes periodos,100,
+Science,🌍 Historia del Clima de la Tierra,🌍,2,Explorer,Glaciaciones,Edades de hielo,100,
+Science,🌍 Historia del Clima de la Tierra,🌍,3,Explorer,Períodos Cálidos,Tiempos sin hielo,100,🥉 Bronze Badge
+Science,🌍 Historia del Clima de la Tierra,🌍,4,Apprentice,Cómo Sabemos del Clima Pasado,"Testigos de hielo, sedimentos",200,
+Science,🌍 Historia del Clima de la Tierra,🌍,5,Apprentice,Clima y Grandes Extinciones,Relaciones,200,
+Science,🌍 Historia del Clima de la Tierra,🌍,6,Apprentice,Clima y Civilizaciones,Colapsos y prosperidad,200,🥈 Silver Badge
+Science,🌍 Historia del Clima de la Tierra,🌍,7,Connoisseur,Era Industrial y Cambio Climático,"CO2, forzamientos",350,
+Science,🌍 Historia del Clima de la Tierra,🌍,8,Connoisseur,Modelos Climáticos,Simulaciones y escenarios,350,🥇 Gold Badge
+Science,🌍 Historia del Clima de la Tierra,🌍,9,Expert,Puntos de No Retorno,Riesgos sistémicos,500,
+Science,🌍 Historia del Clima de la Tierra,🌍,10,Expert,Futures Climáticos,Trayectorias posibles,500,💎 Diamond Badge
+Technology,💻 Historia de la Informática Personal,💻,1,Explorer,Primeros PCs,"Altair, Apple I",100,
+Technology,💻 Historia de la Informática Personal,💻,2,Explorer,Revolución del PC de Escritorio,"IBM PC, compatibles",100,
+Technology,💻 Historia de la Informática Personal,💻,3,Explorer,Interfaces Gráficas,"Macintosh, Windows",100,🥉 Bronze Badge
+Technology,💻 Historia de la Informática Personal,💻,4,Apprentice,Portátiles y Movilidad,Laptops,200,
+Technology,💻 Historia de la Informática Personal,💻,5,Apprentice,Internet en Casa,"Módems, banda ancha",200,
+Technology,💻 Historia de la Informática Personal,💻,6,Apprentice,Smartphones,"iPhone, Android",200,🥈 Silver Badge
+Technology,💻 Historia de la Informática Personal,💻,7,Connoisseur,Tablets y Dispositivos Híbridos,Nuevas formas,350,
+Technology,💻 Historia de la Informática Personal,💻,8,Connoisseur,Ecosistemas y Jardines Cerrados,App stores,350,🥇 Gold Badge
+Technology,💻 Historia de la Informática Personal,💻,9,Expert,Informática Ubicua,IoT,500,
+Technology,💻 Historia de la Informática Personal,💻,10,Expert,Humanos Aumentados,Wearables avanzados,500,💎 Diamond Badge
+Society,🍎 Historia de la Educación,🍎,1,Explorer,Educación en Sociedades Antiguas,Aprendizaje maestro-discípulo,100,
+Society,🍎 Historia de la Educación,🍎,2,Explorer,Universidades Medievales,"Bolonia, París",100,
+Society,🍎 Historia de la Educación,🍎,3,Explorer,Escuela Pública,Sistemas nacionales,100,🥉 Bronze Badge
+Society,🍎 Historia de la Educación,🍎,4,Apprentice,Metodologías Clásicas,"Memorización, examen",200,
+Society,🍎 Historia de la Educación,🍎,5,Apprentice,Pedagogías Activas,"Montessori, Freinet",200,
+Society,🍎 Historia de la Educación,🍎,6,Apprentice,Educación Masiva y Online,MOOCs,200,🥈 Silver Badge
+Society,🍎 Historia de la Educación,🍎,7,Connoisseur,Brecha Educativa Global,Acceso desigual,350,
+Society,🍎 Historia de la Educación,🍎,8,Connoisseur,Evaluación y Métricas,"Notas, estandarización",350,🥇 Gold Badge
+Society,🍎 Historia de la Educación,🍎,9,Expert,Aprendizaje Personalizado,Datos y adaptación,500,
+Society,🍎 Historia de la Educación,🍎,10,Expert,Educación del Future,"Lifelong learning, IA",500,💎 Diamond Badge
+Humanities,⛪ Historia de la Arquitectura Sagrada,⛪,1,Explorer,Templos Antiguos,"Egipto, Grecia",100,
+Humanities,⛪ Historia de la Arquitectura Sagrada,⛪,2,Explorer,Basílicas y Catedrales,Cristianismo,100,
+Humanities,⛪ Historia de la Arquitectura Sagrada,⛪,3,Explorer,Mezquitas y Arquitectura Islámica,Elementos clave,100,🥉 Bronze Badge
+Humanities,⛪ Historia de la Arquitectura Sagrada,⛪,4,Apprentice,Pagodas y Templos Asiáticos,"Budismo, taoísmo",200,
+Humanities,⛪ Historia de la Arquitectura Sagrada,⛪,5,Apprentice,Arquitectura Sagrada en América,Pirámides mesoamericanas,200,
+Humanities,⛪ Historia de la Arquitectura Sagrada,⛪,6,Apprentice,Símbolos y Orientaciones,Geometría sagrada,200,🥈 Silver Badge
+Humanities,⛪ Historia de la Arquitectura Sagrada,⛪,7,Connoisseur,Transformaciones y Reutilizaciones,Edificios cambiando de culto,350,
+Humanities,⛪ Historia de la Arquitectura Sagrada,⛪,8,Connoisseur,Arquitectura Sagrada Contemporánea,Innovaciones,350,🥇 Gold Badge
+Humanities,⛪ Historia de la Arquitectura Sagrada,⛪,9,Expert,Turismo y Comercialización,Espacios sacros como atracciones,500,
+Humanities,⛪ Historia de la Arquitectura Sagrada,⛪,10,Expert,Espiritualidad y Espacios del Future,Nuevos templos,500,💎 Diamond Badge
+Science,🧪 Historia de la Biotecnología,🧪,1,Explorer,Fermentación y Usos Antiguos,"Pan, vino",100,
+Science,🧪 Historia de la Biotecnología,🧪,2,Explorer,Descubrimiento de Microorganismos,Microscopios,100,
+Science,🧪 Historia de la Biotecnología,🧪,3,Explorer,Genética Clásica,Mendel,100,🥉 Bronze Badge
+Science,🧪 Historia de la Biotecnología,🧪,4,Apprentice,ADN y Doble Hélice,Watson y Crick,200,
+Science,🧪 Historia de la Biotecnología,🧪,5,Apprentice,Ingeniería Genética,ADN recombinante,200,
+Science,🧪 Historia de la Biotecnología,🧪,6,Apprentice,Biotecnología Industrial,"Farmacia, alimentos",200,🥈 Silver Badge
+Science,🧪 Historia de la Biotecnología,🧪,7,Connoisseur,"Biotecnología Roja, Verde y Blanca","Salud, agricultura, industria",350,
+Science,🧪 Historia de la Biotecnología,🧪,8,Connoisseur,Bioética,Dilemas,350,🥇 Gold Badge
+Science,🧪 Historia de la Biotecnología,🧪,9,Expert,CRISPR y Edición Precisa,Revolución reciente,500,
+Science,🧪 Historia de la Biotecnología,🧪,10,Expert,Biología Sintética,Diseñar vida,500,💎 Diamond Badge

@@ -1,0 +1,901 @@
+﻿Category,Subject,Icon,Episode No,Level,Episode Title,Description,Base XP,Badge
+العلم,🔭 علم الفلك والفضاء,🔭,1,مستكشف,El Sistema Solar,"Planetas, lunas, órbitas básicas",100,
+العلم,🔭 علم الفلك والفضاء,🔭,2,مستكشف,Estrellas y Constelaciones,"Tipos de estrellas, ciclo estelar",100,
+العلم,🔭 علم الفلك والفضاء,🔭,3,مستكشف,La Luna y las Mareas,"Fases lunares, influencia terrestre",100,🥉 وسام برونزي
+العلم,🔭 علم الفلك والفضاء,🔭,4,مبتدئ,Galaxias y Nebulosas,"Vía Láctea, tipos de galaxias",200,
+العلم,🔭 علم الفلك والفضاء,🔭,5,مبتدئ,Exploración Espacial,Historia de la carrera espacial,200,
+العلم,🔭 علم الفلك والفضاء,🔭,6,مبتدئ,Agujeros Negros,"Formación, horizonte de eventos",200,🥈 وسام فضي
+العلم,🔭 علم الفلك والفضاء,🔭,7,خبير,Cosmología del Big Bang,"Origen del universo, radiación cósmica",350,
+العلم,🔭 علم الفلك والفضاء,🔭,8,خبير,Exoplanetas y Vida,"Zona habitable, búsqueda de vida",350,🥇 وسام ذهبي
+العلم,🔭 علم الفلك والفضاء,🔭,9,خبير,Materia y Energía Oscura,Composición oculta del universo,500,
+العلم,🔭 علم الفلك والفضاء,🔭,10,خبير,El Futuro del Cosmos,"Destino del universo, teorías finales",500,💎 وسام ماسي
+التاريخ,🏛️ التاريخ القديم,🏛️,1,مستكشف,Mesopotamia: Cuna de la Civilización,"Sumerios, escritura cuneiforme",100,
+التاريخ,🏛️ التاريخ القديم,🏛️,2,مستكشف,Egipto: El Nilo y los Faraones,"Pirámides, momificación, jeroglíficos",100,
+التاريخ,🏛️ التاريخ القديم,🏛️,3,مستكشف,Grecia: Democracia y Filosofía,"Atenas, Esparta, pensadores",100,🥉 وسام برونزي
+التاريخ,🏛️ التاريخ القديم,🏛️,4,مبتدئ,Roma: República e Imperio,"Legiones, ingeniería, derecho romano",200,
+التاريخ,🏛️ التاريخ القديم,🏛️,5,مبتدئ,China: Dinastías Imperiales,"Gran Muralla, Ruta de la Seda",200,
+التاريخ,🏛️ التاريخ القديم,🏛️,6,مبتدئ,India: Civilización del Indo,"Harappa, vedas, castas",200,🥈 وسام فضي
+التاريخ,🏛️ التاريخ القديم,🏛️,7,خبير,Persia y los Grandes Imperios,"Ciro, Darío, guerras médicas",350,
+التاريخ,🏛️ التاريخ القديم,🏛️,8,خبير,Civilizaciones Precolombinas,"Maya, Azteca, Inca",350,🥇 وسام ذهبي
+التاريخ,🏛️ التاريخ القديم,🏛️,9,خبير,Caída de los Imperios,Patrones de colapso civilizatorio,500,
+التاريخ,🏛️ التاريخ القديم,🏛️,10,خبير,Legado Antiguo en el Mundo Moderno,Influencias actuales del mundo antiguo,500,💎 وسام ماسي
+العلم,🧠 علم الأعصاب,🧠,1,مستكشف,El Cerebro: Mapa Básico,"Lóbulos, hemisferios, funciones",100,
+العلم,🧠 علم الأعصاب,🧠,2,مستكشف,Neuronas y Sinapsis,Comunicación neuronal básica,100,
+العلم,🧠 علم الأعصاب,🧠,3,مستكشف,Los Sentidos,Cómo el cerebro procesa el mundo,100,🥉 وسام برونزي
+العلم,🧠 علم الأعصاب,🧠,4,مبتدئ,Memoria y Aprendizaje,"Tipos de memoria, neuroplasticidad",200,
+العلم,🧠 علم الأعصاب,🧠,5,مبتدئ,Emociones y el Cerebro,"Sistema límbico, amígdala",200,
+العلم,🧠 علم الأعصاب,🧠,6,مبتدئ,El Sueño y los Sueños,"Ciclos REM, función reparadora",200,🥈 وسام فضي
+العلم,🧠 علم الأعصاب,🧠,7,خبير,Neuroquímica,"Dopamina, serotonina, endorfinas",350,
+العلم,🧠 علم الأعصاب,🧠,8,خبير,Trastornos Neurológicos,"Alzheimer, Parkinson, epilepsia",350,🥇 وسام ذهبي
+العلم,🧠 علم الأعصاب,🧠,9,خبير,Conciencia y Libre Albedrío,El misterio de la conciencia,500,
+العلم,🧠 علم الأعصاب,🧠,10,خبير,Neurotecnología del Futuro,"Interfaces cerebro-máquina, IA neural",500,💎 وسام ماسي
+التكنولوجيا,🤖 Inteligencia Artificial,🤖,1,مستكشف,¿Qué es la IA?,"Conceptos básicos, historia",100,
+التكنولوجيا,🤖 Inteligencia Artificial,🤖,2,مستكشف,Machine Learning 101,Aprendizaje supervisado y no supervisado,100,
+التكنولوجيا,🤖 Inteligencia Artificial,🤖,3,مستكشف,Redes Neuronales,Cómo aprende una máquina,100,🥉 وسام برونزي
+التكنولوجيا,🤖 Inteligencia Artificial,🤖,4,مبتدئ,Procesamiento del Lenguaje,"NLP, chatbots, traducción",200,
+التكنولوجيا,🤖 Inteligencia Artificial,🤖,5,مبتدئ,Visión por Computador,Reconocimiento de imágenes,200,
+التكنولوجيا,🤖 Inteligencia Artificial,🤖,6,مبتدئ,IA Generativa,"GPT, DALL-E, creación de contenido",200,🥈 وسام فضي
+التكنولوجيا,🤖 Inteligencia Artificial,🤖,7,خبير,IA en la Industria,"Aplicaciones reales, transformación",350,
+التكنولوجيا,🤖 Inteligencia Artificial,🤖,8,خبير,Ética de la IA,"Sesgos, privacidad, regulación",350,🥇 وسام ذهبي
+التكنولوجيا,🤖 Inteligencia Artificial,🤖,9,خبير,IA General (AGI),Camino hacia la superinteligencia,500,
+التكنولوجيا,🤖 Inteligencia Artificial,🤖,10,خبير,El Futuro IA-Humano,"Coexistencia, singularidad tecnológica",500,💎 وسام ماسي
+المجتمع,💰 Economía y Finanzas,💰,1,مستكشف,Oferta y Demanda,Principios básicos del mercado,100,
+المجتمع,💰 Economía y Finanzas,💰,2,مستكشف,El Dinero y la Banca,"Historia del dinero, sistema bancario",100,
+المجتمع,💰 Economía y Finanzas,💰,3,مستكشف,Inflación y Precios,Por qué sube el coste de la vida,100,🥉 وسام برونزي
+المجتمع,💰 Economía y Finanzas,💰,4,مبتدئ,Mercados Bursátiles,"Bolsa, acciones, índices",200,
+المجتمع,💰 Economía y Finanzas,💰,5,مبتدئ,Comercio Internacional,"Globalización, aranceles, tratados",200,
+المجتمع,💰 Economía y Finanzas,💰,6,مبتدئ,Criptomonedas y Blockchain,"Bitcoin, tecnología descentralizada",200,🥈 وسام فضي
+المجتمع,💰 Economía y Finanzas,💰,7,خبير,Crisis Económicas,"Grandes recesiones, patrones",350,
+المجتمع,💰 Economía y Finanzas,💰,8,خبير,Política Monetaria,"Bancos centrales, tipos de interés",350,🥇 وسام ذهبي
+المجتمع,💰 Economía y Finanzas,💰,9,خبير,Economía Conductual,Psicología de las decisiones financieras,500,
+المجتمع,💰 Economía y Finanzas,💰,10,خبير,El Futuro de la Economía,"Post-capitalismo, economía circular",500,💎 وسام ماسي
+الطبيعة,🐋 Biología Marina,🐋,1,مستكشف,Los Océanos del Mundo,"Geografía oceánica, corrientes",100,
+الطبيعة,🐋 Biología Marina,🐋,2,مستكشف,Arrecifes de Coral,"Ecosistemas submarinos, biodiversidad",100,
+الطبيعة,🐋 Biología Marina,🐋,3,مستكشف,Grandes Mamíferos Marinos,"Ballenas, delfines, comunicación",100,🥉 وسام برونزي
+الطبيعة,🐋 Biología Marina,🐋,4,مبتدئ,El Abismo: Vida en las Profundidades,"Criaturas abisales, bioluminiscencia",200,
+الطبيعة,🐋 Biología Marina,🐋,5,مبتدئ,Tiburones: Depredadores del Mar,"Especies, mitos y realidades",200,
+الطبيعة,🐋 Biología Marina,🐋,6,مبتدئ,Migraciones Oceánicas,"Rutas, instintos, supervivencia",200,🥈 وسام فضي
+الطبيعة,🐋 Biología Marina,🐋,7,خبير,Contaminación Marina,"Plásticos, acidificación, soluciones",350,
+الطبيعة,🐋 Biología Marina,🐋,8,خبير,Oceanografía y Clima,El océano como regulador climático,350,🥇 وسام ذهبي
+الطبيعة,🐋 Biología Marina,🐋,9,خبير,Biología Molecular Marina,Genética de organismos marinos,500,
+الطبيعة,🐋 Biología Marina,🐋,10,خبير,El Océano del Futuro,"Conservación, explotación sostenible",500,💎 وسام ماسي
+المجتمع,🧩 Psicología Humana,🧩,1,مستكشف,Introducción a la Psicología,"Corrientes, Freud, conductismo",100,
+المجتمع,🧩 Psicología Humana,🧩,2,مستكشف,Personalidad y Temperamento,"Big Five, tipos psicológicos",100,
+المجتمع,🧩 Psicología Humana,🧩,3,مستكشف,Percepción y Atención,"Ilusiones, sesgos perceptivos",100,🥉 وسام برونزي
+المجتمع,🧩 Psicología Humana,🧩,4,مبتدئ,Psicología Social,"Conformidad, obediencia, grupos",200,
+المجتمع,🧩 Psicología Humana,🧩,5,مبتدئ,Motivación y Hábitos,"Ciclos de hábitos, motivación intrínseca",200,
+المجتمع,🧩 Psicología Humana,🧩,6,مبتدئ,Toma de Decisiones,"Heurísticas, sesgos cognitivos",200,🥈 وسام فضي
+المجتمع,🧩 Psicología Humana,🧩,7,خبير,Psicología del Desarrollo,"Infancia a vejez, etapas clave",350,
+المجتمع,🧩 Psicología Humana,🧩,8,خبير,Trastornos Mentales,"Ansiedad, depresión, esquizofrenia",350,🥇 وسام ذهبي
+المجتمع,🧩 Psicología Humana,🧩,9,خبير,Psicología Positiva,"Flow, resiliencia, bienestar",500,
+المجتمع,🧩 Psicología Humana,🧩,10,خبير,Manipulación y Persuasión,"Técnicas, propaganda, defensa crítica",500,💎 وسام ماسي
+العلم,⚛️ Física Fundamental,⚛️,1,مستكشف,Las Leyes de Newton,"Movimiento, fuerza, gravedad",100,
+العلم,⚛️ Física Fundamental,⚛️,2,مستكشف,Energía y Termodinámica,"Conservación, calor, entropía",100,
+العلم,⚛️ Física Fundamental,⚛️,3,مستكشف,Ondas y Sonido,"Vibraciones, frecuencia, música",100,🥉 وسام برونزي
+العلم,⚛️ Física Fundamental,⚛️,4,مبتدئ,Electricidad y Magnetismo,"Campos, corriente, Maxwell",200,
+العلم,⚛️ Física Fundamental,⚛️,5,مبتدئ,Relatividad de Einstein,"Espacio-tiempo, E=mc²",200,
+العلم,⚛️ Física Fundamental,⚛️,6,مبتدئ,Física Nuclear,"Átomos, radiactividad, fisión",200,🥈 وسام فضي
+العلم,⚛️ Física Fundamental,⚛️,7,خبير,Mecánica Cuántica,"Dualidad onda-partícula, incertidumbre",350,
+العلم,⚛️ Física Fundamental,⚛️,8,خبير,Partículas Subatómicas,"Quarks, bosón de Higgs, modelo estándar",350,🥇 وسام ذهبي
+العلم,⚛️ Física Fundamental,⚛️,9,خبير,Teoría de Cuerdas,"Dimensiones extra, unificación",500,
+العلم,⚛️ Física Fundamental,⚛️,10,خبير,Los Misterios Sin Resolver,"Gravedad cuántica, multiverso",500,💎 وسام ماسي
+العلوم الإنسانية,💭 Filosofía,💭,1,مستكشف,Sócrates y el Arte de Preguntar,"Método socrático, mayéutica",100,
+العلوم الإنسانية,💭 Filosofía,💭,2,مستكشف,Platón y las Ideas,"Mundo ideal, alegoría de la caverna",100,
+العلوم الإنسانية,💭 Filosofía,💭,3,مستكشف,Aristóteles: Lógica y Ética,"Silogismo, virtud, eudaimonía",100,🥉 وسام برونزي
+العلوم الإنسانية,💭 Filosofía,💭,4,مبتدئ,Filosofía Medieval,"San Agustín, Santo Tomás, fe y razón",200,
+العلوم الإنسانية,💭 Filosofía,💭,5,مبتدئ,Racionalismo vs Empirismo,"Descartes, Hume, conocimiento",200,
+العلوم الإنسانية,💭 Filosofía,💭,6,مبتدئ,Kant y la Ilustración,"Imperativo categórico, crítica",200,🥈 وسام فضي
+العلوم الإنسانية,💭 Filosofía,💭,7,خبير,Existencialismo,"Nietzsche, Sartre, libertad radical",350,
+العلوم الإنسانية,💭 Filosofía,💭,8,خبير,Filosofía Oriental,"Confucio, Buda, Lao-Tse",350,🥇 وسام ذهبي
+العلوم الإنسانية,💭 Filosofía,💭,9,خبير,Filosofía del Lenguaje y la Mente,"Wittgenstein, conciencia, IA",500,
+العلوم الإنسانية,💭 Filosofía,💭,10,خبير,Ética Contemporánea,"Bioética, justicia global, transhumanismo",500,💎 وسام ماسي
+العلم,🧬 Evolución y Genética,🧬,1,مستكشف,Darwin y la Selección Natural,"Teoría de la evolución, Galápagos",100,
+العلم,🧬 Evolución y Genética,🧬,2,مستكشف,ADN: El Código de la Vida,"Estructura, genes, cromosomas",100,
+العلم,🧬 Evolución y Genética,🧬,3,مستكشف,Herencia y Mendel,"Leyes de la herencia, rasgos",100,🥉 وسام برونزي
+العلم,🧬 Evolución y Genética,🧬,4,مبتدئ,Evolución Humana,Australopithecus a Homo sapiens,200,
+العلم,🧬 Evolución y Genética,🧬,5,مبتدئ,Mutaciones y Adaptación,Motor del cambio evolutivo,200,
+العلم,🧬 Evolución y Genética,🧬,6,مبتدئ,Extinción y Especiación,"Extinciones masivas, nueva vida",200,🥈 وسام فضي
+العلم,🧬 Evolución y Genética,🧬,7,خبير,Genómica y Proteómica,"Proyecto Genoma, secuenciación",350,
+العلم,🧬 Evolución y Genética,🧬,8,خبير,Epigenética,Genes que se encienden y apagan,350,🥇 وسام ذهبي
+العلم,🧬 Evolución y Genética,🧬,9,خبير,CRISPR y Edición Genética,"Terapia génica, bebés diseñados",500,
+العلم,🧬 Evolución y Genética,🧬,10,خبير,Biología Sintética,"Crear vida artificial, futuro genético",500,💎 وسام ماسي
+المجتمع,🌍 Geopolítica Mundial,🌍,1,مستكشف,¿Qué es la Geopolítica?,"Conceptos, poder, territorios",100,
+المجتمع,🌍 Geopolítica Mundial,🌍,2,مستكشف,Las Grandes Potencias,"EE.UU., China, Rusia, UE",100,
+المجتمع,🌍 Geopolítica Mundial,🌍,3,مستكشف,Conflictos Territoriales,"Fronteras disputadas, recursos",100,🥉 وسام برونزي
+المجتمع,🌍 Geopolítica Mundial,🌍,4,مبتدئ,La Guerra Fría,"Bipolaridad, proxy wars, caída del muro",200,
+المجتمع,🌍 Geopolítica Mundial,🌍,5,مبتدئ,Oriente Medio,"Petróleo, religión, conflictos",200,
+المجتمع,🌍 Geopolítica Mundial,🌍,6,مبتدئ,El Ascenso de China,"Ruta de la Seda, influencia global",200,🥈 وسام فضي
+المجتمع,🌍 Geopolítica Mundial,🌍,7,خبير,Organizaciones Internacionales,"ONU, OTAN, G20, poder blando",350,
+المجتمع,🌍 Geopolítica Mundial,🌍,8,خبير,Ciberguerra y Espionaje,"Guerra híbrida, desinformación",350,🥇 وسام ذهبي
+المجتمع,🌍 Geopolítica Mundial,🌍,9,خبير,Recursos y Guerras del Futuro,"Agua, litio, tierras raras",500,
+المجتمع,🌍 Geopolítica Mundial,🌍,10,خبير,Nuevo Orden Mundial,"Multipolaridad, escenarios 2050",500,💎 وسام ماسي
+العلوم الإنسانية,🎨 Arte y Grandes Maestros,🎨,1,مستكشف,Arte Prehistórico y Antiguo,"Altamira, Egipto, Grecia",100,
+العلوم الإنسانية,🎨 Arte y Grandes Maestros,🎨,2,مستكشف,El Renacimiento,"Da Vinci, Miguel Ángel, Botticelli",100,
+العلوم الإنسانية,🎨 Arte y Grandes Maestros,🎨,3,مستكشف,Barroco y Clasicismo,"Caravaggio, Velázquez, Rembrandt",100,🥉 وسام برونزي
+العلوم الإنسانية,🎨 Arte y Grandes Maestros,🎨,4,مبتدئ,Impresionismo,"Monet, Renoir, luz y color",200,
+العلوم الإنسانية,🎨 Arte y Grandes Maestros,🎨,5,مبتدئ,Vanguardias del Siglo XX,"Picasso, Dalí, Kandinsky",200,
+العلوم الإنسانية,🎨 Arte y Grandes Maestros,🎨,6,مبتدئ,Arte Contemporáneo,"Pop Art, minimalismo, Banksy",200,🥈 وسام فضي
+العلوم الإنسانية,🎨 Arte y Grandes Maestros,🎨,7,خبير,Fotografía como Arte,"Historia, maestros, revolución digital",350,
+العلوم الإنسانية,🎨 Arte y Grandes Maestros,🎨,8,خبير,Grandes Museos del Mundo,"Louvre, MoMA, Prado, Hermitage",350,🥇 وسام ذهبي
+العلوم الإنسانية,🎨 Arte y Grandes Maestros,🎨,9,خبير,El Mercado del Arte,"Subastas, falsificaciones, inversión",500,
+العلوم الإنسانية,🎨 Arte y Grandes Maestros,🎨,10,خبير,Arte y Tecnología: IA Creativa,"Arte generativo, NFTs, debate",500,💎 وسام ماسي
+الطبيعة,🌡️ Cambio Climático,🌡️,1,مستكشف,El Efecto Invernadero,"CO₂, gases, calentamiento",100,
+الطبيعة,🌡️ Cambio Climático,🌡️,2,مستكشف,Historia del Clima en la Tierra,"Eras glaciales, ciclos naturales",100,
+الطبيعة,🌡️ Cambio Climático,🌡️,3,مستكشف,Impacto Humano,"Industria, transporte, deforestación",100,🥉 وسام برونزي
+الطبيعة,🌡️ Cambio Climático,🌡️,4,مبتدئ,Deshielo y Nivel del Mar,"Polos, glaciares, ciudades en riesgo",200,
+الطبيعة,🌡️ Cambio Climático,🌡️,5,مبتدئ,Fenómenos Extremos,"Huracanes, sequías, olas de calor",200,
+الطبيعة,🌡️ Cambio Climático,🌡️,6,مبتدئ,Biodiversidad Amenazada,"Sexta extinción, ecosistemas en peligro",200,🥈 وسام فضي
+الطبيعة,🌡️ Cambio Climático,🌡️,7,خبير,Energías Renovables,"Solar, eólica, hidrógeno verde",350,
+الطبيعة,🌡️ Cambio Climático,🌡️,8,خبير,Acuerdos y Política Climática,"París, COP, compromisos nacionales",350,🥇 وسام ذهبي
+الطبيعة,🌡️ Cambio Climático,🌡️,9,خبير,Geoingeniería,"Soluciones radicales, riesgos",500,
+الطبيعة,🌡️ Cambio Climático,🌡️,10,خبير,Escenarios 2050-2100,"Modelos climáticos, futuros posibles",500,💎 وسام ماسي
+التاريخ,🧭 Exploración y Aventura,🧭,1,مستكشف,Los Grandes Navegantes,"Colón, Magallanes, Vasco de Gama",100,
+التاريخ,🧭 Exploración y Aventura,🧭,2,مستكشف,Conquista de los Polos,"Amundsen, Scott, Shackleton",100,
+التاريخ,🧭 Exploración y Aventura,🧭,3,مستكشف,Exploradores del Mundo Antiguo,"Marco Polo, Ibn Battuta, Zheng He",100,🥉 وسام برونزي
+التاريخ,🧭 Exploración y Aventura,🧭,4,مبتدئ,La Carrera Espacial,"Gagarin, Apollo 11, MIR",200,
+التاريخ,🧭 Exploración y Aventura,🧭,5,مبتدئ,Expediciones Submarinas,"Cousteau, Mariana, océanos profundos",200,
+التاريخ,🧭 Exploración y Aventura,🧭,6,مبتدئ,Exploración de Selvas y Desiertos,"Amazonia, Sahara, expediciones perdidas",200,🥈 وسام فضي
+التاريخ,🧭 Exploración y Aventura,🧭,7,خبير,Montañismo Extremo,"Everest, K2, historia alpina",350,
+التاريخ,🧭 Exploración y Aventura,🧭,8,خبير,Arqueología Aventurera,"Tutankamón, Machu Picchu, Pompeya",350,🥇 وسام ذهبي
+التاريخ,🧭 Exploración y Aventura,🧭,9,خبير,Exploración Robótica,"Marte, drones submarinos, cuevas",500,
+التاريخ,🧭 Exploración y Aventura,🧭,10,خبير,Próximas Fronteras,"Colonización espacial, océano profundo",500,💎 وسام ماسي
+الصحة,🥗 Nutrición y Alimentación,🥗,1,مستكشف,Macronutrientes,"Proteínas, carbohidratos, grasas",100,
+الصحة,🥗 Nutrición y Alimentación,🥗,2,مستكشف,Vitaminas y Minerales,Micronutrientes esenciales,100,
+الصحة,🥗 Nutrición y Alimentación,🥗,3,مستكشف,Digestión y Metabolismo,Cómo tu cuerpo procesa los alimentos,100,🥉 وسام برونزي
+الصحة,🥗 Nutrición y Alimentación,🥗,4,مبتدئ,Dietas del Mundo,"Mediterránea, asiática, nórdica",200,
+الصحة,🥗 Nutrición y Alimentación,🥗,5,مبتدئ,Mitos Nutricionales,Desmentir creencias falsas,200,
+الصحة,🥗 Nutrición y Alimentación,🥗,6,مبتدئ,Microbioma Intestinal,"Bacterias buenas, segundo cerebro",200,🥈 وسام فضي
+الصحة,🥗 Nutrición y Alimentación,🥗,7,خبير,Nutrición Deportiva,"Rendimiento, suplementos, recuperación",350,
+الصحة,🥗 Nutrición y Alimentación,🥗,8,خبير,Alimentos del Futuro,"Insectos, carne de laboratorio, algas",350,🥇 وسام ذهبي
+الصحة,🥗 Nutrición y Alimentación,🥗,9,خبير,Nutrigenómica,ADN y alimentación personalizada,500,
+الصحة,🥗 Nutrición y Alimentación,🥗,10,خبير,Hambre Global y Sostenibilidad,"Seguridad alimentaria, soluciones",500,💎 وسام ماسي
+العلوم الإنسانية,🎵 Música: Historia y Teoría,🎵,1,مستكشف,Los Orígenes de la Música,"Instrumentos prehistóricos, primeras melodías",100,
+العلوم الإنسانية,🎵 Música: Historia y Teoría,🎵,2,مستكشف,Música Clásica: Los Grandes,"Bach, Mozart, Beethoven",100,
+العلوم الإنسانية,🎵 Música: Historia y Teoría,🎵,3,مستكشف,"Ritmo, Melodía y Armonía",Fundamentos de la teoría musical,100,🥉 وسام برونزي
+العلوم الإنسانية,🎵 Música: Historia y Teoría,🎵,4,مبتدئ,Jazz y Blues,"Nueva Orleans, improvisación, soul",200,
+العلوم الإنسانية,🎵 Música: Historia y Teoría,🎵,5,مبتدئ,Rock and Roll,"Elvis, Beatles, revolución cultural",200,
+العلوم الإنسانية,🎵 Música: Historia y Teoría,🎵,6,مبتدئ,Música Electrónica,"Sintetizadores, DJs, géneros",200,🥈 وسام فضي
+العلوم الإنسانية,🎵 Música: Historia y Teoría,🎵,7,خبير,Música del Mundo,"Flamenco, raga, samba, gamelan",350,
+العلوم الإنسانية,🎵 Música: Historia y Teoría,🎵,8,خبير,La Industria Musical,"Discográficas, streaming, negocio",350,🥇 وسام ذهبي
+العلوم الإنسانية,🎵 Música: Historia y Teoría,🎵,9,خبير,Neurociencia de la Música,Por qué la música nos emociona,500,
+العلوم الإنسانية,🎵 Música: Historia y Teoría,🎵,10,خبير,IA y Composición Musical,"Algoritmos creativos, futuro sonoro",500,💎 وسام ماسي
+الطبيعة,🌋 Volcanes y Terremotos,🌋,1,مستكشف,La Tierra por Dentro,"Capas, núcleo, manto, corteza",100,
+الطبيعة,🌋 Volcanes y Terremotos,🌋,2,مستكشف,Tectónica de Placas,"Placas en movimiento, pangea",100,
+الطبيعة,🌋 Volcanes y Terremotos,🌋,3,مستكشف,Volcanes: Tipos y Erupciones,"Escudo, estrato, fisurales",100,🥉 وسام برونزي
+الطبيعة,🌋 Volcanes y Terremotos,🌋,4,مبتدئ,Grandes Erupciones de la Historia,"Pompeya, Krakatoa, Pinatubo",200,
+الطبيعة,🌋 Volcanes y Terremotos,🌋,5,مبتدئ,Terremotos y Tsunamis,"Escalas, ondas sísmicas, prevención",200,
+الطبيعة,🌋 Volcanes y Terremotos,🌋,6,مبتدئ,El Cinturón de Fuego,"Pacífico, zonas sísmicas activas",200,🥈 وسام فضي
+الطبيعة,🌋 Volcanes y Terremotos,🌋,7,خبير,Geotermia y Recursos,"Energía volcánica, minerales",350,
+الطبيعة,🌋 Volcanes y Terremotos,🌋,8,خبير,Supervolcanes,"Yellowstone, Toba, amenazas globales",350,🥇 وسام ذهبي
+الطبيعة,🌋 Volcanes y Terremotos,🌋,9,خبير,Predicción Sísmica,"Tecnología, IA, sistemas de alerta",500,
+الطبيعة,🌋 Volcanes y Terremotos,🌋,10,خبير,Geología Planetaria,"Volcanes en Marte, Ío, Venus",500,💎 وسام ماسي
+التكنولوجيا,🔐 Criptografía y Ciberseguridad,🔐,1,مستكشف,Historia de los Códigos Secretos,"César, Enigma, espionaje",100,
+التكنولوجيا,🔐 Criptografía y Ciberseguridad,🔐,2,مستكشف,Criptografía Moderna,"RSA, AES, claves públicas",100,
+التكنولوجيا,🔐 Criptografía y Ciberseguridad,🔐,3,مستكشف,Internet y Seguridad Básica,"HTTPS, contraseñas, phishing",100,🥉 وسام برونزي
+التكنولوجيا,🔐 Criptografía y Ciberseguridad,🔐,4,مبتدئ,Hackers: Mitos y Realidad,"White/black hat, ciberataques famosos",200,
+التكنولوجيا,🔐 Criptografía y Ciberseguridad,🔐,5,مبتدئ,Malware y Ransomware,"Virus, troyanos, protección",200,
+التكنولوجيا,🔐 Criptografía y Ciberseguridad,🔐,6,مبتدئ,Ingeniería Social,"Manipulación, pretexting, defensa",200,🥈 وسام فضي
+التكنولوجيا,🔐 Criptografía y Ciberseguridad,🔐,7,خبير,Blockchain y Seguridad,"Descentralización, contratos inteligentes",350,
+التكنولوجيا,🔐 Criptografía y Ciberseguridad,🔐,8,خبير,Ciberguerra Estatal,"Stuxnet, espionaje digital, naciones",350,🥇 وسام ذهبي
+التكنولوجيا,🔐 Criptografía y Ciberseguridad,🔐,9,خبير,Criptografía Cuántica,Computación cuántica vs cifrado actual,500,
+التكنولوجيا,🔐 Criptografía y Ciberseguridad,🔐,10,خبير,Privacidad Digital Total,"Anonimato, Tor, futuro de la privacidad",500,💎 وسام ماسي
+الصحة,🏥 Medicina y Cuerpo Humano,🏥,1,مستكشف,Anatomía Básica,"Sistemas del cuerpo, órganos vitales",100,
+الصحة,🏥 Medicina y Cuerpo Humano,🏥,2,مستكشف,El Sistema Inmunológico,"Defensas, anticuerpos, vacunas",100,
+الصحة,🏥 Medicina y Cuerpo Humano,🏥,3,مستكشف,Historia de la Medicina,"Hipócrates, penicilina, cirugía",100,🥉 وسام برونزي
+الصحة,🏥 Medicina y Cuerpo Humano,🏥,4,مبتدئ,Pandemias de la Historia,"Peste negra, gripe española, COVID",200,
+الصحة,🏥 Medicina y Cuerpo Humano,🏥,5,مبتدئ,Cáncer: Batalla Interna,"Tipos, causas, tratamientos",200,
+الصحة,🏥 Medicina y Cuerpo Humano,🏥,6,مبتدئ,Farmacología Básica,Cómo funcionan los medicamentos,200,🥈 وسام فضي
+الصحة,🏥 Medicina y Cuerpo Humano,🏥,7,خبير,Cirugía Robótica,"Da Vinci, precisión, futuro quirúrgico",350,
+الصحة,🏥 Medicina y Cuerpo Humano,🏥,8,خبير,Terapias Génicas,Editar ADN para curar enfermedades,350,🥇 وسام ذهبي
+الصحة,🏥 Medicina y Cuerpo Humano,🏥,9,خبير,Neurociencia Médica,"Implantes cerebrales, neuroestimulación",500,
+الصحة,🏥 Medicina y Cuerpo Humano,🏥,10,خبير,Longevidad y Anti-aging,"Telómeros, senoterapia, vivir más",500,💎 وسام ماسي
+العلوم الإنسانية,⚡ Mitología Universal,⚡,1,مستكشف,Mitología Griega,"Zeus, Odisea, héroes y monstruos",100,
+العلوم الإنسانية,⚡ Mitología Universal,⚡,2,مستكشف,Mitología Nórdica,"Odín, Thor, Ragnarök",100,
+العلوم الإنسانية,⚡ Mitología Universal,⚡,3,مستكشف,Mitología Egipcia,"Ra, Osiris, el más allá",100,🥉 وسام برونزي
+العلوم الإنسانية,⚡ Mitología Universal,⚡,4,مبتدئ,Mitología Romana,"Adaptación griega, fundación de Roma",200,
+العلوم الإنسانية,⚡ Mitología Universal,⚡,5,مبتدئ,Mitología Mesopotámica,"Gilgamesh, diluvio, creación",200,
+العلوم الإنسانية,⚡ Mitología Universal,⚡,6,مبتدئ,Mitología Celta y Artúrica,"Druidas, Avalon, Excalibur",200,🥈 وسام فضي
+العلوم الإنسانية,⚡ Mitología Universal,⚡,7,خبير,Mitología Asiática,"Hinduismo, budismo, dragones chinos",350,
+العلوم الإنسانية,⚡ Mitología Universal,⚡,8,خبير,Mitología Mesoamericana,"Quetzalcóatl, Popol Vuh, cosmos maya",350,🥇 وسام ذهبي
+العلوم الإنسانية,⚡ Mitología Universal,⚡,9,خبير,Arquetipos y Jung,"Inconsciente colectivo, el héroe",500,
+العلوم الإنسانية,⚡ Mitología Universal,⚡,10,خبير,Mitos Modernos,"Superhéroes, Star Wars, nuevas mitologías",500,💎 وسام ماسي
+التكنولوجيا,🦾 Robótica e Ingeniería,🦾,1,مستكشف,Historia de los Autómatas,"Da Vinci, relojería, primeros robots",100,
+التكنولوجيا,🦾 Robótica e Ingeniería,🦾,2,مستكشف,Mecánica Básica de Robots,"Sensores, actuadores, control",100,
+التكنولوجيا,🦾 Robótica e Ingeniería,🦾,3,مستكشف,Robots en la Industria,"Manufactura, logística, automatización",100,🥉 وسام برونزي
+التكنولوجيا,🦾 Robótica e Ingeniería,🦾,4,مبتدئ,Drones y Vehículos Autónomos,"Coches sin conductor, delivery",200,
+التكنولوجيا,🦾 Robótica e Ingeniería,🦾,5,مبتدئ,Robots Humanoides,"Boston Dynamics, Atlas, Sophia",200,
+التكنولوجيا,🦾 Robótica e Ingeniería,🦾,6,مبتدئ,Biomimética,Robots inspirados en la naturaleza,200,🥈 وسام فضي
+التكنولوجيا,🦾 Robótica e Ingeniería,🦾,7,خبير,Prótesis y Exoesqueletos,"Bionics, manos robóticas, movilidad",350,
+التكنولوجيا,🦾 Robótica e Ingeniería,🦾,8,خبير,Robótica Espacial,"Rovers, ISS, reparaciones en órbita",350,🥇 وسام ذهبي
+التكنولوجيا,🦾 Robótica e Ingeniería,🦾,9,خبير,Nanorobots,"Medicina microscópica, ensamblaje molecular",500,
+التكنولوجيا,🦾 Robótica e Ingeniería,🦾,10,خبير,Robots Conscientes,"IA embodied, derechos de robots, ética",500,💎 وسام ماسي
+التاريخ,⚔️ Guerras Mundiales,⚔️,1,مستكشف,Causas de la Gran Guerra,"Alianzas, imperialismo, Sarajevo",100,
+التاريخ,⚔️ Guerras Mundiales,⚔️,2,مستكشف,Trincheras: WWI,"Guerra de desgaste, gas, Somme",100,
+التاريخ,⚔️ Guerras Mundiales,⚔️,3,مستكشف,El Tratado de Versalles,"Consecuencias, humillación, semillas",100,🥉 وسام برونزي
+التاريخ,⚔️ Guerras Mundiales,⚔️,4,مبتدئ,Ascenso del Nazismo,"Hitler, propaganda, Tercer Reich",200,
+التاريخ,⚔️ Guerras Mundiales,⚔️,5,مبتدئ,Batallas Decisivas WWII,"Stalingrado, Midway, Normandía",200,
+التاريخ,⚔️ Guerras Mundiales,⚔️,6,مبتدئ,El Holocausto,"Genocidio, campos, memoria",200,🥈 وسام فضي
+التاريخ,⚔️ Guerras Mundiales,⚔️,7,خبير,El Frente del Pacífico,"Pearl Harbor, Iwo Jima, Hiroshima",350,
+التاريخ,⚔️ Guerras Mundiales,⚔️,8,خبير,Espionaje y Criptografía,"Enigma, Turing, agentes dobles",350,🥇 وسام ذهبي
+التاريخ,⚔️ Guerras Mundiales,⚔️,9,خبير,Nüremberg y Justicia,"Juicios, derecho internacional",500,
+التاريخ,⚔️ Guerras Mundiales,⚔️,10,خبير,Lecciones para el Siglo XXI,"Paralelos, prevención, memoria",500,💎 وسام ماسي
+العلوم الإنسانية,🏗️ Arquitectura Mundial,🏗️,1,مستكشف,Pirámides y Templos,"Egipto, Grecia, Angkor Wat",100,
+العلوم الإنسانية,🏗️ Arquitectura Mundial,🏗️,2,مستكشف,Roma y sus Monumentos,"Coliseo, acueductos, Panteón",100,
+العلوم الإنسانية,🏗️ Arquitectura Mundial,🏗️,3,مستكشف,Catedrales Góticas,"Notre-Dame, vitrales, arbotantes",100,🥉 وسام برونزي
+العلوم الإنسانية,🏗️ Arquitectura Mundial,🏗️,4,مبتدئ,Renacimiento y Barroco,"Brunelleschi, Bernini, Versalles",200,
+العلوم الإنسانية,🏗️ Arquitectura Mundial,🏗️,5,مبتدئ,Rascacielos y Acero,"Chicago, Empire State, ingeniería",200,
+العلوم الإنسانية,🏗️ Arquitectura Mundial,🏗️,6,مبتدئ,Bauhaus y Modernismo,"Le Corbusier, Mies van der Rohe",200,🥈 وسام فضي
+العلوم الإنسانية,🏗️ Arquitectura Mundial,🏗️,7,خبير,Arquitectura Sostenible,"Edificios verdes, pasivos, biomimética",350,
+العلوم الإنسانية,🏗️ Arquitectura Mundial,🏗️,8,خبير,Megaestructuras,"Burj Khalifa, presas, puentes",350,🥇 وسام ذهبي
+العلوم الإنسانية,🏗️ Arquitectura Mundial,🏗️,9,خبير,Ciudades del Futuro,"NEOM, ciudades flotantes, smart cities",500,
+العلوم الإنسانية,🏗️ Arquitectura Mundial,🏗️,10,خبير,Arquitectura Extraterrestre,"Hábitats en Marte, impresión 3D lunar",500,💎 وسام ماسي
+الطبيعة,🤿 Océano y Exploración Submarina,🤿,1,مستكشف,Cartografía del Fondo Marino,"Dorsales, fosas, relieve submarino",100,
+الطبيعة,🤿 Océano y Exploración Submarina,🤿,2,مستكشف,Naufragios Legendarios,"Titanic, galeones, tesoros",100,
+الطبيعة,🤿 Océano y Exploración Submarina,🤿,3,مستكشف,Submarinos: Historia,"Nautilus, U-boats, nucleares",100,🥉 وسام برونزي
+الطبيعة,🤿 Océano y Exploración Submarina,🤿,4,مبتدئ,Fuentes Hidrotermales,"Vida sin sol, quimiosíntesis",200,
+الطبيعة,🤿 Océano y Exploración Submarina,🤿,5,مبتدئ,Ciudades Hundidas,"Dwarka, Port Royal, misterios",200,
+الطبيعة,🤿 Océano y Exploración Submarina,🤿,6,مبتدئ,Tecnología de Buceo,"Saturación, ROVs, AUVs",200,🥈 وسام فضي
+الطبيعة,🤿 Océano y Exploración Submarina,🤿,7,خبير,Minería Submarina,"Recursos, nódulos, controversia",350,
+الطبيعة,🤿 Océano y Exploración Submarina,🤿,8,خبير,Acústica Submarina,"Sonar, comunicación cetácea",350,🥇 وسام ذهبي
+الطبيعة,🤿 Océano y Exploración Submarina,🤿,9,خبير,Bases Submarinas,"Hábitats sumergidos, Aquarius",500,
+الطبيعة,🤿 Océano y Exploración Submarina,🤿,10,خبير,Colonización Oceánica,Ciudades submarinas del futuro,500,💎 وسام ماسي
+التكنولوجيا,💻 Civilización Digital,💻,1,مستكشف,De ARPANET a Internet,"Nacimiento de la red, WWW",100,
+التكنولوجيا,💻 Civilización Digital,💻,2,مستكشف,Redes Sociales,"Facebook, Twitter, impacto social",100,
+التكنولوجيا,💻 Civilización Digital,💻,3,مستكشف,Smartphones y Apps,"iPhone, ecosistema móvil",100,🥉 وسام برونزي
+التكنولوجيا,💻 Civilización Digital,💻,4,مبتدئ,Big Data,"Datos masivos, análisis, valor",200,
+التكنولوجيا,💻 Civilización Digital,💻,5,مبتدئ,Cloud Computing,"La nube, servicios, infraestructura",200,
+التكنولوجيا,💻 Civilización Digital,💻,6,مبتدئ,Realidad Virtual y Aumentada,"Metaverso, aplicaciones, inmersión",200,🥈 وسام فضي
+التكنولوجيا,💻 Civilización Digital,💻,7,خبير,Internet de las Cosas,"Dispositivos conectados, smart homes",350,
+التكنولوجيا,💻 Civilización Digital,💻,8,خبير,Computación Cuántica,"Qubits, supremacía, aplicaciones",350,🥇 وسام ذهبي
+التكنولوجيا,💻 Civilización Digital,💻,9,خبير,Singularidad Tecnológica,"Exponencialidad, transhumanismo",500,
+التكنولوجيا,💻 Civilización Digital,💻,10,خبير,Ética Digital,"Privacidad, algoritmos, democracia",500,💎 وسام ماسي
+العلم,🦕 Dinosaurios y Paleontología,🦕,1,مستكشف,Los Primeros Fósiles,"Qué son, cómo se forman",100,
+العلم,🦕 Dinosaurios y Paleontología,🦕,2,مستكشف,Era Mesozoica,"Triásico, Jurásico, Cretácico",100,
+العلم,🦕 Dinosaurios y Paleontología,🦕,3,مستكشف,Los Grandes Dinosaurios,"T-Rex, Diplodocus, Triceratops",100,🥉 وسام برونزي
+العلم,🦕 Dinosaurios y Paleontología,🦕,4,مبتدئ,Depredadores vs Herbívoros,"Estrategias, armas naturales",200,
+العلم,🦕 Dinosaurios y Paleontología,🦕,5,مبتدئ,Pterosaurios y Reptiles Marinos,Cielo y mar prehistóricos,200,
+العلم,🦕 Dinosaurios y Paleontología,🦕,6,مبتدئ,La Gran Extinción,"Asteroide Chicxulub, invierno nuclear",200,🥈 وسام فضي
+العلم,🦕 Dinosaurios y Paleontología,🦕,7,خبير,Plumas y Evolución Aviar,"Dinosaurios con plumas, aves modernas",350,
+العلم,🦕 Dinosaurios y Paleontología,🦕,8,خبير,Paleontología de Campo,"Excavaciones, técnicas, descubrimientos",350,🥇 وسام ذهبي
+العلم,🦕 Dinosaurios y Paleontología,🦕,9,خبير,ADN Antiguo,¿Clonar un dinosaurio? Límites reales,500,
+العلم,🦕 Dinosaurios y Paleontología,🦕,10,خبير,Mundos Perdidos,"Otros planetas, vida prehistórica remota",500,💎 وسام ماسي
+المجتمع,👑 Liderazgo y Estrategia,👑,1,مستكشف,¿Qué Hace a un Líder?,"Cualidades, tipos de liderazgo",100,
+المجتمع,👑 Liderazgo y Estrategia,👑,2,مستكشف,Líderes de la Historia,"Alejandro, Napoleón, Mandela",100,
+المجتمع,👑 Liderazgo y Estrategia,👑,3,مستكشف,El Arte de la Guerra,"Sun Tzu, estrategia milenaria",100,🥉 وسام برونزي
+المجتمع,👑 Liderazgo y Estrategia,👑,4,مبتدئ,Liderazgo Empresarial,"Steve Jobs, Elon Musk, Bezos",200,
+المجتمع,👑 Liderazgo y Estrategia,👑,5,مبتدئ,Negociación y Persuasión,"Harvard method, influencia",200,
+المجتمع,👑 Liderazgo y Estrategia,👑,6,مبتدئ,Gestión de Crisis,"Decisiones bajo presión, casos reales",200,🥈 وسام فضي
+المجتمع,👑 Liderazgo y Estrategia,👑,7,خبير,Inteligencia Emocional,"Empatía, autocontrol, Goleman",350,
+المجتمع,👑 Liderazgo y Estrategia,👑,8,خبير,Cultura Organizacional,"Valores, innovación, equipos",350,🥇 وسام ذهبي
+المجتمع,👑 Liderazgo y Estrategia,👑,9,خبير,Liderazgo en la Era IA,"Adaptación, humano+máquina",500,
+المجتمع,👑 Liderazgo y Estrategia,👑,10,خبير,Tu Estrategia Personal,Diseñar tu propio camino de liderazgo,500,💎 وسام ماسي
+العلوم الإنسانية,🏺 Antropología Cultural,🏺,1,مستكشف,¿Qué es la Cultura?,"Definiciones, diversidad humana",100,
+العلوم الإنسانية,🏺 Antropología Cultural,🏺,2,مستكشف,Tribus y Civilizaciones,De nómadas a imperios,100,
+العلوم الإنسانية,🏺 Antropología Cultural,🏺,3,مستكشف,Rituales y Tradiciones,"Ceremonias, ritos de paso",100,🥉 وسام برونزي
+العلوم الإنسانية,🏺 Antropología Cultural,🏺,4,مبتدئ,Lenguas del Mundo,"Familias lingüísticas, extinción",200,
+العلوم الإنسانية,🏺 Antropología Cultural,🏺,5,مبتدئ,Religiones Comparadas,"Cristianismo, Islam, Budismo, Hinduismo",200,
+العلوم الإنسانية,🏺 Antropología Cultural,🏺,6,مبتدئ,Gastronomía y Cultura,"Cocina como identidad, tabúes",200,🥈 وسام فضي
+العلوم الإنسانية,🏺 Antropología Cultural,🏺,7,خبير,Globalización Cultural,"Homogeneización, resistencia, fusión",350,
+العلوم الإنسانية,🏺 Antropología Cultural,🏺,8,خبير,Pueblos Indígenas,"Conocimiento ancestral, derechos",350,🥇 وسام ذهبي
+العلوم الإنسانية,🏺 Antropología Cultural,🏺,9,خبير,Antropología Digital,"Culturas online, identidad virtual",500,
+العلوم الإنسانية,🏺 Antropología Cultural,🏺,10,خبير,El Futuro de la Humanidad,"Convergencia cultural, diversidad",500,💎 وسام ماسي
+التكنولوجيا,⚡ Energía y Sostenibilidad,⚡,1,مستكشف,Fuentes de Energía,"Fósiles, renovables, nuclear",100,
+التكنولوجيا,⚡ Energía y Sostenibilidad,⚡,2,مستكشف,Electricidad: Cómo Funciona,"Generación, distribución, red eléctrica",100,
+التكنولوجيا,⚡ Energía y Sostenibilidad,⚡,3,مستكشف,El Petróleo y su Historia,"Oro negro, OPEP, geopolítica",100,🥉 وسام برونزي
+التكنولوجيا,⚡ Energía y Sostenibilidad,⚡,4,مبتدئ,Energía Solar,"Paneles, fotovoltaica, proyectos",200,
+التكنولوجيا,⚡ Energía y Sostenibilidad,⚡,5,مبتدئ,Energía Eólica e Hídrica,"Turbinas, presas, mareas",200,
+التكنولوجيا,⚡ Energía y Sostenibilidad,⚡,6,مبتدئ,Energía Nuclear Moderna,"Fisión, fusión, ITER",200,🥈 وسام فضي
+التكنولوجيا,⚡ Energía y Sostenibilidad,⚡,7,خبير,Baterías y Almacenamiento,"Litio, hidrógeno, supercondensadores",350,
+التكنولوجيا,⚡ Energía y Sostenibilidad,⚡,8,خبير,Transición Energética,"Abandono del carbón, políticas",350,🥇 وسام ذهبي
+التكنولوجيا,⚡ Energía y Sostenibilidad,⚡,9,خبير,Fusión Nuclear,El santo grial energético,500,
+التكنولوجيا,⚡ Energía y Sostenibilidad,⚡,10,خبير,Civilización Tipo I,"Escala Kardashov, futuro energético",500,💎 وسام ماسي
+الطبيعة,🔮 Misterios y Fenómenos,🔮,1,مستكشف,Triángulo de las Bermudas,"Desapariciones, explicaciones",100,
+الطبيعة,🔮 Misterios y Fenómenos,🔮,2,مستكشف,Enigmas Arqueológicos,"Stonehenge, Nazca, Moáis",100,
+الطبيعة,🔮 Misterios y Fenómenos,🔮,3,مستكشف,Criaturas Misteriosas,"Nessie, Bigfoot, criptozoología",100,🥉 وسام برونزي
+الطبيعة,🔮 Misterios y Fenómenos,🔮,4,مبتدئ,Fenómenos Atmosféricos,"Rayos en bola, auroras, sprites",200,
+الطبيعة,🔮 Misterios y Fenómenos,🔮,5,مبتدئ,Civilizaciones Perdidas,"Atlántida, Lemuria, evidencias",200,
+الطبيعة,🔮 Misterios y Fenómenos,🔮,6,مبتدئ,Fenómenos Paranormales,"Estudio científico, explicaciones",200,🥈 وسام فضي
+الطبيعة,🔮 Misterios y Fenómenos,🔮,7,خبير,Misterios del Espacio,"Señal WOW, Oumuamua, FRBs",350,
+الطبيعة,🔮 Misterios y Fenómenos,🔮,8,خبير,Código Voynich y Cifrados,Manuscritos sin descifrar,350,🥇 وسام ذهبي
+الطبيعة,🔮 Misterios y Fenómenos,🔮,9,خبير,Paradoja de Fermi,¿Dónde están todos? Soluciones,500,
+الطبيعة,🔮 Misterios y Fenómenos,🔮,10,خبير,Ciencia vs Misterio,"Pensamiento crítico, método científico",500,💎 وسام ماسي
+الصحة,🧬 Microbiología y Virus,🧬,1,مستكشف,El Mundo Invisible,"Microbios, bacterias, virus y hongos; qué son y dónde viven",100,
+الصحة,🧬 Microbiología y Virus,🧬,2,مستكشف,El Microscopio y los Descubrimientos,De Leeuwenhoek a la microbiología moderna,100,
+الصحة,🧬 Microbiología y Virus,🧬,3,مستكشف,Bacterias: Aliadas y Enemigas,"Flora intestinal, infecciones, antibióticos",100,🥉 وسام برونزي
+الصحة,🧬 Microbiología y Virus,🧬,4,مبتدئ,Virus: Cómo Infectan,"Estructura viral, ciclo lítico y lisogénico",200,
+الصحة,🧬 Microbiología y Virus,🧬,5,مبتدئ,El Sistema Inmune contra Microbios,"Barreras, células de defensa, anticuerpos",200,
+الصحة,🧬 Microbiología y Virus,🧬,6,مبتدئ,Vacunas: Historia y Funcionamiento,De la viruela al ARN mensajero,200,🥈 وسام فضي
+الصحة,🧬 Microbiología y Virus,🧬,7,خبير,Resistencia a Antibióticos,"Superbugs, uso abusivo, crisis sanitaria",350,
+الصحة,🧬 Microbiología y Virus,🧬,8,خبير,Pandemias Microbianas,"Peste, gripe española, COVID-19, patrones",350,🥇 وسام ذهبي
+الصحة,🧬 Microbiología y Virus,🧬,9,خبير,Biotecnología Microbiana,"Uso de microbios en industria, medicina y medioambiente",500,
+الصحة,🧬 Microbiología y Virus,🧬,10,خبير,Futuro de la Lucha contra Infecciones,"Nuevos antibióticos, fagoterapia, edición genética de virus",500,💎 وسام ماسي
+العلم,🪐 Astrobiología y Búsqueda de Vida,🪐,1,مستكشف,¿Qué es la Astrobiología?,"Definición, interdisciplinariedad, grandes preguntas",100,
+العلم,🪐 Astrobiología y Búsqueda de Vida,🪐,2,مستكشف,Ingredientes de la Vida,"Agua líquida, química del carbono, energía",100,
+العلم,🪐 Astrobiología y Búsqueda de Vida,🪐,3,مستكشف,Vida Extremófila en la Tierra,Organismos en condiciones extremas como modelo,100,🥉 وسام برونزي
+العلم,🪐 Astrobiología y Búsqueda de Vida,🪐,4,مبتدئ,Marte: El Vecino Sospechoso,"Historia del agua, misiones, signos de vida pasada",200,
+العلم,🪐 Astrobiología y Búsqueda de Vida,🪐,5,مبتدئ,Lunas Habitables,"Europa, Encélado, Titán y sus océanos",200,
+العلم,🪐 Astrobiología y Búsqueda de Vida,🪐,6,مبتدئ,Exoplanetas: Mundos Lejanos,Métodos de detección y zona habitable,200,🥈 وسام فضي
+العلم,🪐 Astrobiología y Búsqueda de Vida,🪐,7,خبير,Biofirmas y Tecnofirmas,Señales químicas y tecnológicas de vida avanzada,350,
+العلم,🪐 Astrobiología y Búsqueda de Vida,🪐,8,خبير,Programas de Búsqueda (SETI y otros),"Radiotelescopios, mensajes, proyectos globales",350,🥇 وسام ذهبي
+العلم,🪐 Astrobiología y Búsqueda de Vida,🪐,9,خبير,Paradoja de Fermi y Soluciones,"¿Dónde están todos?, filtros grandes",500,
+العلم,🪐 Astrobiología y Búsqueda de Vida,🪐,10,خبير,El Futuro de la Vida en el Cosmos,"Terraformación, panspermia, humanidad multiplanetaria",500,💎 وسام ماسي
+العلم,☀️ Clima Espacial y Tormentas Solares,☀️,1,مستكشف,El Sol: Nuestra Estrella,"Estructura solar, manchas, actividad",100,
+العلم,☀️ Clima Espacial y Tormentas Solares,☀️,2,مستكشف,Viento Solar,"Partículas cargadas, campo magnético",100,
+العلم,☀️ Clima Espacial y Tormentas Solares,☀️,3,مستكشف,Auroras Boreales y Australes,"Cómo se forman, dónde se ven",100,🥉 وسام برونزي
+العلم,☀️ Clima Espacial y Tormentas Solares,☀️,4,مبتدئ,Tormentas Solares Históricas,Evento Carrington y otros casos,200,
+العلم,☀️ Clima Espacial y Tormentas Solares,☀️,5,مبتدئ,Campo Magnético Terrestre,"Escudo natural, cinturones de Van Allen",200,
+العلم,☀️ Clima Espacial y Tormentas Solares,☀️,6,مبتدئ,Clima Espacial y Satélites,Efectos sobre GPS y comunicaciones,200,🥈 وسام فضي
+العلم,☀️ Clima Espacial y Tormentas Solares,☀️,7,خبير,Redes Eléctricas y Riesgo Global,Impacto en infraestructura,350,
+العلم,☀️ Clima Espacial y Tormentas Solares,☀️,8,خبير,Monitorización y Predicción,"Sondas, observatorios solares, modelos",350,🥇 وسام ذهبي
+العلم,☀️ Clima Espacial y Tormentas Solares,☀️,9,خبير,Escenarios de Evento Extremo,Impacto económico y social,500,
+العلم,☀️ Clima Espacial y Tormentas Solares,☀️,10,خبير,Preparándonos para el Próximo Carrington,Mitigación y resiliencia,500,💎 وسام ماسي
+الصحة,🦾 Biohacking y Cuerpo Mejorado,🦾,1,مستكشف,¿Qué es el Biohacking?,"Definiciones, tipos (DIYbio, cuantificado, nutracéuticos)",100,
+الصحة,🦾 Biohacking y Cuerpo Mejorado,🦾,2,مستكشف,Autoexperimentos Históricos,Científicos que se probaron a sí mismos,100,
+الصحة,🦾 Biohacking y Cuerpo Mejorado,🦾,3,مستكشف,Cuantificar el Cuerpo,"Wearables, tracking de sueño y actividad",100,🥉 وسام برونزي
+الصحة,🦾 Biohacking y Cuerpo Mejorado,🦾,4,مبتدئ,Suplementos y Nutrición Avanzada,"Nootrópicos, dietas, controversias",200,
+الصحة,🦾 Biohacking y Cuerpo Mejorado,🦾,5,مبتدئ,"Hábitos, Ritmos Circadianos y Rendimiento","Luces, horarios, cronobiología",200,
+الصحة,🦾 Biohacking y Cuerpo Mejorado,🦾,6,مبتدئ,"Gimnasios, Fuerza y Longevidad",Entrenamiento como hackeo biológico,200,🥈 وسام فضي
+الصحة,🦾 Biohacking y Cuerpo Mejorado,🦾,7,خبير,Implantes y Dispositivos en el Cuerpo,"Chips, marcapasos, sensores",350,
+الصحة,🦾 Biohacking y Cuerpo Mejorado,🦾,8,خبير,Edición Genética Personal,"CRISPR, posibilidades y límites",350,🥇 وسام ذهبي
+الصحة,🦾 Biohacking y Cuerpo Mejorado,🦾,9,خبير,Ética y Legalidad del Biohacking,"Normativas, riesgos, desigualdad",500,
+الصحة,🦾 Biohacking y Cuerpo Mejorado,🦾,10,خبير,El Futuro del Humano Mejorado,"Transhumanismo, integración IA-cuerpo",500,💎 وسام ماسي
+الصحة,😷 Epidemiología y Enfermedades Infecciosas,😷,1,مستكشف,Cómo se Propagan las Enfermedades,"Contagio, vectores, cadenas de transmisión",100,
+الصحة,😷 Epidemiología y Enfermedades Infecciosas,😷,2,مستكشف,"Brotes, Epidemias y Pandemias",Diferencias y ejemplos,100,
+الصحة,😷 Epidemiología y Enfermedades Infecciosas,😷,3,مستكشف,Casos y Datos: Lo que Significan,"Incidencia, prevalencia, R0",100,🥉 وسام برونزي
+الصحة,😷 Epidemiología y Enfermedades Infecciosas,😷,4,مبتدئ,Grandes Epidemias Históricas,"Peste negra, cólera, gripe española",200,
+الصحة,😷 Epidemiología y Enfermedades Infecciosas,😷,5,مبتدئ,"VIH, Tuberculosis y Otros Retos",Enfermedades crónicas infecciosas,200,
+الصحة,😷 Epidemiología y Enfermedades Infecciosas,😷,6,مبتدئ,COVID-19: Anatomía de una Pandemia,"Secuenciación, vacunas, confinamientos",200,🥈 وسام فضي
+الصحة,😷 Epidemiología y Enfermedades Infecciosas,😷,7,خبير,Modelos Epidemiológicos,"Curvas, medidas no farmacológicas",350,
+الصحة,😷 Epidemiología y Enfermedades Infecciosas,😷,8,خبير,Vacunación Masiva y Rebaño,"Inmunidad de grupo, campañas",350,🥇 وسام ذهبي
+الصحة,😷 Epidemiología y Enfermedades Infecciosas,😷,9,خبير,Enfermedades Emergentes y Zoonosis,"Cambio climático, nuevos patógenos",500,
+الصحة,😷 Epidemiología y Enfermedades Infecciosas,😷,10,خبير,Preparación Global ante la Próxima Pandemia,"Vigilancia, cooperación internacional",500,💎 وسام ماسي
+التكنولوجيا,💾 Historia de la Computación,💾,1,مستكشف,De Ábacos a Máquinas de Cálculo,Herramientas de cálculo antiguas,100,
+التكنولوجيا,💾 Historia de la Computación,💾,2,مستكشف,Visionarios Pioneros,"Babbage, Ada Lovelace, Turing",100,
+التكنولوجيا,💾 Historia de la Computación,💾,3,مستكشف,Ordenadores de Tubos y Tarjetas,"ENIAC, mainframes",100,🥉 وسام برونزي
+التكنولوجيا,💾 Historia de la Computación,💾,4,مبتدئ,La Revolución del Microprocesador,"Intel, PCs, Apple",200,
+التكنولوجيا,💾 Historia de la Computación,💾,5,مبتدئ,Internet y la Web,"ARPANET, HTTP, navegadores",200,
+التكنولوجيا,💾 Historia de la Computación,💾,6,مبتدئ,"Portátiles, Smartphones y la Era Móvil","iPhone, Android",200,🥈 وسام فضي
+التكنولوجيا,💾 Historia de la Computación,💾,7,خبير,Software Libre y Open Source,"Linux, proyectos colaborativos",350,
+التكنولوجيا,💾 Historia de la Computación,💾,8,خبير,"Nubes, Contenedores y DevOps",Cómo se despliega hoy el software,350,🥇 وسام ذهبي
+التكنولوجيا,💾 Historia de la Computación,💾,9,خبير,Computación Cuántica y Más Allá,"Qubits, algoritmos",500,
+التكنولوجيا,💾 Historia de la Computación,💾,10,خبير,Futuro de la Computación,"Neuromórfica, IA integrada",500,💎 وسام ماسي
+التكنولوجيا,🎮 Videojuegos e Industria del Gaming,🎮,1,مستكشف,Los Primeros Videojuegos,"Pong, arcades, Atari",100,
+التكنولوجيا,🎮 Videojuegos e Industria del Gaming,🎮,2,مستكشف,Consolas y Guerra de Generaciones,"Nintendo, Sega, Sony, Microsoft",100,
+التكنولوجيا,🎮 Videojuegos e Industria del Gaming,🎮,3,مستكشف,PC Gaming y Online,"DOOM, MMOs, primeros esports",100,🥉 وسام برونزي
+التكنولوجيا,🎮 Videojuegos e Industria del Gaming,🎮,4,مبتدئ,Diseño de Juegos,"Mecánicas, loops, narrativa",200,
+التكنولوجيا,🎮 Videojuegos e Industria del Gaming,🎮,5,مبتدئ,Esports y Competición Profesional,"Ligas, premios, entrenamientos",200,
+التكنولوجيا,🎮 Videojuegos e Industria del Gaming,🎮,6,مبتدئ,Psicología del Juego y Gamificación,"Motivación, recompensas",200,🥈 وسام فضي
+التكنولوجيا,🎮 Videojuegos e Industria del Gaming,🎮,7,خبير,Industria y Modelos de Negocio,"AAA, indie, free-to-play",350,
+التكنولوجيا,🎮 Videojuegos e Industria del Gaming,🎮,8,خبير,Controversias del Gaming,"Adicción, violencia, loot boxes",350,🥇 وسام ذهبي
+التكنولوجيا,🎮 Videojuegos e Industria del Gaming,🎮,9,خبير,Juegos como Arte y Educación,"Juegos serios, experiencias inmersivas",500,
+التكنولوجيا,🎮 Videojuegos e Industria del Gaming,🎮,10,خبير,Futuro del Gaming,"VR/AR, cloud gaming",500,💎 وسام ماسي
+التكنولوجيا,₿ Criptoeconomía y DeFi,₿,1,مستكشف,Origen de Bitcoin,"Satoshi, problema del doble gasto",100,
+التكنولوجيا,₿ Criptoeconomía y DeFi,₿,2,مستكشف,¿Qué es Blockchain?,"Bloques, cadenas, consenso",100,
+التكنولوجيا,₿ Criptoeconomía y DeFi,₿,3,مستكشف,Criptomonedas Principales,"BTC, ETH y otras",100,🥉 وسام برونزي
+التكنولوجيا,₿ Criptoeconomía y DeFi,₿,4,مبتدئ,Smart Contracts,Programas que mueven dinero,200,
+التكنولوجيا,₿ Criptoeconomía y DeFi,₿,5,مبتدئ,Exchanges y Wallets,Cómo se compra y guarda cripto,200,
+التكنولوجيا,₿ Criptoeconomía y DeFi,₿,6,مبتدئ,Finanzas Descentralizadas (DeFi),"Préstamos, DEX, yield farming",200,🥈 وسام فضي
+التكنولوجيا,₿ Criptoeconomía y DeFi,₿,7,خبير,"Estafas, Riesgos y Burbujas","Rug pulls, hacks, volatilidad",350,
+التكنولوجيا,₿ Criptoeconomía y DeFi,₿,8,خبير,Regulación y Narrativas,"Gobiernos, adopción",350,🥇 وسام ذهبي
+التكنولوجيا,₿ Criptoeconomía y DeFi,₿,9,خبير,Cripto más allá del Dinero,"DAOs, identidad, NFTs útiles",500,
+التكنولوجيا,₿ Criptoeconomía y DeFi,₿,10,خبير,Escenarios Futuros de la Criptoeconomía,Infraestructura o nicho,500,💎 وسام ماسي
+التكنولوجيا,📊 Ciencia de Datos y Big Data,📊,1,مستكشف,Dato: El Nuevo Petróleo,Qué es un dato y por qué vale,100,
+التكنولوجيا,📊 Ciencia de Datos y Big Data,📊,2,مستكشف,Cómo se Recogen Datos,"Sensores, formularios, tracking",100,
+التكنولوجيا,📊 Ciencia de Datos y Big Data,📊,3,مستكشف,Bases de Datos y Almacenes,"SQL, NoSQL, data lakes",100,🥉 وسام برونزي
+التكنولوجيا,📊 Ciencia de Datos y Big Data,📊,4,مبتدئ,Analítica Descriptiva,"Dashboards, KPIs",200,
+التكنولوجيا,📊 Ciencia de Datos y Big Data,📊,5,مبتدئ,Analítica Predictiva,Modelos y pronósticos,200,
+التكنولوجيا,📊 Ciencia de Datos y Big Data,📊,6,مبتدئ,Analítica Prescriptiva,Recomendaciones automatizadas,200,🥈 وسام فضي
+التكنولوجيا,📊 Ciencia de Datos y Big Data,📊,7,خبير,Big Data en la Vida Real,"Retail, salud, transporte",350,
+التكنولوجيا,📊 Ciencia de Datos y Big Data,📊,8,خبير,"Privacidad, Sesgos y Ética",Dilemas y casos,350,🥇 وسام ذهبي
+التكنولوجيا,📊 Ciencia de Datos y Big Data,📊,9,خبير,Arquitecturas Modernas de Datos,"Batch, streaming, lakehouse",500,
+التكنولوجيا,📊 Ciencia de Datos y Big Data,📊,10,خبير,Hacia un Mundo Hiperpersonalizado,Riesgos y regulación,500,💎 وسام ماسي
+التكنولوجيا,📡 Tecnologías de Comunicación,📡,1,مستكشف,Telégrafo y Teléfono,Primer salto de la voz a distancia,100,
+التكنولوجيا,📡 Tecnologías de Comunicación,📡,2,مستكشف,Radio y Televisión,Llegada de los mass media,100,
+التكنولوجيا,📡 Tecnologías de Comunicación,📡,3,مستكشف,Satélites y Comunicaciones Globales,"Órbitas, enlaces",100,🥉 وسام برونزي
+التكنولوجيا,📡 Tecnologías de Comunicación,📡,4,مبتدئ,Internet y Protocolos Básicos,"TCP/IP, routers",200,
+التكنولوجيا,📡 Tecnologías de Comunicación,📡,5,مبتدئ,Wi-Fi y Redes Domésticas,Cómo se conectan tus dispositivos,200,
+التكنولوجيا,📡 Tecnologías de Comunicación,📡,6,مبتدئ,Redes Móviles: 1G a 4G,De voz analógica a datos,200,🥈 وسام فضي
+التكنولوجيا,📡 Tecnologías de Comunicación,📡,7,خبير,5G y Futuras Generaciones,"Latencia baja, IoT",350,
+التكنولوجيا,📡 Tecnologías de Comunicación,📡,8,خبير,Seguridad y Vigilancia en Redes,"Interceptación, cifrado",350,🥇 وسام ذهبي
+التكنولوجيا,📡 Tecnologías de Comunicación,📡,9,خبير,Infraestructura Crítica y Resiliencia,Qué pasa si cae la red,500,
+التكنولوجيا,📡 Tecnologías de Comunicación,📡,10,خبير,Comunicación del Futuro,"Redes cuánticas, espacio profundo",500,💎 وسام ماسي
+العلوم الإنسانية,🎬 Historia del Cine y el Documental,🎬,1,مستكشف,Nacimiento del Cine,"Lumière, Méliès y las primeras proyecciones",100,
+العلوم الإنسانية,🎬 Historia del Cine y el Documental,🎬,2,مستكشف,Hollywood Clásico,"Estudios, sistema de estrellas, cine mudo a sonoro",100,
+العلوم الإنسانية,🎬 Historia del Cine y el Documental,🎬,3,مستكشف,Nueva Ola y Cine de Autor,"Truffaut, Godard y otros movimientos",100,🥉 وسام برونزي
+العلوم الإنسانية,🎬 Historia del Cine y el Documental,🎬,4,مبتدئ,Origen del Documental,"Nanook, propaganda, cine etnográfico",200,
+العلوم الإنسانية,🎬 Historia del Cine y el Documental,🎬,5,مبتدئ,Estilos de Documental,"Observacional, participativo, ensayo",200,
+العلوم الإنسانية,🎬 Historia del Cine y el Documental,🎬,6,مبتدئ,Documental de Naturaleza y Ciencia,"BBC, National Geographic, formatos",200,🥈 وسام فضي
+العلوم الإنسانية,🎬 Historia del Cine y el Documental,🎬,7,خبير,Documental de Denuncia Social,Casos que cambiaron leyes y conciencias,350,
+العلوم الإنسانية,🎬 Historia del Cine y el Documental,🎬,8,خبير,Docuseries y Plataformas,"Streaming, true crime, formatos seriales",350,🥇 وسام ذهبي
+العلوم الإنسانية,🎬 Historia del Cine y el Documental,🎬,9,خبير,Lenguaje y Ética del Documental,"Manipulación, puesta en escena, límites",500,
+العلوم الإنسانية,🎬 Historia del Cine y el Documental,🎬,10,خبير,El Futuro del Documental con IA,"Producción automatizada, personalización",500,💎 وسام ماسي
+العلوم الإنسانية,📚 Literatura Universal,📚,1,مستكشف,"Mitos, Epopeyas y Textos Fundacionales","Gilgamesh, Ilíada, textos sagrados",100,
+العلوم الإنسانية,📚 Literatura Universal,📚,2,مستكشف,Teatro Clásico y Tragedia,"Sófocles, Shakespeare",100,
+العلوم الإنسانية,📚 Literatura Universal,📚,3,مستكشف,Novela Moderna,Del siglo XIX al realismo,100,🥉 وسام برونزي
+العلوم الإنسانية,📚 Literatura Universal,📚,4,مبتدئ,Realismo y Naturalismo,"Tolstói, Zola, Galdós",200,
+العلوم الإنسانية,📚 Literatura Universal,📚,5,مبتدئ,Vanguardias y Modernismo,"Joyce, Kafka, Proust",200,
+العلوم الإنسانية,📚 Literatura Universal,📚,6,مبتدئ,Literaturas no Occidentales,"Autores clave de Asia, África, Latinoamérica",200,🥈 وسام فضي
+العلوم الإنسانية,📚 Literatura Universal,📚,7,خبير,Boom Latinoamericano,"García Márquez, Cortázar, Vargas Llosa",350,
+العلوم الإنسانية,📚 Literatura Universal,📚,8,خبير,Literatura Contemporánea,"Posmodernidad, autoficción, nuevos formatos",350,🥇 وسام ذهبي
+العلوم الإنسانية,📚 Literatura Universal,📚,9,خبير,Adaptaciones al Cine y la TV,Cómo cambian las historias,500,
+العلوم الإنسانية,📚 Literatura Universal,📚,10,خبير,IA y Escritura del Futuro,"Modelos generativos, coautoría",500,💎 وسام ماسي
+العلوم الإنسانية,🎭 Historia del Teatro y Artes Escénicas,🎭,1,مستكشف,Teatro Griego y Romano,"Tragedia, comedia, anfiteatros",100,
+العلوم الإنسانية,🎭 Historia del Teatro y Artes Escénicas,🎭,2,مستكشف,Teatro Medieval y Renacentista,"Autos, Shakespeare",100,
+العلوم الإنسانية,🎭 Historia del Teatro y Artes Escénicas,🎭,3,مستكشف,Ópera y Ballet,"Nacimiento de la ópera, grandes compositores",100,🥉 وسام برونزي
+العلوم الإنسانية,🎭 Historia del Teatro y Artes Escénicas,🎭,4,مبتدئ,Teatro del Siglo XIX,"Realismo, melodrama",200,
+العلوم الإنسانية,🎭 Historia del Teatro y Artes Escénicas,🎭,5,مبتدئ,Vanguardias del Siglo XX,"Brecht, Artaud, teatro del absurdo",200,
+العلوم الإنسانية,🎭 Historia del Teatro y Artes Escénicas,🎭,6,مبتدئ,Teatro Musical y Broadway,"Musical moderno, grandes éxitos",200,🥈 وسام فضي
+العلوم الإنسانية,🎭 Historia del Teatro y Artes Escénicas,🎭,7,خبير,Teatro Político y Social,Obras que cuestionan el poder,350,
+العلوم الإنسانية,🎭 Historia del Teatro y Artes Escénicas,🎭,8,خبير,Performance y Artes Vivas,"Happening, body art",350,🥇 وسام ذهبي
+العلوم الإنسانية,🎭 Historia del Teatro y Artes Escénicas,🎭,9,خبير,Nuevos Medios Escénicos,"Proyecciones, VR, experiencias inmersivas",500,
+العلوم الإنسانية,🎭 Historia del Teatro y Artes Escénicas,🎭,10,خبير,El Futuro del Teatro,"Hibridación digital, participación del público",500,💎 وسام ماسي
+العلوم الإنسانية,📷 Historia de la Fotografía y Fotoperiodismo,📷,1,مستكشف,Primeras Fotografías,"Daguerrotipos, Niepce, Daguerre",100,
+العلوم الإنسانية,📷 Historia de la Fotografía y Fotoperiodismo,📷,2,مستكشف,Retrato y Estudio,La fotografía como lujo,100,
+العلوم الإنسانية,📷 Historia de la Fotografía y Fotoperiodismo,📷,3,مستكشف,Fotografía Documental Temprana,"Vida urbana, colonias, guerra de Crimea",100,🥉 وسام برونزي
+العلوم الإنسانية,📷 Historia de la Fotografía y Fotoperiodismo,📷,4,مبتدئ,Grandes Guerras en Imágenes,"WWI, WWII, impacto en la opinión pública",200,
+العلوم الإنسانية,📷 Historia de la Fotografía y Fotoperiodismo,📷,5,مبتدئ,Agencias y Revistas Icónicas,"Magnum, LIFE",200,
+العلوم الإنسانية,📷 Historia de la Fotografía y Fotoperiodismo,📷,6,مبتدئ,Fotografía de Calle y Autoral,"Cartier-Bresson, Vivian Maier",200,🥈 وسام فضي
+العلوم الإنسانية,📷 Historia de la Fotografía y Fotoperiodismo,📷,7,خبير,Fotoperiodismo en la Era Digital,"24/7 news, redes sociales",350,
+العلوم الإنسانية,📷 Historia de la Fotografía y Fotoperiodismo,📷,8,خبير,Manipulación y Fake Images,"Edición, deepfakes, ética",350,🥇 وسام ذهبي
+العلوم الإنسانية,📷 Historia de la Fotografía y Fotoperiodismo,📷,9,خبير,Fotografía como Arte Contemporáneo,"Museos, mercado, instalaciones",500,
+العلوم الإنسانية,📷 Historia de la Fotografía y Fotoperiodismo,📷,10,خبير,"IA, Algoritmos y Visión por Computador","Clasificación, generación de imágenes",500,💎 وسام ماسي
+العلوم الإنسانية,🗣️ Lenguas del Mundo y Escrituras,🗣️,1,مستكشف,Qué es un Idioma,"Fonética, gramática, significado",100,
+العلوم الإنسانية,🗣️ Lenguas del Mundo y Escrituras,🗣️,2,مستكشف,Familias Lingüísticas,"Indoeuropea, sino-tibetana, afroasiática",100,
+العلوم الإنسانية,🗣️ Lenguas del Mundo y Escrituras,🗣️,3,مستكشف,Orígenes de la Escritura,"Cuneiforme, jeroglíficos",100,🥉 وسام برونزي
+العلوم الإنسانية,🗣️ Lenguas del Mundo y Escrituras,🗣️,4,مبتدئ,Alfabetos y Sistemas de Escritura,"Latino, cirílico, árabe, chino",200,
+العلوم الإنسانية,🗣️ Lenguas del Mundo y Escrituras,🗣️,5,مبتدئ,Lenguas en Peligro,"Extinción lingüística, revitalización",200,
+العلوم الإنسانية,🗣️ Lenguas del Mundo y Escrituras,🗣️,6,مبتدئ,Lenguas Francas y de Poder,"Inglés, español, mandarín",200,🥈 وسام فضي
+العلوم الإنسانية,🗣️ Lenguas del Mundo y Escrituras,🗣️,7,خبير,Política e Identidad Lingüística,"Nacionalismos, minorías",350,
+العلوم الإنسانية,🗣️ Lenguas del Mundo y Escrituras,🗣️,8,خبير,Traducción y Pérdida,"Matices, intraducibles",350,🥇 وسام ذهبي
+العلوم الإنسانية,🗣️ Lenguas del Mundo y Escrituras,🗣️,9,خبير,IA y Traducción Automática,"Modelos neuronales, límites",500,
+العلوم الإنسانية,🗣️ Lenguas del Mundo y Escrituras,🗣️,10,خبير,El Futuro del Multilingüismo,"Convergencia, diversidad",500,💎 وسام ماسي
+العلوم الإنسانية,🍳 Historia de la Alimentación y Gastronomía,🍳,1,مستكشف,Cazadores-Recolectores y Agricultura,Del forrajeo a los cultivos,100,
+العلوم الإنسانية,🍳 Historia de la Alimentación y Gastronomía,🍳,2,مستكشف,Granos y Civilizaciones,"Trigo, arroz, maíz",100,
+العلوم الإنسانية,🍳 Historia de la Alimentación y Gastronomía,🍳,3,مستكشف,Especias y Rutas Comerciales,"Curry, pimienta, oro aromático",100,🥉 وسام برونزي
+العلوم الإنسانية,🍳 Historia de la Alimentación y Gastronomía,🍳,4,مبتدئ,Colonialismo y Cocina,"Intercambio colombino, mestizaje culinario",200,
+العلوم الإنسانية,🍳 Historia de la Alimentación y Gastronomía,🍳,5,مبتدئ,Revolución Industrial y Comida Procesada,"Conservas, azúcar, fast food",200,
+العلوم الإنسانية,🍳 Historia de la Alimentación y Gastronomía,🍳,6,مبتدئ,Cocinas del Mundo,"Mediterránea, asiática, latinoamericana",200,🥈 وسام فضي
+العلوم الإنسانية,🍳 Historia de la Alimentación y Gastronomía,🍳,7,خبير,Alta Cocina y Chefs Estrella,"Guías, restaurantes icónicos",350,
+العلوم الإنسانية,🍳 Historia de la Alimentación y Gastronomía,🍳,8,خبير,Comida y Clase Social,"Acceso, status, marketing",350,🥇 وسام ذهبي
+العلوم الإنسانية,🍳 Historia de la Alimentación y Gastronomía,🍳,9,خبير,Gastronomía Molecular y Ciencia,Física y química en la cocina,500,
+العلوم الإنسانية,🍳 Historia de la Alimentación y Gastronomía,🍳,10,خبير,Futuro de la Alimentación,"Carne cultivada, insectos, sostenibilidad",500,💎 وسام ماسي
+المجتمع,🏭 Historia del Capitalismo y del Trabajo,🏭,1,مستكشف,Economías Agrarias y Trueque,Antes del capitalismo,100,
+المجتمع,🏭 Historia del Capitalismo y del Trabajo,🏭,2,مستكشف,Revolución Comercial y Mercantilismo,"Imperios, colonias",100,
+المجتمع,🏭 Historia del Capitalismo y del Trabajo,🏭,3,مستكشف,Revolución Industrial,"Máquinas, fábricas, proletariado",100,🥉 وسام برونزي
+المجتمع,🏭 Historia del Capitalismo y del Trabajo,🏭,4,مبتدئ,Capitalismo del Siglo XIX,"Ferrocarriles, monopolios",200,
+المجتمع,🏭 Historia del Capitalismo y del Trabajo,🏭,5,مبتدئ,Estado del Bienestar y Fordismo,"Producción en masa, derechos laborales",200,
+المجتمع,🏭 Historia del Capitalismo y del Trabajo,🏭,6,مبتدئ,Neoliberalismo y Globalización,"Deslocalización, finanzas",200,🥈 وسام فضي
+المجتمع,🏭 Historia del Capitalismo y del Trabajo,🏭,7,خبير,Automatización y Trabajo Precario,"Gig economy, plataformas",350,
+المجتمع,🏭 Historia del Capitalismo y del Trabajo,🏭,8,خبير,Críticas y Alternativas,"Marxismo, economía solidaria",350,🥇 وسام ذهبي
+المجتمع,🏭 Historia del Capitalismo y del Trabajo,🏭,9,خبير,Capitalismo Digital y de Vigilancia,Datos como mercancía,500,
+المجتمع,🏭 Historia del Capitalismo y del Trabajo,🏭,10,خبير,El Futuro del Trabajo,"Renta básica, robots",500,💎 وسام ماسي
+المجتمع,📱 Sociología de las Redes Sociales,📱,1,مستكشف,De Foros a Redes Sociales,"Blogs, MySpace, Facebook",100,
+المجتمع,📱 Sociología de las Redes Sociales,📱,2,مستكشف,Plataformas Clave,"Twitter/X, Instagram, TikTok",100,
+المجتمع,📱 Sociología de las Redes Sociales,📱,3,مستكشف,"Likes, Seguidores y Ego",Psicología básica del feedback,100,🥉 وسام برونزي
+المجتمع,📱 Sociología de las Redes Sociales,📱,4,مبتدئ,Algoritmos y Burbujas de Filtro,Qué ves y qué no ves,200,
+المجتمع,📱 Sociología de las Redes Sociales,📱,5,مبتدئ,Influencers y Economía de Creadores,Modelos de ingresos,200,
+المجتمع,📱 Sociología de las Redes Sociales,📱,6,مبتدئ,Ciberacoso y Toxicidad,Efectos en la salud mental,200,🥈 وسام فضي
+المجتمع,📱 Sociología de las Redes Sociales,📱,7,خبير,Redes y Política,"Campañas, desinformación",350,
+المجتمع,📱 Sociología de las Redes Sociales,📱,8,خبير,Activismo Digital,"Hashtags, movimientos sociales",350,🥇 وسام ذهبي
+المجتمع,📱 Sociología de las Redes Sociales,📱,9,خبير,"Datos, Vigilancia y Privacidad",Seguimiento masivo,500,
+المجتمع,📱 Sociología de las Redes Sociales,📱,10,خبير,El Futuro de la Vida Conectada,"Metaversos, identidades múltiples",500,💎 وسام ماسي
+المجتمع,🗳️ Sistemas Políticos del Mundo,🗳️,1,مستكشف,Qué es un Estado,"Territorio, población, soberanía",100,
+المجتمع,🗳️ Sistemas Políticos del Mundo,🗳️,2,مستكشف,Democracias y Dictaduras,Clasificaciones básicas,100,
+المجتمع,🗳️ Sistemas Políticos del Mundo,🗳️,3,مستكشف,Separación de Poderes,"Ejecutivo, legislativo, judicial",100,🥉 وسام برونزي
+المجتمع,🗳️ Sistemas Políticos del Mundo,🗳️,4,مبتدئ,Modelos Parlamentarios y Presidenciales,"Reino Unido, EE.UU.",200,
+المجتمع,🗳️ Sistemas Políticos del Mundo,🗳️,5,مبتدئ,Regímenes Autoritarios,"Control, propaganda",200,
+المجتمع,🗳️ Sistemas Políticos del Mundo,🗳️,6,مبتدئ,Organismos Supranacionales,"UE, ONU, OEA",200,🥈 وسام فضي
+المجتمع,🗳️ Sistemas Políticos del Mundo,🗳️,7,خبير,Transiciones Democráticas,Ejemplos históricos,350,
+المجتمع,🗳️ Sistemas Políticos del Mundo,🗳️,8,خبير,Populismo y Polarización,Tendencias recientes,350,🥇 وسام ذهبي
+المجتمع,🗳️ Sistemas Políticos del Mundo,🗳️,9,خبير,Tecnología y Gobernanza,"Voto electrónico, e-gobierno",500,
+المجتمع,🗳️ Sistemas Políticos del Mundo,🗳️,10,خبير,Democracia del Futuro,"Participación digital, IA y política",500,💎 وسام ماسي
+المجتمع,♀️ Historia del Feminismo y Movimientos Sociales,♀️,1,مستكشف,Primeras Luchas por Derechos,"Sufragistas, abolición",100,
+المجتمع,♀️ Historia del Feminismo y Movimientos Sociales,♀️,2,مستكشف,Olas del Feminismo,"Primera, segunda, tercera",100,
+المجتمع,♀️ Historia del Feminismo y Movimientos Sociales,♀️,3,مستكشف,Movimientos Obreros,"Sindicatos, 1 de mayo",100,🥉 وسام برونزي
+المجتمع,♀️ Historia del Feminismo y Movimientos Sociales,♀️,4,مبتدئ,Luchas por Derechos Civiles,"EE.UU., Sudáfrica",200,
+المجتمع,♀️ Historia del Feminismo y Movimientos Sociales,♀️,5,مبتدئ,Movimiento LGTBI+,Hitos y conquistas,200,
+المجتمع,♀️ Historia del Feminismo y Movimientos Sociales,♀️,6,مبتدئ,Ecologismo y Pacifismo,Movimiento verde,200,🥈 وسام فضي
+المجتمع,♀️ Historia del Feminismo y Movimientos Sociales,♀️,7,خبير,Intersectionalidad y Nuevas Agendas,Cruce de opresiones,350,
+المجتمع,♀️ Historia del Feminismo y Movimientos Sociales,♀️,8,خبير,Redes Sociales y Movilización,"#MeToo, Primavera Árabe",350,🥇 وسام ذهبي
+المجتمع,♀️ Historia del Feminismo y Movimientos Sociales,♀️,9,خبير,Reacción y Backlash,Resistencias y contramovimientos,500,
+المجتمع,♀️ Historia del Feminismo y Movimientos Sociales,♀️,10,خبير,Movimientos Sociales del Futuro,Nuevas causas emergentes,500,💎 وسام ماسي
+المجتمع,⌛ Economía de la Atención,⌛,1,مستكشف,Qué es la Atención,"Recurso limitado, foco",100,
+المجتمع,⌛ Economía de la Atención,⌛,2,مستكشف,Publicidad Tradicional,"TV, radio, prensa",100,
+المجتمع,⌛ Economía de la Atención,⌛,3,مستكشف,Publicidad Digital,"Banners, search ads",100,🥉 وسام برونزي
+المجتمع,⌛ Economía de la Atención,⌛,4,مبتدئ,Plataformas y Tiempo de Pantalla,Modelos de negocio,200,
+المجتمع,⌛ Economía de la Atención,⌛,5,مبتدئ,Scroll Infinito y Notificaciones,Diseño adictivo,200,
+المجتمع,⌛ Economía de la Atención,⌛,6,مبتدئ,Creadores y Contenido Viral,Métricas y tendencias,200,🥈 وسام فضي
+المجتمع,⌛ Economía de la Atención,⌛,7,خبير,Coste Cognitivo y Salud Mental,Burnout informativo,350,
+المجتمع,⌛ Economía de la Atención,⌛,8,خبير,Regulación y Privacidad,Leyes de datos,350,🥇 وسام ذهبي
+المجتمع,⌛ Economía de la Atención,⌛,9,خبير,Resistencia: Minimalismo Digital,Estrategias para recuperar el foco,500,
+المجتمع,⌛ Economía de la Atención,⌛,10,خبير,Futuro de la Atención,"Interfaces nuevas, IA curadora",500,💎 وسام ماسي
+الطبيعة,🏞️ Grandes Ríos y Civilizaciones,🏞️,1,مستكشف,"Nilo, Tigris y Éufrates",Cunas de civilización,100,
+الطبيعة,🏞️ Grandes Ríos y Civilizaciones,🏞️,2,مستكشف,Indo y Ganges,India antigua y moderna,100,
+الطبيعة,🏞️ Grandes Ríos y Civilizaciones,🏞️,3,مستكشف,Yangtsé y Amarillo,China y sus ríos,100,🥉 وسام برونزي
+الطبيعة,🏞️ Grandes Ríos y Civilizaciones,🏞️,4,مبتدئ,Ríos de Europa,"Danubio, Rin, comercio",200,
+الطبيعة,🏞️ Grandes Ríos y Civilizaciones,🏞️,5,مبتدئ,Ríos de América,"Amazonas, Mississippi",200,
+الطبيعة,🏞️ Grandes Ríos y Civilizaciones,🏞️,6,مبتدئ,Ríos de África y su Impacto,"Niger, Congo",200,🥈 وسام فضي
+الطبيعة,🏞️ Grandes Ríos y Civilizaciones,🏞️,7,خبير,Represas y Gestión del Agua,"Asuán, Tres Gargantas",350,
+الطبيعة,🏞️ Grandes Ríos y Civilizaciones,🏞️,8,خبير,Contaminación y Sequías,Crisis hídricas,350,🥇 وسام ذهبي
+الطبيعة,🏞️ Grandes Ríos y Civilizaciones,🏞️,9,خبير,Guerras del Agua,Conflictos actuales y potenciales,500,
+الطبيعة,🏞️ Grandes Ríos y Civilizaciones,🏞️,10,خبير,Futuro de los Grandes Ríos,Adaptación climática,500,💎 وسام ماسي
+الطبيعة,🏜️ Desiertos del Mundo y Supervivencia,🏜️,1,مستكشف,Qué es un Desierto,"Tipos, clima",100,
+الطبيعة,🏜️ Desiertos del Mundo y Supervivencia,🏜️,2,مستكشف,Sahara y Desiertos Africanos,Historia y pueblos,100,
+الطبيعة,🏜️ Desiertos del Mundo y Supervivencia,🏜️,3,مستكشف,Desiertos de Asia,"Gobi, Arabia",100,🥉 وسام برونزي
+الطبيعة,🏜️ Desiertos del Mundo y Supervivencia,🏜️,4,مبتدئ,Desiertos de América,"Atacama, Sonora",200,
+الطبيعة,🏜️ Desiertos del Mundo y Supervivencia,🏜️,5,مبتدئ,Flora y Fauna Adaptada,Estrategias de vida,200,
+الطبيعة,🏜️ Desiertos del Mundo y Supervivencia,🏜️,6,مبتدئ,Supervivencia Humana,"Técnicas, expediciones",200,🥈 وسام فضي
+الطبيعة,🏜️ Desiertos del Mundo y Supervivencia,🏜️,7,خبير,Desertificación,Causas humanas y naturales,350,
+الطبيعة,🏜️ Desiertos del Mundo y Supervivencia,🏜️,8,خبير,Energía Solar en Desiertos,Mega proyectos,350,🥇 وسام ذهبي
+الطبيعة,🏜️ Desiertos del Mundo y Supervivencia,🏜️,9,خبير,Ciudades y Proyectos en Desiertos,"Dubai, NEOM",500,
+الطبيعة,🏜️ Desiertos del Mundo y Supervivencia,🏜️,10,خبير,Vida en Otros Mundos Desérticos,Marte como desierto extremo,500,💎 وسام ماسي
+الطبيعة,🌲 Bosques y Selvas,🌲,1,مستكشف,Tipos de Bosques,"Tropicales, templados, boreales",100,
+الطبيعة,🌲 Bosques y Selvas,🌲,2,مستكشف,Amazonia y Grandes Selvas,Biodiversidad y pueblos,100,
+الطبيعة,🌲 Bosques y Selvas,🌲,3,مستكشف,Bosques del Norte,"Taiga, tundra",100,🥉 وسام برونزي
+الطبيعة,🌲 Bosques y Selvas,🌲,4,مبتدئ,Bosques y Clima,Sumideros de carbono,200,
+الطبيعة,🌲 Bosques y Selvas,🌲,5,مبتدئ,Deforestación,Causas y consecuencias,200,
+الطبيعة,🌲 Bosques y Selvas,🌲,6,مبتدئ,Conservación y Parques,Modelos de protección,200,🥈 وسام فضي
+الطبيعة,🌲 Bosques y Selvas,🌲,7,خبير,Economía del Bosque,"Madera, turismo, servicios ecosistémicos",350,
+الطبيعة,🌲 Bosques y Selvas,🌲,8,خبير,Incendios Forestales,Cambio climático y gestión,350,🥇 وسام ذهبي
+الطبيعة,🌲 Bosques y Selvas,🌲,9,خبير,Restauración Ecológica,Reforestación inteligente,500,
+الطبيعة,🌲 Bosques y Selvas,🌲,10,خبير,Bosques del Futuro,"Rewilding, reservas integrales",500,💎 وسام ماسي
+الطبيعة,🦤 Fauna Extinta Reciente y Conservación,🦤,1,مستكشف,Especies Extintas Recientes,"Dodo, tilacino",100,
+الطبيعة,🦤 Fauna Extinta Reciente y Conservación,🦤,2,مستكشف,Causas de Extinción,"Caza, hábitat, invasoras",100,
+الطبيعة,🦤 Fauna Extinta Reciente y Conservación,🦤,3,مستكشف,Historias Emblemáticas,"Búfalo americano, ballena azul",100,🥉 وسام برونزي
+الطبيعة,🦤 Fauna Extinta Reciente y Conservación,🦤,4,مبتدئ,Listas Rojas y Estado de Conservación,UICN,200,
+الطبيعة,🦤 Fauna Extinta Reciente y Conservación,🦤,5,مبتدئ,Zoológicos y Reservas,Rol en conservación,200,
+الطبيعة,🦤 Fauna Extinta Reciente y Conservación,🦤,6,مبتدئ,Éxitos en Recuperación,"Lince ibérico, cóndor",200,🥈 وسام فضي
+الطبيعة,🦤 Fauna Extinta Reciente y Conservación,🦤,7,خبير,Conservación Genética,Bancos de genes,350,
+الطبيعة,🦤 Fauna Extinta Reciente y Conservación,🦤,8,خبير,Rewilding y Reintroducciones,Casos prácticos,350,🥇 وسام ذهبي
+الطبيعة,🦤 Fauna Extinta Reciente y Conservación,🦤,9,خبير,De-Extinción,Mamuts y debate ético,500,
+الطبيعة,🦤 Fauna Extinta Reciente y Conservación,🦤,10,خبير,Convivencia Humano-Fauna,Nuevos pactos y límites,500,💎 وسام ماسي
+الطبيعة,🧊 Glaciares y Regiones Polares,🧊,1,مستكشف,Qué es un Glaciar,"Formación, tipos",100,
+الطبيعة,🧊 Glaciares y Regiones Polares,🧊,2,مستكشف,Ártico y Antártida,Diferencias básicas,100,
+الطبيعة,🧊 Glaciares y Regiones Polares,🧊,3,مستكشف,Fauna Polar,"Osos, pingüinos, focas",100,🥉 وسام برونزي
+الطبيعة,🧊 Glaciares y Regiones Polares,🧊,4,مبتدئ,Hielo y Clima Global,"Albedo, regulador térmico",200,
+الطبيعة,🧊 Glaciares y Regiones Polares,🧊,5,مبتدئ,Exploradores Polares,"Amundsen, Scott",200,
+الطبيعة,🧊 Glaciares y Regiones Polares,🧊,6,مبتدئ,Bases Científicas,Investigación en los polos,200,🥈 وسام فضي
+الطبيعة,🧊 Glaciares y Regiones Polares,🧊,7,خبير,Retroceso de Glaciares,Impactos locales,350,
+الطبيعة,🧊 Glaciares y Regiones Polares,🧊,8,خبير,Rutas Marítimas y Recursos,Paso del Noroeste,350,🥇 وسام ذهبي
+الطبيعة,🧊 Glaciares y Regiones Polares,🧊,9,خبير,Conflictos Geopolíticos en el Hielo,Reclamos territoriales,500,
+الطبيعة,🧊 Glaciares y Regiones Polares,🧊,10,خبير,Futuro de las Regiones Polares,Escenarios climáticos,500,💎 وسام ماسي
+التكنولوجيا,💡 Innovación y Emprendimiento,💡,1,مستكشف,Qué es Innovar,"Ideas, problemas y soluciones",100,
+التكنولوجيا,💡 Innovación y Emprendimiento,💡,2,مستكشف,Casos Históricos de Emprendedores,"Edison, Ford",100,
+التكنولوجيا,💡 Innovación y Emprendimiento,💡,3,مستكشف,Startups y Silicon Valley,Nacimiento del ecosistema,100,🥉 وسام برونزي
+التكنولوجيا,💡 Innovación y Emprendimiento,💡,4,مبتدئ,Modelos de Negocio,"Suscripción, marketplace, freemium",200,
+التكنولوجيا,💡 Innovación y Emprendimiento,💡,5,مبتدئ,Financiación y Capital Riesgo,"VC, ángeles, bootstrapping",200,
+التكنولوجيا,💡 Innovación y Emprendimiento,💡,6,مبتدئ,Validación y Producto Mínimo Viable,Iterar con usuarios,200,🥈 وسام فضي
+التكنولوجيا,💡 Innovación y Emprendimiento,💡,7,خبير,Escalar una Startup,"Equipo, procesos, cultura",350,
+التكنولوجيا,💡 Innovación y Emprendimiento,💡,8,خبير,Fracaso y Aprendizaje,"Casos sonados, lecciones",350,🥇 وسام ذهبي
+التكنولوجيا,💡 Innovación y Emprendimiento,💡,9,خبير,Emprendimiento de Impacto,"Triple balance, sostenibilidad",500,
+التكنولوجيا,💡 Innovación y Emprendimiento,💡,10,خبير,Innovar con IA,Nuevos modelos habilitados por IA,500,💎 وسام ماسي
+المجتمع,💵 Psicología del Dinero,💵,1,مستكشف,Dinero y Emociones,"Miedo, avaricia",100,
+المجتمع,💵 Psicología del Dinero,💵,2,مستكشف,Sesgos en Decisiones Financieras,"Anclas, aversión a la pérdida",100,
+المجتمع,💵 Psicología del Dinero,💵,3,مستكشف,Hábitos de Consumo,Impulso vs planificación,100,🥉 وسام برونزي
+المجتمع,💵 Psicología del Dinero,💵,4,مبتدئ,Publicidad y Compra,Técnicas de persuasión,200,
+المجتمع,💵 Psicología del Dinero,💵,5,مبتدئ,Endeudamiento y Crédito,Psicología del préstamo,200,
+المجتمع,💵 Psicología del Dinero,💵,6,مبتدئ,Ahorro e Inversión,Mentalidad de largo plazo,200,🥈 وسام فضي
+المجتمع,💵 Psicología del Dinero,💵,7,خبير,Dinero y Estatus,"Señales, comparación social",350,
+المجتمع,💵 Psicología del Dinero,💵,8,خبير,Cultura y Relación con el Dinero,Diferencias regionales,350,🥇 وسام ذهبي
+المجتمع,💵 Psicología del Dinero,💵,9,خبير,Dinero y Felicidad,Qué dice la investigación,500,
+المجتمع,💵 Psicología del Dinero,💵,10,خبير,Reescribir tu Narrativa Financiera,Cambiar creencias y hábitos,500,💎 وسام ماسي
+الصحة,📈 Hábitos y Productividad,📈,1,مستكشف,Qué es un Hábito,Bucle señal-rutina-recompensa,100,
+الصحة,📈 Hábitos y Productividad,📈,2,مستكشف,Motivación y Voluntad,Mitologías y realidades,100,
+الصحة,📈 Hábitos y Productividad,📈,3,مستكشف,Procrastinación,Por qué la mente pospone,100,🥉 وسام برونزي
+الصحة,📈 Hábitos y Productividad,📈,4,مبتدئ,Sistemas de Organización,"Listas, calendarios, GTD",200,
+الصحة,📈 Hábitos y Productividad,📈,5,مبتدئ,Gestión del Tiempo,"Bloques, timeboxing",200,
+الصحة,📈 Hábitos y Productividad,📈,6,مبتدئ,"Energía, Sueño y Productividad",Ritmos biológicos,200,🥈 وسام فضي
+الصحة,📈 Hábitos y Productividad,📈,7,خبير,Diseñar Hábitos Duraderos,"Ambiente, identidad",350,
+الصحة,📈 Hábitos y Productividad,📈,8,خبير,Productividad en la Era Digital,"Distracciones, multitarea",350,🥇 وسام ذهبي
+الصحة,📈 Hábitos y Productividad,📈,9,خبير,Flujo (Flow) y Alto Rendimiento,Condiciones para entrar en flow,500,
+الصحة,📈 Hábitos y Productividad,📈,10,خبير,Sistemas de Productividad Personalizados,Crearte tu propio sistema,500,💎 وسام ماسي
+المجتمع,🏙️ Historia de las Ciudades y Urbanismo,🏙️,1,مستكشف,Primeras Ciudades,"Mesopotamia, valle del Indo",100,
+المجتمع,🏙️ Historia de las Ciudades y Urbanismo,🏙️,2,مستكشف,Ciudades Antiguas,"Roma, Atenas, Teotihuacán",100,
+المجتمع,🏙️ Historia de las Ciudades y Urbanismo,🏙️,3,مستكشف,Ciudades Medievales,"Murallas, gremios",100,🥉 وسام برونزي
+المجتمع,🏙️ Historia de las Ciudades y Urbanismo,🏙️,4,مبتدئ,Revolución Industrial y Ciudad,"Fábricas, barrios obreros",200,
+المجتمع,🏙️ Historia de las Ciudades y Urbanismo,🏙️,5,مبتدئ,Urbanismo Moderno,"Haussmann, zonificación",200,
+المجتمع,🏙️ Historia de las Ciudades y Urbanismo,🏙️,6,مبتدئ,Megaciudades y Suburbios,Crecimiento acelerado,200,🥈 وسام فضي
+المجتمع,🏙️ Historia de las Ciudades y Urbanismo,🏙️,7,خبير,Problemas Urbanos,"Tráfico, vivienda, contaminación",350,
+المجتمع,🏙️ Historia de las Ciudades y Urbanismo,🏙️,8,خبير,Ciudades Sostenibles,"Transporte público, verde",350,🥇 وسام ذهبي
+المجتمع,🏙️ Historia de las Ciudades y Urbanismo,🏙️,9,خبير,Smart Cities,"Datos, sensores, gobernanza",500,
+المجتمع,🏙️ Historia de las Ciudades y Urbanismo,🏙️,10,خبير,Ciudades del Futuro,"Verticales, flotantes, resilientes",500,💎 وسام ماسي
+التكنولوجيا,🕹️ Videojuegos y Sociedad,🕹️,1,مستكشف,Historia Básica del Juego Digital,Hitos principales,100,
+التكنولوجيا,🕹️ Videojuegos y Sociedad,🕹️,2,مستكشف,Culturas de Jugadores,"Casual, hardcore",100,
+التكنولوجيا,🕹️ Videojuegos y Sociedad,🕹️,3,مستكشف,Comunidades Online,"Clanes, guilds",100,🥉 وسام برونزي
+التكنولوجيا,🕹️ Videojuegos y Sociedad,🕹️,4,مبتدئ,Esports y Espectadores,Audiencias masivas,200,
+التكنولوجيا,🕹️ Videojuegos y Sociedad,🕹️,5,مبتدئ,Representación y Diversidad,"Género, raza",200,
+التكنولوجيا,🕹️ Videojuegos y Sociedad,🕹️,6,مبتدئ,Juegos y Educación,Serious games,200,🥈 وسام فضي
+التكنولوجيا,🕹️ Videojuegos y Sociedad,🕹️,7,خبير,Adicción y Regulación,"Clasificaciones, límites",350,
+التكنولوجيا,🕹️ Videojuegos y Sociedad,🕹️,8,خبير,Economías Virtuales,"Objetos, skins, mercados",350,🥇 وسام ذهبي
+التكنولوجيا,🕹️ Videojuegos y Sociedad,🕹️,9,خبير,Juegos como Arte Político,Crítica y reflexión,500,
+التكنولوجيا,🕹️ Videojuegos y Sociedad,🕹️,10,خبير,Fronteras Difusas Realidad-Juego,Metaversos,500,💎 وسام ماسي
+العلوم الإنسانية,🚀 Ciencia Ficción y Futuro,🚀,1,مستكشف,Orígenes de la Ciencia Ficción,"Verne, Wells",100,
+العلوم الإنسانية,🚀 Ciencia Ficción y Futuro,🚀,2,مستكشف,Edad Dorada,"Asimov, Clarke",100,
+العلوم الإنسانية,🚀 Ciencia Ficción y Futuro,🚀,3,مستكشف,Cine de Ciencia Ficción,"2001, Star Wars",100,🥉 وسام برونزي
+العلوم الإنسانية,🚀 Ciencia Ficción y Futuro,🚀,4,مبتدئ,Distopías y Crítica Social,"1984, Blade Runner",200,
+العلوم الإنسانية,🚀 Ciencia Ficción y Futuro,🚀,5,مبتدئ,Utopías y Posibles Mundos,"Star Trek, solarpunk",200,
+العلوم الإنسانية,🚀 Ciencia Ficción y Futuro,🚀,6,مبتدئ,Space Opera y Aventuras Cósmicas,Grandes sagas,200,🥈 وسام فضي
+العلوم الإنسانية,🚀 Ciencia Ficción y Futuro,🚀,7,خبير,Ciberpunk y Realidades Virtuales,"Neuromante, Matrix",350,
+العلوم الإنسانية,🚀 Ciencia Ficción y Futuro,🚀,8,خبير,Biopunk y Genética,Manipulación de cuerpos,350,🥇 وسام ذهبي
+العلوم الإنسانية,🚀 Ciencia Ficción y Futuro,🚀,9,خبير,SF y Predicciones Cumplidas,Tecnologías anticipadas,500,
+العلوم الإنسانية,🚀 Ciencia Ficción y Futuro,🚀,10,خبير,Ficción como Laboratorio del Futuro,Inspirar ciencia real,500,💎 وسام ماسي
+العلوم الإنسانية,👗 Historia de la Moda,👗,1,مستكشف,Vestimenta en la Antigüedad,"Togas, túnicas",100,
+العلوم الإنسانية,👗 Historia de la Moda,👗,2,مستكشف,Ropas Medievales y Renacentistas,"Cortes, símbolos",100,
+العلوم الإنسانية,👗 Historia de la Moda,👗,3,مستكشف,Moda del Siglo XIX,"Crinolinas, trajes",100,🥉 وسام برونزي
+العلوم الإنسانية,👗 Historia de la Moda,👗,4,مبتدئ,Alta Costura y Diseñadores,"Chanel, Dior",200,
+العلوم الإنسانية,👗 Historia de la Moda,👗,5,مبتدئ,Moda Juvenil y Subculturas,"Punk, hip-hop",200,
+العلوم الإنسانية,👗 Historia de la Moda,👗,6,مبتدئ,Fast Fashion,Producción masiva,200,🥈 وسام فضي
+العلوم الإنسانية,👗 Historia de la Moda,👗,7,خبير,Impacto Ambiental de la Moda,"Contaminación, residuos",350,
+العلوم الإنسانية,👗 Historia de la Moda,👗,8,خبير,Moda Ética y Sostenible,"Algodón orgánico, reciclaje",350,🥇 وسام ذهبي
+العلوم الإنسانية,👗 Historia de la Moda,👗,9,خبير,Tecnología Textil,Ropa inteligente,500,
+العلوم الإنسانية,👗 Historia de la Moda,👗,10,خبير,Futuro de la Moda,"Digital, virtual, IA",500,💎 وسام ماسي
+التكنولوجيا,📐 Arquitectura de la Información y UX,📐,1,مستكشف,Qué es UX,Experiencia de usuario,100,
+التكنولوجيا,📐 Arquitectura de la Información y UX,📐,2,مستكشف,Interfaces a lo Largo del Tiempo,"CLI, GUI, móvil",100,
+التكنولوجيا,📐 Arquitectura de la Información y UX,📐,3,مستكشف,Arquitectura de la Información,"Jerarquías, menús",100,🥉 وسام برونزي
+التكنولوجيا,📐 Arquitectura de la Información y UX,📐,4,مبتدئ,Principios de Usabilidad,"Norman, heurísticas",200,
+التكنولوجيا,📐 Arquitectura de la Información y UX,📐,5,مبتدئ,Investigación con Usuarios,"Entrevistas, tests",200,
+التكنولوجيا,📐 Arquitectura de la Información y UX,📐,6,مبتدئ,Diseño Centrado en la Persona,"Personas, journeys",200,🥈 وسام فضي
+التكنولوجيا,📐 Arquitectura de la Información y UX,📐,7,خبير,Patrones Oscuros,Diseño manipulador,350,
+التكنولوجيا,📐 Arquitectura de la Información y UX,📐,8,خبير,Accesibilidad Digital,"WCAG, inclusión",350,🥇 وسام ذهبي
+التكنولوجيا,📐 Arquitectura de la Información y UX,📐,9,خبير,UX y Ética,Responsabilidad del diseño,500,
+التكنولوجيا,📐 Arquitectura de la Información y UX,📐,10,خبير,UX con IA,"Interfaces conversacionales, copilots",500,💎 وسام ماسي
+الصحة,🎓 Neuroeducación y Aprendizaje,🎓,1,مستكشف,Cerebro y Aprendizaje,"Plasticidad, memoria",100,
+الصحة,🎓 Neuroeducación y Aprendizaje,🎓,2,مستكشف,Atención y Motivación,Sistemas de recompensa,100,
+الصحة,🎓 Neuroeducación y Aprendizaje,🎓,3,مستكشف,Emoción y Recuerdo,Cómo se fijan los recuerdos,100,🥉 وسام برونزي
+الصحة,🎓 Neuroeducación y Aprendizaje,🎓,4,مبتدئ,Errores y Curva de Olvido,Por qué olvidamos,200,
+الصحة,🎓 Neuroeducación y Aprendizaje,🎓,5,مبتدئ,Práctica Espaciada y Revisión Activa,Técnicas efectivas,200,
+الصحة,🎓 Neuroeducación y Aprendizaje,🎓,6,مبتدئ,Aprendizaje Multisensorial,"Ver, oír, hacer",200,🥈 وسام فضي
+الصحة,🎓 Neuroeducación y Aprendizaje,🎓,7,خبير,Mitos sobre el Cerebro,"10%, hemisferios, etc.",350,
+الصحة,🎓 Neuroeducación y Aprendizaje,🎓,8,خبير,Tecnología y Aprendizaje,"Apps, plataformas",350,🥇 وسام ذهبي
+الصحة,🎓 Neuroeducación y Aprendizaje,🎓,9,خبير,Personalización con IA,Rutas adaptativas,500,
+الصحة,🎓 Neuroeducación y Aprendizaje,🎓,10,خبير,Diseñar tu Propio Sistema de Aprendizaje,Aplicar todo lo aprendido,500,💎 وسام ماسي
+العلوم الإنسانية,🕯️ Historia de las Religiones,🕯️,1,مستكشف,Creencias Prehistóricas,"Cultos, enterramientos",100,
+العلوم الإنسانية,🕯️ Historia de las Religiones,🕯️,2,مستكشف,Religiones Antiguas,"Egipto, Grecia",100,
+العلوم الإنسانية,🕯️ Historia de las Religiones,🕯️,3,مستكشف,Grandes Religiones Monoteístas,"Judaísmo, cristianismo, islam",100,🥉 وسام برونزي
+العلوم الإنسانية,🕯️ Historia de las Religiones,🕯️,4,مبتدئ,Religiones Dhármicas,"Hinduismo, budismo",200,
+العلوم الإنسانية,🕯️ Historia de las Religiones,🕯️,5,مبتدئ,Religiones de Asia Oriental,"Confucianismo, taoísmo",200,
+العلوم الإنسانية,🕯️ Historia de las Religiones,🕯️,6,مبتدئ,Religiones Indígenas,"África, América",200,🥈 وسام فضي
+العلوم الإنسانية,🕯️ Historia de las Religiones,🕯️,7,خبير,Reformas y Cismas,"Protestantismo, reformas internas",350,
+العلوم الإنسانية,🕯️ Historia de las Religiones,🕯️,8,خبير,Religión y Política,"Teocracias, laicismo",350,🥇 وسام ذهبي
+العلوم الإنسانية,🕯️ Historia de las Religiones,🕯️,9,خبير,Secularización y Nuevos Movimientos,Espiritualidades modernas,500,
+العلوم الإنسانية,🕯️ Historia de las Religiones,🕯️,10,خبير,Religión en el Futuro,"¿Menos, más, distinta?",500,💎 وسام ماسي
+المجتمع,🕵️ Crimen Organizado y Mafias,🕵️,1,مستكشف,Qué es el Crimen Organizado,Definición y tipos,100,
+المجتمع,🕵️ Crimen Organizado y Mafias,🕵️,2,مستكشف,Mafia Siciliana y Cosa Nostra,Orígenes y códigos,100,
+المجتمع,🕵️ Crimen Organizado y Mafias,🕵️,3,مستكشف,"Yakuza, Triadas y Otras Mafias",Asia y más,100,🥉 وسام برونزي
+المجتمع,🕵️ Crimen Organizado y Mafias,🕵️,4,مبتدئ,Carteles de la Droga,Latinoamérica,200,
+المجتمع,🕵️ Crimen Organizado y Mafias,🕵️,5,مبتدئ,Lavado de Dinero,Métodos y ejemplos,200,
+المجتمع,🕵️ Crimen Organizado y Mafias,🕵️,6,مبتدئ,Crimen Organizado en Política,Corrupción,200,🥈 وسام فضي
+المجتمع,🕵️ Crimen Organizado y Mafias,🕵️,7,خبير,Crimen Cibernético Organizado,"Hackers, ransomware",350,
+المجتمع,🕵️ Crimen Organizado y Mafias,🕵️,8,خبير,Lucha Internacional contra el Crimen,"Interpol, tratados",350,🥇 وسام ذهبي
+المجتمع,🕵️ Crimen Organizado y Mafias,🕵️,9,خبير,Narrativas y Mitificación del Crimen,"Cine, series",500,
+المجتمع,🕵️ Crimen Organizado y Mafias,🕵️,10,خبير,Escenarios Futuros del Crimen Global,Nuevas formas emergentes,500,💎 وسام ماسي
+العلم,👩‍🚀 Exploración Espacial Humana,👩‍🚀,1,مستكشف,Carrera Espacial,EE.UU. vs URSS,100,
+العلم,👩‍🚀 Exploración Espacial Humana,👩‍🚀,2,مستكشف,Llegada a la Luna,Apollo,100,
+العلم,👩‍🚀 Exploración Espacial Humana,👩‍🚀,3,مستكشف,Estaciones Espaciales,"Mir, ISS",100,🥉 وسام برونزي
+العلم,👩‍🚀 Exploración Espacial Humana,👩‍🚀,4,مبتدئ,Transbordadores y Nuevas Naves,"Shuttle, cápsulas",200,
+العلم,👩‍🚀 Exploración Espacial Humana,👩‍🚀,5,مبتدئ,Empresas Privadas,"SpaceX, Blue Origin",200,
+العلم,👩‍🚀 Exploración Espacial Humana,👩‍🚀,6,مبتدئ,Robots Exploradores,"Rovers, sondas",200,🥈 وسام فضي
+العلم,👩‍🚀 Exploración Espacial Humana,👩‍🚀,7,خبير,Vida en Microgravedad,Cuerpo humano en órbita,350,
+العلم,👩‍🚀 Exploración Espacial Humana,👩‍🚀,8,خبير,Planes para Marte,Misiones tripuladas,350,🥇 وسام ذهبي
+العلم,👩‍🚀 Exploración Espacial Humana,👩‍🚀,9,خبير,Colonias y Hábitats Espaciales,Diseños y retos,500,
+العلم,👩‍🚀 Exploración Espacial Humana,👩‍🚀,10,خبير,Humanidad Multiplanetaria,Implicaciones a muy largo plazo,500,💎 وسام ماسي
+التكنولوجيا,🤖 Historia de la Robótica,🤖,1,مستكشف,Autómatas Antiguos,Dispositivos mecánicos precientíficos,100,
+التكنولوجيا,🤖 Historia de la Robótica,🤖,2,مستكشف,Robots en la Ficción,"Metropolis, Asimov",100,
+التكنولوجيا,🤖 Historia de la Robótica,🤖,3,مستكشف,Primeros Robots Industriales,Unimate y las fábricas,100,🥉 وسام برونزي
+التكنولوجيا,🤖 Historia de la Robótica,🤖,4,مبتدئ,Robots en el Hogar,"Aspiradoras, asistentes",200,
+التكنولوجيا,🤖 Historia de la Robótica,🤖,5,مبتدئ,Robots Colaborativos,Cobots junto a humanos,200,
+التكنولوجيا,🤖 Historia de la Robótica,🤖,6,مبتدئ,Competencias de Robótica,"FIRST, competiciones estudiantiles",200,🥈 وسام فضي
+التكنولوجيا,🤖 Historia de la Robótica,🤖,7,خبير,Robots Militares,"Drones, sistemas no tripulados",350,
+التكنولوجيا,🤖 Historia de la Robótica,🤖,8,خبير,Robots en Medicina,"Cirugía, rehabilitación",350,🥇 وسام ذهبي
+التكنولوجيا,🤖 Historia de la Robótica,🤖,9,خبير,Robots Autónomos Inteligentes,"Percepción, decisión",500,
+التكنولوجيا,🤖 Historia de la Robótica,🤖,10,خبير,Futuro de la Robótica,"Sociedad, empleo, ética",500,💎 وسام ماسي
+التكنولوجيا,🚆 Historia del Transporte,🚆,1,مستكشف,Rueda y Tracción Animal,"Carros, caballos",100,
+التكنولوجيا,🚆 Historia del Transporte,🚆,2,مستكشف,Barcos y Grandes Rutas,Navegación a vela,100,
+التكنولوجيا,🚆 Historia del Transporte,🚆,3,مستكشف,Ferrocarril,Revolución de los trenes,100,🥉 وسام برونزي
+التكنولوجيا,🚆 Historia del Transporte,🚆,4,مبتدئ,Automóvil y Carreteras,"Ford, autopistas",200,
+التكنولوجيا,🚆 Historia del Transporte,🚆,5,مبتدئ,Aviación,"Wright, vuelos comerciales",200,
+التكنولوجيا,🚆 Historia del Transporte,🚆,6,مبتدئ,Transporte Urbano,"Metro, tranvía, buses",200,🥈 وسام فضي
+التكنولوجيا,🚆 Historia del Transporte,🚆,7,خبير,Logística Global,"Contenedores, puertos",350,
+التكنولوجيا,🚆 Historia del Transporte,🚆,8,خبير,Sostenibilidad en el Transporte,"Eléctricos, tren rápido",350,🥇 وسام ذهبي
+التكنولوجيا,🚆 Historia del Transporte,🚆,9,خبير,Vehículos Autónomos,Coches sin conductor,500,
+التكنولوجيا,🚆 Historia del Transporte,🚆,10,خبير,Transporte del Futuro,"Hyperloop, taxis aéreos",500,💎 وسام ماسي
+التكنولوجيا,⚡ Historia de la Energía,⚡,1,مستكشف,Fuego y Musculatura,Primeras fuentes,100,
+التكنولوجيا,⚡ Historia de la Energía,⚡,2,مستكشف,Agua y Viento,"Molinos, norias",100,
+التكنولوجيا,⚡ Historia de la Energía,⚡,3,مستكشف,Carbón y Vapor,Máquina de vapor,100,🥉 وسام برونزي
+التكنولوجيا,⚡ Historia de la Energía,⚡,4,مبتدئ,Petróleo y Gas,Motores de combustión,200,
+التكنولوجيا,⚡ Historia de la Energía,⚡,5,مبتدئ,Electricidad,"Generadores, redes",200,
+التكنولوجيا,⚡ Historia de la Energía,⚡,6,مبتدئ,Energía Nuclear,"Fisión, centrales",200,🥈 وسام فضي
+التكنولوجيا,⚡ Historia de la Energía,⚡,7,خبير,Renovables Modernas,"Solar, eólica",350,
+التكنولوجيا,⚡ Historia de la Energía,⚡,8,خبير,Eficiencia Energética,"Edificios, industria",350,🥇 وسام ذهبي
+التكنولوجيا,⚡ Historia de la Energía,⚡,9,خبير,Fusión Experimental,"Tokamaks, stellarators",500,
+التكنولوجيا,⚡ Historia de la Energía,⚡,10,خبير,Civilización Energética Global,Escala Kardashev,500,💎 وسام ماسي
+العلوم الإنسانية,🎸 Historia de la Música Popular,🎸,1,مستكشف,Blues y Jazz,Raíces afroamericanas,100,
+العلوم الإنسانية,🎸 Historia de la Música Popular,🎸,2,مستكشف,Rock and Roll,Años 50 y 60,100,
+العلوم الإنسانية,🎸 Historia de la Música Popular,🎸,3,مستكشف,Pop Global,"Beatles, fenómenos",100,🥉 وسام برونزي
+العلوم الإنسانية,🎸 Historia de la Música Popular,🎸,4,مبتدئ,"Disco, Funk y Soul",Nuevos ritmos,200,
+العلوم الإنسانية,🎸 Historia de la Música Popular,🎸,5,مبتدئ,Hip-Hop y Rap,Cultura urbana,200,
+العلوم الإنسانية,🎸 Historia de la Música Popular,🎸,6,مبتدئ,Música Electrónica,"Raves, DJs",200,🥈 وسام فضي
+العلوم الإنسانية,🎸 Historia de la Música Popular,🎸,7,خبير,Globalización Musical,"K-pop, reguetón",350,
+العلوم الإنسانية,🎸 Historia de la Música Popular,🎸,8,خبير,Industria del Streaming,"Spotify, plataformas",350,🥇 وسام ذهبي
+العلوم الإنسانية,🎸 Historia de la Música Popular,🎸,9,خبير,Derechos de Autor y Música,"Copyright, conflictos",500,
+العلوم الإنسانية,🎸 Historia de la Música Popular,🎸,10,خبير,Música y Algoritmos,"Recomendación, creación IA",500,💎 وسام ماسي
+الصحة,🎨 Psicología de la Creatividad,🎨,1,مستكشف,Qué es la Creatividad,Definiciones y mitos,100,
+الصحة,🎨 Psicología de la Creatividad,🎨,2,مستكشف,Cerebro Creativo,Redes neuronales implicadas,100,
+الصحة,🎨 Psicología de la Creatividad,🎨,3,مستكشف,Bloqueo Creativo,Causas habituales,100,🥉 وسام برونزي
+الصحة,🎨 Psicología de la Creatividad,🎨,4,مبتدئ,Procesos Creativos,"Incubación, insight",200,
+الصحة,🎨 Psicología de la Creatividad,🎨,5,مبتدئ,Creatividad en Ciencia y Arte,Casos históricos,200,
+الصحة,🎨 Psicología de la Creatividad,🎨,6,مبتدئ,Ambiente y Creatividad,Entornos que ayudan,200,🥈 وسام فضي
+الصحة,🎨 Psicología de la Creatividad,🎨,7,خبير,Equipos Creativos,Colaboración y conflicto,350,
+الصحة,🎨 Psicología de la Creatividad,🎨,8,خبير,Creatividad en Empresas,Innovación y cultura,350,🥇 وسام ذهبي
+الصحة,🎨 Psicología de la Creatividad,🎨,9,خبير,Medir Creatividad,"Tests, límites",500,
+الصحة,🎨 Psicología de la Creatividad,🎨,10,خبير,IA y Co-creación,Humanos + máquinas,500,💎 وسام ماسي
+المجتمع,📢 Historia de la Publicidad,📢,1,مستكشف,Anuncios en la Antigüedad,"Carteles, pregoneros",100,
+المجتمع,📢 Historia de la Publicidad,📢,2,مستكشف,Publicidad en Prensa,Siglo XIX,100,
+المجتمع,📢 Historia de la Publicidad,📢,3,مستكشف,Radio y TV,Spots icónicos,100,🥉 وسام برونزي
+المجتمع,📢 Historia de la Publicidad,📢,4,مبتدئ,Branding y Marcas,Identidad visual,200,
+المجتمع,📢 Historia de la Publicidad,📢,5,مبتدئ,Publicidad Digital,"Banners, SEM",200,
+المجتمع,📢 Historia de la Publicidad,📢,6,مبتدئ,Redes Sociales e Influencers,Nuevos formatos,200,🥈 وسام فضي
+المجتمع,📢 Historia de la Publicidad,📢,7,خبير,Psicología del Consumo,Persuasión y emoción,350,
+المجتمع,📢 Historia de la Publicidad,📢,8,خبير,Ética en la Publicidad,"Manipulación, regulación",350,🥇 وسام ذهبي
+المجتمع,📢 Historia de la Publicidad,📢,9,خبير,Publicidad Personalizada,Microsegmentación,500,
+المجتمع,📢 Historia de la Publicidad,📢,10,خبير,Futuro de la Publicidad,"IA creativa, realidad aumentada",500,💎 وسام ماسي
+الصحة,🧠 Historia de la Medicina Mental,🧠,1,مستكشف,Concepciones Antiguas,"Espíritus, humores",100,
+الصحة,🧠 Historia de la Medicina Mental,🧠,2,مستكشف,Manicomios y Encierros,Siglos XVIII-XIX,100,
+الصحة,🧠 Historia de la Medicina Mental,🧠,3,مستكشف,Nacimiento de la Psiquiatría,"Pinel, primeras clasificaciones",100,🥉 وسام برونزي
+الصحة,🧠 Historia de la Medicina Mental,🧠,4,مبتدئ,Psicoanálisis y Freud,"Inconsciente, terapia",200,
+الصحة,🧠 Historia de la Medicina Mental,🧠,5,مبتدئ,Psicofármacos,Revolución farmacológica,200,
+الصحة,🧠 Historia de la Medicina Mental,🧠,6,مبتدئ,Terapias Cognitivo-Conductuales,Nuevos enfoques,200,🥈 وسام فضي
+الصحة,🧠 Historia de la Medicina Mental,🧠,7,خبير,Salud Mental Comunitaria,Desinstitucionalización,350,
+الصحة,🧠 Historia de la Medicina Mental,🧠,8,خبير,Salud Mental en la Cultura,"Estigma, representaciones",350,🥇 وسام ذهبي
+الصحة,🧠 Historia de la Medicina Mental,🧠,9,خبير,Digitalización de la Terapia,"Apps, telepsicología",500,
+الصحة,🧠 Historia de la Medicina Mental,🧠,10,خبير,Futuro de la Salud Mental,"Prevención, IA, personalización",500,💎 وسام ماسي
+المجتمع,🏆 Historia del Deporte,🏆,1,مستكشف,Juegos Antiguos,"Olímpicos, rituales",100,
+المجتمع,🏆 Historia del Deporte,🏆,2,مستكشف,Deporte Moderno,Reglas y federaciones,100,
+المجتمع,🏆 Historia del Deporte,🏆,3,مستكشف,Fútbol y Deportes de Masas,"Clubes, ligas",100,🥉 وسام برونزي
+المجتمع,🏆 Historia del Deporte,🏆,4,مبتدئ,Juegos Olímpicos Modernos,Renacimiento y evolución,200,
+المجتمع,🏆 Historia del Deporte,🏆,5,مبتدئ,Profesionalización y Negocio,"Contratos, derechos TV",200,
+المجتمع,🏆 Historia del Deporte,🏆,6,مبتدئ,Deporte Femenino,Luchas por visibilidad,200,🥈 وسام فضي
+المجتمع,🏆 Historia del Deporte,🏆,7,خبير,Deporte y Política,"Boicots, propaganda",350,
+المجتمع,🏆 Historia del Deporte,🏆,8,خبير,Dopaje y Ética,Casos célebres,350,🥇 وسام ذهبي
+المجتمع,🏆 Historia del Deporte,🏆,9,خبير,Ciencia del Rendimiento,"Nutrición, datos",500,
+المجتمع,🏆 Historia del Deporte,🏆,10,خبير,Deporte del Futuro,"E-sports, nuevos formatos",500,💎 وسام ماسي
+العلم,⏳ Historia del Tiempo y Calendarios,⏳,1,مستكشف,Medir el Tiempo,"Sol, luna, ciclos",100,
+العلم,⏳ Historia del Tiempo y Calendarios,⏳,2,مستكشف,Calendarios Antiguos,"Egipcio, maya",100,
+العلم,⏳ Historia del Tiempo y Calendarios,⏳,3,مستكشف,Calendario Romano y Gregoriano,Reformas,100,🥉 وسام برونزي
+العلم,⏳ Historia del Tiempo y Calendarios,⏳,4,مبتدئ,Relojes Mecánicos,"Campanarios, relojes de bolsillo",200,
+العلم,⏳ Historia del Tiempo y Calendarios,⏳,5,مبتدئ,Husos Horarios,Coordinación global,200,
+العلم,⏳ Historia del Tiempo y Calendarios,⏳,6,مبتدئ,Tiempo Atómico,Precisión extrema,200,🥈 وسام فضي
+العلم,⏳ Historia del Tiempo y Calendarios,⏳,7,خبير,Percepción Humana del Tiempo,Psicología,350,
+العلم,⏳ Historia del Tiempo y Calendarios,⏳,8,خبير,Tiempo en la Física,Relatividad,350,🥇 وسام ذهبي
+العلم,⏳ Historia del Tiempo y Calendarios,⏳,9,خبير,Tiempo en la Cultura,"Ritmos, rituales",500,
+العلم,⏳ Historia del Tiempo y Calendarios,⏳,10,خبير,Futuro del Tiempo Humano,"Vida acelerada, IA",500,💎 وسام ماسي
+المجتمع,🚢 Historia del Comercio y la Globalización,🚢,1,مستكشف,Trueque y Mercados Locales,Intercambios básicos,100,
+المجتمع,🚢 Historia del Comercio y la Globalización,🚢,2,مستكشف,Rutas de la Seda y Marítimas,Intercambio global temprano,100,
+المجتمع,🚢 Historia del Comercio y la Globalización,🚢,3,مستكشف,Compañías Coloniales,Compañía de Indias,100,🥉 وسام برونزي
+المجتمع,🚢 Historia del Comercio y la Globalización,🚢,4,مبتدئ,Revolución Industrial y Comercio,Manufacturas y exportación,200,
+المجتمع,🚢 Historia del Comercio y la Globalización,🚢,5,مبتدئ,Era del Contenedor,Logística moderna,200,
+المجتمع,🚢 Historia del Comercio y la Globalización,🚢,6,مبتدئ,Organismos Internacionales,"OMC, tratados de libre comercio",200,🥈 وسام فضي
+المجتمع,🚢 Historia del Comercio y la Globalización,🚢,7,خبير,Cadenas Globales de Valor,Producción distribuida,350,
+المجتمع,🚢 Historia del Comercio y la Globalización,🚢,8,خبير,Desigualdad y Globalización,Ganadores y perdedores,350,🥇 وسام ذهبي
+المجتمع,🚢 Historia del Comercio y la Globalización,🚢,9,خبير,Crisis y Guerras Comerciales,"Aranceles, sanciones",500,
+المجتمع,🚢 Historia del Comercio y la Globalización,🚢,10,خبير,Globalización 2.0,"Digital, servicios, desglobalización",500,💎 وسام ماسي
+المجتمع,💰 Historia del Dinero,💰,1,مستكشف,Trueque y Objetos de Valor,"Sal, conchas",100,
+المجتمع,💰 Historia del Dinero,💰,2,مستكشف,Monedas y Metales,"Oro, plata",100,
+المجتمع,💰 Historia del Dinero,💰,3,مستكشف,Billetes y Bancos,"Pagarés, bancos centrales",100,🥉 وسام برونزي
+المجتمع,💰 Historia del Dinero,💰,4,مبتدئ,Patrón Oro y su Fin,Bretton Woods,200,
+المجتمع,💰 Historia del Dinero,💰,5,مبتدئ,Tarjetas y Dinero Electrónico,"Crédito, débito",200,
+المجتمع,💰 Historia del Dinero,💰,6,مبتدئ,Mercados Financieros Modernos,"Bolsas, derivados",200,🥈 وسام فضي
+المجتمع,💰 Historia del Dinero,💰,7,خبير,Crisis Monetarias,"Hiperinflaciones, devaluaciones",350,
+المجتمع,💰 Historia del Dinero,💰,8,خبير,Criptomonedas,"Bitcoin, alternativas",350,🥇 وسام ذهبي
+المجتمع,💰 Historia del Dinero,💰,9,خبير,Dinero y Poder,Moneda como herramienta política,500,
+المجتمع,💰 Historia del Dinero,💰,10,خبير,Futuro del Dinero,"CBDC, dinero programable",500,💎 وسام ماسي
+العلوم الإنسانية,🎲 Historia de los Juegos de Mesa,🎲,1,مستكشف,Juegos Antiguos,"Senet, Go",100,
+العلوم الإنسانية,🎲 Historia de los Juegos de Mesa,🎲,2,مستكشف,Ajedrez y Estrategia,Historia y cultura,100,
+العلوم الإنسانية,🎲 Historia de los Juegos de Mesa,🎲,3,مستكشف,Juegos Clásicos Modernos,"Monopoly, Scrabble",100,🥉 وسام برونزي
+العلوم الإنسانية,🎲 Historia de los Juegos de Mesa,🎲,4,مبتدئ,Eurogames y Revolución Moderna,"Catan, Carcassonne",200,
+العلوم الإنسانية,🎲 Historia de los Juegos de Mesa,🎲,5,مبتدئ,Juegos Cooperativos,"Pandemic, nuevos enfoques",200,
+العلوم الإنسانية,🎲 Historia de los Juegos de Mesa,🎲,6,مبتدئ,Juegos de Rol de Mesa,Dungeons & Dragons,200,🥈 وسام فضي
+العلوم الإنسانية,🎲 Historia de los Juegos de Mesa,🎲,7,خبير,Diseño de Juegos de Mesa,"Mecánicas, balance",350,
+العلوم الإنسانية,🎲 Historia de los Juegos de Mesa,🎲,8,خبير,Comunidades y Ferias,"Essen, eventos",350,🥇 وسام ذهبي
+العلوم الإنسانية,🎲 Historia de los Juegos de Mesa,🎲,9,خبير,Juegos como Herramienta Educativa,Serious boardgames,500,
+العلوم الإنسانية,🎲 Historia de los Juegos de Mesa,🎲,10,خبير,Futuro Híbrido,"Mesa + apps, IA",500,💎 وسام ماسي
+الطبيعة,🌊 Historia de la Exploración Oceánica,🌊,1,مستكشف,Primeras Navegaciones,"Costas, islas",100,
+الطبيعة,🌊 Historia de la Exploración Oceánica,🌊,2,مستكشف,Grandes Descubrimientos,"Colón, Magallanes",100,
+الطبيعة,🌊 Historia de la Exploración Oceánica,🌊,3,مستكشف,Cartografía Marina,Mapas y peligros,100,🥉 وسام برونزي
+الطبيعة,🌊 Historia de la Exploración Oceánica,🌊,4,مبتدئ,Exploración de Profundidades,"Batiscafos, Jacques Cousteau",200,
+الطبيعة,🌊 Historia de la Exploración Oceánica,🌊,5,مبتدئ,Submarinos Militares,Guerras mundiales,200,
+الطبيعة,🌊 Historia de la Exploración Oceánica,🌊,6,مبتدئ,Exploración Científica Moderna,"ROVs, Argo",200,🥈 وسام فضي
+الطبيعة,🌊 Historia de la Exploración Oceánica,🌊,7,خبير,Recursos del Fondo Marino,"Minerales, ecosistemas",350,
+الطبيعة,🌊 Historia de la Exploración Oceánica,🌊,8,خبير,Pecios y Tesoro,Naufragios famosos,350,🥇 وسام ذهبي
+الطبيعة,🌊 Historia de la Exploración Oceánica,🌊,9,خبير,Conservación de Océanos,Amenazas y soluciones,500,
+الطبيعة,🌊 Historia de la Exploración Oceánica,🌊,10,خبير,Colonización del Océano,Ciudades submarinas,500,💎 وسام ماسي
+العلم,🗺️ Historia de la Cartografía,🗺️,1,مستكشف,Primeros Mapas,"Cuevas, tablillas",100,
+العلم,🗺️ Historia de la Cartografía,🗺️,2,مستكشف,Mapas Antiguos,"Ptolomeo, mapas del mundo",100,
+العلم,🗺️ Historia de la Cartografía,🗺️,3,مستكشف,Edad de los Descubrimientos,Mapas náuticos,100,🥉 وسام برونزي
+العلم,🗺️ Historia de la Cartografía,🗺️,4,مبتدئ,Proyecciones y Distorsiones,"Mercator, alternativas",200,
+العلم,🗺️ Historia de la Cartografía,🗺️,5,مبتدئ,Mapas Temáticos,"Clima, población",200,
+العلم,🗺️ Historia de la Cartografía,🗺️,6,مبتدئ,Fotografía Aérea y Satélites,Nueva era de mapas,200,🥈 وسام فضي
+العلم,🗺️ Historia de la Cartografía,🗺️,7,خبير,Sistemas de Información Geográfica,GIS,350,
+العلم,🗺️ Historia de la Cartografía,🗺️,8,خبير,Mapas en la Vida Cotidiana,"GPS, apps",350,🥇 وسام ذهبي
+العلم,🗺️ Historia de la Cartografía,🗺️,9,خبير,Mapas y Poder,"Propaganda, reclamaciones",500,
+العلم,🗺️ Historia de la Cartografía,🗺️,10,خبير,Cartografía del Futuro,"Realidad aumentada, 3D",500,💎 وسام ماسي
+المجتمع,🏠 Historia del Trabajo Doméstico,🏠,1,مستكشف,Economía Doméstica Tradicional,Trabajo invisible,100,
+المجتمع,🏠 Historia del Trabajo Doméstico,🏠,2,مستكشف,Industrialización y Hogar,Cambios de rol,100,
+المجتمع,🏠 Historia del Trabajo Doméstico,🏠,3,مستكشف,Electrodomésticos,Revolución silenciosa,100,🥉 وسام برونزي
+المجتمع,🏠 Historia del Trabajo Doméstico,🏠,4,مبتدئ,División Sexual del Trabajo,Normas culturales,200,
+المجتمع,🏠 Historia del Trabajo Doméstico,🏠,5,مبتدئ,Trabajo de Cuidados,"Niños, mayores",200,
+المجتمع,🏠 Historia del Trabajo Doméstico,🏠,6,مبتدئ,Trabajadoras del Hogar,Derechos y luchas,200,🥈 وسام فضي
+المجتمع,🏠 Historia del Trabajo Doméstico,🏠,7,خبير,Externalización del Trabajo Doméstico,"Servicios, limpieza",350,
+المجتمع,🏠 Historia del Trabajo Doméstico,🏠,8,خبير,Tecnología y Hogar Inteligente,Domótica,350,🥇 وسام ذهبي
+المجتمع,🏠 Historia del Trabajo Doméstico,🏠,9,خبير,Valor Económico del Trabajo No Remunerado,Cálculos y debates,500,
+المجتمع,🏠 Historia del Trabajo Doméstico,🏠,10,خبير,Futuro del Hogar Automatizado,Robots domésticos,500,💎 وسام ماسي
+المجتمع,✈️ Historia del Turismo,✈️,1,مستكشف,Peregrinajes y Viajes Antiguos,Motivaciones tempranas,100,
+المجتمع,✈️ Historia del Turismo,✈️,2,مستكشف,Grand Tour y Viaje Aristocrático,Siglos XVII-XVIII,100,
+المجتمع,✈️ Historia del Turismo,✈️,3,مستكشف,Nacimiento del Turismo de Masas,"Trenes, vacaciones pagadas",100,🥉 وسام برونزي
+المجتمع,✈️ Historia del Turismo,✈️,4,مبتدئ,Turismo de Sol y Playa,Desarrollo costero,200,
+المجتمع,✈️ Historia del Turismo,✈️,5,مبتدئ,Turismo Cultural y Urbano,Ciudades icónicas,200,
+المجتمع,✈️ Historia del Turismo,✈️,6,مبتدئ,Turismo de Naturaleza y Aventura,Ecoturismo,200,🥈 وسام فضي
+المجتمع,✈️ Historia del Turismo,✈️,7,خبير,Impacto del Turismo,"Economía, gentrificación",350,
+المجتمع,✈️ Historia del Turismo,✈️,8,خبير,Turismo Sostenible,Buenas prácticas,350,🥇 وسام ذهبي
+المجتمع,✈️ Historia del Turismo,✈️,9,خبير,Turismo en Crisis,"Guerras, pandemias",500,
+المجتمع,✈️ Historia del Turismo,✈️,10,خبير,Turismo del Futuro,"Virtual, espacial",500,💎 وسام ماسي
+المجتمع,📻 Historia de los Medios de Comunicación,📻,1,مستكشف,Oralidad y Manuscritos,Tradición oral,100,
+المجتمع,📻 Historia de los Medios de Comunicación,📻,2,مستكشف,Imprenta y Libros,Revolución de Gutenberg,100,
+المجتمع,📻 Historia de los Medios de Comunicación,📻,3,مستكشف,Prensa y Opinión Pública,Periódicos,100,🥉 وسام برونزي
+المجتمع,📻 Historia de los Medios de Comunicación,📻,4,مبتدئ,Radio,Voces a distancia,200,
+المجتمع,📻 Historia de los Medios de Comunicación,📻,5,مبتدئ,Televisión,Imagen en casa,200,
+المجتمع,📻 Historia de los Medios de Comunicación,📻,6,مبتدئ,Internet y Redes,Medios digitales,200,🥈 وسام فضي
+المجتمع,📻 Historia de los Medios de Comunicación,📻,7,خبير,Concentración Mediática,Grandes grupos,350,
+المجتمع,📻 Historia de los Medios de Comunicación,📻,8,خبير,Fake News y Desinformación,Retos actuales,350,🥇 وسام ذهبي
+المجتمع,📻 Historia de los Medios de Comunicación,📻,9,خبير,Periodismo de Datos,Nuevas formas de contar,500,
+المجتمع,📻 Historia de los Medios de Comunicación,📻,10,خبير,Medios del Futuro,"Realidad mixta, IA",500,💎 وسام ماسي
+العلم,🌍 Historia del Clima de la Tierra,🌍,1,مستكشف,Eras Geológicas,Resumen de grandes periodos,100,
+العلم,🌍 Historia del Clima de la Tierra,🌍,2,مستكشف,Glaciaciones,Edades de hielo,100,
+العلم,🌍 Historia del Clima de la Tierra,🌍,3,مستكشف,Períodos Cálidos,Tiempos sin hielo,100,🥉 وسام برونزي
+العلم,🌍 Historia del Clima de la Tierra,🌍,4,مبتدئ,Cómo Sabemos del Clima Pasado,"Testigos de hielo, sedimentos",200,
+العلم,🌍 Historia del Clima de la Tierra,🌍,5,مبتدئ,Clima y Grandes Extinciones,Relaciones,200,
+العلم,🌍 Historia del Clima de la Tierra,🌍,6,مبتدئ,Clima y Civilizaciones,Colapsos y prosperidad,200,🥈 وسام فضي
+العلم,🌍 Historia del Clima de la Tierra,🌍,7,خبير,Era Industrial y Cambio Climático,"CO2, forzamientos",350,
+العلم,🌍 Historia del Clima de la Tierra,🌍,8,خبير,Modelos Climáticos,Simulaciones y escenarios,350,🥇 وسام ذهبي
+العلم,🌍 Historia del Clima de la Tierra,🌍,9,خبير,Puntos de No Retorno,Riesgos sistémicos,500,
+العلم,🌍 Historia del Clima de la Tierra,🌍,10,خبير,Futuros Climáticos,Trayectorias posibles,500,💎 وسام ماسي
+التكنولوجيا,💻 Historia de la Informática Personal,💻,1,مستكشف,Primeros PCs,"Altair, Apple I",100,
+التكنولوجيا,💻 Historia de la Informática Personal,💻,2,مستكشف,Revolución del PC de Escritorio,"IBM PC, compatibles",100,
+التكنولوجيا,💻 Historia de la Informática Personal,💻,3,مستكشف,Interfaces Gráficas,"Macintosh, Windows",100,🥉 وسام برونزي
+التكنولوجيا,💻 Historia de la Informática Personal,💻,4,مبتدئ,Portátiles y Movilidad,Laptops,200,
+التكنولوجيا,💻 Historia de la Informática Personal,💻,5,مبتدئ,Internet en Casa,"Módems, banda ancha",200,
+التكنولوجيا,💻 Historia de la Informática Personal,💻,6,مبتدئ,Smartphones,"iPhone, Android",200,🥈 وسام فضي
+التكنولوجيا,💻 Historia de la Informática Personal,💻,7,خبير,Tablets y Dispositivos Híbridos,Nuevas formas,350,
+التكنولوجيا,💻 Historia de la Informática Personal,💻,8,خبير,Ecosistemas y Jardines Cerrados,App stores,350,🥇 وسام ذهبي
+التكنولوجيا,💻 Historia de la Informática Personal,💻,9,خبير,Informática Ubicua,IoT,500,
+التكنولوجيا,💻 Historia de la Informática Personal,💻,10,خبير,Humanos Aumentados,Wearables avanzados,500,💎 وسام ماسي
+المجتمع,🍎 Historia de la Educación,🍎,1,مستكشف,Educación en Sociedades Antiguas,Aprendizaje maestro-discípulo,100,
+المجتمع,🍎 Historia de la Educación,🍎,2,مستكشف,Universidades Medievales,"Bolonia, París",100,
+المجتمع,🍎 Historia de la Educación,🍎,3,مستكشف,Escuela Pública,Sistemas nacionales,100,🥉 وسام برونزي
+المجتمع,🍎 Historia de la Educación,🍎,4,مبتدئ,Metodologías Clásicas,"Memorización, examen",200,
+المجتمع,🍎 Historia de la Educación,🍎,5,مبتدئ,Pedagogías Activas,"Montessori, Freinet",200,
+المجتمع,🍎 Historia de la Educación,🍎,6,مبتدئ,Educación Masiva y Online,MOOCs,200,🥈 وسام فضي
+المجتمع,🍎 Historia de la Educación,🍎,7,خبير,Brecha Educativa Global,Acceso desigual,350,
+المجتمع,🍎 Historia de la Educación,🍎,8,خبير,Evaluación y Métricas,"Notas, estandarización",350,🥇 وسام ذهبي
+المجتمع,🍎 Historia de la Educación,🍎,9,خبير,Aprendizaje Personalizado,Datos y adaptación,500,
+المجتمع,🍎 Historia de la Educación,🍎,10,خبير,Educación del Futuro,"Lifelong learning, IA",500,💎 وسام ماسي
+العلوم الإنسانية,⛪ Historia de la Arquitectura Sagrada,⛪,1,مستكشف,Templos Antiguos,"Egipto, Grecia",100,
+العلوم الإنسانية,⛪ Historia de la Arquitectura Sagrada,⛪,2,مستكشف,Basílicas y Catedrales,Cristianismo,100,
+العلوم الإنسانية,⛪ Historia de la Arquitectura Sagrada,⛪,3,مستكشف,Mezquitas y Arquitectura Islámica,Elementos clave,100,🥉 وسام برونزي
+العلوم الإنسانية,⛪ Historia de la Arquitectura Sagrada,⛪,4,مبتدئ,Pagodas y Templos Asiáticos,"Budismo, taoísmo",200,
+العلوم الإنسانية,⛪ Historia de la Arquitectura Sagrada,⛪,5,مبتدئ,Arquitectura Sagrada en América,Pirámides mesoamericanas,200,
+العلوم الإنسانية,⛪ Historia de la Arquitectura Sagrada,⛪,6,مبتدئ,Símbolos y Orientaciones,Geometría sagrada,200,🥈 وسام فضي
+العلوم الإنسانية,⛪ Historia de la Arquitectura Sagrada,⛪,7,خبير,Transformaciones y Reutilizaciones,Edificios cambiando de culto,350,
+العلوم الإنسانية,⛪ Historia de la Arquitectura Sagrada,⛪,8,خبير,Arquitectura Sagrada Contemporánea,Innovaciones,350,🥇 وسام ذهبي
+العلوم الإنسانية,⛪ Historia de la Arquitectura Sagrada,⛪,9,خبير,Turismo y Comercialización,Espacios sacros como atracciones,500,
+العلوم الإنسانية,⛪ Historia de la Arquitectura Sagrada,⛪,10,خبير,Espiritualidad y Espacios del Futuro,Nuevos templos,500,💎 وسام ماسي
+العلم,🧪 Historia de la Biotecnología,🧪,1,مستكشف,Fermentación y Usos Antiguos,"Pan, vino",100,
+العلم,🧪 Historia de la Biotecnología,🧪,2,مستكشف,Descubrimiento de Microorganismos,Microscopios,100,
+العلم,🧪 Historia de la Biotecnología,🧪,3,مستكشف,Genética Clásica,Mendel,100,🥉 وسام برونزي
+العلم,🧪 Historia de la Biotecnología,🧪,4,مبتدئ,ADN y Doble Hélice,Watson y Crick,200,
+العلم,🧪 Historia de la Biotecnología,🧪,5,مبتدئ,Ingeniería Genética,ADN recombinante,200,
+العلم,🧪 Historia de la Biotecnología,🧪,6,مبتدئ,Biotecnología Industrial,"Farmacia, alimentos",200,🥈 وسام فضي
+العلم,🧪 Historia de la Biotecnología,🧪,7,خبير,"Biotecnología Roja, Verde y Blanca","Salud, agricultura, industria",350,
+العلم,🧪 Historia de la Biotecnología,🧪,8,خبير,Bioética,Dilemas,350,🥇 وسام ذهبي
+العلم,🧪 Historia de la Biotecnología,🧪,9,خبير,CRISPR y Edición Precisa,Revolución reciente,500,
+العلم,🧪 Historia de la Biotecnología,🧪,10,خبير,Biología Sintética,Diseñar vida,500,💎 وسام ماسي

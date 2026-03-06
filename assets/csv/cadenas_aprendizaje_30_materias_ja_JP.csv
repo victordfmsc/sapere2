@@ -1,0 +1,901 @@
+﻿Category,Subject,Icon,Episode No,Level,Episode Title,Description,Base XP,Badge
+科学,🔭 天文学と宇宙,🔭,1,探検家,El Sistema Solar,"Planetas, lunas, órbitas básicas",100,
+科学,🔭 天文学と宇宙,🔭,2,探検家,Estrellas y Constelaciones,"Tipos de estrellas, ciclo estelar",100,
+科学,🔭 天文学と宇宙,🔭,3,探検家,La Luna y las Mareas,"Fases lunares, influencia terrestre",100,🥉 ブロンズバッジ
+科学,🔭 天文学と宇宙,🔭,4,見習い,Galaxias y Nebulosas,"Vía Láctea, tipos de galaxias",200,
+科学,🔭 天文学と宇宙,🔭,5,見習い,Exploración Espacial,Historia de la carrera espacial,200,
+科学,🔭 天文学と宇宙,🔭,6,見習い,Agujeros Negros,"Formación, horizonte de eventos",200,🥈 シルバーバッジ
+科学,🔭 天文学と宇宙,🔭,7,鑑定家,Cosmología del Big Bang,"Origen del universo, radiación cósmica",350,
+科学,🔭 天文学と宇宙,🔭,8,鑑定家,Exoplanetas y Vida,"Zona habitable, búsqueda de vida",350,🥇 ゴールドバッジ
+科学,🔭 天文学と宇宙,🔭,9,エキスパート,Materia y Energía Oscura,Composición oculta del universo,500,
+科学,🔭 天文学と宇宙,🔭,10,エキスパート,El Futuro del Cosmos,"Destino del universo, teorías finales",500,💎 ダイヤモンドバッジ
+歴史,🏛️ 古代史,🏛️,1,探検家,Mesopotamia: Cuna de la Civilización,"Sumerios, escritura cuneiforme",100,
+歴史,🏛️ 古代史,🏛️,2,探検家,Egipto: El Nilo y los Faraones,"Pirámides, momificación, jeroglíficos",100,
+歴史,🏛️ 古代史,🏛️,3,探検家,Grecia: Democracia y Filosofía,"Atenas, Esparta, pensadores",100,🥉 ブロンズバッジ
+歴史,🏛️ 古代史,🏛️,4,見習い,Roma: República e Imperio,"Legiones, ingeniería, derecho romano",200,
+歴史,🏛️ 古代史,🏛️,5,見習い,China: Dinastías Imperiales,"Gran Muralla, Ruta de la Seda",200,
+歴史,🏛️ 古代史,🏛️,6,見習い,India: Civilización del Indo,"Harappa, vedas, castas",200,🥈 シルバーバッジ
+歴史,🏛️ 古代史,🏛️,7,鑑定家,Persia y los Grandes Imperios,"Ciro, Darío, guerras médicas",350,
+歴史,🏛️ 古代史,🏛️,8,鑑定家,Civilizaciones Precolombinas,"Maya, Azteca, Inca",350,🥇 ゴールドバッジ
+歴史,🏛️ 古代史,🏛️,9,エキスパート,Caída de los Imperios,Patrones de colapso civilizatorio,500,
+歴史,🏛️ 古代史,🏛️,10,エキスパート,Legado Antiguo en el Mundo Moderno,Influencias actuales del mundo antiguo,500,💎 ダイヤモンドバッジ
+科学,🧠 神経科学,🧠,1,探検家,El Cerebro: Mapa Básico,"Lóbulos, hemisferios, funciones",100,
+科学,🧠 神経科学,🧠,2,探検家,Neuronas y Sinapsis,Comunicación neuronal básica,100,
+科学,🧠 神経科学,🧠,3,探検家,Los Sentidos,Cómo el cerebro procesa el mundo,100,🥉 ブロンズバッジ
+科学,🧠 神経科学,🧠,4,見習い,Memoria y Aprendizaje,"Tipos de memoria, neuroplasticidad",200,
+科学,🧠 神経科学,🧠,5,見習い,Emociones y el Cerebro,"Sistema límbico, amígdala",200,
+科学,🧠 神経科学,🧠,6,見習い,El Sueño y los Sueños,"Ciclos REM, función reparadora",200,🥈 シルバーバッジ
+科学,🧠 神経科学,🧠,7,鑑定家,Neuroquímica,"Dopamina, serotonina, endorfinas",350,
+科学,🧠 神経科学,🧠,8,鑑定家,Trastornos Neurológicos,"Alzheimer, Parkinson, epilepsia",350,🥇 ゴールドバッジ
+科学,🧠 神経科学,🧠,9,エキスパート,Conciencia y Libre Albedrío,El misterio de la conciencia,500,
+科学,🧠 神経科学,🧠,10,エキスパート,Neurotecnología del Futuro,"Interfaces cerebro-máquina, IA neural",500,💎 ダイヤモンドバッジ
+技術,🤖 Inteligencia Artificial,🤖,1,探検家,¿Qué es la IA?,"Conceptos básicos, historia",100,
+技術,🤖 Inteligencia Artificial,🤖,2,探検家,Machine Learning 101,Aprendizaje supervisado y no supervisado,100,
+技術,🤖 Inteligencia Artificial,🤖,3,探検家,Redes Neuronales,Cómo aprende una máquina,100,🥉 ブロンズバッジ
+技術,🤖 Inteligencia Artificial,🤖,4,見習い,Procesamiento del Lenguaje,"NLP, chatbots, traducción",200,
+技術,🤖 Inteligencia Artificial,🤖,5,見習い,Visión por Computador,Reconocimiento de imágenes,200,
+技術,🤖 Inteligencia Artificial,🤖,6,見習い,IA Generativa,"GPT, DALL-E, creación de contenido",200,🥈 シルバーバッジ
+技術,🤖 Inteligencia Artificial,🤖,7,鑑定家,IA en la Industria,"Aplicaciones reales, transformación",350,
+技術,🤖 Inteligencia Artificial,🤖,8,鑑定家,Ética de la IA,"Sesgos, privacidad, regulación",350,🥇 ゴールドバッジ
+技術,🤖 Inteligencia Artificial,🤖,9,エキスパート,IA General (AGI),Camino hacia la superinteligencia,500,
+技術,🤖 Inteligencia Artificial,🤖,10,エキスパート,El Futuro IA-Humano,"Coexistencia, singularidad tecnológica",500,💎 ダイヤモンドバッジ
+社会,💰 Economía y Finanzas,💰,1,探検家,Oferta y Demanda,Principios básicos del mercado,100,
+社会,💰 Economía y Finanzas,💰,2,探検家,El Dinero y la Banca,"Historia del dinero, sistema bancario",100,
+社会,💰 Economía y Finanzas,💰,3,探検家,Inflación y Precios,Por qué sube el coste de la vida,100,🥉 ブロンズバッジ
+社会,💰 Economía y Finanzas,💰,4,見習い,Mercados Bursátiles,"Bolsa, acciones, índices",200,
+社会,💰 Economía y Finanzas,💰,5,見習い,Comercio Internacional,"Globalización, aranceles, tratados",200,
+社会,💰 Economía y Finanzas,💰,6,見習い,Criptomonedas y Blockchain,"Bitcoin, tecnología descentralizada",200,🥈 シルバーバッジ
+社会,💰 Economía y Finanzas,💰,7,鑑定家,Crisis Económicas,"Grandes recesiones, patrones",350,
+社会,💰 Economía y Finanzas,💰,8,鑑定家,Política Monetaria,"Bancos centrales, tipos de interés",350,🥇 ゴールドバッジ
+社会,💰 Economía y Finanzas,💰,9,エキスパート,Economía Conductual,Psicología de las decisiones financieras,500,
+社会,💰 Economía y Finanzas,💰,10,エキスパート,El Futuro de la Economía,"Post-capitalismo, economía circular",500,💎 ダイヤモンドバッジ
+自然,🐋 Biología Marina,🐋,1,探検家,Los Océanos del Mundo,"Geografía oceánica, corrientes",100,
+自然,🐋 Biología Marina,🐋,2,探検家,Arrecifes de Coral,"Ecosistemas submarinos, biodiversidad",100,
+自然,🐋 Biología Marina,🐋,3,探検家,Grandes Mamíferos Marinos,"Ballenas, delfines, comunicación",100,🥉 ブロンズバッジ
+自然,🐋 Biología Marina,🐋,4,見習い,El Abismo: Vida en las Profundidades,"Criaturas abisales, bioluminiscencia",200,
+自然,🐋 Biología Marina,🐋,5,見習い,Tiburones: Depredadores del Mar,"Especies, mitos y realidades",200,
+自然,🐋 Biología Marina,🐋,6,見習い,Migraciones Oceánicas,"Rutas, instintos, supervivencia",200,🥈 シルバーバッジ
+自然,🐋 Biología Marina,🐋,7,鑑定家,Contaminación Marina,"Plásticos, acidificación, soluciones",350,
+自然,🐋 Biología Marina,🐋,8,鑑定家,Oceanografía y Clima,El océano como regulador climático,350,🥇 ゴールドバッジ
+自然,🐋 Biología Marina,🐋,9,エキスパート,Biología Molecular Marina,Genética de organismos marinos,500,
+自然,🐋 Biología Marina,🐋,10,エキスパート,El Océano del Futuro,"Conservación, explotación sostenible",500,💎 ダイヤモンドバッジ
+社会,🧩 Psicología Humana,🧩,1,探検家,Introducción a la Psicología,"Corrientes, Freud, conductismo",100,
+社会,🧩 Psicología Humana,🧩,2,探検家,Personalidad y Temperamento,"Big Five, tipos psicológicos",100,
+社会,🧩 Psicología Humana,🧩,3,探検家,Percepción y Atención,"Ilusiones, sesgos perceptivos",100,🥉 ブロンズバッジ
+社会,🧩 Psicología Humana,🧩,4,見習い,Psicología Social,"Conformidad, obediencia, grupos",200,
+社会,🧩 Psicología Humana,🧩,5,見習い,Motivación y Hábitos,"Ciclos de hábitos, motivación intrínseca",200,
+社会,🧩 Psicología Humana,🧩,6,見習い,Toma de Decisiones,"Heurísticas, sesgos cognitivos",200,🥈 シルバーバッジ
+社会,🧩 Psicología Humana,🧩,7,鑑定家,Psicología del Desarrollo,"Infancia a vejez, etapas clave",350,
+社会,🧩 Psicología Humana,🧩,8,鑑定家,Trastornos Mentales,"Ansiedad, depresión, esquizofrenia",350,🥇 ゴールドバッジ
+社会,🧩 Psicología Humana,🧩,9,エキスパート,Psicología Positiva,"Flow, resiliencia, bienestar",500,
+社会,🧩 Psicología Humana,🧩,10,エキスパート,Manipulación y Persuasión,"Técnicas, propaganda, defensa crítica",500,💎 ダイヤモンドバッジ
+科学,⚛️ Física Fundamental,⚛️,1,探検家,Las Leyes de Newton,"Movimiento, fuerza, gravedad",100,
+科学,⚛️ Física Fundamental,⚛️,2,探検家,Energía y Termodinámica,"Conservación, calor, entropía",100,
+科学,⚛️ Física Fundamental,⚛️,3,探検家,Ondas y Sonido,"Vibraciones, frecuencia, música",100,🥉 ブロンズバッジ
+科学,⚛️ Física Fundamental,⚛️,4,見習い,Electricidad y Magnetismo,"Campos, corriente, Maxwell",200,
+科学,⚛️ Física Fundamental,⚛️,5,見習い,Relatividad de Einstein,"Espacio-tiempo, E=mc²",200,
+科学,⚛️ Física Fundamental,⚛️,6,見習い,Física Nuclear,"Átomos, radiactividad, fisión",200,🥈 シルバーバッジ
+科学,⚛️ Física Fundamental,⚛️,7,鑑定家,Mecánica Cuántica,"Dualidad onda-partícula, incertidumbre",350,
+科学,⚛️ Física Fundamental,⚛️,8,鑑定家,Partículas Subatómicas,"Quarks, bosón de Higgs, modelo estándar",350,🥇 ゴールドバッジ
+科学,⚛️ Física Fundamental,⚛️,9,エキスパート,Teoría de Cuerdas,"Dimensiones extra, unificación",500,
+科学,⚛️ Física Fundamental,⚛️,10,エキスパート,Los Misterios Sin Resolver,"Gravedad cuántica, multiverso",500,💎 ダイヤモンドバッジ
+人文科学,💭 Filosofía,💭,1,探検家,Sócrates y el Arte de Preguntar,"Método socrático, mayéutica",100,
+人文科学,💭 Filosofía,💭,2,探検家,Platón y las Ideas,"Mundo ideal, alegoría de la caverna",100,
+人文科学,💭 Filosofía,💭,3,探検家,Aristóteles: Lógica y Ética,"Silogismo, virtud, eudaimonía",100,🥉 ブロンズバッジ
+人文科学,💭 Filosofía,💭,4,見習い,Filosofía Medieval,"San Agustín, Santo Tomás, fe y razón",200,
+人文科学,💭 Filosofía,💭,5,見習い,Racionalismo vs Empirismo,"Descartes, Hume, conocimiento",200,
+人文科学,💭 Filosofía,💭,6,見習い,Kant y la Ilustración,"Imperativo categórico, crítica",200,🥈 シルバーバッジ
+人文科学,💭 Filosofía,💭,7,鑑定家,Existencialismo,"Nietzsche, Sartre, libertad radical",350,
+人文科学,💭 Filosofía,💭,8,鑑定家,Filosofía Oriental,"Confucio, Buda, Lao-Tse",350,🥇 ゴールドバッジ
+人文科学,💭 Filosofía,💭,9,エキスパート,Filosofía del Lenguaje y la Mente,"Wittgenstein, conciencia, IA",500,
+人文科学,💭 Filosofía,💭,10,エキスパート,Ética Contemporánea,"Bioética, justicia global, transhumanismo",500,💎 ダイヤモンドバッジ
+科学,🧬 Evolución y Genética,🧬,1,探検家,Darwin y la Selección Natural,"Teoría de la evolución, Galápagos",100,
+科学,🧬 Evolución y Genética,🧬,2,探検家,ADN: El Código de la Vida,"Estructura, genes, cromosomas",100,
+科学,🧬 Evolución y Genética,🧬,3,探検家,Herencia y Mendel,"Leyes de la herencia, rasgos",100,🥉 ブロンズバッジ
+科学,🧬 Evolución y Genética,🧬,4,見習い,Evolución Humana,Australopithecus a Homo sapiens,200,
+科学,🧬 Evolución y Genética,🧬,5,見習い,Mutaciones y Adaptación,Motor del cambio evolutivo,200,
+科学,🧬 Evolución y Genética,🧬,6,見習い,Extinción y Especiación,"Extinciones masivas, nueva vida",200,🥈 シルバーバッジ
+科学,🧬 Evolución y Genética,🧬,7,鑑定家,Genómica y Proteómica,"Proyecto Genoma, secuenciación",350,
+科学,🧬 Evolución y Genética,🧬,8,鑑定家,Epigenética,Genes que se encienden y apagan,350,🥇 ゴールドバッジ
+科学,🧬 Evolución y Genética,🧬,9,エキスパート,CRISPR y Edición Genética,"Terapia génica, bebés diseñados",500,
+科学,🧬 Evolución y Genética,🧬,10,エキスパート,Biología Sintética,"Crear vida artificial, futuro genético",500,💎 ダイヤモンドバッジ
+社会,🌍 Geopolítica Mundial,🌍,1,探検家,¿Qué es la Geopolítica?,"Conceptos, poder, territorios",100,
+社会,🌍 Geopolítica Mundial,🌍,2,探検家,Las Grandes Potencias,"EE.UU., China, Rusia, UE",100,
+社会,🌍 Geopolítica Mundial,🌍,3,探検家,Conflictos Territoriales,"Fronteras disputadas, recursos",100,🥉 ブロンズバッジ
+社会,🌍 Geopolítica Mundial,🌍,4,見習い,La Guerra Fría,"Bipolaridad, proxy wars, caída del muro",200,
+社会,🌍 Geopolítica Mundial,🌍,5,見習い,Oriente Medio,"Petróleo, religión, conflictos",200,
+社会,🌍 Geopolítica Mundial,🌍,6,見習い,El Ascenso de China,"Ruta de la Seda, influencia global",200,🥈 シルバーバッジ
+社会,🌍 Geopolítica Mundial,🌍,7,鑑定家,Organizaciones Internacionales,"ONU, OTAN, G20, poder blando",350,
+社会,🌍 Geopolítica Mundial,🌍,8,鑑定家,Ciberguerra y Espionaje,"Guerra híbrida, desinformación",350,🥇 ゴールドバッジ
+社会,🌍 Geopolítica Mundial,🌍,9,エキスパート,Recursos y Guerras del Futuro,"Agua, litio, tierras raras",500,
+社会,🌍 Geopolítica Mundial,🌍,10,エキスパート,Nuevo Orden Mundial,"Multipolaridad, escenarios 2050",500,💎 ダイヤモンドバッジ
+人文科学,🎨 Arte y Grandes Maestros,🎨,1,探検家,Arte Prehistórico y Antiguo,"Altamira, Egipto, Grecia",100,
+人文科学,🎨 Arte y Grandes Maestros,🎨,2,探検家,El Renacimiento,"Da Vinci, Miguel Ángel, Botticelli",100,
+人文科学,🎨 Arte y Grandes Maestros,🎨,3,探検家,Barroco y Clasicismo,"Caravaggio, Velázquez, Rembrandt",100,🥉 ブロンズバッジ
+人文科学,🎨 Arte y Grandes Maestros,🎨,4,見習い,Impresionismo,"Monet, Renoir, luz y color",200,
+人文科学,🎨 Arte y Grandes Maestros,🎨,5,見習い,Vanguardias del Siglo XX,"Picasso, Dalí, Kandinsky",200,
+人文科学,🎨 Arte y Grandes Maestros,🎨,6,見習い,Arte Contemporáneo,"Pop Art, minimalismo, Banksy",200,🥈 シルバーバッジ
+人文科学,🎨 Arte y Grandes Maestros,🎨,7,鑑定家,Fotografía como Arte,"Historia, maestros, revolución digital",350,
+人文科学,🎨 Arte y Grandes Maestros,🎨,8,鑑定家,Grandes Museos del Mundo,"Louvre, MoMA, Prado, Hermitage",350,🥇 ゴールドバッジ
+人文科学,🎨 Arte y Grandes Maestros,🎨,9,エキスパート,El Mercado del Arte,"Subastas, falsificaciones, inversión",500,
+人文科学,🎨 Arte y Grandes Maestros,🎨,10,エキスパート,Arte y Tecnología: IA Creativa,"Arte generativo, NFTs, debate",500,💎 ダイヤモンドバッジ
+自然,🌡️ Cambio Climático,🌡️,1,探検家,El Efecto Invernadero,"CO₂, gases, calentamiento",100,
+自然,🌡️ Cambio Climático,🌡️,2,探検家,Historia del Clima en la Tierra,"Eras glaciales, ciclos naturales",100,
+自然,🌡️ Cambio Climático,🌡️,3,探検家,Impacto Humano,"Industria, transporte, deforestación",100,🥉 ブロンズバッジ
+自然,🌡️ Cambio Climático,🌡️,4,見習い,Deshielo y Nivel del Mar,"Polos, glaciares, ciudades en riesgo",200,
+自然,🌡️ Cambio Climático,🌡️,5,見習い,Fenómenos Extremos,"Huracanes, sequías, olas de calor",200,
+自然,🌡️ Cambio Climático,🌡️,6,見習い,Biodiversidad Amenazada,"Sexta extinción, ecosistemas en peligro",200,🥈 シルバーバッジ
+自然,🌡️ Cambio Climático,🌡️,7,鑑定家,Energías Renovables,"Solar, eólica, hidrógeno verde",350,
+自然,🌡️ Cambio Climático,🌡️,8,鑑定家,Acuerdos y Política Climática,"París, COP, compromisos nacionales",350,🥇 ゴールドバッジ
+自然,🌡️ Cambio Climático,🌡️,9,エキスパート,Geoingeniería,"Soluciones radicales, riesgos",500,
+自然,🌡️ Cambio Climático,🌡️,10,エキスパート,Escenarios 2050-2100,"Modelos climáticos, futuros posibles",500,💎 ダイヤモンドバッジ
+歴史,🧭 Exploración y Aventura,🧭,1,探検家,Los Grandes Navegantes,"Colón, Magallanes, Vasco de Gama",100,
+歴史,🧭 Exploración y Aventura,🧭,2,探検家,Conquista de los Polos,"Amundsen, Scott, Shackleton",100,
+歴史,🧭 Exploración y Aventura,🧭,3,探検家,Exploradores del Mundo Antiguo,"Marco Polo, Ibn Battuta, Zheng He",100,🥉 ブロンズバッジ
+歴史,🧭 Exploración y Aventura,🧭,4,見習い,La Carrera Espacial,"Gagarin, Apollo 11, MIR",200,
+歴史,🧭 Exploración y Aventura,🧭,5,見習い,Expediciones Submarinas,"Cousteau, Mariana, océanos profundos",200,
+歴史,🧭 Exploración y Aventura,🧭,6,見習い,Exploración de Selvas y Desiertos,"Amazonia, Sahara, expediciones perdidas",200,🥈 シルバーバッジ
+歴史,🧭 Exploración y Aventura,🧭,7,鑑定家,Montañismo Extremo,"Everest, K2, historia alpina",350,
+歴史,🧭 Exploración y Aventura,🧭,8,鑑定家,Arqueología Aventurera,"Tutankamón, Machu Picchu, Pompeya",350,🥇 ゴールドバッジ
+歴史,🧭 Exploración y Aventura,🧭,9,エキスパート,Exploración Robótica,"Marte, drones submarinos, cuevas",500,
+歴史,🧭 Exploración y Aventura,🧭,10,エキスパート,Próximas Fronteras,"Colonización espacial, océano profundo",500,💎 ダイヤモンドバッジ
+健康,🥗 Nutrición y Alimentación,🥗,1,探検家,Macronutrientes,"Proteínas, carbohidratos, grasas",100,
+健康,🥗 Nutrición y Alimentación,🥗,2,探検家,Vitaminas y Minerales,Micronutrientes esenciales,100,
+健康,🥗 Nutrición y Alimentación,🥗,3,探検家,Digestión y Metabolismo,Cómo tu cuerpo procesa los alimentos,100,🥉 ブロンズバッジ
+健康,🥗 Nutrición y Alimentación,🥗,4,見習い,Dietas del Mundo,"Mediterránea, asiática, nórdica",200,
+健康,🥗 Nutrición y Alimentación,🥗,5,見習い,Mitos Nutricionales,Desmentir creencias falsas,200,
+健康,🥗 Nutrición y Alimentación,🥗,6,見習い,Microbioma Intestinal,"Bacterias buenas, segundo cerebro",200,🥈 シルバーバッジ
+健康,🥗 Nutrición y Alimentación,🥗,7,鑑定家,Nutrición Deportiva,"Rendimiento, suplementos, recuperación",350,
+健康,🥗 Nutrición y Alimentación,🥗,8,鑑定家,Alimentos del Futuro,"Insectos, carne de laboratorio, algas",350,🥇 ゴールドバッジ
+健康,🥗 Nutrición y Alimentación,🥗,9,エキスパート,Nutrigenómica,ADN y alimentación personalizada,500,
+健康,🥗 Nutrición y Alimentación,🥗,10,エキスパート,Hambre Global y Sostenibilidad,"Seguridad alimentaria, soluciones",500,💎 ダイヤモンドバッジ
+人文科学,🎵 Música: Historia y Teoría,🎵,1,探検家,Los Orígenes de la Música,"Instrumentos prehistóricos, primeras melodías",100,
+人文科学,🎵 Música: Historia y Teoría,🎵,2,探検家,Música Clásica: Los Grandes,"Bach, Mozart, Beethoven",100,
+人文科学,🎵 Música: Historia y Teoría,🎵,3,探検家,"Ritmo, Melodía y Armonía",Fundamentos de la teoría musical,100,🥉 ブロンズバッジ
+人文科学,🎵 Música: Historia y Teoría,🎵,4,見習い,Jazz y Blues,"Nueva Orleans, improvisación, soul",200,
+人文科学,🎵 Música: Historia y Teoría,🎵,5,見習い,Rock and Roll,"Elvis, Beatles, revolución cultural",200,
+人文科学,🎵 Música: Historia y Teoría,🎵,6,見習い,Música Electrónica,"Sintetizadores, DJs, géneros",200,🥈 シルバーバッジ
+人文科学,🎵 Música: Historia y Teoría,🎵,7,鑑定家,Música del Mundo,"Flamenco, raga, samba, gamelan",350,
+人文科学,🎵 Música: Historia y Teoría,🎵,8,鑑定家,La Industria Musical,"Discográficas, streaming, negocio",350,🥇 ゴールドバッジ
+人文科学,🎵 Música: Historia y Teoría,🎵,9,エキスパート,Neurociencia de la Música,Por qué la música nos emociona,500,
+人文科学,🎵 Música: Historia y Teoría,🎵,10,エキスパート,IA y Composición Musical,"Algoritmos creativos, futuro sonoro",500,💎 ダイヤモンドバッジ
+自然,🌋 Volcanes y Terremotos,🌋,1,探検家,La Tierra por Dentro,"Capas, núcleo, manto, corteza",100,
+自然,🌋 Volcanes y Terremotos,🌋,2,探検家,Tectónica de Placas,"Placas en movimiento, pangea",100,
+自然,🌋 Volcanes y Terremotos,🌋,3,探検家,Volcanes: Tipos y Erupciones,"Escudo, estrato, fisurales",100,🥉 ブロンズバッジ
+自然,🌋 Volcanes y Terremotos,🌋,4,見習い,Grandes Erupciones de la Historia,"Pompeya, Krakatoa, Pinatubo",200,
+自然,🌋 Volcanes y Terremotos,🌋,5,見習い,Terremotos y Tsunamis,"Escalas, ondas sísmicas, prevención",200,
+自然,🌋 Volcanes y Terremotos,🌋,6,見習い,El Cinturón de Fuego,"Pacífico, zonas sísmicas activas",200,🥈 シルバーバッジ
+自然,🌋 Volcanes y Terremotos,🌋,7,鑑定家,Geotermia y Recursos,"Energía volcánica, minerales",350,
+自然,🌋 Volcanes y Terremotos,🌋,8,鑑定家,Supervolcanes,"Yellowstone, Toba, amenazas globales",350,🥇 ゴールドバッジ
+自然,🌋 Volcanes y Terremotos,🌋,9,エキスパート,Predicción Sísmica,"Tecnología, IA, sistemas de alerta",500,
+自然,🌋 Volcanes y Terremotos,🌋,10,エキスパート,Geología Planetaria,"Volcanes en Marte, Ío, Venus",500,💎 ダイヤモンドバッジ
+技術,🔐 Criptografía y Ciberseguridad,🔐,1,探検家,Historia de los Códigos Secretos,"César, Enigma, espionaje",100,
+技術,🔐 Criptografía y Ciberseguridad,🔐,2,探検家,Criptografía Moderna,"RSA, AES, claves públicas",100,
+技術,🔐 Criptografía y Ciberseguridad,🔐,3,探検家,Internet y Seguridad Básica,"HTTPS, contraseñas, phishing",100,🥉 ブロンズバッジ
+技術,🔐 Criptografía y Ciberseguridad,🔐,4,見習い,Hackers: Mitos y Realidad,"White/black hat, ciberataques famosos",200,
+技術,🔐 Criptografía y Ciberseguridad,🔐,5,見習い,Malware y Ransomware,"Virus, troyanos, protección",200,
+技術,🔐 Criptografía y Ciberseguridad,🔐,6,見習い,Ingeniería Social,"Manipulación, pretexting, defensa",200,🥈 シルバーバッジ
+技術,🔐 Criptografía y Ciberseguridad,🔐,7,鑑定家,Blockchain y Seguridad,"Descentralización, contratos inteligentes",350,
+技術,🔐 Criptografía y Ciberseguridad,🔐,8,鑑定家,Ciberguerra Estatal,"Stuxnet, espionaje digital, naciones",350,🥇 ゴールドバッジ
+技術,🔐 Criptografía y Ciberseguridad,🔐,9,エキスパート,Criptografía Cuántica,Computación cuántica vs cifrado actual,500,
+技術,🔐 Criptografía y Ciberseguridad,🔐,10,エキスパート,Privacidad Digital Total,"Anonimato, Tor, futuro de la privacidad",500,💎 ダイヤモンドバッジ
+健康,🏥 Medicina y Cuerpo Humano,🏥,1,探検家,Anatomía Básica,"Sistemas del cuerpo, órganos vitales",100,
+健康,🏥 Medicina y Cuerpo Humano,🏥,2,探検家,El Sistema Inmunológico,"Defensas, anticuerpos, vacunas",100,
+健康,🏥 Medicina y Cuerpo Humano,🏥,3,探検家,Historia de la Medicina,"Hipócrates, penicilina, cirugía",100,🥉 ブロンズバッジ
+健康,🏥 Medicina y Cuerpo Humano,🏥,4,見習い,Pandemias de la Historia,"Peste negra, gripe española, COVID",200,
+健康,🏥 Medicina y Cuerpo Humano,🏥,5,見習い,Cáncer: Batalla Interna,"Tipos, causas, tratamientos",200,
+健康,🏥 Medicina y Cuerpo Humano,🏥,6,見習い,Farmacología Básica,Cómo funcionan los medicamentos,200,🥈 シルバーバッジ
+健康,🏥 Medicina y Cuerpo Humano,🏥,7,鑑定家,Cirugía Robótica,"Da Vinci, precisión, futuro quirúrgico",350,
+健康,🏥 Medicina y Cuerpo Humano,🏥,8,鑑定家,Terapias Génicas,Editar ADN para curar enfermedades,350,🥇 ゴールドバッジ
+健康,🏥 Medicina y Cuerpo Humano,🏥,9,エキスパート,Neurociencia Médica,"Implantes cerebrales, neuroestimulación",500,
+健康,🏥 Medicina y Cuerpo Humano,🏥,10,エキスパート,Longevidad y Anti-aging,"Telómeros, senoterapia, vivir más",500,💎 ダイヤモンドバッジ
+人文科学,⚡ Mitología Universal,⚡,1,探検家,Mitología Griega,"Zeus, Odisea, héroes y monstruos",100,
+人文科学,⚡ Mitología Universal,⚡,2,探検家,Mitología Nórdica,"Odín, Thor, Ragnarök",100,
+人文科学,⚡ Mitología Universal,⚡,3,探検家,Mitología Egipcia,"Ra, Osiris, el más allá",100,🥉 ブロンズバッジ
+人文科学,⚡ Mitología Universal,⚡,4,見習い,Mitología Romana,"Adaptación griega, fundación de Roma",200,
+人文科学,⚡ Mitología Universal,⚡,5,見習い,Mitología Mesopotámica,"Gilgamesh, diluvio, creación",200,
+人文科学,⚡ Mitología Universal,⚡,6,見習い,Mitología Celta y Artúrica,"Druidas, Avalon, Excalibur",200,🥈 シルバーバッジ
+人文科学,⚡ Mitología Universal,⚡,7,鑑定家,Mitología Asiática,"Hinduismo, budismo, dragones chinos",350,
+人文科学,⚡ Mitología Universal,⚡,8,鑑定家,Mitología Mesoamericana,"Quetzalcóatl, Popol Vuh, cosmos maya",350,🥇 ゴールドバッジ
+人文科学,⚡ Mitología Universal,⚡,9,エキスパート,Arquetipos y Jung,"Inconsciente colectivo, el héroe",500,
+人文科学,⚡ Mitología Universal,⚡,10,エキスパート,Mitos Modernos,"Superhéroes, Star Wars, nuevas mitologías",500,💎 ダイヤモンドバッジ
+技術,🦾 Robótica e Ingeniería,🦾,1,探検家,Historia de los Autómatas,"Da Vinci, relojería, primeros robots",100,
+技術,🦾 Robótica e Ingeniería,🦾,2,探検家,Mecánica Básica de Robots,"Sensores, actuadores, control",100,
+技術,🦾 Robótica e Ingeniería,🦾,3,探検家,Robots en la Industria,"Manufactura, logística, automatización",100,🥉 ブロンズバッジ
+技術,🦾 Robótica e Ingeniería,🦾,4,見習い,Drones y Vehículos Autónomos,"Coches sin conductor, delivery",200,
+技術,🦾 Robótica e Ingeniería,🦾,5,見習い,Robots Humanoides,"Boston Dynamics, Atlas, Sophia",200,
+技術,🦾 Robótica e Ingeniería,🦾,6,見習い,Biomimética,Robots inspirados en la naturaleza,200,🥈 シルバーバッジ
+技術,🦾 Robótica e Ingeniería,🦾,7,鑑定家,Prótesis y Exoesqueletos,"Bionics, manos robóticas, movilidad",350,
+技術,🦾 Robótica e Ingeniería,🦾,8,鑑定家,Robótica Espacial,"Rovers, ISS, reparaciones en órbita",350,🥇 ゴールドバッジ
+技術,🦾 Robótica e Ingeniería,🦾,9,エキスパート,Nanorobots,"Medicina microscópica, ensamblaje molecular",500,
+技術,🦾 Robótica e Ingeniería,🦾,10,エキスパート,Robots Conscientes,"IA embodied, derechos de robots, ética",500,💎 ダイヤモンドバッジ
+歴史,⚔️ Guerras Mundiales,⚔️,1,探検家,Causas de la Gran Guerra,"Alianzas, imperialismo, Sarajevo",100,
+歴史,⚔️ Guerras Mundiales,⚔️,2,探検家,Trincheras: WWI,"Guerra de desgaste, gas, Somme",100,
+歴史,⚔️ Guerras Mundiales,⚔️,3,探検家,El Tratado de Versalles,"Consecuencias, humillación, semillas",100,🥉 ブロンズバッジ
+歴史,⚔️ Guerras Mundiales,⚔️,4,見習い,Ascenso del Nazismo,"Hitler, propaganda, Tercer Reich",200,
+歴史,⚔️ Guerras Mundiales,⚔️,5,見習い,Batallas Decisivas WWII,"Stalingrado, Midway, Normandía",200,
+歴史,⚔️ Guerras Mundiales,⚔️,6,見習い,El Holocausto,"Genocidio, campos, memoria",200,🥈 シルバーバッジ
+歴史,⚔️ Guerras Mundiales,⚔️,7,鑑定家,El Frente del Pacífico,"Pearl Harbor, Iwo Jima, Hiroshima",350,
+歴史,⚔️ Guerras Mundiales,⚔️,8,鑑定家,Espionaje y Criptografía,"Enigma, Turing, agentes dobles",350,🥇 ゴールドバッジ
+歴史,⚔️ Guerras Mundiales,⚔️,9,エキスパート,Nüremberg y Justicia,"Juicios, derecho internacional",500,
+歴史,⚔️ Guerras Mundiales,⚔️,10,エキスパート,Lecciones para el Siglo XXI,"Paralelos, prevención, memoria",500,💎 ダイヤモンドバッジ
+人文科学,🏗️ Arquitectura Mundial,🏗️,1,探検家,Pirámides y Templos,"Egipto, Grecia, Angkor Wat",100,
+人文科学,🏗️ Arquitectura Mundial,🏗️,2,探検家,Roma y sus Monumentos,"Coliseo, acueductos, Panteón",100,
+人文科学,🏗️ Arquitectura Mundial,🏗️,3,探検家,Catedrales Góticas,"Notre-Dame, vitrales, arbotantes",100,🥉 ブロンズバッジ
+人文科学,🏗️ Arquitectura Mundial,🏗️,4,見習い,Renacimiento y Barroco,"Brunelleschi, Bernini, Versalles",200,
+人文科学,🏗️ Arquitectura Mundial,🏗️,5,見習い,Rascacielos y Acero,"Chicago, Empire State, ingeniería",200,
+人文科学,🏗️ Arquitectura Mundial,🏗️,6,見習い,Bauhaus y Modernismo,"Le Corbusier, Mies van der Rohe",200,🥈 シルバーバッジ
+人文科学,🏗️ Arquitectura Mundial,🏗️,7,鑑定家,Arquitectura Sostenible,"Edificios verdes, pasivos, biomimética",350,
+人文科学,🏗️ Arquitectura Mundial,🏗️,8,鑑定家,Megaestructuras,"Burj Khalifa, presas, puentes",350,🥇 ゴールドバッジ
+人文科学,🏗️ Arquitectura Mundial,🏗️,9,エキスパート,Ciudades del Futuro,"NEOM, ciudades flotantes, smart cities",500,
+人文科学,🏗️ Arquitectura Mundial,🏗️,10,エキスパート,Arquitectura Extraterrestre,"Hábitats en Marte, impresión 3D lunar",500,💎 ダイヤモンドバッジ
+自然,🤿 Océano y Exploración Submarina,🤿,1,探検家,Cartografía del Fondo Marino,"Dorsales, fosas, relieve submarino",100,
+自然,🤿 Océano y Exploración Submarina,🤿,2,探検家,Naufragios Legendarios,"Titanic, galeones, tesoros",100,
+自然,🤿 Océano y Exploración Submarina,🤿,3,探検家,Submarinos: Historia,"Nautilus, U-boats, nucleares",100,🥉 ブロンズバッジ
+自然,🤿 Océano y Exploración Submarina,🤿,4,見習い,Fuentes Hidrotermales,"Vida sin sol, quimiosíntesis",200,
+自然,🤿 Océano y Exploración Submarina,🤿,5,見習い,Ciudades Hundidas,"Dwarka, Port Royal, misterios",200,
+自然,🤿 Océano y Exploración Submarina,🤿,6,見習い,Tecnología de Buceo,"Saturación, ROVs, AUVs",200,🥈 シルバーバッジ
+自然,🤿 Océano y Exploración Submarina,🤿,7,鑑定家,Minería Submarina,"Recursos, nódulos, controversia",350,
+自然,🤿 Océano y Exploración Submarina,🤿,8,鑑定家,Acústica Submarina,"Sonar, comunicación cetácea",350,🥇 ゴールドバッジ
+自然,🤿 Océano y Exploración Submarina,🤿,9,エキスパート,Bases Submarinas,"Hábitats sumergidos, Aquarius",500,
+自然,🤿 Océano y Exploración Submarina,🤿,10,エキスパート,Colonización Oceánica,Ciudades submarinas del futuro,500,💎 ダイヤモンドバッジ
+技術,💻 Civilización Digital,💻,1,探検家,De ARPANET a Internet,"Nacimiento de la red, WWW",100,
+技術,💻 Civilización Digital,💻,2,探検家,Redes Sociales,"Facebook, Twitter, impacto social",100,
+技術,💻 Civilización Digital,💻,3,探検家,Smartphones y Apps,"iPhone, ecosistema móvil",100,🥉 ブロンズバッジ
+技術,💻 Civilización Digital,💻,4,見習い,Big Data,"Datos masivos, análisis, valor",200,
+技術,💻 Civilización Digital,💻,5,見習い,Cloud Computing,"La nube, servicios, infraestructura",200,
+技術,💻 Civilización Digital,💻,6,見習い,Realidad Virtual y Aumentada,"Metaverso, aplicaciones, inmersión",200,🥈 シルバーバッジ
+技術,💻 Civilización Digital,💻,7,鑑定家,Internet de las Cosas,"Dispositivos conectados, smart homes",350,
+技術,💻 Civilización Digital,💻,8,鑑定家,Computación Cuántica,"Qubits, supremacía, aplicaciones",350,🥇 ゴールドバッジ
+技術,💻 Civilización Digital,💻,9,エキスパート,Singularidad Tecnológica,"Exponencialidad, transhumanismo",500,
+技術,💻 Civilización Digital,💻,10,エキスパート,Ética Digital,"Privacidad, algoritmos, democracia",500,💎 ダイヤモンドバッジ
+科学,🦕 Dinosaurios y Paleontología,🦕,1,探検家,Los Primeros Fósiles,"Qué son, cómo se forman",100,
+科学,🦕 Dinosaurios y Paleontología,🦕,2,探検家,Era Mesozoica,"Triásico, Jurásico, Cretácico",100,
+科学,🦕 Dinosaurios y Paleontología,🦕,3,探検家,Los Grandes Dinosaurios,"T-Rex, Diplodocus, Triceratops",100,🥉 ブロンズバッジ
+科学,🦕 Dinosaurios y Paleontología,🦕,4,見習い,Depredadores vs Herbívoros,"Estrategias, armas naturales",200,
+科学,🦕 Dinosaurios y Paleontología,🦕,5,見習い,Pterosaurios y Reptiles Marinos,Cielo y mar prehistóricos,200,
+科学,🦕 Dinosaurios y Paleontología,🦕,6,見習い,La Gran Extinción,"Asteroide Chicxulub, invierno nuclear",200,🥈 シルバーバッジ
+科学,🦕 Dinosaurios y Paleontología,🦕,7,鑑定家,Plumas y Evolución Aviar,"Dinosaurios con plumas, aves modernas",350,
+科学,🦕 Dinosaurios y Paleontología,🦕,8,鑑定家,Paleontología de Campo,"Excavaciones, técnicas, descubrimientos",350,🥇 ゴールドバッジ
+科学,🦕 Dinosaurios y Paleontología,🦕,9,エキスパート,ADN Antiguo,¿Clonar un dinosaurio? Límites reales,500,
+科学,🦕 Dinosaurios y Paleontología,🦕,10,エキスパート,Mundos Perdidos,"Otros planetas, vida prehistórica remota",500,💎 ダイヤモンドバッジ
+社会,👑 Liderazgo y Estrategia,👑,1,探検家,¿Qué Hace a un Líder?,"Cualidades, tipos de liderazgo",100,
+社会,👑 Liderazgo y Estrategia,👑,2,探検家,Líderes de la Historia,"Alejandro, Napoleón, Mandela",100,
+社会,👑 Liderazgo y Estrategia,👑,3,探検家,El Arte de la Guerra,"Sun Tzu, estrategia milenaria",100,🥉 ブロンズバッジ
+社会,👑 Liderazgo y Estrategia,👑,4,見習い,Liderazgo Empresarial,"Steve Jobs, Elon Musk, Bezos",200,
+社会,👑 Liderazgo y Estrategia,👑,5,見習い,Negociación y Persuasión,"Harvard method, influencia",200,
+社会,👑 Liderazgo y Estrategia,👑,6,見習い,Gestión de Crisis,"Decisiones bajo presión, casos reales",200,🥈 シルバーバッジ
+社会,👑 Liderazgo y Estrategia,👑,7,鑑定家,Inteligencia Emocional,"Empatía, autocontrol, Goleman",350,
+社会,👑 Liderazgo y Estrategia,👑,8,鑑定家,Cultura Organizacional,"Valores, innovación, equipos",350,🥇 ゴールドバッジ
+社会,👑 Liderazgo y Estrategia,👑,9,エキスパート,Liderazgo en la Era IA,"Adaptación, humano+máquina",500,
+社会,👑 Liderazgo y Estrategia,👑,10,エキスパート,Tu Estrategia Personal,Diseñar tu propio camino de liderazgo,500,💎 ダイヤモンドバッジ
+人文科学,🏺 Antropología Cultural,🏺,1,探検家,¿Qué es la Cultura?,"Definiciones, diversidad humana",100,
+人文科学,🏺 Antropología Cultural,🏺,2,探検家,Tribus y Civilizaciones,De nómadas a imperios,100,
+人文科学,🏺 Antropología Cultural,🏺,3,探検家,Rituales y Tradiciones,"Ceremonias, ritos de paso",100,🥉 ブロンズバッジ
+人文科学,🏺 Antropología Cultural,🏺,4,見習い,Lenguas del Mundo,"Familias lingüísticas, extinción",200,
+人文科学,🏺 Antropología Cultural,🏺,5,見習い,Religiones Comparadas,"Cristianismo, Islam, Budismo, Hinduismo",200,
+人文科学,🏺 Antropología Cultural,🏺,6,見習い,Gastronomía y Cultura,"Cocina como identidad, tabúes",200,🥈 シルバーバッジ
+人文科学,🏺 Antropología Cultural,🏺,7,鑑定家,Globalización Cultural,"Homogeneización, resistencia, fusión",350,
+人文科学,🏺 Antropología Cultural,🏺,8,鑑定家,Pueblos Indígenas,"Conocimiento ancestral, derechos",350,🥇 ゴールドバッジ
+人文科学,🏺 Antropología Cultural,🏺,9,エキスパート,Antropología Digital,"Culturas online, identidad virtual",500,
+人文科学,🏺 Antropología Cultural,🏺,10,エキスパート,El Futuro de la Humanidad,"Convergencia cultural, diversidad",500,💎 ダイヤモンドバッジ
+技術,⚡ Energía y Sostenibilidad,⚡,1,探検家,Fuentes de Energía,"Fósiles, renovables, nuclear",100,
+技術,⚡ Energía y Sostenibilidad,⚡,2,探検家,Electricidad: Cómo Funciona,"Generación, distribución, red eléctrica",100,
+技術,⚡ Energía y Sostenibilidad,⚡,3,探検家,El Petróleo y su Historia,"Oro negro, OPEP, geopolítica",100,🥉 ブロンズバッジ
+技術,⚡ Energía y Sostenibilidad,⚡,4,見習い,Energía Solar,"Paneles, fotovoltaica, proyectos",200,
+技術,⚡ Energía y Sostenibilidad,⚡,5,見習い,Energía Eólica e Hídrica,"Turbinas, presas, mareas",200,
+技術,⚡ Energía y Sostenibilidad,⚡,6,見習い,Energía Nuclear Moderna,"Fisión, fusión, ITER",200,🥈 シルバーバッジ
+技術,⚡ Energía y Sostenibilidad,⚡,7,鑑定家,Baterías y Almacenamiento,"Litio, hidrógeno, supercondensadores",350,
+技術,⚡ Energía y Sostenibilidad,⚡,8,鑑定家,Transición Energética,"Abandono del carbón, políticas",350,🥇 ゴールドバッジ
+技術,⚡ Energía y Sostenibilidad,⚡,9,エキスパート,Fusión Nuclear,El santo grial energético,500,
+技術,⚡ Energía y Sostenibilidad,⚡,10,エキスパート,Civilización Tipo I,"Escala Kardashov, futuro energético",500,💎 ダイヤモンドバッジ
+自然,🔮 Misterios y Fenómenos,🔮,1,探検家,Triángulo de las Bermudas,"Desapariciones, explicaciones",100,
+自然,🔮 Misterios y Fenómenos,🔮,2,探検家,Enigmas Arqueológicos,"Stonehenge, Nazca, Moáis",100,
+自然,🔮 Misterios y Fenómenos,🔮,3,探検家,Criaturas Misteriosas,"Nessie, Bigfoot, criptozoología",100,🥉 ブロンズバッジ
+自然,🔮 Misterios y Fenómenos,🔮,4,見習い,Fenómenos Atmosféricos,"Rayos en bola, auroras, sprites",200,
+自然,🔮 Misterios y Fenómenos,🔮,5,見習い,Civilizaciones Perdidas,"Atlántida, Lemuria, evidencias",200,
+自然,🔮 Misterios y Fenómenos,🔮,6,見習い,Fenómenos Paranormales,"Estudio científico, explicaciones",200,🥈 シルバーバッジ
+自然,🔮 Misterios y Fenómenos,🔮,7,鑑定家,Misterios del Espacio,"Señal WOW, Oumuamua, FRBs",350,
+自然,🔮 Misterios y Fenómenos,🔮,8,鑑定家,Código Voynich y Cifrados,Manuscritos sin descifrar,350,🥇 ゴールドバッジ
+自然,🔮 Misterios y Fenómenos,🔮,9,エキスパート,Paradoja de Fermi,¿Dónde están todos? Soluciones,500,
+自然,🔮 Misterios y Fenómenos,🔮,10,エキスパート,Ciencia vs Misterio,"Pensamiento crítico, método científico",500,💎 ダイヤモンドバッジ
+健康,🧬 Microbiología y Virus,🧬,1,探検家,El Mundo Invisible,"Microbios, bacterias, virus y hongos; qué son y dónde viven",100,
+健康,🧬 Microbiología y Virus,🧬,2,探検家,El Microscopio y los Descubrimientos,De Leeuwenhoek a la microbiología moderna,100,
+健康,🧬 Microbiología y Virus,🧬,3,探検家,Bacterias: Aliadas y Enemigas,"Flora intestinal, infecciones, antibióticos",100,🥉 ブロンズバッジ
+健康,🧬 Microbiología y Virus,🧬,4,見習い,Virus: Cómo Infectan,"Estructura viral, ciclo lítico y lisogénico",200,
+健康,🧬 Microbiología y Virus,🧬,5,見習い,El Sistema Inmune contra Microbios,"Barreras, células de defensa, anticuerpos",200,
+健康,🧬 Microbiología y Virus,🧬,6,見習い,Vacunas: Historia y Funcionamiento,De la viruela al ARN mensajero,200,🥈 シルバーバッジ
+健康,🧬 Microbiología y Virus,🧬,7,鑑定家,Resistencia a Antibióticos,"Superbugs, uso abusivo, crisis sanitaria",350,
+健康,🧬 Microbiología y Virus,🧬,8,鑑定家,Pandemias Microbianas,"Peste, gripe española, COVID-19, patrones",350,🥇 ゴールドバッジ
+健康,🧬 Microbiología y Virus,🧬,9,エキスパート,Biotecnología Microbiana,"Uso de microbios en industria, medicina y medioambiente",500,
+健康,🧬 Microbiología y Virus,🧬,10,エキスパート,Futuro de la Lucha contra Infecciones,"Nuevos antibióticos, fagoterapia, edición genética de virus",500,💎 ダイヤモンドバッジ
+科学,🪐 Astrobiología y Búsqueda de Vida,🪐,1,探検家,¿Qué es la Astrobiología?,"Definición, interdisciplinariedad, grandes preguntas",100,
+科学,🪐 Astrobiología y Búsqueda de Vida,🪐,2,探検家,Ingredientes de la Vida,"Agua líquida, química del carbono, energía",100,
+科学,🪐 Astrobiología y Búsqueda de Vida,🪐,3,探検家,Vida Extremófila en la Tierra,Organismos en condiciones extremas como modelo,100,🥉 ブロンズバッジ
+科学,🪐 Astrobiología y Búsqueda de Vida,🪐,4,見習い,Marte: El Vecino Sospechoso,"Historia del agua, misiones, signos de vida pasada",200,
+科学,🪐 Astrobiología y Búsqueda de Vida,🪐,5,見習い,Lunas Habitables,"Europa, Encélado, Titán y sus océanos",200,
+科学,🪐 Astrobiología y Búsqueda de Vida,🪐,6,見習い,Exoplanetas: Mundos Lejanos,Métodos de detección y zona habitable,200,🥈 シルバーバッジ
+科学,🪐 Astrobiología y Búsqueda de Vida,🪐,7,鑑定家,Biofirmas y Tecnofirmas,Señales químicas y tecnológicas de vida avanzada,350,
+科学,🪐 Astrobiología y Búsqueda de Vida,🪐,8,鑑定家,Programas de Búsqueda (SETI y otros),"Radiotelescopios, mensajes, proyectos globales",350,🥇 ゴールドバッジ
+科学,🪐 Astrobiología y Búsqueda de Vida,🪐,9,エキスパート,Paradoja de Fermi y Soluciones,"¿Dónde están todos?, filtros grandes",500,
+科学,🪐 Astrobiología y Búsqueda de Vida,🪐,10,エキスパート,El Futuro de la Vida en el Cosmos,"Terraformación, panspermia, humanidad multiplanetaria",500,💎 ダイヤモンドバッジ
+科学,☀️ Clima Espacial y Tormentas Solares,☀️,1,探検家,El Sol: Nuestra Estrella,"Estructura solar, manchas, actividad",100,
+科学,☀️ Clima Espacial y Tormentas Solares,☀️,2,探検家,Viento Solar,"Partículas cargadas, campo magnético",100,
+科学,☀️ Clima Espacial y Tormentas Solares,☀️,3,探検家,Auroras Boreales y Australes,"Cómo se forman, dónde se ven",100,🥉 ブロンズバッジ
+科学,☀️ Clima Espacial y Tormentas Solares,☀️,4,見習い,Tormentas Solares Históricas,Evento Carrington y otros casos,200,
+科学,☀️ Clima Espacial y Tormentas Solares,☀️,5,見習い,Campo Magnético Terrestre,"Escudo natural, cinturones de Van Allen",200,
+科学,☀️ Clima Espacial y Tormentas Solares,☀️,6,見習い,Clima Espacial y Satélites,Efectos sobre GPS y comunicaciones,200,🥈 シルバーバッジ
+科学,☀️ Clima Espacial y Tormentas Solares,☀️,7,鑑定家,Redes Eléctricas y Riesgo Global,Impacto en infraestructura,350,
+科学,☀️ Clima Espacial y Tormentas Solares,☀️,8,鑑定家,Monitorización y Predicción,"Sondas, observatorios solares, modelos",350,🥇 ゴールドバッジ
+科学,☀️ Clima Espacial y Tormentas Solares,☀️,9,エキスパート,Escenarios de Evento Extremo,Impacto económico y social,500,
+科学,☀️ Clima Espacial y Tormentas Solares,☀️,10,エキスパート,Preparándonos para el Próximo Carrington,Mitigación y resiliencia,500,💎 ダイヤモンドバッジ
+健康,🦾 Biohacking y Cuerpo Mejorado,🦾,1,探検家,¿Qué es el Biohacking?,"Definiciones, tipos (DIYbio, cuantificado, nutracéuticos)",100,
+健康,🦾 Biohacking y Cuerpo Mejorado,🦾,2,探検家,Autoexperimentos Históricos,Científicos que se probaron a sí mismos,100,
+健康,🦾 Biohacking y Cuerpo Mejorado,🦾,3,探検家,Cuantificar el Cuerpo,"Wearables, tracking de sueño y actividad",100,🥉 ブロンズバッジ
+健康,🦾 Biohacking y Cuerpo Mejorado,🦾,4,見習い,Suplementos y Nutrición Avanzada,"Nootrópicos, dietas, controversias",200,
+健康,🦾 Biohacking y Cuerpo Mejorado,🦾,5,見習い,"Hábitos, Ritmos Circadianos y Rendimiento","Luces, horarios, cronobiología",200,
+健康,🦾 Biohacking y Cuerpo Mejorado,🦾,6,見習い,"Gimnasios, Fuerza y Longevidad",Entrenamiento como hackeo biológico,200,🥈 シルバーバッジ
+健康,🦾 Biohacking y Cuerpo Mejorado,🦾,7,鑑定家,Implantes y Dispositivos en el Cuerpo,"Chips, marcapasos, sensores",350,
+健康,🦾 Biohacking y Cuerpo Mejorado,🦾,8,鑑定家,Edición Genética Personal,"CRISPR, posibilidades y límites",350,🥇 ゴールドバッジ
+健康,🦾 Biohacking y Cuerpo Mejorado,🦾,9,エキスパート,Ética y Legalidad del Biohacking,"Normativas, riesgos, desigualdad",500,
+健康,🦾 Biohacking y Cuerpo Mejorado,🦾,10,エキスパート,El Futuro del Humano Mejorado,"Transhumanismo, integración IA-cuerpo",500,💎 ダイヤモンドバッジ
+健康,😷 Epidemiología y Enfermedades Infecciosas,😷,1,探検家,Cómo se Propagan las Enfermedades,"Contagio, vectores, cadenas de transmisión",100,
+健康,😷 Epidemiología y Enfermedades Infecciosas,😷,2,探検家,"Brotes, Epidemias y Pandemias",Diferencias y ejemplos,100,
+健康,😷 Epidemiología y Enfermedades Infecciosas,😷,3,探検家,Casos y Datos: Lo que Significan,"Incidencia, prevalencia, R0",100,🥉 ブロンズバッジ
+健康,😷 Epidemiología y Enfermedades Infecciosas,😷,4,見習い,Grandes Epidemias Históricas,"Peste negra, cólera, gripe española",200,
+健康,😷 Epidemiología y Enfermedades Infecciosas,😷,5,見習い,"VIH, Tuberculosis y Otros Retos",Enfermedades crónicas infecciosas,200,
+健康,😷 Epidemiología y Enfermedades Infecciosas,😷,6,見習い,COVID-19: Anatomía de una Pandemia,"Secuenciación, vacunas, confinamientos",200,🥈 シルバーバッジ
+健康,😷 Epidemiología y Enfermedades Infecciosas,😷,7,鑑定家,Modelos Epidemiológicos,"Curvas, medidas no farmacológicas",350,
+健康,😷 Epidemiología y Enfermedades Infecciosas,😷,8,鑑定家,Vacunación Masiva y Rebaño,"Inmunidad de grupo, campañas",350,🥇 ゴールドバッジ
+健康,😷 Epidemiología y Enfermedades Infecciosas,😷,9,エキスパート,Enfermedades Emergentes y Zoonosis,"Cambio climático, nuevos patógenos",500,
+健康,😷 Epidemiología y Enfermedades Infecciosas,😷,10,エキスパート,Preparación Global ante la Próxima Pandemia,"Vigilancia, cooperación internacional",500,💎 ダイヤモンドバッジ
+技術,💾 Historia de la Computación,💾,1,探検家,De Ábacos a Máquinas de Cálculo,Herramientas de cálculo antiguas,100,
+技術,💾 Historia de la Computación,💾,2,探検家,Visionarios Pioneros,"Babbage, Ada Lovelace, Turing",100,
+技術,💾 Historia de la Computación,💾,3,探検家,Ordenadores de Tubos y Tarjetas,"ENIAC, mainframes",100,🥉 ブロンズバッジ
+技術,💾 Historia de la Computación,💾,4,見習い,La Revolución del Microprocesador,"Intel, PCs, Apple",200,
+技術,💾 Historia de la Computación,💾,5,見習い,Internet y la Web,"ARPANET, HTTP, navegadores",200,
+技術,💾 Historia de la Computación,💾,6,見習い,"Portátiles, Smartphones y la Era Móvil","iPhone, Android",200,🥈 シルバーバッジ
+技術,💾 Historia de la Computación,💾,7,鑑定家,Software Libre y Open Source,"Linux, proyectos colaborativos",350,
+技術,💾 Historia de la Computación,💾,8,鑑定家,"Nubes, Contenedores y DevOps",Cómo se despliega hoy el software,350,🥇 ゴールドバッジ
+技術,💾 Historia de la Computación,💾,9,エキスパート,Computación Cuántica y Más Allá,"Qubits, algoritmos",500,
+技術,💾 Historia de la Computación,💾,10,エキスパート,Futuro de la Computación,"Neuromórfica, IA integrada",500,💎 ダイヤモンドバッジ
+技術,🎮 Videojuegos e Industria del Gaming,🎮,1,探検家,Los Primeros Videojuegos,"Pong, arcades, Atari",100,
+技術,🎮 Videojuegos e Industria del Gaming,🎮,2,探検家,Consolas y Guerra de Generaciones,"Nintendo, Sega, Sony, Microsoft",100,
+技術,🎮 Videojuegos e Industria del Gaming,🎮,3,探検家,PC Gaming y Online,"DOOM, MMOs, primeros esports",100,🥉 ブロンズバッジ
+技術,🎮 Videojuegos e Industria del Gaming,🎮,4,見習い,Diseño de Juegos,"Mecánicas, loops, narrativa",200,
+技術,🎮 Videojuegos e Industria del Gaming,🎮,5,見習い,Esports y Competición Profesional,"Ligas, premios, entrenamientos",200,
+技術,🎮 Videojuegos e Industria del Gaming,🎮,6,見習い,Psicología del Juego y Gamificación,"Motivación, recompensas",200,🥈 シルバーバッジ
+技術,🎮 Videojuegos e Industria del Gaming,🎮,7,鑑定家,Industria y Modelos de Negocio,"AAA, indie, free-to-play",350,
+技術,🎮 Videojuegos e Industria del Gaming,🎮,8,鑑定家,Controversias del Gaming,"Adicción, violencia, loot boxes",350,🥇 ゴールドバッジ
+技術,🎮 Videojuegos e Industria del Gaming,🎮,9,エキスパート,Juegos como Arte y Educación,"Juegos serios, experiencias inmersivas",500,
+技術,🎮 Videojuegos e Industria del Gaming,🎮,10,エキスパート,Futuro del Gaming,"VR/AR, cloud gaming",500,💎 ダイヤモンドバッジ
+技術,₿ Criptoeconomía y DeFi,₿,1,探検家,Origen de Bitcoin,"Satoshi, problema del doble gasto",100,
+技術,₿ Criptoeconomía y DeFi,₿,2,探検家,¿Qué es Blockchain?,"Bloques, cadenas, consenso",100,
+技術,₿ Criptoeconomía y DeFi,₿,3,探検家,Criptomonedas Principales,"BTC, ETH y otras",100,🥉 ブロンズバッジ
+技術,₿ Criptoeconomía y DeFi,₿,4,見習い,Smart Contracts,Programas que mueven dinero,200,
+技術,₿ Criptoeconomía y DeFi,₿,5,見習い,Exchanges y Wallets,Cómo se compra y guarda cripto,200,
+技術,₿ Criptoeconomía y DeFi,₿,6,見習い,Finanzas Descentralizadas (DeFi),"Préstamos, DEX, yield farming",200,🥈 シルバーバッジ
+技術,₿ Criptoeconomía y DeFi,₿,7,鑑定家,"Estafas, Riesgos y Burbujas","Rug pulls, hacks, volatilidad",350,
+技術,₿ Criptoeconomía y DeFi,₿,8,鑑定家,Regulación y Narrativas,"Gobiernos, adopción",350,🥇 ゴールドバッジ
+技術,₿ Criptoeconomía y DeFi,₿,9,エキスパート,Cripto más allá del Dinero,"DAOs, identidad, NFTs útiles",500,
+技術,₿ Criptoeconomía y DeFi,₿,10,エキスパート,Escenarios Futuros de la Criptoeconomía,Infraestructura o nicho,500,💎 ダイヤモンドバッジ
+技術,📊 Ciencia de Datos y Big Data,📊,1,探検家,Dato: El Nuevo Petróleo,Qué es un dato y por qué vale,100,
+技術,📊 Ciencia de Datos y Big Data,📊,2,探検家,Cómo se Recogen Datos,"Sensores, formularios, tracking",100,
+技術,📊 Ciencia de Datos y Big Data,📊,3,探検家,Bases de Datos y Almacenes,"SQL, NoSQL, data lakes",100,🥉 ブロンズバッジ
+技術,📊 Ciencia de Datos y Big Data,📊,4,見習い,Analítica Descriptiva,"Dashboards, KPIs",200,
+技術,📊 Ciencia de Datos y Big Data,📊,5,見習い,Analítica Predictiva,Modelos y pronósticos,200,
+技術,📊 Ciencia de Datos y Big Data,📊,6,見習い,Analítica Prescriptiva,Recomendaciones automatizadas,200,🥈 シルバーバッジ
+技術,📊 Ciencia de Datos y Big Data,📊,7,鑑定家,Big Data en la Vida Real,"Retail, salud, transporte",350,
+技術,📊 Ciencia de Datos y Big Data,📊,8,鑑定家,"Privacidad, Sesgos y Ética",Dilemas y casos,350,🥇 ゴールドバッジ
+技術,📊 Ciencia de Datos y Big Data,📊,9,エキスパート,Arquitecturas Modernas de Datos,"Batch, streaming, lakehouse",500,
+技術,📊 Ciencia de Datos y Big Data,📊,10,エキスパート,Hacia un Mundo Hiperpersonalizado,Riesgos y regulación,500,💎 ダイヤモンドバッジ
+技術,📡 Tecnologías de Comunicación,📡,1,探検家,Telégrafo y Teléfono,Primer salto de la voz a distancia,100,
+技術,📡 Tecnologías de Comunicación,📡,2,探検家,Radio y Televisión,Llegada de los mass media,100,
+技術,📡 Tecnologías de Comunicación,📡,3,探検家,Satélites y Comunicaciones Globales,"Órbitas, enlaces",100,🥉 ブロンズバッジ
+技術,📡 Tecnologías de Comunicación,📡,4,見習い,Internet y Protocolos Básicos,"TCP/IP, routers",200,
+技術,📡 Tecnologías de Comunicación,📡,5,見習い,Wi-Fi y Redes Domésticas,Cómo se conectan tus dispositivos,200,
+技術,📡 Tecnologías de Comunicación,📡,6,見習い,Redes Móviles: 1G a 4G,De voz analógica a datos,200,🥈 シルバーバッジ
+技術,📡 Tecnologías de Comunicación,📡,7,鑑定家,5G y Futuras Generaciones,"Latencia baja, IoT",350,
+技術,📡 Tecnologías de Comunicación,📡,8,鑑定家,Seguridad y Vigilancia en Redes,"Interceptación, cifrado",350,🥇 ゴールドバッジ
+技術,📡 Tecnologías de Comunicación,📡,9,エキスパート,Infraestructura Crítica y Resiliencia,Qué pasa si cae la red,500,
+技術,📡 Tecnologías de Comunicación,📡,10,エキスパート,Comunicación del Futuro,"Redes cuánticas, espacio profundo",500,💎 ダイヤモンドバッジ
+人文科学,🎬 Historia del Cine y el Documental,🎬,1,探検家,Nacimiento del Cine,"Lumière, Méliès y las primeras proyecciones",100,
+人文科学,🎬 Historia del Cine y el Documental,🎬,2,探検家,Hollywood Clásico,"Estudios, sistema de estrellas, cine mudo a sonoro",100,
+人文科学,🎬 Historia del Cine y el Documental,🎬,3,探検家,Nueva Ola y Cine de Autor,"Truffaut, Godard y otros movimientos",100,🥉 ブロンズバッジ
+人文科学,🎬 Historia del Cine y el Documental,🎬,4,見習い,Origen del Documental,"Nanook, propaganda, cine etnográfico",200,
+人文科学,🎬 Historia del Cine y el Documental,🎬,5,見習い,Estilos de Documental,"Observacional, participativo, ensayo",200,
+人文科学,🎬 Historia del Cine y el Documental,🎬,6,見習い,Documental de Naturaleza y Ciencia,"BBC, National Geographic, formatos",200,🥈 シルバーバッジ
+人文科学,🎬 Historia del Cine y el Documental,🎬,7,鑑定家,Documental de Denuncia Social,Casos que cambiaron leyes y conciencias,350,
+人文科学,🎬 Historia del Cine y el Documental,🎬,8,鑑定家,Docuseries y Plataformas,"Streaming, true crime, formatos seriales",350,🥇 ゴールドバッジ
+人文科学,🎬 Historia del Cine y el Documental,🎬,9,エキスパート,Lenguaje y Ética del Documental,"Manipulación, puesta en escena, límites",500,
+人文科学,🎬 Historia del Cine y el Documental,🎬,10,エキスパート,El Futuro del Documental con IA,"Producción automatizada, personalización",500,💎 ダイヤモンドバッジ
+人文科学,📚 Literatura Universal,📚,1,探検家,"Mitos, Epopeyas y Textos Fundacionales","Gilgamesh, Ilíada, textos sagrados",100,
+人文科学,📚 Literatura Universal,📚,2,探検家,Teatro Clásico y Tragedia,"Sófocles, Shakespeare",100,
+人文科学,📚 Literatura Universal,📚,3,探検家,Novela Moderna,Del siglo XIX al realismo,100,🥉 ブロンズバッジ
+人文科学,📚 Literatura Universal,📚,4,見習い,Realismo y Naturalismo,"Tolstói, Zola, Galdós",200,
+人文科学,📚 Literatura Universal,📚,5,見習い,Vanguardias y Modernismo,"Joyce, Kafka, Proust",200,
+人文科学,📚 Literatura Universal,📚,6,見習い,Literaturas no Occidentales,"Autores clave de Asia, África, Latinoamérica",200,🥈 シルバーバッジ
+人文科学,📚 Literatura Universal,📚,7,鑑定家,Boom Latinoamericano,"García Márquez, Cortázar, Vargas Llosa",350,
+人文科学,📚 Literatura Universal,📚,8,鑑定家,Literatura Contemporánea,"Posmodernidad, autoficción, nuevos formatos",350,🥇 ゴールドバッジ
+人文科学,📚 Literatura Universal,📚,9,エキスパート,Adaptaciones al Cine y la TV,Cómo cambian las historias,500,
+人文科学,📚 Literatura Universal,📚,10,エキスパート,IA y Escritura del Futuro,"Modelos generativos, coautoría",500,💎 ダイヤモンドバッジ
+人文科学,🎭 Historia del Teatro y Artes Escénicas,🎭,1,探検家,Teatro Griego y Romano,"Tragedia, comedia, anfiteatros",100,
+人文科学,🎭 Historia del Teatro y Artes Escénicas,🎭,2,探検家,Teatro Medieval y Renacentista,"Autos, Shakespeare",100,
+人文科学,🎭 Historia del Teatro y Artes Escénicas,🎭,3,探検家,Ópera y Ballet,"Nacimiento de la ópera, grandes compositores",100,🥉 ブロンズバッジ
+人文科学,🎭 Historia del Teatro y Artes Escénicas,🎭,4,見習い,Teatro del Siglo XIX,"Realismo, melodrama",200,
+人文科学,🎭 Historia del Teatro y Artes Escénicas,🎭,5,見習い,Vanguardias del Siglo XX,"Brecht, Artaud, teatro del absurdo",200,
+人文科学,🎭 Historia del Teatro y Artes Escénicas,🎭,6,見習い,Teatro Musical y Broadway,"Musical moderno, grandes éxitos",200,🥈 シルバーバッジ
+人文科学,🎭 Historia del Teatro y Artes Escénicas,🎭,7,鑑定家,Teatro Político y Social,Obras que cuestionan el poder,350,
+人文科学,🎭 Historia del Teatro y Artes Escénicas,🎭,8,鑑定家,Performance y Artes Vivas,"Happening, body art",350,🥇 ゴールドバッジ
+人文科学,🎭 Historia del Teatro y Artes Escénicas,🎭,9,エキスパート,Nuevos Medios Escénicos,"Proyecciones, VR, experiencias inmersivas",500,
+人文科学,🎭 Historia del Teatro y Artes Escénicas,🎭,10,エキスパート,El Futuro del Teatro,"Hibridación digital, participación del público",500,💎 ダイヤモンドバッジ
+人文科学,📷 Historia de la Fotografía y Fotoperiodismo,📷,1,探検家,Primeras Fotografías,"Daguerrotipos, Niepce, Daguerre",100,
+人文科学,📷 Historia de la Fotografía y Fotoperiodismo,📷,2,探検家,Retrato y Estudio,La fotografía como lujo,100,
+人文科学,📷 Historia de la Fotografía y Fotoperiodismo,📷,3,探検家,Fotografía Documental Temprana,"Vida urbana, colonias, guerra de Crimea",100,🥉 ブロンズバッジ
+人文科学,📷 Historia de la Fotografía y Fotoperiodismo,📷,4,見習い,Grandes Guerras en Imágenes,"WWI, WWII, impacto en la opinión pública",200,
+人文科学,📷 Historia de la Fotografía y Fotoperiodismo,📷,5,見習い,Agencias y Revistas Icónicas,"Magnum, LIFE",200,
+人文科学,📷 Historia de la Fotografía y Fotoperiodismo,📷,6,見習い,Fotografía de Calle y Autoral,"Cartier-Bresson, Vivian Maier",200,🥈 シルバーバッジ
+人文科学,📷 Historia de la Fotografía y Fotoperiodismo,📷,7,鑑定家,Fotoperiodismo en la Era Digital,"24/7 news, redes sociales",350,
+人文科学,📷 Historia de la Fotografía y Fotoperiodismo,📷,8,鑑定家,Manipulación y Fake Images,"Edición, deepfakes, ética",350,🥇 ゴールドバッジ
+人文科学,📷 Historia de la Fotografía y Fotoperiodismo,📷,9,エキスパート,Fotografía como Arte Contemporáneo,"Museos, mercado, instalaciones",500,
+人文科学,📷 Historia de la Fotografía y Fotoperiodismo,📷,10,エキスパート,"IA, Algoritmos y Visión por Computador","Clasificación, generación de imágenes",500,💎 ダイヤモンドバッジ
+人文科学,🗣️ Lenguas del Mundo y Escrituras,🗣️,1,探検家,Qué es un Idioma,"Fonética, gramática, significado",100,
+人文科学,🗣️ Lenguas del Mundo y Escrituras,🗣️,2,探検家,Familias Lingüísticas,"Indoeuropea, sino-tibetana, afroasiática",100,
+人文科学,🗣️ Lenguas del Mundo y Escrituras,🗣️,3,探検家,Orígenes de la Escritura,"Cuneiforme, jeroglíficos",100,🥉 ブロンズバッジ
+人文科学,🗣️ Lenguas del Mundo y Escrituras,🗣️,4,見習い,Alfabetos y Sistemas de Escritura,"Latino, cirílico, árabe, chino",200,
+人文科学,🗣️ Lenguas del Mundo y Escrituras,🗣️,5,見習い,Lenguas en Peligro,"Extinción lingüística, revitalización",200,
+人文科学,🗣️ Lenguas del Mundo y Escrituras,🗣️,6,見習い,Lenguas Francas y de Poder,"Inglés, español, mandarín",200,🥈 シルバーバッジ
+人文科学,🗣️ Lenguas del Mundo y Escrituras,🗣️,7,鑑定家,Política e Identidad Lingüística,"Nacionalismos, minorías",350,
+人文科学,🗣️ Lenguas del Mundo y Escrituras,🗣️,8,鑑定家,Traducción y Pérdida,"Matices, intraducibles",350,🥇 ゴールドバッジ
+人文科学,🗣️ Lenguas del Mundo y Escrituras,🗣️,9,エキスパート,IA y Traducción Automática,"Modelos neuronales, límites",500,
+人文科学,🗣️ Lenguas del Mundo y Escrituras,🗣️,10,エキスパート,El Futuro del Multilingüismo,"Convergencia, diversidad",500,💎 ダイヤモンドバッジ
+人文科学,🍳 Historia de la Alimentación y Gastronomía,🍳,1,探検家,Cazadores-Recolectores y Agricultura,Del forrajeo a los cultivos,100,
+人文科学,🍳 Historia de la Alimentación y Gastronomía,🍳,2,探検家,Granos y Civilizaciones,"Trigo, arroz, maíz",100,
+人文科学,🍳 Historia de la Alimentación y Gastronomía,🍳,3,探検家,Especias y Rutas Comerciales,"Curry, pimienta, oro aromático",100,🥉 ブロンズバッジ
+人文科学,🍳 Historia de la Alimentación y Gastronomía,🍳,4,見習い,Colonialismo y Cocina,"Intercambio colombino, mestizaje culinario",200,
+人文科学,🍳 Historia de la Alimentación y Gastronomía,🍳,5,見習い,Revolución Industrial y Comida Procesada,"Conservas, azúcar, fast food",200,
+人文科学,🍳 Historia de la Alimentación y Gastronomía,🍳,6,見習い,Cocinas del Mundo,"Mediterránea, asiática, latinoamericana",200,🥈 シルバーバッジ
+人文科学,🍳 Historia de la Alimentación y Gastronomía,🍳,7,鑑定家,Alta Cocina y Chefs Estrella,"Guías, restaurantes icónicos",350,
+人文科学,🍳 Historia de la Alimentación y Gastronomía,🍳,8,鑑定家,Comida y Clase Social,"Acceso, status, marketing",350,🥇 ゴールドバッジ
+人文科学,🍳 Historia de la Alimentación y Gastronomía,🍳,9,エキスパート,Gastronomía Molecular y Ciencia,Física y química en la cocina,500,
+人文科学,🍳 Historia de la Alimentación y Gastronomía,🍳,10,エキスパート,Futuro de la Alimentación,"Carne cultivada, insectos, sostenibilidad",500,💎 ダイヤモンドバッジ
+社会,🏭 Historia del Capitalismo y del Trabajo,🏭,1,探検家,Economías Agrarias y Trueque,Antes del capitalismo,100,
+社会,🏭 Historia del Capitalismo y del Trabajo,🏭,2,探検家,Revolución Comercial y Mercantilismo,"Imperios, colonias",100,
+社会,🏭 Historia del Capitalismo y del Trabajo,🏭,3,探検家,Revolución Industrial,"Máquinas, fábricas, proletariado",100,🥉 ブロンズバッジ
+社会,🏭 Historia del Capitalismo y del Trabajo,🏭,4,見習い,Capitalismo del Siglo XIX,"Ferrocarriles, monopolios",200,
+社会,🏭 Historia del Capitalismo y del Trabajo,🏭,5,見習い,Estado del Bienestar y Fordismo,"Producción en masa, derechos laborales",200,
+社会,🏭 Historia del Capitalismo y del Trabajo,🏭,6,見習い,Neoliberalismo y Globalización,"Deslocalización, finanzas",200,🥈 シルバーバッジ
+社会,🏭 Historia del Capitalismo y del Trabajo,🏭,7,鑑定家,Automatización y Trabajo Precario,"Gig economy, plataformas",350,
+社会,🏭 Historia del Capitalismo y del Trabajo,🏭,8,鑑定家,Críticas y Alternativas,"Marxismo, economía solidaria",350,🥇 ゴールドバッジ
+社会,🏭 Historia del Capitalismo y del Trabajo,🏭,9,エキスパート,Capitalismo Digital y de Vigilancia,Datos como mercancía,500,
+社会,🏭 Historia del Capitalismo y del Trabajo,🏭,10,エキスパート,El Futuro del Trabajo,"Renta básica, robots",500,💎 ダイヤモンドバッジ
+社会,📱 Sociología de las Redes Sociales,📱,1,探検家,De Foros a Redes Sociales,"Blogs, MySpace, Facebook",100,
+社会,📱 Sociología de las Redes Sociales,📱,2,探検家,Plataformas Clave,"Twitter/X, Instagram, TikTok",100,
+社会,📱 Sociología de las Redes Sociales,📱,3,探検家,"Likes, Seguidores y Ego",Psicología básica del feedback,100,🥉 ブロンズバッジ
+社会,📱 Sociología de las Redes Sociales,📱,4,見習い,Algoritmos y Burbujas de Filtro,Qué ves y qué no ves,200,
+社会,📱 Sociología de las Redes Sociales,📱,5,見習い,Influencers y Economía de Creadores,Modelos de ingresos,200,
+社会,📱 Sociología de las Redes Sociales,📱,6,見習い,Ciberacoso y Toxicidad,Efectos en la salud mental,200,🥈 シルバーバッジ
+社会,📱 Sociología de las Redes Sociales,📱,7,鑑定家,Redes y Política,"Campañas, desinformación",350,
+社会,📱 Sociología de las Redes Sociales,📱,8,鑑定家,Activismo Digital,"Hashtags, movimientos sociales",350,🥇 ゴールドバッジ
+社会,📱 Sociología de las Redes Sociales,📱,9,エキスパート,"Datos, Vigilancia y Privacidad",Seguimiento masivo,500,
+社会,📱 Sociología de las Redes Sociales,📱,10,エキスパート,El Futuro de la Vida Conectada,"Metaversos, identidades múltiples",500,💎 ダイヤモンドバッジ
+社会,🗳️ Sistemas Políticos del Mundo,🗳️,1,探検家,Qué es un Estado,"Territorio, población, soberanía",100,
+社会,🗳️ Sistemas Políticos del Mundo,🗳️,2,探検家,Democracias y Dictaduras,Clasificaciones básicas,100,
+社会,🗳️ Sistemas Políticos del Mundo,🗳️,3,探検家,Separación de Poderes,"Ejecutivo, legislativo, judicial",100,🥉 ブロンズバッジ
+社会,🗳️ Sistemas Políticos del Mundo,🗳️,4,見習い,Modelos Parlamentarios y Presidenciales,"Reino Unido, EE.UU.",200,
+社会,🗳️ Sistemas Políticos del Mundo,🗳️,5,見習い,Regímenes Autoritarios,"Control, propaganda",200,
+社会,🗳️ Sistemas Políticos del Mundo,🗳️,6,見習い,Organismos Supranacionales,"UE, ONU, OEA",200,🥈 シルバーバッジ
+社会,🗳️ Sistemas Políticos del Mundo,🗳️,7,鑑定家,Transiciones Democráticas,Ejemplos históricos,350,
+社会,🗳️ Sistemas Políticos del Mundo,🗳️,8,鑑定家,Populismo y Polarización,Tendencias recientes,350,🥇 ゴールドバッジ
+社会,🗳️ Sistemas Políticos del Mundo,🗳️,9,エキスパート,Tecnología y Gobernanza,"Voto electrónico, e-gobierno",500,
+社会,🗳️ Sistemas Políticos del Mundo,🗳️,10,エキスパート,Democracia del Futuro,"Participación digital, IA y política",500,💎 ダイヤモンドバッジ
+社会,♀️ Historia del Feminismo y Movimientos Sociales,♀️,1,探検家,Primeras Luchas por Derechos,"Sufragistas, abolición",100,
+社会,♀️ Historia del Feminismo y Movimientos Sociales,♀️,2,探検家,Olas del Feminismo,"Primera, segunda, tercera",100,
+社会,♀️ Historia del Feminismo y Movimientos Sociales,♀️,3,探検家,Movimientos Obreros,"Sindicatos, 1 de mayo",100,🥉 ブロンズバッジ
+社会,♀️ Historia del Feminismo y Movimientos Sociales,♀️,4,見習い,Luchas por Derechos Civiles,"EE.UU., Sudáfrica",200,
+社会,♀️ Historia del Feminismo y Movimientos Sociales,♀️,5,見習い,Movimiento LGTBI+,Hitos y conquistas,200,
+社会,♀️ Historia del Feminismo y Movimientos Sociales,♀️,6,見習い,Ecologismo y Pacifismo,Movimiento verde,200,🥈 シルバーバッジ
+社会,♀️ Historia del Feminismo y Movimientos Sociales,♀️,7,鑑定家,Intersectionalidad y Nuevas Agendas,Cruce de opresiones,350,
+社会,♀️ Historia del Feminismo y Movimientos Sociales,♀️,8,鑑定家,Redes Sociales y Movilización,"#MeToo, Primavera Árabe",350,🥇 ゴールドバッジ
+社会,♀️ Historia del Feminismo y Movimientos Sociales,♀️,9,エキスパート,Reacción y Backlash,Resistencias y contramovimientos,500,
+社会,♀️ Historia del Feminismo y Movimientos Sociales,♀️,10,エキスパート,Movimientos Sociales del Futuro,Nuevas causas emergentes,500,💎 ダイヤモンドバッジ
+社会,⌛ Economía de la Atención,⌛,1,探検家,Qué es la Atención,"Recurso limitado, foco",100,
+社会,⌛ Economía de la Atención,⌛,2,探検家,Publicidad Tradicional,"TV, radio, prensa",100,
+社会,⌛ Economía de la Atención,⌛,3,探検家,Publicidad Digital,"Banners, search ads",100,🥉 ブロンズバッジ
+社会,⌛ Economía de la Atención,⌛,4,見習い,Plataformas y Tiempo de Pantalla,Modelos de negocio,200,
+社会,⌛ Economía de la Atención,⌛,5,見習い,Scroll Infinito y Notificaciones,Diseño adictivo,200,
+社会,⌛ Economía de la Atención,⌛,6,見習い,Creadores y Contenido Viral,Métricas y tendencias,200,🥈 シルバーバッジ
+社会,⌛ Economía de la Atención,⌛,7,鑑定家,Coste Cognitivo y Salud Mental,Burnout informativo,350,
+社会,⌛ Economía de la Atención,⌛,8,鑑定家,Regulación y Privacidad,Leyes de datos,350,🥇 ゴールドバッジ
+社会,⌛ Economía de la Atención,⌛,9,エキスパート,Resistencia: Minimalismo Digital,Estrategias para recuperar el foco,500,
+社会,⌛ Economía de la Atención,⌛,10,エキスパート,Futuro de la Atención,"Interfaces nuevas, IA curadora",500,💎 ダイヤモンドバッジ
+自然,🏞️ Grandes Ríos y Civilizaciones,🏞️,1,探検家,"Nilo, Tigris y Éufrates",Cunas de civilización,100,
+自然,🏞️ Grandes Ríos y Civilizaciones,🏞️,2,探検家,Indo y Ganges,India antigua y moderna,100,
+自然,🏞️ Grandes Ríos y Civilizaciones,🏞️,3,探検家,Yangtsé y Amarillo,China y sus ríos,100,🥉 ブロンズバッジ
+自然,🏞️ Grandes Ríos y Civilizaciones,🏞️,4,見習い,Ríos de Europa,"Danubio, Rin, comercio",200,
+自然,🏞️ Grandes Ríos y Civilizaciones,🏞️,5,見習い,Ríos de América,"Amazonas, Mississippi",200,
+自然,🏞️ Grandes Ríos y Civilizaciones,🏞️,6,見習い,Ríos de África y su Impacto,"Niger, Congo",200,🥈 シルバーバッジ
+自然,🏞️ Grandes Ríos y Civilizaciones,🏞️,7,鑑定家,Represas y Gestión del Agua,"Asuán, Tres Gargantas",350,
+自然,🏞️ Grandes Ríos y Civilizaciones,🏞️,8,鑑定家,Contaminación y Sequías,Crisis hídricas,350,🥇 ゴールドバッジ
+自然,🏞️ Grandes Ríos y Civilizaciones,🏞️,9,エキスパート,Guerras del Agua,Conflictos actuales y potenciales,500,
+自然,🏞️ Grandes Ríos y Civilizaciones,🏞️,10,エキスパート,Futuro de los Grandes Ríos,Adaptación climática,500,💎 ダイヤモンドバッジ
+自然,🏜️ Desiertos del Mundo y Supervivencia,🏜️,1,探検家,Qué es un Desierto,"Tipos, clima",100,
+自然,🏜️ Desiertos del Mundo y Supervivencia,🏜️,2,探検家,Sahara y Desiertos Africanos,Historia y pueblos,100,
+自然,🏜️ Desiertos del Mundo y Supervivencia,🏜️,3,探検家,Desiertos de Asia,"Gobi, Arabia",100,🥉 ブロンズバッジ
+自然,🏜️ Desiertos del Mundo y Supervivencia,🏜️,4,見習い,Desiertos de América,"Atacama, Sonora",200,
+自然,🏜️ Desiertos del Mundo y Supervivencia,🏜️,5,見習い,Flora y Fauna Adaptada,Estrategias de vida,200,
+自然,🏜️ Desiertos del Mundo y Supervivencia,🏜️,6,見習い,Supervivencia Humana,"Técnicas, expediciones",200,🥈 シルバーバッジ
+自然,🏜️ Desiertos del Mundo y Supervivencia,🏜️,7,鑑定家,Desertificación,Causas humanas y naturales,350,
+自然,🏜️ Desiertos del Mundo y Supervivencia,🏜️,8,鑑定家,Energía Solar en Desiertos,Mega proyectos,350,🥇 ゴールドバッジ
+自然,🏜️ Desiertos del Mundo y Supervivencia,🏜️,9,エキスパート,Ciudades y Proyectos en Desiertos,"Dubai, NEOM",500,
+自然,🏜️ Desiertos del Mundo y Supervivencia,🏜️,10,エキスパート,Vida en Otros Mundos Desérticos,Marte como desierto extremo,500,💎 ダイヤモンドバッジ
+自然,🌲 Bosques y Selvas,🌲,1,探検家,Tipos de Bosques,"Tropicales, templados, boreales",100,
+自然,🌲 Bosques y Selvas,🌲,2,探検家,Amazonia y Grandes Selvas,Biodiversidad y pueblos,100,
+自然,🌲 Bosques y Selvas,🌲,3,探検家,Bosques del Norte,"Taiga, tundra",100,🥉 ブロンズバッジ
+自然,🌲 Bosques y Selvas,🌲,4,見習い,Bosques y Clima,Sumideros de carbono,200,
+自然,🌲 Bosques y Selvas,🌲,5,見習い,Deforestación,Causas y consecuencias,200,
+自然,🌲 Bosques y Selvas,🌲,6,見習い,Conservación y Parques,Modelos de protección,200,🥈 シルバーバッジ
+自然,🌲 Bosques y Selvas,🌲,7,鑑定家,Economía del Bosque,"Madera, turismo, servicios ecosistémicos",350,
+自然,🌲 Bosques y Selvas,🌲,8,鑑定家,Incendios Forestales,Cambio climático y gestión,350,🥇 ゴールドバッジ
+自然,🌲 Bosques y Selvas,🌲,9,エキスパート,Restauración Ecológica,Reforestación inteligente,500,
+自然,🌲 Bosques y Selvas,🌲,10,エキスパート,Bosques del Futuro,"Rewilding, reservas integrales",500,💎 ダイヤモンドバッジ
+自然,🦤 Fauna Extinta Reciente y Conservación,🦤,1,探検家,Especies Extintas Recientes,"Dodo, tilacino",100,
+自然,🦤 Fauna Extinta Reciente y Conservación,🦤,2,探検家,Causas de Extinción,"Caza, hábitat, invasoras",100,
+自然,🦤 Fauna Extinta Reciente y Conservación,🦤,3,探検家,Historias Emblemáticas,"Búfalo americano, ballena azul",100,🥉 ブロンズバッジ
+自然,🦤 Fauna Extinta Reciente y Conservación,🦤,4,見習い,Listas Rojas y Estado de Conservación,UICN,200,
+自然,🦤 Fauna Extinta Reciente y Conservación,🦤,5,見習い,Zoológicos y Reservas,Rol en conservación,200,
+自然,🦤 Fauna Extinta Reciente y Conservación,🦤,6,見習い,Éxitos en Recuperación,"Lince ibérico, cóndor",200,🥈 シルバーバッジ
+自然,🦤 Fauna Extinta Reciente y Conservación,🦤,7,鑑定家,Conservación Genética,Bancos de genes,350,
+自然,🦤 Fauna Extinta Reciente y Conservación,🦤,8,鑑定家,Rewilding y Reintroducciones,Casos prácticos,350,🥇 ゴールドバッジ
+自然,🦤 Fauna Extinta Reciente y Conservación,🦤,9,エキスパート,De-Extinción,Mamuts y debate ético,500,
+自然,🦤 Fauna Extinta Reciente y Conservación,🦤,10,エキスパート,Convivencia Humano-Fauna,Nuevos pactos y límites,500,💎 ダイヤモンドバッジ
+自然,🧊 Glaciares y Regiones Polares,🧊,1,探検家,Qué es un Glaciar,"Formación, tipos",100,
+自然,🧊 Glaciares y Regiones Polares,🧊,2,探検家,Ártico y Antártida,Diferencias básicas,100,
+自然,🧊 Glaciares y Regiones Polares,🧊,3,探検家,Fauna Polar,"Osos, pingüinos, focas",100,🥉 ブロンズバッジ
+自然,🧊 Glaciares y Regiones Polares,🧊,4,見習い,Hielo y Clima Global,"Albedo, regulador térmico",200,
+自然,🧊 Glaciares y Regiones Polares,🧊,5,見習い,Exploradores Polares,"Amundsen, Scott",200,
+自然,🧊 Glaciares y Regiones Polares,🧊,6,見習い,Bases Científicas,Investigación en los polos,200,🥈 シルバーバッジ
+自然,🧊 Glaciares y Regiones Polares,🧊,7,鑑定家,Retroceso de Glaciares,Impactos locales,350,
+自然,🧊 Glaciares y Regiones Polares,🧊,8,鑑定家,Rutas Marítimas y Recursos,Paso del Noroeste,350,🥇 ゴールドバッジ
+自然,🧊 Glaciares y Regiones Polares,🧊,9,エキスパート,Conflictos Geopolíticos en el Hielo,Reclamos territoriales,500,
+自然,🧊 Glaciares y Regiones Polares,🧊,10,エキスパート,Futuro de las Regiones Polares,Escenarios climáticos,500,💎 ダイヤモンドバッジ
+技術,💡 Innovación y Emprendimiento,💡,1,探検家,Qué es Innovar,"Ideas, problemas y soluciones",100,
+技術,💡 Innovación y Emprendimiento,💡,2,探検家,Casos Históricos de Emprendedores,"Edison, Ford",100,
+技術,💡 Innovación y Emprendimiento,💡,3,探検家,Startups y Silicon Valley,Nacimiento del ecosistema,100,🥉 ブロンズバッジ
+技術,💡 Innovación y Emprendimiento,💡,4,見習い,Modelos de Negocio,"Suscripción, marketplace, freemium",200,
+技術,💡 Innovación y Emprendimiento,💡,5,見習い,Financiación y Capital Riesgo,"VC, ángeles, bootstrapping",200,
+技術,💡 Innovación y Emprendimiento,💡,6,見習い,Validación y Producto Mínimo Viable,Iterar con usuarios,200,🥈 シルバーバッジ
+技術,💡 Innovación y Emprendimiento,💡,7,鑑定家,Escalar una Startup,"Equipo, procesos, cultura",350,
+技術,💡 Innovación y Emprendimiento,💡,8,鑑定家,Fracaso y Aprendizaje,"Casos sonados, lecciones",350,🥇 ゴールドバッジ
+技術,💡 Innovación y Emprendimiento,💡,9,エキスパート,Emprendimiento de Impacto,"Triple balance, sostenibilidad",500,
+技術,💡 Innovación y Emprendimiento,💡,10,エキスパート,Innovar con IA,Nuevos modelos habilitados por IA,500,💎 ダイヤモンドバッジ
+社会,💵 Psicología del Dinero,💵,1,探検家,Dinero y Emociones,"Miedo, avaricia",100,
+社会,💵 Psicología del Dinero,💵,2,探検家,Sesgos en Decisiones Financieras,"Anclas, aversión a la pérdida",100,
+社会,💵 Psicología del Dinero,💵,3,探検家,Hábitos de Consumo,Impulso vs planificación,100,🥉 ブロンズバッジ
+社会,💵 Psicología del Dinero,💵,4,見習い,Publicidad y Compra,Técnicas de persuasión,200,
+社会,💵 Psicología del Dinero,💵,5,見習い,Endeudamiento y Crédito,Psicología del préstamo,200,
+社会,💵 Psicología del Dinero,💵,6,見習い,Ahorro e Inversión,Mentalidad de largo plazo,200,🥈 シルバーバッジ
+社会,💵 Psicología del Dinero,💵,7,鑑定家,Dinero y Estatus,"Señales, comparación social",350,
+社会,💵 Psicología del Dinero,💵,8,鑑定家,Cultura y Relación con el Dinero,Diferencias regionales,350,🥇 ゴールドバッジ
+社会,💵 Psicología del Dinero,💵,9,エキスパート,Dinero y Felicidad,Qué dice la investigación,500,
+社会,💵 Psicología del Dinero,💵,10,エキスパート,Reescribir tu Narrativa Financiera,Cambiar creencias y hábitos,500,💎 ダイヤモンドバッジ
+健康,📈 Hábitos y Productividad,📈,1,探検家,Qué es un Hábito,Bucle señal-rutina-recompensa,100,
+健康,📈 Hábitos y Productividad,📈,2,探検家,Motivación y Voluntad,Mitologías y realidades,100,
+健康,📈 Hábitos y Productividad,📈,3,探検家,Procrastinación,Por qué la mente pospone,100,🥉 ブロンズバッジ
+健康,📈 Hábitos y Productividad,📈,4,見習い,Sistemas de Organización,"Listas, calendarios, GTD",200,
+健康,📈 Hábitos y Productividad,📈,5,見習い,Gestión del Tiempo,"Bloques, timeboxing",200,
+健康,📈 Hábitos y Productividad,📈,6,見習い,"Energía, Sueño y Productividad",Ritmos biológicos,200,🥈 シルバーバッジ
+健康,📈 Hábitos y Productividad,📈,7,鑑定家,Diseñar Hábitos Duraderos,"Ambiente, identidad",350,
+健康,📈 Hábitos y Productividad,📈,8,鑑定家,Productividad en la Era Digital,"Distracciones, multitarea",350,🥇 ゴールドバッジ
+健康,📈 Hábitos y Productividad,📈,9,エキスパート,Flujo (Flow) y Alto Rendimiento,Condiciones para entrar en flow,500,
+健康,📈 Hábitos y Productividad,📈,10,エキスパート,Sistemas de Productividad Personalizados,Crearte tu propio sistema,500,💎 ダイヤモンドバッジ
+社会,🏙️ Historia de las Ciudades y Urbanismo,🏙️,1,探検家,Primeras Ciudades,"Mesopotamia, valle del Indo",100,
+社会,🏙️ Historia de las Ciudades y Urbanismo,🏙️,2,探検家,Ciudades Antiguas,"Roma, Atenas, Teotihuacán",100,
+社会,🏙️ Historia de las Ciudades y Urbanismo,🏙️,3,探検家,Ciudades Medievales,"Murallas, gremios",100,🥉 ブロンズバッジ
+社会,🏙️ Historia de las Ciudades y Urbanismo,🏙️,4,見習い,Revolución Industrial y Ciudad,"Fábricas, barrios obreros",200,
+社会,🏙️ Historia de las Ciudades y Urbanismo,🏙️,5,見習い,Urbanismo Moderno,"Haussmann, zonificación",200,
+社会,🏙️ Historia de las Ciudades y Urbanismo,🏙️,6,見習い,Megaciudades y Suburbios,Crecimiento acelerado,200,🥈 シルバーバッジ
+社会,🏙️ Historia de las Ciudades y Urbanismo,🏙️,7,鑑定家,Problemas Urbanos,"Tráfico, vivienda, contaminación",350,
+社会,🏙️ Historia de las Ciudades y Urbanismo,🏙️,8,鑑定家,Ciudades Sostenibles,"Transporte público, verde",350,🥇 ゴールドバッジ
+社会,🏙️ Historia de las Ciudades y Urbanismo,🏙️,9,エキスパート,Smart Cities,"Datos, sensores, gobernanza",500,
+社会,🏙️ Historia de las Ciudades y Urbanismo,🏙️,10,エキスパート,Ciudades del Futuro,"Verticales, flotantes, resilientes",500,💎 ダイヤモンドバッジ
+技術,🕹️ Videojuegos y Sociedad,🕹️,1,探検家,Historia Básica del Juego Digital,Hitos principales,100,
+技術,🕹️ Videojuegos y Sociedad,🕹️,2,探検家,Culturas de Jugadores,"Casual, hardcore",100,
+技術,🕹️ Videojuegos y Sociedad,🕹️,3,探検家,Comunidades Online,"Clanes, guilds",100,🥉 ブロンズバッジ
+技術,🕹️ Videojuegos y Sociedad,🕹️,4,見習い,Esports y Espectadores,Audiencias masivas,200,
+技術,🕹️ Videojuegos y Sociedad,🕹️,5,見習い,Representación y Diversidad,"Género, raza",200,
+技術,🕹️ Videojuegos y Sociedad,🕹️,6,見習い,Juegos y Educación,Serious games,200,🥈 シルバーバッジ
+技術,🕹️ Videojuegos y Sociedad,🕹️,7,鑑定家,Adicción y Regulación,"Clasificaciones, límites",350,
+技術,🕹️ Videojuegos y Sociedad,🕹️,8,鑑定家,Economías Virtuales,"Objetos, skins, mercados",350,🥇 ゴールドバッジ
+技術,🕹️ Videojuegos y Sociedad,🕹️,9,エキスパート,Juegos como Arte Político,Crítica y reflexión,500,
+技術,🕹️ Videojuegos y Sociedad,🕹️,10,エキスパート,Fronteras Difusas Realidad-Juego,Metaversos,500,💎 ダイヤモンドバッジ
+人文科学,🚀 Ciencia Ficción y Futuro,🚀,1,探検家,Orígenes de la Ciencia Ficción,"Verne, Wells",100,
+人文科学,🚀 Ciencia Ficción y Futuro,🚀,2,探検家,Edad Dorada,"Asimov, Clarke",100,
+人文科学,🚀 Ciencia Ficción y Futuro,🚀,3,探検家,Cine de Ciencia Ficción,"2001, Star Wars",100,🥉 ブロンズバッジ
+人文科学,🚀 Ciencia Ficción y Futuro,🚀,4,見習い,Distopías y Crítica Social,"1984, Blade Runner",200,
+人文科学,🚀 Ciencia Ficción y Futuro,🚀,5,見習い,Utopías y Posibles Mundos,"Star Trek, solarpunk",200,
+人文科学,🚀 Ciencia Ficción y Futuro,🚀,6,見習い,Space Opera y Aventuras Cósmicas,Grandes sagas,200,🥈 シルバーバッジ
+人文科学,🚀 Ciencia Ficción y Futuro,🚀,7,鑑定家,Ciberpunk y Realidades Virtuales,"Neuromante, Matrix",350,
+人文科学,🚀 Ciencia Ficción y Futuro,🚀,8,鑑定家,Biopunk y Genética,Manipulación de cuerpos,350,🥇 ゴールドバッジ
+人文科学,🚀 Ciencia Ficción y Futuro,🚀,9,エキスパート,SF y Predicciones Cumplidas,Tecnologías anticipadas,500,
+人文科学,🚀 Ciencia Ficción y Futuro,🚀,10,エキスパート,Ficción como Laboratorio del Futuro,Inspirar ciencia real,500,💎 ダイヤモンドバッジ
+人文科学,👗 Historia de la Moda,👗,1,探検家,Vestimenta en la Antigüedad,"Togas, túnicas",100,
+人文科学,👗 Historia de la Moda,👗,2,探検家,Ropas Medievales y Renacentistas,"Cortes, símbolos",100,
+人文科学,👗 Historia de la Moda,👗,3,探検家,Moda del Siglo XIX,"Crinolinas, trajes",100,🥉 ブロンズバッジ
+人文科学,👗 Historia de la Moda,👗,4,見習い,Alta Costura y Diseñadores,"Chanel, Dior",200,
+人文科学,👗 Historia de la Moda,👗,5,見習い,Moda Juvenil y Subculturas,"Punk, hip-hop",200,
+人文科学,👗 Historia de la Moda,👗,6,見習い,Fast Fashion,Producción masiva,200,🥈 シルバーバッジ
+人文科学,👗 Historia de la Moda,👗,7,鑑定家,Impacto Ambiental de la Moda,"Contaminación, residuos",350,
+人文科学,👗 Historia de la Moda,👗,8,鑑定家,Moda Ética y Sostenible,"Algodón orgánico, reciclaje",350,🥇 ゴールドバッジ
+人文科学,👗 Historia de la Moda,👗,9,エキスパート,Tecnología Textil,Ropa inteligente,500,
+人文科学,👗 Historia de la Moda,👗,10,エキスパート,Futuro de la Moda,"Digital, virtual, IA",500,💎 ダイヤモンドバッジ
+技術,📐 Arquitectura de la Información y UX,📐,1,探検家,Qué es UX,Experiencia de usuario,100,
+技術,📐 Arquitectura de la Información y UX,📐,2,探検家,Interfaces a lo Largo del Tiempo,"CLI, GUI, móvil",100,
+技術,📐 Arquitectura de la Información y UX,📐,3,探検家,Arquitectura de la Información,"Jerarquías, menús",100,🥉 ブロンズバッジ
+技術,📐 Arquitectura de la Información y UX,📐,4,見習い,Principios de Usabilidad,"Norman, heurísticas",200,
+技術,📐 Arquitectura de la Información y UX,📐,5,見習い,Investigación con Usuarios,"Entrevistas, tests",200,
+技術,📐 Arquitectura de la Información y UX,📐,6,見習い,Diseño Centrado en la Persona,"Personas, journeys",200,🥈 シルバーバッジ
+技術,📐 Arquitectura de la Información y UX,📐,7,鑑定家,Patrones Oscuros,Diseño manipulador,350,
+技術,📐 Arquitectura de la Información y UX,📐,8,鑑定家,Accesibilidad Digital,"WCAG, inclusión",350,🥇 ゴールドバッジ
+技術,📐 Arquitectura de la Información y UX,📐,9,エキスパート,UX y Ética,Responsabilidad del diseño,500,
+技術,📐 Arquitectura de la Información y UX,📐,10,エキスパート,UX con IA,"Interfaces conversacionales, copilots",500,💎 ダイヤモンドバッジ
+健康,🎓 Neuroeducación y Aprendizaje,🎓,1,探検家,Cerebro y Aprendizaje,"Plasticidad, memoria",100,
+健康,🎓 Neuroeducación y Aprendizaje,🎓,2,探検家,Atención y Motivación,Sistemas de recompensa,100,
+健康,🎓 Neuroeducación y Aprendizaje,🎓,3,探検家,Emoción y Recuerdo,Cómo se fijan los recuerdos,100,🥉 ブロンズバッジ
+健康,🎓 Neuroeducación y Aprendizaje,🎓,4,見習い,Errores y Curva de Olvido,Por qué olvidamos,200,
+健康,🎓 Neuroeducación y Aprendizaje,🎓,5,見習い,Práctica Espaciada y Revisión Activa,Técnicas efectivas,200,
+健康,🎓 Neuroeducación y Aprendizaje,🎓,6,見習い,Aprendizaje Multisensorial,"Ver, oír, hacer",200,🥈 シルバーバッジ
+健康,🎓 Neuroeducación y Aprendizaje,🎓,7,鑑定家,Mitos sobre el Cerebro,"10%, hemisferios, etc.",350,
+健康,🎓 Neuroeducación y Aprendizaje,🎓,8,鑑定家,Tecnología y Aprendizaje,"Apps, plataformas",350,🥇 ゴールドバッジ
+健康,🎓 Neuroeducación y Aprendizaje,🎓,9,エキスパート,Personalización con IA,Rutas adaptativas,500,
+健康,🎓 Neuroeducación y Aprendizaje,🎓,10,エキスパート,Diseñar tu Propio Sistema de Aprendizaje,Aplicar todo lo aprendido,500,💎 ダイヤモンドバッジ
+人文科学,🕯️ Historia de las Religiones,🕯️,1,探検家,Creencias Prehistóricas,"Cultos, enterramientos",100,
+人文科学,🕯️ Historia de las Religiones,🕯️,2,探検家,Religiones Antiguas,"Egipto, Grecia",100,
+人文科学,🕯️ Historia de las Religiones,🕯️,3,探検家,Grandes Religiones Monoteístas,"Judaísmo, cristianismo, islam",100,🥉 ブロンズバッジ
+人文科学,🕯️ Historia de las Religiones,🕯️,4,見習い,Religiones Dhármicas,"Hinduismo, budismo",200,
+人文科学,🕯️ Historia de las Religiones,🕯️,5,見習い,Religiones de Asia Oriental,"Confucianismo, taoísmo",200,
+人文科学,🕯️ Historia de las Religiones,🕯️,6,見習い,Religiones Indígenas,"África, América",200,🥈 シルバーバッジ
+人文科学,🕯️ Historia de las Religiones,🕯️,7,鑑定家,Reformas y Cismas,"Protestantismo, reformas internas",350,
+人文科学,🕯️ Historia de las Religiones,🕯️,8,鑑定家,Religión y Política,"Teocracias, laicismo",350,🥇 ゴールドバッジ
+人文科学,🕯️ Historia de las Religiones,🕯️,9,エキスパート,Secularización y Nuevos Movimientos,Espiritualidades modernas,500,
+人文科学,🕯️ Historia de las Religiones,🕯️,10,エキスパート,Religión en el Futuro,"¿Menos, más, distinta?",500,💎 ダイヤモンドバッジ
+社会,🕵️ Crimen Organizado y Mafias,🕵️,1,探検家,Qué es el Crimen Organizado,Definición y tipos,100,
+社会,🕵️ Crimen Organizado y Mafias,🕵️,2,探検家,Mafia Siciliana y Cosa Nostra,Orígenes y códigos,100,
+社会,🕵️ Crimen Organizado y Mafias,🕵️,3,探検家,"Yakuza, Triadas y Otras Mafias",Asia y más,100,🥉 ブロンズバッジ
+社会,🕵️ Crimen Organizado y Mafias,🕵️,4,見習い,Carteles de la Droga,Latinoamérica,200,
+社会,🕵️ Crimen Organizado y Mafias,🕵️,5,見習い,Lavado de Dinero,Métodos y ejemplos,200,
+社会,🕵️ Crimen Organizado y Mafias,🕵️,6,見習い,Crimen Organizado en Política,Corrupción,200,🥈 シルバーバッジ
+社会,🕵️ Crimen Organizado y Mafias,🕵️,7,鑑定家,Crimen Cibernético Organizado,"Hackers, ransomware",350,
+社会,🕵️ Crimen Organizado y Mafias,🕵️,8,鑑定家,Lucha Internacional contra el Crimen,"Interpol, tratados",350,🥇 ゴールドバッジ
+社会,🕵️ Crimen Organizado y Mafias,🕵️,9,エキスパート,Narrativas y Mitificación del Crimen,"Cine, series",500,
+社会,🕵️ Crimen Organizado y Mafias,🕵️,10,エキスパート,Escenarios Futuros del Crimen Global,Nuevas formas emergentes,500,💎 ダイヤモンドバッジ
+科学,👩‍🚀 Exploración Espacial Humana,👩‍🚀,1,探検家,Carrera Espacial,EE.UU. vs URSS,100,
+科学,👩‍🚀 Exploración Espacial Humana,👩‍🚀,2,探検家,Llegada a la Luna,Apollo,100,
+科学,👩‍🚀 Exploración Espacial Humana,👩‍🚀,3,探検家,Estaciones Espaciales,"Mir, ISS",100,🥉 ブロンズバッジ
+科学,👩‍🚀 Exploración Espacial Humana,👩‍🚀,4,見習い,Transbordadores y Nuevas Naves,"Shuttle, cápsulas",200,
+科学,👩‍🚀 Exploración Espacial Humana,👩‍🚀,5,見習い,Empresas Privadas,"SpaceX, Blue Origin",200,
+科学,👩‍🚀 Exploración Espacial Humana,👩‍🚀,6,見習い,Robots Exploradores,"Rovers, sondas",200,🥈 シルバーバッジ
+科学,👩‍🚀 Exploración Espacial Humana,👩‍🚀,7,鑑定家,Vida en Microgravedad,Cuerpo humano en órbita,350,
+科学,👩‍🚀 Exploración Espacial Humana,👩‍🚀,8,鑑定家,Planes para Marte,Misiones tripuladas,350,🥇 ゴールドバッジ
+科学,👩‍🚀 Exploración Espacial Humana,👩‍🚀,9,エキスパート,Colonias y Hábitats Espaciales,Diseños y retos,500,
+科学,👩‍🚀 Exploración Espacial Humana,👩‍🚀,10,エキスパート,Humanidad Multiplanetaria,Implicaciones a muy largo plazo,500,💎 ダイヤモンドバッジ
+技術,🤖 Historia de la Robótica,🤖,1,探検家,Autómatas Antiguos,Dispositivos mecánicos precientíficos,100,
+技術,🤖 Historia de la Robótica,🤖,2,探検家,Robots en la Ficción,"Metropolis, Asimov",100,
+技術,🤖 Historia de la Robótica,🤖,3,探検家,Primeros Robots Industriales,Unimate y las fábricas,100,🥉 ブロンズバッジ
+技術,🤖 Historia de la Robótica,🤖,4,見習い,Robots en el Hogar,"Aspiradoras, asistentes",200,
+技術,🤖 Historia de la Robótica,🤖,5,見習い,Robots Colaborativos,Cobots junto a humanos,200,
+技術,🤖 Historia de la Robótica,🤖,6,見習い,Competencias de Robótica,"FIRST, competiciones estudiantiles",200,🥈 シルバーバッジ
+技術,🤖 Historia de la Robótica,🤖,7,鑑定家,Robots Militares,"Drones, sistemas no tripulados",350,
+技術,🤖 Historia de la Robótica,🤖,8,鑑定家,Robots en Medicina,"Cirugía, rehabilitación",350,🥇 ゴールドバッジ
+技術,🤖 Historia de la Robótica,🤖,9,エキスパート,Robots Autónomos Inteligentes,"Percepción, decisión",500,
+技術,🤖 Historia de la Robótica,🤖,10,エキスパート,Futuro de la Robótica,"Sociedad, empleo, ética",500,💎 ダイヤモンドバッジ
+技術,🚆 Historia del Transporte,🚆,1,探検家,Rueda y Tracción Animal,"Carros, caballos",100,
+技術,🚆 Historia del Transporte,🚆,2,探検家,Barcos y Grandes Rutas,Navegación a vela,100,
+技術,🚆 Historia del Transporte,🚆,3,探検家,Ferrocarril,Revolución de los trenes,100,🥉 ブロンズバッジ
+技術,🚆 Historia del Transporte,🚆,4,見習い,Automóvil y Carreteras,"Ford, autopistas",200,
+技術,🚆 Historia del Transporte,🚆,5,見習い,Aviación,"Wright, vuelos comerciales",200,
+技術,🚆 Historia del Transporte,🚆,6,見習い,Transporte Urbano,"Metro, tranvía, buses",200,🥈 シルバーバッジ
+技術,🚆 Historia del Transporte,🚆,7,鑑定家,Logística Global,"Contenedores, puertos",350,
+技術,🚆 Historia del Transporte,🚆,8,鑑定家,Sostenibilidad en el Transporte,"Eléctricos, tren rápido",350,🥇 ゴールドバッジ
+技術,🚆 Historia del Transporte,🚆,9,エキスパート,Vehículos Autónomos,Coches sin conductor,500,
+技術,🚆 Historia del Transporte,🚆,10,エキスパート,Transporte del Futuro,"Hyperloop, taxis aéreos",500,💎 ダイヤモンドバッジ
+技術,⚡ Historia de la Energía,⚡,1,探検家,Fuego y Musculatura,Primeras fuentes,100,
+技術,⚡ Historia de la Energía,⚡,2,探検家,Agua y Viento,"Molinos, norias",100,
+技術,⚡ Historia de la Energía,⚡,3,探検家,Carbón y Vapor,Máquina de vapor,100,🥉 ブロンズバッジ
+技術,⚡ Historia de la Energía,⚡,4,見習い,Petróleo y Gas,Motores de combustión,200,
+技術,⚡ Historia de la Energía,⚡,5,見習い,Electricidad,"Generadores, redes",200,
+技術,⚡ Historia de la Energía,⚡,6,見習い,Energía Nuclear,"Fisión, centrales",200,🥈 シルバーバッジ
+技術,⚡ Historia de la Energía,⚡,7,鑑定家,Renovables Modernas,"Solar, eólica",350,
+技術,⚡ Historia de la Energía,⚡,8,鑑定家,Eficiencia Energética,"Edificios, industria",350,🥇 ゴールドバッジ
+技術,⚡ Historia de la Energía,⚡,9,エキスパート,Fusión Experimental,"Tokamaks, stellarators",500,
+技術,⚡ Historia de la Energía,⚡,10,エキスパート,Civilización Energética Global,Escala Kardashev,500,💎 ダイヤモンドバッジ
+人文科学,🎸 Historia de la Música Popular,🎸,1,探検家,Blues y Jazz,Raíces afroamericanas,100,
+人文科学,🎸 Historia de la Música Popular,🎸,2,探検家,Rock and Roll,Años 50 y 60,100,
+人文科学,🎸 Historia de la Música Popular,🎸,3,探検家,Pop Global,"Beatles, fenómenos",100,🥉 ブロンズバッジ
+人文科学,🎸 Historia de la Música Popular,🎸,4,見習い,"Disco, Funk y Soul",Nuevos ritmos,200,
+人文科学,🎸 Historia de la Música Popular,🎸,5,見習い,Hip-Hop y Rap,Cultura urbana,200,
+人文科学,🎸 Historia de la Música Popular,🎸,6,見習い,Música Electrónica,"Raves, DJs",200,🥈 シルバーバッジ
+人文科学,🎸 Historia de la Música Popular,🎸,7,鑑定家,Globalización Musical,"K-pop, reguetón",350,
+人文科学,🎸 Historia de la Música Popular,🎸,8,鑑定家,Industria del Streaming,"Spotify, plataformas",350,🥇 ゴールドバッジ
+人文科学,🎸 Historia de la Música Popular,🎸,9,エキスパート,Derechos de Autor y Música,"Copyright, conflictos",500,
+人文科学,🎸 Historia de la Música Popular,🎸,10,エキスパート,Música y Algoritmos,"Recomendación, creación IA",500,💎 ダイヤモンドバッジ
+健康,🎨 Psicología de la Creatividad,🎨,1,探検家,Qué es la Creatividad,Definiciones y mitos,100,
+健康,🎨 Psicología de la Creatividad,🎨,2,探検家,Cerebro Creativo,Redes neuronales implicadas,100,
+健康,🎨 Psicología de la Creatividad,🎨,3,探検家,Bloqueo Creativo,Causas habituales,100,🥉 ブロンズバッジ
+健康,🎨 Psicología de la Creatividad,🎨,4,見習い,Procesos Creativos,"Incubación, insight",200,
+健康,🎨 Psicología de la Creatividad,🎨,5,見習い,Creatividad en Ciencia y Arte,Casos históricos,200,
+健康,🎨 Psicología de la Creatividad,🎨,6,見習い,Ambiente y Creatividad,Entornos que ayudan,200,🥈 シルバーバッジ
+健康,🎨 Psicología de la Creatividad,🎨,7,鑑定家,Equipos Creativos,Colaboración y conflicto,350,
+健康,🎨 Psicología de la Creatividad,🎨,8,鑑定家,Creatividad en Empresas,Innovación y cultura,350,🥇 ゴールドバッジ
+健康,🎨 Psicología de la Creatividad,🎨,9,エキスパート,Medir Creatividad,"Tests, límites",500,
+健康,🎨 Psicología de la Creatividad,🎨,10,エキスパート,IA y Co-creación,Humanos + máquinas,500,💎 ダイヤモンドバッジ
+社会,📢 Historia de la Publicidad,📢,1,探検家,Anuncios en la Antigüedad,"Carteles, pregoneros",100,
+社会,📢 Historia de la Publicidad,📢,2,探検家,Publicidad en Prensa,Siglo XIX,100,
+社会,📢 Historia de la Publicidad,📢,3,探検家,Radio y TV,Spots icónicos,100,🥉 ブロンズバッジ
+社会,📢 Historia de la Publicidad,📢,4,見習い,Branding y Marcas,Identidad visual,200,
+社会,📢 Historia de la Publicidad,📢,5,見習い,Publicidad Digital,"Banners, SEM",200,
+社会,📢 Historia de la Publicidad,📢,6,見習い,Redes Sociales e Influencers,Nuevos formatos,200,🥈 シルバーバッジ
+社会,📢 Historia de la Publicidad,📢,7,鑑定家,Psicología del Consumo,Persuasión y emoción,350,
+社会,📢 Historia de la Publicidad,📢,8,鑑定家,Ética en la Publicidad,"Manipulación, regulación",350,🥇 ゴールドバッジ
+社会,📢 Historia de la Publicidad,📢,9,エキスパート,Publicidad Personalizada,Microsegmentación,500,
+社会,📢 Historia de la Publicidad,📢,10,エキスパート,Futuro de la Publicidad,"IA creativa, realidad aumentada",500,💎 ダイヤモンドバッジ
+健康,🧠 Historia de la Medicina Mental,🧠,1,探検家,Concepciones Antiguas,"Espíritus, humores",100,
+健康,🧠 Historia de la Medicina Mental,🧠,2,探検家,Manicomios y Encierros,Siglos XVIII-XIX,100,
+健康,🧠 Historia de la Medicina Mental,🧠,3,探検家,Nacimiento de la Psiquiatría,"Pinel, primeras clasificaciones",100,🥉 ブロンズバッジ
+健康,🧠 Historia de la Medicina Mental,🧠,4,見習い,Psicoanálisis y Freud,"Inconsciente, terapia",200,
+健康,🧠 Historia de la Medicina Mental,🧠,5,見習い,Psicofármacos,Revolución farmacológica,200,
+健康,🧠 Historia de la Medicina Mental,🧠,6,見習い,Terapias Cognitivo-Conductuales,Nuevos enfoques,200,🥈 シルバーバッジ
+健康,🧠 Historia de la Medicina Mental,🧠,7,鑑定家,Salud Mental Comunitaria,Desinstitucionalización,350,
+健康,🧠 Historia de la Medicina Mental,🧠,8,鑑定家,Salud Mental en la Cultura,"Estigma, representaciones",350,🥇 ゴールドバッジ
+健康,🧠 Historia de la Medicina Mental,🧠,9,エキスパート,Digitalización de la Terapia,"Apps, telepsicología",500,
+健康,🧠 Historia de la Medicina Mental,🧠,10,エキスパート,Futuro de la Salud Mental,"Prevención, IA, personalización",500,💎 ダイヤモンドバッジ
+社会,🏆 Historia del Deporte,🏆,1,探検家,Juegos Antiguos,"Olímpicos, rituales",100,
+社会,🏆 Historia del Deporte,🏆,2,探検家,Deporte Moderno,Reglas y federaciones,100,
+社会,🏆 Historia del Deporte,🏆,3,探検家,Fútbol y Deportes de Masas,"Clubes, ligas",100,🥉 ブロンズバッジ
+社会,🏆 Historia del Deporte,🏆,4,見習い,Juegos Olímpicos Modernos,Renacimiento y evolución,200,
+社会,🏆 Historia del Deporte,🏆,5,見習い,Profesionalización y Negocio,"Contratos, derechos TV",200,
+社会,🏆 Historia del Deporte,🏆,6,見習い,Deporte Femenino,Luchas por visibilidad,200,🥈 シルバーバッジ
+社会,🏆 Historia del Deporte,🏆,7,鑑定家,Deporte y Política,"Boicots, propaganda",350,
+社会,🏆 Historia del Deporte,🏆,8,鑑定家,Dopaje y Ética,Casos célebres,350,🥇 ゴールドバッジ
+社会,🏆 Historia del Deporte,🏆,9,エキスパート,Ciencia del Rendimiento,"Nutrición, datos",500,
+社会,🏆 Historia del Deporte,🏆,10,エキスパート,Deporte del Futuro,"E-sports, nuevos formatos",500,💎 ダイヤモンドバッジ
+科学,⏳ Historia del Tiempo y Calendarios,⏳,1,探検家,Medir el Tiempo,"Sol, luna, ciclos",100,
+科学,⏳ Historia del Tiempo y Calendarios,⏳,2,探検家,Calendarios Antiguos,"Egipcio, maya",100,
+科学,⏳ Historia del Tiempo y Calendarios,⏳,3,探検家,Calendario Romano y Gregoriano,Reformas,100,🥉 ブロンズバッジ
+科学,⏳ Historia del Tiempo y Calendarios,⏳,4,見習い,Relojes Mecánicos,"Campanarios, relojes de bolsillo",200,
+科学,⏳ Historia del Tiempo y Calendarios,⏳,5,見習い,Husos Horarios,Coordinación global,200,
+科学,⏳ Historia del Tiempo y Calendarios,⏳,6,見習い,Tiempo Atómico,Precisión extrema,200,🥈 シルバーバッジ
+科学,⏳ Historia del Tiempo y Calendarios,⏳,7,鑑定家,Percepción Humana del Tiempo,Psicología,350,
+科学,⏳ Historia del Tiempo y Calendarios,⏳,8,鑑定家,Tiempo en la Física,Relatividad,350,🥇 ゴールドバッジ
+科学,⏳ Historia del Tiempo y Calendarios,⏳,9,エキスパート,Tiempo en la Cultura,"Ritmos, rituales",500,
+科学,⏳ Historia del Tiempo y Calendarios,⏳,10,エキスパート,Futuro del Tiempo Humano,"Vida acelerada, IA",500,💎 ダイヤモンドバッジ
+社会,🚢 Historia del Comercio y la Globalización,🚢,1,探検家,Trueque y Mercados Locales,Intercambios básicos,100,
+社会,🚢 Historia del Comercio y la Globalización,🚢,2,探検家,Rutas de la Seda y Marítimas,Intercambio global temprano,100,
+社会,🚢 Historia del Comercio y la Globalización,🚢,3,探検家,Compañías Coloniales,Compañía de Indias,100,🥉 ブロンズバッジ
+社会,🚢 Historia del Comercio y la Globalización,🚢,4,見習い,Revolución Industrial y Comercio,Manufacturas y exportación,200,
+社会,🚢 Historia del Comercio y la Globalización,🚢,5,見習い,Era del Contenedor,Logística moderna,200,
+社会,🚢 Historia del Comercio y la Globalización,🚢,6,見習い,Organismos Internacionales,"OMC, tratados de libre comercio",200,🥈 シルバーバッジ
+社会,🚢 Historia del Comercio y la Globalización,🚢,7,鑑定家,Cadenas Globales de Valor,Producción distribuida,350,
+社会,🚢 Historia del Comercio y la Globalización,🚢,8,鑑定家,Desigualdad y Globalización,Ganadores y perdedores,350,🥇 ゴールドバッジ
+社会,🚢 Historia del Comercio y la Globalización,🚢,9,エキスパート,Crisis y Guerras Comerciales,"Aranceles, sanciones",500,
+社会,🚢 Historia del Comercio y la Globalización,🚢,10,エキスパート,Globalización 2.0,"Digital, servicios, desglobalización",500,💎 ダイヤモンドバッジ
+社会,💰 Historia del Dinero,💰,1,探検家,Trueque y Objetos de Valor,"Sal, conchas",100,
+社会,💰 Historia del Dinero,💰,2,探検家,Monedas y Metales,"Oro, plata",100,
+社会,💰 Historia del Dinero,💰,3,探検家,Billetes y Bancos,"Pagarés, bancos centrales",100,🥉 ブロンズバッジ
+社会,💰 Historia del Dinero,💰,4,見習い,Patrón Oro y su Fin,Bretton Woods,200,
+社会,💰 Historia del Dinero,💰,5,見習い,Tarjetas y Dinero Electrónico,"Crédito, débito",200,
+社会,💰 Historia del Dinero,💰,6,見習い,Mercados Financieros Modernos,"Bolsas, derivados",200,🥈 シルバーバッジ
+社会,💰 Historia del Dinero,💰,7,鑑定家,Crisis Monetarias,"Hiperinflaciones, devaluaciones",350,
+社会,💰 Historia del Dinero,💰,8,鑑定家,Criptomonedas,"Bitcoin, alternativas",350,🥇 ゴールドバッジ
+社会,💰 Historia del Dinero,💰,9,エキスパート,Dinero y Poder,Moneda como herramienta política,500,
+社会,💰 Historia del Dinero,💰,10,エキスパート,Futuro del Dinero,"CBDC, dinero programable",500,💎 ダイヤモンドバッジ
+人文科学,🎲 Historia de los Juegos de Mesa,🎲,1,探検家,Juegos Antiguos,"Senet, Go",100,
+人文科学,🎲 Historia de los Juegos de Mesa,🎲,2,探検家,Ajedrez y Estrategia,Historia y cultura,100,
+人文科学,🎲 Historia de los Juegos de Mesa,🎲,3,探検家,Juegos Clásicos Modernos,"Monopoly, Scrabble",100,🥉 ブロンズバッジ
+人文科学,🎲 Historia de los Juegos de Mesa,🎲,4,見習い,Eurogames y Revolución Moderna,"Catan, Carcassonne",200,
+人文科学,🎲 Historia de los Juegos de Mesa,🎲,5,見習い,Juegos Cooperativos,"Pandemic, nuevos enfoques",200,
+人文科学,🎲 Historia de los Juegos de Mesa,🎲,6,見習い,Juegos de Rol de Mesa,Dungeons & Dragons,200,🥈 シルバーバッジ
+人文科学,🎲 Historia de los Juegos de Mesa,🎲,7,鑑定家,Diseño de Juegos de Mesa,"Mecánicas, balance",350,
+人文科学,🎲 Historia de los Juegos de Mesa,🎲,8,鑑定家,Comunidades y Ferias,"Essen, eventos",350,🥇 ゴールドバッジ
+人文科学,🎲 Historia de los Juegos de Mesa,🎲,9,エキスパート,Juegos como Herramienta Educativa,Serious boardgames,500,
+人文科学,🎲 Historia de los Juegos de Mesa,🎲,10,エキスパート,Futuro Híbrido,"Mesa + apps, IA",500,💎 ダイヤモンドバッジ
+自然,🌊 Historia de la Exploración Oceánica,🌊,1,探検家,Primeras Navegaciones,"Costas, islas",100,
+自然,🌊 Historia de la Exploración Oceánica,🌊,2,探検家,Grandes Descubrimientos,"Colón, Magallanes",100,
+自然,🌊 Historia de la Exploración Oceánica,🌊,3,探検家,Cartografía Marina,Mapas y peligros,100,🥉 ブロンズバッジ
+自然,🌊 Historia de la Exploración Oceánica,🌊,4,見習い,Exploración de Profundidades,"Batiscafos, Jacques Cousteau",200,
+自然,🌊 Historia de la Exploración Oceánica,🌊,5,見習い,Submarinos Militares,Guerras mundiales,200,
+自然,🌊 Historia de la Exploración Oceánica,🌊,6,見習い,Exploración Científica Moderna,"ROVs, Argo",200,🥈 シルバーバッジ
+自然,🌊 Historia de la Exploración Oceánica,🌊,7,鑑定家,Recursos del Fondo Marino,"Minerales, ecosistemas",350,
+自然,🌊 Historia de la Exploración Oceánica,🌊,8,鑑定家,Pecios y Tesoro,Naufragios famosos,350,🥇 ゴールドバッジ
+自然,🌊 Historia de la Exploración Oceánica,🌊,9,エキスパート,Conservación de Océanos,Amenazas y soluciones,500,
+自然,🌊 Historia de la Exploración Oceánica,🌊,10,エキスパート,Colonización del Océano,Ciudades submarinas,500,💎 ダイヤモンドバッジ
+科学,🗺️ Historia de la Cartografía,🗺️,1,探検家,Primeros Mapas,"Cuevas, tablillas",100,
+科学,🗺️ Historia de la Cartografía,🗺️,2,探検家,Mapas Antiguos,"Ptolomeo, mapas del mundo",100,
+科学,🗺️ Historia de la Cartografía,🗺️,3,探検家,Edad de los Descubrimientos,Mapas náuticos,100,🥉 ブロンズバッジ
+科学,🗺️ Historia de la Cartografía,🗺️,4,見習い,Proyecciones y Distorsiones,"Mercator, alternativas",200,
+科学,🗺️ Historia de la Cartografía,🗺️,5,見習い,Mapas Temáticos,"Clima, población",200,
+科学,🗺️ Historia de la Cartografía,🗺️,6,見習い,Fotografía Aérea y Satélites,Nueva era de mapas,200,🥈 シルバーバッジ
+科学,🗺️ Historia de la Cartografía,🗺️,7,鑑定家,Sistemas de Información Geográfica,GIS,350,
+科学,🗺️ Historia de la Cartografía,🗺️,8,鑑定家,Mapas en la Vida Cotidiana,"GPS, apps",350,🥇 ゴールドバッジ
+科学,🗺️ Historia de la Cartografía,🗺️,9,エキスパート,Mapas y Poder,"Propaganda, reclamaciones",500,
+科学,🗺️ Historia de la Cartografía,🗺️,10,エキスパート,Cartografía del Futuro,"Realidad aumentada, 3D",500,💎 ダイヤモンドバッジ
+社会,🏠 Historia del Trabajo Doméstico,🏠,1,探検家,Economía Doméstica Tradicional,Trabajo invisible,100,
+社会,🏠 Historia del Trabajo Doméstico,🏠,2,探検家,Industrialización y Hogar,Cambios de rol,100,
+社会,🏠 Historia del Trabajo Doméstico,🏠,3,探検家,Electrodomésticos,Revolución silenciosa,100,🥉 ブロンズバッジ
+社会,🏠 Historia del Trabajo Doméstico,🏠,4,見習い,División Sexual del Trabajo,Normas culturales,200,
+社会,🏠 Historia del Trabajo Doméstico,🏠,5,見習い,Trabajo de Cuidados,"Niños, mayores",200,
+社会,🏠 Historia del Trabajo Doméstico,🏠,6,見習い,Trabajadoras del Hogar,Derechos y luchas,200,🥈 シルバーバッジ
+社会,🏠 Historia del Trabajo Doméstico,🏠,7,鑑定家,Externalización del Trabajo Doméstico,"Servicios, limpieza",350,
+社会,🏠 Historia del Trabajo Doméstico,🏠,8,鑑定家,Tecnología y Hogar Inteligente,Domótica,350,🥇 ゴールドバッジ
+社会,🏠 Historia del Trabajo Doméstico,🏠,9,エキスパート,Valor Económico del Trabajo No Remunerado,Cálculos y debates,500,
+社会,🏠 Historia del Trabajo Doméstico,🏠,10,エキスパート,Futuro del Hogar Automatizado,Robots domésticos,500,💎 ダイヤモンドバッジ
+社会,✈️ Historia del Turismo,✈️,1,探検家,Peregrinajes y Viajes Antiguos,Motivaciones tempranas,100,
+社会,✈️ Historia del Turismo,✈️,2,探検家,Grand Tour y Viaje Aristocrático,Siglos XVII-XVIII,100,
+社会,✈️ Historia del Turismo,✈️,3,探検家,Nacimiento del Turismo de Masas,"Trenes, vacaciones pagadas",100,🥉 ブロンズバッジ
+社会,✈️ Historia del Turismo,✈️,4,見習い,Turismo de Sol y Playa,Desarrollo costero,200,
+社会,✈️ Historia del Turismo,✈️,5,見習い,Turismo Cultural y Urbano,Ciudades icónicas,200,
+社会,✈️ Historia del Turismo,✈️,6,見習い,Turismo de Naturaleza y Aventura,Ecoturismo,200,🥈 シルバーバッジ
+社会,✈️ Historia del Turismo,✈️,7,鑑定家,Impacto del Turismo,"Economía, gentrificación",350,
+社会,✈️ Historia del Turismo,✈️,8,鑑定家,Turismo Sostenible,Buenas prácticas,350,🥇 ゴールドバッジ
+社会,✈️ Historia del Turismo,✈️,9,エキスパート,Turismo en Crisis,"Guerras, pandemias",500,
+社会,✈️ Historia del Turismo,✈️,10,エキスパート,Turismo del Futuro,"Virtual, espacial",500,💎 ダイヤモンドバッジ
+社会,📻 Historia de los Medios de Comunicación,📻,1,探検家,Oralidad y Manuscritos,Tradición oral,100,
+社会,📻 Historia de los Medios de Comunicación,📻,2,探検家,Imprenta y Libros,Revolución de Gutenberg,100,
+社会,📻 Historia de los Medios de Comunicación,📻,3,探検家,Prensa y Opinión Pública,Periódicos,100,🥉 ブロンズバッジ
+社会,📻 Historia de los Medios de Comunicación,📻,4,見習い,Radio,Voces a distancia,200,
+社会,📻 Historia de los Medios de Comunicación,📻,5,見習い,Televisión,Imagen en casa,200,
+社会,📻 Historia de los Medios de Comunicación,📻,6,見習い,Internet y Redes,Medios digitales,200,🥈 シルバーバッジ
+社会,📻 Historia de los Medios de Comunicación,📻,7,鑑定家,Concentración Mediática,Grandes grupos,350,
+社会,📻 Historia de los Medios de Comunicación,📻,8,鑑定家,Fake News y Desinformación,Retos actuales,350,🥇 ゴールドバッジ
+社会,📻 Historia de los Medios de Comunicación,📻,9,エキスパート,Periodismo de Datos,Nuevas formas de contar,500,
+社会,📻 Historia de los Medios de Comunicación,📻,10,エキスパート,Medios del Futuro,"Realidad mixta, IA",500,💎 ダイヤモンドバッジ
+科学,🌍 Historia del Clima de la Tierra,🌍,1,探検家,Eras Geológicas,Resumen de grandes periodos,100,
+科学,🌍 Historia del Clima de la Tierra,🌍,2,探検家,Glaciaciones,Edades de hielo,100,
+科学,🌍 Historia del Clima de la Tierra,🌍,3,探検家,Períodos Cálidos,Tiempos sin hielo,100,🥉 ブロンズバッジ
+科学,🌍 Historia del Clima de la Tierra,🌍,4,見習い,Cómo Sabemos del Clima Pasado,"Testigos de hielo, sedimentos",200,
+科学,🌍 Historia del Clima de la Tierra,🌍,5,見習い,Clima y Grandes Extinciones,Relaciones,200,
+科学,🌍 Historia del Clima de la Tierra,🌍,6,見習い,Clima y Civilizaciones,Colapsos y prosperidad,200,🥈 シルバーバッジ
+科学,🌍 Historia del Clima de la Tierra,🌍,7,鑑定家,Era Industrial y Cambio Climático,"CO2, forzamientos",350,
+科学,🌍 Historia del Clima de la Tierra,🌍,8,鑑定家,Modelos Climáticos,Simulaciones y escenarios,350,🥇 ゴールドバッジ
+科学,🌍 Historia del Clima de la Tierra,🌍,9,エキスパート,Puntos de No Retorno,Riesgos sistémicos,500,
+科学,🌍 Historia del Clima de la Tierra,🌍,10,エキスパート,Futuros Climáticos,Trayectorias posibles,500,💎 ダイヤモンドバッジ
+技術,💻 Historia de la Informática Personal,💻,1,探検家,Primeros PCs,"Altair, Apple I",100,
+技術,💻 Historia de la Informática Personal,💻,2,探検家,Revolución del PC de Escritorio,"IBM PC, compatibles",100,
+技術,💻 Historia de la Informática Personal,💻,3,探検家,Interfaces Gráficas,"Macintosh, Windows",100,🥉 ブロンズバッジ
+技術,💻 Historia de la Informática Personal,💻,4,見習い,Portátiles y Movilidad,Laptops,200,
+技術,💻 Historia de la Informática Personal,💻,5,見習い,Internet en Casa,"Módems, banda ancha",200,
+技術,💻 Historia de la Informática Personal,💻,6,見習い,Smartphones,"iPhone, Android",200,🥈 シルバーバッジ
+技術,💻 Historia de la Informática Personal,💻,7,鑑定家,Tablets y Dispositivos Híbridos,Nuevas formas,350,
+技術,💻 Historia de la Informática Personal,💻,8,鑑定家,Ecosistemas y Jardines Cerrados,App stores,350,🥇 ゴールドバッジ
+技術,💻 Historia de la Informática Personal,💻,9,エキスパート,Informática Ubicua,IoT,500,
+技術,💻 Historia de la Informática Personal,💻,10,エキスパート,Humanos Aumentados,Wearables avanzados,500,💎 ダイヤモンドバッジ
+社会,🍎 Historia de la Educación,🍎,1,探検家,Educación en Sociedades Antiguas,Aprendizaje maestro-discípulo,100,
+社会,🍎 Historia de la Educación,🍎,2,探検家,Universidades Medievales,"Bolonia, París",100,
+社会,🍎 Historia de la Educación,🍎,3,探検家,Escuela Pública,Sistemas nacionales,100,🥉 ブロンズバッジ
+社会,🍎 Historia de la Educación,🍎,4,見習い,Metodologías Clásicas,"Memorización, examen",200,
+社会,🍎 Historia de la Educación,🍎,5,見習い,Pedagogías Activas,"Montessori, Freinet",200,
+社会,🍎 Historia de la Educación,🍎,6,見習い,Educación Masiva y Online,MOOCs,200,🥈 シルバーバッジ
+社会,🍎 Historia de la Educación,🍎,7,鑑定家,Brecha Educativa Global,Acceso desigual,350,
+社会,🍎 Historia de la Educación,🍎,8,鑑定家,Evaluación y Métricas,"Notas, estandarización",350,🥇 ゴールドバッジ
+社会,🍎 Historia de la Educación,🍎,9,エキスパート,Aprendizaje Personalizado,Datos y adaptación,500,
+社会,🍎 Historia de la Educación,🍎,10,エキスパート,Educación del Futuro,"Lifelong learning, IA",500,💎 ダイヤモンドバッジ
+人文科学,⛪ Historia de la Arquitectura Sagrada,⛪,1,探検家,Templos Antiguos,"Egipto, Grecia",100,
+人文科学,⛪ Historia de la Arquitectura Sagrada,⛪,2,探検家,Basílicas y Catedrales,Cristianismo,100,
+人文科学,⛪ Historia de la Arquitectura Sagrada,⛪,3,探検家,Mezquitas y Arquitectura Islámica,Elementos clave,100,🥉 ブロンズバッジ
+人文科学,⛪ Historia de la Arquitectura Sagrada,⛪,4,見習い,Pagodas y Templos Asiáticos,"Budismo, taoísmo",200,
+人文科学,⛪ Historia de la Arquitectura Sagrada,⛪,5,見習い,Arquitectura Sagrada en América,Pirámides mesoamericanas,200,
+人文科学,⛪ Historia de la Arquitectura Sagrada,⛪,6,見習い,Símbolos y Orientaciones,Geometría sagrada,200,🥈 シルバーバッジ
+人文科学,⛪ Historia de la Arquitectura Sagrada,⛪,7,鑑定家,Transformaciones y Reutilizaciones,Edificios cambiando de culto,350,
+人文科学,⛪ Historia de la Arquitectura Sagrada,⛪,8,鑑定家,Arquitectura Sagrada Contemporánea,Innovaciones,350,🥇 ゴールドバッジ
+人文科学,⛪ Historia de la Arquitectura Sagrada,⛪,9,エキスパート,Turismo y Comercialización,Espacios sacros como atracciones,500,
+人文科学,⛪ Historia de la Arquitectura Sagrada,⛪,10,エキスパート,Espiritualidad y Espacios del Futuro,Nuevos templos,500,💎 ダイヤモンドバッジ
+科学,🧪 Historia de la Biotecnología,🧪,1,探検家,Fermentación y Usos Antiguos,"Pan, vino",100,
+科学,🧪 Historia de la Biotecnología,🧪,2,探検家,Descubrimiento de Microorganismos,Microscopios,100,
+科学,🧪 Historia de la Biotecnología,🧪,3,探検家,Genética Clásica,Mendel,100,🥉 ブロンズバッジ
+科学,🧪 Historia de la Biotecnología,🧪,4,見習い,ADN y Doble Hélice,Watson y Crick,200,
+科学,🧪 Historia de la Biotecnología,🧪,5,見習い,Ingeniería Genética,ADN recombinante,200,
+科学,🧪 Historia de la Biotecnología,🧪,6,見習い,Biotecnología Industrial,"Farmacia, alimentos",200,🥈 シルバーバッジ
+科学,🧪 Historia de la Biotecnología,🧪,7,鑑定家,"Biotecnología Roja, Verde y Blanca","Salud, agricultura, industria",350,
+科学,🧪 Historia de la Biotecnología,🧪,8,鑑定家,Bioética,Dilemas,350,🥇 ゴールドバッジ
+科学,🧪 Historia de la Biotecnología,🧪,9,エキスパート,CRISPR y Edición Precisa,Revolución reciente,500,
+科学,🧪 Historia de la Biotecnología,🧪,10,エキスパート,Biología Sintética,Diseñar vida,500,💎 ダイヤモンドバッジ
