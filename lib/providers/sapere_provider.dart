@@ -667,7 +667,7 @@ class BukBukProvider extends ChangeNotifier {
   // }) async {
   //   print('🌐 Generate API called');
   //
-  //   final String url = 'https://Bukbuk-Podcast.hf.space/generate';
+  //   final String url = 'https://web-production-033f3.up.railway.app/generate';
   //
   //   final String langName = (getLanguageName(languageCode)).trim();
   //   final String safeLang = langName.isEmpty ? 'English' : langName;
@@ -748,7 +748,8 @@ class BukBukProvider extends ChangeNotifier {
   }) async {
     addGenerationStep("📝 Generating title...");
 
-    final String url = 'https://Bukbuk-Podcast.hf.space/generate/title';
+    final String url =
+        'https://web-production-033f3.up.railway.app/generate/title';
     final String lang = (getLanguageName(languageCode)).trim();
     final String safeLang = lang.isEmpty ? 'English' : lang;
 
@@ -1246,7 +1247,7 @@ class BukBukProvider extends ChangeNotifier {
     setRxRequestStatus(CheckStatus.loading);
     setCommunityRequestStatus(CheckStatus.loading);
 
-    String url = 'https://Bukbuk-Podcast.hf.space/generate';
+    String url = 'https://web-production-033f3.up.railway.app/generate';
 
     var body = {
       "messages": [
