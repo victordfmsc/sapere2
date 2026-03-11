@@ -14,7 +14,6 @@ class UserModel {
   String signIn;
   String? lastCreditSync;
   Map<String, String>? shippingAddress;
-  List<String>? savedReels;
 
   UserModel({
     required this.uId,
@@ -30,7 +29,6 @@ class UserModel {
     required this.signIn,
     this.lastCreditSync,
     this.shippingAddress,
-    this.savedReels,
   });
 
   UserModel copyWith({
@@ -47,7 +45,6 @@ class UserModel {
     String? signIn,
     String? lastCreditSync,
     Map<String, String>? shippingAddress,
-    List<String>? savedReels,
   }) {
     return UserModel(
       uId: uId ?? this.uId,
@@ -63,7 +60,6 @@ class UserModel {
       signIn: signIn ?? this.signIn,
       lastCreditSync: lastCreditSync ?? this.lastCreditSync,
       shippingAddress: shippingAddress ?? this.shippingAddress,
-      savedReels: savedReels ?? this.savedReels,
     );
   }
 
@@ -83,7 +79,6 @@ class UserModel {
     result.addAll({'signIn': signIn});
     result.addAll({'lastCreditSync': lastCreditSync});
     result.addAll({'shippingAddress': shippingAddress});
-    result.addAll({'savedReels': savedReels});
 
     return result;
   }
@@ -103,8 +98,6 @@ class UserModel {
       signIn: map['signIn'] ?? '',
       lastCreditSync: map['lastCreditSync'],
       shippingAddress: Map<String, String>.from(map['shippingAddress'] ?? {}),
-      savedReels:
-          map['savedReels'] != null ? List<String>.from(map['savedReels']) : [],
     );
   }
 

@@ -60,41 +60,42 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
               .map((doc) => BukBukCategoryModel.fromFirestore(doc))
               .toList();
 
-      List<BukBukPost> allPosts = [];
+      setState(() {
+        _categories = categories;
+        _isLoading = false;
+      });
 
       // Get the correct language name for filtering (e.g., 'Spanish (Spain)')
       final String languageName = getLanguageName(codeLang ?? 'en_US');
 
-      // Fetch posts concurrently for each category, filtered by language and limited to 15
-      await Future.wait(
-        categories.map((category) async {
-          final postsSnapshot =
-              await FirebaseFirestore.instance
-                  .collection(sapereCollection)
-                  .where('bukbukCategoryId', isEqualTo: category.docId)
-                  .where('language', isEqualTo: languageName)
-                  .limit(15)
-                  .get();
+      // Fetch posts for each category one by one and update UI as they arrive
+      for (var category in categories) {
+        final postsSnapshot =
+            await FirebaseFirestore.instance
+                .collection(sapereCollection)
+                .where('bukbukCategoryId', isEqualTo: category.docId)
+                .where('language', isEqualTo: languageName)
+                .limit(15)
+                .get();
 
-          final posts =
-              postsSnapshot.docs
-                  .map((doc) => BukBukPost.fromFirestore(doc))
-                  .toList();
+        final posts =
+            postsSnapshot.docs
+                .map((doc) => BukBukPost.fromFirestore(doc))
+                .toList();
 
-          allPosts.addAll(posts);
-        }),
-      );
-
-      setState(() {
-        _categories = categories;
-        _posts = allPosts;
-        _isLoading = false;
-      });
+        if (mounted) {
+          setState(() {
+            _posts.addAll(posts);
+          });
+        }
+      }
     } catch (e) {
       print('Error fetching data: $e');
-      setState(() {
-        _isLoading = false;
-      });
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+        });
+      }
     }
   }
 
@@ -161,12 +162,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                               category.names.values.first;
                         }
 
-                        // Ensure categories always render, even if empty,
-                        // to align with the backend admin choices.
-                        // if (bukbukInCategory.isEmpty) {
-                        //   return const SizedBox.shrink();
-                        // }
-
                         return Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -199,17 +194,30 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                               ),
                             ),
                             if (bukbukInCategory.isEmpty)
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 20.w,
-                                  vertical: 10.h,
-                                ),
-                                child: Text(
-                                  'noDataFound'.tr,
-                                  style: TextStyle(
-                                    color: Colors.white54,
-                                    fontSize: 14.sp,
-                                    fontStyle: FontStyle.italic,
+                              SizedBox(
+                                height: 200.h,
+                                child: Center(
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      SizedBox(
+                                        width: 20.w,
+                                        height: 20.w,
+                                        child: CircularProgressIndicator(
+                                          strokeWidth: 2,
+                                          color: AppColors.textColor
+                                              .withOpacity(0.5),
+                                        ),
+                                      ),
+                                      SizedBox(height: 12.h),
+                                      Text(
+                                        'loading'.tr,
+                                        style: TextStyle(
+                                          color: Colors.white38,
+                                          fontSize: 12.sp,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                               )

@@ -1,5 +1,6 @@
 import 'package:sapere/core/constant/colors.dart';
 import 'package:sapere/core/constant/const.dart';
+import 'package:sapere/core/services/app_rating_service.dart';
 import 'package:sapere/core/services/database_helper.dart';
 
 import 'package:sapere/models/post.dart';
@@ -18,7 +19,6 @@ import 'package:provider/provider.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 import 'package:sapere/widgets/sapere_image.dart';
 import 'components/sapere_card.dart';
-import 'package:sapere/widgets/dailogs/preview_creation_dialog.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -75,18 +75,13 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ),
                           // 1.5 Subscription Banner
-                          if (!iapProvider.isSubscribed)
+                          if (!iapProvider.isSubscribed &&
+                              !AppRatingService.instance.hasRatedApp)
                             SliverToBoxAdapter(
                               child: _buildSubscriptionBanner(
                                 iapProvider,
                                 context,
                               ),
-                            ),
-
-                          // 2. Previews (Circular)
-                          if (vm.previews.isNotEmpty)
-                            SliverToBoxAdapter(
-                              child: _buildPreviewCircles(vm.previews, context),
                             ),
 
                           // 3. Horizontal Story Rows
@@ -126,33 +121,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                               ),
                             ),
-
-                          SliverToBoxAdapter(
-                            child: Padding(
-                              padding: EdgeInsets.symmetric(
-                                horizontal: 20.w,
-                                vertical: 20.h,
-                              ),
-                              child: ElevatedButton(
-                                onPressed: () => vm.cleanupEmptyCovers(),
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: Colors.red.withOpacity(0.1),
-                                  foregroundColor: Colors.red,
-                                  side: BorderSide(
-                                    color: Colors.red.withOpacity(0.3),
-                                  ),
-                                  padding: EdgeInsets.symmetric(vertical: 15.h),
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(12.r),
-                                  ),
-                                ),
-                                child: const Text(
-                                  "ELIMINAR AUDIOS SIN PORTADA (CLEANUP)",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                            ),
-                          ),
 
                           SliverToBoxAdapter(child: SizedBox(height: 100.h)),
                         ],
@@ -422,123 +390,6 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildPreviewCircles(List<BukBukPost> posts, BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: EdgeInsets.only(left: 20.w, bottom: 15.h, top: 20.h),
-          child: Text(
-            "previews".tr,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 18.sp,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-        SizedBox(
-          height: 140.h,
-          child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            padding: EdgeInsets.symmetric(horizontal: 15.w),
-            itemCount: posts.length + 1, // +1 for the "Add" button
-            itemBuilder: (context, index) {
-              if (index == 0) {
-                // Add Preview Button
-                return GestureDetector(
-                  onTap: () {
-                    Get.dialog(const PreviewCreationDialog());
-                  },
-                  child: Container(
-                    margin: EdgeInsets.symmetric(horizontal: 8.w),
-                    child: Column(
-                      children: [
-                        Container(
-                          width: 80.w,
-                          height: 80.w,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            gradient: LinearGradient(
-                              colors: AppColors.kGoldGradient,
-                            ),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.amber.withOpacity(0.3),
-                                blurRadius: 8,
-                                spreadRadius: 1,
-                              ),
-                            ],
-                          ),
-                          child: Icon(
-                            Icons.add,
-                            color: Colors.black,
-                            size: 32.sp,
-                          ),
-                        ),
-                        SizedBox(height: 5.h),
-                        Text(
-                          "crear".tr,
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 10.sp,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                );
-              }
-
-              final post = posts[index - 1];
-              return GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(
-                    context,
-                    Routes.previewReels,
-                    arguments: post,
-                  );
-                },
-                child: Container(
-                  margin: EdgeInsets.symmetric(horizontal: 8.w),
-                  child: Column(
-                    children: [
-                      Container(
-                        width: 80.w,
-                        height: 80.w,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          border: Border.all(
-                            color: AppColors.kSamiOrange,
-                            width: 2,
-                          ),
-                        ),
-                        child: ClipOval(
-                          child: SapereImage(
-                            imageUrl: post.newCover.toString(),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
-                      SizedBox(height: 5.h),
-                      Text(
-                        post.sapereName ?? "",
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(color: Colors.white, fontSize: 10.sp),
-                      ),
-                    ],
-                  ),
-                ),
-              );
-            },
-          ),
-        ),
-      ],
-    );
-  }
-
   Widget _buildStoryRow(
     String title,
     List<BukBukPost> posts,
@@ -677,7 +528,6 @@ class StreamVm extends ChangeNotifier {
     getAppVersion();
 
     loadLanguage().then((_) {
-      fetchPreviews();
       fetchPosts();
 
       scrollController.addListener(() {
@@ -693,7 +543,6 @@ class StreamVm extends ChangeNotifier {
 
   final _advancedDrawerController = AdvancedDrawerController();
   final List<BukBukPost> posts = [];
-  final List<BukBukPost> previews = [];
   final ScrollController scrollController = ScrollController();
   final int _limit = 15;
 
@@ -727,9 +576,7 @@ class StreamVm extends ChangeNotifier {
     if (forceReload) {
       lastDocument = null;
       posts.clear();
-      previews.clear();
       _hasMore = true;
-      fetchPreviews();
       fetchPosts();
     }
   }
@@ -750,10 +597,8 @@ class StreamVm extends ChangeNotifier {
     // We clear posts and reload
     lastDocument = null;
     posts.clear();
-    previews.clear();
     _hasMore = true;
     notifyListeners();
-    fetchPreviews();
     fetchPosts();
   }
 
@@ -846,88 +691,8 @@ class StreamVm extends ChangeNotifier {
     }
   }
 
-  Future<void> fetchPreviews() async {
-    if (!isLangLoaded) return;
-
-    print('Language filter (Previews): $selectedLanguage');
-
-    Query<BukBukPost> query = db.postCollection
-        .withConverter<BukBukPost>(
-          fromFirestore: (doc, _) => BukBukPost.fromFirestore(doc),
-          toFirestore: (post, _) => post.toMap(),
-        )
-        .where('type', isEqualTo: 'preview')
-        .orderBy('publishTime', descending: true)
-        .limit(10); // Adjust preview limit as needed
-
-    if (selectedLanguage != "All") {
-      query = query.where('language', isEqualTo: selectedLanguage);
-    }
-
-    try {
-      final snapshot = await query.get();
-
-      if (snapshot.docs.isNotEmpty) {
-        previews.clear();
-        previews.addAll(
-          snapshot.docs.map((doc) => doc.data()).whereType<BukBukPost>(),
-        );
-        notifyListeners();
-      }
-    } catch (e) {
-      print('❌ Error fetching previews: $e');
-    }
-  }
-
   void handleMenuButtonPressed() {
     _advancedDrawerController.showDrawer();
-  }
-
-  Future<void> cleanupEmptyCovers() async {
-    final defaultCover =
-        "https://firebasestorage.googleapis.com/v0/b/sapere-6b92a.appspot.com/o/app_assets%2Fgamification_default.png?alt=media";
-
-    setIsLoading(true);
-    notifyListeners();
-
-    try {
-      final snapshot = await db.postCollection.get();
-      int deletedCount = 0;
-
-      for (var doc in snapshot.docs) {
-        final data = doc.data() as Map<String, dynamic>;
-        final String? cover = data['newCover'];
-        final String? title = data['bukbukName'];
-
-        // Criteria for "black image" or empty cover
-        if (cover == null ||
-            cover.isEmpty ||
-            cover.contains("black") ||
-            cover == defaultCover) {
-          await doc.reference.delete();
-          deletedCount++;
-          print('🗑️ Deleted audiobook without cover: $title');
-        }
-      }
-
-      Get.snackbar(
-        "Cleanup Complete",
-        "Successfully deleted $deletedCount items.",
-        backgroundColor: AppColors.primaryColor,
-        colorText: Colors.white,
-      );
-
-      // Refresh list
-      lastDocument = null;
-      posts.clear();
-      fetchPosts();
-    } catch (e) {
-      print('❌ Error during cleanup: $e');
-      Get.snackbar("Error", e.toString());
-    } finally {
-      setIsLoading(false);
-      notifyListeners();
-    }
   }
 
   Future<void> deletePost(String postId) async {
@@ -938,6 +703,20 @@ class StreamVm extends ChangeNotifier {
     } catch (e) {
       print('❌ Error deleting post: $e');
     }
+  }
+
+  /// Refreshes the post list after a delay to allow background tasks (like title generation) to finish.
+  Future<void> refreshWithDelay({int seconds = 5}) async {
+    print('⏱️ Starting delayed refresh ($seconds seconds)...');
+    await Future.delayed(Duration(seconds: seconds));
+
+    // Reset and refetch
+    lastDocument = null;
+    posts.clear();
+    _hasMore = true;
+    notifyListeners();
+    await fetchPosts();
+    print('✅ Delayed refresh complete.');
   }
 }
 

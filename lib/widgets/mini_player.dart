@@ -51,7 +51,7 @@ class MiniPlayer extends StatelessWidget {
                   left: 10.w,
                   right: 10.w,
                   top: 8.h,
-                  bottom: 125.h,
+                  bottom: 180.h,
                 ),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16.r),

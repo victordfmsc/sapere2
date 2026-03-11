@@ -16,8 +16,6 @@ import 'package:sapere/views/dashboard/stream/details_page/sapere_details.dart';
 import 'package:sapere/views/dashboard/subscription/subscription_page.dart';
 import 'package:sapere/views/landingPage/dashboard_page.dart';
 import 'package:sapere/views/onboarding/intro_screen.dart';
-import 'package:sapere/views/dashboard/stream/preview_reels_screen.dart';
-import 'package:sapere/views/dashboard/creations/saved_reels_screen.dart';
 import 'package:sapere/views/splash.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -51,8 +49,6 @@ class Routes {
   static const String longDescriptionScreen = '/longDescriptionScreen';
   static const String freeTrialScreen = '/freeTrialScreen';
   static const String audioPlayer = '/audioPlayer';
-  static const String previewReels = '/previewReels';
-  static const String savedReels = '/savedReels';
 }
 
 class AppPages {
@@ -133,15 +129,6 @@ class AppPages {
           AudioPlayerScreen(post: settings.arguments as BukBukPost),
           settings,
         );
-
-      case Routes.previewReels:
-        return _buildAnimatedRoute(
-          PreviewReelsScreen(initialPost: settings.arguments as BukBukPost),
-          settings,
-        );
-
-      case Routes.savedReels:
-        return _buildAnimatedRoute(const SavedReelsScreen(), settings);
 
       // case Routes.allCards:
       //   return _buildAnimatedRoute(

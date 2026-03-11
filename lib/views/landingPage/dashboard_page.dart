@@ -1,6 +1,6 @@
 import 'dart:developer';
-import 'dart:ui';
 import 'dart:io';
+import 'dart:ui';
 import 'package:sapere/animation/auto_shake_animation.dart';
 import 'package:sapere/core/constant/colors.dart';
 import 'package:sapere/core/constant/images.dart';
@@ -13,7 +13,7 @@ import 'package:sapere/views/dashboard/creations/creation_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:sapere/views/dashboard/stream/stream.dart';
 import 'package:sapere/views/dashboard/history/history_screen.dart';
-import 'package:sapere/widgets/dailogs/review_dialog.dart';
+import '../../core/services/app_rating_service.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -21,8 +21,6 @@ import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
-import 'package:sapere/core/services/app_rating_service.dart';
-
 import '../../core/services/local_storage_service.dart';
 import '../../providers/sapere_provider.dart';
 import '../../routes/app_pages.dart';
@@ -67,46 +65,63 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         : Padding(
                           key: vm.fab,
                           padding: EdgeInsets.only(bottom: 25.h),
-                          child: InkWell(
-                            onTap: () async {
-                              try {
-                                final provider =
-                                    Provider.of<InAppPurchaseProvider>(
-                                      context,
-                                      listen: false,
-                                    );
-                                await provider.check();
-                                final bukBukProvider =
-                                    Provider.of<BukBukProvider>(
-                                      context,
-                                      listen: false,
-                                    );
-                                bukBukProvider.isCommuinty = false;
+                          child: CustomShakeAnimation(
+                            begin: '-3.0',
+                            end: '3.0',
+                            isLeaf: false,
+                            child: InkWell(
+                              onTap: () async {
+                                try {
+                                  final provider =
+                                      Provider.of<InAppPurchaseProvider>(
+                                        context,
+                                        listen: false,
+                                      );
 
-                                showModalBottomSheet(
-                                  isScrollControlled: true,
-                                  enableDrag: true,
-                                  context: context,
-                                  useSafeArea: true,
-                                  // showDragHandle: true,
-                                  builder: (BuildContext context) {
-                                    return const BottomSheetContent();
-                                  },
-                                  backgroundColor: AppColors.whiteColor,
-                                );
-                              } catch (e) {
-                                print('Error checking post limit: $e');
-                                Get.snackbar(
-                                  'Error',
-                                  'wentWrong'.tr,
-                                  backgroundColor: Colors.red,
-                                  colorText: AppColors.textColor,
-                                );
-                              }
-                            },
-                            child: Image.asset(
-                              AppImagesUrls.addSymbol,
-                              height: 85.h,
+                                  // 2026 Strategy: Paywall ONLY on creation
+                                  if (!provider.isSubscribed) {
+                                    Get.toNamed(Routes.freeTrialScreen);
+                                    return;
+                                  }
+
+                                  await provider.check();
+                                  final bukBukProvider =
+                                      Provider.of<BukBukProvider>(
+                                        context,
+                                        listen: false,
+                                      );
+                                  bukBukProvider.isCommuinty = false;
+
+                                  showModalBottomSheet(
+                                    isScrollControlled: true,
+                                    enableDrag: true,
+                                    context: context,
+                                    useSafeArea: true,
+                                    // showDragHandle: true,
+                                    builder: (BuildContext context) {
+                                      return const BottomSheetContent();
+                                    },
+                                    backgroundColor: AppColors.whiteColor,
+                                  );
+                                } catch (e) {
+                                  print('Error checking post limit: $e');
+                                  Get.snackbar(
+                                    'Error',
+                                    'wentWrong'.tr,
+                                    backgroundColor: Colors.red,
+                                    colorText: AppColors.textColor,
+                                  );
+                                }
+                              },
+                              child: Stack(
+                                alignment: Alignment.center,
+                                children: [
+                                  Image.asset(
+                                    AppImagesUrls.addSymbol,
+                                    height: 85.h,
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -299,22 +314,12 @@ class DashboardVm extends ChangeNotifier {
   final GlobalKey books = GlobalKey();
   final GlobalKey social = GlobalKey();
 
-  late TutorialCoachMark tutorialCoachMark;
-  bool _tutorialShown = false;
-
   Future<void> init(BuildContext context) async {
     final localStorage = LocalStorage();
-    final prefs = await SharedPreferences.getInstance();
 
     final hasSeenTutorial =
         await localStorage.getData(key: AppLocalKeys.tutorialDashboard) ??
         'false';
-
-    final hasSeenFreeTrial = prefs.getBool('seenFreeTrialScreen') ?? false;
-
-    if (!hasSeenFreeTrial) {
-      await checkAndShowFreeTrial(context);
-    }
 
     if (hasSeenTutorial == 'false') {
       firebaseCustomEvent();
@@ -332,6 +337,7 @@ class DashboardVm extends ChangeNotifier {
       );
     }
 
+    // Re-enabled automated rating dialog as per user request (The "Evaluator")
     if (Platform.isAndroid || Platform.isIOS) {
       await AppRatingService.instance.init();
       if (context.mounted) {
@@ -362,43 +368,6 @@ class DashboardVm extends ChangeNotifier {
 
       await prefs.setBool('seenFreeTrialScreen', true);
     }
-  }
-
-  Future<void> checkTutorialStatus(BuildContext context) async {
-    final storage = LocalStorage();
-    final shownValue =
-        await storage.getData(key: AppLocalKeys.tutorialDashboard) ?? 'false';
-
-    _tutorialShown = shownValue == 'true';
-
-    if (!_tutorialShown) {
-      createTutorial();
-      showTutorial(context);
-      await storage.setData(key: AppLocalKeys.tutorialDashboard, value: 'true');
-    }
-  }
-
-  void showTutorial(BuildContext context) {
-    tutorialCoachMark.show(context: context);
-  }
-
-  void createTutorial() {
-    tutorialCoachMark = TutorialCoachMark(
-      targets: _createTargets(),
-      colorShadow: Colors.red,
-      hideSkip: true,
-      showSkipInLastTarget: true,
-      paddingFocus: 10,
-      opacityShadow: 0.5,
-      imageFilter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
-      onFinish: () {},
-      onClickTarget: (target) {},
-      onClickTargetWithTapPosition: (target, tapDetails) {},
-      onClickOverlay: (target) {},
-      onSkip: () {
-        return true;
-      },
-    );
   }
 
   List<TargetFocus> _createTargets() {

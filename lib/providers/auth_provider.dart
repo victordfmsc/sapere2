@@ -12,10 +12,13 @@ import 'package:crypto/crypto.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:provider/provider.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
+import 'package:sapere/core/utils/navigation_utils.dart';
+import 'package:sapere/providers/subscription_provider.dart';
 import '../core/constant/colors.dart';
 
 class AuthProvider with ChangeNotifier {
@@ -138,7 +141,13 @@ class AuthProvider with ChangeNotifier {
       if (user != null) {
         await user.reload();
         if (user.emailVerified) {
-          Navigator.pushReplacementNamed(context, Routes.dashboardScreen);
+          final subProvider = Provider.of<InAppPurchaseProvider>(
+            context,
+            listen: false,
+          );
+          await subProvider.checkSubscriptionStatus();
+          if (!context.mounted) return;
+          redirectToCorrectScreen(context, subProvider.isSubscribed);
         } else {
           Get.dialog(
             EmailVerificationDialog(
@@ -298,7 +307,14 @@ class AuthProvider with ChangeNotifier {
           );
           await createUser(userModel: userModel);
         }
-        Navigator.pushReplacementNamed(context, Routes.dashboardScreen);
+        if (!context.mounted) return;
+        final subProvider = Provider.of<InAppPurchaseProvider>(
+          context,
+          listen: false,
+        );
+        await subProvider.checkSubscriptionStatus();
+        if (!context.mounted) return;
+        redirectToCorrectScreen(context, subProvider.isSubscribed);
       }
     } catch (e) {
       log('Google sign-in error: $e');
@@ -362,7 +378,14 @@ class AuthProvider with ChangeNotifier {
           );
           await createUser(userModel: userModel);
         }
-        Navigator.pushReplacementNamed(context, Routes.dashboardScreen);
+        if (!context.mounted) return;
+        final subProvider = Provider.of<InAppPurchaseProvider>(
+          context,
+          listen: false,
+        );
+        await subProvider.checkSubscriptionStatus();
+        if (!context.mounted) return;
+        redirectToCorrectScreen(context, subProvider.isSubscribed);
       }
     } on FirebaseAuthException catch (e) {
       log('Apple login error (Firebase): ${e.toString()}');

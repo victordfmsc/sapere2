@@ -92,6 +92,29 @@ class InAppPurchaseProvider extends ChangeNotifier {
     return package;
   }
 
+  String get annualSavingsPercentage {
+    final annual = yearlyPackage;
+    final monthly = monthlyPackage;
+
+    if (annual == null || monthly == null) return "85%"; // Fallback
+
+    try {
+      final annualPrice = annual.storeProduct.price;
+      final monthlyPrice = monthly.storeProduct.price;
+
+      if (monthlyPrice == 0) return "85%";
+
+      final totalMonthlyCost = monthlyPrice * 12;
+      final savings =
+          ((totalMonthlyCost - annualPrice) / totalMonthlyCost) * 100;
+
+      return "${savings.toStringAsFixed(0)}%";
+    } catch (e) {
+      debugPrint('Error calculating savings: $e');
+      return "85%";
+    }
+  }
+
   Future<bool> buySubscription(Package package) async {
     try {
       debugPrint('Attempting to purchase: ${package.storeProduct.identifier}');

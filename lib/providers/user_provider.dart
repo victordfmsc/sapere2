@@ -104,37 +104,4 @@ class UserProvider with ChangeNotifier {
       debugPrint('Error updating FCM token: $e');
     }
   }
-
-  bool isReelSaved(String postId) {
-    return _userModel?.savedReels?.contains(postId) ?? false;
-  }
-
-  Future<void> updateSavedReel(String postId, bool isSaving) async {
-    if (currentAuthUid == null || _userModel == null) return;
-
-    try {
-      List<String> currentSaved = List.from(_userModel!.savedReels ?? []);
-
-      if (isSaving && !currentSaved.contains(postId)) {
-        currentSaved.add(postId);
-      } else if (!isSaving && currentSaved.contains(postId)) {
-        currentSaved.remove(postId);
-      } else {
-        return; // No change needed
-      }
-
-      // Optimistic update
-      _userModel = _userModel!.copyWith(savedReels: currentSaved);
-      notifyListeners();
-
-      await FirebaseFirestore.instance
-          .collection(firebaseUserCollection)
-          .doc(currentAuthUid!)
-          .update({'savedReels': currentSaved});
-    } catch (e) {
-      debugPrint('Error updating saved reels: $e');
-      // Revert on error (could fetch user data again)
-      fetchUserData();
-    }
-  }
 }

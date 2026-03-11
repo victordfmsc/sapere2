@@ -275,7 +275,7 @@ class BukBukProvider extends ChangeNotifier {
               .toList();
       isLoading = false;
       // Trigger cover migration for existing docs
-      updateExistingCovers();
+      // updateExistingCovers();
     } catch (e) {
       print('Error fetching diary types: $e');
       isLoading = false;
@@ -339,7 +339,7 @@ class BukBukProvider extends ChangeNotifier {
       final headers = {'Content-Type': 'application/json'};
       final response = await http
           .get(url, headers: headers)
-          .timeout(const Duration(seconds: 8));
+          .timeout(const Duration(seconds: 5));
 
       print('Status code is ${response.statusCode}');
 
@@ -423,30 +423,88 @@ class BukBukProvider extends ChangeNotifier {
     required String languageCode,
   }) async {
     try {
-      setRxRequestStatus(CheckStatus.loading);
       clearGenerationSteps();
-      addGenerationStep("🔄 Generating started...");
+      _descriptions.clear();
+      sapereTitle = "";
 
-      // 1) Generate Title
-      final title = await generateTitle(
-        genre: bukBukCategoryModel.names[languageCode].toString(),
-        userPrompt: baseUserPrompt,
-        languageCode: languageCode,
+      // ── PHASE 1 (instant): Create Firestore doc immediately ──────────────
+      // We create the post with a placeholder title so the user gets a doc id
+      // right away and we can navigate home without waiting for the AI.
+      final firestore = FirebaseFirestore.instance;
+      final docRef = firestore.collection('sapere').doc();
+      final newPostId = docRef.id;
+      final time = Timestamp.fromMicrosecondsSinceEpoch(
+        DateTime.now().microsecondsSinceEpoch,
       );
-      sapereTitle = (title == null || title.isEmpty) ? "Audio Book" : title;
-      print('🎯 Final Title to use: $sapereTitle');
+      final defaultCover = premiumDefaultCover;
+      final String languageName = getLanguageName(languageCode);
 
-      // 2) Generate podcast + upload
-      await uploadFullPodcast(
-        systemPrompt: systemPrompt,
-        baseUserPrompt: baseUserPrompt,
+      // Deduct credit before anything else
+      final subProvider = Provider.of<InAppPurchaseProvider>(
+        Get.context!,
+        listen: false,
+      );
+      final creditOk = await subProvider.deductCredit();
+      if (!creditOk) {
+        debugPrint('❌ Credit deduction failed. Aborting.');
+        showDialog(
+          context: Get.context!,
+          builder:
+              (context) => OutOfCreditsDialog(
+                nextRefillDate: subProvider.nextRefillDate,
+              ),
+        );
+        return;
+      }
+
+      final newPost = BukBukPost(
+        postId: newPostId,
+        sapereCategoryId: bukBukCategoryModel.docId,
+        sapereId: bukBukTypeModel.id,
+        sapereCategoryNames: bukBukCategoryModel.names,
+        sapereTypeNames: bukBukTypeModel.names,
+        sapereName: "...", // placeholder — updated by background task
+        newCover: selectedCover.isEmpty ? defaultCover : selectedCover,
+        sapereUrl: null,
+        publishTime: time,
+        language: languageName,
         languageCode: languageCode,
+        description: null,
+        uId: FirebaseAuth.instance.currentUser?.uid,
+        type: 'sapere',
       );
 
-      setRxRequestStatus(CheckStatus.completed);
+      await docRef.set(newPost.toMap());
+      print('✅ Post doc created instantly: $newPostId');
+
+      // Show success dialog and navigate home immediately
+      setSelectedCover('');
+      Get.dialog(
+        CreationSuccessDialog(
+          credits:
+              (Provider.of<UserProvider>(
+                        Get.context!,
+                        listen: false,
+                      ).user?.credits ??
+                      0)
+                  .toString(),
+        ),
+      );
+
+      // ── PHASE 2 (background): Generate title + audio ─────────────────────
+      // Fire-and-forget — UI is already unblocked.
+      unawaited(
+        _generateTitleAndAudioInBackground(
+          docId: newPostId,
+          docRef: docRef,
+          systemPrompt: systemPrompt,
+          baseUserPrompt: baseUserPrompt,
+          languageCode: languageCode,
+          languageName: languageName,
+        ),
+      );
     } catch (e, st) {
-      setRxRequestStatus(CheckStatus.error);
-      print('⚠️ Error in generating full story: $e');
+      print('⚠️ Error in generateFullStory: $e');
       print(st);
       Get.snackbar(
         'warningImage'.tr,
@@ -457,6 +515,64 @@ class BukBukProvider extends ChangeNotifier {
     }
   }
 
+  /// Background task: generate AI title, update Firestore, then call Railway.
+  Future<void> _generateTitleAndAudioInBackground({
+    required String docId,
+    required DocumentReference docRef,
+    required String systemPrompt,
+    required String baseUserPrompt,
+    required String languageCode,
+    required String languageName,
+  }) async {
+    try {
+      final generatedTitle = await generateTitle(
+        genre: bukBukCategoryModel.names[languageCode].toString(),
+        userPrompt: baseUserPrompt,
+        languageCode: languageCode,
+      );
+
+      // Fallback logic if AI title fails
+      String finalTitle;
+      if (generatedTitle != null &&
+          generatedTitle.isNotEmpty &&
+          generatedTitle != "...") {
+        finalTitle = generatedTitle;
+      } else {
+        // Fallback: Use the first 30 chars of the prompt or a localized default
+        String sanitizedPrompt =
+            baseUserPrompt.replaceAll(RegExp(r'[#*]'), '').trim();
+        if (sanitizedPrompt.length > 40) {
+          finalTitle = "${sanitizedPrompt.substring(0, 37)}...";
+        } else if (sanitizedPrompt.isNotEmpty) {
+          finalTitle = sanitizedPrompt;
+        } else {
+          finalTitle = "Audio Book";
+        }
+      }
+
+      sapereTitle = finalTitle;
+      print('🎯 Background title (final): $finalTitle');
+
+      // 2) Patch the Firestore doc with the real title
+      await docRef.update({'sapereName': finalTitle});
+
+      // 3) Fire audio generation (fully async, Railway handles it)
+      generateAudioFromServer(
+        languageCode: languageCode,
+        uId: FirebaseAuth.instance.currentUser!.uid,
+        docId: docId,
+        systemPrompt: systemPrompt,
+        prompt: baseUserPrompt,
+        language: languageName,
+        title: finalTitle,
+      );
+
+      print('🚀 Background task complete for doc: $docId');
+    } catch (e) {
+      print('⚠️ Background generation error (non-blocking): $e');
+    }
+  }
+
   Future<void> generateAudioFromServer({
     required String uId,
     required String systemPrompt,
@@ -464,6 +580,7 @@ class BukBukProvider extends ChangeNotifier {
     required String docId,
     required String languageCode,
     required String language,
+    required String title,
     String? voiceId,
   }) async {
     try {
@@ -481,6 +598,7 @@ class BukBukProvider extends ChangeNotifier {
         "language": language,
         "voiceId": voiceId ?? getActiveVoiceId(languageCode),
         "docId": docId,
+        "title": title,
       });
 
       final response = await http.post(
@@ -516,43 +634,9 @@ class BukBukProvider extends ChangeNotifier {
     required String uId,
     required String language,
   }) async {
-    try {
-      print('🎨 Triggering cover generation for docId: $docId');
-
-      // Optimize prompt for better visual results
-      final optimizedPrompt =
-          "Cinematic, artistic, and ultra-detailed cover for an audio documentary titled: '$prompt'. Premium style, rich texture, deep colors, dramatic lighting, no text.";
-
-      final url = Uri.parse(
-        'https://sapereapi-production.up.railway.app/v1/api/sapere/generate-cover',
-      );
-
-      final body = jsonEncode({
-        "prompt": optimizedPrompt,
-        "docId": docId,
-        "uId": uId,
-        "language": language,
-      });
-
-      final response = await http.post(
-        url,
-        headers: {'Content-Type': 'application/json'},
-        body: body,
-      );
-
-      if (response.statusCode == 200 || response.statusCode == 201) {
-        print('✅ Cover generation process initiated successfully');
-      } else {
-        print('⚠️ Failed to trigger cover generation: ${response.statusCode}');
-        // Fallback to client-side DALL-E if server fails
-        print('🔄 Attempting client-side DALL-E fallback...');
-        generateCoverWithDalle(prompt: prompt, docId: docId);
-      }
-    } catch (e) {
-      print('❌ Error triggering cover generation: $e');
-      // Fallback to client-side DALL-E on exception
-      generateCoverWithDalle(prompt: prompt, docId: docId);
-    }
+    // AI Cover generation disabled by user request (Premium Manual Selection only)
+    print('🎨 AI cover generation skipped for docId: $docId');
+    return;
   }
 
   /// NEW: Client-side DALL-E cover generation
@@ -633,11 +717,12 @@ class BukBukProvider extends ChangeNotifier {
     required String systemPrompt,
     required String baseUserPrompt,
     required String languageCode,
+    required String title,
   }) async {
     try {
       addGenerationStep("☁️ Uploading post...");
       await createBukbukPost(
-        name: sapereTitle,
+        name: title,
         languageCode: languageCode,
         systemPrompt: systemPrompt,
         prompt: baseUserPrompt,
@@ -749,7 +834,7 @@ class BukBukProvider extends ChangeNotifier {
     addGenerationStep("📝 Generating title...");
 
     final String url =
-        'https://web-production-033f3.up.railway.app/generate/title';
+        'https://sapereapi-production.up.railway.app/generate/title';
     final String lang = (getLanguageName(languageCode)).trim();
     final String safeLang = lang.isEmpty ? 'English' : lang;
 
@@ -760,8 +845,6 @@ class BukBukProvider extends ChangeNotifier {
     final headers = {
       'Content-Type': 'application/json; charset=utf-8',
       'Accept': 'application/json',
-      'Accept-Charset': 'utf-8',
-      'Authorization': 'Bearer YOUR_HF_TOKEN',
     };
 
     try {
@@ -775,11 +858,17 @@ class BukBukProvider extends ChangeNotifier {
         String title = (responseData['title'] ?? '').toString().trim();
         title = title.replaceAll(RegExp(r'[#*]'), '').trim();
 
+        if (title.isEmpty || title == "...") {
+          print('⚠️ API returned empty or placeholder title.');
+          return null;
+        }
+
         print('🎯 Cleaned Title: $title');
-        if (title.isEmpty) return null;
         return title;
       } else {
-        print('❌ Failed to generate title: ${response.body}');
+        print(
+          '❌ Failed to generate title: code=${response.statusCode} body=${response.body}',
+        );
         return null;
       }
     } catch (e) {
@@ -834,7 +923,7 @@ class BukBukProvider extends ChangeNotifier {
         sapereId: bukBukTypeModel.id,
         sapereCategoryNames: bukBukCategoryModel.names,
         sapereTypeNames: bukBukTypeModel.names,
-        sapereName: sapereTitle,
+        sapereName: name ?? "Audio Book",
         newCover: selectedCover.isEmpty ? defaultCover : selectedCover,
         sapereUrl: null,
         publishTime: time,
@@ -858,8 +947,10 @@ class BukBukProvider extends ChangeNotifier {
         systemPrompt: systemPrompt,
         prompt: prompt,
         language: languageName,
+        title: name ?? "Audio Book",
       );
 
+      /*
       // 4) Call Cover API (Background)
       generateCoverFromServer(
         prompt: sapereTitle,
@@ -867,6 +958,7 @@ class BukBukProvider extends ChangeNotifier {
         uId: FirebaseAuth.instance.currentUser!.uid.toString(),
         language: languageName,
       );
+      */
 
       // Show Success Dialog
       Get.dialog(
@@ -896,187 +988,8 @@ class BukBukProvider extends ChangeNotifier {
     }
   }
 
-  /// NEW: Create a free Short Preview (Reels Style)
-  Future<void> createPreviewPost({
-    required String prompt,
-    required String languageCode,
-    String? voiceId,
-  }) async {
-    try {
-      setIsUploading(true, message: "creandoSapere".tr);
-      print('🎬 Creating Free Preview: $prompt');
-
-      final firestore = FirebaseFirestore.instance;
-      final docRef = firestore.collection(sapereCollection).doc();
-      final uid = FirebaseAuth.instance.currentUser?.uid;
-
-      final post = {
-        'bukbukName': "Preview: $prompt",
-        'language': getLanguageName(languageCode),
-        'languageCode': languageCode,
-        'type': 'preview',
-        'uId': uid,
-        'publishTime': FieldValue.serverTimestamp(),
-        'newCover': premiumDefaultCover,
-        'coverImage': premiumDefaultCover,
-        'description': ["Generating 30s summary..."],
-        'isTypeBuy': false,
-        'isDownloadPurchased': true,
-      };
-
-      await docRef.set(post);
-      print('✅ Preview post document created: ${docRef.id}');
-
-      // Trigger 30s summary audio generation
-      // ~130-150 words is 1 minute of speech. So 30s is ~65-75 words.
-      final systemPrompt =
-          "You are a master storyteller. Create a highly engaging, atmospheric audio documentary summary about the user's idea. CRITICAL STRICT RULE: Your entire response MUST be under 65 words to ensure it fits perfectly within a 30-second audio track. Do not add intro/outro, jump straight into the most fascinating aspect.";
-
-      generateAudioFromServer(
-        uId: uid!,
-        systemPrompt: systemPrompt,
-        prompt: prompt,
-        docId: docRef.id,
-        languageCode: languageCode,
-        language: getLanguageName(languageCode),
-        // Pass specific voice or fallback to default for that language
-        // We will need to update generateAudioFromServer below if it doesn't take voiceId directly,
-        // Actually generateAudioFromServer internally calls `getActiveVoiceId(languageCode)` right now.
-        // I will temporarily update the global active voice if voiceId is provided, or we can just update generateAudioFromServer to accept an optional override. Let's look at `generateAudioFromServer`.
-        voiceId: voiceId,
-      );
-
-      // Trigger cover generation with cinematic strictness
-      generateCoverFromServer(
-        prompt:
-            "A mystical ancient manuscript background, glowing magical aura, arcane symbols, ancient parchment aesthetic representing: $prompt. High quality cinematic.",
-        docId: docRef.id,
-        uId: uid,
-        language: getLanguageName(languageCode),
-      );
-
-      setIsUploading(false);
-    } catch (e) {
-      print('❌ Error creating preview: $e');
-      setIsUploading(false);
-      Get.snackbar('Error', 'No se pudo crear el preview: $e');
-    }
-  }
-
   Future<String?> generateCoverWithGemini(String prompt) async {
-    final optimizedPrompt =
-        "Una portada cinematográfica, artística y ultra detallada para un audiodocumental titulado: '$prompt'. Estilo premium, textura rica, colores profundos, iluminación dramática, sin texto.";
-
-    // --- STEP 1: Hugging Face (Fallback 1) ---
-    print('🎨 Attempting cover generation via Hugging Face (Primary)...');
-    final hfToken = 'YOUR_HF_TOKEN';
-    final List<String> hfModels = [
-      'black-forest-labs/FLUX.1-schnell',
-      'runwayml/stable-diffusion-v1-5',
-    ];
-
-    for (final hfModel in hfModels) {
-      try {
-        print('🎨 Attempting with Hugging Face model: $hfModel');
-        final response = await http.post(
-          Uri.parse('https://api-inference.huggingface.co/models/$hfModel'),
-          headers: {
-            'Authorization': 'Bearer $hfToken',
-            'Content-Type': 'application/json',
-          },
-          body: jsonEncode({
-            'inputs': optimizedPrompt,
-            'options': {'wait_for_model': true},
-          }),
-        );
-
-        if (response.statusCode == 200) {
-          final Uint8List bytes = response.bodyBytes;
-          if (bytes.length > 1000) {
-            final coverUrl = await FirebaseStorageService()
-                .uploadCoverBytesToStorage(
-                  bytes: bytes,
-                  folderName: 'gamification_covers',
-                );
-
-            if (coverUrl != null && coverUrl.isNotEmpty) {
-              lastGeneratedCoverUrl = coverUrl;
-              print(
-                '✅ Cover generated via Hugging Face ($hfModel) successfully',
-              );
-              return coverUrl;
-            }
-          } else {
-            print('⚠️ HF Response too small, skipping model $hfModel');
-          }
-        } else {
-          print('⚠️ Hugging Face ($hfModel) failed: ${response.statusCode}');
-        }
-      } catch (e) {
-        print('❌ Exception with HF model $hfModel: $e');
-      }
-    }
-
-    // --- STEP 2: Gemini (Fallback) ---
-    print('⚠️ All Hugging Face models failed. Trying Gemini fallback...');
-    const apiKey = 'AIzaSyBYtzIqviLASVavhCdL4MGz40I7CJGfJSU';
-    final List<String> geminiModels = [
-      'imagen-3.0-generate-002',
-      'imagen-3.0-generate-001',
-      'imagen-3.0-fast-generate-001',
-    ];
-
-    for (final model in geminiModels) {
-      final url = Uri.parse(
-        'https://generativelanguage.googleapis.com/v1beta/models/$model:predict?key=$apiKey',
-      );
-
-      final body = {
-        "instances": [
-          {"prompt": optimizedPrompt},
-        ],
-        "parameters": {"sampleCount": 1, "aspectRatio": "1:1"},
-      };
-
-      try {
-        print('🎨 Attempting Gemini fallback: $model');
-        final response = await http.post(
-          url,
-          headers: {'Content-Type': 'application/json'},
-          body: jsonEncode(body),
-        );
-
-        if (response.statusCode == 200) {
-          final jsonResponse = jsonDecode(response.body);
-          if (jsonResponse['predictions'] != null &&
-              jsonResponse['predictions'].isNotEmpty) {
-            final prediction = jsonResponse['predictions'][0];
-            if (prediction['bytesBase64Encoded'] != null) {
-              final String base64String = prediction['bytesBase64Encoded'];
-              final Uint8List bytes = base64Decode(base64String);
-
-              final coverUrl = await FirebaseStorageService()
-                  .uploadCoverBytesToStorage(
-                    bytes: bytes,
-                    folderName: 'gamification_covers',
-                  );
-
-              if (coverUrl != null && coverUrl.isNotEmpty) {
-                lastGeneratedCoverUrl = coverUrl;
-                print('✅ Cover generated via Gemini ($model) successfully');
-                return coverUrl;
-              }
-            }
-          }
-        } else {
-          print('⚠️ Gemini fallback ($model) failed: ${response.statusCode}');
-        }
-      } catch (e) {
-        print('❌ Exception with Gemini fallback $model: $e');
-      }
-    }
-
-    print('❌ All cover generation methods failed.');
+    // Local generation disabled in favor of backend generation
     return null;
   }
 
@@ -1171,14 +1084,17 @@ class BukBukProvider extends ChangeNotifier {
         systemPrompt: systemPrompt,
         prompt: prompt,
         language: languageName,
+        title: "$subjectName - Ep $episodeNumber: $episodeTitle",
       );
 
+      /*
       generateCoverFromServer(
         prompt: "$subjectName - Ep $episodeNumber: $episodeTitle",
         docId: docRef.id,
         uId: FirebaseAuth.instance.currentUser!.uid.toString(),
         language: languageName,
       );
+      */
 
       // Show Success Dialog
       Get.dialog(
@@ -1247,7 +1163,7 @@ class BukBukProvider extends ChangeNotifier {
     setRxRequestStatus(CheckStatus.loading);
     setCommunityRequestStatus(CheckStatus.loading);
 
-    String url = 'https://web-production-033f3.up.railway.app/generate';
+    String url = 'https://sapereapi-production.up.railway.app/generate';
 
     var body = {
       "messages": [

@@ -2,6 +2,7 @@ import 'package:sapere/core/constant/colors.dart';
 import 'package:sapere/core/constant/images.dart';
 import 'package:sapere/core/services/local_storage_service.dart';
 import 'package:sapere/providers/subscription_provider.dart';
+import 'package:sapere/core/utils/navigation_utils.dart';
 import 'package:sapere/routes/app_pages.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -37,7 +38,13 @@ class _SplashPageState extends State<SplashPage> {
         if (user == null) {
           Navigator.pushReplacementNamed(context, Routes.signInScreen);
         } else {
-          Navigator.pushReplacementNamed(context, Routes.dashboardScreen);
+          final subProvider = Provider.of<InAppPurchaseProvider>(
+            context,
+            listen: false,
+          );
+          await subProvider.checkSubscriptionStatus();
+          if (!mounted) return;
+          redirectToCorrectScreen(context, subProvider.isSubscribed);
         }
       }
     } else {

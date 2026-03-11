@@ -94,7 +94,7 @@ class _ForGetPasswordPageState extends State<ForGetPasswordPage> {
                         return null;
                       },
                     ),
-                    SizedBox(height: 400.h),
+                    SizedBox(height: 40.h),
                     provider.isLoadingEmail
                         ? Center(
                           child: CircularProgressIndicator(

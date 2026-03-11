@@ -74,16 +74,7 @@ class _CreationScreenState extends State<CreationScreen> {
           'myCreation'.tr,
           style: TextStyle(color: AppColors.textColor),
         ),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.bookmarks_rounded, color: AppColors.kSamiOrange),
-            onPressed: () {
-              Navigator.pushNamed(context, Routes.savedReels);
-            },
-            tooltip: "Guardados",
-          ),
-          SizedBox(width: 8.w),
-        ],
+        actions: [SizedBox(width: 8.w)],
       ),
       body: _buildCreationsTab(),
     );
@@ -126,16 +117,6 @@ class _CreationScreenState extends State<CreationScreen> {
                     ),
                   ),
                 );
-              } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
-                return Center(
-                  child: Text(
-                    'noDataFound'.tr,
-                    style: TextStyle(
-                      fontSize: 18.sp,
-                      color: AppColors.textColor,
-                    ),
-                  ),
-                );
               } else {
                 List<BukBukPost> postList = snapshot.data!;
 
@@ -146,64 +127,171 @@ class _CreationScreenState extends State<CreationScreen> {
                           .toList();
                 }
 
-                return postList.isEmpty
-                    ? Padding(
-                      padding: const EdgeInsets.all(8.0).copyWith(top: 230.h),
-                      child: Center(
-                        child: Text(
-                          'emptyPost'.tr,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: AppColors.textColor,
-                            fontWeight: FontWeight.w700,
-                            fontSize: 19.sp,
+                if (postList.isEmpty) {
+                  return Center(
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 40.w),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(30.w),
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.03),
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: AppColors.kGoldGradient[0].withOpacity(
+                                  0.2,
+                                ),
+                              ),
+                            ),
+                            child: Icon(
+                              Icons.auto_awesome_rounded,
+                              size: 80.sp,
+                              color: AppColors.kGoldGradient[0],
+                            ),
                           ),
-                        ),
+                          SizedBox(height: 32.h),
+                          Text(
+                            'beginYourLegacy'.tr,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 24.sp,
+                              fontWeight: FontWeight.w900,
+                              color: AppColors.textColor,
+                              fontFamily: 'NotoSerifDisplay',
+                            ),
+                          ),
+                          SizedBox(height: 12.h),
+                          Text(
+                            'emptyCreationsSubtitle'.tr,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 14.sp,
+                              color: Colors.white60,
+                              height: 1.5,
+                            ),
+                          ),
+                          SizedBox(height: 40.h),
+                          GestureDetector(
+                            onTap: () {
+                              Get.dialog(
+                                Center(
+                                  child: Container(
+                                    padding: EdgeInsets.all(24.w),
+                                    margin: EdgeInsets.symmetric(
+                                      horizontal: 32.w,
+                                    ),
+                                    decoration: BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.circular(20.r),
+                                      border: Border.all(
+                                        color: AppColors.kGoldGradient[0],
+                                      ),
+                                    ),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Text(
+                                          'Activation Tip'.tr,
+                                          style: TextStyle(
+                                            color: AppColors.kGoldGradient[0],
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        SizedBox(height: 12.h),
+                                        Text(
+                                          'Tap the "+" button in the center of the menu to create your first Sapere!'
+                                              .tr,
+                                          textAlign: TextAlign.center,
+                                          style: const TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              );
+                            },
+                            child: Container(
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 32.w,
+                                vertical: 16.h,
+                              ),
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  colors: AppColors.kGoldGradient,
+                                ),
+                                borderRadius: BorderRadius.circular(30.r),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: AppColors.kGoldGradient[0]
+                                        .withOpacity(0.3),
+                                    blurRadius: 20,
+                                    offset: const Offset(0, 10),
+                                  ),
+                                ],
+                              ),
+                              child: Text(
+                                'createFirstSapere'.tr.toUpperCase(),
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 13.sp,
+                                  letterSpacing: 1.2,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
-                    )
-                    : GridView.builder(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 12.w,
-                        vertical: 34.h,
-                      ).copyWith(bottom: 0, top: 8.h),
-                      shrinkWrap: true,
-                      physics: const BouncingScrollPhysics(),
-                      itemCount: postList.length,
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                            childAspectRatio: 0.5,
-                            crossAxisSpacing: 10,
-                            mainAxisSpacing: 10,
-                          ),
-                      itemBuilder: (context, index) {
-                        BukBukPost post = postList[index];
-                        bool isGenerating =
-                            post.sapereUrl == null || post.sapereUrl!.isEmpty;
-                        return SapereCard(
-                          imageUrl: post.newCover.toString(),
-                          title: post.sapereName ?? 'Sapere',
-                          isGenerating: isGenerating,
-                          onTap:
-                              isGenerating
-                                  ? () {
-                                    Get.snackbar(
-                                      'info'.tr,
-                                      'generatingText'.tr,
-                                      backgroundColor: AppColors.primaryColor,
-                                      colorText: AppColors.whiteColor,
-                                    );
-                                  }
-                                  : () {
-                                    Navigator.pushNamed(
-                                      context,
-                                      Routes.sapereDetails,
-                                      arguments: post,
-                                    );
-                                  },
-                        );
-                      },
+                    ),
+                  );
+                }
+
+                return GridView.builder(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 12.w,
+                    vertical: 34.h,
+                  ).copyWith(bottom: 0, top: 8.h),
+                  shrinkWrap: true,
+                  physics: const BouncingScrollPhysics(),
+                  itemCount: postList.length,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    childAspectRatio: 0.5,
+                    crossAxisSpacing: 10,
+                    mainAxisSpacing: 10,
+                  ),
+                  itemBuilder: (context, index) {
+                    BukBukPost post = postList[index];
+                    bool isGenerating =
+                        post.sapereUrl == null || post.sapereUrl!.isEmpty;
+                    return SapereCard(
+                      imageUrl: post.newCover.toString(),
+                      title: post.sapereName ?? 'Sapere',
+                      isGenerating: isGenerating,
+                      onTap:
+                          isGenerating
+                              ? () {
+                                Get.snackbar(
+                                  'info'.tr,
+                                  'generatingText'.tr,
+                                  backgroundColor: AppColors.primaryColor,
+                                  colorText: AppColors.whiteColor,
+                                );
+                              }
+                              : () {
+                                Navigator.pushNamed(
+                                  context,
+                                  Routes.sapereDetails,
+                                  arguments: post,
+                                );
+                              },
                     );
+                  },
+                );
               }
             },
           ),

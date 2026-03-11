@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:in_app_review/in_app_review.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:sapere/widgets/dailogs/internal_rating_dialog.dart';
+import 'package:get/get.dart';
+import '../../widgets/dailogs/internal_rating_dialog.dart';
 
 class AppRatingService {
   static final AppRatingService _instance = AppRatingService._internal();
@@ -16,7 +17,6 @@ class AppRatingService {
 
   static const String _hasRatedKey = 'hasRatedAppInternal';
   bool _hasRatedApp = false;
-  bool _hasDismissedRatingForSession = false;
 
   final String appleAppId = '6746458440';
   final String googlePlayPackageName = 'com.victor.sapere';
@@ -40,22 +40,16 @@ class AppRatingService {
     await prefs.setBool(_hasRatedKey, value);
   }
 
-  void dismissForSession() {
-    _hasDismissedRatingForSession = true;
-  }
+  void dismissForSession() {}
 
   Future<void> maybeShowRatingDialog(BuildContext context) async {
-    if (_hasRatedApp || _hasDismissedRatingForSession) {
-      return;
+    if (!_hasRatedApp) {
+      Get.dialog(
+        const InternalRatingDialog(),
+        barrierDismissible: false,
+        useSafeArea: false,
+      );
     }
-
-    await showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (BuildContext context) {
-        return const InternalRatingDialog();
-      },
-    );
   }
 
   /// First tries the native review popup (quiet, no guarantee).

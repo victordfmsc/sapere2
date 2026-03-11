@@ -6,6 +6,7 @@ import 'package:sapere/core/constant/colors.dart';
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:sapere/core/services/app_rating_service.dart';
+import 'package:sapere/routes/app_pages.dart';
 
 class InternalRatingDialog extends StatefulWidget {
   const InternalRatingDialog({super.key});
@@ -27,13 +28,14 @@ class _InternalRatingDialogState extends State<InternalRatingDialog> {
 
   void _handleLater() {
     AppRatingService.instance.dismissForSession();
-    Navigator.pop(context);
+    Get.offAllNamed(Routes.dashboardScreen);
   }
 
   void _handleSubmitFeedback() {
     // In a real app, send _feedbackController.text to backend/analytics
     AppRatingService.instance.setHasRatedApp(true);
-    Navigator.pop(context);
+    // After feedback, show instructions as requested
+    Get.toNamed(Routes.termsConditionPage);
 
     // Optional: show a small snackbar thanking them
     Get.snackbar(
@@ -88,10 +90,35 @@ class _InternalRatingDialogState extends State<InternalRatingDialog> {
                 ),
               ],
             ),
-            child: AnimatedSwitcher(
-              duration: const Duration(milliseconds: 300),
-              child:
-                  _showFeedbackForm ? _buildFeedbackForm() : _buildRatingForm(),
+            child: Stack(
+              children: [
+                Positioned(
+                  top: 0,
+                  right: 0,
+                  child: GestureDetector(
+                    onTap: () => Get.offAllNamed(Routes.dashboardScreen),
+                    child: Container(
+                      padding: EdgeInsets.all(8.w),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.05),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Icon(
+                        Icons.close_rounded,
+                        color: Colors.white.withOpacity(0.5),
+                        size: 20.sp,
+                      ),
+                    ),
+                  ),
+                ),
+                AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 300),
+                  child:
+                      _showFeedbackForm
+                          ? _buildFeedbackForm()
+                          : _buildRatingForm(),
+                ),
+              ],
             ),
           ),
         ),
@@ -242,6 +269,8 @@ class _InternalRatingDialogState extends State<InternalRatingDialog> {
                         Navigator.pop(context);
                         await AppRatingService.instance.setHasRatedApp(true);
                         await AppRatingService.instance.triggerNativeReview();
+                        // Navigate to instructions after triggering review
+                        Get.toNamed(Routes.termsConditionPage);
                       } else {
                         // Low rating -> show feedback form
                         setState(() {
