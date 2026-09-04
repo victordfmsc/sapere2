@@ -4,6 +4,7 @@ import 'package:sapere/core/constant/strings.dart';
 import 'package:sapere/providers/sapere_provider.dart';
 import 'package:sapere/providers/subscription_provider.dart';
 import 'package:sapere/routes/app_pages.dart';
+import 'package:sapere/views/dashboard/subscription/widgets/out_of_credits_dialog.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -91,8 +92,7 @@ class _BottomSheetContentState extends State<BottomSheetContent> {
                               ),
                             ),
                           ),
-                          if (inAppProvider.isSubscribed &&
-                              inAppProvider.canPost == false)
+                          if (inAppProvider.totalCredits <= 0)
                             Container(
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 4.0,
@@ -236,40 +236,22 @@ class _BottomSheetContentState extends State<BottomSheetContent> {
                                                   name,
                                                   description,
                                                   url,
-                                                  () {
-                                                    final isSubscribed =
-                                                        inAppProvider
-                                                            .isSubscribed;
-                                                    final canPost =
-                                                        inAppProvider.canPost;
-
-                                                    if (!isSubscribed) {
-                                                      Get.snackbar(
-                                                        'warningImage'.tr,
-                                                        'You are not a premium user'
-                                                            .tr,
-                                                        backgroundColor:
-                                                            Colors.red,
-                                                        colorText:
-                                                            AppColors.textColor,
-                                                      );
-                                                      Navigator.pushNamed(
-                                                        context,
-                                                        Routes.subscriptionPage,
+                                                  () async {
+                                                    await inAppProvider
+                                                        .refreshCredits();
+                                                    if (inAppProvider
+                                                            .totalCredits <=
+                                                        0) {
+                                                      Get.dialog(
+                                                        OutOfCreditsDialog(
+                                                          nextRefillDate:
+                                                              inAppProvider
+                                                                  .nextRefillDate,
+                                                        ),
                                                       );
                                                       return;
                                                     }
-
-                                                    if (isSubscribed &&
-                                                        !canPost!) {
-                                                      Get.snackbar(
-                                                        'warningImage'.tr,
-                                                        'youhaveused'.tr,
-                                                        backgroundColor:
-                                                            Colors.red,
-                                                        colorText:
-                                                            AppColors.textColor,
-                                                      );
+                                                    if (!context.mounted) {
                                                       return;
                                                     }
 

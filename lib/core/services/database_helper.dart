@@ -1,6 +1,5 @@
 import 'package:sapere/models/user_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'package:sapere/models/gamification_models.dart';
@@ -95,9 +94,10 @@ class DataBaseHelper {
         query = query.where('languageCode', isEqualTo: languageCode);
       }
 
-      final querySnapshot = await query.limit(1).get();
-      if (querySnapshot.docs.isNotEmpty) {
-        return querySnapshot.docs.first.data();
+      final querySnapshot = await query.limit(5).get();
+      for (final doc in querySnapshot.docs) {
+        final post = doc.data();
+        if (post != null && (post.isCompleted || post.isMine)) return post;
       }
       return null;
     } catch (e) {
@@ -120,37 +120,13 @@ class DataBaseHelper {
       }
 
       final querySnapshot = await query.get();
-      return querySnapshot.docs.map((doc) => doc.data()!).toList();
+      return querySnapshot.docs
+          .map((doc) => doc.data()!)
+          .where((post) => post.isCompleted || post.isMine)
+          .toList();
     } catch (e) {
       print('Error fetching gamification posts for subject: $e');
       return [];
-    }
-  }
-}
-
-class PostLimitChecker {
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  final String? currentUserId = FirebaseAuth.instance.currentUser?.uid;
-
-  Future<bool> canUserNormalPost() async {
-    try {
-      final userDoc =
-          await _firestore
-              .collection(firebaseUserCollection)
-              .doc(currentUserId)
-              .get();
-
-      if (userDoc.exists) {
-        final data = userDoc.data();
-        final int credits = data?['credits'] ?? 0;
-        print('User current credits is $credits');
-        return credits > 0;
-      } else {
-        return false;
-      }
-    } catch (e) {
-      print('❌ Error checking post limit: $e');
-      return false;
     }
   }
 }

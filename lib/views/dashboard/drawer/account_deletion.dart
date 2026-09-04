@@ -20,6 +20,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
 import '../../../providers/user_provider.dart';
+import '../subscription/subscription_api.dart';
 
 class AccountDeletion extends StatefulWidget {
   const AccountDeletion({super.key});
@@ -199,6 +200,7 @@ class _AccountDeletionState extends State<AccountDeletion> {
       await auth.currentUser?.delete();
       await auth.signOut();
       await GoogleSignIn().signOut();
+      await SubscriptionApi.logOut();
 
       ScaffoldMessenger.of(
         context,
@@ -234,7 +236,11 @@ String sha256ofString(String input) {
 }
 
 Future<AuthCredential?> signInGoogle() async {
-  final GoogleSignIn googleSignIn = GoogleSignIn(scopes: ['email']);
+  final GoogleSignIn googleSignIn = GoogleSignIn(
+    scopes: ['email'],
+    serverClientId:
+        '678418025083-5faatp19oe85chfgn8g5rjt59dusbcjq.apps.googleusercontent.com',
+  );
   final FirebaseAuth auth = FirebaseAuth.instance;
 
   try {

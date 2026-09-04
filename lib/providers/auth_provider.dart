@@ -19,6 +19,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 
 import 'package:sapere/core/utils/navigation_utils.dart';
 import 'package:sapere/providers/subscription_provider.dart';
+import 'package:sapere/views/dashboard/subscription/subscription_api.dart';
 import '../core/constant/colors.dart';
 
 class AuthProvider with ChangeNotifier {
@@ -145,6 +146,7 @@ class AuthProvider with ChangeNotifier {
             context,
             listen: false,
           );
+          await SubscriptionApi.logIn(user.uid);
           await subProvider.checkSubscriptionStatus();
           if (!context.mounted) return;
           redirectToCorrectScreen(context, subProvider.isSubscribed);
@@ -254,6 +256,7 @@ class AuthProvider with ChangeNotifier {
     try {
       await GoogleSignIn().signOut();
       await _auth.signOut();
+      await SubscriptionApi.logOut();
       _firebaseUser = null;
       Navigator.pushNamedAndRemoveUntil(
         context,
@@ -273,7 +276,11 @@ class AuthProvider with ChangeNotifier {
     notifyListeners();
 
     try {
-      final googleUser = await GoogleSignIn(scopes: ['email']).signIn();
+      final googleUser = await GoogleSignIn(
+        scopes: ['email'],
+        serverClientId:
+            '678418025083-5faatp19oe85chfgn8g5rjt59dusbcjq.apps.googleusercontent.com',
+      ).signIn();
 
       if (googleUser == null) {
         isGoogleLoading = false;
@@ -312,6 +319,7 @@ class AuthProvider with ChangeNotifier {
           context,
           listen: false,
         );
+        await SubscriptionApi.logIn(_firebaseUser!.uid);
         await subProvider.checkSubscriptionStatus();
         if (!context.mounted) return;
         redirectToCorrectScreen(context, subProvider.isSubscribed);
@@ -383,6 +391,7 @@ class AuthProvider with ChangeNotifier {
           context,
           listen: false,
         );
+        await SubscriptionApi.logIn(_firebaseUser!.uid);
         await subProvider.checkSubscriptionStatus();
         if (!context.mounted) return;
         redirectToCorrectScreen(context, subProvider.isSubscribed);

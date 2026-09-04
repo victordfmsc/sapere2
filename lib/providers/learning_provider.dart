@@ -223,7 +223,7 @@ class LearningProvider extends ChangeNotifier {
     try {
       // Note: Reusing the same API endpoint used in BukBukProvider or similar
       final url = Uri.parse(
-        'https://web-production-033f3.up.railway.app/generate',
+        'https://web-production-b405a.up.railway.app/generate',
       );
       final response = await http.post(
         url,

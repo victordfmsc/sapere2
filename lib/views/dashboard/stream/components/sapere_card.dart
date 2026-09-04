@@ -11,6 +11,8 @@ class SapereCard extends StatelessWidget {
   final VoidCallback? onTap;
   final double? width;
   final bool isGenerating;
+  final bool isFailed;
+  final VoidCallback? onRetry;
 
   const SapereCard({
     super.key,
@@ -19,6 +21,8 @@ class SapereCard extends StatelessWidget {
     this.onTap,
     this.width,
     this.isGenerating = false,
+    this.isFailed = false,
+    this.onRetry,
   });
 
   @override
@@ -55,7 +59,58 @@ class SapereCard extends StatelessWidget {
                         ),
                       ),
                     ),
-                    if (isGenerating)
+                    if (isFailed)
+                      Positioned.fill(
+                        child: Container(
+                          color: Colors.black.withOpacity(0.7),
+                          padding: EdgeInsets.symmetric(horizontal: 8.w),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.error_outline,
+                                color: Colors.redAccent,
+                                size: 28.sp,
+                              ),
+                              SizedBox(height: 8.h),
+                              Text(
+                                "generationFailed".tr,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 10.sp,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              SizedBox(height: 10.h),
+                              TextButton(
+                                onPressed: onRetry,
+                                style: TextButton.styleFrom(
+                                  backgroundColor: Colors.white,
+                                  foregroundColor: Colors.black,
+                                  minimumSize: Size(0, 28.h),
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 12.w,
+                                  ),
+                                  tapTargetSize:
+                                      MaterialTapTargetSize.shrinkWrap,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(14.r),
+                                  ),
+                                ),
+                                child: Text(
+                                  "retryGeneration".tr,
+                                  style: TextStyle(
+                                    fontSize: 10.sp,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      )
+                    else if (isGenerating)
                       Positioned.fill(
                         child: Container(
                           color: Colors.black.withOpacity(0.7),

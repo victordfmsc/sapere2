@@ -229,7 +229,7 @@ class IntroWidget extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 30.h),
+                  SizedBox(height: 16.h),
                 ],
               ),
             ),

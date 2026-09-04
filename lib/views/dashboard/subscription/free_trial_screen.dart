@@ -21,7 +21,7 @@ class FreeTrialScreen extends StatefulWidget {
 }
 
 class _FreeTrialScreenState extends State<FreeTrialScreen> {
-  PackageType _selectedType = PackageType.weekly;
+  PackageType _selectedType = PackageType.annual;
 
   @override
   Widget build(BuildContext context) {
@@ -32,17 +32,14 @@ class _FreeTrialScreenState extends State<FreeTrialScreen> {
           builder: (context, provider, child) {
             final yearly = provider.yearlyPackage;
             final monthly = provider.monthlyPackage;
-            final weekly = provider.weeklyPackage;
 
             final selectedPackage =
-                (_selectedType == PackageType.monthly)
-                    ? monthly
-                    : (_selectedType == PackageType.annual ? yearly : weekly);
+                (_selectedType == PackageType.monthly) ? monthly : yearly;
 
             return Skeletonizer(
               enabled: provider.isLoading,
               child:
-                  (yearly == null && weekly == null && monthly == null) &&
+                  (yearly == null && monthly == null) &&
                           !provider.isLoading
                       ? Center(
                         child: Column(
@@ -112,67 +109,45 @@ class _FreeTrialScreenState extends State<FreeTrialScreen> {
                                     textAlign: TextAlign.center,
                                   ),
                                   30.verticalSpace,
-                                  // Main Focus: Weekly
-                                  if (weekly != null)
+                                  // Main Focus: Premium (anual, mejor valor)
+                                  if (yearly != null)
                                     _buildPlanCard(
-                                      title: 'weeklyPlanTitle'.tr,
-                                      price: weekly.storeProduct.priceString,
+                                      title: 'premiumPlanTitle'.tr,
+                                      price: yearly.storeProduct.priceString,
                                       isSelected:
-                                          _selectedType == PackageType.weekly,
+                                          _selectedType == PackageType.annual,
                                       onTap:
                                           () => setState(
                                             () =>
                                                 _selectedType =
-                                                    PackageType.weekly,
+                                                    PackageType.annual,
                                           ),
-                                      badge: 'startFreeTrail'.tr,
+                                      badge:
+                                          "${'savePercent'.tr} ${provider.annualSavingsPercentage}",
                                       isHighlight: true,
-                                      subtext: 'afterFreeTrail'.tr,
+                                      subtext: 'creditsPerMonth'.tr,
                                     ),
                                   16.verticalSpace,
-                                  // Secondary Mini Options
-                                  Row(
-                                    children: [
-                                      if (monthly != null)
-                                        Expanded(
-                                          child: _buildMiniPlanCard(
-                                            title: 'monthlyPlanTitle'.tr,
-                                            price:
-                                                monthly
-                                                    .storeProduct
-                                                    .priceString,
-                                            isSelected:
-                                                _selectedType ==
-                                                PackageType.monthly,
-                                            onTap:
-                                                () => setState(
-                                                  () =>
-                                                      _selectedType =
-                                                          PackageType.monthly,
-                                                ),
-                                          ),
-                                        ),
-                                      if (monthly != null && yearly != null)
-                                        12.horizontalSpace,
-                                      if (yearly != null)
-                                        Expanded(
-                                          child: _buildMiniPlanCard(
-                                            title: 'yearlyPlanTitle'.tr,
-                                            price:
-                                                yearly.storeProduct.priceString,
-                                            isSelected:
-                                                _selectedType ==
-                                                PackageType.annual,
-                                            onTap:
-                                                () => setState(
-                                                  () =>
-                                                      _selectedType =
-                                                          PackageType.annual,
-                                                ),
-                                          ),
-                                        ),
-                                    ],
-                                  ),
+                                  // Secondary: Standard (mensual)
+                                  if (monthly != null)
+                                    SizedBox(
+                                      width: double.infinity,
+                                      child: _buildMiniPlanCard(
+                                        title:
+                                            "${'standardPlanTitle'.tr} · ${'creditsPerMonth'.tr}",
+                                        price:
+                                            monthly.storeProduct.priceString,
+                                        isSelected:
+                                            _selectedType ==
+                                            PackageType.monthly,
+                                        onTap:
+                                            () => setState(
+                                              () =>
+                                                  _selectedType =
+                                                      PackageType.monthly,
+                                            ),
+                                      ),
+                                    ),
                                   40.verticalSpace,
                                   Container(
                                     width: double.infinity,
@@ -180,11 +155,11 @@ class _FreeTrialScreenState extends State<FreeTrialScreen> {
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(16.r),
                                       gradient:
-                                          _selectedType == PackageType.weekly
+                                          _selectedType == PackageType.annual
                                               ? AppColors.premiumGoldGradient
                                               : null,
                                       color:
-                                          _selectedType == PackageType.weekly
+                                          _selectedType == PackageType.annual
                                               ? null
                                               : AppColors.textColor,
                                     ),
@@ -204,14 +179,12 @@ class _FreeTrialScreenState extends State<FreeTrialScreen> {
                                           Get.dialog(
                                             PremiumSuccessDialog(
                                               points:
-                                                  _selectedType ==
-                                                          PackageType.annual
-                                                      ? '55'
-                                                      : (_selectedType ==
-                                                              PackageType
-                                                                  .monthly
-                                                          ? '10'
-                                                          : '1'),
+                                                  (provider.lastPurchaseGain >
+                                                              0
+                                                          ? provider
+                                                              .lastPurchaseGain
+                                                          : 4)
+                                                      .toString(),
                                               onClose: () {
                                                 Get.offAllNamed(
                                                   Routes.dashboardScreen,
@@ -235,15 +208,26 @@ class _FreeTrialScreenState extends State<FreeTrialScreen> {
                                           );
                                         }
                                       },
-                                      text:
-                                          _selectedType == PackageType.weekly
-                                              ? 'startFreeTrail'.tr
-                                              : 'upgradeToPremiumBtn'.tr,
+                                      text: 'upgradeToPremiumBtn'.tr,
                                       textColor: Colors.black,
                                       bgColor:
-                                          _selectedType == PackageType.weekly
+                                          _selectedType == PackageType.annual
                                               ? Colors.transparent
                                               : AppColors.textColor,
+                                    ),
+                                  ),
+                                  12.verticalSpace,
+                                  TextButton(
+                                    onPressed:
+                                        () => Get.toNamed(Routes.creditStore),
+                                    child: Text(
+                                      'buyCredits'.tr,
+                                      style: TextStyle(
+                                        color: AppColors.textColor,
+                                        fontSize: 14.sp,
+                                        fontWeight: FontWeight.bold,
+                                        decoration: TextDecoration.underline,
+                                      ),
                                     ),
                                   ),
                                   20.verticalSpace,

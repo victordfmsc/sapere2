@@ -66,10 +66,12 @@ class UserProvider with ChangeNotifier {
       }
 
       final updatedData = userModel.copyWith(profileImage: imageUrl);
+      // El saldo lo gestiona el backend: no reescribir el valor cacheado.
+      final map = updatedData.toMap()..remove('credits');
       await FirebaseFirestore.instance
           .collection(firebaseUserCollection)
           .doc(updatedData.uId)
-          .set(updatedData.toMap(), SetOptions(merge: true));
+          .set(map, SetOptions(merge: true));
 
       _userModel = updatedData;
       Navigator.pop(context);

@@ -13,10 +13,7 @@ class OutOfCreditsDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String formattedDate = '---';
-    if (nextRefillDate != null) {
-      formattedDate = DateFormat('dd MMMM yyyy').format(nextRefillDate!);
-    }
+    final refillDate = nextRefillDate;
 
     return BackdropFilter(
       filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
@@ -105,45 +102,47 @@ class OutOfCreditsDialog extends StatelessWidget {
                   ),
                   SizedBox(height: 24.h),
 
-                  // Next Refill Info
-                  Container(
-                    width: double.infinity,
-                    padding: EdgeInsets.all(16.w),
-                    decoration: BoxDecoration(
-                      color: AppColors.whiteColor.withOpacity(0.05),
-                      borderRadius: BorderRadius.circular(20.r),
-                      border: Border.all(
+                  // Next Refill Info (solo con suscripción activa)
+                  if (refillDate != null) ...[
+                    Container(
+                      width: double.infinity,
+                      padding: EdgeInsets.all(16.w),
+                      decoration: BoxDecoration(
                         color: AppColors.whiteColor.withOpacity(0.05),
+                        borderRadius: BorderRadius.circular(20.r),
+                        border: Border.all(
+                          color: AppColors.whiteColor.withOpacity(0.05),
+                        ),
+                      ),
+                      child: Column(
+                        children: [
+                          Text(
+                            'nextRefillInfo'.tr,
+                            style: TextStyle(
+                              color: AppColors.whiteColor.withOpacity(0.5),
+                              fontSize: 12.sp,
+                            ),
+                          ),
+                          SizedBox(height: 8.h),
+                          Text(
+                            DateFormat('dd MMMM yyyy').format(refillDate),
+                            style: TextStyle(
+                              color: AppColors.primaryColor,
+                              fontSize: 16.sp,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    child: Column(
-                      children: [
-                        Text(
-                          'nextRefillInfo'.tr,
-                          style: TextStyle(
-                            color: AppColors.whiteColor.withOpacity(0.5),
-                            fontSize: 12.sp,
-                          ),
-                        ),
-                        SizedBox(height: 8.h),
-                        Text(
-                          formattedDate,
-                          style: TextStyle(
-                            color: AppColors.primaryColor,
-                            fontSize: 16.sp,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 24.h),
+                    SizedBox(height: 24.h),
+                  ],
 
-                  // Primary Action
+                  // Primary Action: comprar créditos
                   GestureDetector(
                     onTap: () {
                       Navigator.pop(context);
-                      Get.toNamed(Routes.subscriptionPage);
+                      Get.toNamed(Routes.creditStore);
                     },
                     child: Container(
                       width: double.infinity,
@@ -166,7 +165,7 @@ class OutOfCreditsDialog extends StatelessWidget {
                       ),
                       child: Center(
                         child: Text(
-                          'getMorePointsBtn'.tr,
+                          'buyCredits'.tr,
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 14.sp,
@@ -177,7 +176,25 @@ class OutOfCreditsDialog extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 16.h),
+                  SizedBox(height: 8.h),
+
+                  // Secondary Action: suscripción
+                  TextButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                      Get.toNamed(Routes.subscriptionPage);
+                    },
+                    child: Text(
+                      'upgradeToPremium'.tr,
+                      style: TextStyle(
+                        color: AppColors.textColor,
+                        fontSize: 14.sp,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 4.h),
 
                   // Secondary Dismiss
                   TextButton(

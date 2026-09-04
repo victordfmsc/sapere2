@@ -151,7 +151,62 @@ class CreationSuccessDialog extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                       ),
                     ),
-                    SizedBox(height: 24.h),
+                    SizedBox(height: 20.h),
+
+                    // Processing Time & Pipeline Badge
+                    Container(
+                      width: double.infinity,
+                      padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF1E293B).withOpacity(0.6),
+                        borderRadius: BorderRadius.circular(18.r),
+                        border: Border.all(
+                          color: const Color(0xFFFFD700).withOpacity(0.3),
+                          width: 1,
+                        ),
+                      ),
+                      child: Row(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(8.w),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFFFFD700).withOpacity(0.15),
+                              shape: BoxShape.circle,
+                            ),
+                            child: Icon(
+                              Icons.hourglass_top_rounded,
+                              color: const Color(0xFFFFD700),
+                              size: 20.sp,
+                            ),
+                          ),
+                          SizedBox(width: 12.w),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Procesando en segundo plano',
+                                  style: TextStyle(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 2.h),
+                                Text(
+                                  'Tiempo estimado: ~60-90 segundos',
+                                  style: TextStyle(
+                                    fontSize: 11.sp,
+                                    color: Colors.white70,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 16.h),
 
                     // "Materialized" Credit Status & Achievement
                     Container(

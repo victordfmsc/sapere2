@@ -1,6 +1,5 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 import 'package:sapere/core/services/local_storage_service.dart';
 
@@ -8,6 +7,7 @@ class TutorialService {
   final BuildContext context;
   final List<TargetFocus> targets;
   final String tutorialKey;
+  final VoidCallback? onComplete;
 
   TutorialCoachMark? _tutorialCoachMark;
 
@@ -15,6 +15,7 @@ class TutorialService {
     required this.context,
     required this.targets,
     required this.tutorialKey,
+    this.onComplete,
   });
 
   Future<void> showIfNeeded() async {
@@ -30,15 +31,24 @@ class TutorialService {
         paddingFocus: 10,
         opacityShadow: 0.6,
         imageFilter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-        onFinish: () {},
-        onSkip: () => true,
+        onFinish: () {
+          onComplete?.call();
+        },
+        onSkip: () {
+          onComplete?.call();
+          return true;
+        },
       );
 
-      await Future.delayed(Duration.zero);
-      _tutorialCoachMark?.show(context: context);
+      await Future.delayed(const Duration(milliseconds: 300));
+      if (context.mounted) {
+        _tutorialCoachMark?.show(context: context);
+      }
 
       // Save as shown
       await localStorage.setData(key: tutorialKey, value: 'true');
+    } else {
+      onComplete?.call();
     }
   }
 }

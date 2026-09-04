@@ -143,7 +143,8 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                             _posts
                                 .where(
                                   (post) =>
-                                      post.sapereCategoryId == category.docId,
+                                      post.sapereCategoryId == category.docId &&
+                                      post.isCompleted,
                                 )
                                 .toList();
 

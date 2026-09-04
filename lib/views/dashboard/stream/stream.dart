@@ -204,7 +204,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                   ),
                                 ),
                                 Text(
-                                  userProv.user!.credits.toString(),
+                                  context
+                                      .watch<InAppPurchaseProvider>()
+                                      .totalCredits
+                                      .toString(),
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
@@ -256,13 +259,27 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildFeaturedStory(BukBukPost post, BuildContext context) {
+    final isGenerating = post.sapereUrl == null || post.sapereUrl!.isEmpty;
     return GestureDetector(
-      onTap:
-          () => Navigator.pushNamed(
-            context,
-            Routes.sapereDetails,
-            arguments: post,
-          ),
+      onTap: () {
+        if (isGenerating) {
+          Get.snackbar(
+            'generatingAudio'.tr,
+            'wentWrong'.tr.isNotEmpty
+                ? 'narratorGenerating'.tr
+                : 'Tu audiolibro está siendo sintetizado en segundo plano por el narrador de IA. Estará listo en breve.',
+            backgroundColor: const Color(0xFFD97706),
+            colorText: Colors.white,
+            duration: const Duration(seconds: 4),
+          );
+          return;
+        }
+        Navigator.pushNamed(
+          context,
+          Routes.sapereDetails,
+          arguments: post,
+        );
+      },
       child: Container(
         height: 550.h,
         width: double.infinity,
@@ -431,15 +448,31 @@ class _HomeScreenState extends State<HomeScreen> {
             itemCount: posts.length,
             itemBuilder: (context, index) {
               final post = posts[index];
+              final isGenerating =
+                  post.sapereUrl == null || post.sapereUrl!.isEmpty;
               return SapereCard(
                 imageUrl: post.newCover.toString(),
                 title: post.sapereName ?? "",
-                onTap:
-                    () => Navigator.pushNamed(
-                      context,
-                      Routes.sapereDetails,
-                      arguments: post,
-                    ),
+                isGenerating: isGenerating,
+                onTap: () {
+                  if (isGenerating) {
+                    Get.snackbar(
+                      'generatingAudio'.tr,
+                      'wentWrong'.tr.isNotEmpty
+                          ? 'narratorGenerating'.tr
+                          : 'Tu audiolibro está siendo sintetizado en segundo plano por el narrador de IA. Estará listo en breve.',
+                      backgroundColor: const Color(0xFFD97706),
+                      colorText: Colors.white,
+                      duration: const Duration(seconds: 4),
+                    );
+                    return;
+                  }
+                  Navigator.pushNamed(
+                    context,
+                    Routes.sapereDetails,
+                    arguments: post,
+                  );
+                },
               );
             },
           ),
@@ -670,12 +703,17 @@ class StreamVm extends ChangeNotifier {
                 .map((doc) => doc.data())
                 .whereType<BukBukPost>()
                 .where(
-                  (post) => post.type != 'preview',
+                  (post) =>
+                      post.type != 'preview' && post.isCompleted,
                 ) // Client side filter to be 100% safe
                 .toList();
 
         posts.addAll(newPosts);
         if (snapshot.docs.length < (_limit)) _hasMore = false;
+        if (newPosts.isEmpty && _hasMore) {
+          await fetchPosts();
+          return;
+        }
         notifyListeners();
       } else {
         setHasMore(false);

@@ -49,7 +49,6 @@ void main() async {
           ? 'goog_RdwMCJqPZwIhMuBZRPeVszstsPX'
           : 'appl_XplNhBGZacoyWBpXGDRxQrMeDHS';
   print(key.toString());
-  await SubscriptionApi.init(apiKey: key);
   await SubscriptionApi.initPlatformState(key: key);
 
   String? local = await LocalStorage().getData(key: AppLocalKeys.localeKey);

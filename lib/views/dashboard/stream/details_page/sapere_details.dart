@@ -37,6 +37,7 @@ class _SapereDetailsState extends State<SapereDetails> {
   String? _sapereUrl;
   Timer? _pollTimer;
   List<String>? _description;
+  bool _isFailed = false;
   @override
   void initState() {
     super.initState();
@@ -56,6 +57,8 @@ class _SapereDetailsState extends State<SapereDetails> {
       final data = snap.data();
 
       final String? url = (data?['bukbukUrl'] as String?)?.trim();
+      final bool failed =
+          (url == null || url.isEmpty) && data?['status'] == 'error';
 
       final List<String>? desc =
           (data?['description'] as List?)?.whereType<String>().toList();
@@ -64,10 +67,11 @@ class _SapereDetailsState extends State<SapereDetails> {
 
       setState(() {
         _sapereUrl = (url != null && url.isNotEmpty) ? url : null;
+        _isFailed = failed;
         _description = (desc != null && desc.isNotEmpty) ? desc : _description;
       });
 
-      if (_sapereUrl != null && _sapereUrl!.isNotEmpty) {
+      if ((_sapereUrl != null && _sapereUrl!.isNotEmpty) || _isFailed) {
         _pollTimer?.cancel();
         _pollTimer = null;
       } else {
@@ -81,7 +85,7 @@ class _SapereDetailsState extends State<SapereDetails> {
   }
 
   void _startPollingIfNeeded(BuildContext context) {
-    if (_sapereUrl != null && _sapereUrl!.isNotEmpty) return;
+    if ((_sapereUrl != null && _sapereUrl!.isNotEmpty) || _isFailed) return;
 
     _pollTimer ??= Timer.periodic(const Duration(seconds: 5), (_) {
       final provider = Provider.of<UserProvider>(context, listen: false);
@@ -298,7 +302,8 @@ class _SapereDetailsState extends State<SapereDetails> {
                                           context,
                                           listen: false,
                                         );
-                                    if (!iap.isSubscribed &&
+                                    if (!widget.post.isMine &&
+                                        !iap.isSubscribed &&
                                         !AppRatingService
                                             .instance
                                             .hasRatedApp) {
@@ -384,7 +389,8 @@ class _SapereDetailsState extends State<SapereDetails> {
                                           context,
                                           listen: false,
                                         );
-                                    if (!iap.isSubscribed &&
+                                    if (!widget.post.isMine &&
+                                        !iap.isSubscribed &&
                                         !AppRatingService
                                             .instance
                                             .hasRatedApp) {
@@ -540,24 +546,30 @@ class _SapereDetailsState extends State<SapereDetails> {
       ),
       child: Row(
         children: [
-          SpinKitPulse(color: AppColors.kSamiOrange, size: 30.sp),
+          if (_isFailed)
+            Icon(Icons.error_outline, color: Colors.redAccent, size: 30.sp)
+          else
+            SpinKitPulse(color: AppColors.kSamiOrange, size: 30.sp),
           SizedBox(width: 15.w),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'audioBookGenerating'.tr,
+                  _isFailed
+                      ? 'generationFailed'.tr
+                      : 'audioBookGenerating'.tr,
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 16.sp,
                   ),
                 ),
-                Text(
-                  'itWillAvailableSoon'.tr,
-                  style: TextStyle(color: Colors.grey, fontSize: 12.sp),
-                ),
+                if (!_isFailed)
+                  Text(
+                    'itWillAvailableSoon'.tr,
+                    style: TextStyle(color: Colors.grey, fontSize: 12.sp),
+                  ),
               ],
             ),
           ),

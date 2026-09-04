@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "678418025083-05jkp590hfl4tnij1fnk1tb4mkcnam26.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.victor.sapere",
+            "certificate_hash": "a60c5b74ed503748540b25073ee8824927648345"
+          }
+        },
+        {
           "client_id": "678418025083-48jkjmlacinfcsqnnm4kf06ne3hbca65.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -27,6 +35,14 @@
           "android_info": {
             "package_name": "com.victor.sapere",
             "certificate_hash": "5d17b0cfd4ed2df54632e300caa5dda68dee32f6"
+          }
+        },
+        {
+          "client_id": "678418025083-en1icd80huv090kqusvprmu1ei5epol4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.victor.sapere",
+            "certificate_hash": "00a800d54150ada420ee2e99b6111418d945e5ee"
           }
         },
         {

@@ -4,6 +4,7 @@ import 'package:sapere/core/services/local_storage_service.dart';
 import 'package:sapere/providers/subscription_provider.dart';
 import 'package:sapere/core/utils/navigation_utils.dart';
 import 'package:sapere/routes/app_pages.dart';
+import 'package:sapere/views/dashboard/subscription/subscription_api.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,10 @@ class _SplashPageState extends State<SplashPage> {
   void _checkInitialConnectivity() async {
     final connectivityResult = await Connectivity().checkConnectivity();
     final provider = Provider.of<InAppPurchaseProvider>(context, listen: false);
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser != null) {
+      await SubscriptionApi.logIn(currentUser.uid);
+    }
     provider.checkSubscriptionStatus();
     await Future.delayed(const Duration(seconds: 4));
 
@@ -42,6 +47,7 @@ class _SplashPageState extends State<SplashPage> {
             context,
             listen: false,
           );
+          await SubscriptionApi.logIn(user.uid);
           await subProvider.checkSubscriptionStatus();
           if (!mounted) return;
           redirectToCorrectScreen(context, subProvider.isSubscribed);

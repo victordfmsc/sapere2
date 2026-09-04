@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class BukBukPost {
   final String? postId;
@@ -23,6 +24,8 @@ class BukBukPost {
   final String? gamificationSubject;
   final int? gamificationEpisode;
   final String? languageCode;
+  final String? status;
+  final String? errorMessage;
 
   BukBukPost({
     this.postId,
@@ -45,7 +48,22 @@ class BukBukPost {
     this.gamificationSubject,
     this.gamificationEpisode,
     this.languageCode,
+    this.status,
+    this.errorMessage,
   });
+
+  /// Audio generado por completo: el worker escribe bukbukUrl solo al terminar.
+  bool get hasAudio => (sapereUrl ?? '').trim().isNotEmpty;
+
+  bool get isMine =>
+      uId != null && uId == FirebaseAuth.instance.currentUser?.uid;
+
+  bool get isCompleted => hasAudio || status == 'completed';
+
+  bool get isFailed => !hasAudio && status == 'error';
+
+  bool get isProcessing => !hasAudio && !isFailed;
+
   factory BukBukPost.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
     final String? cover = data['newCover'] ?? data['coverImage'];
@@ -77,6 +95,8 @@ class BukBukPost {
       gamificationSubject: data['gamificationSubject'],
       gamificationEpisode: data['gamificationEpisode'],
       languageCode: data['languageCode'],
+      status: data['status'],
+      errorMessage: data['errorMessage'],
     );
   }
 
@@ -100,6 +120,8 @@ class BukBukPost {
     ShippingModel? shippingModel,
     String? gamificationSubject,
     int? gamificationEpisode,
+    String? status,
+    String? errorMessage,
   }) {
     return BukBukPost(
       postId: postId ?? this.postId,
@@ -122,6 +144,8 @@ class BukBukPost {
       gamificationSubject: gamificationSubject ?? this.gamificationSubject,
       gamificationEpisode: gamificationEpisode ?? this.gamificationEpisode,
       languageCode: languageCode ?? this.languageCode,
+      status: status ?? this.status,
+      errorMessage: errorMessage ?? this.errorMessage,
     );
   }
 
@@ -205,6 +229,8 @@ class BukBukPost {
       'gamificationSubject': gamificationSubject,
       'gamificationEpisode': gamificationEpisode,
       'languageCode': languageCode,
+      'status': status,
+      'errorMessage': errorMessage,
     };
   }
 
@@ -245,6 +271,8 @@ class BukBukPost {
       gamificationSubject: map['gamificationSubject'],
       gamificationEpisode: map['gamificationEpisode'],
       languageCode: map['languageCode'],
+      status: map['status'],
+      errorMessage: map['errorMessage'],
     );
   }
 

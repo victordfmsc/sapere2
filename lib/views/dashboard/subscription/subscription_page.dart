@@ -10,6 +10,7 @@ import 'package:sapere/core/constant/colors.dart';
 import 'package:sapere/core/utils/dialog_utils.dart';
 import 'package:sapere/providers/subscription_provider.dart';
 import 'package:sapere/routes/app_pages.dart';
+import 'package:sapere/views/dashboard/subscription/widgets/credit_packs_section.dart';
 import 'package:sapere/views/dashboard/subscription/widgets/trial_timeline_widget.dart';
 import 'package:sapere/widgets/dailogs/premium_success_dialog.dart';
 import 'package:skeletonizer/skeletonizer.dart';
@@ -36,9 +37,12 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
 
     return Consumer<InAppPurchaseProvider>(
       builder: (context, provider, child) {
-        final weekly = provider.weeklyPackage;
         final monthly = provider.monthlyPackage;
         final yearly = provider.yearlyPackage;
+        final hasTrial = InAppPurchaseProvider.packageHasFreeTrial(yearly);
+        String gainedPoints() =>
+            (provider.lastPurchaseGain > 0 ? provider.lastPurchaseGain : 4)
+                .toString();
 
         return Scaffold(
           body: Skeletonizer(
@@ -57,19 +61,11 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                           ),
                           SizedBox(height: 20.h),
                           Text(
-                            "Retrying Connection...",
+                            'connectionLostTitle'.tr,
                             style: TextStyle(
                               color: AppColors.textColor,
                               fontSize: 18.sp,
                               fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          SizedBox(height: 10.h),
-                          Text(
-                            "Restoring your premium access",
-                            style: TextStyle(
-                              color: AppColors.textColor.withOpacity(0.6),
-                              fontSize: 14.sp,
                             ),
                           ),
                           SizedBox(height: 30.h),
@@ -83,7 +79,7 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                                 borderRadius: BorderRadius.circular(30.r),
                               ),
                             ),
-                            child: const Text("Try Again"),
+                            child: Text('retryConnectionText'.tr),
                           ),
                         ],
                       ),
@@ -101,59 +97,21 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                                   SizedBox(
                                     height: 60.h,
                                   ), // Space for persistent X
-                                  const TrialTimelineWidget(),
-                                  SizedBox(height: 20.h),
-                                  const SubscriptionHeaderTexts(),
+                                  if (hasTrial) ...[
+                                    const TrialTimelineWidget(),
+                                    SizedBox(height: 20.h),
+                                  ],
+                                  SubscriptionHeaderTexts(hasTrial: hasTrial),
                                   SizedBox(height: 15.h),
 
-                                  // MONTHLY PLAN - STAR PRODUCT (HIGHLIGHTED)
+                                  // PREMIUM (ANUAL) - DESTACADO COMO MEJOR VALOR
                                   buildHighlightedOption(
-                                    title: 'monthlyPlanTitle'.tr,
-                                    subTitle:
-                                        "10 ${'saperePoints'.tr} / ${'month'.tr}",
+                                    title: 'premiumPlanTitle'.tr,
+                                    subTitle: 'creditsPerMonth'.tr,
                                     isBestValue: true,
-                                    label: 'monthlyStarBadge'.tr,
-                                    onTap: () async {
-                                      if (monthly == null) return;
-                                      showLoadingDialog(
-                                        context,
-                                        message: 'PleaseWait'.tr,
-                                      );
-                                      final success = await provider
-                                          .buySubscription(monthly);
-                                      if (!mounted) return;
-                                      Navigator.of(context).pop();
-
-                                      if (success) {
-                                        Navigator.of(context).pop();
-                                        Get.dialog(
-                                          PremiumSuccessDialog(
-                                            points: '10',
-                                            onClose: () {
-                                              Get.to(
-                                                () => const AddSaperePage(
-                                                  initialText:
-                                                      "Unlock your first Premium Documentary about: ",
-                                                ),
-                                              );
-                                            },
-                                          ),
-                                          barrierDismissible: true,
-                                          useSafeArea: false,
-                                        );
-                                      }
-                                    },
-                                    price:
-                                        '${monthly?.storeProduct.priceString ?? '---'}/${'monthly'.tr}',
-                                  ),
-
-                                  SizedBox(height: 15.h),
-
-                                  // ANNUAL PLAN (Standard Style)
-                                  buildSubscriptionOption(
-                                    title: 'yearlyPlanTitle'.tr,
-                                    subTitle: "55 credits - 1 year",
-                                    isFeatured: true,
+                                    label:
+                                        "${'savePercent'.tr} ${provider.annualSavingsPercentage}",
+                                    hasTrial: hasTrial,
                                     onTap: () async {
                                       if (yearly == null) return;
                                       showLoadingDialog(
@@ -169,12 +127,12 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                                         Navigator.of(context).pop();
                                         Get.dialog(
                                           PremiumSuccessDialog(
-                                            points: '55',
+                                            points: gainedPoints(),
                                             onClose: () {
                                               Get.to(
-                                                () => const AddSaperePage(
+                                                () => AddSaperePage(
                                                   initialText:
-                                                      "Create your first Unlimited History Documentary about: ",
+                                                      'unlockFirstDoc'.tr,
                                                 ),
                                               );
                                             },
@@ -190,20 +148,19 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
 
                                   SizedBox(height: 15.h),
 
-                                  SizedBox(height: 10.h),
-
+                                  // STANDARD (MENSUAL)
                                   buildSubscriptionOption(
-                                    title: 'weeklyPlanTitle'.tr,
-                                    subTitle:
-                                        "1 ${'saperePoints'.tr} / ${'weekly'.tr}",
+                                    title: 'standardPlanTitle'.tr,
+                                    subTitle: 'creditsPerMonth'.tr,
+                                    isFeatured: true,
                                     onTap: () async {
-                                      if (weekly == null) return;
+                                      if (monthly == null) return;
                                       showLoadingDialog(
                                         context,
                                         message: 'PleaseWait'.tr,
                                       );
                                       final success = await provider
-                                          .buySubscription(weekly);
+                                          .buySubscription(monthly);
                                       if (!mounted) return;
                                       Navigator.of(context).pop();
 
@@ -211,12 +168,12 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                                         Navigator.of(context).pop();
                                         Get.dialog(
                                           PremiumSuccessDialog(
-                                            points: '1',
+                                            points: gainedPoints(),
                                             onClose: () {
                                               Get.to(
-                                                () => const AddSaperePage(
+                                                () => AddSaperePage(
                                                   initialText:
-                                                      "Start your journey with a Documentary about: ",
+                                                      'unlockFirstDoc'.tr,
                                                 ),
                                               );
                                             },
@@ -227,8 +184,14 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                                       }
                                     },
                                     price:
-                                        '${weekly?.storeProduct.priceString ?? '---'}/${'weekly'.tr}',
+                                        '${monthly?.storeProduct.priceString ?? '---'}/${'monthly'.tr}',
                                   ),
+
+                                  SizedBox(height: 20.h),
+
+                                  // TIENDA DE CRÉDITOS (packs consumibles)
+                                  const CreditPacksSection(),
+                                  SizedBox(height: 10.h),
 
                                   const SubscriptionBottomTexts(),
                                   SizedBox(height: 30.h),
@@ -279,6 +242,7 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
     required VoidCallback onTap,
     String label = "MOST POPULAR",
     bool isBestValue = true,
+    bool hasTrial = false,
   }) {
     return InkWell(
       onTap: onTap,
@@ -374,7 +338,7 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                         borderRadius: BorderRadius.circular(20.r),
                       ),
                       child: Text(
-                        'startFreeTrail'.tr,
+                        hasTrial ? 'startFreeTrail'.tr : 'subscribeNow'.tr,
                         style: TextStyle(
                           color: AppColors.textColor,
                           fontWeight: FontWeight.bold,
@@ -477,7 +441,9 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
 }
 
 class SubscriptionHeaderTexts extends StatelessWidget {
-  const SubscriptionHeaderTexts({super.key});
+  final bool hasTrial;
+
+  const SubscriptionHeaderTexts({super.key, this.hasTrial = false});
 
   @override
   Widget build(BuildContext context) {
@@ -507,7 +473,7 @@ class SubscriptionHeaderTexts extends StatelessWidget {
         Align(
           alignment: Alignment.centerLeft,
           child: Text(
-            'Achievements Unlocked:', // I can also localize this if I add a key
+            'whatYouGet'.tr,
             style: TextStyle(
               fontSize: 19.sp,
               color: AppColors.textColor,
@@ -536,20 +502,21 @@ class SubscriptionHeaderTexts extends StatelessWidget {
             ),
           ),
         ),
-        Align(
-          alignment: Alignment.centerLeft,
-          child: Padding(
-            padding: const EdgeInsets.only(left: 6),
-            child: Text(
-              "• 🌍 ${'wiselyText'.tr}",
-              style: TextStyle(
-                fontSize: 18.sp,
-                color: AppColors.premiumGoldGradient.colors.first,
-                fontWeight: FontWeight.bold,
+        if (hasTrial)
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 6),
+              child: Text(
+                "• 🌍 ${'wiselyText'.tr}",
+                style: TextStyle(
+                  fontSize: 18.sp,
+                  color: AppColors.premiumGoldGradient.colors.first,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),
-        ),
       ],
     );
   }

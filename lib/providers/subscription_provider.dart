@@ -1,29 +1,61 @@
+import 'dart:convert';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:provider/provider.dart';
-import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:flutter/services.dart';
-import 'package:sapere/providers/user_provider.dart';
+import 'package:get/get.dart';
+import 'package:http/http.dart' as http;
+import 'package:purchases_flutter/purchases_flutter.dart';
 
 import '../core/constant/colors.dart';
-import '../core/services/database_helper.dart';
+import '../core/constant/firestore_collection.dart';
 
 class InAppPurchaseProvider extends ChangeNotifier {
   InAppPurchaseProvider() {
     debugPrint('InAppPurchaseProvider initialized');
     fetchOfferings();
+    fetchCreditPacks();
     checkSubscriptionStatus();
   }
-  final String entitlementID = "premium";
+
+  static const entitlementCatalog = 'catalog_access';
+  static const entitlementLegacy = 'premium';
+  static const virtualCurrencyCode = 'CRD';
+  static const creditPackIds = [
+    'credits_pack_5',
+    'credits_pack_15',
+    'credits_pack_40',
+  ];
+  static const _creditsApiBase =
+      'https://web-production-b405a.up.railway.app/v1/api/credits';
+
   bool isSubscribed = false;
   bool isTrial = false;
   Offering? offering;
   bool isLoading = false;
+  bool isLoadingPacks = false;
+  bool creditPacksFailed = false;
   List<Package>? availablePackages;
+  List<StoreProduct> creditPacks = [];
+
+  /// Saldo de créditos en RevenueCat (Virtual Currency `CRD`).
+  int creditBalance = 0;
+
+  /// Créditos antiguos guardados en Firestore `users.credits`.
+  int legacyCredits = 0;
+
   bool? _canPost;
   DateTime? _nextRefillDate;
+
+  /// Identificador del último gasto aceptado por el backend (para reembolso).
+  String? lastSpendId;
+  String? lastSpendSource;
+
+  /// Créditos ganados en la última compra de suscripción.
+  int lastPurchaseGain = 0;
+
+  int get totalCredits => creditBalance + legacyCredits;
 
   DateTime? get nextRefillDate => _nextRefillDate;
 
@@ -59,15 +91,44 @@ class InAppPurchaseProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  Package? get weeklyPackage {
-    final package =
-        availablePackages
-            ?.where((pkg) => pkg.packageType == PackageType.weekly)
-            .toList()
-            .cast<Package?>()
-            .firstOrNull;
-    debugPrint('Weekly package: ${package?.storeProduct.identifier}');
-    return package;
+  Future<void> fetchCreditPacks() async {
+    debugPrint('Fetching credit packs...');
+    isLoadingPacks = true;
+    creditPacksFailed = false;
+    notifyListeners();
+
+    try {
+      final products = await Purchases.getProducts(
+        creditPackIds,
+        productCategory: ProductCategory.nonSubscription,
+      );
+      products.sort((a, b) => a.price.compareTo(b.price));
+      creditPacks = products;
+      debugPrint('Credit packs loaded: ${creditPacks.length} products found.');
+      if (creditPacks.isEmpty) {
+        debugPrint(
+          'Store returned no credit packs: check that the product IDs exist and are active in Play Console / App Store Connect.',
+        );
+      }
+    } on PlatformException catch (e) {
+      debugPrint('RevenueCat error while fetching credit packs: $e');
+      creditPacksFailed = true;
+    }
+
+    isLoadingPacks = false;
+    notifyListeners();
+  }
+
+  /// True si el producto de [p] ofrece una prueba gratuita en la tienda.
+  static bool packageHasFreeTrial(Package? p) {
+    if (p == null) return false;
+    final product = p.storeProduct;
+    final options = product.subscriptionOptions;
+    if (options != null && options.any((o) => o.freePhase != null)) {
+      return true;
+    }
+    final intro = product.introductoryPrice;
+    return intro != null && intro.price == 0;
   }
 
   Package? get monthlyPackage {
@@ -77,7 +138,6 @@ class InAppPurchaseProvider extends ChangeNotifier {
             .toList()
             .cast<Package?>()
             .firstOrNull;
-    debugPrint('Monthly package: ${package?.storeProduct.identifier}');
     return package;
   }
 
@@ -88,7 +148,6 @@ class InAppPurchaseProvider extends ChangeNotifier {
             .toList()
             .cast<Package?>()
             .firstOrNull;
-    debugPrint('Yearly package: ${package?.storeProduct.identifier}');
     return package;
   }
 
@@ -118,14 +177,69 @@ class InAppPurchaseProvider extends ChangeNotifier {
   Future<bool> buySubscription(Package package) async {
     try {
       debugPrint('Attempting to purchase: ${package.storeProduct.identifier}');
-      await Purchases.purchasePackage(package);
+      final creditsBefore = totalCredits;
+      await Purchases.purchase(PurchaseParams.package(package));
       debugPrint('Purchase successful.');
-      // The sync will happen inside checkSubscriptionStatus
       await checkSubscriptionStatus();
+      await refreshCredits(invalidate: true);
+      final gain = totalCredits - creditsBefore;
+      lastPurchaseGain = gain > 0 ? gain : 0;
       return isSubscribed;
     } on PlatformException catch (e) {
-      debugPrint('Purchase failed: $e');
+      final code = PurchasesErrorHelper.getErrorCode(e);
+      if (code == PurchasesErrorCode.purchaseCancelledError) {
+        debugPrint('Purchase cancelled by user.');
+      } else {
+        debugPrint('Purchase failed: $e');
+      }
       return false;
+    }
+  }
+
+  Future<bool> buyCreditPack(StoreProduct product) async {
+    try {
+      debugPrint('Attempting to purchase credit pack: ${product.identifier}');
+      await Purchases.purchase(PurchaseParams.storeProduct(product));
+      debugPrint('Credit pack purchase successful.');
+      await refreshCredits(invalidate: true);
+      return true;
+    } on PlatformException catch (e) {
+      final code = PurchasesErrorHelper.getErrorCode(e);
+      if (code == PurchasesErrorCode.purchaseCancelledError) {
+        debugPrint('Credit pack purchase cancelled by user.');
+        return false;
+      }
+      debugPrint('Credit pack purchase failed: $e');
+      Get.snackbar('sorry'.tr, 'wentWrong'.tr, colorText: AppColors.textColor);
+      return false;
+    }
+  }
+
+  EntitlementInfo? _activeEntitlement(CustomerInfo customerInfo) {
+    final catalog = customerInfo.entitlements.all[entitlementCatalog];
+    if (catalog != null && catalog.isActive) return catalog;
+    final legacy = customerInfo.entitlements.all[entitlementLegacy];
+    if (legacy != null && legacy.isActive) return legacy;
+    return null;
+  }
+
+  void _applyCustomerInfo(CustomerInfo customerInfo) {
+    final entitlement = _activeEntitlement(customerInfo);
+    if (entitlement != null) {
+      isSubscribed = true;
+      isTrial = entitlement.periodType == PeriodType.trial;
+      _nextRefillDate =
+          entitlement.expirationDate != null
+              ? DateTime.tryParse(entitlement.expirationDate!)
+              : null;
+      debugPrint(
+        "Subscription is active (${entitlement.identifier}). Trial: $isTrial. Next refill: $_nextRefillDate",
+      );
+    } else {
+      isSubscribed = false;
+      isTrial = false;
+      _nextRefillDate = null;
+      debugPrint("No active subscription found.");
     }
   }
 
@@ -133,116 +247,47 @@ class InAppPurchaseProvider extends ChangeNotifier {
     debugPrint('Checking subscription status...');
     try {
       CustomerInfo customerInfo = await Purchases.getCustomerInfo();
-      debugPrint("Customer Info: $customerInfo");
-
-      final entitlement = customerInfo.entitlements.all[entitlementID];
-      if (entitlement != null && entitlement.isActive == true) {
-        isSubscribed = true;
-        isTrial = entitlement.periodType == PeriodType.trial;
-        if (entitlement.expirationDate != null) {
-          _nextRefillDate = DateTime.tryParse(entitlement.expirationDate!);
-        }
-        debugPrint(
-          "Subscription is active. Trial: $isTrial. Next refill: $_nextRefillDate",
-        );
-
-        // --- NEW: Automated Credit Sync ---
-        await syncCredits(customerInfo);
-      } else {
-        isSubscribed = false;
-        isTrial = false;
-        debugPrint("No active subscription found.");
-      }
+      _applyCustomerInfo(customerInfo);
     } catch (e) {
       debugPrint("Error checking subscription status: $e");
     }
+    await refreshCredits();
+  }
+
+  /// Lee el saldo de RevenueCat (y los créditos antiguos de Firestore).
+  /// Con [invalidate] fuerza una lectura fresca tras una compra o un gasto.
+  Future<void> refreshCredits({bool invalidate = false}) async {
+    try {
+      if (invalidate) {
+        await Purchases.invalidateVirtualCurrenciesCache();
+      }
+      final currencies = await Purchases.getVirtualCurrencies();
+      creditBalance = currencies.all[virtualCurrencyCode]?.balance ?? 0;
+    } catch (e) {
+      debugPrint('Error fetching virtual currencies: $e');
+    }
+    legacyCredits = await _fetchLegacyCredits();
+    _canPost = totalCredits > 0;
+    debugPrint(
+      'Credits refreshed: rc=$creditBalance legacy=$legacyCredits total=$totalCredits',
+    );
     notifyListeners();
   }
 
-  Future<void> syncCredits(CustomerInfo customerInfo) async {
-    final entitlement = customerInfo.entitlements.all[entitlementID];
-    if (entitlement == null || entitlement.isActive != true) return;
-
-    final latestPurchaseDate = entitlement.latestPurchaseDate;
-    final productId = entitlement.productIdentifier;
-
-    final context = Get.context;
-    if (context == null) return;
-
-    final userProvider = Provider.of<UserProvider>(context, listen: false);
-    final user = userProvider.user;
-    if (user == null) return;
-
-    // If we already processed this purchase date, skip
-    if (user.lastCreditSync == latestPurchaseDate) {
-      debugPrint(
-        "✅ Credits for cycle $latestPurchaseDate already granted. Skipping.",
-      );
-      return;
-    }
-
-    debugPrint(
-      "🔄 New billing cycle detected: $latestPurchaseDate. Granting credits...",
-    );
-
-    // Determine credits to add based on product ID
-    int creditsToAdd = 0;
-    // We match against known product types or identifiers
-    // Based on subscription_page.dart: Weekly -> 1, Monthly -> 10, Yearly -> 55
-    if (productId.contains('weekly')) {
-      creditsToAdd = 1;
-    } else if (productId.contains('monthly')) {
-      creditsToAdd = 10;
-    } else if (productId.contains('yearly') || productId.contains('annual')) {
-      creditsToAdd = 55;
-    } else {
-      // Fallback if naming convention differs, check the available packages
-      if (weeklyPackage?.storeProduct.identifier == productId)
-        creditsToAdd = 1;
-      else if (monthlyPackage?.storeProduct.identifier == productId)
-        creditsToAdd = 10;
-      else if (yearlyPackage?.storeProduct.identifier == productId)
-        creditsToAdd = 55;
-    }
-
-    if (creditsToAdd == 0) {
-      debugPrint(
-        "⚠️ Could not determine credit amount for product: $productId",
-      );
-      return;
-    }
-
+  Future<int> _fetchLegacyCredits() async {
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    if (uid == null) return 0;
     try {
-      final docRef = FirebaseFirestore.instance
-          .collection('users')
-          .doc(user.uId);
-
-      await FirebaseFirestore.instance.runTransaction((transaction) async {
-        final snapshot = await transaction.get(docRef);
-        if (!snapshot.exists) return;
-
-        final currentCredits = snapshot.data()?['credits'] ?? 0;
-        final updatedCredits = (currentCredits as int) + creditsToAdd;
-
-        transaction.update(docRef, {
-          'credits': updatedCredits,
-          'lastCreditSync': latestPurchaseDate,
-        });
-      });
-
-      // Update local model
-      userProvider.user?.credits += creditsToAdd;
-      userProvider.user?.lastCreditSync = latestPurchaseDate;
-      userProvider.notifyListeners();
-
-      // Removed Get.dialog from here so that the UI can handle routing cleanly
-      // We will let the subscription page trigger the dialog after popping itself
-
-      debugPrint(
-        "✅ Automated Sync: Added $creditsToAdd credits for cycle $latestPurchaseDate",
-      );
+      final snapshot =
+          await FirebaseFirestore.instance
+              .collection(firebaseUserCollection)
+              .doc(uid)
+              .get();
+      final value = snapshot.data()?['credits'];
+      return value is num ? value.toInt() : 0;
     } catch (e) {
-      debugPrint("❌ Error during host sync credits: $e");
+      debugPrint('Error reading legacy credits: $e');
+      return 0;
     }
   }
 
@@ -250,10 +295,9 @@ class InAppPurchaseProvider extends ChangeNotifier {
     debugPrint('Restoring purchases...');
     try {
       CustomerInfo restoredInfo = await Purchases.restorePurchases();
-      final entitlement = restoredInfo.entitlements.all[entitlementID];
+      _applyCustomerInfo(restoredInfo);
 
-      if (entitlement != null && entitlement.isActive == true) {
-        isSubscribed = true;
+      if (isSubscribed) {
         debugPrint("Restore successful. Subscription active.");
         Get.snackbar(
           'successful'.tr,
@@ -261,7 +305,6 @@ class InAppPurchaseProvider extends ChangeNotifier {
           colorText: AppColors.textColor,
         );
       } else {
-        isSubscribed = false;
         debugPrint("Restore complete, but no active subscription found.");
         Get.snackbar(
           'sorry'.tr,
@@ -277,66 +320,122 @@ class InAppPurchaseProvider extends ChangeNotifier {
         colorText: AppColors.textColor,
       );
     }
-    notifyListeners();
+    await refreshCredits(invalidate: true);
   }
 
   Future<void> check() async {
     debugPrint('can post called');
-    // Allow posting if user has credits, regardless of active subscription status
-    final result = await PostLimitChecker().canUserNormalPost();
-    _canPost = result;
+    await refreshCredits();
+    canPost = totalCredits > 0;
+  }
 
+  Future<Map<String, String>> _authHeaders() async {
+    final token = await FirebaseAuth.instance.currentUser!.getIdToken();
+    return {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer $token',
+    };
+  }
+
+  /// Aplica el saldo devuelto por el backend según la fuente del movimiento.
+  Future<void> _applyBalance(String? source, int? newBalance, int delta) async {
+    if (source == 'legacy') {
+      legacyCredits = newBalance ?? (legacyCredits + delta).clamp(0, 1 << 31);
+    } else {
+      creditBalance = newBalance ?? (creditBalance + delta).clamp(0, 1 << 31);
+      try {
+        await Purchases.invalidateVirtualCurrenciesCache();
+      } catch (e) {
+        debugPrint('Error invalidating virtual currencies cache: $e');
+      }
+    }
+    _canPost = totalCredits > 0;
     notifyListeners();
   }
 
-  // Deprecated: use automated sync instead
-  Future<void> resetCurrentUserCreditsTo(
-    int creditsToAdd,
-    BuildContext context,
-  ) async {
-    // Keep for backward compatibility but redirect to a no-op if possible
-    // Actually, let's keep it as is for now to avoid breaking UI before cleanup
-    syncCredits(await Purchases.getCustomerInfo());
-  }
-
+  /// Gasta 1 crédito a través del backend (RevenueCat o reserva legacy).
   Future<bool> deductCredit() async {
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    if (uid == null) return false;
+
     try {
-      final userid = FirebaseAuth.instance.currentUser?.uid;
-      if (userid == null) return false;
+      final response = await http
+          .post(
+            Uri.parse('$_creditsApiBase/spend'),
+            headers: await _authHeaders(),
+            body: jsonEncode({'uId': uid}),
+          )
+          .timeout(const Duration(seconds: 20));
 
-      final docRef = FirebaseFirestore.instance.collection('users').doc(userid);
-
-      return await FirebaseFirestore.instance.runTransaction((
-        transaction,
-      ) async {
-        final snapshot = await transaction.get(docRef);
-        if (!snapshot.exists) return false;
-
-        final currentCredits = snapshot.data()?['credits'] ?? 0;
-        if (currentCredits is int && currentCredits > 0) {
-          transaction.update(docRef, {'credits': currentCredits - 1});
-
-          // Update local provider if possible
-          final context = Get.context;
-          if (context != null) {
-            final userProv = Provider.of<UserProvider>(context, listen: false);
-            if (userProv.user != null) {
-              userProv.user!.credits -= 1;
-              userProv.notifyListeners();
-            }
-          }
-
-          return true;
-        }
+      if (response.statusCode != 200) {
+        debugPrint(
+          '❌ Credit spend rejected (${response.statusCode}): ${response.body}',
+        );
         return false;
-      });
+      }
+
+      final data = jsonDecode(response.body);
+      if (data is! Map || data['ok'] != true) {
+        debugPrint('❌ Credit spend not ok: ${response.body}');
+        return false;
+      }
+
+      final balance = data['balance'];
+      final int? newBalance = balance is num ? balance.toInt() : null;
+      final source = data['source']?.toString();
+      final spendId = data['spendId'];
+      lastSpendId = spendId is String ? spendId : null;
+      lastSpendSource = source;
+      await _applyBalance(source, newBalance, -1);
+      debugPrint(
+        '✅ Credit spent from $source (spendId=$lastSpendId). rc=$creditBalance legacy=$legacyCredits',
+      );
+      return true;
     } catch (e) {
       debugPrint('❌ Error deducting credit: $e');
       return false;
     }
   }
 
-  Future<void> deductOneCreditFromCurrentUser() async {
-    await deductCredit();
+  /// Devuelve el último crédito gastado si la creación falló después del cobro.
+  Future<bool> refundLastSpend() async {
+    final spendId = lastSpendId;
+    if (spendId == null) return false;
+
+    try {
+      final response = await http
+          .post(
+            Uri.parse('$_creditsApiBase/refund'),
+            headers: await _authHeaders(),
+            body: jsonEncode({'spendId': spendId}),
+          )
+          .timeout(const Duration(seconds: 20));
+
+      if (response.statusCode != 200) {
+        debugPrint(
+          '❌ Credit refund rejected (${response.statusCode}): ${response.body}',
+        );
+        return false;
+      }
+
+      final data = jsonDecode(response.body);
+      if (data is! Map || data['ok'] != true) {
+        debugPrint('❌ Credit refund not ok: ${response.body}');
+        return false;
+      }
+
+      final balance = data['balance'];
+      final int? newBalance = balance is num ? balance.toInt() : null;
+      final source = data['source']?.toString() ?? lastSpendSource;
+      await _applyBalance(source, newBalance, 1);
+      lastSpendId = null;
+      debugPrint(
+        '✅ Credit refunded to $source. rc=$creditBalance legacy=$legacyCredits',
+      );
+      return true;
+    } catch (e) {
+      debugPrint('❌ Error refunding credit: $e');
+      return false;
+    }
   }
 }

@@ -78,10 +78,15 @@ class SignUpScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SingleChildScrollView(
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 24.w),
-                        child: Form(
+                    SafeArea(
+                      top: false,
+                      bottom: true,
+                      child: SingleChildScrollView(
+                        keyboardDismissBehavior:
+                            ScrollViewKeyboardDismissBehavior.onDrag,
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 24.w),
+                          child: Form(
                           key: vm.formKey,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -350,21 +355,22 @@ class SignUpScreen extends StatelessWidget {
                                   ],
                                 ],
                               ),
-                              SizedBox(height: 40.h),
+                              SizedBox(height: 32.h),
                             ],
                           ),
                         ),
                       ),
                     ),
-                  ],
-                ),
-              );
-            },
-          );
-        },
-      ),
-    );
-  }
+                  ),
+                ],
+              ),
+            );
+          },
+        );
+      },
+    ),
+  );
+}
 
   Widget _buildTopHeader(TextTheme textTheme) {
     return Row(

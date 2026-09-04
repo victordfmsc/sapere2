@@ -3,6 +3,7 @@ import 'package:sapere/core/constant/strings.dart';
 import 'package:sapere/core/services/database_helper.dart';
 import 'package:sapere/core/services/local_storage_service.dart';
 import 'package:sapere/models/post.dart';
+import 'package:sapere/providers/sapere_provider.dart';
 import 'package:sapere/routes/app_pages.dart';
 import 'package:sapere/views/dashboard/stream/components/sapere_card.dart';
 import 'package:sapere/views/dashboard/stream/stream.dart';
@@ -10,6 +11,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:provider/provider.dart';
 
 import '../../../core/constant/const.dart';
 
@@ -266,14 +268,33 @@ class _CreationScreenState extends State<CreationScreen> {
                   ),
                   itemBuilder: (context, index) {
                     BukBukPost post = postList[index];
-                    bool isGenerating =
-                        post.sapereUrl == null || post.sapereUrl!.isEmpty;
+                    final bool isFailed = post.isFailed;
+                    final bool isGenerating = post.isProcessing;
                     return SapereCard(
                       imageUrl: post.newCover.toString(),
                       title: post.sapereName ?? 'Sapere',
                       isGenerating: isGenerating,
+                      isFailed: isFailed,
+                      onRetry:
+                          isFailed
+                              ? () {
+                                Provider.of<BukBukProvider>(
+                                  context,
+                                  listen: false,
+                                ).retryGeneration(post);
+                              }
+                              : null,
                       onTap:
-                          isGenerating
+                          isFailed
+                              ? () {
+                                Get.snackbar(
+                                  'error'.tr,
+                                  'generationFailed'.tr,
+                                  backgroundColor: Colors.red,
+                                  colorText: AppColors.whiteColor,
+                                );
+                              }
+                              : isGenerating
                               ? () {
                                 Get.snackbar(
                                   'info'.tr,

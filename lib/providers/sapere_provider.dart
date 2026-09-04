@@ -332,18 +332,23 @@ class BukBukProvider extends ChangeNotifier {
   Future<bool> checkStoryStatus(String uid) async {
     print('Checking status for $uid');
     final url = Uri.parse(
-      'https://sapereapi-production.up.railway.app/v1/api/sapere/upload-audio-status/$uid',
+      'https://web-production-b405a.up.railway.app/v1/api/sapere/upload-audio-status/$uid',
     );
 
     try {
       final headers = {'Content-Type': 'application/json'};
       final response = await http
           .get(url, headers: headers)
-          .timeout(const Duration(seconds: 5));
+          .timeout(const Duration(seconds: 12));
 
-      print('Status code is ${response.statusCode}');
+      final isBusy = response.statusCode == 200;
+      if (isBusy) {
+        print('⚠️ Story status is BUSY (another doc is being created)');
+      } else {
+        print('✅ Story status is IDLE (ready to create)');
+      }
 
-      return response.statusCode == 200;
+      return isBusy;
     } catch (e) {
       print('Error checking status: $e');
       return false;
@@ -380,7 +385,7 @@ class BukBukProvider extends ChangeNotifier {
       "generateChapterLast".tr,
     ];
     final url = Uri.parse(
-      'https://sapereapi-production.up.railway.app/v1/api/sapere/prompt',
+      'https://web-production-b405a.up.railway.app/v1/api/sapere/prompt',
     );
     final headers = {'Content-Type': 'application/json'};
 
@@ -405,7 +410,7 @@ class BukBukProvider extends ChangeNotifier {
     try {
       final response = await http.post(url, headers: headers, body: body);
 
-      if (response.statusCode == 200) {
+      if (response.statusCode >= 200 && response.statusCode < 300) {
         final data = jsonDecode(response.body);
         print(data);
       } else {
@@ -422,6 +427,7 @@ class BukBukProvider extends ChangeNotifier {
     required String baseUserPrompt,
     required String languageCode,
   }) async {
+    InAppPurchaseProvider? spentProvider;
     try {
       clearGenerationSteps();
       _descriptions.clear();
@@ -456,6 +462,16 @@ class BukBukProvider extends ChangeNotifier {
         );
         return;
       }
+      spentProvider = subProvider;
+
+      // Formulate immediate readable title from prompt
+      String initialTitle = baseUserPrompt.trim();
+      if (initialTitle.length > 40) {
+        initialTitle = "${initialTitle.substring(0, 37)}...";
+      }
+      if (initialTitle.isEmpty) {
+        initialTitle = "Audiolibro Sapere";
+      }
 
       final newPost = BukBukPost(
         postId: newPostId,
@@ -463,7 +479,7 @@ class BukBukProvider extends ChangeNotifier {
         sapereId: bukBukTypeModel.id,
         sapereCategoryNames: bukBukCategoryModel.names,
         sapereTypeNames: bukBukTypeModel.names,
-        sapereName: "...", // placeholder — updated by background task
+        sapereName: initialTitle,
         newCover: selectedCover.isEmpty ? defaultCover : selectedCover,
         sapereUrl: null,
         publishTime: time,
@@ -474,20 +490,21 @@ class BukBukProvider extends ChangeNotifier {
         type: 'sapere',
       );
 
-      await docRef.set(newPost.toMap());
-      print('✅ Post doc created instantly: $newPostId');
+      final Map<String, dynamic> postData = newPost.toMap();
+      postData['status'] = 'pending';
+      await docRef.set(postData);
+      spentProvider = null;
+      print('✅ Post doc created with pending status for Railway: $newPostId');
 
       // Show success dialog and navigate home immediately
       setSelectedCover('');
       Get.dialog(
         CreationSuccessDialog(
           credits:
-              (Provider.of<UserProvider>(
-                        Get.context!,
-                        listen: false,
-                      ).user?.credits ??
-                      0)
-                  .toString(),
+              Provider.of<InAppPurchaseProvider>(
+                Get.context!,
+                listen: false,
+              ).totalCredits.toString(),
         ),
       );
 
@@ -506,6 +523,7 @@ class BukBukProvider extends ChangeNotifier {
     } catch (e, st) {
       print('⚠️ Error in generateFullStory: $e');
       print(st);
+      if (spentProvider != null) await spentProvider.refundLastSpend();
       Get.snackbar(
         'warningImage'.tr,
         'wentWrong'.tr,
@@ -554,7 +572,7 @@ class BukBukProvider extends ChangeNotifier {
       print('🎯 Background title (final): $finalTitle');
 
       // 2) Patch the Firestore doc with the real title
-      await docRef.update({'sapereName': finalTitle});
+      await docRef.update({'bukbukName': finalTitle});
 
       // 3) Fire audio generation (fully async, Railway handles it)
       generateAudioFromServer(
@@ -568,8 +586,9 @@ class BukBukProvider extends ChangeNotifier {
       );
 
       print('🚀 Background task complete for doc: $docId');
-    } catch (e) {
+    } catch (e, st) {
       print('⚠️ Background generation error (non-blocking): $e');
+      print(st);
     }
   }
 
@@ -588,7 +607,7 @@ class BukBukProvider extends ChangeNotifier {
       setIsUploading(true, message: 'generatingAudio'.tr);
 
       final url = Uri.parse(
-        'https://sapereapi-production.up.railway.app/v1/api/sapere/upload-audio',
+        'https://web-production-b405a.up.railway.app/v1/api/sapere/upload-audio',
       );
 
       final body = jsonEncode({
@@ -596,6 +615,12 @@ class BukBukProvider extends ChangeNotifier {
         "systemPrompt": systemPrompt,
         "prompt": prompt,
         "language": language,
+        "languageCode": languageCode,
+        "genre": bukBukCategoryModel.names[languageCode] ?? "General",
+        "bukbukCategoryId": bukBukCategoryModel.docId,
+        "bukbukId": bukBukTypeModel.id,
+        "bukbukTypeNames": bukBukTypeModel.names,
+        "bukbukCategoryNames": bukBukCategoryModel.names,
         "voiceId": voiceId ?? getActiveVoiceId(languageCode),
         "docId": docId,
         "title": title,
@@ -607,7 +632,7 @@ class BukBukProvider extends ChangeNotifier {
         body: body,
       );
 
-      if (response.statusCode == 200 || response.statusCode == 201) {
+      if (response.statusCode >= 200 && response.statusCode < 300) {
         setGenerationStep(GenerationStep.completed);
         print('✅ Audio generation process initiated successfully');
       } else {
@@ -834,7 +859,7 @@ class BukBukProvider extends ChangeNotifier {
     addGenerationStep("📝 Generating title...");
 
     final String url =
-        'https://sapereapi-production.up.railway.app/generate/title';
+        'https://web-production-b405a.up.railway.app/generate/title';
     final String lang = (getLanguageName(languageCode)).trim();
     final String safeLang = lang.isEmpty ? 'English' : lang;
 
@@ -883,6 +908,7 @@ class BukBukProvider extends ChangeNotifier {
     required String systemPrompt,
     required String prompt,
   }) async {
+    InAppPurchaseProvider? spentProvider;
     try {
       // --- NEW: Automated Credit Deduction ---
       final subProvider = Provider.of<InAppPurchaseProvider>(
@@ -902,6 +928,7 @@ class BukBukProvider extends ChangeNotifier {
         );
         return;
       }
+      spentProvider = subProvider;
 
       setIsUploading(true, message: "uploadingToDatabase".tr);
 
@@ -936,6 +963,7 @@ class BukBukProvider extends ChangeNotifier {
 
       // We AWAIT this to ensure the document exists before the UI navigates away
       await docRef.set(newPost.toMap());
+      spentProvider = null;
       print('✅ Post document created: $newPostId');
 
       // 3) Call Audio and Cover Generation on Backend
@@ -964,18 +992,17 @@ class BukBukProvider extends ChangeNotifier {
       Get.dialog(
         CreationSuccessDialog(
           credits:
-              (Provider.of<UserProvider>(
-                        Get.context!,
-                        listen: false,
-                      ).user?.credits ??
-                      0)
-                  .toString(),
+              Provider.of<InAppPurchaseProvider>(
+                Get.context!,
+                listen: false,
+              ).totalCredits.toString(),
         ),
       );
       setSelectedCover('');
       print('✅ Post uploaded, audio and cover triggered for ID: $newPostId');
     } catch (e) {
       print('❌ Failed to upload post: $e');
+      if (spentProvider != null) await spentProvider.refundLastSpend();
       Get.snackbar(
         'warningImage'.tr,
         'errorUploading'.tr,
@@ -1003,6 +1030,7 @@ class BukBukProvider extends ChangeNotifier {
     required String prompt,
     required BuildContext context,
   }) async {
+    InAppPurchaseProvider? spentProvider;
     try {
       // --- NEW: Automated Credit Deduction ---
       final subProvider = Provider.of<InAppPurchaseProvider>(
@@ -1022,6 +1050,7 @@ class BukBukProvider extends ChangeNotifier {
         );
         return;
       }
+      spentProvider = subProvider;
 
       lastGeneratedCoverUrl = null;
       setGenerationStep(
@@ -1062,6 +1091,7 @@ class BukBukProvider extends ChangeNotifier {
 
       // Save to database instantly so it appears in the list
       await docRef.set(newPost.toMap());
+      spentProvider = null;
       print('✅ Initial Firestore document created: $newPostId');
 
       // --- 2. LAUNCH COVER GENERATION (Background) ---
@@ -1100,12 +1130,10 @@ class BukBukProvider extends ChangeNotifier {
       Get.dialog(
         CreationSuccessDialog(
           credits:
-              (Provider.of<UserProvider>(
-                        context,
-                        listen: false,
-                      ).user?.credits ??
-                      0)
-                  .toString(),
+              Provider.of<InAppPurchaseProvider>(
+                context,
+                listen: false,
+              ).totalCredits.toString(),
         ),
       );
       setSelectedCover('');
@@ -1115,6 +1143,7 @@ class BukBukProvider extends ChangeNotifier {
     } catch (e) {
       setGenerationStep(GenerationStep.error);
       print('❌ Failed to upload episode: $e');
+      if (spentProvider != null) await spentProvider.refundLastSpend();
       rethrow; // Rethrow to let UI handle it if needed
     } finally {
       setIsUploading(false);
@@ -1152,6 +1181,123 @@ class BukBukProvider extends ChangeNotifier {
     return {'id': docRef.id, 'names': names};
   }
 
+  /// Reencola en Railway un documento que quedó en 'error'. No gasta créditos:
+  /// reutiliza el payload de `generateAudioFromServer` con los datos del doc.
+  Future<bool> retryGeneration(BukBukPost post) async {
+    final String? docId = post.postId;
+    if (docId == null || docId.isEmpty) return false;
+
+    final docRef = FirebaseFirestore.instance.collection('sapere').doc(docId);
+    try {
+      final snap = await docRef.get();
+      final Map<String, dynamic> data = snap.data() ?? {};
+
+      final String languageCode =
+          (data['languageCode'] as String?) ?? post.languageCode ?? 'en_US';
+      final String language =
+          (data['language'] as String?) ??
+          post.language ??
+          getLanguageName(languageCode);
+      final String title =
+          (data['bukbukName'] as String?) ?? post.sapereName ?? 'Audio Book';
+      final List<String> description =
+          (data['description'] as List?)?.whereType<String>().toList() ??
+          post.description ??
+          const [];
+
+      String prompt = ((data['prompt'] as String?) ?? '').trim();
+      if (prompt.isEmpty) {
+        prompt = title;
+        if (description.isNotEmpty) {
+          final firstLine = description.first.split('\n').first.trim();
+          if (firstLine.isNotEmpty) prompt = '$title\n$firstLine';
+        }
+      }
+
+      final String bukbukId =
+          (data['bukbukId'] as String?) ?? post.sapereId ?? '';
+      final String bukbukCategoryId =
+          (data['bukbukCategoryId'] as String?) ?? post.sapereCategoryId ?? '';
+      final Map<String, dynamic> bukbukTypeNames = Map<String, dynamic>.from(
+        data['bukbukTypeNames'] ?? post.sapereTypeNames ?? {},
+      );
+      final Map<String, dynamic> bukbukCategoryNames =
+          Map<String, dynamic>.from(
+            data['bukbukCategoryNames'] ?? post.sapereCategoryNames ?? {},
+          );
+      final String genre =
+          (data['genre'] as String?) ??
+          (bukbukCategoryNames[languageCode] as String?) ??
+          'General';
+
+      String? systemPrompt = data['systemPrompt'] as String?;
+      if (systemPrompt == null || systemPrompt.isEmpty) {
+        for (final type in _sapereTypes) {
+          if (type.id == bukbukId) {
+            systemPrompt = type.prompts[languageCode];
+            break;
+          }
+        }
+      }
+
+      final String uId =
+          (data['uId'] as String?) ??
+          post.uId ??
+          FirebaseAuth.instance.currentUser!.uid;
+
+      await docRef.update({'status': 'pending', 'errorMessage': null});
+
+      final url = Uri.parse(
+        'https://web-production-b405a.up.railway.app/v1/api/sapere/upload-audio',
+      );
+      final body = jsonEncode({
+        "uId": uId,
+        "systemPrompt": systemPrompt,
+        "prompt": prompt,
+        "language": language,
+        "languageCode": languageCode,
+        "genre": genre,
+        "bukbukCategoryId": bukbukCategoryId,
+        "bukbukId": bukbukId,
+        "bukbukTypeNames": bukbukTypeNames,
+        "bukbukCategoryNames": bukbukCategoryNames,
+        "voiceId": getActiveVoiceId(languageCode),
+        "docId": docId,
+        "title": title,
+      });
+
+      final response = await http.post(
+        url,
+        headers: {'Content-Type': 'application/json'},
+        body: body,
+      );
+
+      if (response.statusCode < 200 || response.statusCode >= 300) {
+        throw Exception('Retry failed: ${response.statusCode}');
+      }
+
+      Get.snackbar(
+        'info'.tr,
+        'retryQueued'.tr,
+        backgroundColor: Colors.green,
+        colorText: Colors.white,
+      );
+      return true;
+    } catch (e) {
+      debugPrint('❌ Error retrying generation for $docId: $e');
+      try {
+        await docRef.update({'status': 'error'});
+      } catch (_) {}
+      Get.snackbar(
+        'warningImage'.tr,
+        'wentWrong'.tr,
+        backgroundColor: Colors.red,
+        colorText: Colors.white,
+      );
+      return false;
+    }
+  }
+
   ///Community works
 
   Future<void> getCommunityResponse({
@@ -1163,7 +1309,7 @@ class BukBukProvider extends ChangeNotifier {
     setRxRequestStatus(CheckStatus.loading);
     setCommunityRequestStatus(CheckStatus.loading);
 
-    String url = 'https://sapereapi-production.up.railway.app/generate';
+    String url = 'https://web-production-b405a.up.railway.app/generate';
 
     var body = {
       "messages": [

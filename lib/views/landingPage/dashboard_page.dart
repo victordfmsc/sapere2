@@ -40,6 +40,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   @override
   build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
+    final double bottomInset = MediaQuery.of(context).padding.bottom;
     return ChangeNotifierProvider(
       create: (BuildContext context) => DashboardVm(context),
       child: Consumer<InAppPurchaseProvider>(
@@ -53,7 +54,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   alignment: Alignment.bottomCenter,
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(bottom: 60.h),
+                      padding: EdgeInsets.only(
+                        bottom: 72.h + (bottomInset > 0 ? bottomInset * 0.5 : 0),
+                      ),
                       child: vm.pages[vm.currentIndex],
                     ),
                     const MiniPlayer(),
@@ -64,7 +67,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         ? null
                         : Padding(
                           key: vm.fab,
-                          padding: EdgeInsets.only(bottom: 25.h),
+                          padding: EdgeInsets.only(
+                            bottom: 6.h + (bottomInset > 0 ? bottomInset * 0.25 : 0),
+                          ),
                           child: CustomShakeAnimation(
                             begin: '-3.0',
                             end: '3.0',
@@ -78,8 +83,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                         listen: false,
                                       );
 
-                                  // 2026 Strategy: Paywall ONLY on creation
-                                  if (!provider.isSubscribed) {
+                                  // Paywall solo si no hay suscripción NI créditos
+                                  await provider.refreshCredits();
+                                  if (!provider.isSubscribed &&
+                                      provider.totalCredits == 0) {
                                     Get.toNamed(Routes.freeTrialScreen);
                                     return;
                                   }
@@ -118,7 +125,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 children: [
                                   Image.asset(
                                     AppImagesUrls.addSymbol,
-                                    height: 85.h,
+                                    height: 60.h,
                                   ),
                                 ],
                               ),
@@ -130,21 +137,26 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 floatingActionButtonLocation:
                     FloatingActionButtonLocation.centerDocked,
                 bottomNavigationBar: Container(
-                  margin: EdgeInsets.fromLTRB(16.w, 0, 16.w, 24.h),
+                  margin: EdgeInsets.fromLTRB(
+                    16.w,
+                    0,
+                    16.w,
+                    bottomInset > 0 ? (bottomInset * 0.4 + 4.h) : 10.h,
+                  ),
                   decoration: BoxDecoration(
                     color: AppColors.kGlassBackground,
-                    borderRadius: BorderRadius.circular(32.r),
+                    borderRadius: BorderRadius.circular(24.r),
                     border: Border.all(color: AppColors.kGlassBorder),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.4),
-                        blurRadius: 20,
-                        offset: const Offset(0, 10),
+                        color: Colors.black.withOpacity(0.3),
+                        blurRadius: 16,
+                        offset: const Offset(0, 6),
                       ),
                     ],
                   ),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(32.r),
+                    borderRadius: BorderRadius.circular(24.r),
                     child: BackdropFilter(
                       filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
                       child: BottomNavigationBar(
@@ -155,12 +167,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         backgroundColor: Colors.transparent,
                         elevation: 0,
                         selectedLabelStyle: textTheme.bodySmall!.copyWith(
-                          fontSize: 12.sp,
+                          fontSize: 10.5.sp,
                           fontWeight: FontWeight.bold,
-                          letterSpacing: 0.5,
+                          letterSpacing: 0.3,
                         ),
                         unselectedLabelStyle: textTheme.bodySmall!.copyWith(
-                          fontSize: 11.sp,
+                          fontSize: 9.5.sp,
                           fontWeight: FontWeight.w400,
                         ),
                         currentIndex: vm.currentIndex,
@@ -172,9 +184,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           BottomNavigationBarItem(
                             key: vm.home,
                             icon: Icon(
-                              CupertinoIcons
-                                  .headphones, // Or Icons.headset_rounded
-                              size: 28.sp,
+                              CupertinoIcons.headphones,
+                              size: 22.sp,
                               color: Colors.white.withOpacity(0.6),
                             ),
                             label: 'streaming'.tr,
@@ -189,10 +200,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                         .createShader(bounds),
                                 child: Icon(
                                   CupertinoIcons.headphones,
-                                  size: 30.sp,
-                                  color:
-                                      Colors
-                                          .white, // The gradient will mask this color
+                                  size: 24.sp,
+                                  color: Colors.white,
                                 ),
                               ),
                             ),
@@ -201,7 +210,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             key: vm.challenge,
                             icon: Icon(
                               CupertinoIcons.square_grid_2x2,
-                              size: 26.sp,
+                              size: 20.sp,
                               color: Colors.white.withOpacity(0.6),
                             ),
                             label: 'categories'.tr,
@@ -216,7 +225,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                         .createShader(bounds),
                                 child: Icon(
                                   CupertinoIcons.square_grid_2x2,
-                                  size: 28.sp,
+                                  size: 22.sp,
                                   color: Colors.white,
                                 ),
                               ),
@@ -226,7 +235,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             key: vm.books,
                             icon: Icon(
                               CupertinoIcons.plus_circle,
-                              size: 28.sp,
+                              size: 22.sp,
                               color: Colors.white.withOpacity(0.6),
                             ),
                             label: 'creates'.tr,
@@ -240,9 +249,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                         .premiumGoldGradient
                                         .createShader(bounds),
                                 child: Icon(
-                                  CupertinoIcons
-                                      .plus_circle_fill, // Filled variant for active state
-                                  size: 30.sp,
+                                  CupertinoIcons.plus_circle_fill,
+                                  size: 24.sp,
                                   color: Colors.white,
                                 ),
                               ),
@@ -252,7 +260,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             key: vm.social,
                             icon: Icon(
                               Icons.history_rounded,
-                              size: 28.sp,
+                              size: 22.sp,
                               color: Colors.white.withOpacity(0.6),
                             ),
                             label: 'history'.tr,
@@ -267,7 +275,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                         .createShader(bounds),
                                 child: Icon(
                                   Icons.history_rounded,
-                                  size: 30.sp,
+                                  size: 24.sp,
                                   color: Colors.white,
                                 ),
                               ),
@@ -328,6 +336,15 @@ class DashboardVm extends ChangeNotifier {
         context: context,
         targets: _createTargets(),
         tutorialKey: AppLocalKeys.tutorialDashboard,
+        onComplete: () async {
+          // Trigger rating dialog ONLY after the tutorial is finished or skipped
+          if (Platform.isAndroid || Platform.isIOS) {
+            await AppRatingService.instance.init();
+            if (context.mounted) {
+              await AppRatingService.instance.maybeShowRatingDialog(context);
+            }
+          }
+        },
       );
 
       await tutorialService.showIfNeeded();
@@ -335,19 +352,21 @@ class DashboardVm extends ChangeNotifier {
         key: AppLocalKeys.tutorialDashboard,
         value: 'true',
       );
-    }
-
-    // Re-enabled automated rating dialog as per user request (The "Evaluator")
-    if (Platform.isAndroid || Platform.isIOS) {
-      await AppRatingService.instance.init();
-      if (context.mounted) {
-        await AppRatingService.instance.maybeShowRatingDialog(context);
+    } else {
+      // User has already completed the tutorial in a previous session
+      if (Platform.isAndroid || Platform.isIOS) {
+        await AppRatingService.instance.init();
+        if (context.mounted) {
+          await AppRatingService.instance.maybeShowRatingDialog(context);
+        }
       }
     }
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      final provider = Provider.of<UserProvider>(context, listen: false);
-      provider.fetchUserData();
+      if (context.mounted) {
+        final provider = Provider.of<UserProvider>(context, listen: false);
+        provider.fetchUserData();
+      }
     });
   }
 

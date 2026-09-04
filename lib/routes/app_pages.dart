@@ -13,6 +13,7 @@ import 'package:sapere/views/dashboard/commuinty/quill_page.dart';
 import 'package:sapere/views/dashboard/stream/add_sapere/add_sapere_page.dart';
 import 'package:sapere/views/dashboard/stream/add_sapere/generate_sapere_page.dart';
 import 'package:sapere/views/dashboard/stream/details_page/sapere_details.dart';
+import 'package:sapere/views/dashboard/subscription/credit_store_page.dart';
 import 'package:sapere/views/dashboard/subscription/subscription_page.dart';
 import 'package:sapere/views/landingPage/dashboard_page.dart';
 import 'package:sapere/views/onboarding/intro_screen.dart';
@@ -48,6 +49,7 @@ class Routes {
   static const String subscriptionPage = '/subscriptionPage';
   static const String longDescriptionScreen = '/longDescriptionScreen';
   static const String freeTrialScreen = '/freeTrialScreen';
+  static const String creditStore = '/creditStore';
   static const String audioPlayer = '/audioPlayer';
 }
 
@@ -105,6 +107,9 @@ class AppPages {
 
       case Routes.subscriptionPage:
         return _buildAnimatedRoute(const SubscriptionPage(), settings);
+
+      case Routes.creditStore:
+        return _buildAnimatedRoute(const CreditStorePage(), settings);
 
       case Routes.quillPage:
         return _buildAnimatedRoute(const QuillPage(), settings);
