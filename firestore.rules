@@ -1,0 +1,118 @@
+rules_version = '2';
+
+// Reglas de Sapere. Antes: allow read, write para todo (abierto a cualquiera).
+// El backend (Railway) usa el Admin SDK y no pasa por estas reglas.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    function ownsByField(field) {
+      return signedIn() && resource.data[field] == request.auth.uid;
+    }
+
+    function createsAsSelf(field) {
+      return signedIn() && request.resource.data[field] == request.auth.uid;
+    }
+
+    // Perfil del usuario. El saldo de créditos solo lo cambia el backend.
+    match /users/{uid} {
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid)
+        && (!('credits' in request.resource.data) || request.resource.data.credits == 0);
+      allow update: if isOwner(uid)
+        && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['credits']);
+      allow delete: if isOwner(uid);
+    }
+
+    // Audiodocumentales: catálogo visible para usuarios autenticados,
+    // solo el dueño crea, edita o borra los suyos.
+    match /sapere/{postId} {
+      allow read: if signedIn();
+      allow create: if createsAsSelf('uId');
+      allow update, delete: if ownsByField('uId');
+    }
+
+    // Comunidad: leer autenticado; crear como uno mismo; comentar (solo el
+    // campo comments) cualquier autenticado; borrar solo el creador.
+    match /community/{postId} {
+      allow read: if signedIn();
+      allow create: if signedIn() && request.resource.data.creator.uid == request.auth.uid;
+      allow update: if signedIn()
+        && (resource.data.creator.uid == request.auth.uid
+            || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['comments']));
+      allow delete: if signedIn() && resource.data.creator.uid == request.auth.uid;
+    }
+
+    // Configuración del catálogo: lectura autenticada. La app crea categorías
+    // nuevas al generar un documental; nadie las edita ni borra desde el cliente.
+    match /sapereCategories/{categoryId} {
+      allow read: if signedIn();
+      allow create: if signedIn();
+      allow update, delete: if false;
+      match /sapereTypes/{typeId} {
+        allow read: if signedIn();
+        allow write: if false;
+      }
+    }
+
+    match /covers_categories/{categoryId} {
+      allow read: if signedIn();
+      allow write: if false;
+      match /covers/{coverId} {
+        allow read: if signedIn();
+        allow write: if false;
+      }
+    }
+
+    // Claves de servicio: solo lectura autenticada (pendiente de mover al backend).
+    match /keys/{keyId} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    match /gamification_profiles/{uid} {
+      allow read, write: if isOwner(uid);
+    }
+
+    match /learning_profiles/{uid} {
+      allow read, write: if isOwner(uid);
+    }
+
+    match /learning_notes/{noteId} {
+      allow read, update, delete: if ownsByField('userId');
+      allow create: if createsAsSelf('userId');
+    }
+
+    match /learning_cards/{cardId} {
+      allow read, update, delete: if ownsByField('userId');
+      allow create: if createsAsSelf('userId');
+    }
+
+    // Colecciones antiguas que solo se tocan al borrar la cuenta.
+    match /Users/{docId} {
+      allow read, delete: if ownsByField('uId');
+      allow create, update: if false;
+    }
+
+    match /Posts/{docId} {
+      allow read, delete: if ownsByField('uId');
+      allow create, update: if false;
+    }
+
+    // Registro de gastos de créditos: solo el backend.
+    match /creditSpends/{spendId} {
+      allow read, write: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

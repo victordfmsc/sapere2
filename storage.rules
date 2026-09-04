@@ -1,0 +1,64 @@
+rules_version = '2';
+
+// Storage de Sapere. Antes: allow read, write para todo.
+// Lectura pública: los audios y portadas se comparten entre usuarios por URL.
+// Escritura solo en las rutas que usa la app, y solo sobre las del propio usuario.
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isMyEmail(email) {
+      return signedIn() && request.auth.token.email == email;
+    }
+
+    function isImageOrAudio() {
+      return request.resource == null
+        || request.resource.contentType.matches('(image|audio|application)/.*');
+    }
+
+    match /audios/{email}/{allPaths=**} {
+      allow read: if true;
+      allow write: if isMyEmail(email) && isImageOrAudio();
+    }
+
+    match /profile/{email}/{allPaths=**} {
+      allow read: if true;
+      allow write: if isMyEmail(email) && isImageOrAudio();
+    }
+
+    match /gamification_covers/{email}/{allPaths=**} {
+      allow read: if true;
+      allow write: if isMyEmail(email) && isImageOrAudio();
+    }
+
+    match /public/{allPaths=**} {
+      allow read: if true;
+      allow write: if signedIn() && isImageOrAudio();
+    }
+
+    match /profileImages/{file} {
+      allow read: if true;
+      allow write: if signedIn() && file == request.auth.uid + '.jpg';
+    }
+
+    match /app_assets/{allPaths=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Carpeta por uid que la app intenta vaciar al borrar la cuenta.
+    match /{uid}/{allPaths=**} {
+      allow read: if true;
+      allow delete: if signedIn() && request.auth.uid == uid;
+      allow create, update: if false;
+    }
+
+    match /{allPaths=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}
