@@ -617,16 +617,21 @@ class _AddSaperePageState extends State<AddSaperePage> {
                                                       );
                                                   descriptionController.clear();
 
-                                                  // Navigate home immediately — generation runs in background
+                                                  // El documento ya existe y el audio está encolado:
+                                                  // a partir de aquí nada debe mostrarse como fallo de creación.
                                                   if (mounted) {
-                                                    // Trigger delayed refresh to show new title/audio
-                                                    Provider.of<StreamVm>(
-                                                      context,
-                                                      listen: false,
-                                                    ).refreshWithDelay(
-                                                      seconds: 4,
-                                                    );
-
+                                                    try {
+                                                      Provider.of<StreamVm>(
+                                                        context,
+                                                        listen: false,
+                                                      ).refreshWithDelay(
+                                                        seconds: 4,
+                                                      );
+                                                    } catch (e) {
+                                                      debugPrint(
+                                                        'Stream refresh skipped: $e',
+                                                      );
+                                                    }
                                                     Get.offAllNamed(
                                                       Routes.dashboardScreen,
                                                     );

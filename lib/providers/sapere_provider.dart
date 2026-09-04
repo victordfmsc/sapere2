@@ -496,17 +496,22 @@ class BukBukProvider extends ChangeNotifier {
       spentProvider = null;
       print('✅ Post doc created with pending status for Railway: $newPostId');
 
-      // Show success dialog and navigate home immediately
-      setSelectedCover('');
-      Get.dialog(
-        CreationSuccessDialog(
-          credits:
-              Provider.of<InAppPurchaseProvider>(
-                Get.context!,
-                listen: false,
-              ).totalCredits.toString(),
-        ),
-      );
+      // El documento ya existe: los pasos de interfaz no pueden convertir
+      // una creación correcta en un "algo salió mal".
+      try {
+        setSelectedCover('');
+        Get.dialog(
+          CreationSuccessDialog(
+            credits:
+                Provider.of<InAppPurchaseProvider>(
+                  Get.context!,
+                  listen: false,
+                ).totalCredits.toString(),
+          ),
+        );
+      } catch (e, st) {
+        recordClientWarning(docRef, 'success_dialog', e, st);
+      }
 
       // ── PHASE 2 (background): Generate title + audio ─────────────────────
       // Fire-and-forget — UI is already unblocked.
@@ -534,6 +539,21 @@ class BukBukProvider extends ChangeNotifier {
   }
 
   /// Background task: generate AI title, update Firestore, then call Railway.
+  /// Registra en el propio documento un fallo de interfaz posterior a la
+  /// creación (el audio ya está encolado) para poder diagnosticarlo sin el móvil.
+  void recordClientWarning(
+    DocumentReference docRef,
+    String phase,
+    Object error,
+    StackTrace stackTrace,
+  ) {
+    debugPrint('⚠️ Non-fatal error after creation ($phase): $error');
+    debugPrint('$stackTrace');
+    docRef
+        .update({'clientWarning': '$phase: $error'})
+        .catchError((_) => debugPrint('clientWarning not saved'));
+  }
+
   Future<void> _generateTitleAndAudioInBackground({
     required String docId,
     required DocumentReference docRef,
@@ -988,16 +1008,20 @@ class BukBukProvider extends ChangeNotifier {
       );
       */
 
-      // Show Success Dialog
-      Get.dialog(
-        CreationSuccessDialog(
-          credits:
-              Provider.of<InAppPurchaseProvider>(
-                Get.context!,
-                listen: false,
-              ).totalCredits.toString(),
-        ),
-      );
+      // El documento ya existe: un fallo del diálogo no es un fallo de creación.
+      try {
+        Get.dialog(
+          CreationSuccessDialog(
+            credits:
+                Provider.of<InAppPurchaseProvider>(
+                  Get.context!,
+                  listen: false,
+                ).totalCredits.toString(),
+          ),
+        );
+      } catch (e, st) {
+        recordClientWarning(docRef, 'success_dialog', e, st);
+      }
       setSelectedCover('');
       print('✅ Post uploaded, audio and cover triggered for ID: $newPostId');
     } catch (e) {
@@ -1126,16 +1150,20 @@ class BukBukProvider extends ChangeNotifier {
       );
       */
 
-      // Show Success Dialog
-      Get.dialog(
-        CreationSuccessDialog(
-          credits:
-              Provider.of<InAppPurchaseProvider>(
-                context,
-                listen: false,
-              ).totalCredits.toString(),
-        ),
-      );
+      // El documento ya existe: un fallo del diálogo no es un fallo de creación.
+      try {
+        Get.dialog(
+          CreationSuccessDialog(
+            credits:
+                Provider.of<InAppPurchaseProvider>(
+                  context,
+                  listen: false,
+                ).totalCredits.toString(),
+          ),
+        );
+      } catch (e, st) {
+        recordClientWarning(docRef, 'success_dialog', e, st);
+      }
       setSelectedCover('');
       print(
         '✅ Gamification Episode creation process initiated (background audio & cover)',
