@@ -20,7 +20,7 @@ import 'package:sapere/widgets/sapere_image.dart';
 
 import '../../../../core/services/local_storage_service.dart';
 import '../../../../routes/app_pages.dart';
-import 'package:sapere/views/dashboard/commuinty/widgets/sapere_reader_screen.dart';
+import 'package:sapere/features/local_reader/local_reader_launcher.dart';
 import '../audio_player/audio_player.dart';
 
 class SapereDetails extends StatefulWidget {
@@ -398,16 +398,18 @@ class _SapereDetailsState extends State<SapereDetails> {
                                           .maybeShowRatingDialog(context);
                                       return;
                                     }
-                                    Get.to(
-                                      () => SapereReaderScreen(
-                                        postId: widget.post.postId,
-                                        title:
-                                            widget.post.sapereName.toString(),
-                                        content: fullText,
-                                        audioUrl: _sapereUrl,
-                                        coverUrl:
-                                            widget.post.newCover.toString(),
-                                      ),
+                                    openLocalReader(
+                                      bookId: widget.post.postId!,
+                                      title:
+                                          widget.post.sapereName ?? 'Sapere',
+                                      content: fullText,
+                                      languageCode:
+                                          widget.post.languageCode ??
+                                          appLocaleFromLanguageName(
+                                            widget.post.language,
+                                          ) ??
+                                          '',
+                                      coverPath: widget.post.newCover,
                                     );
                                   },
                           borderRadius: BorderRadius.circular(16.r),

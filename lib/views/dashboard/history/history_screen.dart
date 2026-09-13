@@ -11,7 +11,7 @@ import 'package:sapere/widgets/sapere_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:sapere/core/constant/firestore_collection.dart';
 import '../stream/audio_player/audio_player.dart';
-import '../commuinty/widgets/sapere_reader_screen.dart';
+import '../../../features/local_reader/local_reader_launcher.dart';
 
 class HistoryScreen extends StatefulWidget {
   const HistoryScreen({super.key});
@@ -324,15 +324,14 @@ class _HistoryScreenState extends State<HistoryScreen> {
           );
           final String fullText = description.join('\n\n').trim();
 
-          Get.to(
-            () => SapereReaderScreen(
-              postId: post.postId,
-              title: post.sapereName ?? "Sapere",
-              content: fullText,
-              audioUrl: post.sapereUrl,
-              coverUrl: post.newCover,
-              initialOffset: item.scrollOffset,
-            ),
+          openLocalReader(
+            bookId: post.postId ?? item.id,
+            title: post.sapereName ?? "Sapere",
+            content: fullText,
+            languageCode: post.languageCode ??
+                appLocaleFromLanguageName(post.language) ??
+                '',
+            coverPath: post.newCover,
           );
         }
       } else {
