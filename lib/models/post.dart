@@ -27,6 +27,10 @@ class BukBukPost {
   final String? status;
   final String? errorMessage;
 
+  /// Campo `readyToRead` del documento: el backend lo pone a true en cuanto
+  /// escribe el primer capítulo, antes de terminar el resto.
+  final bool? readyToReadFlag;
+
   BukBukPost({
     this.postId,
     this.coverImage,
@@ -50,10 +54,19 @@ class BukBukPost {
     this.languageCode,
     this.status,
     this.errorMessage,
+    this.readyToReadFlag,
   });
 
   /// Audio generado por completo: el worker escribe bukbukUrl solo al terminar.
+  /// Con la generación nueva un documental terminado puede no tener audio nunca.
   bool get hasAudio => (sapereUrl ?? '').trim().isNotEmpty;
+
+  /// Hay guion escrito: al menos un párrafo con contenido.
+  bool get hasText =>
+      (description ?? const <String>[]).any((p) => p.trim().isNotEmpty);
+
+  /// Se puede abrir en el lector bimodal (voz del dispositivo).
+  bool get readyToRead => readyToReadFlag == true || hasText;
 
   bool get isMine =>
       uId != null && uId == FirebaseAuth.instance.currentUser?.uid;
@@ -62,7 +75,7 @@ class BukBukPost {
 
   bool get isFailed => !hasAudio && status == 'error';
 
-  bool get isProcessing => !hasAudio && !isFailed;
+  bool get isProcessing => !isCompleted && !isFailed;
 
   factory BukBukPost.fromFirestore(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
@@ -97,6 +110,7 @@ class BukBukPost {
       languageCode: data['languageCode'],
       status: data['status'],
       errorMessage: data['errorMessage'],
+      readyToReadFlag: data['readyToRead'] as bool?,
     );
   }
 
@@ -122,6 +136,7 @@ class BukBukPost {
     int? gamificationEpisode,
     String? status,
     String? errorMessage,
+    bool? readyToReadFlag,
   }) {
     return BukBukPost(
       postId: postId ?? this.postId,
@@ -146,6 +161,7 @@ class BukBukPost {
       languageCode: languageCode ?? this.languageCode,
       status: status ?? this.status,
       errorMessage: errorMessage ?? this.errorMessage,
+      readyToReadFlag: readyToReadFlag ?? this.readyToReadFlag,
     );
   }
 
@@ -231,6 +247,7 @@ class BukBukPost {
       'languageCode': languageCode,
       'status': status,
       'errorMessage': errorMessage,
+      'readyToRead': readyToReadFlag,
     };
   }
 
@@ -273,6 +290,7 @@ class BukBukPost {
       languageCode: map['languageCode'],
       status: map['status'],
       errorMessage: map['errorMessage'],
+      readyToReadFlag: map['readyToRead'] as bool?,
     );
   }
 

@@ -1,15 +1,36 @@
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 
 import '../constant/colors.dart';
 
+/// Subidas a Storage. Las carpetas van por uid (con el email como segmento de
+/// ruta, listar el bucket exponía el padrón de usuarios) y cada subida lleva un
+/// contentType explícito, que storage.rules exige: image/*, audio/* o PDF.
 class FirebaseStorageService {
   final firebaseStorage = FirebaseStorage.instance;
   final firebaseAuth = FirebaseAuth.instance;
+
+  String? get _uid => firebaseAuth.currentUser?.uid;
+
+  static String contentTypeFor(String path, {required String fallback}) {
+    final String lower = path.toLowerCase();
+    if (lower.endsWith('.pdf')) return 'application/pdf';
+    if (lower.endsWith('.mp3')) return 'audio/mpeg';
+    if (lower.endsWith('.m4a') || lower.endsWith('.mp4a')) return 'audio/mp4';
+    if (lower.endsWith('.aac')) return 'audio/aac';
+    if (lower.endsWith('.wav')) return 'audio/wav';
+    if (lower.endsWith('.ogg')) return 'audio/ogg';
+    if (lower.endsWith('.png')) return 'image/png';
+    if (lower.endsWith('.jpg') || lower.endsWith('.jpeg')) return 'image/jpeg';
+    if (lower.endsWith('.webp')) return 'image/webp';
+    if (lower.endsWith('.gif')) return 'image/gif';
+    return fallback;
+  }
+
   Future<String?> uploadToStorage({
     required File? file,
     required String folderName,
@@ -17,9 +38,14 @@ class FirebaseStorageService {
   }) async {
     try {
       final Reference ref = firebaseStorage.ref().child(
-        'audios/${firebaseAuth.currentUser?.email}/${DateTime.now().microsecondsSinceEpoch}',
+        'audios/$_uid/${DateTime.now().microsecondsSinceEpoch}',
       );
-      UploadTask task = ref.putFile(file!);
+      UploadTask task = ref.putFile(
+        file!,
+        SettableMetadata(
+          contentType: contentTypeFor(file.path, fallback: 'audio/mpeg'),
+        ),
+      );
       TaskSnapshot snapshot = await task;
       String url = await snapshot.ref.getDownloadURL();
       return url;
@@ -35,21 +61,23 @@ class FirebaseStorageService {
 
   Future<String?> uploadPublicPdf(String uid, File pdfFile) async {
     try {
-      final storageRef = FirebaseStorage.instance.ref();
-      final publicFolderRef = storageRef.child(
-        'public//${firebaseAuth.currentUser?.email}/${DateTime.now().microsecondsSinceEpoch}.pdf',
+      final Reference publicFolderRef = firebaseStorage.ref().child(
+        'public/$_uid/${DateTime.now().microsecondsSinceEpoch}.pdf',
       );
 
-      final uploadTask = publicFolderRef.putFile(pdfFile);
+      final uploadTask = publicFolderRef.putFile(
+        pdfFile,
+        SettableMetadata(contentType: 'application/pdf'),
+      );
 
       final snapshot = await uploadTask.whenComplete(() => null);
 
       final pdfUrl = await snapshot.ref.getDownloadURL();
-      print('File uploaded to: $pdfUrl');
+      debugPrint('File uploaded to: $pdfUrl');
 
       return pdfUrl;
     } catch (e) {
-      print('Failed to upload file: $e');
+      debugPrint('Failed to upload file: $e');
       return null;
     }
   }
@@ -60,9 +88,14 @@ class FirebaseStorageService {
   }) async {
     try {
       final Reference ref = firebaseStorage.ref().child(
-        'profile/${firebaseAuth.currentUser?.email}/${DateTime.now().microsecondsSinceEpoch}',
+        'profile/$_uid/${DateTime.now().microsecondsSinceEpoch}',
       );
-      UploadTask task = ref.putFile(file!);
+      UploadTask task = ref.putFile(
+        file!,
+        SettableMetadata(
+          contentType: contentTypeFor(file.path, fallback: 'image/jpeg'),
+        ),
+      );
       TaskSnapshot snapshot = await task;
       String url = await snapshot.ref.getDownloadURL();
       return url;
@@ -82,14 +115,17 @@ class FirebaseStorageService {
   }) async {
     try {
       final Reference ref = firebaseStorage.ref().child(
-        '$folderName/${firebaseAuth.currentUser?.email}/${DateTime.now().microsecondsSinceEpoch}.jpg',
+        '$folderName/$_uid/${DateTime.now().microsecondsSinceEpoch}.jpg',
       );
-      UploadTask task = ref.putData(bytes);
+      UploadTask task = ref.putData(
+        bytes,
+        SettableMetadata(contentType: 'image/jpeg'),
+      );
       TaskSnapshot snapshot = await task;
       String url = await snapshot.ref.getDownloadURL();
       return url;
     } catch (e) {
-      print('❌ Storage Error (Bytes): $e');
+      debugPrint('❌ Storage Error (Bytes): $e');
       return "";
     }
   }

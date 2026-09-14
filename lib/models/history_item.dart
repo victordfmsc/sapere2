@@ -6,6 +6,9 @@ class HistoryItem {
   final int positionMs;
   final int totalDurationMs;
   final double scrollOffset;
+
+  /// Progreso 0–1 en el lector bimodal (voz del dispositivo).
+  final double readingProgress;
   final DateTime lastAccessed;
 
   HistoryItem({
@@ -16,6 +19,7 @@ class HistoryItem {
     this.positionMs = 0,
     this.totalDurationMs = 0,
     this.scrollOffset = 0.0,
+    this.readingProgress = 0.0,
     required this.lastAccessed,
   });
 
@@ -28,6 +32,7 @@ class HistoryItem {
       'positionMs': positionMs,
       'totalDurationMs': totalDurationMs,
       'scrollOffset': scrollOffset,
+      'readingProgress': readingProgress,
       'lastAccessed': lastAccessed.toIso8601String(),
     };
   }
@@ -41,6 +46,7 @@ class HistoryItem {
       positionMs: map['positionMs'] ?? 0,
       totalDurationMs: map['totalDurationMs'] ?? 0,
       scrollOffset: (map['scrollOffset'] ?? 0.0).toDouble(),
+      readingProgress: (map['readingProgress'] ?? 0.0).toDouble(),
       lastAccessed:
           map['lastAccessed'] != null
               ? DateTime.parse(map['lastAccessed'])

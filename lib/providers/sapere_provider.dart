@@ -1,11 +1,12 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
-import 'dart:typed_data';
 import 'package:sapere/core/constant/const.dart';
 import 'package:sapere/core/constant/voice_data.dart';
 import 'package:sapere/core/constant/firestore_collection.dart';
+import 'package:sapere/core/constant/app_config.dart';
 import 'package:sapere/core/services/firebase_storage_service.dart';
+import 'package:sapere/core/services/story_functions_service.dart';
 import 'package:sapere/models/sapere_category_type_model.dart';
 import 'package:sapere/models/sapere_type_model.dart';
 import 'package:sapere/models/post.dart';
@@ -59,6 +60,8 @@ class BukBukProvider extends ChangeNotifier {
   String? _currentGeneratingDocId;
   int? _generatingEpisodeNumber;
   String? _lastGeneratedCoverUrl;
+  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _generationWatch;
+  final Set<String> _retryingDocIds = <String>{};
 
   List<BukBukCategoryModel> get sapereCategoryTypes => _sapereCategoryTypes;
   BukBukCategoryModel get bukBukCategoryModel => _bukBukCategoryModel;
@@ -422,6 +425,196 @@ class BukBukProvider extends ChangeNotifier {
     }
   }
 
+  // ───────────────────────── Ruta nueva: Cloud Functions ─────────────────────
+  // Con AppConfig.useFirebaseGeneration == true el servidor cobra el crédito,
+  // crea el documento de la colección 'sapere' y encola la generación de texto
+  // y portada. La voz la pone el lector bimodal del dispositivo, así que aquí
+  // ya no se descuenta crédito, ni se escribe el documento, ni se pide audio.
+
+  late final StoryFunctionsService _storyFunctions = StoryFunctionsService();
+
+  /// Llama a la callable `startStory` y deja la interfaz en el mismo estado en
+  /// que la dejaba la ruta de Railway (diálogo de éxito, créditos frescos).
+  /// Devuelve el docId creado por el servidor, o `null` si no se pudo arrancar
+  /// (en ese caso ya se avisó al usuario con el diálogo que corresponda).
+  Future<String?> _startStoryWithFunctions({
+    required InAppPurchaseProvider subProvider,
+    required String prompt,
+    required String? systemPrompt,
+    required String languageCode,
+    required String languageName,
+    required String title,
+    String type = 'sapere',
+    String? genre,
+    String? bukbukId,
+    String? bukbukCategoryId,
+    Map<String, dynamic>? bukbukTypeNames,
+    Map<String, dynamic>? bukbukCategoryNames,
+    String? gamificationSubject,
+    int? gamificationEpisode,
+    bool showSuccessDialog = true,
+  }) async {
+    try {
+      setIsUploading(true, message: "uploadingToDatabase".tr);
+      setGenerationStep(
+        GenerationStep.designingScript,
+        episodeNumber: gamificationEpisode,
+      );
+
+      final StartStoryResult result = await _storyFunctions.startStory(
+        prompt: prompt,
+        systemPrompt: systemPrompt,
+        languageCode: languageCode,
+        language: languageName,
+        genre: genre,
+        type: type,
+        coverUrl: selectedCover.isEmpty ? null : selectedCover,
+        bukbukId: bukbukId,
+        bukbukCategoryId: bukbukCategoryId,
+        bukbukTypeNames: bukbukTypeNames,
+        bukbukCategoryNames: bukbukCategoryNames,
+        gamificationSubject: gamificationSubject,
+        gamificationEpisode: gamificationEpisode,
+        title: title,
+      );
+
+      debugPrint(
+        '✅ startStory encolado: docId=${result.docId} status=${result.status} '
+        'créditos=${result.credits.total}',
+      );
+
+      sapereTitle = title;
+      setGenerationStep(
+        GenerationStep.designingScript,
+        docId: result.docId,
+        episodeNumber: gamificationEpisode,
+      );
+      _watchGeneration(result.docId);
+      setSelectedCover('');
+
+      await subProvider.refreshCredits(invalidate: true);
+
+      if (showSuccessDialog) {
+        // El documento ya existe en el servidor: un fallo del diálogo no
+        // convierte una creación correcta en un error.
+        try {
+          Get.dialog(
+            CreationSuccessDialog(credits: subProvider.totalCredits.toString()),
+          );
+        } catch (e, st) {
+          debugPrint('⚠️ Diálogo de éxito no mostrado: $e');
+          debugPrint('$st');
+        }
+      }
+      return result.docId;
+    } on StartStoryException catch (e) {
+      setGenerationStep(GenerationStep.error);
+      debugPrint('❌ startStory rechazado: $e');
+      _showStartStoryError(e.error, subProvider);
+      return null;
+    } catch (e, st) {
+      setGenerationStep(GenerationStep.error);
+      debugPrint('❌ startStory error inesperado: $e');
+      debugPrint('$st');
+      _showStartStoryError(StartStoryError.unknown, subProvider);
+      return null;
+    } finally {
+      setIsUploading(false);
+    }
+  }
+
+  /// Sigue el documento que creó `startStory` y lleva [generationStep] hasta
+  /// `completed` o `error`. El portal de creación y el estado "materializando"
+  /// dependen de ese valor, y en la ruta de Cloud Functions nadie más lo cerraba.
+  void _watchGeneration(String docId) {
+    _generationWatch?.cancel();
+    _generationWatch = FirebaseFirestore.instance
+        .collection('sapere')
+        .doc(docId)
+        .snapshots()
+        .listen(
+          (snap) {
+            final String? status = snap.data()?['status'] as String?;
+            switch (status) {
+              case 'generating_title':
+                setGenerationStep(GenerationStep.generatingCover, docId: docId);
+                break;
+              case 'generating_script':
+                setGenerationStep(GenerationStep.invokingNarrator, docId: docId);
+                break;
+              case 'completed':
+                _finishGeneration(GenerationStep.completed);
+                break;
+              case 'error':
+                _finishGeneration(GenerationStep.error);
+                break;
+            }
+          },
+          onError: (Object e) {
+            debugPrint('⚠️ No se pudo seguir la generación de $docId: $e');
+            _finishGeneration(GenerationStep.idle);
+          },
+        );
+  }
+
+  void _finishGeneration(GenerationStep step) {
+    _generationWatch?.cancel();
+    _generationWatch = null;
+    _generatingEpisodeNumber = null;
+    setGenerationStep(step);
+  }
+
+  @override
+  void dispose() {
+    _generationWatch?.cancel();
+    super.dispose();
+  }
+
+  void _showStartStoryError(
+    StartStoryError error,
+    InAppPurchaseProvider subProvider,
+  ) {
+    switch (error) {
+      case StartStoryError.insufficientCredits:
+        final BuildContext? ctx = Get.context;
+        if (ctx == null) return;
+        showDialog(
+          context: ctx,
+          builder:
+              (_) =>
+                  OutOfCreditsDialog(nextRefillDate: subProvider.nextRefillDate),
+        );
+        break;
+      case StartStoryError.alreadyGenerating:
+        Get.snackbar(
+          'info'.tr,
+          'generatingText'.tr,
+          backgroundColor: Colors.orange,
+          colorText: Colors.white,
+        );
+        break;
+      case StartStoryError.unauthenticated:
+      case StartStoryError.network:
+      case StartStoryError.unknown:
+        Get.snackbar(
+          'warningImage'.tr,
+          'wentWrong'.tr,
+          backgroundColor: Colors.red,
+          colorText: Colors.white,
+        );
+        break;
+    }
+  }
+
+  /// Título provisional legible a partir del prompt (el definitivo lo escribe
+  /// el servidor con Gemini).
+  String _titleFromPrompt(String prompt, {String fallback = 'Audio Book'}) {
+    final String clean = prompt.replaceAll(RegExp(r'[#*]'), '').trim();
+    if (clean.isEmpty) return fallback;
+    if (clean.length > 40) return "${clean.substring(0, 37)}...";
+    return clean;
+  }
+
   Future<void> generateFullStory({
     required String systemPrompt,
     required String baseUserPrompt,
@@ -432,6 +625,32 @@ class BukBukProvider extends ChangeNotifier {
       clearGenerationSteps();
       _descriptions.clear();
       sapereTitle = "";
+
+      // ── Ruta Firebase: el servidor cobra, crea el doc y encola ──────────
+      if (AppConfig.useFirebaseGeneration) {
+        await _startStoryWithFunctions(
+          subProvider: Provider.of<InAppPurchaseProvider>(
+            Get.context!,
+            listen: false,
+          ),
+          prompt: baseUserPrompt,
+          systemPrompt: systemPrompt,
+          languageCode: languageCode,
+          languageName: getLanguageName(languageCode),
+          title: _titleFromPrompt(
+            baseUserPrompt,
+            fallback: 'Audiolibro Sapere',
+          ),
+          genre: bukBukCategoryModel.names[languageCode],
+          bukbukId: bukBukTypeModel.id,
+          bukbukCategoryId: bukBukCategoryModel.docId,
+          bukbukTypeNames: Map<String, dynamic>.from(bukBukTypeModel.names),
+          bukbukCategoryNames: Map<String, dynamic>.from(
+            bukBukCategoryModel.names,
+          ),
+        );
+        return;
+      }
 
       // ── PHASE 1 (instant): Create Firestore doc immediately ──────────────
       // We create the post with a placeholder title so the user gets a doc id
@@ -684,80 +903,6 @@ class BukBukProvider extends ChangeNotifier {
     return;
   }
 
-  /// NEW: Client-side DALL-E cover generation
-  Future<void> generateCoverWithDalle({
-    required String prompt,
-    required String docId,
-  }) async {
-    try {
-      print('🎨 Generating DALL-E cover for docId: $docId');
-
-      // 1. Fetch API Key from Firestore
-      final keySnapshot =
-          await FirebaseFirestore.instance
-              .collection('keys')
-              .doc('openai')
-              .get();
-      final apiKey = keySnapshot.data()?['api_key'];
-
-      if (apiKey == null || apiKey.isEmpty) {
-        print('❌ OpenAI API Key not found in Firestore (keys/openai).');
-        return;
-      }
-
-      // 2. Prepare OpenAI Request
-      final url = Uri.parse('https://api.openai.com/v1/images/generations');
-      final optimizedPrompt =
-          "Cinematic, artistic, and ultra-detailed cover for an audio documentary titled: '$prompt'. Premium style, rich texture, deep colors, dramatic lighting, no text.";
-
-      final body = jsonEncode({
-        "model": "dall-e-3",
-        "prompt": optimizedPrompt,
-        "n": 1,
-        "size": "1024x1024",
-        "response_format": "b64_json",
-      });
-
-      final response = await http.post(
-        url,
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer $apiKey',
-        },
-        body: body,
-      );
-
-      if (response.statusCode == 200) {
-        final data = jsonDecode(response.body);
-        final String base64Image = data['data'][0]['b64_json'];
-        final Uint8List bytes = base64Decode(base64Image);
-
-        // 3. Upload to Firebase Storage
-        final coverUrl = await FirebaseStorageService()
-            .uploadCoverBytesToStorage(
-              bytes: bytes,
-              folderName: 'gamification_covers',
-            );
-
-        if (coverUrl != null && coverUrl.isNotEmpty) {
-          // 4. Update Firestore Document
-          await FirebaseFirestore.instance
-              .collection('sapere')
-              .doc(docId)
-              .update({'newCover': coverUrl, 'coverImage': coverUrl});
-
-          lastGeneratedCoverUrl = coverUrl;
-          print('✅ DALL-E Cover generated and updated successfully for $docId');
-        }
-      } else {
-        print('❌ OpenAI DALL-E API failed: ${response.statusCode}');
-        print('Response: ${response.body}');
-      }
-    } catch (e) {
-      print('❌ Error during client-side DALL-E generation: $e');
-    }
-  }
-
   Future<void> uploadFullPodcast({
     required String systemPrompt,
     required String baseUserPrompt,
@@ -935,6 +1080,27 @@ class BukBukProvider extends ChangeNotifier {
         Get.context!,
         listen: false,
       );
+
+      // ── Ruta Firebase: el servidor cobra, crea el doc y encola ──────────
+      if (AppConfig.useFirebaseGeneration) {
+        await _startStoryWithFunctions(
+          subProvider: subProvider,
+          prompt: prompt,
+          systemPrompt: systemPrompt,
+          languageCode: languageCode,
+          languageName: getLanguageName(languageCode),
+          title: name ?? "Audio Book",
+          genre: bukBukCategoryModel.names[languageCode],
+          bukbukId: bukBukTypeModel.id,
+          bukbukCategoryId: bukBukCategoryModel.docId,
+          bukbukTypeNames: Map<String, dynamic>.from(bukBukTypeModel.names),
+          bukbukCategoryNames: Map<String, dynamic>.from(
+            bukBukCategoryModel.names,
+          ),
+        );
+        return;
+      }
+
       final success = await subProvider.deductCredit();
 
       if (!success) {
@@ -1061,6 +1227,30 @@ class BukBukProvider extends ChangeNotifier {
         context,
         listen: false,
       );
+
+      // ── Ruta Firebase: el servidor cobra, crea el doc y encola ──────────
+      if (AppConfig.useFirebaseGeneration) {
+        lastGeneratedCoverUrl = null;
+        final categoryInfo = await _ensureCategoryExists(categoryName);
+        await _startStoryWithFunctions(
+          subProvider: subProvider,
+          prompt: prompt,
+          systemPrompt: systemPrompt,
+          languageCode: languageCode,
+          languageName: getLanguageName(languageCode),
+          title: "$subjectName - Ep $episodeNumber: $episodeTitle",
+          type: 'gamification_episode',
+          genre: categoryName,
+          bukbukCategoryId: categoryInfo['id']?.toString(),
+          bukbukCategoryNames: Map<String, dynamic>.from(
+            categoryInfo['names'] as Map? ?? const {},
+          ),
+          gamificationSubject: subjectName,
+          gamificationEpisode: episodeNumber,
+        );
+        return;
+      }
+
       final success = await subProvider.deductCredit();
 
       if (!success) {
@@ -1209,9 +1399,158 @@ class BukBukProvider extends ChangeNotifier {
     return {'id': docRef.id, 'names': names};
   }
 
+  /// Punto de entrada del botón "Reintentar". Con la bandera de Firebase
+  /// activa reintenta por la callable; si no, por el flujo antiguo de Railway.
+  Future<bool> retryGeneration(BukBukPost post) async {
+    if (AppConfig.useFirebaseGeneration) {
+      return _retryGenerationWithFunctions(post);
+    }
+    return _retryGenerationLegacy(post);
+  }
+
+  /// Reintento por Cloud Functions.
+  ///
+  /// Solo vuelve a llamar a `startStory` (y por tanto a cobrar) si el gasto
+  /// anterior ya no está vivo: el documento no tiene `generation.spendId` o ese
+  /// gasto ya fue reembolsado (lo hace `generateStory` al fallar, o
+  /// `sweepStalled`). Si el gasto sigue sin devolver se pide esperar: el barrido
+  /// lo devuelve en minutos y reintentar ahora cobraría dos veces. Cuando el
+  /// nuevo documento existe, el fallido se borra para no dejar un duplicado.
+  Future<bool> _retryGenerationWithFunctions(BukBukPost post) async {
+    final String? docId = post.postId;
+    if (docId == null || docId.isEmpty) return false;
+    if (!_retryingDocIds.add(docId)) return false;
+    try {
+      return await _retryGenerationOnce(post, docId);
+    } finally {
+      _retryingDocIds.remove(docId);
+    }
+  }
+
+  Future<bool> _retryGenerationOnce(BukBukPost post, String docId) async {
+
+    final subProvider = Provider.of<InAppPurchaseProvider>(
+      Get.context!,
+      listen: false,
+    );
+    final docRef = FirebaseFirestore.instance.collection('sapere').doc(docId);
+
+    try {
+      final snap = await docRef.get();
+      final Map<String, dynamic> data = snap.data() ?? <String, dynamic>{};
+      final Map<String, dynamic> generation = Map<String, dynamic>.from(
+        (data['generation'] as Map?) ?? const <String, dynamic>{},
+      );
+      final String spendId = (generation['spendId'] ?? '').toString();
+      final bool refunded = generation['refunded'] == true;
+
+      if (spendId.isNotEmpty && !refunded) {
+        debugPrint(
+          '↩️ $docId conserva un gasto sin devolver (spendId=$spendId): '
+          'se pide esperar al reembolso antes de reintentar.',
+        );
+        Get.snackbar(
+          'info'.tr,
+          'refundInProgress'.tr,
+          backgroundColor: Colors.black87,
+          colorText: Colors.white,
+        );
+        return false;
+      }
+
+      final String languageCode =
+          (data['languageCode'] as String?) ?? post.languageCode ?? 'en_US';
+      final String language =
+          (data['language'] as String?) ??
+          post.language ??
+          getLanguageName(languageCode);
+      final String title =
+          (data['bukbukName'] as String?) ?? post.sapereName ?? 'Audio Book';
+      final String type =
+          (data['type'] as String?) ?? post.type ?? 'sapere';
+
+      String prompt = ((data['prompt'] as String?) ?? '').trim();
+      if (prompt.isEmpty) prompt = title;
+
+      final String bukbukId =
+          (data['bukbukId'] as String?) ?? post.sapereId ?? '';
+      final String bukbukCategoryId =
+          (data['bukbukCategoryId'] as String?) ?? post.sapereCategoryId ?? '';
+      final Map<String, dynamic> bukbukTypeNames = Map<String, dynamic>.from(
+        data['bukbukTypeNames'] ?? post.sapereTypeNames ?? const {},
+      );
+      final Map<String, dynamic> bukbukCategoryNames =
+          Map<String, dynamic>.from(
+            data['bukbukCategoryNames'] ?? post.sapereCategoryNames ?? const {},
+          );
+      final String genre =
+          (data['genre'] as String?) ??
+          (bukbukCategoryNames[languageCode] as String?) ??
+          'General';
+
+      // El marco de un documental lo resuelve el servidor con bukbukCategoryId y
+      // bukbukId. Solo la persona de gamificación viaja desde la app: se reutiliza
+      // la que quedó fijada en el documento fallido (generation.systemPrompt).
+      String? systemPrompt;
+      if (type == 'gamification_episode') {
+        final generation = data['generation'];
+        if (generation is Map) {
+          final saved = generation['systemPrompt'];
+          if (saved is String && saved.trim().isNotEmpty) systemPrompt = saved;
+        }
+      }
+
+      final String? newDocId = await _startStoryWithFunctions(
+        subProvider: subProvider,
+        prompt: prompt,
+        systemPrompt: systemPrompt,
+        languageCode: languageCode,
+        languageName: language,
+        title: title,
+        type: type,
+        genre: genre,
+        bukbukId: bukbukId.isEmpty ? null : bukbukId,
+        bukbukCategoryId: bukbukCategoryId.isEmpty ? null : bukbukCategoryId,
+        bukbukTypeNames: bukbukTypeNames,
+        bukbukCategoryNames: bukbukCategoryNames,
+        gamificationSubject: data['gamificationSubject'] as String?,
+        gamificationEpisode: (data['gamificationEpisode'] as num?)?.toInt(),
+        showSuccessDialog: false,
+      );
+
+      if (newDocId == null) return false;
+
+      // El nuevo documento sustituye al fallido: si no, quedaban dos tarjetas
+      // (la roja con su botón Reintentar, que volvía a duplicar).
+      try {
+        await docRef.delete();
+      } catch (e) {
+        debugPrint('⚠️ No se pudo borrar el documento fallido $docId: $e');
+      }
+
+      Get.snackbar(
+        'info'.tr,
+        'retryQueued'.tr,
+        backgroundColor: Colors.green,
+        colorText: Colors.white,
+      );
+      return true;
+    } catch (e, st) {
+      debugPrint('❌ Error reintentando $docId por Cloud Functions: $e');
+      debugPrint('$st');
+      Get.snackbar(
+        'warningImage'.tr,
+        'wentWrong'.tr,
+        backgroundColor: Colors.red,
+        colorText: Colors.white,
+      );
+      return false;
+    }
+  }
+
   /// Reencola en Railway un documento que quedó en 'error'. No gasta créditos:
   /// reutiliza el payload de `generateAudioFromServer` con los datos del doc.
-  Future<bool> retryGeneration(BukBukPost post) async {
+  Future<bool> _retryGenerationLegacy(BukBukPost post) async {
     final String? docId = post.postId;
     if (docId == null || docId.isEmpty) return false;
 

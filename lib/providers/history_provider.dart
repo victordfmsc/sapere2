@@ -61,6 +61,22 @@ class HistoryProvider extends ChangeNotifier {
     await _updateOrAddItem(item);
   }
 
+  /// Progreso en el lector bimodal. Los documentales nuevos no tienen audio de
+  /// servidor, así que este es el único camino por el que entran al historial.
+  Future<void> saveReadingProgress(BukBukPost post, double progress) async {
+    final String id = post.postId ?? '';
+    if (id.isEmpty) return;
+    final item = HistoryItem(
+      id: id,
+      title: post.sapereName ?? '',
+      coverUrl: post.newCover ?? '',
+      type: 'text',
+      readingProgress: progress.clamp(0.0, 1.0).toDouble(),
+      lastAccessed: DateTime.now(),
+    );
+    await _updateOrAddItem(item);
+  }
+
   Future<void> _updateOrAddItem(HistoryItem newItem) async {
     // Remove existing entry for same ID and Type
     _history.removeWhere((i) => i.id == newItem.id && i.type == newItem.type);

@@ -60,6 +60,7 @@ String? appLocaleFromLanguageName(String? name) {
 
 /// Abre el lector bimodal para un texto: lo parsea (o reutiliza el guardado),
 /// monta los servicios, navega a [ReaderScreen] y lo desmonta todo al volver.
+/// [onClosed] recibe el progreso guardado (0–1) cuando el usuario sale.
 Future<void> openLocalReader({
   required String bookId,
   required String title,
@@ -67,6 +68,7 @@ Future<void> openLocalReader({
   required String languageCode,
   String? coverPath,
   bool autoPlay = false,
+  void Function(double progress)? onClosed,
 }) async {
   try {
     if (audioHandler.playbackState.value.playing) await audioHandler.pause();
@@ -142,9 +144,11 @@ Future<void> openLocalReader({
 
   await controller.pause();
   await controller.saveProgressNow();
+  final double progress = (await library.getBook(bookId))?.progress ?? 0.0;
   await Get.delete<LocalReaderController>(tag: bookId, force: true);
   coordinator.dispose();
   await ttsEngine.dispose();
   await ambient.dispose();
   await sfx.dispose();
+  onClosed?.call(progress);
 }

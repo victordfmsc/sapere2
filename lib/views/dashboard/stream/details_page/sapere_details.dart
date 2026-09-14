@@ -5,6 +5,7 @@ import 'package:sapere/core/constant/colors.dart';
 import 'package:sapere/core/constant/firestore_collection.dart';
 import 'package:sapere/core/constant/strings.dart';
 import 'package:sapere/models/post.dart';
+import 'package:sapere/providers/history_provider.dart';
 import 'package:sapere/providers/user_provider.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -38,9 +39,44 @@ class _SapereDetailsState extends State<SapereDetails> {
   Timer? _pollTimer;
   List<String>? _description;
   bool _isFailed = false;
+  bool _readyFlag = false;
+  String? _status;
+
+  /// Audio de servidor. Los documentales nuevos no lo tienen nunca.
+  bool get _hasAudio => (_sapereUrl ?? '').trim().isNotEmpty;
+
+  List<String> get _paragraphs =>
+      _description ?? widget.post.description ?? const <String>[];
+
+  bool get _hasText => _paragraphs.any((p) => p.trim().isNotEmpty);
+
+  /// Listo para el lector bimodal: el backend marca readyToRead al escribir el
+  /// primer capítulo, así que no hace falta esperar a 'completed'.
+  bool get _isReadyToRead => _readyFlag || _hasText || _status == 'completed';
+
+  /// Ya no hay nada que esperar: se puede leer, escuchar, o ha fallado.
+  bool get _isSettled => _isFailed || _isReadyToRead || _hasAudio;
+
+  /// La generación terminó de verdad. Hasta entonces se sigue sondeando aunque
+  /// el primer capítulo ya sea legible: los demás van llegando. Un documento sin
+  /// `status` no lo sigue ninguna generación, así que con texto ya es final.
+  bool get _isFinal =>
+      _isFailed ||
+      _hasAudio ||
+      _status == 'completed' ||
+      (_status == null && _isReadyToRead);
+
+  bool get _showGenerationBanner => _isFailed || !_isSettled;
+
   @override
   void initState() {
     super.initState();
+    _sapereUrl = widget.post.sapereUrl;
+    _description = widget.post.description;
+    _status = widget.post.status;
+    _readyFlag = widget.post.readyToReadFlag == true;
+    _isFailed = widget.post.isFailed;
+
     _checkSapereUrlOnce().then((_) => _startPollingIfNeeded(context));
 
     _loadLanguage();
@@ -57,8 +93,8 @@ class _SapereDetailsState extends State<SapereDetails> {
       final data = snap.data();
 
       final String? url = (data?['bukbukUrl'] as String?)?.trim();
-      final bool failed =
-          (url == null || url.isEmpty) && data?['status'] == 'error';
+      final String? status = data?['status'] as String?;
+      final bool failed = (url == null || url.isEmpty) && status == 'error';
 
       final List<String>? desc =
           (data?['description'] as List?)?.whereType<String>().toList();
@@ -68,24 +104,22 @@ class _SapereDetailsState extends State<SapereDetails> {
       setState(() {
         _sapereUrl = (url != null && url.isNotEmpty) ? url : null;
         _isFailed = failed;
+        _status = status ?? _status;
+        _readyFlag = data?['readyToRead'] == true;
         _description = (desc != null && desc.isNotEmpty) ? desc : _description;
       });
 
-      if ((_sapereUrl != null && _sapereUrl!.isNotEmpty) || _isFailed) {
+      if (_isFinal) {
         _pollTimer?.cancel();
         _pollTimer = null;
-      } else {
-        setState(() {
-          _sapereUrl = null;
-        });
       }
     } catch (e) {
-      print(e);
+      debugPrint('[SapereDetails] poll failed: $e');
     }
   }
 
   void _startPollingIfNeeded(BuildContext context) {
-    if ((_sapereUrl != null && _sapereUrl!.isNotEmpty) || _isFailed) return;
+    if (_isFinal) return;
 
     _pollTimer ??= Timer.periodic(const Duration(seconds: 5), (_) {
       final provider = Provider.of<UserProvider>(context, listen: false);
@@ -93,6 +127,48 @@ class _SapereDetailsState extends State<SapereDetails> {
 
       _checkSapereUrlOnce();
     });
+  }
+
+  /// Puerta previa (valoración de la app) intacta: true si se puede continuar.
+  bool _passesRatingGate() {
+    final iap = Provider.of<InAppPurchaseProvider>(context, listen: false);
+    if (!widget.post.isMine &&
+        !iap.isSubscribed &&
+        !AppRatingService.instance.hasRatedApp) {
+      AppRatingService.instance.maybeShowRatingDialog(context);
+      return false;
+    }
+    return true;
+  }
+
+  void _notReadyYet() {
+    Get.snackbar(
+      'generatingText'.tr,
+      'itWillAvailableSoon'.tr,
+      backgroundColor: AppColors.primaryColor,
+      colorText: AppColors.whiteColor,
+    );
+  }
+
+  void _openBimodalReader(String fullText, {required bool autoPlay}) {
+    openLocalReader(
+      bookId: widget.post.postId!,
+      title: widget.post.sapereName ?? 'Sapere',
+      content: fullText,
+      languageCode:
+          widget.post.languageCode ??
+          appLocaleFromLanguageName(widget.post.language) ??
+          '',
+      coverPath: widget.post.newCover,
+      autoPlay: autoPlay,
+      onClosed: (progress) {
+        if (!mounted) return;
+        Provider.of<HistoryProvider>(
+          context,
+          listen: false,
+        ).saveReadingProgress(widget.post, progress);
+      },
+    );
   }
 
   Future<void> _loadLanguage() async {
@@ -123,6 +199,10 @@ class _SapereDetailsState extends State<SapereDetails> {
 
     // Simple summary logic: first paragraph or first 200 characters
     final String summary = fullText.split('\n\n').first;
+
+    // Se puede escuchar con audio de servidor o con la voz del dispositivo.
+    final bool canListen = _hasAudio || fullText.isNotEmpty;
+    final bool canRead = fullText.isNotEmpty;
 
     return Scaffold(
       backgroundColor: Colors.black, // Premium dark base
@@ -287,40 +367,33 @@ class _SapereDetailsState extends State<SapereDetails> {
                         flex: 5,
                         child: InkWell(
                           onTap:
-                              _sapereUrl == null
-                                  ? () {
-                                    Get.snackbar(
-                                      'info'.tr,
-                                      'generatingText'.tr,
-                                      backgroundColor: AppColors.primaryColor,
-                                      colorText: AppColors.whiteColor,
-                                    );
-                                  }
+                              !canListen
+                                  ? _notReadyYet
                                   : () {
-                                    final iap =
-                                        Provider.of<InAppPurchaseProvider>(
-                                          context,
-                                          listen: false,
-                                        );
-                                    if (!widget.post.isMine &&
-                                        !iap.isSubscribed &&
-                                        !AppRatingService
-                                            .instance
-                                            .hasRatedApp) {
-                                      AppRatingService.instance
-                                          .maybeShowRatingDialog(context);
-                                      return;
+                                    if (!_passesRatingGate()) return;
+                                    if (_hasAudio) {
+                                      // El audio puede haber llegado durante el
+                                      // sondeo: pasa la URL fresca.
+                                      Get.to(
+                                        () => AudioPlayerScreen(
+                                          post: widget.post.copyWith(
+                                            sapereUrl: _sapereUrl,
+                                            description: _description,
+                                          ),
+                                        ),
+                                      );
+                                    } else {
+                                      _openBimodalReader(
+                                        fullText,
+                                        autoPlay: true,
+                                      );
                                     }
-                                    Get.to(
-                                      () =>
-                                          AudioPlayerScreen(post: widget.post),
-                                    );
                                   },
                           borderRadius: BorderRadius.circular(16.r),
                           child: Container(
                             height: 60.h,
                             decoration:
-                                _sapereUrl == null
+                                !canListen
                                     ? BoxDecoration(
                                       color: Colors.white10,
                                       borderRadius: BorderRadius.circular(16.r),
@@ -346,12 +419,12 @@ class _SapereDetailsState extends State<SapereDetails> {
                                 Icon(
                                   Icons.play_circle_fill,
                                   color:
-                                      _sapereUrl == null
+                                      !canListen
                                           ? Colors.white38
                                           : Colors.black87,
                                   size: 28.sp,
                                 ),
-                                if (_sapereUrl != null) ...[
+                                if (canListen) ...[
                                   SizedBox(width: 8.w),
                                   Text(
                                     'Play',
@@ -374,42 +447,13 @@ class _SapereDetailsState extends State<SapereDetails> {
                         flex: 4,
                         child: InkWell(
                           onTap:
-                              (_sapereUrl == null || fullText.isEmpty)
-                                  ? () {
-                                    Get.snackbar(
-                                      'info'.tr,
-                                      'generatingText'.tr,
-                                      backgroundColor: AppColors.primaryColor,
-                                      colorText: AppColors.whiteColor,
-                                    );
-                                  }
+                              !canRead
+                                  ? _notReadyYet
                                   : () {
-                                    final iap =
-                                        Provider.of<InAppPurchaseProvider>(
-                                          context,
-                                          listen: false,
-                                        );
-                                    if (!widget.post.isMine &&
-                                        !iap.isSubscribed &&
-                                        !AppRatingService
-                                            .instance
-                                            .hasRatedApp) {
-                                      AppRatingService.instance
-                                          .maybeShowRatingDialog(context);
-                                      return;
-                                    }
-                                    openLocalReader(
-                                      bookId: widget.post.postId!,
-                                      title:
-                                          widget.post.sapereName ?? 'Sapere',
-                                      content: fullText,
-                                      languageCode:
-                                          widget.post.languageCode ??
-                                          appLocaleFromLanguageName(
-                                            widget.post.language,
-                                          ) ??
-                                          '',
-                                      coverPath: widget.post.newCover,
+                                    if (!_passesRatingGate()) return;
+                                    _openBimodalReader(
+                                      fullText,
+                                      autoPlay: false,
                                     );
                                   },
                           borderRadius: BorderRadius.circular(16.r),
@@ -428,14 +472,18 @@ class _SapereDetailsState extends State<SapereDetails> {
                               children: [
                                 Icon(
                                   Icons.menu_book_rounded,
-                                  color: Colors.white,
+                                  color:
+                                      canRead ? Colors.white : Colors.white38,
                                   size: 20.sp,
                                 ),
                                 SizedBox(width: 8.w),
                                 Text(
                                   'openBook'.tr,
                                   style: TextStyle(
-                                    color: Colors.white,
+                                    color:
+                                        canRead
+                                            ? Colors.white
+                                            : Colors.white38,
                                     fontSize: 15.sp,
                                     fontWeight: FontWeight.w700,
                                     letterSpacing: 0.5,
@@ -462,7 +510,7 @@ class _SapereDetailsState extends State<SapereDetails> {
                                   Routes.dashboardScreen,
                                 );
                               } catch (e) {
-                                print('Error deleting document: $e');
+                                debugPrint('Error deleting document: $e');
                               }
                             },
                             borderRadius: BorderRadius.circular(16.r),
@@ -506,11 +554,10 @@ class _SapereDetailsState extends State<SapereDetails> {
                     ),
                   ),
 
-                  SizedBox(height: (_sapereUrl == null) ? 20.h : 60.h),
+                  SizedBox(height: _showGenerationBanner ? 20.h : 60.h),
 
                   // Generation Banner if needed
-                  if (_sapereUrl == null || _sapereUrl!.isEmpty)
-                    audioGeneratingBanner(),
+                  if (_showGenerationBanner) _generationBanner(),
 
                   SizedBox(height: 50.h),
                 ],
@@ -538,7 +585,7 @@ class _SapereDetailsState extends State<SapereDetails> {
     );
   }
 
-  Widget audioGeneratingBanner() {
+  Widget _generationBanner() {
     return Container(
       padding: EdgeInsets.all(15.w),
       decoration: BoxDecoration(
@@ -558,9 +605,7 @@ class _SapereDetailsState extends State<SapereDetails> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  _isFailed
-                      ? 'generationFailed'.tr
-                      : 'audioBookGenerating'.tr,
+                  _isFailed ? 'generationFailed'.tr : 'generatingText'.tr,
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,

@@ -20,8 +20,6 @@ import 'package:provider/provider.dart';
 import 'package:flutter/services.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'custom_gallery.dart';
-import 'package:sapere/widgets/voice_selector_widget.dart';
-import 'package:sapere/core/constant/voice_data.dart';
 import 'package:sapere/views/dashboard/stream/stream.dart';
 
 class AddSaperePage extends StatefulWidget {
@@ -434,80 +432,6 @@ class _AddSaperePageState extends State<AddSaperePage> {
                                       ),
                             ),
 
-                            // ── Voice Selector Button ──
-                            GestureDetector(
-                              onTap: () {
-                                if (codeLang == null) return;
-                                showModalBottomSheet(
-                                  context: context,
-                                  isScrollControlled: true,
-                                  backgroundColor: Colors.transparent,
-                                  builder:
-                                      (_) => VoiceSelectorWidget(
-                                        localeCode: codeLang!,
-                                        currentVoiceId:
-                                            provider.selectedVoiceId,
-                                        onVoiceSelected: (voice) {
-                                          provider.setSelectedVoice(
-                                            voice.voiceId,
-                                            voice.name,
-                                          );
-                                        },
-                                      ),
-                                );
-                              },
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Container(
-                                    width: 60.w,
-                                    height: 60.h,
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      border: Border.all(
-                                        color:
-                                            provider.selectedVoiceId != null
-                                                ? AppColors.textColor
-                                                : Colors.grey.shade700,
-                                        width: 1.5,
-                                      ),
-                                      color:
-                                          provider.selectedVoiceId != null
-                                              ? AppColors.textColor.withOpacity(
-                                                0.1,
-                                              )
-                                              : Colors.transparent,
-                                    ),
-                                    child: Center(
-                                      child: Text(
-                                        provider.selectedVoiceId != null
-                                            ? (localeFlagEmoji[codeLang ??
-                                                    'en_US'] ??
-                                                '🎙️')
-                                            : '🎙️',
-                                        style: TextStyle(fontSize: 26.sp),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: 4.h),
-                                  SizedBox(
-                                    width: 70.w,
-                                    child: Text(
-                                      provider.selectedVoiceName ?? 'Voice',
-                                      style: TextStyle(
-                                        color: AppColors.textColor.withOpacity(
-                                          0.7,
-                                        ),
-                                        fontSize: 10.sp,
-                                      ),
-                                      textAlign: TextAlign.center,
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
                             _isProcessing
                                 ? SizedBox(
                                   width: 50.w,

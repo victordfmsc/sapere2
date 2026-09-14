@@ -1,21 +1,3 @@
-import 'dart:async';
-import 'dart:developer';
-import 'package:cloud_firestore/cloud_firestore.dart';
-
-Future<String> getStringData({
-  required String docId,
-  required String keys,
-}) async {
-  final fireStore = FirebaseFirestore.instance;
-
-  var data = await fireStore.collection('keys').doc(docId).get();
-  print('>>>>>>>>>>>>>>>>>>>>');
-  print(data.data);
-
-  log(data.data()![keys].toString());
-  return data.data()![keys];
-}
-
 String getLanguagesLocaleWithCodeForTextToSpeech(String locale) {
   switch (locale) {
     case 'en_US':

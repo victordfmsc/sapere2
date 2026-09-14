@@ -67,6 +67,13 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
     });
 
     WidgetsBinding.instance.addPostFrameCallback((_) async {
+      // Sin audio de servidor setUrl('') lanza y la pantalla se quedaba en
+      // negro a 0:00 sin ningún aviso.
+      if (!widget.post.hasAudio) {
+        Get.snackbar('error'.tr, 'audioNotReady'.tr);
+        if (mounted) Navigator.of(context).maybePop();
+        return;
+      }
       final currentItem = audioHandler.mediaItem.value;
       if (currentItem == null || currentItem.id != widget.post.sapereUrl) {
         await loadAndPlay(

@@ -294,7 +294,9 @@ class _CreationScreenState extends State<CreationScreen> {
                                   colorText: AppColors.whiteColor,
                                 );
                               }
-                              : isGenerating
+                              // Con el primer capítulo escrito ya se puede
+                              // abrir y leer aunque el resto siga en camino.
+                              : isGenerating && !post.readyToRead
                               ? () {
                                 Get.snackbar(
                                   'info'.tr,

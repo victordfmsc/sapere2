@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:sapere/core/constant/colors.dart';
+import 'package:sapere/features/local_reader/local_reader_launcher.dart';
 import 'package:sapere/main.dart';
 import 'package:sapere/models/gamification_models.dart';
 import 'package:sapere/models/post.dart';
@@ -70,6 +71,35 @@ class _GamifiedLessonScreenState extends State<GamifiedLessonScreen> {
     super.dispose();
   }
 
+  /// Hay algo que reproducir: audio de servidor (episodios antiguos) o texto
+  /// para la voz del dispositivo. Los episodios nuevos traen `bukbukUrl: ''`,
+  /// que no es null: comparar con null abría el reproductor sin fuente.
+  bool get _canPlay =>
+      widget.post?.hasAudio == true || widget.post?.hasText == true;
+
+  void _openReader(BukBukPost post) {
+    openLocalReader(
+      bookId: post.postId ?? '',
+      title: post.sapereName ?? widget.episode.title,
+      content: (post.description ?? const <String>[]).join('\n\n').trim(),
+      languageCode:
+          post.languageCode ?? appLocaleFromLanguageName(post.language) ?? '',
+      coverPath: post.newCover,
+      autoPlay: true,
+      onClosed: (progress) {
+        if (!mounted || _isQuizTime || progress < 0.95) return;
+        setState(() => _isQuizTime = true);
+        Get.snackbar(
+          'journeyCompleted'.tr,
+          'wisdomCheckDesc'.tr,
+          backgroundColor: Colors.amber.withOpacity(0.8),
+          colorText: Colors.black,
+          duration: const Duration(seconds: 4),
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -125,7 +155,7 @@ class _GamifiedLessonScreenState extends State<GamifiedLessonScreen> {
                           _buildPlayButton(),
                           SizedBox(height: 16.h),
                           Text(
-                            widget.post?.sapereUrl != null
+                            _canPlay
                                 ? "revealKnowledge".tr
                                 : "materializing".tr,
                             style: TextStyle(
@@ -197,8 +227,11 @@ class _GamifiedLessonScreenState extends State<GamifiedLessonScreen> {
   Widget _buildPlayButton() {
     return GestureDetector(
       onTap: () {
-        if (widget.post?.sapereUrl != null) {
-          Get.to(() => AudioPlayerScreen(post: widget.post!));
+        final BukBukPost? post = widget.post;
+        if (post != null && post.hasAudio) {
+          Get.to(() => AudioPlayerScreen(post: post));
+        } else if (post != null && post.hasText) {
+          _openReader(post);
         } else {
           Get.snackbar(
             'starting'.tr,

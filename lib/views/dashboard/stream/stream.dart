@@ -259,15 +259,13 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildFeaturedStory(BukBukPost post, BuildContext context) {
-    final isGenerating = post.sapereUrl == null || post.sapereUrl!.isEmpty;
+    final isGenerating = post.isProcessing;
     return GestureDetector(
       onTap: () {
         if (isGenerating) {
           Get.snackbar(
-            'generatingAudio'.tr,
-            'wentWrong'.tr.isNotEmpty
-                ? 'narratorGenerating'.tr
-                : 'Tu audiolibro está siendo sintetizado en segundo plano por el narrador de IA. Estará listo en breve.',
+            'generatingText'.tr,
+            'itWillAvailableSoon'.tr,
             backgroundColor: const Color(0xFFD97706),
             colorText: Colors.white,
             duration: const Duration(seconds: 4),
@@ -448,19 +446,28 @@ class _HomeScreenState extends State<HomeScreen> {
             itemCount: posts.length,
             itemBuilder: (context, index) {
               final post = posts[index];
-              final isGenerating =
-                  post.sapereUrl == null || post.sapereUrl!.isEmpty;
+              final isGenerating = post.isProcessing;
+              final isFailed = post.isFailed;
               return SapereCard(
                 imageUrl: post.newCover.toString(),
                 title: post.sapereName ?? "",
                 isGenerating: isGenerating,
+                isFailed: isFailed,
                 onTap: () {
+                  if (isFailed) {
+                    Get.snackbar(
+                      'error'.tr,
+                      'generationFailed'.tr,
+                      backgroundColor: Colors.red,
+                      colorText: Colors.white,
+                      duration: const Duration(seconds: 4),
+                    );
+                    return;
+                  }
                   if (isGenerating) {
                     Get.snackbar(
-                      'generatingAudio'.tr,
-                      'wentWrong'.tr.isNotEmpty
-                          ? 'narratorGenerating'.tr
-                          : 'Tu audiolibro está siendo sintetizado en segundo plano por el narrador de IA. Estará listo en breve.',
+                      'generatingText'.tr,
+                      'itWillAvailableSoon'.tr,
                       backgroundColor: const Color(0xFFD97706),
                       colorText: Colors.white,
                       duration: const Duration(seconds: 4),

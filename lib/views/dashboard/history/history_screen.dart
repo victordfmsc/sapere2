@@ -272,7 +272,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
         progress = item.positionMs / item.totalDurationMs;
       }
     } else {
-      progress = 0.5; // Placeholder
+      progress = item.readingProgress;
     }
 
     return Column(
@@ -311,7 +311,9 @@ class _HistoryScreenState extends State<HistoryScreen> {
       if (snap.exists) {
         final post = BukBukPost.fromFirestore(snap);
 
-        if (item.type == 'audio') {
+        // Un documental de tipo 'audio' puede no tener audio de servidor: en ese
+        // caso se reanuda en el lector bimodal con la voz del dispositivo.
+        if (item.type == 'audio' && post.hasAudio) {
           Get.to(
             () => AudioPlayerScreen(
               post: post,
@@ -324,6 +326,11 @@ class _HistoryScreenState extends State<HistoryScreen> {
           );
           final String fullText = description.join('\n\n').trim();
 
+          if (fullText.isEmpty) {
+            Get.snackbar('error'.tr, 'audioNotReady'.tr);
+            return;
+          }
+
           openLocalReader(
             bookId: post.postId ?? item.id,
             title: post.sapereName ?? "Sapere",
@@ -332,6 +339,14 @@ class _HistoryScreenState extends State<HistoryScreen> {
                 appLocaleFromLanguageName(post.language) ??
                 '',
             coverPath: post.newCover,
+            autoPlay: item.type == 'audio',
+            onClosed: (progress) {
+              if (!mounted) return;
+              Provider.of<HistoryProvider>(
+                context,
+                listen: false,
+              ).saveReadingProgress(post, progress);
+            },
           );
         }
       } else {

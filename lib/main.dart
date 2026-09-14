@@ -96,6 +96,7 @@ class MyApp extends StatelessWidget {
           child: GetMaterialApp(
             title: 'Sapere',
             translations: TransLanguage(),
+            fallbackLocale: const Locale('en', 'US'),
             locale:
                 (languageCode == null ||
                         languageCode!.isEmpty ||
