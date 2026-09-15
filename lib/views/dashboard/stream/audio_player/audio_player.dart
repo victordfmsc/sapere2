@@ -6,6 +6,7 @@ import 'package:get/get.dart' hide Rx;
 import 'package:just_audio/just_audio.dart';
 import 'package:audio_service/audio_service.dart';
 import 'package:sapere/core/constant/colors.dart';
+import 'package:sapere/core/services/story_functions_service.dart';
 import 'package:sapere/models/post.dart';
 import 'package:sapere/models/learning_models.dart';
 import 'package:sapere/providers/learning_provider.dart';
@@ -38,6 +39,7 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
   double _bgVolume = 0.2;
   StreamSubscription? _playbackStateSubscription;
   Timer? _progressSaveTimer;
+  bool _wasCompleted = false;
 
   @override
   void initState() {
@@ -51,6 +53,19 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
     _playbackStateSubscription = audioHandler.playbackState.listen((
       state,
     ) async {
+      final bool isCompleted =
+          state.processingState == AudioProcessingState.completed;
+      final bool requestCards = shouldRequestFlashcards(
+        wasCompleted: _wasCompleted,
+        isCompleted: isCompleted,
+        currentMediaId: audioHandler.mediaItem.value?.id,
+        postAudioUrl: widget.post.sapereUrl,
+      );
+      _wasCompleted = isCompleted;
+      if (requestCards && widget.post.postId != null) {
+        _triggerAutoCardGeneration();
+      }
+
       final isPlaying = state.playing;
       if (_currentBgAudio != null) {
         if (isPlaying && !_bgPlayer.playing) {
@@ -58,11 +73,6 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
         } else if (!isPlaying && _bgPlayer.playing) {
           await _bgPlayer.pause();
         }
-      }
-
-      if (state.processingState == AudioProcessingState.completed &&
-          widget.post.postId != null) {
-        _triggerAutoCardGeneration();
       }
     });
 

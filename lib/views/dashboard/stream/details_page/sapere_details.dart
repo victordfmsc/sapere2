@@ -153,7 +153,7 @@ class _SapereDetailsState extends State<SapereDetails> {
   void _openBimodalReader(String fullText, {required bool autoPlay}) {
     openLocalReader(
       bookId: widget.post.postId!,
-      title: widget.post.sapereName ?? 'Sapere',
+      title: widget.post.displayTitle ?? 'Sapere',
       content: fullText,
       languageCode:
           widget.post.languageCode ??
@@ -290,7 +290,7 @@ class _SapereDetailsState extends State<SapereDetails> {
                 children: [
                   // Title
                   Text(
-                    widget.post.sapereName ?? 'sapere',
+                    widget.post.displayTitle ?? 'sapere',
                     style: TextStyle(
                       fontSize: 28.sp,
                       fontWeight: FontWeight.bold,

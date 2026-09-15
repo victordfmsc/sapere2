@@ -9,7 +9,12 @@ const {
 } = require('./config');
 const { sanitizeError } = require('./sanitize');
 const { toMillis } = require('./util');
-const { refundDoc, releaseGenerationLock, staleAfterMs } = require('./story');
+const {
+  refundDoc,
+  releaseGenerationLock,
+  staleAfterMs,
+  flagRefundReview,
+} = require('./story');
 const defaultCredits = require('./credits');
 
 const { prepareSpendMark, SPEND_DELIVERED, SPEND_CLOSED_IN_ERROR } = defaultCredits;
@@ -18,6 +23,18 @@ function hasReadableText(data) {
   if (data.readyToRead === true) return true;
   return Array.isArray(data.description)
     && data.description.some((p) => typeof p === 'string' && p.trim());
+}
+
+// Un gasto en revision manual ya no lo devuelve ningun proceso. refundDoc lo
+// refleja en su documento, pero por ahi no pasan ni un gasto que ya estaba en
+// revision ni el que la conciliacion manda a revision: se marca aqui. Idempotente.
+async function flagReviewOnDoc(db, spendId, spend, docData) {
+  if (!docData || docData.status !== 'error') return;
+  const generation = docData.generation || {};
+  if (generation.spendId !== spendId || generation.refunded === true) return;
+  if (generation.refundState === 'needs_review') return;
+  if (spend.uid && docData.uId && docData.uId !== spend.uid) return;
+  await flagRefundReview(db.collection(DOCS_COLLECTION).doc(spend.docId));
 }
 
 // Portado del watchdog de Railway (sapere-backend/src/watchdog.js), ahora como
@@ -31,6 +48,9 @@ function hasReadableText(data) {
 async function sweepStalledDocs(db, { now = Date.now(), credits = defaultCredits } = {}) {
   const limit = now - STALE_MS;
   const result = { marked: 0, closed: 0, refunded: 0, settled: 0, checked: 0, errors: 0 };
+  // Gastos cuyo reembolso ya se intento en esta pasada: la conciliacion no gasta
+  // un segundo intento del mismo gasto en la misma invocacion.
+  const refundTried = new Set();
 
   let stuck = { docs: [] };
   try {
@@ -103,10 +123,17 @@ async function sweepStalledDocs(db, { now = Date.now(), credits = defaultCredits
         console.log(`[sweep] ${doc.id} cerrado como completado parcial (atascado en ${outcome.data.status})`);
       } else if (outcome.action === 'marked') {
         result.marked += 1;
-        const refund = await refundDoc(db, doc.id, credits);
-        if (refund.refunded) result.refunded += 1;
-        await releaseGenerationLock(db, outcome.data.uId, doc.id).catch(() => {});
         console.log(`[sweep] ${doc.id} marcado como error (atascado en ${outcome.data.status})`);
+        const spendId = (outcome.data.generation || {}).spendId;
+        if (spendId) refundTried.add(spendId);
+        try {
+          const refund = await refundDoc(db, doc.id, credits);
+          if (refund.refunded) result.refunded += 1;
+        } finally {
+          // Si el reembolso falla lo reintenta una pasada posterior; el cerrojo
+          // se suelta igualmente.
+          await releaseGenerationLock(db, outcome.data.uId, doc.id).catch(() => {});
+        }
       }
     } catch (error) {
       result.errors += 1;
@@ -133,7 +160,7 @@ async function sweepStalledDocs(db, { now = Date.now(), credits = defaultCredits
     const spend = spendDoc.data();
     const created = toMillis(spend.createdAt);
     if (!created || created > limit) continue;
-    if (spend.refundState === 'needs_review') continue;
+    if (refundTried.has(spendDoc.id)) continue;
 
     try {
       const docSnap = spend.docId
@@ -141,6 +168,10 @@ async function sweepStalledDocs(db, { now = Date.now(), credits = defaultCredits
         : null;
       const docData = docSnap && docSnap.exists ? docSnap.data() : null;
 
+      if (spend.refundState === 'needs_review') {
+        await flagReviewOnDoc(db, spendDoc.id, spend, docData);
+        continue;
+      }
       if (docData && IN_PROGRESS_STATUSES.includes(docData.status)) continue;
 
       if (docData && docData.status === 'completed') {
@@ -164,6 +195,7 @@ async function sweepStalledDocs(db, { now = Date.now(), credits = defaultCredits
       if (spend.applied !== true) {
         // Nunca se confirmo el cargo: devolverlo a ciegas podria regalar un credito.
         await spendDoc.ref.update({ refundState: 'needs_review' });
+        await flagReviewOnDoc(db, spendDoc.id, spend, docData);
         console.warn(`[sweep] gasto ${spendDoc.id} sin cargo confirmado: queda para revision manual`);
         continue;
       }

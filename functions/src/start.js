@@ -36,6 +36,8 @@ const TYPES_SUBCOLLECTION = 'sapereTypes';
 const FIRESTORE_ID = /^[A-Za-z0-9_-]{1,128}$/;
 const RESERVED_ID = /^__.*__$/;
 const TYPE_READ_TIMEOUT_MS = 5000;
+// Titulo provisional que manda la app: mismo tope que el renombrado en firestore.rules.
+const MAX_TITLE_CHARS = 120;
 
 function isSafeId(value) {
   return typeof value === 'string' && FIRESTORE_ID.test(value) && !RESERVED_ID.test(value);
@@ -213,6 +215,12 @@ async function startStoryFlow({
   const bukbukCategoryId = readOptionalString(data.bukbukCategoryId, 'bukbukCategoryId', MAX_SHORT_CHARS);
   const gamificationSubject = readOptionalString(data.gamificationSubject, 'gamificationSubject', MAX_SHORT_CHARS);
   const gamificationEpisode = Number.isInteger(data.gamificationEpisode) ? data.gamificationEpisode : null;
+  // Solo se muestra mientras no hay titulo definitivo: la app no lo acota, asi que
+  // uno largo se recorta en vez de rechazar la creacion.
+  const provisionalTitle = Array.from(readOptionalString(data.title, 'title', MAX_PROMPT_CHARS))
+    .slice(0, MAX_TITLE_CHARS)
+    .join('')
+    .trim();
 
   const coverUrl = isAllowedCoverUrl(data.coverUrl, bucketName) ? data.coverUrl.trim() : '';
   if (typeof data.coverUrl === 'string' && data.coverUrl.trim() && !coverUrl) {
@@ -281,6 +289,7 @@ async function startStoryFlow({
       gamificationEpisode,
       spendId: spend.spendId,
       framework: resolved.framework,
+      provisionalTitle,
     });
     initialDoc.generation.systemPromptSource = resolved.source;
     await docRef.set(initialDoc);

@@ -272,7 +272,7 @@ class _CreationScreenState extends State<CreationScreen> {
                     final bool isGenerating = post.isProcessing;
                     return SapereCard(
                       imageUrl: post.newCover.toString(),
-                      title: post.sapereName ?? 'Sapere',
+                      title: post.displayTitle ?? 'Sapere',
                       isGenerating: isGenerating,
                       isFailed: isFailed,
                       onRetry:

@@ -1,11 +1,8 @@
-import 'dart:convert';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:http/http.dart' as http;
 import 'package:purchases_flutter/purchases_flutter.dart';
 
 import '../core/constant/colors.dart';
@@ -27,8 +24,6 @@ class InAppPurchaseProvider extends ChangeNotifier {
     'credits_pack_15',
     'credits_pack_40',
   ];
-  static const _creditsApiBase =
-      'https://web-production-b405a.up.railway.app/v1/api/credits';
 
   bool isSubscribed = false;
   bool isTrial = false;
@@ -47,10 +42,6 @@ class InAppPurchaseProvider extends ChangeNotifier {
 
   bool? _canPost;
   DateTime? _nextRefillDate;
-
-  /// Identificador del último gasto aceptado por el backend (para reembolso).
-  String? lastSpendId;
-  String? lastSpendSource;
 
   /// Créditos ganados en la última compra de suscripción.
   int lastPurchaseGain = 0;
@@ -327,115 +318,5 @@ class InAppPurchaseProvider extends ChangeNotifier {
     debugPrint('can post called');
     await refreshCredits();
     canPost = totalCredits > 0;
-  }
-
-  Future<Map<String, String>> _authHeaders() async {
-    final token = await FirebaseAuth.instance.currentUser!.getIdToken();
-    return {
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer $token',
-    };
-  }
-
-  /// Aplica el saldo devuelto por el backend según la fuente del movimiento.
-  Future<void> _applyBalance(String? source, int? newBalance, int delta) async {
-    if (source == 'legacy') {
-      legacyCredits = newBalance ?? (legacyCredits + delta).clamp(0, 1 << 31);
-    } else {
-      creditBalance = newBalance ?? (creditBalance + delta).clamp(0, 1 << 31);
-      try {
-        await Purchases.invalidateVirtualCurrenciesCache();
-      } catch (e) {
-        debugPrint('Error invalidating virtual currencies cache: $e');
-      }
-    }
-    _canPost = totalCredits > 0;
-    notifyListeners();
-  }
-
-  /// Gasta 1 crédito a través del backend (RevenueCat o reserva legacy).
-  Future<bool> deductCredit() async {
-    final uid = FirebaseAuth.instance.currentUser?.uid;
-    if (uid == null) return false;
-
-    try {
-      final response = await http
-          .post(
-            Uri.parse('$_creditsApiBase/spend'),
-            headers: await _authHeaders(),
-            body: jsonEncode({'uId': uid}),
-          )
-          .timeout(const Duration(seconds: 20));
-
-      if (response.statusCode != 200) {
-        debugPrint(
-          '❌ Credit spend rejected (${response.statusCode}): ${response.body}',
-        );
-        return false;
-      }
-
-      final data = jsonDecode(response.body);
-      if (data is! Map || data['ok'] != true) {
-        debugPrint('❌ Credit spend not ok: ${response.body}');
-        return false;
-      }
-
-      final balance = data['balance'];
-      final int? newBalance = balance is num ? balance.toInt() : null;
-      final source = data['source']?.toString();
-      final spendId = data['spendId'];
-      lastSpendId = spendId is String ? spendId : null;
-      lastSpendSource = source;
-      await _applyBalance(source, newBalance, -1);
-      debugPrint(
-        '✅ Credit spent from $source (spendId=$lastSpendId). rc=$creditBalance legacy=$legacyCredits',
-      );
-      return true;
-    } catch (e) {
-      debugPrint('❌ Error deducting credit: $e');
-      return false;
-    }
-  }
-
-  /// Devuelve el último crédito gastado si la creación falló después del cobro.
-  Future<bool> refundLastSpend() async {
-    final spendId = lastSpendId;
-    if (spendId == null) return false;
-
-    try {
-      final response = await http
-          .post(
-            Uri.parse('$_creditsApiBase/refund'),
-            headers: await _authHeaders(),
-            body: jsonEncode({'spendId': spendId}),
-          )
-          .timeout(const Duration(seconds: 20));
-
-      if (response.statusCode != 200) {
-        debugPrint(
-          '❌ Credit refund rejected (${response.statusCode}): ${response.body}',
-        );
-        return false;
-      }
-
-      final data = jsonDecode(response.body);
-      if (data is! Map || data['ok'] != true) {
-        debugPrint('❌ Credit refund not ok: ${response.body}');
-        return false;
-      }
-
-      final balance = data['balance'];
-      final int? newBalance = balance is num ? balance.toInt() : null;
-      final source = data['source']?.toString() ?? lastSpendSource;
-      await _applyBalance(source, newBalance, 1);
-      lastSpendId = null;
-      debugPrint(
-        '✅ Credit refunded to $source. rc=$creditBalance legacy=$legacyCredits',
-      );
-      return true;
-    } catch (e) {
-      debugPrint('❌ Error refunding credit: $e');
-      return false;
-    }
   }
 }

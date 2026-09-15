@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:sapere/models/post.dart';
 
@@ -101,4 +102,103 @@ void main() {
       expect(post.isProcessing, isFalse);
     });
   });
+
+  group('BukBukPost titulo provisional', () {
+    Map<String, dynamic> titulado({String? bukbukName, String? provisional}) {
+      return <String, dynamic>{
+        'postId': 'doc1',
+        'bukbukName': bukbukName,
+        'provisionalTitle': provisional,
+      };
+    }
+
+    test('provisionalTitle sobrevive a fromMap, toMap y copyWith', () {
+      final post = BukBukPost.fromMap(
+        titulado(bukbukName: '', provisional: 'La caída de Constantinopla'),
+      );
+
+      expect(post.provisionalTitle, 'La caída de Constantinopla');
+      expect(
+        BukBukPost.fromMap(post.toMap()).provisionalTitle,
+        'La caída de Constantinopla',
+      );
+      expect(
+        post.copyWith(status: 'error').provisionalTitle,
+        'La caída de Constantinopla',
+      );
+    });
+
+    test('con bukbukName se muestra el titulo definitivo', () {
+      final post = BukBukPost.fromMap(
+        titulado(bukbukName: 'Constantinopla, 1453', provisional: 'Tema'),
+      );
+
+      expect(post.displayTitle, 'Constantinopla, 1453');
+    });
+
+    test('con bukbukName vacio, en blanco o nulo se muestra el provisional', () {
+      expect(
+        BukBukPost.fromMap(titulado(bukbukName: '', provisional: 'Tema'))
+            .displayTitle,
+        'Tema',
+      );
+      expect(
+        BukBukPost.fromMap(titulado(bukbukName: '   ', provisional: 'Tema'))
+            .displayTitle,
+        'Tema',
+      );
+      expect(
+        BukBukPost.fromMap(titulado(provisional: 'Tema')).displayTitle,
+        'Tema',
+      );
+    });
+
+    test('sin ninguno devuelve null para que la pantalla ponga su respaldo', () {
+      expect(BukBukPost.fromMap(titulado(bukbukName: '')).displayTitle, isNull);
+      expect(
+        BukBukPost.fromMap(titulado(bukbukName: '', provisional: '  '))
+            .displayTitle,
+        isNull,
+      );
+    });
+
+    test('documento sin provisionalTitle (generacion antigua) sigue igual', () {
+      final post = BukBukPost.fromMap(
+        const <String, dynamic>{'postId': 'x', 'bukbukName': 'Viejo'},
+      );
+
+      expect(post.provisionalTitle, isNull);
+      expect(post.displayTitle, 'Viejo');
+    });
+
+    test('fromFirestore tambien lee provisionalTitle', () {
+      final post = BukBukPost.fromFirestore(
+        _FakeSnapshot('doc1', <String, dynamic>{
+          'bukbukName': '',
+          'provisionalTitle': 'La caída de Constantinopla',
+          'status': 'pending',
+        }),
+      );
+
+      expect(post.postId, 'doc1');
+      expect(post.provisionalTitle, 'La caída de Constantinopla');
+      expect(post.displayTitle, 'La caída de Constantinopla');
+    });
+  });
+}
+
+// ignore: subtype_of_sealed_class
+class _FakeSnapshot implements DocumentSnapshot<Map<String, dynamic>> {
+  _FakeSnapshot(this.id, this._data);
+
+  @override
+  final String id;
+
+  final Map<String, dynamic> _data;
+
+  @override
+  Map<String, dynamic> data() => _data;
+
+  @override
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }

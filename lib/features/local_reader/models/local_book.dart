@@ -31,6 +31,19 @@ class LocalBook {
     return (progressSentence / sentences.length).clamp(0.0, 1.0);
   }
 
+  /// Al reparsear un libro que ha crecido por el final (llegan secciones
+  /// nuevas) conserva la oracion en la que iba el lector. Si el texto anterior
+  /// ya no es el principio del nuevo, la posicion no vale y se queda en 0.
+  void inheritProgressFrom(LocalBook previous) {
+    if (sentences.isEmpty || previous.paragraphs.length > paragraphs.length) {
+      return;
+    }
+    for (var i = 0; i < previous.paragraphs.length; i++) {
+      if (paragraphs[i] != previous.paragraphs[i]) return;
+    }
+    progressSentence = previous.progressSentence.clamp(0, sentences.length - 1);
+  }
+
   LocalBook copyWith({
     String? id,
     String? title,

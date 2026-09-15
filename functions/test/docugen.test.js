@@ -231,7 +231,7 @@ test('seccion: POST con Bearer y stream, conversation_id distinto en cada llamad
   assert.equal(call.body.conversation_id, first.conversationId);
   assert.equal(call.body.stream, true);
   assert.equal(call.body.level, 'intermedio');
-  assert.equal(call.body.max_tokens, 4096);
+  assert.equal(call.body.max_tokens, 16000, 'sitio para el razonamiento y para 650-800 palabras');
   assert.equal(call.body.duration_minutes, 30);
   assert.equal(call.body.language, 'español');
   assert.match(first.content, /^## Sección 1:/);
@@ -503,4 +503,153 @@ test('idioma: los 29 locales de la app y respaldo', () => {
   assert.equal(docugen.languageName('fr_CA'), 'francés');
   assert.equal(docugen.languageName(''), 'español');
   assert.equal(docugen.languageName('xx_YY'), 'español');
+});
+
+test('max_tokens: si usage.completion_tokens llega al tope la seccion se recorta a la ultima oracion completa; sin ninguna, REINTENTABLE', () => {
+  const read = (content, usage, maxTokens = 100) => {
+    const reader = docugen.createSectionReader({ maxTokens });
+    reader.push(sse([{ type: 'content', content }, { type: 'done', estimated_minutes: 5, usage }]).join(''));
+    return reader.finish();
+  };
+
+  const cut = read('## Sección 2: El hielo\n\nEl barco crujía. «¿Resistirá?» Nadie lo sab', { completion_tokens: 100 });
+  assert.equal(cut.truncated, true);
+  assert.equal(cut.content, '## Sección 2: El hielo\n\nEl barco crujía. «¿Resistirá?»');
+  assert.equal(read('東京は大きい。人が多', { completion_tokens: 120 }).content, '東京は大きい。');
+
+  const whole = read('Frase completa. Otra a medi', { completion_tokens: 99 });
+  assert.equal(whole.truncated, false, 'por debajo del tope no se toca');
+  assert.equal(whole.content, 'Frase completa. Otra a medi');
+  assert.equal(read('Sin completion_tokens', { total_tokens: 500 }).truncated, false);
+  assert.equal(read('Sin usage', undefined).truncated, false);
+
+  assert.throws(
+    () => read('El razonamiento se lo comio to', { completion_tokens: 100 }),
+    (error) => error instanceof docugen.RetryableError && /cortada por max_tokens/.test(error.message),
+  );
+});
+
+test('max_tokens con cutToSentence false: lo cortado se entrega tal cual (truncated) para que lo interprete quien llama; sin texto, REINTENTABLE', () => {
+  const read = (content, cutToSentence) => {
+    const reader = docugen.createSectionReader({ maxTokens: 100, cutToSentence });
+    const events = content ? [{ type: 'content', content }] : [];
+    reader.push(sse([...events, { type: 'done', usage: { completion_tokens: 100 } }]).join(''));
+    return reader.finish();
+  };
+  const json = '[{"q":"¿A?","a":"B."},\n{"q":"¿C?","a":"D';
+
+  assert.throws(() => read(json, true), /sin ninguna oracion completa/);
+  const raw = read(json, false);
+  assert.equal(raw.content, json);
+  assert.equal(raw.truncated, true);
+  assert.throws(
+    () => read('', false),
+    (error) => error instanceof docugen.RetryableError && /max_tokens \(100\) sin devolver texto/.test(error.message),
+  );
+});
+
+test('seccion cortada por max_tokens: se entrega hasta la ultima oracion completa y queda un aviso en el log', async (t) => {
+  const { DOCUGEN } = require('../src/config');
+  const warn = t.mock.method(console, 'warn', () => {});
+  const space = createSpace({
+    section: () => ({
+      status: 200,
+      stream: sse([
+        { type: 'reasoning', reasoning: 'x' },
+        { type: 'content', content: '## Sección 1: A\n\nPrimera frase entera. Segunda a me' },
+        { type: 'done', estimated_minutes: 1, usage: { completion_tokens: DOCUGEN.maxTokens } },
+      ]),
+    }),
+  });
+  const net = installFetch(space.routes);
+  t.after(net.restore);
+  const client = newClient();
+
+  const result = await client.generateSection(sectionArgs());
+  await client.flush();
+
+  assert.equal(result.truncated, true);
+  assert.equal(result.content, '## Sección 1: A\n\nPrimera frase entera.');
+  const warnings = warn.mock.calls.map((call) => String(call.arguments[0]));
+  assert.ok(
+    warnings.some((message) => message.includes(`seccion 1/6 (${result.conversationId}): cortada por max_tokens`)),
+    warnings.join('\n'),
+  );
+});
+
+test('los errores y avisos del Space no repiten la etiqueta de la llamada', async (t) => {
+  const warn = t.mock.method(console, 'warn', () => {});
+  const cases = [
+    {
+      options: { title: { status: 503, json: { error: 'Space restarting' } } },
+      call: (client) => client.generateTitle({ topic: 't', area: 'general', language: 'español' }),
+      message: 'titulo: el Space sigue sin responder tras comprobar su estado (Space no disponible (503))',
+    },
+    {
+      options: { section: () => ({ status: 503, json: { error: 'Space restarting' } }) },
+      call: (client, clock) => client.generateSection(sectionArgs({ deadline: clock.now() + 5 * 60 * 1000 })),
+      message: 'seccion 1/6: Space no disponible (503); sin tiempo para despertar el Space en esta invocacion',
+    },
+  ];
+  for (const { options, call, message } of cases) {
+    const space = createSpace(options);
+    const net = installFetch(space.routes);
+    try {
+      const clock = fakeClock();
+      const client = docugen.createClient({ token: TOKEN, now: clock.now, sleep: clock.sleep });
+      await assert.rejects(() => call(client, clock), (error) => {
+        assert.equal(error.message, message);
+        return true;
+      });
+      await client.flush();
+    } finally {
+      net.restore();
+    }
+  }
+  const warnings = warn.mock.calls.map((call) => String(call.arguments[0]));
+  assert.deepEqual(warnings, ['[docugen] titulo: Space no disponible (503); se consulta el estado del Space']);
+});
+
+test('texto suelto: POST /generate con el area validada en el cuerpo, max_tokens propio y reasoning_effort solo si se pide; las secciones no cambian', async (t) => {
+  const warn = t.mock.method(console, 'warn', () => {});
+  const space = createSpace({
+    generate: (call, log) => (log.generates.length === 3
+      ? { status: 200, stream: sse([{ type: 'content', content: 'Frase entera. A me' }, { type: 'done', usage: { completion_tokens: 50 } }]) }
+      : undefined),
+  });
+  const net = installFetch(space.routes);
+  t.after(net.restore);
+  const client = newClient();
+  const messages = docugen.buildSectionMessages({ topic: 'Faros', extra: 'Marco', index: 0, total: 1 });
+  const args = { language: 'inglés', durationMinutes: 5, messages };
+
+  const plain = await client.generateText({ ...args, kind: 'community', area: 'inventada', maxTokens: 777 });
+  await client.generateText({ ...args, kind: 'flashcards', area: 'historia', reasoningEffort: 'low' });
+  const cut = await client.generateText({ ...args, kind: 'flashcards', area: 'historia', maxTokens: 50 });
+  await client.generateSection(sectionArgs());
+  await client.flush();
+
+  const [first, second] = space.log.generates;
+  assert.match(plain.content, /Párrafo A/);
+  assert.ok(!plain.content.includes('RAZONAMIENTO-OCULTO'));
+  assert.equal(first.headers.Authorization, `Bearer ${TOKEN}`);
+  assert.deepEqual(first.body.messages, messages);
+  assert.equal(first.body.stream, true);
+  assert.equal(first.body.area, 'general');
+  assert.equal(first.body.max_tokens, 777);
+  assert.equal('reasoning_effort' in first.body, false);
+  assert.equal(second.body.area, 'historia');
+  assert.equal(second.body.max_tokens, 16000);
+  assert.equal(second.body.reasoning_effort, 'low');
+  assert.equal(cut.truncated, true, 'el corte por max_tokens usa el tope de la llamada');
+  assert.equal(cut.content, 'Frase entera.');
+  assert.ok(warn.mock.calls.some((call) => /de 50 tokens/.test(String(call.arguments[0]))));
+
+  const ids = space.log.generates.map((call) => call.body.conversation_id);
+  assert.equal(new Set(ids).size, 3);
+  assert.deepEqual([...space.log.deletes].sort(), [...ids, space.log.sections[0].body.conversation_id].sort());
+  assert.deepEqual(
+    Object.keys(space.log.sections[0].body).sort(),
+    ['conversation_id', 'duration_minutes', 'language', 'level', 'max_tokens', 'messages', 'stream'],
+  );
 });

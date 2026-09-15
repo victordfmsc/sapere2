@@ -1,4 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:sapere/features/local_reader/models/local_book.dart';
 import 'package:sapere/features/local_reader/services/document_parser_service.dart';
 
 void main() {
@@ -58,6 +59,57 @@ void main() {
       expect(back.sentences.length, 2);
       expect(json['progressSentence'], 1);
       expect(json['sentences'], hasLength(2));
+    });
+  });
+
+  group('LocalBook.inheritProgressFrom', () {
+    Future<LocalBook> parse(String content) => parser.parseString(
+          content: content,
+          title: 'Doc',
+          bookId: 'doc1',
+          languageCode: 'es_ES',
+        );
+
+    test('llega una seccion nueva al final: conserva la oracion leida', () async {
+      final antes = await parse('Uno. Dos.\n\nTres.');
+      antes.progressSentence = 2;
+      final despues = await parse('Uno. Dos.\n\nTres.\n\nCuatro. Cinco.');
+
+      despues.inheritProgressFrom(antes);
+
+      expect(despues.sentences.length, 5);
+      expect(despues.progressSentence, 2);
+      expect(despues.sentences[despues.progressSentence].text, 'Tres.');
+    });
+
+    test('la posicion guardada se acota a la ultima oracion', () async {
+      final antes = await parse('Uno. Dos.');
+      antes.progressSentence = 40;
+      final despues = await parse('Uno. Dos.\n\nTres.');
+
+      despues.inheritProgressFrom(antes);
+
+      expect(despues.progressSentence, 2);
+    });
+
+    test('si cambia el texto ya leido, empieza de cero', () async {
+      final antes = await parse('Uno. Dos.\n\nTres.');
+      antes.progressSentence = 2;
+      final otro = await parse('Uno bis. Dos.\n\nTres.\n\nCuatro.');
+
+      otro.inheritProgressFrom(antes);
+
+      expect(otro.progressSentence, 0);
+    });
+
+    test('si el texto nuevo es mas corto, empieza de cero', () async {
+      final antes = await parse('Uno.\n\nDos.\n\nTres.');
+      antes.progressSentence = 2;
+      final menos = await parse('Uno.\n\nDos.');
+
+      menos.inheritProgressFrom(antes);
+
+      expect(menos.progressSentence, 0);
     });
   });
 }

@@ -1,14 +1,15 @@
-import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+import '../core/services/story_functions_service.dart';
 import '../models/learning_models.dart';
 import '../models/post.dart';
 
 class LearningProvider extends ChangeNotifier {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
+  late final StoryFunctionsService _functions = StoryFunctionsService();
+  final Set<String> _flashcardsInFlight = <String>{};
 
   List<LearningNote> _notes = [];
   List<LearningCard> _dueCards = [];
@@ -179,104 +180,43 @@ class LearningProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Pide al servidor (callable `generateFlashcards`) las tarjetas del
+  /// documental; las escribe el propio servidor en `learning_cards`. Solo una
+  /// petición a la vez por post. Un fallo solo se registra: el reproductor
+  /// sigue igual.
   Future<void> generateCardsForPost(BukBukPost post) async {
+    final String postId = post.postId ?? '';
     if (userId == null ||
+        postId.isEmpty ||
         post.description == null ||
         post.description!.isEmpty) {
       return;
     }
 
-    // Check if cards already exist for this post to avoid duplicates
-    final existingSnapshot =
-        await _firestore
-            .collection('learning_cards')
-            .where('userId', isEqualTo: userId)
-            .where('postId', isEqualTo: post.postId ?? '')
-            .limit(1)
-            .get();
-
-    if (existingSnapshot.docs.isNotEmpty) {
-      print(
-        "Cards already exist for post ${post.postId}, skipping generation.",
-      );
-      return;
-    }
-
-    final content = post.description!.join("\n");
-    final prompt = """
-      Eres un experto en pedagogía y neurociencia cognitiva. 
-      Basándote en el siguiente contenido detallado de un documental educativo, genera exactamente 3 flashcards de repaso.
-      Cada tarjeta debe tener una pregunta clara en el anverso y una respuesta concisa en el reverso.
-      Enfócate en conceptos clave, datos curiosos o relaciones causa-efecto.
-      
-      Contenido:
-      $content
-      
-      Responde SOLO en formato JSON estructurado:
-      [
-        {"q": "Pregunta 1", "a": "Respuesta 1"},
-        {"q": "Pregunta 2", "a": "Respuesta 2"},
-        {"q": "Pregunta 3", "a": "Respuesta 3"}
-      ]
-    """;
-
     try {
-      // Note: Reusing the same API endpoint used in BukBukProvider or similar
-      final url = Uri.parse(
-        'https://web-production-b405a.up.railway.app/generate',
-      );
-      final response = await http.post(
-        url,
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer YOUR_HF_TOKEN',
+      final bool created = await requestFlashcardsOnce(
+        _flashcardsInFlight,
+        postId,
+        hasCards: () async {
+          final existingSnapshot =
+              await _firestore
+                  .collection('learning_cards')
+                  .where('userId', isEqualTo: userId)
+                  .where('postId', isEqualTo: postId)
+                  .limit(1)
+                  .get();
+          return existingSnapshot.docs.isNotEmpty;
         },
-        body: jsonEncode({
-          "messages": [
-            {"role": "user", "content": prompt},
-          ],
-          "max_tokens": 1000,
-          "temperature": 0.7,
-        }),
+        generate: () => _functions.generateFlashcards(postId: postId),
       );
-
-      if (response.statusCode == 200) {
-        final decoded = utf8.decode(response.bodyBytes);
-        final data = jsonDecode(decoded);
-        final String script = data['script'] ?? '[]';
-
-        // Sometimes the AI returns JSON inside a script tag or as plain text
-        final List<dynamic> cardsJson = jsonDecode(_extractJson(script));
-
-        for (var cardData in cardsJson) {
-          final docRef = _firestore.collection('learning_cards').doc();
-          final card = LearningCard(
-            id: docRef.id,
-            userId: userId!,
-            postId: post.postId ?? '',
-            question: cardData['q'],
-            answer: cardData['a'],
-            nextReview: DateTime.now().add(const Duration(days: 1)),
-            createdAt: DateTime.now(),
-          );
-          await docRef.set(card.toMap());
-        }
-
+      if (created) {
         await _addWisdomXp(20); // XP for completing a lesson elaboration
+        await _loadDueCards();
         notifyListeners();
       }
     } catch (e) {
-      print("Error generating flashcards: $e");
+      debugPrint("Error generating flashcards: $e");
     }
-  }
-
-  String _extractJson(String text) {
-    int start = text.indexOf('[');
-    int end = text.lastIndexOf(']');
-    if (start != -1 && end != -1) {
-      return text.substring(start, end + 1);
-    }
-    return text;
   }
 
   Future<void> _addWisdomXp(int amount) async {

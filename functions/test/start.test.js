@@ -442,3 +442,23 @@ test('isAllowedCoverUrl solo admite URLs https del bucket del proyecto', () => {
   assert.equal(isAllowedCoverUrl('assets/images/mysterious_default_cover.png', BUCKET), false);
   assert.equal(isAllowedCoverUrl(OWN_COVER, ''), false);
 });
+
+test('startStory: el titulo de la app se guarda como provisionalTitle sin tocar bukbukName; uno largo se recorta', async () => {
+  const long = `🏛️ Historia Antigua - Ep 3: ${'x'.repeat(200)}`;
+  const cases = [
+    { title: '  La caída de Constantinopla  ', expected: 'La caída de Constantinopla' },
+    { title: long, expected: Array.from(long).slice(0, 120).join('') },
+    { title: undefined, expected: '' },
+    { title: 42, expected: '' },
+  ];
+  for (const { title, expected } of cases) {
+    const db = new FakeFirestore();
+    await startStoryFlow({
+      db, uid: 'u1', data: { prompt: 'tema', languageCode: 'es_ES', title }, bucketName: BUCKET, enqueue: okEnqueue, credits: fakeCredits(),
+    });
+    const doc = onlyDoc(db);
+    assert.equal(doc.provisionalTitle, expected, String(title));
+    assert.ok(Array.from(doc.provisionalTitle).length <= 120);
+    assert.equal(doc.bukbukName, '', 'si fuera el titulo definitivo la tarea no pediria uno al Space');
+  }
+});

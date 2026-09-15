@@ -8,6 +8,7 @@ import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:sapere/core/constant/colors.dart';
 import 'package:sapere/core/utils/dialog_utils.dart';
+import 'package:sapere/providers/sapere_provider.dart';
 import 'package:sapere/providers/subscription_provider.dart';
 import 'package:sapere/routes/app_pages.dart';
 import 'package:sapere/views/dashboard/subscription/widgets/credit_packs_section.dart';
@@ -114,6 +115,13 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                                     hasTrial: hasTrial,
                                     onTap: () async {
                                       if (yearly == null) return;
+                                      // onClose corre con esta página ya
+                                      // cerrada: el provider se toma antes.
+                                      final BukBukProvider bukBukProvider =
+                                          Provider.of<BukBukProvider>(
+                                            context,
+                                            listen: false,
+                                          );
                                       showLoadingDialog(
                                         context,
                                         message: 'PleaseWait'.tr,
@@ -129,11 +137,8 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                                           PremiumSuccessDialog(
                                             points: gainedPoints(),
                                             onClose: () {
-                                              Get.to(
-                                                () => AddSaperePage(
-                                                  initialText:
-                                                      'unlockFirstDoc'.tr,
-                                                ),
+                                              openFirstDocumentary(
+                                                bukBukProvider,
                                               );
                                             },
                                           ),
@@ -155,6 +160,13 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                                     isFeatured: true,
                                     onTap: () async {
                                       if (monthly == null) return;
+                                      // onClose corre con esta página ya
+                                      // cerrada: el provider se toma antes.
+                                      final BukBukProvider bukBukProvider =
+                                          Provider.of<BukBukProvider>(
+                                            context,
+                                            listen: false,
+                                          );
                                       showLoadingDialog(
                                         context,
                                         message: 'PleaseWait'.tr,
@@ -170,11 +182,8 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
                                           PremiumSuccessDialog(
                                             points: gainedPoints(),
                                             onClose: () {
-                                              Get.to(
-                                                () => AddSaperePage(
-                                                  initialText:
-                                                      'unlockFirstDoc'.tr,
-                                                ),
+                                              openFirstDocumentary(
+                                                bukBukProvider,
                                               );
                                             },
                                           ),

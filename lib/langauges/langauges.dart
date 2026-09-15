@@ -431,6 +431,9 @@ class TransLanguage extends Translations {
       'loading': "Loading...",
       'book': "Book",
       'refundInProgress': "Your credit is being returned. Try again in a few minutes.",
+      'refundNeedsReview': "Your credit refund needs a manual review. Please contact support.",
+      'aiRateLimited': "Too many requests in a short time. Please wait a moment and try again.",
+      'aiUnavailable': "The text generator is temporarily unavailable. Please try again later.",
     },
     'en_GB': {
       'readerResumeHere': "You left off here",
@@ -855,6 +858,9 @@ class TransLanguage extends Translations {
       'audio': "Audio",
       'book': "Book",
       'refundInProgress': "Your credit is being returned. Try again in a few minutes.",
+      'refundNeedsReview': "Your credit refund needs a manual review. Please contact support.",
+      'aiRateLimited': "Too many requests in a short time. Please wait a moment and try again.",
+      'aiUnavailable': "The text generator is temporarily unavailable. Please try again later.",
     },
     'es_AR': {
       'readerResumeHere': "Aquí te quedaste",
@@ -1292,6 +1298,9 @@ class TransLanguage extends Translations {
       'createFirstSapere': "Creá tu primer Sapere",
       'loading': "Cargando...",
       'refundInProgress': "Estamos devolviendo tu crédito. Probá de nuevo en unos minutos.",
+      'refundNeedsReview': "La devolución de tu crédito necesita una revisión manual. Contactá con soporte.",
+      'aiRateLimited': "Hiciste demasiadas solicitudes en poco tiempo. Esperá un momento y probá de nuevo.",
+      'aiUnavailable': "El generador de textos no está disponible por ahora. Probá de nuevo más tarde.",
     },
     'es_MX': {
       'readerResumeHere': "Aquí te quedaste",
@@ -1719,6 +1728,9 @@ class TransLanguage extends Translations {
       'audio': "Audio",
       'book': "Libro",
       'refundInProgress': "Estamos devolviendo tu crédito. Inténtalo de nuevo en unos minutos.",
+      'refundNeedsReview': "La devolución de tu crédito necesita una revisión manual. Contacta a soporte.",
+      'aiRateLimited': "Hiciste demasiadas solicitudes en poco tiempo. Espera un momento e inténtalo de nuevo.",
+      'aiUnavailable': "El generador de textos no está disponible por ahora. Inténtalo de nuevo más tarde.",
     },
     'es_CO': {
       'readerResumeHere': "Aquí te quedaste",
@@ -2144,6 +2156,9 @@ class TransLanguage extends Translations {
       'audio': "Audio",
       'book': "Libro",
       'refundInProgress': "Estamos devolviendo tu crédito. Inténtalo de nuevo en unos minutos.",
+      'refundNeedsReview': "La devolución de tu crédito necesita una revisión manual. Contacta a soporte.",
+      'aiRateLimited': "Hiciste demasiadas solicitudes en poco tiempo. Espera un momento e inténtalo de nuevo.",
+      'aiUnavailable': "El generador de textos no está disponible por ahora. Inténtalo de nuevo más tarde.",
     },
     'es_ES': {
       'readerResumeHere': "Aquí te quedaste",
@@ -2568,6 +2583,9 @@ class TransLanguage extends Translations {
       'audio': "Audio",
       'book': "Libro",
       'refundInProgress': "Estamos devolviendo tu crédito. Vuelve a intentarlo en unos minutos.",
+      'refundNeedsReview': "La devolución de tu crédito necesita una revisión manual. Contacta con soporte.",
+      'aiRateLimited': "Has hecho demasiadas solicitudes en poco tiempo. Espera un momento y vuelve a intentarlo.",
+      'aiUnavailable': "El generador de textos no está disponible ahora mismo. Vuelve a intentarlo más tarde.",
     },
     'fr_FR': {
       'readerResumeHere': "Vous en étiez ici",
@@ -3007,6 +3025,9 @@ class TransLanguage extends Translations {
       'audio': "Audio",
       'book': "Livre",
       'refundInProgress': "Votre crédit est en cours de remboursement. Réessayez dans quelques minutes.",
+      'refundNeedsReview': "Le remboursement de votre crédit nécessite une vérification manuelle. Contactez le support.",
+      'aiRateLimited': "Trop de demandes en peu de temps. Patientez un instant et réessayez.",
+      'aiUnavailable': "Le générateur de texte est momentanément indisponible. Réessayez plus tard.",
     },
     'de_DE': {
       'readerResumeHere': "Hier warst du zuletzt",
@@ -3445,6 +3466,9 @@ class TransLanguage extends Translations {
       'audio': "Audio",
       'book': "Buch",
       'refundInProgress': "Dein Guthaben wird zurückerstattet. Versuche es in ein paar Minuten erneut.",
+      'refundNeedsReview': "Die Rückerstattung deines Guthabens muss manuell geprüft werden. Bitte kontaktiere den Support.",
+      'aiRateLimited': "Zu viele Anfragen in kurzer Zeit. Warte einen Moment und versuche es erneut.",
+      'aiUnavailable': "Der Textgenerator ist gerade nicht verfügbar. Versuche es später erneut.",
     },
     'pt_PT': {
       'readerResumeHere': "Ficaste aqui",
@@ -3875,6 +3899,9 @@ class TransLanguage extends Translations {
       'audio': "Áudio",
       'book': "Livro",
       'refundInProgress': "Estamos a devolver o teu crédito. Tenta novamente dentro de alguns minutos.",
+      'refundNeedsReview': "A devolução do teu crédito precisa de uma revisão manual. Contacta o suporte.",
+      'aiRateLimited': "Fizeste demasiados pedidos em pouco tempo. Aguarda um momento e tenta novamente.",
+      'aiUnavailable': "O gerador de texto está temporariamente indisponível. Tenta novamente mais tarde.",
     },
     'pt_BR': {
       'readerResumeHere': "Você parou aqui",
@@ -4305,6 +4332,9 @@ class TransLanguage extends Translations {
       'audio': "Áudio",
       'book': "Livro",
       'refundInProgress': "Estamos devolvendo seu crédito. Tente de novo em alguns minutos.",
+      'refundNeedsReview': "A devolução do seu crédito precisa de uma revisão manual. Entre em contato com o suporte.",
+      'aiRateLimited': "Você fez muitas solicitações em pouco tempo. Aguarde um momento e tente de novo.",
+      'aiUnavailable': "O gerador de texto está temporariamente indisponível. Tente de novo mais tarde.",
     },
     'zh_CN': {
       'readerResumeHere': "上次读到这里",
@@ -4704,6 +4734,9 @@ class TransLanguage extends Translations {
       'audio': "音频",
       'book': "书籍",
       'refundInProgress': "正在退还你的点数，请几分钟后再试。",
+      'refundNeedsReview': "你的点数退还需要人工审核，请联系客服。",
+      'aiRateLimited': "请求过于频繁，请稍候再试。",
+      'aiUnavailable': "文本生成服务暂时不可用，请稍后再试。",
     },
     'hi_IN': {
       'readerResumeHere': "आप यहाँ रुके थे",
@@ -5131,6 +5164,9 @@ class TransLanguage extends Translations {
       'audio': "ऑडियो",
       'book': "पुस्तक",
       'refundInProgress': "आपका क्रेडिट वापस किया जा रहा है। कुछ मिनट बाद फिर से कोशिश करें।",
+      'refundNeedsReview': "आपके क्रेडिट की वापसी की मैन्युअल समीक्षा ज़रूरी है। कृपया सहायता टीम से संपर्क करें।",
+      'aiRateLimited': "कम समय में बहुत अधिक अनुरोध किए गए। कृपया थोड़ी देर रुककर फिर से कोशिश करें।",
+      'aiUnavailable': "टेक्स्ट जनरेटर अभी उपलब्ध नहीं है। कृपया बाद में फिर से कोशिश करें।",
     },
     'id_ID': {
       'readerResumeHere': "Anda berhenti di sini",
@@ -5554,6 +5590,9 @@ class TransLanguage extends Translations {
       'audio': "Audio",
       'book': "Buku",
       'refundInProgress': "Kreditmu sedang dikembalikan. Coba lagi dalam beberapa menit.",
+      'refundNeedsReview': "Pengembalian kreditmu perlu ditinjau secara manual. Silakan hubungi dukungan.",
+      'aiRateLimited': "Terlalu banyak permintaan dalam waktu singkat. Tunggu sebentar lalu coba lagi.",
+      'aiUnavailable': "Pembuat teks sedang tidak tersedia. Coba lagi nanti.",
     },
     'ru_RU': {
       'readerResumeHere': "Вы остановились здесь",
@@ -5979,6 +6018,9 @@ class TransLanguage extends Translations {
       'audio': "Аудио",
       'book': "Книга",
       'refundInProgress': "Ваш кредит возвращается. Попробуйте снова через несколько минут.",
+      'refundNeedsReview': "Возврат вашего кредита требует ручной проверки. Обратитесь в поддержку.",
+      'aiRateLimited': "Слишком много запросов за короткое время. Подождите немного и попробуйте снова.",
+      'aiUnavailable': "Генератор текста временно недоступен. Попробуйте позже.",
     },
     'ar_AR': {
       'readerResumeHere': "توقفت هنا",
@@ -6400,6 +6442,9 @@ class TransLanguage extends Translations {
       'audio': "صوت",
       'book': "كتاب",
       'refundInProgress': "جارٍ إرجاع رصيدك. حاول مرة أخرى بعد بضع دقائق.",
+      'refundNeedsReview': "يحتاج إرجاع رصيدك إلى مراجعة يدوية. يُرجى التواصل مع الدعم.",
+      'aiRateLimited': "طلبات كثيرة في وقت قصير. انتظر قليلًا ثم حاول مرة أخرى.",
+      'aiUnavailable': "مولّد النصوص غير متاح مؤقتًا. حاول مرة أخرى لاحقًا.",
     },
     'vi_VN': {
       'readerResumeHere': "Bạn đã dừng ở đây",
@@ -6821,6 +6866,9 @@ class TransLanguage extends Translations {
       'audio': "Âm thanh",
       'book': "Sách",
       'refundInProgress': "Tín dụng của bạn đang được hoàn lại. Hãy thử lại sau vài phút.",
+      'refundNeedsReview': "Việc hoàn lại tín dụng của bạn cần được xem xét thủ công. Vui lòng liên hệ bộ phận hỗ trợ.",
+      'aiRateLimited': "Bạn đã gửi quá nhiều yêu cầu trong thời gian ngắn. Hãy đợi một chút rồi thử lại.",
+      'aiUnavailable': "Trình tạo văn bản tạm thời không khả dụng. Hãy thử lại sau.",
     },
     'tr_TR': {
       'readerResumeHere': "Burada kalmıştınız",
@@ -7247,6 +7295,9 @@ class TransLanguage extends Translations {
       'audio': "Ses",
       'book': "Kitap",
       'refundInProgress': "Kredin iade ediliyor. Birkaç dakika sonra tekrar dene.",
+      'refundNeedsReview': "Kredi iaden manuel inceleme gerektiriyor. Lütfen destek ekibiyle iletişime geç.",
+      'aiRateLimited': "Kısa sürede çok fazla istek gönderdin. Biraz bekleyip tekrar dene.",
+      'aiUnavailable': "Metin oluşturucu şu anda kullanılamıyor. Daha sonra tekrar dene.",
     },
     'tl_PH': {
       'readerResumeHere': "Dito ka huminto",
@@ -7672,6 +7723,9 @@ class TransLanguage extends Translations {
       'audio': "Audio",
       'book': "Aklat",
       'refundInProgress': "Ibinabalik ang iyong credit. Subukang muli sa loob ng ilang minuto.",
+      'refundNeedsReview': "Kailangang manu-manong suriin ang pagbabalik ng iyong credit. Makipag-ugnayan sa support.",
+      'aiRateLimited': "Masyadong maraming kahilingan sa maikling oras. Sandali at subukang muli.",
+      'aiUnavailable': "Pansamantalang hindi available ang text generator. Subukang muli mamaya.",
     },
     'nl_NL': {
       'readerResumeHere': "Hier was je gebleven",
@@ -8095,6 +8149,9 @@ class TransLanguage extends Translations {
       'audio': "Audio",
       'book': "Boek",
       'refundInProgress': "Je tegoed wordt teruggestort. Probeer het over een paar minuten opnieuw.",
+      'refundNeedsReview': "De terugstorting van je tegoed moet handmatig worden gecontroleerd. Neem contact op met support.",
+      'aiRateLimited': "Te veel verzoeken in korte tijd. Wacht even en probeer het opnieuw.",
+      'aiUnavailable': "De tekstgenerator is tijdelijk niet beschikbaar. Probeer het later opnieuw.",
     },
     'it_IT': {
       'readerResumeHere': "Eri rimasto qui",
@@ -8527,6 +8584,9 @@ class TransLanguage extends Translations {
       'audio': "Audio",
       'book': "Libro",
       'refundInProgress': "Stiamo restituendo il tuo credito. Riprova tra qualche minuto.",
+      'refundNeedsReview': "Il rimborso del tuo credito richiede una verifica manuale. Contatta l'assistenza.",
+      'aiRateLimited': "Troppe richieste in poco tempo. Attendi un momento e riprova.",
+      'aiUnavailable': "Il generatore di testi non è al momento disponibile. Riprova più tardi.",
     },
     'ta_IN': {
       'readerResumeHere': "நீங்கள் இங்கே நிறுத்தினீர்கள்",
@@ -8955,6 +9015,9 @@ class TransLanguage extends Translations {
       'audio': "ஒலி",
       'book': "புத்தகம்",
       'refundInProgress': "உங்கள் கிரெடிட் திருப்பி அளிக்கப்படுகிறது. சில நிமிடங்களில் மீண்டும் முயற்சிக்கவும்.",
+      'refundNeedsReview': "உங்கள் கிரெடிட்டைத் திருப்பி அளிக்க கைமுறைச் சரிபார்ப்பு தேவை. ஆதரவுக் குழுவைத் தொடர்பு கொள்ளவும்.",
+      'aiRateLimited': "குறுகிய நேரத்தில் அதிகமான கோரிக்கைகள். சிறிது நேரம் காத்திருந்து மீண்டும் முயற்சிக்கவும்.",
+      'aiUnavailable': "உரை உருவாக்கி தற்போது கிடைக்கவில்லை. பின்னர் மீண்டும் முயற்சிக்கவும்.",
     },
     'zh_TW': {
       'readerResumeHere': "上次讀到這裡",
@@ -9352,6 +9415,9 @@ class TransLanguage extends Translations {
       'audio': "音訊",
       'book': "書籍",
       'refundInProgress': "正在退還你的點數，請幾分鐘後再試。",
+      'refundNeedsReview': "你的點數退還需要人工審核，請聯絡客服。",
+      'aiRateLimited': "請求過於頻繁，請稍候再試。",
+      'aiUnavailable': "文字生成服務暫時無法使用，請稍後再試。",
     },
     'ja_JP': {
       'readerResumeHere': "ここまで読みました",
@@ -9752,6 +9818,9 @@ class TransLanguage extends Translations {
       'audio': "オーディオ",
       'book': "本",
       'refundInProgress': "クレジットを返却しています。数分後にもう一度お試しください。",
+      'refundNeedsReview': "クレジットの返却には手動での確認が必要です。サポートにお問い合わせください。",
+      'aiRateLimited': "短時間にリクエストが多すぎます。少し待ってからもう一度お試しください。",
+      'aiUnavailable': "テキスト生成は現在ご利用いただけません。しばらくしてからもう一度お試しください。",
     },
     'ko_KR': {
       'readerResumeHere': "여기까지 읽었어요",
@@ -10155,6 +10224,9 @@ class TransLanguage extends Translations {
       'audio': "오디오",
       'book': "책",
       'refundInProgress': "크레딧을 환불하는 중입니다. 몇 분 후에 다시 시도하세요.",
+      'refundNeedsReview': "크레딧 환불에 수동 검토가 필요합니다. 고객지원에 문의하세요.",
+      'aiRateLimited': "짧은 시간에 요청이 너무 많습니다. 잠시 후 다시 시도하세요.",
+      'aiUnavailable': "텍스트 생성기를 지금은 사용할 수 없습니다. 나중에 다시 시도하세요.",
     },
     'pl_PL': {
       'readerResumeHere': "Tu skończyłeś",
@@ -10578,6 +10650,9 @@ class TransLanguage extends Translations {
       'audio': "Audio",
       'book': "Książka",
       'refundInProgress': "Zwracamy twój kredyt. Spróbuj ponownie za kilka minut.",
+      'refundNeedsReview': "Zwrot twojego kredytu wymaga ręcznej weryfikacji. Skontaktuj się z pomocą techniczną.",
+      'aiRateLimited': "Zbyt wiele próśb w krótkim czasie. Poczekaj chwilę i spróbuj ponownie.",
+      'aiUnavailable': "Generator tekstu jest chwilowo niedostępny. Spróbuj ponownie później.",
     },
     'sv_SE': {
       'readerResumeHere': "Här slutade du",
@@ -11000,6 +11075,9 @@ class TransLanguage extends Translations {
       'audio': "Ljud",
       'book': "Bok",
       'refundInProgress': "Din kredit återbetalas. Försök igen om några minuter.",
+      'refundNeedsReview': "Återbetalningen av din kredit behöver granskas manuellt. Kontakta supporten.",
+      'aiRateLimited': "För många förfrågningar på kort tid. Vänta en stund och försök igen.",
+      'aiUnavailable': "Textgeneratorn är tillfälligt otillgänglig. Försök igen senare.",
     },
     'no_NO': {
       'readerResumeHere': "Her stoppet du",
@@ -11421,6 +11499,9 @@ class TransLanguage extends Translations {
       'audio': "Lyd",
       'book': "Bok",
       'refundInProgress': "Kreditten din blir tilbakeført. Prøv igjen om noen minutter.",
+      'refundNeedsReview': "Tilbakeføringen av kreditten din må kontrolleres manuelt. Kontakt kundestøtte.",
+      'aiRateLimited': "For mange forespørsler på kort tid. Vent litt og prøv igjen.",
+      'aiUnavailable': "Tekstgeneratoren er midlertidig utilgjengelig. Prøv igjen senere.",
     },
     'da_DK': {
       'readerResumeHere': "Her slap du",
@@ -11842,6 +11923,9 @@ class TransLanguage extends Translations {
       'audio': "Lyd",
       'book': "Bog",
       'refundInProgress': "Din kredit bliver tilbageført. Prøv igen om et par minutter.",
+      'refundNeedsReview': "Tilbageførslen af din kredit skal gennemgås manuelt. Kontakt support.",
+      'aiRateLimited': "For mange anmodninger på kort tid. Vent et øjeblik, og prøv igen.",
+      'aiUnavailable': "Tekstgeneratoren er midlertidigt utilgængelig. Prøv igen senere.",
     },
     'el_GR': {
       'readerResumeHere': "Εδώ είχες μείνει",
@@ -12265,6 +12349,9 @@ class TransLanguage extends Translations {
       'audio': "Ήχος",
       'book': "Βιβλίο",
       'refundInProgress': "Η μονάδα σου επιστρέφεται. Δοκίμασε ξανά σε λίγα λεπτά.",
+      'refundNeedsReview': "Η επιστροφή της μονάδας σου χρειάζεται χειροκίνητο έλεγχο. Επικοινώνησε με την υποστήριξη.",
+      'aiRateLimited': "Πάρα πολλά αιτήματα σε λίγο χρόνο. Περίμενε λίγο και δοκίμασε ξανά.",
+      'aiUnavailable': "Η δημιουργία κειμένου δεν είναι διαθέσιμη προσωρινά. Δοκίμασε ξανά αργότερα.",
     },
   };
 }

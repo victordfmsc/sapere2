@@ -4,12 +4,17 @@ import 'dart:io';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/foundation.dart';
 import 'package:sapere/core/constant/app_config.dart';
+import 'package:sapere/models/sapere_category_type_model.dart';
+import 'package:sapere/models/sapere_type_model.dart';
 
-/// Motivos por los que `startStory` puede no arrancar. La interfaz decide con
-/// esto qué diálogo mostrar, sin mirar códigos de Firebase.
+/// Motivos por los que falla una callable (`startStory`,
+/// `generateCommunityText`, `generateFlashcards`). La interfaz decide con esto
+/// qué aviso mostrar, sin mirar códigos de Firebase.
 enum StartStoryError {
   insufficientCredits,
   alreadyGenerating,
+  rateLimited,
+  aiUnavailable,
   unauthenticated,
   network,
   unknown,
@@ -33,6 +38,137 @@ class StartStoryException implements Exception {
   String toString() =>
       'StartStoryException(${error.name}, code: $code, message: $message)';
 }
+
+/// Clave del aviso que bloquea Reintentar mientras el gasto anterior siga sin
+/// devolver (`generation` del documento), o null si se puede reintentar. Con
+/// refundState 'needs_review' el barrido ya no lo devuelve: esperar no sirve.
+String? pendingRefundMessageKey(Map<String, dynamic> generation) {
+  final String spendId = (generation['spendId'] ?? '').toString();
+  if (spendId.isEmpty || generation['refunded'] == true) return null;
+  return generation['refundState'] == 'needs_review'
+      ? 'refundNeedsReview'
+      : 'refundInProgress';
+}
+
+/// Titulo provisional legible a partir del prompt (el definitivo lo escribe
+/// el servidor).
+String titleFromPrompt(String prompt, {String fallback = 'Audio Book'}) {
+  final String clean = prompt.replaceAll(RegExp(r'[#*]'), '').trim();
+  if (clean.isEmpty) return fallback;
+  if (clean.length > 40) return "${clean.substring(0, 37)}...";
+  return clean;
+}
+
+/// Titulo que viaja al reintentar el documento fallido [data]: el definitivo,
+/// el provisional o [fallback], el primero que no este en blanco, y si no un
+/// extracto del prompt. startStory descarta un titulo vacio.
+String retryTitle(Map<String, dynamic> data, {String? fallback}) {
+  for (final Object? candidate in <Object?>[
+    data['bukbukName'],
+    data['provisionalTitle'],
+    fallback,
+  ]) {
+    if (candidate is String && candidate.trim().isNotEmpty) {
+      return candidate.trim();
+    }
+  }
+  final Object? prompt = data['prompt'];
+  return titleFromPrompt(prompt is String ? prompt : '');
+}
+
+/// Arranca una creacion con [start] y solo si devuelve docId ejecuta
+/// [onStarted] (limpiar el formulario, salir de la pagina). Con null el aviso
+/// ya se mostro y quien llama debe quedarse como estaba.
+Future<String?> whenStoryStarted(
+  Future<String?> Function() start,
+  FutureOr<void> Function(String docId) onStarted,
+) async {
+  final String? docId = await start();
+  if (docId != null) await onStarted(docId);
+  return docId;
+}
+
+/// Clave del aviso para [error]: generacion ya en marcha, limite de uso o IA
+/// no disponible; el resto, el generico. Sin creditos se avisa con su dialogo.
+String generationErrorMessageKey(StartStoryError error) {
+  switch (error) {
+    case StartStoryError.alreadyGenerating:
+      return 'audioRequestAlready';
+    case StartStoryError.rateLimited:
+      return 'aiRateLimited';
+    case StartStoryError.aiUnavailable:
+      return 'aiUnavailable';
+    case StartStoryError.insufficientCredits:
+    case StartStoryError.unauthenticated:
+    case StartStoryError.network:
+    case StartStoryError.unknown:
+      return 'wentWrong';
+  }
+}
+
+/// Pide a [service] el texto de comunidad para la [category] y el [type]
+/// elegidos y lo entrega a [onText]. Si falla llama a [onError] y relanza el
+/// error para que la página elija el aviso.
+Future<void> requestCommunityText(
+  StoryFunctionsService service, {
+  required String prompt,
+  required String languageCode,
+  required BukBukCategoryModel category,
+  required BukBukTypeModel type,
+  required void Function(String text) onText,
+  required void Function(Object error) onError,
+}) async {
+  try {
+    onText(
+      await service.generateCommunityText(
+        prompt: prompt,
+        languageCode: languageCode,
+        bukbukCategoryId: category.docId,
+        bukbukId: type.id,
+      ),
+    );
+  } catch (e) {
+    onError(e);
+    rethrow;
+  }
+}
+
+/// Pide las flashcards de [postId] con [generate], salvo que ya haya otra
+/// petición en curso para ese post ([inFlight]) o [hasCards] diga que ya tiene
+/// tarjetas. True solo si el servidor creó alguna: entonces toca sumar XP y
+/// recargar las pendientes.
+Future<bool> requestFlashcardsOnce(
+  Set<String> inFlight,
+  String postId, {
+  required Future<bool> Function() hasCards,
+  required Future<FlashcardsResult> Function() generate,
+}) async {
+  if (!inFlight.add(postId)) return false;
+  try {
+    if (await hasCards()) return false;
+    final FlashcardsResult result = await generate();
+    return result.created > 0;
+  } finally {
+    inFlight.remove(postId);
+  }
+}
+
+/// El reproductor pide flashcards solo cuando el audio que suena es el de este
+/// documental ([currentMediaId] == [postAudioUrl]) y acaba de pasar a
+/// completado. playbackState repite su último estado al suscribirse, que puede
+/// ser el 'completed' de otro audio, y lo reemite con cada evento del
+/// reproductor.
+bool shouldRequestFlashcards({
+  required bool wasCompleted,
+  required bool isCompleted,
+  required String? currentMediaId,
+  required String? postAudioUrl,
+}) =>
+    isCompleted &&
+    !wasCompleted &&
+    postAudioUrl != null &&
+    postAudioUrl.isNotEmpty &&
+    currentMediaId == postAudioUrl;
 
 int _asInt(dynamic value) {
   if (value is int) return value;
@@ -106,6 +242,32 @@ class StartStoryResult {
       'StartStoryResult(docId: $docId, status: $status, credits: $credits)';
 }
 
+/// Respuesta de la callable `generateFlashcards`. Las tarjetas ya las escribio
+/// el servidor en `learning_cards`.
+@immutable
+class FlashcardsResult {
+  const FlashcardsResult({required this.created, required this.skipped});
+
+  factory FlashcardsResult.fromMap(Map<String, dynamic> map) {
+    final dynamic skipped = map['skipped'];
+    return FlashcardsResult(
+      created: _asInt(map['created']),
+      skipped:
+          skipped == true ||
+          (skipped is String && skipped.isNotEmpty) ||
+          (skipped is num && skipped > 0),
+    );
+  }
+
+  final int created;
+
+  /// El servidor no genero tarjetas (por ejemplo, porque ya existian).
+  final bool skipped;
+
+  @override
+  String toString() => 'FlashcardsResult(created: $created, skipped: $skipped)';
+}
+
 /// Cliente de las Cloud Functions de generación (región `europe-west1`).
 ///
 /// El servidor cobra el crédito, crea el documento de Firestore y encola la
@@ -119,6 +281,10 @@ class StoryFunctionsService {
   final FirebaseFunctions _functions;
 
   static const Duration _callTimeout = Duration(seconds: 60);
+
+  /// Las callables de IA esperan al Space (hasta 420 s por seccion de guion):
+  /// con los 60 s de startStory el cliente cortaria respuestas validas.
+  static const Duration _aiCallTimeout = Duration(minutes: 10);
 
   /// Arranca la generación de un audiodocumental.
   ///
@@ -179,15 +345,54 @@ class StoryFunctionsService {
     return CreditsBalance.fromMap(data);
   }
 
+  /// Texto de comunidad para [prompt]. El marco lo resuelve el servidor con
+  /// [bukbukCategoryId] y [bukbukId]. Lanza [StartStoryException] si falla.
+  Future<String> generateCommunityText({
+    required String prompt,
+    required String languageCode,
+    String? bukbukCategoryId,
+    String? bukbukId,
+  }) async {
+    final Map<String, dynamic> data = await _call(
+      'generateCommunityText',
+      <String, dynamic>{
+        'prompt': prompt,
+        'languageCode': languageCode,
+        if (bukbukCategoryId != null && bukbukCategoryId.trim().isNotEmpty)
+          'bukbukCategoryId': bukbukCategoryId,
+        if (bukbukId != null && bukbukId.trim().isNotEmpty)
+          'bukbukId': bukbukId,
+      },
+      timeout: _aiCallTimeout,
+    );
+    final dynamic text = data['text'];
+    return (text is String ? text : '').replaceAll(RegExp(r'[#*]'), '').trim();
+  }
+
+  /// Flashcards del documental [postId]: las escribe el servidor en
+  /// `learning_cards` con la forma de `LearningCard.toMap` (`box` 1,
+  /// `correctCount` y `wrongCount` 0) y `nextReview` como texto ISO-8601: las
+  /// pendientes se filtran comparando ese texto y `answerCard` lo reescribe
+  /// igual. Lanza [StartStoryException] si falla.
+  Future<FlashcardsResult> generateFlashcards({required String postId}) async {
+    final Map<String, dynamic> data = await _call(
+      'generateFlashcards',
+      <String, dynamic>{'postId': postId},
+      timeout: _aiCallTimeout,
+    );
+    return FlashcardsResult.fromMap(data);
+  }
+
   Future<Map<String, dynamic>> _call(
     String name,
-    Map<String, dynamic> payload,
-  ) async {
+    Map<String, dynamic> payload, {
+    Duration timeout = _callTimeout,
+  }) async {
     try {
       final HttpsCallableResult<dynamic> result = await _functions
           .httpsCallable(
             name,
-            options: HttpsCallableOptions(timeout: _callTimeout),
+            options: HttpsCallableOptions(timeout: timeout),
           )
           .call<dynamic>(payload);
       final dynamic raw = result.data;
@@ -232,13 +437,19 @@ class StoryFunctionsService {
         error = StartStoryError.unauthenticated;
         break;
       case 'resource-exhausted':
-        error = StartStoryError.insufficientCredits;
+        error =
+            message.contains('rate_limited')
+                ? StartStoryError.rateLimited
+                : StartStoryError.insufficientCredits;
         break;
       case 'failed-precondition':
-        error =
-            message.contains('already_generating')
-                ? StartStoryError.alreadyGenerating
-                : StartStoryError.unknown;
+        if (message.contains('already_generating')) {
+          error = StartStoryError.alreadyGenerating;
+        } else if (message.contains('ai_unavailable')) {
+          error = StartStoryError.aiUnavailable;
+        } else {
+          error = StartStoryError.unknown;
+        }
         break;
       case 'unavailable':
       case 'deadline-exceeded':
@@ -256,6 +467,10 @@ class StoryFunctionsService {
         error = StartStoryError.insufficientCredits;
       } else if (message.contains('already_generating')) {
         error = StartStoryError.alreadyGenerating;
+      } else if (message.contains('rate_limited')) {
+        error = StartStoryError.rateLimited;
+      } else if (message.contains('ai_unavailable')) {
+        error = StartStoryError.aiUnavailable;
       }
     }
 

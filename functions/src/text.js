@@ -4,11 +4,30 @@ const { normalizeForMatch } = require('./docugen');
 
 const HEADING = /^[ \t]*#{1,6}[ \t]*(.+?)[ \t#]*$/;
 
+// Notas meta que el modelo cuela en una seccion, con las palabras de
+// clean_ai_notes del Space (app.py), que solo limpia su propia copia: el cliente
+// recibe los deltas crudos. El Space borra desde cualquier 'nota:' hasta el final
+// del parrafo; aqui solo cuenta una linea corta (hasta 240 caracteres) que EMPIECE
+// por la nota, para no cortar narracion como 'Darwin tomo una nota: ... longitud'.
+const AI_NOTE_PATTERNS = [
+  /^(?=[^\n]{0,240}$)[ \t]*[*_(\[]*[ \t]*Nota[ \t]*:[^\n]*?(?:longitud|extensi[óo]n|continuar|l[íi]mite)[^\n]*\n?/gim,
+  /^(?=[^\n]{0,240}$)[ \t]*[*_(\[]*[ \t]*Note[ \t]*:[^\n]*?(?:restrictions|continue|length)[^\n]*\n?/gim,
+  /^\s*\[?Continuar[áa] en la siguiente secci[óo]n\.?\]?\s*$/gim,
+  /^\s*\[?To be continued\.?\]?\s*$/gim,
+];
+
+function cleanAiNotes(raw) {
+  return AI_NOTE_PATTERNS.reduce(
+    (text, pattern) => text.replace(pattern, ''),
+    String(raw || '').replace(/\r\n?/g, '\n'),
+  );
+}
+
 // Limpieza del texto que se guarda en 'description': lo lee el TTS del
-// dispositivo, asi que fuera markdown y caracteres rotos. El texto de un
-// encabezado ('## Seccion Uno: ...') se conserva como parrafo propio.
+// dispositivo, asi que fuera markdown, notas meta y caracteres rotos. El texto de
+// un encabezado ('## Seccion Uno: ...') se conserva como parrafo propio.
 function cleanScript(raw) {
-  return String(raw || '')
+  const text = String(raw || '')
     .replace(/\r\n?/g, '\n')
     .replace(/```[a-z]*\n?/gi, '')
     .replace(/^[ \t]*#{1,6}[ \t]*(.+?)[ \t#]*$/gm, '\n$1\n')
@@ -24,8 +43,8 @@ function cleanScript(raw) {
     .replace(/â€/g, '”')
     // [ \t] y no \s: \s se comeria el salto en blanco que separa los parrafos.
     .replace(/^[ \t]*[-•][ \t]+/gm, '')
-    .replace(/^[ \t]*(cap[ií]tulo|chapter)[ \t]+\d+[ \t]*[:.\-–—]?[ \t]*$/gim, '')
-    .trim();
+    .replace(/^[ \t]*(cap[ií]tulo|chapter)[ \t]+\d+[ \t]*[:.\-–—]?[ \t]*$/gim, '');
+  return cleanAiNotes(text).trim();
 }
 
 function toParagraphs(raw) {
@@ -75,4 +94,9 @@ function sectionTitle(raw, index) {
   return heading.slice(0, 120);
 }
 
-module.exports = { cleanScript, toParagraphs, sectionTitle };
+module.exports = {
+  cleanAiNotes,
+  cleanScript,
+  toParagraphs,
+  sectionTitle,
+};

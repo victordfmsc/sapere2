@@ -48,15 +48,17 @@ function pick(value, ...args) {
 
 // title/outline: respuesta fija o funcion (indiceDeLlamada). section: funcion
 // (call, log) que devuelve una respuesta de installFetch, o undefined para la
-// seccion valida por defecto. runtime: lista de respuestas (la ultima se repite).
+// seccion valida por defecto. generate: igual que section para POST /generate.
+// runtime: lista de respuestas (la ultima se repite).
 function createSpace({
   title = { status: 200, json: { title: 'Hielo y hambre' } },
   outline = { status: 200, json: { outline: '1. El barco\n2. El hielo\n3. La huida', sections: 6, duration_minutes: 30 } },
   section = null,
+  generate = null,
   runtime = [{ status: 200, json: { stage: 'RUNNING' } }],
   restart = { status: 200, json: {} },
 } = {}) {
-  const log = { titles: [], outlines: [], sections: [], deletes: [], runtimes: 0, restarts: 0 };
+  const log = { titles: [], outlines: [], sections: [], generates: [], deletes: [], runtimes: 0, restarts: 0 };
 
   const routes = [
     {
@@ -87,6 +89,16 @@ function createSpace({
       respond: (url, init) => {
         log.outlines.push(JSON.parse(init.body));
         return pick(outline, log.outlines.length - 1);
+      },
+    },
+    {
+      match: (url) => url === `${SPACE}/generate`,
+      respond: (url, init) => {
+        const call = { body: JSON.parse(init.body), headers: init.headers };
+        log.generates.push(call);
+        const custom = generate ? generate(call, log) : undefined;
+        if (custom !== undefined) return custom;
+        return { status: 200, stream: sectionStream(sectionText(1, 1)) };
       },
     },
     {

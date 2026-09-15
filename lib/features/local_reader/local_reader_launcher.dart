@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:sapere/main.dart' show audioHandler;
 
+import 'models/local_book.dart';
 import 'presentation/controllers/local_reader_controller.dart';
 import 'presentation/views/reader_screen.dart';
 import 'services/background_audio_service.dart';
@@ -87,31 +88,14 @@ Future<void> openLocalReader({
       ? languageCode.trim()
       : LanguageDetectorService().detect(content, fallback: 'en_US');
 
-  final parser = PlainTextDocumentParser();
-  final freshParagraphs = parser.splitParagraphs(content);
-  var book = await library.getBook(bookId);
-  final changed =
-      book == null || book.paragraphs.join('\n') != freshParagraphs.join('\n');
-  if (changed) {
-    final parsed = await parser.parseString(
-      content: content,
-      title: title,
-      bookId: bookId,
-      languageCode: lang,
-      coverPath: coverPath,
-    );
-    parsed.preferredVoiceId = book?.preferredVoiceId;
-    book = parsed;
-    await library.saveBook(book);
-  } else if (book.title != title ||
-      book.coverPath != coverPath ||
-      book.languageCode != lang) {
-    book
-      ..title = title
-      ..coverPath = coverPath
-      ..languageCode = lang;
-    await library.saveBook(book);
-  }
+  final book = await prepareLocalBook(
+    library: library,
+    bookId: bookId,
+    title: title,
+    content: content,
+    languageCode: lang,
+    coverPath: coverPath,
+  );
 
   final ttsEngine = TtsEngineService();
   final coordinator = BimodalSyncCoordinator(
@@ -151,4 +135,44 @@ Future<void> openLocalReader({
   await ambient.dispose();
   await sfx.dispose();
   onClosed?.call(progress);
+}
+
+/// Libro que abre el lector: el guardado si el texto no ha cambiado o uno
+/// reparseado que conserva la voz elegida y, si solo han llegado secciones
+/// nuevas al final, la oracion en la que iba el lector.
+Future<LocalBook> prepareLocalBook({
+  required LocalLibraryService library,
+  required String bookId,
+  required String title,
+  required String content,
+  required String languageCode,
+  String? coverPath,
+}) async {
+  final parser = PlainTextDocumentParser();
+  final freshParagraphs = parser.splitParagraphs(content);
+  final saved = await library.getBook(bookId);
+  if (saved == null ||
+      saved.paragraphs.join('\n') != freshParagraphs.join('\n')) {
+    final parsed = await parser.parseString(
+      content: content,
+      title: title,
+      bookId: bookId,
+      languageCode: languageCode,
+      coverPath: coverPath,
+    );
+    parsed.preferredVoiceId = saved?.preferredVoiceId;
+    if (saved != null) parsed.inheritProgressFrom(saved);
+    await library.saveBook(parsed);
+    return parsed;
+  }
+  if (saved.title != title ||
+      saved.coverPath != coverPath ||
+      saved.languageCode != languageCode) {
+    saved
+      ..title = title
+      ..coverPath = coverPath
+      ..languageCode = languageCode;
+    await library.saveBook(saved);
+  }
+  return saved;
 }

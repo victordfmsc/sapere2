@@ -24,6 +24,10 @@ void main() {
     'audio',
     'book',
     'refundInProgress',
+    'refundNeedsReview',
+    'audioRequestAlready',
+    'aiRateLimited',
+    'aiUnavailable',
   ];
 
   final Map<String, Map<String, String>> keys = TransLanguage().keys;

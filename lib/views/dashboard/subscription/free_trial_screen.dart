@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:sapere/core/constant/colors.dart';
 import 'package:sapere/core/constant/images.dart';
 import 'package:sapere/core/utils/dialog_utils.dart';
+import 'package:sapere/providers/sapere_provider.dart';
 import 'package:sapere/providers/subscription_provider.dart';
 import 'package:sapere/routes/app_pages.dart';
 import 'package:sapere/widgets/primary_button.dart';
@@ -176,6 +177,13 @@ class _FreeTrialScreenState extends State<FreeTrialScreen> {
                                         Navigator.of(context).pop();
 
                                         if (success) {
+                                          // onClose corre con esta pantalla ya
+                                          // fuera: el provider se toma antes.
+                                          final BukBukProvider bukBukProvider =
+                                              Provider.of<BukBukProvider>(
+                                                context,
+                                                listen: false,
+                                              );
                                           Get.dialog(
                                             PremiumSuccessDialog(
                                               points:
@@ -189,11 +197,8 @@ class _FreeTrialScreenState extends State<FreeTrialScreen> {
                                                 Get.offAllNamed(
                                                   Routes.dashboardScreen,
                                                 );
-                                                Get.to(
-                                                  () => AddSaperePage(
-                                                    initialText:
-                                                        'unlockFirstDoc'.tr,
-                                                  ),
+                                                openFirstDocumentary(
+                                                  bukBukProvider,
                                                 );
                                               },
                                             ),

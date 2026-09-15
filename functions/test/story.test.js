@@ -5,7 +5,12 @@ const assert = require('node:assert/strict');
 
 const { FakeFirestore } = require('./helpers/firestore');
 const { installFetch } = require('./helpers/fetch');
-const { createSpace, sse, sectionText } = require('./helpers/space');
+const {
+  createSpace,
+  sse,
+  sectionText,
+  sectionStream,
+} = require('./helpers/space');
 const {
   runStory,
   buildInitialDoc,
@@ -14,6 +19,7 @@ const {
   releaseGenerationLock,
   resumeState,
   hasActiveGeneration,
+  refundDoc,
 } = require('../src/story');
 const { GENERATION_PLANS, QUEUE_ACTIVE_MS } = require('../src/config');
 
@@ -375,7 +381,20 @@ test('5xx en la seccion 3 es reintentable; el reintento reanuda desde la 3, sin 
   assert.equal(log.covers, 1, 'la portada del primer intento no se repite');
 });
 
-test('borrado por su dueno: con texto ya escrito la tarea liquida y suelta el cerrojo; sin texto, no liquida', async () => {
+test('borrado antes de que empiece la tarea: no llama al Space y suelta el cerrojo', async (t) => {
+  const db = new FakeFirestore({ generationLocks: { ...LOCK } });
+  const { net } = withSpace(t);
+  const { deps, log } = fakeDeps();
+
+  const result = await runStory({ db, bucket: BUCKET, docId: 'doc1', uid: 'u1', deps });
+
+  assert.deepEqual(result, { skipped: true, reason: 'not_found' });
+  assert.equal(net.calls.length, 0);
+  assert.equal(log.covers + log.settles + log.refunds, 0);
+  assert.equal(db.dump('generationLocks').u1, undefined, 'el usuario puede crear otro sin esperar 60 min');
+});
+
+test('borrado por su dueno: con texto ya escrito la tarea liquida y suelta el cerrojo; sin texto no liquida, pero tambien lo suelta', async () => {
   for (const { deleteOn, settles, delivered } of [
     { deleteOn: 2, settles: 1, delivered: [false, true] },
     { deleteOn: 1, settles: 0, delivered: [false] },
@@ -403,7 +422,7 @@ test('borrado por su dueno: con texto ya escrito la tarea liquida y suelta el ce
       assert.equal(space.log.sections.length, deleteOn);
       assert.equal(log.settles, settles, `borrado en la seccion ${deleteOn}`);
       assert.equal(log.refunds, 0);
-      if (settles) assert.equal(db.dump('generationLocks').u1, undefined);
+      assert.equal(db.dump('generationLocks').u1, undefined, `borrado en la seccion ${deleteOn}: el cerrojo no bloquea 60 min`);
     } finally {
       net.restore();
     }
@@ -625,4 +644,175 @@ test('cerrojo de generacion: uno por usuario, caduca a los 60 minutos y solo lo 
   assert.equal(await acquireGenerationLock(db, 'u1', 'docB', now + 61 * MINUTE), true, 'caducado');
   assert.equal(await releaseGenerationLock(db, 'u1', 'docB'), true);
   assert.equal(await acquireGenerationLock(db, 'u1', 'docC', now + 61 * MINUTE), true);
+});
+
+test('titulo de respaldo: si el Space falla o lo devuelve vacio se usa el provisional de la app antes que el tema, salvo que sea el tema recortado; en un fatal, ninguno', async () => {
+  const provisional = 'La caída de Constantinopla';
+  const tema = 'La caída de Constantinopla y el fin del Imperio bizantino';
+  const balance = "Error de la API DeepSeek: Error code: 402 - {'error': {'message': 'Insufficient Balance'}}";
+  const cases = [
+    { title: { status: 500, json: { detail: 'Error de la API DeepSeek: Connection error.' } }, provisional, expected: provisional, status: 'completed' },
+    { title: { status: 200, json: { title: '' } }, provisional, expected: provisional, status: 'completed' },
+    { title: { status: 200, json: { title: '' } }, provisional: '', expected: PROMPT, status: 'completed' },
+    // Lo que manda la app con un tema de mas de 40 caracteres (titleFromPrompt).
+    { title: { status: 200, json: { title: '' } }, prompt: tema, provisional: `${tema.slice(0, 37)}...`, expected: tema, status: 'completed' },
+    { title: { status: 500, json: { detail: balance } }, provisional, expected: '', status: 'error' },
+  ];
+  for (const c of cases) {
+    const db = new FakeFirestore({
+      sapere: { doc1: seedDoc({ type: 'preview', provisionalTitle: c.provisional, ...(c.prompt ? { prompt: c.prompt } : {}) }) },
+    });
+    const space = createSpace({ title: c.title });
+    const net = installFetch(space.routes);
+    try {
+      const { deps, log } = fakeDeps();
+      const result = await runStory({ db, bucket: BUCKET, docId: 'doc1', uid: 'u1', deps });
+      const doc = db.dump('sapere').doc1;
+      const label = `${JSON.stringify(c.title.json)} con provisional '${c.provisional}'`;
+
+      assert.equal(result.status, c.status, label);
+      assert.equal(doc.bukbukName, c.expected, label);
+      assert.equal(doc.provisionalTitle, c.provisional, label);
+      if (c.status === 'completed') assert.ok(log.coverPrompts[0].includes(c.expected), 'la portada usa ese titulo');
+    } finally {
+      net.restore();
+    }
+  }
+});
+
+test("advanceStatus: un 'completed' no admite mas escritura que la portada que llega tarde", async () => {
+  const completed = seedDoc({
+    status: 'completed',
+    readyToRead: true,
+    description: Array.from({ length: 18 }, (_, i) => `p${i}`),
+    chaptersMeta: Array.from({ length: 6 }, (_, index) => ({ index, paragraphs: 3, raw: `s${index}` })),
+  }, { awaitingRetry: false });
+  const db = new FakeFirestore({ sapere: { doc1: completed } });
+  const ref = db.collection('sapere').doc('doc1');
+
+  const rejected = [
+    ['generating_script', { description: ['p0'], chaptersMeta: [{ index: 0 }] }],
+    [null, { 'generation.awaitingRetry': true, 'generation.lastError': 'HTTP 500' }],
+    [null, { newCover: 'https://x/colada.png', description: [] }],
+    ['completed', { description: ['otra'] }],
+    ['error', { errorMessage: 'tarde' }],
+  ];
+  for (const [status, extra] of rejected) {
+    assert.deepEqual(await advanceStatus(db, ref, status, extra), { applied: false, reason: 'completed' }, JSON.stringify(extra));
+  }
+  assert.deepEqual(db.dump('sapere').doc1, completed, 'nada cambia');
+
+  const cover = await advanceStatus(db, ref, null, { newCover: 'https://x/portada.png', 'generation.coverProvider': 'openai' });
+  const doc = db.dump('sapere').doc1;
+  assert.equal(cover.applied, true);
+  assert.equal(doc.newCover, 'https://x/portada.png');
+  assert.equal(doc.generation.coverProvider, 'openai');
+  assert.equal(doc.status, 'completed');
+  assert.equal(doc.description.length, 18);
+});
+
+test('una ejecucion duplicada de la tarea no trunca el documento que otra ya completo ni lo deja esperando reintento', async () => {
+  for (const failsAfter of [false, true]) {
+    const db = new FakeFirestore({ sapere: { doc1: seedDoc() }, creditSpends: { spend1: SPEND } });
+    let finished = null;
+    const space = createSpace({
+      section: (call) => {
+        if (call.number !== 2) return undefined;
+        // La otra ejecucion completa el documento mientras esta pide la seccion 2.
+        finished = {
+          ...db.store.get('sapere/doc1'),
+          status: 'completed',
+          description: Array.from({ length: 18 }, (_, i) => `completo ${i}`),
+          chaptersMeta: Array.from({ length: 6 }, (_, index) => ({ index, title: `S${index + 1}`, paragraphs: 3, raw: `s${index}` })),
+        };
+        db.store.set('sapere/doc1', finished);
+        return failsAfter ? { status: 500, json: { detail: 'upstream exploded' } } : undefined;
+      },
+    });
+    const net = installFetch(space.routes);
+    try {
+      const { deps, log } = fakeDeps();
+      const run = runStory({ db, bucket: BUCKET, docId: 'doc1', uid: 'u1', isFinalAttempt: false, deps });
+      if (failsAfter) {
+        await assert.rejects(run, (error) => error.fatal === false);
+      } else {
+        assert.deepEqual(await run, { skipped: true, reason: 'completed' });
+      }
+      const doc = db.dump('sapere').doc1;
+
+      assert.equal(doc.status, 'completed');
+      assert.deepEqual(doc.description, finished.description, 'no vuelve a una seccion');
+      assert.equal(doc.chaptersMeta.length, 6);
+      assert.notEqual(doc.generation.awaitingRetry, true, 'un completed no espera reintento');
+      assert.equal(space.log.sections.length, 2);
+      assert.equal(log.refunds, 0);
+    } finally {
+      net.restore();
+    }
+  }
+});
+
+test('las notas meta del modelo no llegan a chaptersMeta.raw, ni a la descripcion, ni al historial de la seccion siguiente', async (t) => {
+  const note = '\n\nNota: por límite de extensión, continuaré en la siguiente sección.';
+  const db = new FakeFirestore({ sapere: { doc1: seedDoc({ type: 'gamification_episode' }) } });
+  const { space } = withSpace(t, {
+    section: (call) => (call.number === 1 ? { status: 200, stream: sectionStream(sectionText(1, 4) + note) } : undefined),
+  });
+  const { deps } = fakeDeps();
+
+  const result = await runStory({ db, bucket: BUCKET, docId: 'doc1', uid: 'u1', deps });
+  const doc = db.dump('sapere').doc1;
+
+  assert.equal(result.status, 'completed');
+  assert.equal(doc.chaptersMeta[0].raw, sectionText(1, 4));
+  assert.ok(doc.description.every((p) => !p.includes('Nota:')));
+  const history = space.log.sections[1].body.messages.filter((m) => m.role === 'assistant');
+  assert.deepEqual(history.map((m) => m.content), [sectionText(1, 4)]);
+});
+
+test('refundDoc: un reembolso que queda para revision manual se refleja en generation.refundState; un primer fallo, no', async () => {
+  const upstream = () => new Error('RevenueCat API 503: upstream');
+  const cases = [
+    {
+      name: 'agota los intentos',
+      credits: {
+        async refundSpend(db, spendId) {
+          await db.collection('creditSpends').doc(spendId).update({ refundState: 'needs_review' });
+          throw upstream();
+        },
+      },
+      throws: true,
+      refundState: 'needs_review',
+    },
+    {
+      name: 'ya estaba en revision',
+      spend: { refundState: 'needs_review' },
+      credits: { refundSpend: async () => ({ refunded: false, reason: 'needs_review' }) },
+      throws: false,
+      refundState: 'needs_review',
+    },
+    {
+      name: 'primer fallo',
+      credits: {
+        async refundSpend(db, spendId) {
+          await db.collection('creditSpends').doc(spendId).update({ refundState: 'pending', refundAttempts: 1 });
+          throw upstream();
+        },
+      },
+      throws: true,
+      refundState: undefined,
+    },
+  ];
+  for (const c of cases) {
+    const db = new FakeFirestore({
+      sapere: { doc1: seedDoc({ status: 'error' }) },
+      creditSpends: { spend1: { ...SPEND, ...(c.spend || {}) } },
+    });
+    const run = refundDoc(db, 'doc1', c.credits);
+    if (c.throws) await assert.rejects(run, /RevenueCat API 503/, c.name);
+    else assert.deepEqual(await run, { refunded: false, reason: 'needs_review' }, c.name);
+    const { generation } = db.dump('sapere').doc1;
+    assert.equal(generation.refundState, c.refundState, c.name);
+    assert.equal(generation.refunded, false, c.name);
+  }
 });

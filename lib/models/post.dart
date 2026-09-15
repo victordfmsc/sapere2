@@ -15,6 +15,10 @@ class BukBukPost {
   final Timestamp? publishTime;
   final String? uId;
   final String? sapereName;
+
+  /// Titulo provisional que escribe el servidor al crear el documento. Vale
+  /// mientras bukbukName esta vacio: en cola o si fallo antes del definitivo.
+  final String? provisionalTitle;
   final String? type;
   final Map<String, String>? sapereTypeNames;
   final Map<String, String>? sapereCategoryNames;
@@ -43,6 +47,7 @@ class BukBukPost {
     this.publishTime,
     this.uId,
     this.sapereName,
+    this.provisionalTitle,
     this.sapereCategoryNames,
     this.type,
     this.sapereTypeNames,
@@ -68,6 +73,15 @@ class BukBukPost {
   /// Se puede abrir en el lector bimodal (voz del dispositivo).
   bool get readyToRead => readyToReadFlag == true || hasText;
 
+  /// Titulo de tarjetas y detalle: el definitivo si ya existe y, si no, el
+  /// provisional. Null si no hay ninguno (cada pantalla pone su respaldo).
+  String? get displayTitle {
+    final String name = (sapereName ?? '').trim();
+    if (name.isNotEmpty) return name;
+    final String provisional = (provisionalTitle ?? '').trim();
+    return provisional.isEmpty ? null : provisional;
+  }
+
   bool get isMine =>
       uId != null && uId == FirebaseAuth.instance.currentUser?.uid;
 
@@ -92,6 +106,7 @@ class BukBukPost {
       publishTime: data['publishTime'],
       uId: data['uId'],
       sapereName: data['bukbukName'],
+      provisionalTitle: data['provisionalTitle'] as String?,
       type: data['type'],
       sapereTypeNames: Map<String, String>.from(data['bukbukTypeNames'] ?? {}),
       sapereCategoryNames: Map<String, String>.from(
@@ -126,6 +141,7 @@ class BukBukPost {
     Timestamp? publishTime,
     String? uId,
     String? sapereName,
+    String? provisionalTitle,
     Map<String, String>? sapereCategoryNames,
     String? type,
     Map<String, String>? sapereTypeNames,
@@ -150,6 +166,7 @@ class BukBukPost {
       publishTime: publishTime ?? this.publishTime,
       uId: uId ?? this.uId,
       sapereName: sapereName ?? this.sapereName,
+      provisionalTitle: provisionalTitle ?? this.provisionalTitle,
       sapereCategoryNames: sapereCategoryNames ?? this.sapereCategoryNames,
       type: type ?? this.type,
       sapereTypeNames: sapereTypeNames ?? this.sapereTypeNames,
@@ -236,6 +253,7 @@ class BukBukPost {
       'publishTime': publishTime,
       'uId': uId,
       'bukbukName': sapereName,
+      'provisionalTitle': provisionalTitle,
       'bukbukCategoryNames': sapereCategoryNames,
       'type': type,
       'bukbukTypeNames': sapereTypeNames,
@@ -268,6 +286,7 @@ class BukBukPost {
       publishTime: map['publishTime'],
       uId: map['uId'],
       sapereName: map['bukbukName'],
+      provisionalTitle: map['provisionalTitle'] as String?,
       sapereCategoryNames:
           map['bukbukCategoryNames'] != null
               ? Map<String, String>.from(map['bukbukCategoryNames'])

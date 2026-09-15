@@ -1,10 +1,8 @@
 import 'dart:async';
-import 'dart:convert';
 import 'dart:io';
 import 'package:sapere/core/constant/const.dart';
 import 'package:sapere/core/constant/voice_data.dart';
 import 'package:sapere/core/constant/firestore_collection.dart';
-import 'package:sapere/core/constant/app_config.dart';
 import 'package:sapere/core/services/firebase_storage_service.dart';
 import 'package:sapere/core/services/story_functions_service.dart';
 import 'package:sapere/models/sapere_category_type_model.dart';
@@ -13,11 +11,9 @@ import 'package:sapere/models/post.dart';
 import 'package:sapere/models/public_post.dart';
 import 'package:sapere/providers/user_provider.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:sapere/providers/subscription_provider.dart';
@@ -332,109 +328,16 @@ class BukBukProvider extends ChangeNotifier {
     }
   }
 
-  Future<bool> checkStoryStatus(String uid) async {
-    print('Checking status for $uid');
-    final url = Uri.parse(
-      'https://web-production-b405a.up.railway.app/v1/api/sapere/upload-audio-status/$uid',
-    );
-
-    try {
-      final headers = {'Content-Type': 'application/json'};
-      final response = await http
-          .get(url, headers: headers)
-          .timeout(const Duration(seconds: 12));
-
-      final isBusy = response.statusCode == 200;
-      if (isBusy) {
-        print('⚠️ Story status is BUSY (another doc is being created)');
-      } else {
-        print('✅ Story status is IDLE (ready to create)');
-      }
-
-      return isBusy;
-    } catch (e) {
-      print('Error checking status: $e');
-      return false;
-    }
-  }
-  // Future<void> checkStoryStatus(String uid) async {
-  //   print('Checking status');
-  //   final url = Uri.parse(
-  //     'https://sapereapi-production.up.railway.app/v1/api/sapere/upload-audio-status/$uid',
-  //   );
-  //
-  //   try {
-  //     final headers = {'Content-Type': 'application/json'};
-  //     final response = await http.get(url, headers: headers);
-  //
-  //     print('Status code is ${response.statusCode}');
-  //
-  //     if (response.statusCode == 200) {
-  //     } else {
-  //       print('Fail to check');
-  //     }
-  //   } catch (e) {
-  //     print('Error checking status: $e');
-  //   }
-  // }
-
-  Future<void> generateStoryFromServer({
-    required String systemPrompt,
-    required String baseUserPrompt,
-    required String languageCode,
-  }) async {
-    List<String> prompts = [
-      "${'generateChapterOne'.tr} $baseUserPrompt",
-      "generateChapterLast".tr,
-    ];
-    final url = Uri.parse(
-      'https://web-production-b405a.up.railway.app/v1/api/sapere/prompt',
-    );
-    final headers = {'Content-Type': 'application/json'};
-
-    final body = jsonEncode({
-      "systemPrompt": systemPrompt,
-      "prompt": baseUserPrompt,
-      "voiceId": getActiveVoiceId(languageCode),
-      "bukbukCategoryNames": bukBukCategoryModel.names,
-      "bukbukTypeNames": bukBukTypeModel.names,
-      "coverImage": selectedCover,
-      "language": getLanguageName(languageCode),
-      "uId": FirebaseAuth.instance.currentUser?.uid,
-      "bukbukCategoryId": bukBukCategoryModel.docId,
-      "bukbukId": bukBukTypeModel.id,
-      "listOfPrompts": prompts,
-      "genre": bukBukCategoryModel.names[languageCode],
-    });
-    print(
-      'Body of API voice id is ${getActiveVoiceId(languageCode)} image is $selectedCover uid is ${FirebaseAuth.instance.currentUser?.uid} category is ${bukBukCategoryModel.docId}  bukbuk id is ${bukBukTypeModel.id} prompts is $prompts genre is ${bukBukCategoryModel.names[languageCode]} ',
-    );
-
-    try {
-      final response = await http.post(url, headers: headers, body: body);
-
-      if (response.statusCode >= 200 && response.statusCode < 300) {
-        final data = jsonDecode(response.body);
-        print(data);
-      } else {
-        print('Failed to generate story: ${response.statusCode}');
-        print('Response body: ${response.body}');
-      }
-    } catch (e) {
-      print('Error occurred: $e');
-    }
-  }
-
-  // ───────────────────────── Ruta nueva: Cloud Functions ─────────────────────
-  // Con AppConfig.useFirebaseGeneration == true el servidor cobra el crédito,
-  // crea el documento de la colección 'sapere' y encola la generación de texto
-  // y portada. La voz la pone el lector bimodal del dispositivo, así que aquí
-  // ya no se descuenta crédito, ni se escribe el documento, ni se pide audio.
+  // ───────────────────────── Cloud Functions ─────────────────────────────────
+  // El servidor cobra el crédito, crea el documento de la colección 'sapere' y
+  // encola la generación de texto y portada. La voz la pone el lector bimodal
+  // del dispositivo, así que aquí no se descuenta crédito, ni se escribe el
+  // documento, ni se pide audio.
 
   late final StoryFunctionsService _storyFunctions = StoryFunctionsService();
 
-  /// Llama a la callable `startStory` y deja la interfaz en el mismo estado en
-  /// que la dejaba la ruta de Railway (diálogo de éxito, créditos frescos).
+  /// Llama a la callable `startStory` y deja la interfaz lista (diálogo de
+  /// éxito, créditos frescos).
   /// Devuelve el docId creado por el servidor, o `null` si no se pudo arrancar
   /// (en ese caso ya se avisó al usuario con el diálogo que corresponda).
   Future<String?> _startStoryWithFunctions({
@@ -587,18 +490,21 @@ class BukBukProvider extends ChangeNotifier {
         break;
       case StartStoryError.alreadyGenerating:
         Get.snackbar(
-          'info'.tr,
-          'generatingText'.tr,
-          backgroundColor: Colors.orange,
+          'warningImage'.tr,
+          generationErrorMessageKey(error).tr,
+          backgroundColor: Colors.red,
           colorText: Colors.white,
+          duration: const Duration(seconds: 6),
         );
         break;
+      case StartStoryError.rateLimited:
+      case StartStoryError.aiUnavailable:
       case StartStoryError.unauthenticated:
       case StartStoryError.network:
       case StartStoryError.unknown:
         Get.snackbar(
           'warningImage'.tr,
-          'wentWrong'.tr,
+          generationErrorMessageKey(error).tr,
           backgroundColor: Colors.red,
           colorText: Colors.white,
         );
@@ -606,289 +512,46 @@ class BukBukProvider extends ChangeNotifier {
     }
   }
 
-  /// Título provisional legible a partir del prompt (el definitivo lo escribe
-  /// el servidor con Gemini).
-  String _titleFromPrompt(String prompt, {String fallback = 'Audio Book'}) {
-    final String clean = prompt.replaceAll(RegExp(r'[#*]'), '').trim();
-    if (clean.isEmpty) return fallback;
-    if (clean.length > 40) return "${clean.substring(0, 37)}...";
-    return clean;
-  }
-
-  Future<void> generateFullStory({
+  /// Devuelve el docId creado, o `null` si la creacion no arranco (el aviso al
+  /// usuario ya se mostro y la pagina de creacion no debe cerrarse).
+  Future<String?> generateFullStory({
     required String systemPrompt,
     required String baseUserPrompt,
     required String languageCode,
   }) async {
-    InAppPurchaseProvider? spentProvider;
     try {
       clearGenerationSteps();
       _descriptions.clear();
       sapereTitle = "";
 
-      // ── Ruta Firebase: el servidor cobra, crea el doc y encola ──────────
-      if (AppConfig.useFirebaseGeneration) {
-        await _startStoryWithFunctions(
-          subProvider: Provider.of<InAppPurchaseProvider>(
-            Get.context!,
-            listen: false,
-          ),
-          prompt: baseUserPrompt,
-          systemPrompt: systemPrompt,
-          languageCode: languageCode,
-          languageName: getLanguageName(languageCode),
-          title: _titleFromPrompt(
-            baseUserPrompt,
-            fallback: 'Audiolibro Sapere',
-          ),
-          genre: bukBukCategoryModel.names[languageCode],
-          bukbukId: bukBukTypeModel.id,
-          bukbukCategoryId: bukBukCategoryModel.docId,
-          bukbukTypeNames: Map<String, dynamic>.from(bukBukTypeModel.names),
-          bukbukCategoryNames: Map<String, dynamic>.from(
-            bukBukCategoryModel.names,
-          ),
-        );
-        return;
-      }
-
-      // ── PHASE 1 (instant): Create Firestore doc immediately ──────────────
-      // We create the post with a placeholder title so the user gets a doc id
-      // right away and we can navigate home without waiting for the AI.
-      final firestore = FirebaseFirestore.instance;
-      final docRef = firestore.collection('sapere').doc();
-      final newPostId = docRef.id;
-      final time = Timestamp.fromMicrosecondsSinceEpoch(
-        DateTime.now().microsecondsSinceEpoch,
-      );
-      final defaultCover = premiumDefaultCover;
-      final String languageName = getLanguageName(languageCode);
-
-      // Deduct credit before anything else
-      final subProvider = Provider.of<InAppPurchaseProvider>(
-        Get.context!,
-        listen: false,
-      );
-      final creditOk = await subProvider.deductCredit();
-      if (!creditOk) {
-        debugPrint('❌ Credit deduction failed. Aborting.');
-        showDialog(
-          context: Get.context!,
-          builder:
-              (context) => OutOfCreditsDialog(
-                nextRefillDate: subProvider.nextRefillDate,
-              ),
-        );
-        return;
-      }
-      spentProvider = subProvider;
-
-      // Formulate immediate readable title from prompt
-      String initialTitle = baseUserPrompt.trim();
-      if (initialTitle.length > 40) {
-        initialTitle = "${initialTitle.substring(0, 37)}...";
-      }
-      if (initialTitle.isEmpty) {
-        initialTitle = "Audiolibro Sapere";
-      }
-
-      final newPost = BukBukPost(
-        postId: newPostId,
-        sapereCategoryId: bukBukCategoryModel.docId,
-        sapereId: bukBukTypeModel.id,
-        sapereCategoryNames: bukBukCategoryModel.names,
-        sapereTypeNames: bukBukTypeModel.names,
-        sapereName: initialTitle,
-        newCover: selectedCover.isEmpty ? defaultCover : selectedCover,
-        sapereUrl: null,
-        publishTime: time,
-        language: languageName,
+      return await _startStoryWithFunctions(
+        subProvider: Provider.of<InAppPurchaseProvider>(
+          Get.context!,
+          listen: false,
+        ),
+        prompt: baseUserPrompt,
+        systemPrompt: systemPrompt,
         languageCode: languageCode,
-        description: null,
-        uId: FirebaseAuth.instance.currentUser?.uid,
-        type: 'sapere',
-      );
-
-      final Map<String, dynamic> postData = newPost.toMap();
-      postData['status'] = 'pending';
-      await docRef.set(postData);
-      spentProvider = null;
-      print('✅ Post doc created with pending status for Railway: $newPostId');
-
-      // El documento ya existe: los pasos de interfaz no pueden convertir
-      // una creación correcta en un "algo salió mal".
-      try {
-        setSelectedCover('');
-        Get.dialog(
-          CreationSuccessDialog(
-            credits:
-                Provider.of<InAppPurchaseProvider>(
-                  Get.context!,
-                  listen: false,
-                ).totalCredits.toString(),
-          ),
-        );
-      } catch (e, st) {
-        recordClientWarning(docRef, 'success_dialog', e, st);
-      }
-
-      // ── PHASE 2 (background): Generate title + audio ─────────────────────
-      // Fire-and-forget — UI is already unblocked.
-      unawaited(
-        _generateTitleAndAudioInBackground(
-          docId: newPostId,
-          docRef: docRef,
-          systemPrompt: systemPrompt,
-          baseUserPrompt: baseUserPrompt,
-          languageCode: languageCode,
-          languageName: languageName,
+        languageName: getLanguageName(languageCode),
+        title: titleFromPrompt(baseUserPrompt, fallback: 'Audiolibro Sapere'),
+        genre: bukBukCategoryModel.names[languageCode],
+        bukbukId: bukBukTypeModel.id,
+        bukbukCategoryId: bukBukCategoryModel.docId,
+        bukbukTypeNames: Map<String, dynamic>.from(bukBukTypeModel.names),
+        bukbukCategoryNames: Map<String, dynamic>.from(
+          bukBukCategoryModel.names,
         ),
       );
     } catch (e, st) {
       print('⚠️ Error in generateFullStory: $e');
       print(st);
-      if (spentProvider != null) await spentProvider.refundLastSpend();
       Get.snackbar(
         'warningImage'.tr,
         'wentWrong'.tr,
         backgroundColor: Colors.red,
         colorText: Colors.white,
       );
-    }
-  }
-
-  /// Background task: generate AI title, update Firestore, then call Railway.
-  /// Registra en el propio documento un fallo de interfaz posterior a la
-  /// creación (el audio ya está encolado) para poder diagnosticarlo sin el móvil.
-  void recordClientWarning(
-    DocumentReference docRef,
-    String phase,
-    Object error,
-    StackTrace stackTrace,
-  ) {
-    debugPrint('⚠️ Non-fatal error after creation ($phase): $error');
-    debugPrint('$stackTrace');
-    docRef
-        .update({'clientWarning': '$phase: $error'})
-        .catchError((_) => debugPrint('clientWarning not saved'));
-  }
-
-  Future<void> _generateTitleAndAudioInBackground({
-    required String docId,
-    required DocumentReference docRef,
-    required String systemPrompt,
-    required String baseUserPrompt,
-    required String languageCode,
-    required String languageName,
-  }) async {
-    try {
-      final generatedTitle = await generateTitle(
-        genre: bukBukCategoryModel.names[languageCode].toString(),
-        userPrompt: baseUserPrompt,
-        languageCode: languageCode,
-      );
-
-      // Fallback logic if AI title fails
-      String finalTitle;
-      if (generatedTitle != null &&
-          generatedTitle.isNotEmpty &&
-          generatedTitle != "...") {
-        finalTitle = generatedTitle;
-      } else {
-        // Fallback: Use the first 30 chars of the prompt or a localized default
-        String sanitizedPrompt =
-            baseUserPrompt.replaceAll(RegExp(r'[#*]'), '').trim();
-        if (sanitizedPrompt.length > 40) {
-          finalTitle = "${sanitizedPrompt.substring(0, 37)}...";
-        } else if (sanitizedPrompt.isNotEmpty) {
-          finalTitle = sanitizedPrompt;
-        } else {
-          finalTitle = "Audio Book";
-        }
-      }
-
-      sapereTitle = finalTitle;
-      print('🎯 Background title (final): $finalTitle');
-
-      // 2) Patch the Firestore doc with the real title
-      await docRef.update({'bukbukName': finalTitle});
-
-      // 3) Fire audio generation (fully async, Railway handles it)
-      generateAudioFromServer(
-        languageCode: languageCode,
-        uId: FirebaseAuth.instance.currentUser!.uid,
-        docId: docId,
-        systemPrompt: systemPrompt,
-        prompt: baseUserPrompt,
-        language: languageName,
-        title: finalTitle,
-      );
-
-      print('🚀 Background task complete for doc: $docId');
-    } catch (e, st) {
-      print('⚠️ Background generation error (non-blocking): $e');
-      print(st);
-    }
-  }
-
-  Future<void> generateAudioFromServer({
-    required String uId,
-    required String systemPrompt,
-    required String prompt,
-    required String docId,
-    required String languageCode,
-    required String language,
-    required String title,
-    String? voiceId,
-  }) async {
-    try {
-      setGenerationStep(GenerationStep.invokingNarrator, docId: docId);
-      setIsUploading(true, message: 'generatingAudio'.tr);
-
-      final url = Uri.parse(
-        'https://web-production-b405a.up.railway.app/v1/api/sapere/upload-audio',
-      );
-
-      final body = jsonEncode({
-        "uId": uId,
-        "systemPrompt": systemPrompt,
-        "prompt": prompt,
-        "language": language,
-        "languageCode": languageCode,
-        "genre": bukBukCategoryModel.names[languageCode] ?? "General",
-        "bukbukCategoryId": bukBukCategoryModel.docId,
-        "bukbukId": bukBukTypeModel.id,
-        "bukbukTypeNames": bukBukTypeModel.names,
-        "bukbukCategoryNames": bukBukCategoryModel.names,
-        "voiceId": voiceId ?? getActiveVoiceId(languageCode),
-        "docId": docId,
-        "title": title,
-      });
-
-      final response = await http.post(
-        url,
-        headers: {'Content-Type': 'application/json'},
-        body: body,
-      );
-
-      if (response.statusCode >= 200 && response.statusCode < 300) {
-        setGenerationStep(GenerationStep.completed);
-        print('✅ Audio generation process initiated successfully');
-      } else {
-        setGenerationStep(GenerationStep.error);
-        throw Exception('Failed to generate audio: ${response.statusCode}');
-      }
-    } catch (e) {
-      setGenerationStep(GenerationStep.error);
-      print('❌ Error generating audio: $e');
-      Get.snackbar(
-        'warningImage'.tr,
-        'wentWrong'.tr,
-        backgroundColor: Colors.red,
-        colorText: Colors.white,
-      );
-    } finally {
-      setIsUploading(false);
+      return null;
     }
   }
 
@@ -933,139 +596,6 @@ class BukBukProvider extends ChangeNotifier {
       rethrow;
     }
   }
-  //
-  // Future<void> getUserResponse({
-  //   required String systemPrompt,
-  //   required String userPrompt,
-  //   required String languageCode,
-  //   required String id,
-  // }) async {
-  //   print('🌐 Generate API called');
-  //
-  //   final String url = 'https://web-production-033f3.up.railway.app/generate';
-  //
-  //   final String langName = (getLanguageName(languageCode)).trim();
-  //   final String safeLang = langName.isEmpty ? 'English' : langName;
-  //
-  //   print('Language name is $safeLang');
-  //
-  //   final body = {
-  //     "messages": [
-  //       {"role": "system", "content": systemPrompt},
-  //       {"role": "user", "content": userPrompt},
-  //     ],
-  //     "max_tokens": 8192,
-  //     "temperature": 1.4,
-  //     "frequency_penalty": 1.5,
-  //     "presence_penalty": 0.3,
-  //     "conversation_id": id,
-  //     "stream": false,
-  //     "language": safeLang,
-  //   };
-  //
-  //   var headers = {
-  //     'Content-Type': 'application/json',
-  //     'Authorization': 'Bearer YOUR_HF_TOKEN',
-  //   };
-  //
-  //   print('🌐 API Url: $url');
-  //   print('📝 API Language: $safeLang');
-  //   print('📦 API Body: $body');
-  //
-  //   try {
-  //     final apiStart = DateTime.now();
-  //
-  //     final response = await http.post(
-  //       Uri.parse(url),
-  //       headers: headers,
-  //       body: json.encode(body),
-  //     );
-  //
-  //     final apiEnd = DateTime.now();
-  //     final apiDuration = apiEnd.difference(apiStart);
-  //     print(
-  //       "⏱️ API Response Time: ${apiDuration.inSeconds}.${apiDuration.inMilliseconds % 1000}s",
-  //     );
-  //
-  //     if (response.statusCode == 200) {
-  //       final decodedBody = utf8.decode(response.bodyBytes);
-  //       final Map<String, dynamic> responseData = json.decode(decodedBody);
-  //
-  //       final dynamic raw = responseData['script'];
-  //       final String content = (raw is String) ? raw : (raw ?? '').toString();
-  //
-  //       final String cleanedContent =
-  //           content
-  //               .replaceAll(RegExp(r'[#*]'), '')
-  //               .replaceAll('â', '—')
-  //               .trim();
-  //
-  //       if (cleanedContent.isEmpty) {
-  //         throw Exception('Model returned empty content.');
-  //       }
-  //
-  //       print('🧩 Cleaned content length: ${cleanedContent.length}');
-  //       addDescription(cleanedContent);
-  //     } else {
-  //       print('❌ Failed: code=${response.statusCode}, body=${response.body}');
-  //       throw Exception('API failed with status: ${response.statusCode}');
-  //     }
-  //   } catch (e) {
-  //     print("⚠️ Error in getUserResponse: $e");
-  //     rethrow;
-  //   }
-  // }
-
-  Future<String?> generateTitle({
-    required String genre,
-    required String userPrompt,
-    required String languageCode,
-  }) async {
-    addGenerationStep("📝 Generating title...");
-
-    final String url =
-        'https://web-production-b405a.up.railway.app/generate/title';
-    final String lang = (getLanguageName(languageCode)).trim();
-    final String safeLang = lang.isEmpty ? 'English' : lang;
-
-    final body = {
-      "input": 'Generate the title in $safeLang language $userPrompt',
-      "genre": genre,
-    };
-    final headers = {
-      'Content-Type': 'application/json; charset=utf-8',
-      'Accept': 'application/json',
-    };
-
-    try {
-      final response = await http
-          .post(Uri.parse(url), headers: headers, body: json.encode(body))
-          .timeout(const Duration(seconds: 60));
-
-      if (response.statusCode == 200) {
-        final decodedBody = utf8.decode(response.bodyBytes);
-        final Map<String, dynamic> responseData = json.decode(decodedBody);
-        String title = (responseData['title'] ?? '').toString().trim();
-        title = title.replaceAll(RegExp(r'[#*]'), '').trim();
-
-        if (title.isEmpty || title == "...") {
-          print('⚠️ API returned empty or placeholder title.');
-          return null;
-        }
-
-        print('🎯 Cleaned Title: $title');
-        return title;
-      } else {
-        print(
-          '❌ Failed to generate title: code=${response.statusCode} body=${response.body}',
-        );
-        return null;
-      }
-    } catch (e) {
-      print('⚠️ Error generating title: $e');
-      return null;
-    }
-  }
 
   createBukbukPost({
     required String? name,
@@ -1073,126 +603,29 @@ class BukBukProvider extends ChangeNotifier {
     required String systemPrompt,
     required String prompt,
   }) async {
-    InAppPurchaseProvider? spentProvider;
     try {
-      // --- NEW: Automated Credit Deduction ---
       final subProvider = Provider.of<InAppPurchaseProvider>(
         Get.context!,
         listen: false,
       );
 
-      // ── Ruta Firebase: el servidor cobra, crea el doc y encola ──────────
-      if (AppConfig.useFirebaseGeneration) {
-        await _startStoryWithFunctions(
-          subProvider: subProvider,
-          prompt: prompt,
-          systemPrompt: systemPrompt,
-          languageCode: languageCode,
-          languageName: getLanguageName(languageCode),
-          title: name ?? "Audio Book",
-          genre: bukBukCategoryModel.names[languageCode],
-          bukbukId: bukBukTypeModel.id,
-          bukbukCategoryId: bukBukCategoryModel.docId,
-          bukbukTypeNames: Map<String, dynamic>.from(bukBukTypeModel.names),
-          bukbukCategoryNames: Map<String, dynamic>.from(
-            bukBukCategoryModel.names,
-          ),
-        );
-        return;
-      }
-
-      final success = await subProvider.deductCredit();
-
-      if (!success) {
-        debugPrint('❌ Credit deduction failed. Aborting generation.');
-        showDialog(
-          context: Get.context!,
-          builder:
-              (context) => OutOfCreditsDialog(
-                nextRefillDate: subProvider.nextRefillDate,
-              ),
-        );
-        return;
-      }
-      spentProvider = subProvider;
-
-      setIsUploading(true, message: "uploadingToDatabase".tr);
-
-      final firestore = FirebaseFirestore.instance;
-      // final docRef = firestore.collection(sapereCollection).doc();
-      final docRef = firestore.collection('sapere').doc();
-      String languageName = getLanguageName(languageCode);
-
-      final newPostId = docRef.id;
-      final time = Timestamp.fromMicrosecondsSinceEpoch(
-        DateTime.now().microsecondsSinceEpoch,
-      );
-
-      final defaultCover = premiumDefaultCover;
-
-      final newPost = BukBukPost(
-        postId: newPostId,
-        sapereCategoryId: bukBukCategoryModel.docId,
-        sapereId: bukBukTypeModel.id,
-        sapereCategoryNames: bukBukCategoryModel.names,
-        sapereTypeNames: bukBukTypeModel.names,
-        sapereName: name ?? "Audio Book",
-        newCover: selectedCover.isEmpty ? defaultCover : selectedCover,
-        sapereUrl: null,
-        publishTime: time,
-        language: languageName,
-        languageCode: languageCode,
-        description: null,
-        uId: FirebaseAuth.instance.currentUser?.uid,
-        type: 'sapere',
-      );
-
-      // We AWAIT this to ensure the document exists before the UI navigates away
-      await docRef.set(newPost.toMap());
-      spentProvider = null;
-      print('✅ Post document created: $newPostId');
-
-      // 3) Call Audio and Cover Generation on Backend
-      // 3) Call Audio API (Background)
-      generateAudioFromServer(
-        languageCode: languageCode,
-        uId: FirebaseAuth.instance.currentUser!.uid.toString(),
-        docId: docRef.id,
-        systemPrompt: systemPrompt,
+      await _startStoryWithFunctions(
+        subProvider: subProvider,
         prompt: prompt,
-        language: languageName,
+        systemPrompt: systemPrompt,
+        languageCode: languageCode,
+        languageName: getLanguageName(languageCode),
         title: name ?? "Audio Book",
+        genre: bukBukCategoryModel.names[languageCode],
+        bukbukId: bukBukTypeModel.id,
+        bukbukCategoryId: bukBukCategoryModel.docId,
+        bukbukTypeNames: Map<String, dynamic>.from(bukBukTypeModel.names),
+        bukbukCategoryNames: Map<String, dynamic>.from(
+          bukBukCategoryModel.names,
+        ),
       );
-
-      /*
-      // 4) Call Cover API (Background)
-      generateCoverFromServer(
-        prompt: sapereTitle,
-        docId: docRef.id,
-        uId: FirebaseAuth.instance.currentUser!.uid.toString(),
-        language: languageName,
-      );
-      */
-
-      // El documento ya existe: un fallo del diálogo no es un fallo de creación.
-      try {
-        Get.dialog(
-          CreationSuccessDialog(
-            credits:
-                Provider.of<InAppPurchaseProvider>(
-                  Get.context!,
-                  listen: false,
-                ).totalCredits.toString(),
-          ),
-        );
-      } catch (e, st) {
-        recordClientWarning(docRef, 'success_dialog', e, st);
-      }
-      setSelectedCover('');
-      print('✅ Post uploaded, audio and cover triggered for ID: $newPostId');
     } catch (e) {
       print('❌ Failed to upload post: $e');
-      if (spentProvider != null) await spentProvider.refundLastSpend();
       Get.snackbar(
         'warningImage'.tr,
         'errorUploading'.tr,
@@ -1220,148 +653,33 @@ class BukBukProvider extends ChangeNotifier {
     required String prompt,
     required BuildContext context,
   }) async {
-    InAppPurchaseProvider? spentProvider;
     try {
-      // --- NEW: Automated Credit Deduction ---
       final subProvider = Provider.of<InAppPurchaseProvider>(
         context,
         listen: false,
       );
 
-      // ── Ruta Firebase: el servidor cobra, crea el doc y encola ──────────
-      if (AppConfig.useFirebaseGeneration) {
-        lastGeneratedCoverUrl = null;
-        final categoryInfo = await _ensureCategoryExists(categoryName);
-        await _startStoryWithFunctions(
-          subProvider: subProvider,
-          prompt: prompt,
-          systemPrompt: systemPrompt,
-          languageCode: languageCode,
-          languageName: getLanguageName(languageCode),
-          title: "$subjectName - Ep $episodeNumber: $episodeTitle",
-          type: 'gamification_episode',
-          genre: categoryName,
-          bukbukCategoryId: categoryInfo['id']?.toString(),
-          bukbukCategoryNames: Map<String, dynamic>.from(
-            categoryInfo['names'] as Map? ?? const {},
-          ),
-          gamificationSubject: subjectName,
-          gamificationEpisode: episodeNumber,
-        );
-        return;
-      }
-
-      final success = await subProvider.deductCredit();
-
-      if (!success) {
-        debugPrint('❌ Credit deduction failed. Aborting generation.');
-        showDialog(
-          context: context,
-          builder:
-              (context) => OutOfCreditsDialog(
-                nextRefillDate: subProvider.nextRefillDate,
-              ),
-        );
-        return;
-      }
-      spentProvider = subProvider;
-
       lastGeneratedCoverUrl = null;
-      setGenerationStep(
-        GenerationStep.designingScript,
-        episodeNumber: episodeNumber,
-      );
-      setIsUploading(true, message: "uploadingToDatabase".tr);
-
-      final firestore = FirebaseFirestore.instance;
-      final docRef = firestore.collection('sapere').doc();
-      String languageName = getLanguageName(languageCode);
-
-      // --- 0. CATEGORY LINKING ---
       final categoryInfo = await _ensureCategoryExists(categoryName);
-
-      final newPostId = docRef.id;
-      final time = Timestamp.fromMicrosecondsSinceEpoch(
-        DateTime.now().microsecondsSinceEpoch,
-      );
-
-      // --- 1. SAVE TO DATABASE IMMEDIATELY (Instant Feedback) ---
-      final defaultCover = premiumDefaultCover;
-
-      final newPost = BukBukPost(
-        postId: newPostId,
-        sapereCategoryId: categoryInfo['id'],
-        sapereCategoryNames: Map<String, String>.from(categoryInfo['names']),
-        sapereName: "$subjectName - Ep $episodeNumber: $episodeTitle",
-        newCover: defaultCover,
-        publishTime: time,
-        language: languageName,
+      await _startStoryWithFunctions(
+        subProvider: subProvider,
+        prompt: prompt,
+        systemPrompt: systemPrompt,
         languageCode: languageCode,
-        uId: FirebaseAuth.instance.currentUser?.uid,
+        languageName: getLanguageName(languageCode),
+        title: "$subjectName - Ep $episodeNumber: $episodeTitle",
         type: 'gamification_episode',
+        genre: categoryName,
+        bukbukCategoryId: categoryInfo['id']?.toString(),
+        bukbukCategoryNames: Map<String, dynamic>.from(
+          categoryInfo['names'] as Map? ?? const {},
+        ),
         gamificationSubject: subjectName,
         gamificationEpisode: episodeNumber,
-      );
-
-      // Save to database instantly so it appears in the list
-      await docRef.set(newPost.toMap());
-      spentProvider = null;
-      print('✅ Initial Firestore document created: $newPostId');
-
-      // --- 2. LAUNCH COVER GENERATION (Background) ---
-      // We don't await this for the main flow to proceed to audio
-      setGenerationStep(
-        GenerationStep.generatingCover,
-        episodeNumber: episodeNumber,
-      );
-
-      // Handle cover in background via Backend
-      // The Railway backend will now handle cover generation.
-      // Keeping a small check if we want to force a fallback here, but preferably
-      // let the server do its magic.
-
-      // --- 3. TRIGGER AUDIO & COVER GENERATION (Background) ---
-      generateAudioFromServer(
-        languageCode: languageCode,
-        uId: FirebaseAuth.instance.currentUser!.uid.toString(),
-        docId: docRef.id,
-        systemPrompt: systemPrompt,
-        prompt: prompt,
-        language: languageName,
-        title: "$subjectName - Ep $episodeNumber: $episodeTitle",
-      );
-
-      /*
-      generateCoverFromServer(
-        prompt: "$subjectName - Ep $episodeNumber: $episodeTitle",
-        docId: docRef.id,
-        uId: FirebaseAuth.instance.currentUser!.uid.toString(),
-        language: languageName,
-      );
-      */
-
-      // El documento ya existe: un fallo del diálogo no es un fallo de creación.
-      try {
-        Get.dialog(
-          CreationSuccessDialog(
-            credits:
-                Provider.of<InAppPurchaseProvider>(
-                  context,
-                  listen: false,
-                ).totalCredits.toString(),
-          ),
-        );
-      } catch (e, st) {
-        recordClientWarning(docRef, 'success_dialog', e, st);
-      }
-      setSelectedCover('');
-      print(
-        '✅ Gamification Episode creation process initiated (background audio & cover)',
       );
     } catch (e) {
       setGenerationStep(GenerationStep.error);
       print('❌ Failed to upload episode: $e');
-      if (spentProvider != null) await spentProvider.refundLastSpend();
       rethrow; // Rethrow to let UI handle it if needed
     } finally {
       setIsUploading(false);
@@ -1399,16 +717,7 @@ class BukBukProvider extends ChangeNotifier {
     return {'id': docRef.id, 'names': names};
   }
 
-  /// Punto de entrada del botón "Reintentar". Con la bandera de Firebase
-  /// activa reintenta por la callable; si no, por el flujo antiguo de Railway.
-  Future<bool> retryGeneration(BukBukPost post) async {
-    if (AppConfig.useFirebaseGeneration) {
-      return _retryGenerationWithFunctions(post);
-    }
-    return _retryGenerationLegacy(post);
-  }
-
-  /// Reintento por Cloud Functions.
+  /// Punto de entrada del botón "Reintentar": reintenta por Cloud Functions.
   ///
   /// Solo vuelve a llamar a `startStory` (y por tanto a cobrar) si el gasto
   /// anterior ya no está vivo: el documento no tiene `generation.spendId` o ese
@@ -1416,7 +725,7 @@ class BukBukProvider extends ChangeNotifier {
   /// `sweepStalled`). Si el gasto sigue sin devolver se pide esperar: el barrido
   /// lo devuelve en minutos y reintentar ahora cobraría dos veces. Cuando el
   /// nuevo documento existe, el fallido se borra para no dejar un duplicado.
-  Future<bool> _retryGenerationWithFunctions(BukBukPost post) async {
+  Future<bool> retryGeneration(BukBukPost post) async {
     final String? docId = post.postId;
     if (docId == null || docId.isEmpty) return false;
     if (!_retryingDocIds.add(docId)) return false;
@@ -1441,17 +750,17 @@ class BukBukProvider extends ChangeNotifier {
       final Map<String, dynamic> generation = Map<String, dynamic>.from(
         (data['generation'] as Map?) ?? const <String, dynamic>{},
       );
-      final String spendId = (generation['spendId'] ?? '').toString();
-      final bool refunded = generation['refunded'] == true;
+      final String? refundMessageKey = pendingRefundMessageKey(generation);
 
-      if (spendId.isNotEmpty && !refunded) {
+      if (refundMessageKey != null) {
         debugPrint(
-          '↩️ $docId conserva un gasto sin devolver (spendId=$spendId): '
-          'se pide esperar al reembolso antes de reintentar.',
+          '↩️ $docId conserva un gasto sin devolver '
+          '(spendId=${generation['spendId']}, '
+          'refundState=${generation['refundState']}): no se reintenta.',
         );
         Get.snackbar(
           'info'.tr,
-          'refundInProgress'.tr,
+          refundMessageKey.tr,
           backgroundColor: Colors.black87,
           colorText: Colors.white,
         );
@@ -1464,8 +773,7 @@ class BukBukProvider extends ChangeNotifier {
           (data['language'] as String?) ??
           post.language ??
           getLanguageName(languageCode);
-      final String title =
-          (data['bukbukName'] as String?) ?? post.sapereName ?? 'Audio Book';
+      final String title = retryTitle(data, fallback: post.displayTitle);
       final String type =
           (data['type'] as String?) ?? post.type ?? 'sapere';
 
@@ -1548,202 +856,38 @@ class BukBukProvider extends ChangeNotifier {
     }
   }
 
-  /// Reencola en Railway un documento que quedó en 'error'. No gasta créditos:
-  /// reutiliza el payload de `generateAudioFromServer` con los datos del doc.
-  Future<bool> _retryGenerationLegacy(BukBukPost post) async {
-    final String? docId = post.postId;
-    if (docId == null || docId.isEmpty) return false;
-
-    final docRef = FirebaseFirestore.instance.collection('sapere').doc(docId);
-    try {
-      final snap = await docRef.get();
-      final Map<String, dynamic> data = snap.data() ?? {};
-
-      final String languageCode =
-          (data['languageCode'] as String?) ?? post.languageCode ?? 'en_US';
-      final String language =
-          (data['language'] as String?) ??
-          post.language ??
-          getLanguageName(languageCode);
-      final String title =
-          (data['bukbukName'] as String?) ?? post.sapereName ?? 'Audio Book';
-      final List<String> description =
-          (data['description'] as List?)?.whereType<String>().toList() ??
-          post.description ??
-          const [];
-
-      String prompt = ((data['prompt'] as String?) ?? '').trim();
-      if (prompt.isEmpty) {
-        prompt = title;
-        if (description.isNotEmpty) {
-          final firstLine = description.first.split('\n').first.trim();
-          if (firstLine.isNotEmpty) prompt = '$title\n$firstLine';
-        }
-      }
-
-      final String bukbukId =
-          (data['bukbukId'] as String?) ?? post.sapereId ?? '';
-      final String bukbukCategoryId =
-          (data['bukbukCategoryId'] as String?) ?? post.sapereCategoryId ?? '';
-      final Map<String, dynamic> bukbukTypeNames = Map<String, dynamic>.from(
-        data['bukbukTypeNames'] ?? post.sapereTypeNames ?? {},
-      );
-      final Map<String, dynamic> bukbukCategoryNames =
-          Map<String, dynamic>.from(
-            data['bukbukCategoryNames'] ?? post.sapereCategoryNames ?? {},
-          );
-      final String genre =
-          (data['genre'] as String?) ??
-          (bukbukCategoryNames[languageCode] as String?) ??
-          'General';
-
-      String? systemPrompt = data['systemPrompt'] as String?;
-      if (systemPrompt == null || systemPrompt.isEmpty) {
-        for (final type in _sapereTypes) {
-          if (type.id == bukbukId) {
-            systemPrompt = type.prompts[languageCode];
-            break;
-          }
-        }
-      }
-
-      final String uId =
-          (data['uId'] as String?) ??
-          post.uId ??
-          FirebaseAuth.instance.currentUser!.uid;
-
-      await docRef.update({'status': 'pending', 'errorMessage': null});
-
-      final url = Uri.parse(
-        'https://web-production-b405a.up.railway.app/v1/api/sapere/upload-audio',
-      );
-      final body = jsonEncode({
-        "uId": uId,
-        "systemPrompt": systemPrompt,
-        "prompt": prompt,
-        "language": language,
-        "languageCode": languageCode,
-        "genre": genre,
-        "bukbukCategoryId": bukbukCategoryId,
-        "bukbukId": bukbukId,
-        "bukbukTypeNames": bukbukTypeNames,
-        "bukbukCategoryNames": bukbukCategoryNames,
-        "voiceId": getActiveVoiceId(languageCode),
-        "docId": docId,
-        "title": title,
-      });
-
-      final response = await http.post(
-        url,
-        headers: {'Content-Type': 'application/json'},
-        body: body,
-      );
-
-      if (response.statusCode < 200 || response.statusCode >= 300) {
-        throw Exception('Retry failed: ${response.statusCode}');
-      }
-
-      Get.snackbar(
-        'info'.tr,
-        'retryQueued'.tr,
-        backgroundColor: Colors.green,
-        colorText: Colors.white,
-      );
-      return true;
-    } catch (e) {
-      debugPrint('❌ Error retrying generation for $docId: $e');
-      try {
-        await docRef.update({'status': 'error'});
-      } catch (_) {}
-      Get.snackbar(
-        'warningImage'.tr,
-        'wentWrong'.tr,
-        backgroundColor: Colors.red,
-        colorText: Colors.white,
-      );
-      return false;
-    }
-  }
-
   ///Community works
 
+  /// Texto de comunidad por la callable `generateCommunityText`: el marco lo
+  /// resuelve el servidor con la categoria y el tipo seleccionados. Si falla
+  /// relanza el [StartStoryException] para que la pagina elija el aviso.
   Future<void> getCommunityResponse({
-    required String systemPrompt,
     required String userPrompt,
     required String languageCode,
-    required String id,
   }) async {
+    // Se leen antes de pasar a loading: si la selección aún no ha cargado, el
+    // fallo no deja la flecha bloqueada.
+    final BukBukCategoryModel category = bukBukCategoryModel;
+    final BukBukTypeModel type = bukBukTypeModel;
     setRxRequestStatus(CheckStatus.loading);
     setCommunityRequestStatus(CheckStatus.loading);
 
-    String url = 'https://web-production-b405a.up.railway.app/generate';
-
-    var body = {
-      "messages": [
-        {"role": "system", "content": systemPrompt},
-        {"role": "user", "content": userPrompt},
-      ],
-      "max_tokens": 8192,
-      "temperature": 1.4,
-      "frequency_penalty": 1.5,
-      "presence_penalty": 0.3,
-      "conversation_id": id,
-      "stream": false,
-      "language": getLanguageName(languageCode),
-    };
-    var headers = {
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer YOUR_HF_TOKEN',
-    };
-
-    print('The Api Url is $url');
-    print('The Api Header is $headers');
-    print('The Api language is ${getLanguageName(languageCode)}');
-    print('The Api Body is $body');
-
-    try {
-      final apiStart = DateTime.now();
-
-      final response = await http.post(
-        Uri.parse(url),
-        headers: headers,
-        body: json.encode(body),
-      );
-
-      final apiEnd = DateTime.now();
-      final apiDuration = apiEnd.difference(apiStart);
-      print(
-        "⏱️API Response Time: ${apiDuration.inSeconds}.${apiDuration.inMilliseconds % 1000} seconds",
-      );
-
-      if (response.statusCode == 200) {
-        final decodedBody = utf8.decode(response.bodyBytes);
-        final Map<String, dynamic> responseData = json.decode(decodedBody);
-        final String content = responseData['script'] ?? '';
-
-        final String cleanedContent =
-            content
-                .replaceAll(RegExp(r'[#*]'), '')
-                .replaceAll('â', '—')
-                .trim();
-
-        print('Description from the content after cleaning $cleanedContent');
-        addDescription(cleanedContent);
-
+    await requestCommunityText(
+      _storyFunctions,
+      prompt: userPrompt,
+      languageCode: languageCode,
+      category: category,
+      type: type,
+      onText: (text) {
+        addDescription(text);
         setCommunityRequestStatus(CheckStatus.completed);
-      } else {
-        print('❌ Failed to get response: ${response.body}');
-        print('❌ Failed to get response code: ${response.statusCode}');
+      },
+      onError: (e) {
+        debugPrint('⚠️ generateCommunityText falló: $e');
         setCommunityRequestStatus(CheckStatus.error);
         setRxRequestStatus(CheckStatus.error);
-        throw Exception('API failed with status: ${response.statusCode}');
-      }
-    } catch (e) {
-      print("⚠️ Error: ${e.toString()}");
-      setCommunityRequestStatus(CheckStatus.error);
-      setRxRequestStatus(CheckStatus.error);
-      throw Exception('API failed');
-    }
+      },
+    );
   }
 
   bool _isBooksGenerating = true;

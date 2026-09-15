@@ -3,12 +3,12 @@
 import 'dart:ui';
 
 import 'package:avatar_glow/avatar_glow.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:sapere/core/constant/colors.dart';
 import 'package:sapere/core/constant/const.dart';
 import 'package:sapere/core/constant/images.dart';
 import 'package:sapere/core/constant/strings.dart';
 import 'package:sapere/core/services/local_storage_service.dart';
+import 'package:sapere/core/services/story_functions_service.dart';
 import 'package:sapere/providers/sapere_provider.dart';
 import 'package:sapere/routes/app_pages.dart';
 import 'package:flutter/material.dart';
@@ -21,6 +21,14 @@ import 'package:flutter/services.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'custom_gallery.dart';
 import 'package:sapere/views/dashboard/stream/stream.dart';
+
+/// Abre la página del primer documental tras una compra. El provider arranca
+/// con `isCommuinty` en true y solo el '+' del dashboard lo pone a false: sin
+/// esto la flecha pediría texto de comunidad y no crearía ningún documental.
+void openFirstDocumentary(BukBukProvider provider) {
+  provider.isCommuinty = false;
+  Get.to(() => AddSaperePage(initialText: 'unlockFirstDoc'.tr));
+}
 
 class AddSaperePage extends StatefulWidget {
   final String? initialText;
@@ -472,94 +480,63 @@ class _AddSaperePageState extends State<AddSaperePage> {
                                                 );
 
                                                 if (provider.isCommuinty) {
-                                                  final String conversationId =
-                                                      'sapere-${DateTime.now().microsecondsSinceEpoch}';
-
-                                                  String? prompt =
-                                                      provider
-                                                          .bukBukTypeModel
-                                                          .prompts[codeLang];
                                                   await provider
                                                       .getCommunityResponse(
-                                                        systemPrompt:
-                                                            prompt.toString(),
                                                         userPrompt:
                                                             descriptionController
                                                                 .text,
-                                                        id: conversationId,
                                                         languageCode:
                                                             codeLang.toString(),
                                                       );
                                                 } else {
                                                   ///Normal
-                                                  final uid =
-                                                      FirebaseAuth
-                                                          .instance
-                                                          .currentUser!
-                                                          .uid;
-                                                  final hasActive =
-                                                      await provider
-                                                          .checkStoryStatus(uid)
-                                                          .timeout(
-                                                            const Duration(
-                                                              seconds: 6,
-                                                            ),
-                                                            onTimeout:
-                                                                () => false,
-                                                          );
-
-                                                  if (!mounted) return;
-
-                                                  if (hasActive) {
-                                                    Get.snackbar(
-                                                      'warningImage'.tr,
-                                                      'audioRequestAlready'.tr,
-                                                      backgroundColor:
-                                                          Colors.red,
-                                                      colorText:
-                                                          AppColors.whiteColor,
-                                                      duration: const Duration(
-                                                        seconds: 6,
-                                                      ),
-                                                    );
-                                                    return;
-                                                  }
-
+                                                  // Con otra generacion en marcha startStory responde
+                                                  // already_generating: el provider avisa con
+                                                  // audioRequestAlready y la pagina se queda igual.
                                                   String? prompt =
                                                       provider
                                                           .bukBukTypeModel
                                                           .prompts[codeLang];
-                                                  await provider
-                                                      .generateFullStory(
-                                                        systemPrompt:
-                                                            prompt.toString(),
-                                                        baseUserPrompt:
-                                                            descriptionController
-                                                                .text,
-                                                        languageCode:
-                                                            codeLang.toString(),
-                                                      );
-                                                  descriptionController.clear();
+                                                  // Sin documento el aviso ya salio (snackbar o sin
+                                                  // creditos): la pagina se queda con el texto.
+                                                  await whenStoryStarted(
+                                                    () => provider
+                                                        .generateFullStory(
+                                                          systemPrompt:
+                                                              prompt
+                                                                  .toString(),
+                                                          baseUserPrompt:
+                                                              descriptionController
+                                                                  .text,
+                                                          languageCode:
+                                                              codeLang
+                                                                  .toString(),
+                                                        ),
+                                                    (_) {
+                                                      descriptionController
+                                                          .clear();
 
-                                                  // El documento ya existe y el audio está encolado:
-                                                  // a partir de aquí nada debe mostrarse como fallo de creación.
-                                                  if (mounted) {
-                                                    try {
-                                                      Provider.of<StreamVm>(
-                                                        context,
-                                                        listen: false,
-                                                      ).refreshWithDelay(
-                                                        seconds: 4,
-                                                      );
-                                                    } catch (e) {
-                                                      debugPrint(
-                                                        'Stream refresh skipped: $e',
-                                                      );
-                                                    }
-                                                    Get.offAllNamed(
-                                                      Routes.dashboardScreen,
-                                                    );
-                                                  }
+                                                      // El documento ya existe y el audio está encolado:
+                                                      // a partir de aquí nada debe mostrarse como fallo de creación.
+                                                      if (mounted) {
+                                                        try {
+                                                          Provider.of<StreamVm>(
+                                                            context,
+                                                            listen: false,
+                                                          ).refreshWithDelay(
+                                                            seconds: 4,
+                                                          );
+                                                        } catch (e) {
+                                                          debugPrint(
+                                                            'Stream refresh skipped: $e',
+                                                          );
+                                                        }
+                                                        Get.offAllNamed(
+                                                          Routes.dashboardScreen,
+                                                        );
+                                                      }
+                                                    },
+                                                  );
                                                 }
                                               } catch (e) {
                                                 debugPrint(
@@ -567,7 +544,12 @@ class _AddSaperePageState extends State<AddSaperePage> {
                                                 );
                                                 Get.snackbar(
                                                   'error'.tr,
-                                                  'wentWrong'.tr,
+                                                  (e is StartStoryException
+                                                          ? generationErrorMessageKey(
+                                                            e.error,
+                                                          )
+                                                          : 'wentWrong')
+                                                      .tr,
                                                   backgroundColor: Colors.red,
                                                   colorText: Colors.white,
                                                 );

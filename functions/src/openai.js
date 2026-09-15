@@ -4,26 +4,25 @@ const { secrets, options, COVER_FETCH_TIMEOUT_MS } = require('./config');
 
 // OpenAI solo se usa para la portada: el texto lo genera el Space DocuGenerator.
 const IMAGE_ENDPOINT = 'https://api.openai.com/v1/images/generations';
-const IMAGE_FALLBACK_MODEL = 'dall-e-3';
+// dall-e-3 se apago el 2026-05-12; gpt-image-1 se apaga el 2026-10-23 y
+// gpt-image-1-mini y gpt-image-1.5 el 2026-12-01, todos con gpt-image-2 como
+// sustituto (pagina de deprecaciones de OpenAI). gpt-image-2 es el modelo por
+// defecto y el respaldo de cualquier otro que se configure.
+const IMAGE_FALLBACK_MODEL = 'gpt-image-2';
 
 function isEnabled() {
   return Boolean(secrets.openaiKey());
 }
 
+// Solo quedan modelos GPT Image: responden en b64_json sin response_format.
 async function requestImage(key, model, prompt) {
-  const isGptImage = model.startsWith('gpt-image');
   const body = {
     model,
     prompt,
     n: 1,
     size: '1024x1536',
+    quality: 'medium',
   };
-  if (isGptImage) {
-    body.quality = 'medium';
-  } else {
-    body.size = '1024x1792';
-    body.response_format = 'b64_json';
-  }
 
   const response = await fetch(IMAGE_ENDPOINT, {
     method: 'POST',
@@ -55,11 +54,12 @@ async function requestImage(key, model, prompt) {
   throw new Error('OpenAI imagen: respuesta sin imagen');
 }
 
-// gpt-image-1 exige organizacion verificada; si falla, reintenta con dall-e-3.
+// Si el modelo principal falla (organizacion sin verificar, moderacion, tiempo) se
+// reintenta una vez con IMAGE_FALLBACK_MODEL, salvo que ya sea ese.
 async function generateImage(prompt) {
   const key = secrets.openaiKey();
   if (!key) throw new Error('OpenAI: falta OPENAI_API_KEY');
-  const primary = options.openaiImageModel() || 'gpt-image-1';
+  const primary = options.openaiImageModel() || IMAGE_FALLBACK_MODEL;
   try {
     return await requestImage(key, primary, prompt);
   } catch (error) {

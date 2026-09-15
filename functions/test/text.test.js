@@ -3,7 +3,12 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 
-const { toParagraphs, cleanScript, sectionTitle } = require('../src/text');
+const {
+  toParagraphs,
+  cleanScript,
+  cleanAiNotes,
+  sectionTitle,
+} = require('../src/text');
 
 test('toParagraphs limpia markdown y separa por lineas en blanco', () => {
   const raw = '## Capitulo 1\n\n**Primer** parrafo con *enfasis*.\n\n- Segundo parrafo.\n\n\n';
@@ -36,4 +41,40 @@ test('sectionTitle toma el titulo del encabezado sin el prefijo de numeracion', 
   assert.equal(sectionTitle('## Delfines: el mar abierto', 0), 'Delfines: el mar abierto');
   assert.equal(sectionTitle('## **El final**', 5), 'El final');
   assert.equal(sectionTitle('Sin encabezado.', 4), 'Sección 5');
+});
+
+test('las notas meta del modelo (patrones de clean_ai_notes del Space) no se guardan ni las lee el TTS', () => {
+  const raw = [
+    '## Sección 3: El faro',
+    '',
+    'El faro medía más de cien metros.',
+    '',
+    '[Continuará en la siguiente sección]',
+    '',
+    '*Nota: por límite de extensión, continuaré en la siguiente sección.*',
+  ].join('\n');
+  assert.deepEqual(toParagraphs(raw), ['Sección 3: El faro', 'El faro medía más de cien metros.']);
+  assert.deepEqual(
+    toParagraphs('The lighthouse fell.\r\n\r\nNote: due to length restrictions I will continue later.\r\n\r\nTo be continued.'),
+    ['The lighthouse fell.'],
+  );
+  assert.equal(cleanAiNotes('Texto.\n\nNOTA: POR LÍMITE DE EXTENSIÓN sigo'), 'Texto.\n\n', 'sin salto final y sin distinguir mayusculas');
+  assert.deepEqual(toParagraphs('Una nota de color: el faro era blanco.'), ['Una nota de color: el faro era blanco.']);
+});
+
+test("una 'nota:' dentro de la narracion no es una nota meta: solo cuenta una linea corta que empiece por ella", () => {
+  const legit = [
+    'Darwin tomó una nota: los picos de los pinzones variaban en longitud según la isla, y esa observación cambió la biología.',
+    'Historians take note: the length of the Great Wall is disputed, but its purpose is not.',
+    'Beethoven dejó escrita una sola nota: continuar el tema en la siguiente sinfonía.',
+    `Nota: ${'la longitud del faro superaba la de cualquier torre conocida, '.repeat(5)}y los viajeros lo contaban.`,
+  ];
+  for (const paragraph of legit) {
+    assert.deepEqual(toParagraphs(`Primero.\n\n${paragraph}\n\nÚltimo.`), ['Primero.', paragraph, 'Último.'], paragraph);
+    assert.equal(cleanAiNotes(paragraph), paragraph, paragraph);
+  }
+  assert.deepEqual(
+    toParagraphs('Primero.\n\n(Nota: continuaré con la caída del faro en la siguiente sección.)\n\nÚltimo.'),
+    ['Primero.', 'Último.'],
+  );
 });

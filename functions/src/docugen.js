@@ -1,5 +1,6 @@
 'use strict';
 
+const { randomBytes } = require('crypto');
 const { DOCUGEN, MAX_SYSTEM_PROMPT_CHARS } = require('./config');
 const { sanitizeError } = require('./sanitize');
 
@@ -52,6 +53,12 @@ function isFatal(error) {
 
 function short(text, max = 200) {
   return String(text || '').replace(/\s+/g, ' ').trim().slice(0, max);
+}
+
+// Los errores de las llamadas al Space ya empiezan por su etiqueta ('titulo: ...').
+function withoutLabel(error, label) {
+  const message = String((error && error.message) || '');
+  return message.startsWith(`${label}: `) ? message.slice(label.length + 2) : message;
 }
 
 // Errores de DeepSeek que llegan dentro del texto del Space (evento SSE 'error'
@@ -371,10 +378,26 @@ function createSseParser(onData) {
   };
 }
 
+// Final de la ultima oracion completa, con sus comillas, parentesis o marcas de
+// cierre. En chino y japones el punto no va seguido de espacio.
+const SENTENCE_END = /[.!?…؟।]["'»”’)\]*_]*(?=\s|$)|[。！？]["'»”’」』)\]*_]*/g;
+
+function cutToLastSentence(text) {
+  const value = String(text || '');
+  let end = 0;
+  for (const match of value.matchAll(SENTENCE_END)) end = match.index + match[0].length;
+  return value.slice(0, end).trim();
+}
+
 // Acumula una seccion a partir de bytes o texto del stream. push() devuelve true
 // cuando ya llego 'done'. finish() exige 'done' y contenido no vacio.
 // El razonamiento ('reasoning') se descarta: nunca se guarda ni se reenvia.
-function createSectionReader() {
+// En modo thinking el razonamiento cuenta en max_tokens: si usage.completion_tokens
+// llega a maxTokens la seccion vino cortada y se recorta a la ultima oracion
+// completa (truncated: true); si no queda ninguna, REINTENTABLE. Con
+// cutToSentence false se entrega sin recortar: un JSON no tiene oraciones y lo
+// interpreta quien llama.
+function createSectionReader({ maxTokens = 0, cutToSentence = true } = {}) {
   const decoder = new TextDecoder('utf-8');
   let content = '';
   let done = null;
@@ -407,12 +430,26 @@ function createSectionReader() {
       parser.push(decoder.decode());
       parser.end();
       if (!done) throw new RetryableError('Stream del Space cortado sin evento done');
-      if (!content.trim()) throw new RetryableError('El Space devolvio una seccion vacia');
+      const usage = done.usage || null;
+      const completionTokens = Number(usage && usage.completion_tokens);
+      const truncated = maxTokens > 0 && completionTokens >= maxTokens;
+      const cut = truncated && cutToSentence;
+      const text = cut ? cutToLastSentence(content) : content;
+      if (!text.trim()) {
+        let message = 'El Space devolvio una seccion vacia';
+        if (cut) {
+          message = `El Space devolvio una seccion cortada por max_tokens (${completionTokens}) sin ninguna oracion completa`;
+        } else if (truncated) {
+          message = `El Space agoto max_tokens (${completionTokens}) sin devolver texto`;
+        }
+        throw new RetryableError(message);
+      }
       const minutes = Number(done.estimated_minutes);
       return {
-        content,
+        content: text,
         estimatedMinutes: Number.isFinite(minutes) ? minutes : null,
-        usage: done.usage || null,
+        usage,
+        truncated,
       };
     },
   };
@@ -685,11 +722,11 @@ function createClient({
       if (!error || !error.unavailable) throw error;
       if (deadline && deadline - now() < cfg.wakeMaxMs + retryNeedsMs + cfg.deadlineMarginMs) {
         throw new RetryableError(
-          `${label}: ${error.message}; sin tiempo para despertar el Space en esta invocacion`,
+          `${label}: ${withoutLabel(error, label)}; sin tiempo para despertar el Space en esta invocacion`,
           { status: error.status },
         );
       }
-      console.warn(`[docugen] ${label}: ${error.message}; se consulta el estado del Space`);
+      console.warn(`[docugen] ${label}: ${withoutLabel(error, label)}; se consulta el estado del Space`);
       await ensureAvailable();
       try {
         return await attempt();
@@ -697,7 +734,7 @@ function createClient({
         remember(retryError);
         if (retryError && retryError.unavailable) {
           throw new RetryableError(
-            `${label}: el Space sigue sin responder tras comprobar su estado (${retryError.message})`,
+            `${label}: el Space sigue sin responder tras comprobar su estado (${withoutLabel(retryError, label)})`,
             { status: retryError.status },
           );
         }
@@ -759,7 +796,19 @@ function createClient({
     return { outline, sections: Number.isFinite(sections) ? sections : null };
   }
 
-  async function streamSection({ id, area, language, durationMinutes, messages, label, deadline = null }) {
+  async function streamSection({
+    id,
+    area,
+    language,
+    durationMinutes,
+    messages,
+    label,
+    deadline = null,
+    path = `/documentary/${encodeURIComponent(area)}`,
+    maxTokens = cfg.maxTokens,
+    cutToSentence = true,
+    extraBody = {},
+  }) {
     guard();
     const controller = new AbortController();
     let reason = null;
@@ -788,7 +837,7 @@ function createClient({
     try {
       let response;
       try {
-        response = await fetchImpl(`${cfg.baseUrl}/documentary/${encodeURIComponent(area)}`, {
+        response = await fetchImpl(`${cfg.baseUrl}${path}`, {
           method: 'POST',
           headers: authHeaders({ 'Content-Type': 'application/json', Accept: 'text/event-stream' }),
           body: JSON.stringify({
@@ -798,7 +847,8 @@ function createClient({
             language,
             level: cfg.level,
             duration_minutes: durationMinutes,
-            max_tokens: cfg.maxTokens,
+            max_tokens: maxTokens,
+            ...extraBody,
           }),
           signal: controller.signal,
         });
@@ -813,10 +863,20 @@ function createClient({
         throw error;
       }
 
-      const section = createSectionReader();
+      const section = createSectionReader({ maxTokens, cutToSentence });
+      const finish = () => {
+        const result = section.finish();
+        if (result.truncated) {
+          console.warn(
+            `[docugen] ${label} (${id}): cortada por max_tokens (${result.usage.completion_tokens} de ${maxTokens} tokens); `
+            + (cutToSentence ? 'se entrega hasta la ultima oracion completa' : 'se entrega sin recortar'),
+          );
+        }
+        return result;
+      };
       if (!response.body || typeof response.body.getReader !== 'function') {
         section.push(await response.text());
-        return section.finish();
+        return finish();
       }
 
       const reader = response.body.getReader();
@@ -836,7 +896,7 @@ function createClient({
       } finally {
         reader.cancel().catch(() => {});
       }
-      return section.finish();
+      return finish();
     } finally {
       clearTimeout(totalTimer);
       clearTimeout(idleTimer);
@@ -873,10 +933,59 @@ function createClient({
     }, { deadline, retryNeedsMs: cfg.sectionTimeoutMs });
   }
 
+  // Una respuesta suelta (texto de comunidad, flashcards). app.py no tiene un
+  // endpoint neutro: /generate es el de secciones con el area en el cuerpo, y el
+  // Space mete el mensaje system dentro de su propio prompt de documental.
+  // Mismo stream, clasificacion de errores, despertar y conversation_id nuevo
+  // por intento (que se borra) que una seccion. `deadline` es el plazo de la
+  // invocacion y `retryNeedsMs` lo minimo que necesita la llamada repetida. Con
+  // `cutToSentence` false lo cortado por max_tokens se entrega sin recortar.
+  async function generateText({
+    kind,
+    area,
+    language,
+    durationMinutes,
+    messages,
+    maxTokens = cfg.maxTokens,
+    reasoningEffort = null,
+    cutToSentence = true,
+    deadline = null,
+    retryNeedsMs = 0,
+  }) {
+    const label = String(kind || 'texto');
+    const last = Array.isArray(messages) ? messages[messages.length - 1] : null;
+    if (!last || last.role !== 'user') throw new FatalError(`${label}: el historial debe terminar en un mensaje user`);
+    const spaceArea = validArea(area);
+    const extraBody = reasoningEffort ? { area: spaceArea, reasoning_effort: reasoningEffort } : { area: spaceArea };
+
+    return withWake(label, async () => {
+      const id = conversationId({ docId: `${label}-${randomBytes(3).toString('hex')}`, index: 0, now: now() });
+      try {
+        const result = await streamSection({
+          id,
+          area: spaceArea,
+          language,
+          durationMinutes,
+          messages,
+          label,
+          deadline,
+          path: '/generate',
+          maxTokens,
+          cutToSentence,
+          extraBody,
+        });
+        return { ...result, conversationId: id };
+      } finally {
+        deleteConversation(id);
+      }
+    }, { deadline, retryNeedsMs });
+  }
+
   return {
     generateTitle,
     generateOutline,
     generateSection,
+    generateText,
     deleteConversation,
     ensureAvailable,
     getRuntime,

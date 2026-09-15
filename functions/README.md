@@ -15,7 +15,7 @@ Ya **no se genera audio en el servidor**: la voz la pone el lector bimodal del d
 | Qué | Quién | Notas |
 |---|---|---|
 | Texto (título, escaleta, guion) | **Space privado de Hugging Face `Bukbuk/DocuGenerator`** (FastAPI + `deepseek-reasoner`) | Único generador de texto. **Sin respaldo** a otro modelo: si el Space falla, la tarea reintenta o termina en `error` con reembolso. |
-| Portada | OpenAI (`gpt-image-1` → `dall-e-3`) → Pollinations | Prompt visual construido con título + tema, sin modelo de texto. |
+| Portada | OpenAI (`gpt-image-2`) → Pollinations | Prompt visual construido con título + tema, sin modelo de texto. |
 | Créditos | RevenueCat (moneda virtual) → reserva heredada `users/{uid}.credits` | Sin cambios. |
 
 Ya no se usan el router de Hugging Face (`HF_MODEL`), Gemini ni el chat de OpenAI.
@@ -163,8 +163,10 @@ fallida + despertar el Space + sección, unos 13 min) queda por debajo de los 45
 usuario y `hasActiveGeneration` usan 60 min (≥ 45 + intervalo del barrido), y `hasActiveGeneration`
 usa 235 min para lo que está en cola.
 
-Nunca reembolsa dos veces (transacción sobre el documento de gasto) y, si el ajuste de saldo falla,
-lo reintenta como mucho 2 veces antes de dejar el gasto en `refundState: 'needs_review'`.
+Nunca reembolsa dos veces (transacción sobre el documento de gasto, y la misma `Idempotency-Key` de
+RevenueCat en todos los intentos) y, si el ajuste de saldo falla, lo reintenta como mucho 2 veces,
+separadas 10 min, antes de dejar el gasto en `refundState: 'needs_review'`. Un 401, 403, 429 o 503 de
+RevenueCat no cuenta como intento: no aplicó nada.
 
 ### `creditsBalance`
 
@@ -224,14 +226,15 @@ Sin `HF_TOKEN` no hay texto: la generación termina en `error` con reembolso.
 ### Variables (`functions/.env`, no se sube a git)
 
 ```
-OPENAI_IMAGE_MODEL=gpt-image-1
+OPENAI_IMAGE_MODEL=gpt-image-2
 REVENUECAT_CURRENCY=CRD
 ```
 
 `HF_MODEL` ya no existe. Los parámetros del Space y de la cola (URL, tiempos, secciones por tipo,
 reintentos) son **constantes** en `src/config.js`, no variables: firebase-tools 15 en modo no
-interactivo no aplica los valores por defecto de `defineString`. Si `gpt-image-1` falla (exige
-organización verificada en OpenAI) se reintenta solo con `dall-e-3`.
+interactivo no aplica los valores por defecto de `defineString`. `gpt-image-1` se apaga el 23-10-2026:
+el modelo es `gpt-image-2` (exige organización verificada en OpenAI); si se configura otro y falla, se
+reintenta con `gpt-image-2`, y si falla `gpt-image-2` la portada la hace Pollinations.
 
 ---
 
@@ -381,7 +384,7 @@ functions/
   src/credits.js        cobro y reembolso (portado de sapere-backend/src/credits.js)
   src/revenuecat.js     moneda virtual v2 (portado de sapere-backend/src/revenuecat.js)
   src/prompts.js        prompt de portada
-  src/openai.js         imágenes (gpt-image-1 → dall-e-3)
+  src/openai.js         imágenes (gpt-image-2)
   src/text.js           limpieza y troceado en párrafos, título de sección
   src/cover.js          portada: OpenAI → Pollinations
   src/storage.js        subida con token de descarga permanente

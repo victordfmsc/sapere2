@@ -10,6 +10,9 @@ const SPENDS_COLLECTION = 'creditSpends';
 const USERS_COLLECTION = 'users';
 // Cerrojo por usuario (solo servidor: firestore.rules lo deniega al cliente).
 const LOCKS_COLLECTION = 'generationLocks';
+// Uso de las callables de IA por usuario (solo servidor, como los cerrojos).
+const AI_USAGE_COLLECTION = 'aiUsage';
+const LEARNING_CARDS_COLLECTION = 'learning_cards';
 const TASK_QUEUE = 'generateStory';
 // firebase-admin resuelve us-central1 si no se indica la region.
 const TASK_QUEUE_RESOURCE = `locations/${REGION}/functions/${TASK_QUEUE}`;
@@ -94,7 +97,12 @@ const DOCUGEN = Object.freeze({
   runtimeUrl: 'https://huggingface.co/api/spaces/Bukbuk/DocuGenerator/runtime',
   restartUrl: 'https://huggingface.co/api/spaces/Bukbuk/DocuGenerator/restart',
   level: 'intermedio',
-  maxTokens: 4096,
+  // max_tokens lo comparten el razonamiento (thinking, esfuerzo high) y el texto
+  // de la seccion (650-800 palabras): con 4096 salian secciones cortadas o vacias.
+  // El Space lo pasa tal cual a DeepSeek, que admite hasta 393216. 16000 tokens
+  // caben en SECTION_TIMEOUT_MS mientras DeepSeek genere mas de 38 tokens/s (V4 Pro
+  // va a unos 90); el plazo de la invocacion no cambia: lo acotan las guardas.
+  maxTokens: 16000,
   sectionTimeoutMs: SECTION_TIMEOUT_MS,
   deadlineMarginMs: DEADLINE_MARGIN_MS,
   idleTimeoutMs: 150 * 1000,
@@ -117,7 +125,31 @@ const CREDIT_SECRETS = [REVENUECAT_SECRET_KEY, REVENUECAT_PROJECT_ID];
 // HF_TOKEN: Space; OPENAI_API_KEY: portada; RevenueCat: reembolso si falla.
 const GENERATE_SECRETS = [HF_TOKEN, OPENAI_API_KEY, REVENUECAT_SECRET_KEY, REVENUECAT_PROJECT_ID];
 
-const OPENAI_IMAGE_MODEL = defineString('OPENAI_IMAGE_MODEL', { default: 'gpt-image-1' });
+// Callables de IA de la app (generateCommunityText y generateFlashcards): una
+// sola llamada al Space dentro de la invocacion.
+const ASSIST_SECRETS = [HF_TOKEN];
+const ASSIST_TIMEOUT_SECONDS = 300;
+// Despertar el Space, repetir la llamada con al menos ASSIST_MIN_CALL_MS y la
+// reserva final (escribir las tarjetas y responder) caben en el timeout:
+// 150 + 90 + 20 = 260 s de 300. Lo que sobra cubre lo previo: lecturas de
+// Firestore, limite de uso y el primer intento fallido.
+const ASSIST_DOCUGEN = Object.freeze({ wakeMaxMs: 150 * 1000, deadlineMarginMs: 20 * 1000 });
+const ASSIST_MIN_CALL_MS = 90 * 1000;
+// Una sola seccion de unos 5 minutos. max_tokens lo comparte el razonamiento:
+// las flashcards piden poco (esfuerzo low) y solo leen el principio del documental.
+const COMMUNITY_TEXT_PLAN = Object.freeze({ durationMinutes: 5, maxTokens: 8192 });
+const FLASHCARDS_PLAN = Object.freeze({
+  durationMinutes: 5,
+  maxTokens: 8192,
+  reasoningEffort: 'low',
+  maxContentChars: 16000,
+});
+// Limite por usuario compartido por las dos callables, en ventana deslizante.
+// Cuenta toda llamada que llega al Space, tambien las que fallan.
+const AI_USAGE_MAX_CALLS = 30;
+const AI_USAGE_WINDOW_MS = 24 * 60 * 60 * 1000;
+
+const OPENAI_IMAGE_MODEL = defineString('OPENAI_IMAGE_MODEL', { default: 'gpt-image-2' });
 const REVENUECAT_CURRENCY = defineString('REVENUECAT_CURRENCY', { default: 'CRD' });
 
 // .value() de un parametro lee process.env; si algo falla (despliegue, test)
@@ -142,7 +174,7 @@ const secrets = {
 };
 
 const options = {
-  openaiImageModel: () => readParam(OPENAI_IMAGE_MODEL, 'OPENAI_IMAGE_MODEL', 'gpt-image-1'),
+  openaiImageModel: () => readParam(OPENAI_IMAGE_MODEL, 'OPENAI_IMAGE_MODEL', 'gpt-image-2'),
   revenuecatCurrency: () => readParam(REVENUECAT_CURRENCY, 'REVENUECAT_CURRENCY', 'CRD'),
 };
 
@@ -152,6 +184,8 @@ module.exports = {
   SPENDS_COLLECTION,
   USERS_COLLECTION,
   LOCKS_COLLECTION,
+  AI_USAGE_COLLECTION,
+  LEARNING_CARDS_COLLECTION,
   TASK_QUEUE,
   TASK_QUEUE_RESOURCE,
   IN_PROGRESS_STATUSES,
@@ -185,6 +219,14 @@ module.exports = {
   REVENUECAT_PROJECT_ID,
   CREDIT_SECRETS,
   GENERATE_SECRETS,
+  ASSIST_SECRETS,
+  ASSIST_TIMEOUT_SECONDS,
+  ASSIST_DOCUGEN,
+  ASSIST_MIN_CALL_MS,
+  COMMUNITY_TEXT_PLAN,
+  FLASHCARDS_PLAN,
+  AI_USAGE_MAX_CALLS,
+  AI_USAGE_WINDOW_MS,
   OPENAI_IMAGE_MODEL,
   REVENUECAT_CURRENCY,
   secrets,

@@ -17,7 +17,7 @@ async function pollinations(prompt) {
   return { buffer, contentType: response.headers.get('content-type') || 'image/jpeg' };
 }
 
-// Portada: OpenAI (gpt-image-1 -> dall-e-3) y, si no hay clave o falla,
+// Portada: OpenAI (gpt-image-2) y, si no hay clave o falla,
 // Pollinations, que no necesita credenciales.
 async function generateCover(visualPrompt) {
   const prompt = buildCoverPrompt(visualPrompt);

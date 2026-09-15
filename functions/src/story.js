@@ -2,6 +2,7 @@
 
 const {
   DOCS_COLLECTION,
+  SPENDS_COLLECTION,
   LOCKS_COLLECTION,
   IN_PROGRESS_STATUSES,
   ACTIVE_LOCK_MS,
@@ -51,8 +52,14 @@ class TerminatedError extends Error {
   }
 }
 
+// Lo unico que admite un documento 'completed': la portada, que corre en
+// paralelo con el guion y puede llegar despues de cerrarlo.
+const LATE_COVER_FIELDS = ['newCover', 'generation.coverProvider'];
+
 // Escritura guardada: relee el documento en una transaccion y no toca nada si
-// ya esta en 'error' o reembolsado. Con `status` null solo escribe `extra`.
+// ya esta en 'error' o reembolsado. Un 'completed' ya se entrego: una ejecucion
+// duplicada o tardia de la tarea no puede truncarlo ni dejarlo esperando
+// reintento. Con `status` null solo escribe `extra`.
 // Con `spendMark` (SPEND_DELIVERED o SPEND_CLOSED_IN_ERROR) deja esa marca en el
 // gasto del documento dentro de la misma transaccion.
 // Devuelve { applied, reason?, status? }.
@@ -63,7 +70,11 @@ async function advanceStatus(db, docRef, status, extra = {}, { spendMark = null 
     const data = snap.data();
     if (data.status === 'error') return { applied: false, reason: 'terminal' };
     if ((data.generation || {}).refunded === true) return { applied: false, reason: 'refunded' };
-    if (status === 'error' && data.status === 'completed') return { applied: false, reason: 'completed' };
+    if (data.status === 'completed') {
+      const fields = Object.keys(extra);
+      const lateCover = !status && fields.length > 0 && fields.every((field) => LATE_COVER_FIELDS.includes(field));
+      if (!lateCover) return { applied: false, reason: 'completed' };
+    }
 
     const markSpend = spendMark
       ? await prepareSpendMark(tx, db, (data.generation || {}).spendId, spendMark, { uid: data.uId, docId: docRef.id })
@@ -165,6 +176,7 @@ function buildInitialDoc({
   gamificationEpisode,
   spendId,
   framework,
+  provisionalTitle,
 }) {
   const now = new Date();
   return {
@@ -172,6 +184,9 @@ function buildInitialDoc({
     postId: docId,
     type,
     bukbukName: '',
+    // Titulo que manda la app: lo muestra mientras bukbukName esta vacio (en cola o
+    // si falla antes del definitivo) y es el respaldo si el Space no da titulo.
+    provisionalTitle: provisionalTitle || '',
     // Ya no hay audio de servidor: la voz la pone el lector bimodal del dispositivo.
     bukbukUrl: '',
     description: [],
@@ -264,8 +279,17 @@ async function runIdentityTrack(ctx) {
       // Un fatal (DeepSeek sin saldo, sin acceso al Space) no tiene arreglo: ni
       // titulo de respaldo ni portada para un documento que acabara en 'error'.
       if (docugen.isFatal(error)) throw error;
-      title = docugen.fallbackTitle(data.prompt);
-      console.warn(`[story] ${docId}: titulo del Space fallido, se usa el tema: ${sanitizeError(error)}`);
+      // Respaldo: el titulo provisional de la app y, si no lo hay, el tema recortado.
+      // Un provisional acabado en '...' es el tema que la app corta a 37 caracteres
+      // (titleFromPrompt): fallbackTitle lo corta mejor, a 60 y entre palabras.
+      const provisional = /(\.\.\.|…)\s*$/.test(String(data.provisionalTitle || ''))
+        ? ''
+        : docugen.cleanTitle(data.provisionalTitle);
+      title = provisional || docugen.fallbackTitle(data.prompt);
+      console.warn(
+        `[story] ${docId}: titulo del Space fallido, se usa ${provisional ? 'el provisional de la app' : 'el tema'}: `
+        + sanitizeError(error),
+      );
     }
     const titled = await advanceStatus(db, docRef, 'generating_title', {
       bukbukName: title,
@@ -384,7 +408,8 @@ async function runScriptTrack(ctx) {
       deadline: ctx.deadline,
     });
 
-    const raw = String(result.content).trim();
+    // Sin las notas meta del modelo: ni se guardan ni se reenvian como historial.
+    const raw = text.cleanAiNotes(result.content).trim();
     const sectionParagraphs = text.toParagraphs(raw);
     if (!sectionParagraphs.length) {
       throw new docugen.RetryableError(`La seccion ${index + 1} llego vacia tras limpiar el texto`);
@@ -436,6 +461,8 @@ async function runStory({
 
   if (!snap.exists) {
     console.warn(`[story] ${docId}: el documento ya no existe`);
+    // Borrado antes de este intento: nada lo retiene (el cerrojo solo se suelta si es suyo).
+    await releaseGenerationLock(db, uid, docId).catch(() => {});
     return { skipped: true, reason: 'not_found' };
   }
 
@@ -504,14 +531,18 @@ async function runStory({
 
   if (failure) {
     if (failure instanceof TerminatedError) {
-      if (failure.reason === 'not_found' && ctx.shared.delivered) {
-        // El dueno borro el documento cuando ya tenia texto legible: se entrego.
-        console.log(`[story] ${docId}: borrado por su dueno despues de tener texto; se liquida el gasto`);
-        if (generation.spendId) {
-          await credits.settleSpend(db, generation.spendId).catch((error) => {
-            console.error(`[story] ${docId}: no se pudo liquidar el gasto: ${sanitizeError(error)}`);
-          });
+      if (failure.reason === 'not_found') {
+        if (ctx.shared.delivered) {
+          // El dueno borro el documento cuando ya tenia texto legible: se entrego.
+          console.log(`[story] ${docId}: borrado por su dueno despues de tener texto; se liquida el gasto`);
+          if (generation.spendId) {
+            await credits.settleSpend(db, generation.spendId).catch((error) => {
+              console.error(`[story] ${docId}: no se pudo liquidar el gasto: ${sanitizeError(error)}`);
+            });
+          }
         }
+        // Sin texto entregado el credito lo devuelve la conciliacion del barrido; el
+        // cerrojo se suelta ya para que el usuario pueda crear otro.
         await releaseGenerationLock(db, owner, docId).catch(() => {});
       }
       console.log(`[story] ${docId}: ${failure.message}; no se entrega`);
@@ -590,11 +621,29 @@ async function refundDoc(db, docId, credits = defaultCredits) {
   if (!generation.spendId) return { refunded: false, reason: 'no_spend_id' };
   if (generation.refunded === true) return { refunded: false, reason: 'already_refunded' };
 
-  const result = await credits.refundSpend(db, generation.spendId, {}, { uid: data.uId, docId });
+  let result;
+  try {
+    result = await credits.refundSpend(db, generation.spendId, {}, { uid: data.uId, docId });
+  } catch (error) {
+    // Al agotar los intentos refundSpend deja el gasto en revision y relanza el error.
+    const spend = await db.collection(SPENDS_COLLECTION).doc(generation.spendId).get().catch(() => null);
+    if (spend && spend.exists && spend.data().refundState === 'needs_review') await flagRefundReview(docRef);
+    throw error;
+  }
   if (result.refunded || result.reason === 'already_refunded') {
     await docRef.update({ 'generation.refunded': true, updatedAt: new Date() });
+  } else if (result.reason === 'needs_review') {
+    await flagRefundReview(docRef);
   }
   return result;
+}
+
+// Contrato con la app: el gasto quedo para revision manual y ningun proceso lo va
+// a devolver solo, asi que la app deja de decir que el credito esta en camino.
+function flagRefundReview(docRef) {
+  return docRef.update({ 'generation.refundState': 'needs_review', updatedAt: new Date() }).catch((error) => {
+    console.error(`[story] ${docRef.id}: no se pudo marcar el reembolso para revision: ${sanitizeError(error)}`);
+  });
 }
 
 module.exports = {
@@ -603,6 +652,7 @@ module.exports = {
   runScriptTrack,
   runCoverTrack,
   refundDoc,
+  flagRefundReview,
   advanceStatus,
   hasActiveGeneration,
   acquireGenerationLock,

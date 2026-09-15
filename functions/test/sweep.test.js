@@ -4,8 +4,10 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 
 const { FakeFirestore } = require('./helpers/firestore');
+const { installFetch } = require('./helpers/fetch');
 const { sweepStalledDocs } = require('../src/sweep');
 const { QUEUE_STALE_MS } = require('../src/config');
+const { REFUND_RETRY_MS } = require('../src/credits');
 
 const MINUTE = 60 * 1000;
 
@@ -292,4 +294,120 @@ test('un documento sin marca de tiempo no se marca como error', async () => {
   const result = await sweepStalledDocs(db, { credits });
   assert.equal(result.marked, 0);
   assert.equal(db.dump('sapere').raro.status, 'pending');
+});
+
+test('una pasada no gasta dos intentos de reembolso del mismo gasto y suelta el cerrojo aunque el reembolso falle', async () => {
+  const db = new FakeFirestore({
+    sapere: { atascado: doc('generating_script', 50, { spendId: 'spend1' }) },
+    creditSpends: { spend1: spend(50, { docId: 'atascado' }) },
+    generationLocks: { u1: { uid: 'u1', docId: 'atascado', acquiredAt: ago(50) } },
+  });
+  const intentos = [];
+  const credits = {
+    ...fakeCredits(),
+    async refundSpend(db, spendId) {
+      intentos.push(spendId);
+      throw new Error('RevenueCat API 503: Service Unavailable');
+    },
+  };
+
+  const result = await sweepStalledDocs(db, { credits });
+
+  assert.equal(result.marked, 1);
+  assert.equal(result.errors, 1);
+  assert.deepEqual(intentos, ['spend1'], 'la conciliacion no repite el intento de la pasada de atascados');
+  assert.equal(db.dump('sapere').atascado.status, 'error');
+  assert.equal(db.dump('generationLocks').u1, undefined, 'el cerrojo se suelta aunque falle el reembolso');
+});
+
+test('una caida de RevenueCat (503) mas larga que la espera entre intentos no manda el credito a revision: pasada la caida se devuelve', async (t) => {
+  process.env.REVENUECAT_SECRET_KEY = 'sk_test_fake_key_para_pruebas';
+  process.env.REVENUECAT_PROJECT_ID = 'proj_fake';
+  t.after(() => {
+    delete process.env.REVENUECAT_SECRET_KEY;
+    delete process.env.REVENUECAT_PROJECT_ID;
+  });
+  const posts = [];
+  const net = installFetch([
+    {
+      match: (url, init) => url.includes('/virtual_currencies/transactions') && init.method === 'POST',
+      respond: (url, init) => {
+        posts.push(JSON.parse(init.body).adjustments.CRD);
+        return posts.length <= 2 ? { status: 503, text: 'Service Unavailable' } : { status: 200, json: {} };
+      },
+    },
+  ]);
+  t.after(net.restore);
+
+  const db = new FakeFirestore({
+    sapere: { atascado: doc('generating_script', 50, { spendId: 'spendR' }) },
+    creditSpends: { spendR: spend(50, { docId: 'atascado' }) },
+  });
+  const pasaLaEspera = () => db.store.set('creditSpends/spendR', {
+    ...db.store.get('creditSpends/spendR'),
+    lastRefundAttemptAt: ago(REFUND_RETRY_MS / MINUTE + 1),
+  });
+
+  const primera = await sweepStalledDocs(db);
+  let stored = db.dump('creditSpends').spendR;
+  assert.equal(primera.marked, 1);
+  assert.equal(posts.length, 1, 'un solo intento en la pasada');
+  assert.equal(stored.refundAttempts, 0, 'un 503 no aplico nada: no gasta intento');
+  assert.equal(stored.refundState, 'pending');
+
+  const segunda = await sweepStalledDocs(db);
+  assert.equal(segunda.refunded, 0);
+  assert.equal(posts.length, 1, 'la pasada siguiente respeta la espera entre intentos');
+
+  pasaLaEspera();
+  const tercera = await sweepStalledDocs(db);
+  stored = db.dump('creditSpends').spendR;
+  assert.equal(tercera.refunded, 0);
+  assert.equal(posts.length, 2);
+  assert.deepEqual({ refundState: stored.refundState, refundAttempts: stored.refundAttempts }, { refundState: 'pending', refundAttempts: 0 });
+  assert.equal(db.dump('sapere').atascado.generation.refundState, undefined, 'la app no dice que hay que contactar con soporte');
+
+  pasaLaEspera();
+  const cuarta = await sweepStalledDocs(db);
+  stored = db.dump('creditSpends').spendR;
+  assert.equal(cuarta.refunded, 1);
+  assert.deepEqual(posts, [1, 1, 1]);
+  assert.equal(stored.refunded, true);
+  assert.equal(stored.refundAttempts, 1);
+  assert.equal(db.dump('sapere').atascado.generation.refunded, true);
+});
+
+test('un gasto en revision manual se refleja en su documento en error, tambien si ya lo estaba o lo manda ahi la conciliacion', async () => {
+  const db = new FakeFirestore({
+    sapere: {
+      yaEnRevision: doc('error', 60, { spendId: 'spendA' }),
+      sinConfirmar: doc('error', 60, { spendId: 'spendB' }),
+      completado: doc('completed', 60, { spendId: 'spendC' }),
+      ajeno: doc('error', 60, { spendId: 'otroGasto' }),
+    },
+    creditSpends: {
+      spendA: spend(60, { docId: 'yaEnRevision', refundState: 'needs_review', refundAttempts: 2 }),
+      spendB: spend(60, { docId: 'sinConfirmar', applied: false, chargeState: 'pending' }),
+      spendC: spend(60, { docId: 'completado', refundState: 'needs_review' }),
+      spendD: spend(60, { docId: 'ajeno', refundState: 'needs_review' }),
+      spendE: spend(60, { docId: 'nuncaCreado', applied: false, chargeState: 'unknown', refundState: 'needs_review' }),
+    },
+  });
+  const credits = fakeCredits();
+
+  const result = await sweepStalledDocs(db, { credits });
+  const docs = db.dump('sapere');
+
+  assert.equal(result.errors, 0);
+  assert.equal(docs.yaEnRevision.generation.refundState, 'needs_review');
+  assert.equal(docs.sinConfirmar.generation.refundState, 'needs_review');
+  assert.equal(db.dump('creditSpends').spendB.refundState, 'needs_review');
+  assert.equal(docs.completado.generation.refundState, undefined, 'solo se marca un documento en error');
+  assert.equal(docs.ajeno.generation.refundState, undefined, 'ni el documento de otro gasto');
+  assert.deepEqual(credits.refunded, [], 'nada en revision se devuelve solo');
+  assert.deepEqual(credits.settled, []);
+
+  db.writes = 0;
+  await sweepStalledDocs(db, { credits });
+  assert.equal(db.writes, 0, 'una segunda pasada no vuelve a escribir');
 });

@@ -310,7 +310,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Column(
                 children: [
                   Text(
-                    post.sapereName ?? "",
+                    post.displayTitle ?? "",
                     textAlign: TextAlign.center,
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
@@ -450,7 +450,7 @@ class _HomeScreenState extends State<HomeScreen> {
               final isFailed = post.isFailed;
               return SapereCard(
                 imageUrl: post.newCover.toString(),
-                title: post.sapereName ?? "",
+                title: post.displayTitle ?? "",
                 isGenerating: isGenerating,
                 isFailed: isFailed,
                 onTap: () {
